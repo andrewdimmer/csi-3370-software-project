@@ -1,8 +1,8 @@
 ---
-name: Database_02 Bug Report
+name: Database Bug report
 about: Create a report to help us improve
-title: "[Database_02]"
-labels: Database_02, bug
+title: "[Database]"
+labels: Database, bug
 assignees: camrongrant1, kylepoterek, MathewYaldo
 ---
 
