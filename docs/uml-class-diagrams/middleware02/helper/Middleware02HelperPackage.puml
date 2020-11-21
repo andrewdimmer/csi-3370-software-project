@@ -1,0 +1,7 @@
+@startuml Middleware02HelperPackage
+
+package edu.oakland.helper.middleware02 {
+    
+}
+
+@enduml

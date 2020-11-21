@@ -1,0 +1,7 @@
+@startuml Middleware02HelperPackage_InternalDependencies
+
+package edu.oakland.helper.middleware02 {
+    
+}
+
+@enduml

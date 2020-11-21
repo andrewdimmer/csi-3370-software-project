@@ -1,0 +1,13 @@
+@startuml MiddlewareCommLinkManagerImplementation
+
+package edu.oakland.production.middleware02 {
+    class MiddlewareCommLinkManagerImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+@enduml

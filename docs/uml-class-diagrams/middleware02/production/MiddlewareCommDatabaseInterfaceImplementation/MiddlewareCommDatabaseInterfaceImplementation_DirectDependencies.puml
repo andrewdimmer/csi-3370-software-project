@@ -1,0 +1,18 @@
+@startuml MiddlewareCommDatabaseInterfaceImplementation_DirectDependencies
+
+!startsub MIDDLEWARE02_PRODUCTION
+!include MiddlewareCommDatabaseInterfaceImplementation.puml
+
+!include ../MiddlewareCommDatabaseInterface/MiddlewareCommDatabaseInterface.puml
+MiddlewareCommDatabaseInterfaceImplementation .up.|> MiddlewareCommDatabaseInterface
+!endsub
+
+!startsub MIDDLEWARE02
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

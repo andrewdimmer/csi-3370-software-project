@@ -1,0 +1,13 @@
+@startuml MiddlewareCommDatabaseInterface
+
+package edu.oakland.production.middleware02 {
+    interface MiddlewareCommDatabaseInterface {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+@enduml

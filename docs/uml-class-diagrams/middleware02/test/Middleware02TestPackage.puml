@@ -1,0 +1,7 @@
+@startuml Middleware02TestPackage
+
+package edu.oakland.test.middleware02 {
+    
+}
+
+@enduml
