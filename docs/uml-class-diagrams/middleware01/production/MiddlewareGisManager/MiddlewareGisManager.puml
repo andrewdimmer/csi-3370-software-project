@@ -4,9 +4,15 @@ package edu.oakland.production.middleware01 {
     interface MiddlewareGisManager {
         __
         .. Use Case 1 ..
-
+        {abstract} + revieveGpsSignalStrength(Satellite satelliteSignal)
+        ' Middleware 2 is running evalutaiton concurrently?
+        {abstract} + void storeLocationDataPoint()
+        ' Called by Middleware 2 in between the 2 "yes" branches
         .. Use Case 2 ..
-
+        {abstract} + String attemptToRegainGpsLock(String satelliteName)
+        {abstract} + String evaluateGpsSignalStrength(boolean signalValid)
+        ' Can we print from evaluate? If not, need a way to surface mode
+        ' Get mode methods
     }
 }
 
