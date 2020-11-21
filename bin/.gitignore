@@ -1,0 +1,8 @@
+# A file to verify that:
+# 1) This folder exists for running builds
+# 2) Build artifacts are not commit to GitHub
+
+# Ignore everything in this directory
+*
+# Except this file
+!.gitignore
