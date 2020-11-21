@@ -1,0 +1,15 @@
+@startuml DatabaseGisPersistentStorage_DirectDependencies
+
+!startsub DATABASE01_PRODUCTION
+!include DatabaseGisPersistentStorage.puml
+!endsub
+
+!startsub DATABASE01
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

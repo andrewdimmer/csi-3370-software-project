@@ -1,0 +1,13 @@
+@startuml DatabaseGisPersistentStorageImplementation
+
+package edu.oakland.production.database01 {
+    class DatabaseGisPersistentStorageImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+@enduml

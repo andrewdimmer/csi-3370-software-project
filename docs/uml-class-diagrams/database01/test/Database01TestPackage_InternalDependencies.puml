@@ -1,0 +1,7 @@
+@startuml Database01TestPackage_InternalDependencies
+
+package edu.oakland.test.database01 {
+    
+}
+
+@enduml

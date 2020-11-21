@@ -1,0 +1,13 @@
+@startuml DatabaseGisInterfaceImplementation
+
+package edu.oakland.production.database01 {
+    class DatabaseGisInterfaceImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+@enduml

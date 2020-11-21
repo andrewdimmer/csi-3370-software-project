@@ -1,0 +1,13 @@
+@startuml DatabaseGisPersistentStorage
+
+package edu.oakland.production.database01 {
+    interface DatabaseGisPersistentStorage {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+@enduml
