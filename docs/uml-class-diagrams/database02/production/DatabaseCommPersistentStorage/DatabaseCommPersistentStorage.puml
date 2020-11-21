@@ -1,0 +1,13 @@
+@startuml DatabaseCommPersistentStorage
+
+package edu.oakland.production.database02 {
+    interface DatabaseCommPersistentStorage {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml DatabaseCommManagerImplementation
+
+package edu.oakland.production.database02 {
+    class DatabaseCommManagerImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+@enduml

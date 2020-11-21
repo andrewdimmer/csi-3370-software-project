@@ -1,0 +1,11 @@
+@startuml Database02TestPackage_DirectDependencies
+
+package edu.oakland.test.database02 {
+    
+}
+
+!startsub DATABASE02
+!include Database02TestPackage_InternalDependencies.puml
+!endsub
+
+@enduml

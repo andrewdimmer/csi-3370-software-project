@@ -1,0 +1,18 @@
+@startuml DatabaseCommPersistentStorageImplementation_DirectDependencies
+
+!startsub DATABASE02_PRODUCTION
+!include DatabaseCommPersistentStorageImplementation.puml
+
+!include ../DatabaseCommPersistentStorage/DatabaseCommPersistentStorage.puml
+DatabaseCommPersistentStorageImplementation .up.|> DatabaseCommPersistentStorage
+!endsub
+
+!startsub DATABASE02
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

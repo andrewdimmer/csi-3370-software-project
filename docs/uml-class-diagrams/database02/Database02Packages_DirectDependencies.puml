@@ -1,0 +1,7 @@
+@startuml Database02Packages_DirectDependencies
+
+!include production/Database02ProductionPackage_DirectDependencies.puml
+!include test/Database02TestPackage_DirectDependencies.puml
+!include helper/Database02HelperPackage_InternalDependencies.puml
+
+@enduml

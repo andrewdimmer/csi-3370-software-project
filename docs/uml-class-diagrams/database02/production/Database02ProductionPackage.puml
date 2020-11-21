@@ -1,0 +1,14 @@
+@startuml DATABASE02_PRODUCTIONPackage
+
+package edu.oakland.production.database02 {
+
+}
+
+!include DatabaseCommInterface/DatabaseCommInterface.puml
+!include DatabaseCommManager/DatabaseCommManager.puml
+!include DatabaseCommPersistentStorage/DatabaseCommPersistentStorage.puml
+!include DatabaseCommInterfaceImplementation/DatabaseCommInterfaceImplementation.puml
+!include DatabaseCommManagerImplementation/DatabaseCommManagerImplementation.puml
+!include DatabaseCommPersistentStorageImplementation/DatabaseCommPersistentStorageImplementation.puml
+
+@enduml
