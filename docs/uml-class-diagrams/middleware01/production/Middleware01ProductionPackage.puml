@@ -1,0 +1,14 @@
+@startuml Middleware01Package
+
+package edu.oakland.production.middleware01 {
+
+}
+
+!include MiddlewareGisInterface/MiddlewareGisInterface.puml
+!include MiddlewareGisProcessor/MiddlewareGisProcessor.puml
+!include MiddlewareGisManager/MiddlewareGisManager.puml
+!include MiddlewareGisInterfaceImplementation/MiddlewareGisInterfaceImplementation.puml
+!include MiddlewareGisProcessorImplementation/MiddlewareGisProcessorImplementation.puml
+!include MiddlewareGisManagerImplementation/MiddlewareGisManagerImplementation.puml
+
+@enduml

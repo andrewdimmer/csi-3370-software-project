@@ -1,0 +1,13 @@
+@startuml MiddlewareGisInterface
+
+package edu.oakland.production.middleware01 {
+    interface MiddlewareGisInterface {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+@enduml

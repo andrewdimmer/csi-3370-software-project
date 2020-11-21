@@ -1,0 +1,18 @@
+@startuml MiddlewareGisManagerImplementation_DirectDependencies
+
+!startsub MIDDLEWARE01_PRODUCTION
+!include MiddlewareGisManagerImplementation.puml
+
+!include ../MiddlewareGisManager/MiddlewareGisManager.puml
+MiddlewareGisManagerImplementation .up.|> MiddlewareGisManager
+!endsub
+
+!startsub MIDDLEWARE01
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

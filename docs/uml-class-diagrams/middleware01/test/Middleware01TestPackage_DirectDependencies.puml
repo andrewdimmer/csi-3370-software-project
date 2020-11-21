@@ -1,0 +1,11 @@
+@startuml Middleware01TestPackage_DirectDependencies
+
+package edu.oakland.test.middleware01 {
+    
+}
+
+!startsub MIDDLEWARE01
+!include Middleware01TestPackage_InternalDependencies.puml
+!endsub
+
+@enduml

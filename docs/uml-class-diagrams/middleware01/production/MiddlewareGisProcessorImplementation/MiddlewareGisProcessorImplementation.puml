@@ -1,0 +1,13 @@
+@startuml MiddlewareGisProcessorImplementation
+
+package edu.oakland.production.middleware01 {
+    class MiddlewareGisProcessorImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+@enduml
