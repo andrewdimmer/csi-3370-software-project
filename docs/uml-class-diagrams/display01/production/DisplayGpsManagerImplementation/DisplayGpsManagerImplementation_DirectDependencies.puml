@@ -1,0 +1,18 @@
+@startuml DisplayGpsManagerImplementation_DirectDependencies
+
+!startsub DISPLAY01_PRODUCTION
+!include DisplayGpsManagerImplementation.puml
+
+!include ../DisplayGpsManager/DisplayGpsManager.puml
+DisplayGpsManagerImplementation .up.|> DisplayGpsManager
+!endsub
+
+!startsub DISPLAY01
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

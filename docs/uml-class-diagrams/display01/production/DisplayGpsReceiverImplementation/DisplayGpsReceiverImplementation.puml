@@ -1,0 +1,13 @@
+@startuml DisplayGpsReceiverImplementation
+
+package edu.oakland.production.display01 {
+    class DisplayGpsReceiverImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+@enduml
