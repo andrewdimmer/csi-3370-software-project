@@ -1,0 +1,18 @@
+@startuml DisplayCommManagerImplementation_DirectDependencies
+
+!startsub DISPLAY02_PRODUCTION
+!include DisplayCommManagerImplementation.puml
+
+!include ../DisplayCommManager/DisplayCommManager.puml
+DisplayCommManagerImplementation .up.|> DisplayCommManager
+!endsub
+
+!startsub DISPLAY02
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

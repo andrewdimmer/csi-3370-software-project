@@ -1,0 +1,7 @@
+@startuml Display02TestPackage
+
+package edu.oakland.test.display02 {
+    
+}
+
+@enduml

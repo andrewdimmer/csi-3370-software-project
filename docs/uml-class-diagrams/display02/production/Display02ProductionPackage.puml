@@ -1,0 +1,14 @@
+@startuml DISPLAY02_PRODUCTIONPackage
+
+package edu.oakland.production.display02 {
+
+}
+
+!include DisplayCommInterface/DisplayCommInterface.puml
+!include DisplayComm2WayInterface/DisplayComm2WayInterface.puml
+!include DisplayCommManager/DisplayCommManager.puml
+!include DisplayCommInterfaceImplementation/DisplayCommInterfaceImplementation.puml
+!include DisplayComm2WayInterfaceImplementation/DisplayComm2WayInterfaceImplementation.puml
+!include DisplayCommManagerImplementation/DisplayCommManagerImplementation.puml
+
+@enduml

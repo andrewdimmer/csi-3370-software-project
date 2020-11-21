@@ -1,0 +1,11 @@
+@startuml Display02HelperPackage_DirectDependencies
+
+package edu.oakland.helper.display02 {
+    
+}
+
+!startsub DISPLAY02
+!include Display02HelperPackage_InternalDependencies.puml
+!endsub
+
+@enduml

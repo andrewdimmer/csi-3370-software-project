@@ -1,0 +1,7 @@
+@startuml Display02Packages
+
+!include production/Display02ProductionPackage.puml
+!include test/Display02TestPackage.puml
+!include helper/Display02HelperPackage.puml
+
+@enduml

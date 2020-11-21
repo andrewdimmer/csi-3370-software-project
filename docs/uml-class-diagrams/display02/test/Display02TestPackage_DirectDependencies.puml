@@ -1,0 +1,11 @@
+@startuml Display02TestPackage_DirectDependencies
+
+package edu.oakland.test.display02 {
+    
+}
+
+!startsub DISPLAY02
+!include Display02TestPackage_InternalDependencies.puml
+!endsub
+
+@enduml

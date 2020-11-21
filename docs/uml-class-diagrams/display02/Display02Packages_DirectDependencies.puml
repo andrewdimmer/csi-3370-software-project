@@ -1,0 +1,7 @@
+@startuml Display02Packages_DirectDependencies
+
+!include production/Display02ProductionPackage_DirectDependencies.puml
+!include test/Display02TestPackage_DirectDependencies.puml
+!include helper/Display02HelperPackage_InternalDependencies.puml
+
+@enduml

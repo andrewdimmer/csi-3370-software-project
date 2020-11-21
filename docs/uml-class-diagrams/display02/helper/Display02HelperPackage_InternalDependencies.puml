@@ -1,0 +1,7 @@
+@startuml Display02HelperPackage_InternalDependencies
+
+package edu.oakland.helper.display02 {
+    
+}
+
+@enduml

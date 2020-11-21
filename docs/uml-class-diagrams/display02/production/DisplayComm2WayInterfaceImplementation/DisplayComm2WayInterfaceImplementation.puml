@@ -1,0 +1,13 @@
+@startuml DisplayComm2WayInterfaceImplementation
+
+package edu.oakland.production.display02 {
+    class DisplayComm2WayInterfaceImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+@enduml
