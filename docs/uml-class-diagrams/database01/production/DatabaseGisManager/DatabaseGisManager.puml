@@ -4,9 +4,10 @@ package edu.oakland.production.database01 {
     interface DatabaseGisManager {
         __
         .. Use Case 1 ..
-
+        {abstract} + void passStoreRequest(LocationDataPoint locationDataPoint)
         .. Use Case 2 ..
-
+        {abstract} + void passModeRequest(String mode)
+        {abstract} + String passNextSatRequest(String currentSat)
     }
 }
 
