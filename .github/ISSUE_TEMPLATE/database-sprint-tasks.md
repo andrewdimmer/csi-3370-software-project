@@ -1,8 +1,8 @@
 ---
-name: Database_02 Sprint Tasks
+name: Database Sprint Tasks
 about: A user story for a sprint
-title: "[Database_02]"
-labels: enhancement, Database_02
+title: "[Database]"
+labels: enhancement, Database
 assignees: camrongrant1, kylepoterek, MathewYaldo, robertsonbrinker, Jake-wq, Ian-Klaus, letthatbe, Endritz
 ---
 
