@@ -18,6 +18,3 @@ hs_err_pid*
 
 # .DS_store files created by Finder on Mac
 *.DS_Store
-docs/uml-class-diagrams/middleware01/production/Middleware01Package.png
-docs/uml-class-diagrams/middleware01/production/Middleware01ProductionPackage_DirectDependencies.png
-docs/uml-class-diagrams/middleware01/production/Middleware01ProductionPackage_InternalDependencies.png
