@@ -1,0 +1,34 @@
+name: Generate PlantUML Diagrams
+on:
+  push:
+    paths:
+      - '**.puml'
+    branches:
+      - master
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    env:
+        UML_FILES: ".puml"
+    steps:
+      - name: Checkout Source 
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Get changed UML files
+        id: getfile
+        run: |
+          echo "::set-output name=files::$(git diff-tree -r --no-commit-id --name-only ${{ github.sha }} | grep ${{ env.UML_FILES }} | xargs)"
+      - name: UML files considered echo output
+        run: |
+          echo ${{ steps.getfile.outputs.files }}
+      - name: Generate SVG Diagrams
+        uses: cloudbees/plantuml-github-action@master
+        with:
+            args: -v -tsvg ${{ steps.getfile.outputs.files }}
+      - name: Generate PNG Diagrams
+        uses: cloudbees/plantuml-github-action@master
+        with:
+            args: -v -tpng ${{ steps.getfile.outputs.files }}
+      - name: Push Local Changes
+        run: git status; git add *; git status; git commit -m "Generate SVG and PNG images for PlantUML diagrams"; git push
