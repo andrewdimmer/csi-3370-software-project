@@ -4,10 +4,10 @@ package edu.oakland.production.database01 {
     class DatabaseGisInterfaceImplementation {
         __
         .. Use Case 1 ..
-        {abstract} + void recieveStoreRequest(LocationDataPoint locationDataPoint)
+        + void recieveStoreRequest(LocationDataPoint locationDataPoint)
         .. Use Case 2 ..
-        {abstract} + void recieveModeRequest(String mode)
-        {abstract} + String recieveNextSatRequest(String currentSat)
+        + void recieveModeRequest(String mode)
+        + String recieveNextSatRequest(String currentSat)
         
     }
 }
