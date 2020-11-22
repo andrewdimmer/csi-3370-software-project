@@ -4,7 +4,9 @@ package edu.oakland.production.database02 {
     interface DatabaseCommPersistentStorage {
         __
         .. Use Case 1 ..
-
+        {abstract} + int locateRfidData()
+        {abstract} + LocationDataPoint getLocationDataPoint(int offset)
+        {abstract} + void storeTrackData(TrackData trackData)
         .. Use Case 2 ..
 
     }
