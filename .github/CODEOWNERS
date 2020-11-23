@@ -1,38 +1,38 @@
 # When it doubt, defaults to the Admin team
 *                   @andrewdimmer @brendanfraser597 @TessaPeruzzi
 
-# # Display_01
-# **/Display_01/      @EC01EC @stevecatherman
-# **/Display01/       @EC01EC @stevecatherman
-# **/display_01/      @EC01EC @stevecatherman
-# **/display01/       @EC01EC @stevecatherman
-# 
-# # Display_02
-# **/Display_02/      @jcortes18 @sydneyhill3901
-# **/Display02/       @jcortes18 @sydneyhill3901
-# **/display_02/      @jcortes18 @sydneyhill3901
-# **/display02/       @jcortes18 @sydneyhill3901
-# 
-# # Middleware_01
-# **/Middleware_01/    @brendam19 @juliawang2014
-# **/Middleware01/     @brendam19 @juliawang2014
-# **/middleware_01/    @brendam19 @juliawang2014
-# **/middleware01/     @brendam19 @juliawang2014
-# 
-# # Middleware_02
-# **/Middleware_02/    @mckenzieking @kwillard34
-# **/Middleware02/     @mckenzieking @kwillard34
-# **/middleware_02/    @mckenzieking @kwillard34
-# **/middleware02/     @mckenzieking @kwillard34
-# 
-# # Database
-# **/Database/        @camrongrant1 @kylepoterek
-# **/Database_01/     @camrongrant1 @kylepoterek
-# **/Database01/      @camrongrant1 @kylepoterek
-# **/Database_02/     @camrongrant1 @kylepoterek
-# **/Database02/      @camrongrant1 @kylepoterek
-# **/database/        @camrongrant1 @kylepoterek
-# **/database_01/     @camrongrant1 @kylepoterek
-# **/database01/      @camrongrant1 @kylepoterek
-# **/database_02/     @camrongrant1 @kylepoterek
-# **/database02/      @camrongrant1 @kylepoterek
+# Display_01
+**/Display_01/      @EC01EC @stevecatherman
+**/Display01/       @EC01EC @stevecatherman
+**/display_01/      @EC01EC @stevecatherman
+**/display01/       @EC01EC @stevecatherman
+
+# Display_02
+**/Display_02/      @jcortes18 @sydneyhill3901
+**/Display02/       @jcortes18 @sydneyhill3901
+**/display_02/      @jcortes18 @sydneyhill3901
+**/display02/       @jcortes18 @sydneyhill3901
+
+# Middleware_01
+**/Middleware_01/    @brendam19 @juliawang2014
+**/Middleware01/     @brendam19 @juliawang2014
+**/middleware_01/    @brendam19 @juliawang2014
+**/middleware01/     @brendam19 @juliawang2014
+
+# Middleware_02
+**/Middleware_02/    @mckenzieking @kwillard34
+**/Middleware02/     @mckenzieking @kwillard34
+**/middleware_02/    @mckenzieking @kwillard34
+**/middleware02/     @mckenzieking @kwillard34
+
+# Database
+**/Database/        @camrongrant1 @kylepoterek
+**/Database_01/     @camrongrant1 @kylepoterek
+**/Database01/      @camrongrant1 @kylepoterek
+**/Database_02/     @camrongrant1 @kylepoterek
+**/Database02/      @camrongrant1 @kylepoterek
+**/database/        @camrongrant1 @kylepoterek
+**/database_01/     @camrongrant1 @kylepoterek
+**/database01/      @camrongrant1 @kylepoterek
+**/database_02/     @camrongrant1 @kylepoterek
+**/database02/      @camrongrant1 @kylepoterek
