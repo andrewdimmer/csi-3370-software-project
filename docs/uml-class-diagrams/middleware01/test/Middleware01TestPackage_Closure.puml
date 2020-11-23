@@ -1,0 +1,7 @@
+@startuml Middleware01TestPackage_InternalDependencies
+
+package edu.oakland.test.middleware01 {
+    
+}
+
+@enduml

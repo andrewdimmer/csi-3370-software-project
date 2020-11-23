@@ -1,0 +1,14 @@
+@startuml Middleware01ProductionPackage_Closure
+
+package edu.oakland.production.middleware01 {
+    
+}
+
+!include MiddlewareGisInterface/MiddlewareGisInterface_Closure.puml
+!include MiddlewareGisProcessor/MiddlewareGisProcessor_Closure.puml
+!include MiddlewareGisManager/MiddlewareGisManager_Closure.puml
+!include MiddlewareGisInterfaceImplementation/MiddlewareGisInterfaceImplementation_Closure.puml
+!include MiddlewareGisProcessorImplementation/MiddlewareGisProcessorImplementation_Closure.puml
+!include MiddlewareGisManagerImplementation/MiddlewareGisManagerImplementation_Closure.puml
+
+@enduml
