@@ -1,7 +1,0 @@
-@startuml Database02TestPackage
-
-package edu.oakland.test.database02 {
-    
-}
-
-@enduml

@@ -1,0 +1,18 @@
+@startuml DatabaseCommManagerImplementation_DirectDependencies
+
+!startsub DATABASE_PRODUCTION
+!include DatabaseCommManagerImplementation.puml
+
+!include ../DatabaseCommManager/DatabaseCommManager.puml
+DatabaseCommManagerImplementation .up.|> DatabaseCommManager
+!endsub
+
+!startsub DATABASE
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

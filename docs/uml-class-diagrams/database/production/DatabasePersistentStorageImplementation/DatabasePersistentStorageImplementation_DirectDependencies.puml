@@ -1,0 +1,18 @@
+@startuml DatabasePersistentStorageImplementation_DirectDependencies
+
+!startsub DATABASE_PRODUCTION
+!include DatabasePersistentStorageImplementation.puml
+
+!include ../DatabasePersistentStorage/DatabasePersistentStorage.puml
+DatabasePersistentStorageImplementation .up.|> DatabasePersistentStorage
+!endsub
+
+!startsub DATABASE
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

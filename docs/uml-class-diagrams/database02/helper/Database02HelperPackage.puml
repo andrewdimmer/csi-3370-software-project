@@ -1,7 +1,0 @@
-@startuml Database02HelperPackage
-
-package edu.oakland.helper.database02 {
-    
-}
-
-@enduml
