@@ -4,6 +4,6 @@ package edu.oakland.helper.display01 {
     
 }
 
-!include SatelliteSignalCheckRequest/DisplayGpsInterface.puml
+!include SatelliteSignalCheckRequest/SatelliteSignalCheckRequest.puml
 
 @enduml
