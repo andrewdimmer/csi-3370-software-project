@@ -1,0 +1,7 @@
+@startuml DatabaseHelperPackage_Closure
+
+package edu.oakland.helper.database {
+    
+}
+
+@enduml
