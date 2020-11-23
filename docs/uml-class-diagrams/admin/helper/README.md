@@ -19,9 +19,9 @@ This package does not contain any interfaces.
 
 This package contains the following classes:
 
-- [edu.oakland.production.admin.LocationDataPoint](LocationDataPoint)
+- [edu.oakland.helper.admin.LocationDataPoint](LocationDataPoint)
 - [edu.oakland.helper.admin.Satellite](Satellite)
-- [edu.oakland.production.admin.TrackData](TrackData)
+- [edu.oakland.helper.admin.TrackData](TrackData)
 
 ## Class UML Diagram
 

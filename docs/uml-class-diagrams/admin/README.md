@@ -23,30 +23,30 @@ This subteam owns the following packages:
 
 Below is a diagram of the Admin Subteam packages themselves:
 
-![Admin Subteam packages](./AdminTestPackage.svg)
+![Admin Subteam packages](./AdminPackages.svg)
 
-View larger as [.png](./AdminTestPackage.png) or [.svg](./AdminTestPackage.svg)
+View larger as [.png](./AdminPackages.png) or [.svg](./AdminPackages.svg)
 
 ## Internal Dependencies UML Diagram
 
 Below is a diagram of the internal dependencies within the Admin Subteam packages:
 
-![Admin Subteam packages Internal Dependencies](./AdminTestPackage_InternalDependencies.svg)
+![Admin Subteam packages Internal Dependencies](./AdminPackages_InternalDependencies.svg)
 
-View larger as [.png](./AdminTestPackage_InternalDependencies.png) or [.svg](./AdminTestPackage_InternalDependencies.svg)
+View larger as [.png](./AdminPackages_InternalDependencies.png) or [.svg](./AdminPackages_InternalDependencies.svg)
 
 ## Direct Dependencies UML Diagram
 
 Below is a diagram of the direct dependencies required by the Admin Subteam packages:
 
-![Admin Subteam packages Direct Dependencies](./AdminTestPackage_DirectDependencies.svg)
+![Admin Subteam packages Direct Dependencies](./AdminPackages_DirectDependencies.svg)
 
-View larger as [.png](./AdminTestPackage_DirectDependencies.png) or [.svg](./AdminTestPackage_DirectDependencies.svg)
+View larger as [.png](./AdminPackages_DirectDependencies.png) or [.svg](./AdminPackages_DirectDependencies.svg)
 
 ## Complete Dependency Closure UML Diagram
 
 Below is a diagram of the complete dependencies closure of the Admin Subteam packages:
 
-![Admin Subteam packages Dependency Closure](./AdminTestPackage_Closure.svg)
+![Admin Subteam packages Dependency Closure](./AdminPackages_Closure.svg)
 
-View larger as [.png](./AdminTestPackage_Closure.png) or [.svg](./AdminTestPackage_Closure.svg)
+View larger as [.png](./AdminPackages_Closure.png) or [.svg](./AdminPackages_Closure.svg)

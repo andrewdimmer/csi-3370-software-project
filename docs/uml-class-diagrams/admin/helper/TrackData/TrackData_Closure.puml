@@ -4,7 +4,7 @@
 !include TrackData.puml
 
 !include ../LocationDataPoint/LocationDataPoint_Closure.puml
-TrackData --> LocationDataPoint
+TrackData o--> LocationDataPoint
 !endsub
 
 !startsub ADMIN

@@ -20,7 +20,7 @@ This package does not contain any interfaces.
 This package contains the following classes:
 
 - [edu.oakland.production.admin.Demo](Demo)
-- [edu.oakland.helper.admin.User](User)
+- [edu.oakland.production.admin.User](User)
 - [edu.oakland.production.admin.GpsSystem](GpsSystem)
 
 ## Class UML Diagram
