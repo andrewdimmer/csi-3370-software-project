@@ -2,12 +2,14 @@ name: GitHub CODEOWNERS Validator
 on:
   push:
     paths:
-      - 'CODEOWNERS'
+      - '**/CODEOWNERS'
   workflow_dispatch:
 jobs:
   validate-codeowners:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
       - name: Validate CODEOWNERS 
         uses: mszostok/codeowners-validator@v0.5.1
         with:
