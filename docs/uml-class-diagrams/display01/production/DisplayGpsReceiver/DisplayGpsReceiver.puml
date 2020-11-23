@@ -4,9 +4,9 @@ package edu.oakland.production.display01 {
     interface DisplayGpsReceiver {
         __
         .. Use Case 1 ..
-
+        {abstract} + String measureGpsSignalStrength(Satellite satelliteSignal)
         .. Use Case 2 ..
-
+        {abstract} + SatelliteSignalCheckRequest measureSignal(String satelliteName)
     }
 }
 
