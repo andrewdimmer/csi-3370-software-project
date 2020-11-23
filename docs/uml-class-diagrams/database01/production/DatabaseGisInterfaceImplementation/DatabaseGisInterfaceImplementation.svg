@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="220px" preserveAspectRatio="none" style="width:458px;height:220px;" version="1.1" viewBox="0 0 458 220" width="458px" zoomAndPan="magnify"><defs><filter height="300%" id="f1vz4q0mag54hj" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ba602463a52c9ed4bf670ea327ccdb8b]
+cluster edu.oakland.production.database01--><polygon fill="#FFFFFF" filter="url(#f1vz4q0mag54hj)" points="22,24,312,24,319,46.2969,436,46.2969,436,208,22,208,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="319" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="284" x="26" y="38.9951">edu.oakland.production.database01</text><!--MD5=[08068c224d75f5ca94e2833221bd6445]
+class DatabaseGisInterfaceImplementation--><rect fill="#FEFECE" filter="url(#f1vz4q0mag54hj)" height="132.8281" id="DatabaseGisInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="382" x="38" y="59"/><ellipse cx="108.25" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M111.2188,80.6406 Q110.6406,80.9375 110,81.0781 Q109.3594,81.2344 108.6563,81.2344 Q106.1563,81.2344 104.8281,79.5938 Q103.5156,77.9375 103.5156,74.8125 Q103.5156,71.6875 104.8281,70.0313 Q106.1563,68.375 108.6563,68.375 Q109.3594,68.375 110,68.5313 Q110.6563,68.6875 111.2188,68.9844 L111.2188,71.7031 Q110.5938,71.125 110,70.8594 Q109.4063,70.5781 108.7813,70.5781 Q107.4375,70.5781 106.75,71.6563 Q106.0625,72.7188 106.0625,74.8125 Q106.0625,76.9063 106.75,77.9844 Q107.4375,79.0469 108.7813,79.0469 Q109.4063,79.0469 110,78.7813 Q110.5938,78.5 111.2188,77.9219 L111.2188,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="233" x="128.75" y="79.1543">DatabaseGisInterfaceImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="419" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="419" y1="99" y2="99"/><ellipse cx="49" cy="126.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="356" x="58" y="130.0151">void recieveStoreRequest(LocationDataPoint locationDataPoint)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="196" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="196" y="116.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="262" x2="419" y1="113.4023" y2="113.4023"/><ellipse cx="49" cy="156.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="222" x="58" y="159.6245">void recieveModeRequest(String mode)</text><ellipse cx="49" cy="169.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="275" x="58" y="172.4292">String recieveNextSatRequest(String currentSat)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="62" y="185.2339"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="196" y1="143.0117" y2="143.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="196" y="146.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="262" x2="419" y1="143.0117" y2="143.0117"/><!--MD5=[a3816ef0539247ea59596b043759a9d4]
+@startuml DatabaseGisInterfaceImplementation
+
+package edu.oakland.production.database01 {
+    class DatabaseGisInterfaceImplementation {
+        __
+        .. Use Case 1 ..
+        + void recieveStoreRequest(LocationDataPoint locationDataPoint)
+        .. Use Case 2 ..
+        + void recieveModeRequest(String mode)
+        + String recieveNextSatRequest(String currentSat)
+        
+    }
+}
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

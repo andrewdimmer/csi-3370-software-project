@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="361px" preserveAspectRatio="none" style="width:1421px;height:361px;" version="1.1" viewBox="0 0 1421 361" width="1421px" zoomAndPan="magnify"><defs><filter height="300%" id="fkrsjqr4hwck9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3e281e6f49e0b185d62a106a5d994a08]
+cluster edu.oakland.production.display01--><polygon fill="#FFFFFF" filter="url(#fkrsjqr4hwck9)" points="541,24,814,24,821,46.2969,1399,46.2969,1399,349,541,349,541,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="541" x2="821" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="267" x="545" y="38.9951">edu.oakland.production.display01</text><!--MD5=[fa6248c05b5a852ecd50b5411f159754]
+class DisplayGpsInterface--><rect fill="#FEFECE" filter="url(#fkrsjqr4hwck9)" height="107.2188" id="DisplayGpsInterface" style="stroke: #A80036; stroke-width: 1.5;" width="156" x="606" y="59"/><ellipse cx="621" cy="75" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M616.9219,70.7656 L616.9219,68.6094 L624.3125,68.6094 L624.3125,70.7656 L621.8438,70.7656 L621.8438,78.8438 L624.3125,78.8438 L624.3125,81 L616.9219,81 L616.9219,78.8438 L619.3906,78.8438 L619.3906,70.7656 L616.9219,70.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="124" x="635" y="79.1543">DisplayGpsInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="607" x2="761" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="607" x2="761" y1="99" y2="99"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="616" y="130.0151"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="607" x2="651" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="651" y="116.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="717" x2="761" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="616" y="159.6245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="607" x2="651" y1="143.0117" y2="143.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="651" y="146.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="717" x2="761" y1="143.0117" y2="143.0117"/><!--MD5=[31cbac78761b59e73153a97a452ed09a]
+class DisplayGpsManager--><rect fill="#FEFECE" filter="url(#fkrsjqr4hwck9)" height="107.2188" id="DisplayGpsManager" style="stroke: #A80036; stroke-width: 1.5;" width="154" x="895" y="59"/><ellipse cx="910" cy="75" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M905.9219,70.7656 L905.9219,68.6094 L913.3125,68.6094 L913.3125,70.7656 L910.8438,70.7656 L910.8438,78.8438 L913.3125,78.8438 L913.3125,81 L905.9219,81 L905.9219,78.8438 L908.3906,78.8438 L908.3906,70.7656 L905.9219,70.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="122" x="924" y="79.1543">DisplayGpsManager</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="896" x2="1048" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="896" x2="1048" y1="99" y2="99"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="905" y="130.0151"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="896" x2="939" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="939" y="116.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1005" x2="1048" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="905" y="159.6245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="896" x2="939" y1="143.0117" y2="143.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="939" y="146.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1005" x2="1048" y1="143.0117" y2="143.0117"/><!--MD5=[319273309e4c56bac150542a32321bb2]
+class DisplayGpsReceiver--><rect fill="#FEFECE" filter="url(#fkrsjqr4hwck9)" height="107.2188" id="DisplayGpsReceiver" style="stroke: #A80036; stroke-width: 1.5;" width="152" x="1182" y="59"/><ellipse cx="1197" cy="75" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1192.9219,70.7656 L1192.9219,68.6094 L1200.3125,68.6094 L1200.3125,70.7656 L1197.8438,70.7656 L1197.8438,78.8438 L1200.3125,78.8438 L1200.3125,81 L1192.9219,81 L1192.9219,78.8438 L1195.3906,78.8438 L1195.3906,70.7656 L1192.9219,70.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="120" x="1211" y="79.1543">DisplayGpsReceiver</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1183" x2="1333" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1183" x2="1333" y1="99" y2="99"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="1192" y="130.0151"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1183" x2="1225" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1225" y="116.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1291" x2="1333" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="1192" y="159.6245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1183" x2="1225" y1="143.0117" y2="143.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1225" y="146.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1291" x2="1333" y1="143.0117" y2="143.0117"/><!--MD5=[6376794c08ca75f6fa530286e1e32b13]
+class DisplayGpsInterfaceImplementation--><rect fill="#FEFECE" filter="url(#fkrsjqr4hwck9)" height="107.2188" id="DisplayGpsInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="253" x="557.5" y="226"/><ellipse cx="572.5" cy="242" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M575.4688,247.6406 Q574.8906,247.9375 574.25,248.0781 Q573.6094,248.2344 572.9063,248.2344 Q570.4063,248.2344 569.0781,246.5938 Q567.7656,244.9375 567.7656,241.8125 Q567.7656,238.6875 569.0781,237.0313 Q570.4063,235.375 572.9063,235.375 Q573.6094,235.375 574.25,235.5313 Q574.9063,235.6875 575.4688,235.9844 L575.4688,238.7031 Q574.8438,238.125 574.25,237.8594 Q573.6563,237.5781 573.0313,237.5781 Q571.6875,237.5781 571,238.6563 Q570.3125,239.7188 570.3125,241.8125 Q570.3125,243.9063 571,244.9844 Q571.6875,246.0469 573.0313,246.0469 Q573.6563,246.0469 574.25,245.7813 Q574.8438,245.5 575.4688,244.9219 L575.4688,247.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="221" x="586.5" y="246.1543">DisplayGpsInterfaceImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="558.5" x2="809.5" y1="258" y2="258"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="558.5" x2="809.5" y1="266" y2="266"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="567.5" y="297.0151"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="558.5" x2="651" y1="280.4023" y2="280.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="651" y="283.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="717" x2="809.5" y1="280.4023" y2="280.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="567.5" y="326.6245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="558.5" x2="651" y1="310.0117" y2="310.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="651" y="313.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="717" x2="809.5" y1="310.0117" y2="310.0117"/><!--MD5=[85db0a5b69c4b55d7b0101612d8a7890]
+class DisplayGpsManagerImplementation--><rect fill="#FEFECE" filter="url(#fkrsjqr4hwck9)" height="107.2188" id="DisplayGpsManagerImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="252" x="846" y="226"/><ellipse cx="861" cy="242" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M863.9688,247.6406 Q863.3906,247.9375 862.75,248.0781 Q862.1094,248.2344 861.4063,248.2344 Q858.9063,248.2344 857.5781,246.5938 Q856.2656,244.9375 856.2656,241.8125 Q856.2656,238.6875 857.5781,237.0313 Q858.9063,235.375 861.4063,235.375 Q862.1094,235.375 862.75,235.5313 Q863.4063,235.6875 863.9688,235.9844 L863.9688,238.7031 Q863.3438,238.125 862.75,237.8594 Q862.1563,237.5781 861.5313,237.5781 Q860.1875,237.5781 859.5,238.6563 Q858.8125,239.7188 858.8125,241.8125 Q858.8125,243.9063 859.5,244.9844 Q860.1875,246.0469 861.5313,246.0469 Q862.1563,246.0469 862.75,245.7813 Q863.3438,245.5 863.9688,244.9219 L863.9688,247.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="220" x="875" y="246.1543">DisplayGpsManagerImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="847" x2="1097" y1="258" y2="258"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="847" x2="1097" y1="266" y2="266"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="856" y="297.0151"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="847" x2="939" y1="280.4023" y2="280.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="939" y="283.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1005" x2="1097" y1="280.4023" y2="280.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="856" y="326.6245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="847" x2="939" y1="310.0117" y2="310.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="939" y="313.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1005" x2="1097" y1="310.0117" y2="310.0117"/><!--MD5=[02b25ee3f711f666678619f4b81f3681]
+class DisplayGpsReceiverImplementation--><rect fill="#FEFECE" filter="url(#fkrsjqr4hwck9)" height="107.2188" id="DisplayGpsReceiverImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="250" x="1133" y="226"/><ellipse cx="1148" cy="242" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1150.9688,247.6406 Q1150.3906,247.9375 1149.75,248.0781 Q1149.1094,248.2344 1148.4063,248.2344 Q1145.9063,248.2344 1144.5781,246.5938 Q1143.2656,244.9375 1143.2656,241.8125 Q1143.2656,238.6875 1144.5781,237.0313 Q1145.9063,235.375 1148.4063,235.375 Q1149.1094,235.375 1149.75,235.5313 Q1150.4063,235.6875 1150.9688,235.9844 L1150.9688,238.7031 Q1150.3438,238.125 1149.75,237.8594 Q1149.1563,237.5781 1148.5313,237.5781 Q1147.1875,237.5781 1146.5,238.6563 Q1145.8125,239.7188 1145.8125,241.8125 Q1145.8125,243.9063 1146.5,244.9844 Q1147.1875,246.0469 1148.5313,246.0469 Q1149.1563,246.0469 1149.75,245.7813 Q1150.3438,245.5 1150.9688,244.9219 L1150.9688,247.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="218" x="1162" y="246.1543">DisplayGpsReceiverImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1134" x2="1382" y1="258" y2="258"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1134" x2="1382" y1="266" y2="266"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="1143" y="297.0151"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1134" x2="1225" y1="280.4023" y2="280.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1225" y="283.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1291" x2="1382" y1="280.4023" y2="280.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="1143" y="326.6245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1134" x2="1225" y1="310.0117" y2="310.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1225" y="313.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1291" x2="1382" y1="310.0117" y2="310.0117"/><polygon fill="#FFFFFF" filter="url(#fkrsjqr4hwck9)" points="6,86,224,86,231,108.2969,238,108.2969,238,138.5938,6,138.5938,6,86" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="6" x2="231" y1="108.2969" y2="108.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="212" x="10" y="100.9951">edu.oakland.test.display01</text><polygon fill="#FFFFFF" filter="url(#fkrsjqr4hwck9)" points="273,86,511,86,518,108.2969,525,108.2969,525,138.5938,273,138.5938,273,86" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="273" x2="518" y1="108.2969" y2="108.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="232" x="277" y="100.9951">edu.oakland.helper.display01</text><!--MD5=[5e11d977f08105e989255e48b5831e9e]
+reverse link DisplayGpsInterface to DisplayGpsInterfaceImplementation--><path d="M684,186.48 C684,199.71 684,213.27 684,225.77 " fill="none" id="DisplayGpsInterface&lt;-DisplayGpsInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="677,186.16,684,166.16,691,186.16,677,186.16" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6be1e14f889006c5f08853113ab490e0]
+reverse link DisplayGpsManager to DisplayGpsManagerImplementation--><path d="M972,186.48 C972,199.71 972,213.27 972,225.77 " fill="none" id="DisplayGpsManager&lt;-DisplayGpsManagerImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="965,186.16,972,166.16,979,186.16,965,186.16" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[8f7561e34aa0d27a53c807a3ed854e00]
+reverse link DisplayGpsReceiver to DisplayGpsReceiverImplementation--><path d="M1258,186.48 C1258,199.71 1258,213.27 1258,225.77 " fill="none" id="DisplayGpsReceiver&lt;-DisplayGpsReceiverImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="1251,186.16,1258,166.16,1265,186.16,1251,186.16" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6f0fd9f62b32edf65dd32423f88bf6dd]
+@startuml Display01Packages_InternalDependencies
+
+
+package edu.oakland.production.display01 {
+    
+}
+
+
+package edu.oakland.production.display01 {
+    interface DisplayGpsInterface {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+
+package edu.oakland.production.display01 {
+    interface DisplayGpsManager {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+
+package edu.oakland.production.display01 {
+    interface DisplayGpsReceiver {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+
+package edu.oakland.production.display01 {
+    class DisplayGpsInterfaceImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+
+DisplayGpsInterfaceImplementation .up.|> DisplayGpsInterface
+
+package edu.oakland.production.display01 {
+    class DisplayGpsManagerImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+
+DisplayGpsManagerImplementation .up.|> DisplayGpsManager
+
+package edu.oakland.production.display01 {
+    class DisplayGpsReceiverImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+
+DisplayGpsReceiverImplementation .up.|> DisplayGpsReceiver
+
+
+
+
+
+
+
+
+package edu.oakland.test.display01 {
+    
+}
+
+
+package edu.oakland.helper.display01 {
+    
+}
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>
