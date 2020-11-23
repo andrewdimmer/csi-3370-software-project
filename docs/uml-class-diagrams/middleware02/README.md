@@ -23,30 +23,30 @@ This subteam owns the following packages:
 
 Below is a diagram of the Middleware_02 Subteam packages themselves:
 
-![Middleware_02 Subteam packages](./Middleware02TestPackage.svg)
+![Middleware_02 Subteam packages](./Middleware02Packages.svg)
 
-View larger as [.png](./Middleware02TestPackage.png) or [.svg](./Middleware02TestPackage.svg)
+View larger as [.png](./Middleware02Packages.png) or [.svg](./Middleware02Packages.svg)
 
 ## Internal Dependencies UML Diagram
 
 Below is a diagram of the internal dependencies within the Middleware_02 Subteam packages:
 
-![Middleware_02 Subteam packages Internal Dependencies](./Middleware02TestPackage_InternalDependencies.svg)
+![Middleware_02 Subteam packages Internal Dependencies](./Middleware02Packages_InternalDependencies.svg)
 
-View larger as [.png](./Middleware02TestPackage_InternalDependencies.png) or [.svg](./Middleware02TestPackage_InternalDependencies.svg)
+View larger as [.png](./Middleware02Packages_InternalDependencies.png) or [.svg](./Middleware02Packages_InternalDependencies.svg)
 
 ## Direct Dependencies UML Diagram
 
 Below is a diagram of the direct dependencies required by the Middleware_02 Subteam packages:
 
-![Middleware_02 Subteam packages Direct Dependencies](./Middleware02TestPackage_DirectDependencies.svg)
+![Middleware_02 Subteam packages Direct Dependencies](./Middleware02Packages_DirectDependencies.svg)
 
-View larger as [.png](./Middleware02TestPackage_DirectDependencies.png) or [.svg](./Middleware02TestPackage_DirectDependencies.svg)
+View larger as [.png](./Middleware02Packages_DirectDependencies.png) or [.svg](./Middleware02Packages_DirectDependencies.svg)
 
 ## Complete Dependency Closure UML Diagram
 
 Below is a diagram of the complete dependencies closure of the Middleware_02 Subteam packages:
 
-![Middleware_02 Subteam packages Dependency Closure](./Middleware02TestPackage_Closure.svg)
+![Middleware_02 Subteam packages Dependency Closure](./Middleware02Packages_Closure.svg)
 
-View larger as [.png](./Middleware02TestPackage_Closure.png) or [.svg](./Middleware02TestPackage_Closure.svg)
+View larger as [.png](./Middleware02Packages_Closure.png) or [.svg](./Middleware02Packages_Closure.svg)
