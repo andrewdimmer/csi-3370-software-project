@@ -1,0 +1,10 @@
+@startuml SatelliteSignalCheckRequest
+
+package edu.oakland.helper.display_01 {
+    class SatelliteSignalCheckRequest {
+        + String getSatelliteName()
+        + String getCheckType()
+    }
+}
+
+@enduml
