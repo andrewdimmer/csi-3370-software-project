@@ -1,0 +1,16 @@
+name: GitHub CODEOWNERS Validator
+on:
+  push:
+    paths:
+      - './github/CODEOWNERS'
+jobs:
+  validate-codeowners:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate CODEOWNERS 
+        uses: mszostok/codeowners-validator@v0.5.1
+        with:
+          checks: "files,owners,duppatterns"
+          experimental_checks: "notowned"
+          # GitHub access token is required only if the `owners` check is enabled
+          github_access_token: ${{secrets.GITHUB_TOKEN}}
