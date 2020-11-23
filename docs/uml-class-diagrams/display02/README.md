@@ -23,30 +23,30 @@ This subteam owns the following packages:
 
 Below is a diagram of the Display_02 Subteam packages themselves:
 
-![Display_02 Subteam packages](./Display02TestPackage.svg)
+![Display_02 Subteam packages](./Display02Packages.svg)
 
-View larger as [.png](./Display02TestPackage.png) or [.svg](./Display02TestPackage.svg)
+View larger as [.png](./Display02Packages.png) or [.svg](./Display02Packages.svg)
 
 ## Internal Dependencies UML Diagram
 
 Below is a diagram of the internal dependencies within the Display_02 Subteam packages:
 
-![Display_02 Subteam packages Internal Dependencies](./Display02TestPackage_InternalDependencies.svg)
+![Display_02 Subteam packages Internal Dependencies](./Display02Packages_InternalDependencies.svg)
 
-View larger as [.png](./Display02TestPackage_InternalDependencies.png) or [.svg](./Display02TestPackage_InternalDependencies.svg)
+View larger as [.png](./Display02Packages_InternalDependencies.png) or [.svg](./Display02Packages_InternalDependencies.svg)
 
 ## Direct Dependencies UML Diagram
 
 Below is a diagram of the direct dependencies required by the Display_02 Subteam packages:
 
-![Display_02 Subteam packages Direct Dependencies](./Display02TestPackage_DirectDependencies.svg)
+![Display_02 Subteam packages Direct Dependencies](./Display02Packages_DirectDependencies.svg)
 
-View larger as [.png](./Display02TestPackage_DirectDependencies.png) or [.svg](./Display02TestPackage_DirectDependencies.svg)
+View larger as [.png](./Display02Packages_DirectDependencies.png) or [.svg](./Display02Packages_DirectDependencies.svg)
 
 ## Complete Dependency Closure UML Diagram
 
 Below is a diagram of the complete dependencies closure of the Display_02 Subteam packages:
 
-![Display_02 Subteam packages Dependency Closure](./Display02TestPackage_Closure.svg)
+![Display_02 Subteam packages Dependency Closure](./Display02Packages_Closure.svg)
 
-View larger as [.png](./Display02TestPackage_Closure.png) or [.svg](./Display02TestPackage_Closure.svg)
+View larger as [.png](./Display02Packages_Closure.png) or [.svg](./Display02Packages_Closure.svg)
