@@ -1,0 +1,7 @@
+@startuml Display02HelperPackage_Closure
+
+package edu.oakland.helper.display02 {
+    
+}
+
+@enduml

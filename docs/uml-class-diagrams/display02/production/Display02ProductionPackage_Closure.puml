@@ -1,0 +1,14 @@
+@startuml Display02ProductionPackage_Closure
+
+package edu.oakland.production.display02 {
+    
+}
+
+!include DisplayCommInterface/DisplayCommInterface_Closure.puml
+!include DisplayComm2WayInterface/DisplayComm2WayInterface_Closure.puml
+!include DisplayCommManager/DisplayCommManager_Closure.puml
+!include DisplayCommInterfaceImplementation/DisplayCommInterfaceImplementation_Closure.puml
+!include DisplayComm2WayInterfaceImplementation/DisplayComm2WayInterfaceImplementation_Closure.puml
+!include DisplayCommManagerImplementation/DisplayCommManagerImplementation_Closure.puml
+
+@enduml
