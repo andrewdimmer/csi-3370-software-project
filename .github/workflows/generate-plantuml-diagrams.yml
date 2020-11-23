@@ -43,7 +43,7 @@ jobs:
       - name: Get the Pull Request Check Results to Propagate
         if: ${{ !env.COMMIT }}
         run:
-          echo Old SHA $(git rev-parse HEAD~1)
+          echo Old SHA $(git rev-parse HEAD~1);
           curl https://api.github.com/repos/andrewdimmer/csi-3370-software-project/commits/$(git rev-parse HEAD~1)/check-runs > check_runs.json;
           cat check_runs.json | python3 .github/github_action_workflow_to_job_attribute.py "checkstyle" "id" > checkstyle_job_run_id.txt;
           echo checkstyle Job Run Id $(cat checkstyle_job_run_id.txt);

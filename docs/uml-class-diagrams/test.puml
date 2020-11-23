@@ -1,7 +1,7 @@
 @startuml test
 
 class Test {
-    - boolean thisWorksNow
+    - boolean thisWorks
 }
 
 @enduml
