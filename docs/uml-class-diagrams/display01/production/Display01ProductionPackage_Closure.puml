@@ -4,11 +4,11 @@ package edu.oakland.production.display01 {
     
 }
 
-!include DisplayGpsInterface/DisplayGpsInterfaceClosure.puml
-!include DisplayGpsManager/DisplayGpsManagerClosure.puml
-!include DisplayGpsReceiver/DisplayGpsReceiverClosure.puml
-!include DisplayGpsInterfaceImplementation/DisplayGpsInterfaceImplementationClosure.puml
-!include DisplayGpsManagerImplementation/DisplayGpsManagerImplementationClosure.puml
-!include DisplayGpsReceiverImplementation/DisplayGpsReceiverImplementationClosure.puml
+!include DisplayGpsInterface/DisplayGpsInterface_Closure.puml
+!include DisplayGpsManager/DisplayGpsManager_Closure.puml
+!include DisplayGpsReceiver/DisplayGpsReceiver_Closure.puml
+!include DisplayGpsInterfaceImplementation/DisplayGpsInterfaceImplementation_Closure.puml
+!include DisplayGpsManagerImplementation/DisplayGpsManagerImplementation_Closure.puml
+!include DisplayGpsReceiverImplementation/DisplayGpsReceiverImplementation_Closure.puml
 
 @enduml
