@@ -1,0 +1,7 @@
+@startuml Middleware02HelperPackage_Closure
+
+package edu.oakland.helper.middleware02 {
+    
+}
+
+@enduml

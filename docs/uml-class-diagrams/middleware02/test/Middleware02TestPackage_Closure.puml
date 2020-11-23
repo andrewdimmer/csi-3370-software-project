@@ -1,0 +1,7 @@
+@startuml Middleware02TestPackage_Closure
+
+package edu.oakland.test.middleware02 {
+    
+}
+
+@enduml
