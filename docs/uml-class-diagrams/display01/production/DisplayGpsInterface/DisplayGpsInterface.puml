@@ -4,9 +4,11 @@ package edu.oakland.production.display01 {
     interface DisplayGpsInterface {
         __
         .. Use Case 1 ..
-
+        {abstract} + void revieveGPSSignals(Satellite satelliteSignal)
         .. Use Case 2 ..
-
+        {abstract} + void reportGpsSignalLoss(String satelliteName)
+        {abstract} + void recheckSignalStength(String satelliteName)
+        {abstract} + void checkSignalStength(String satelliteName)
     }
 }
 
