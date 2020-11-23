@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'CODEOWNERS'
+  workflow_dispatch:
 jobs:
   validate-codeowners:
     runs-on: ubuntu-latest
