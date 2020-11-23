@@ -4,8 +4,4 @@ package edu.oakland.test.admin {
     
 }
 
-!include LocationDataPointTests/LocationDataPointTests_Closure.puml
-!include SatelliteTests/SatelliteTests_Closure.puml
-!include TrackDataTests/TrackDataTests_Closure.puml
-
 @enduml
