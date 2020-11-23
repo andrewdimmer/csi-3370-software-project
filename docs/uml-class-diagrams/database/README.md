@@ -23,30 +23,30 @@ This subteam owns the following packages:
 
 Below is a diagram of the Database Subteam packages themselves:
 
-![Database Subteam packages](./DatabaseTestPackage.svg)
+![Database Subteam packages](./DatabasePackages.svg)
 
-View larger as [.png](./DatabaseTestPackage.png) or [.svg](./DatabaseTestPackage.svg)
+View larger as [.png](./DatabasePackages.png) or [.svg](./DatabasePackages.svg)
 
 ## Internal Dependencies UML Diagram
 
 Below is a diagram of the internal dependencies within the Database Subteam packages:
 
-![Database Subteam packages Internal Dependencies](./DatabaseTestPackage_InternalDependencies.svg)
+![Database Subteam packages Internal Dependencies](./DatabasePackages_InternalDependencies.svg)
 
-View larger as [.png](./DatabaseTestPackage_InternalDependencies.png) or [.svg](./DatabaseTestPackage_InternalDependencies.svg)
+View larger as [.png](./DatabasePackages_InternalDependencies.png) or [.svg](./DatabasePackages_InternalDependencies.svg)
 
 ## Direct Dependencies UML Diagram
 
 Below is a diagram of the direct dependencies required by the Database Subteam packages:
 
-![Database Subteam packages Direct Dependencies](./DatabaseTestPackage_DirectDependencies.svg)
+![Database Subteam packages Direct Dependencies](./DatabasePackages_DirectDependencies.svg)
 
-View larger as [.png](./DatabaseTestPackage_DirectDependencies.png) or [.svg](./DatabaseTestPackage_DirectDependencies.svg)
+View larger as [.png](./DatabasePackages_DirectDependencies.png) or [.svg](./DatabasePackages_DirectDependencies.svg)
 
 ## Complete Dependency Closure UML Diagram
 
 Below is a diagram of the complete dependencies closure of the Database Subteam packages:
 
-![Database Subteam packages Dependency Closure](./DatabaseTestPackage_Closure.svg)
+![Database Subteam packages Dependency Closure](./DatabasePackages_Closure.svg)
 
-View larger as [.png](./DatabaseTestPackage_Closure.png) or [.svg](./DatabaseTestPackage_Closure.svg)
+View larger as [.png](./DatabasePackages_Closure.png) or [.svg](./DatabasePackages_Closure.svg)
