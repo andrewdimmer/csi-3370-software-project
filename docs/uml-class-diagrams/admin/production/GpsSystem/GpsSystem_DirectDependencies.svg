@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="148px" preserveAspectRatio="none" style="width:299px;height:148px;" version="1.1" viewBox="0 0 299 148" width="299px" zoomAndPan="magnify"><defs><filter height="300%" id="f1nf8499bnhec4" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[8bd6d9786dfa802b1eecfb7372bf244a]
+cluster edu.oakland.production.admin--><polygon fill="#FFFFFF" filter="url(#f1nf8499bnhec4)" points="22,24,267,24,274,46.2969,277,46.2969,277,136,22,136,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="274" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="239" x="26" y="38.9951">edu.oakland.production.admin</text><!--MD5=[5693516634b55e02128e65efbe34c96b]
+class GpsSystems--><rect fill="#FEFECE" filter="url(#f1nf8499bnhec4)" height="60.8047" id="GpsSystems" style="stroke: #A80036; stroke-width: 1.5;" width="202" x="48" y="59"/><ellipse cx="106.75" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M109.7188,80.6406 Q109.1406,80.9375 108.5,81.0781 Q107.8594,81.2344 107.1563,81.2344 Q104.6563,81.2344 103.3281,79.5938 Q102.0156,77.9375 102.0156,74.8125 Q102.0156,71.6875 103.3281,70.0313 Q104.6563,68.375 107.1563,68.375 Q107.8594,68.375 108.5,68.5313 Q109.1563,68.6875 109.7188,68.9844 L109.7188,71.7031 Q109.0938,71.125 108.5,70.8594 Q107.9063,70.5781 107.2813,70.5781 Q105.9375,70.5781 105.25,71.6563 Q104.5625,72.7188 104.5625,74.8125 Q104.5625,76.9063 105.25,77.9844 Q105.9375,79.0469 107.2813,79.0469 Q107.9063,79.0469 108.5,78.7813 Q109.0938,78.5 109.7188,77.9219 L109.7188,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="76" x="127.25" y="79.1543">GpsSystems</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="49" x2="249" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="49" x2="249" y1="99" y2="99"/><ellipse cx="59" cy="110" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="176" x="68" y="113.2104">void userCase2(Scanner input)</text><!--MD5=[c4744661fe376a082ebbe9f7a164e161]
+@startuml GpsSystem_DirectDependencies
+
+
+package edu.oakland.production.admin {
+    class GpsSystems {
+        + void userCase2(Scanner input)
+    }
+}
+
+
+
+
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

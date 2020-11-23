@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="516px" preserveAspectRatio="none" style="width:751px;height:516px;" version="1.1" viewBox="0 0 751 516" width="751px" zoomAndPan="magnify"><defs><filter height="300%" id="f18mwln57i5xxh" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[8bd6d9786dfa802b1eecfb7372bf244a]
+cluster edu.oakland.production.admin--><polygon fill="#FFFFFF" filter="url(#f18mwln57i5xxh)" points="22,24,267,24,274,46.2969,729,46.2969,729,504,22,504,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="274" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="239" x="26" y="38.9951">edu.oakland.production.admin</text><!--MD5=[3c84d2688363deb820fa9437de7249ec]
+class Demo--><rect fill="#FEFECE" filter="url(#f18mwln57i5xxh)" height="308.0938" id="Demo" style="stroke: #A80036; stroke-width: 1.5;" width="442" x="38" y="59"/><ellipse cx="236.75" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M239.7188,80.6406 Q239.1406,80.9375 238.5,81.0781 Q237.8594,81.2344 237.1563,81.2344 Q234.6563,81.2344 233.3281,79.5938 Q232.0156,77.9375 232.0156,74.8125 Q232.0156,71.6875 233.3281,70.0313 Q234.6563,68.375 237.1563,68.375 Q237.8594,68.375 238.5,68.5313 Q239.1563,68.6875 239.7188,68.9844 L239.7188,71.7031 Q239.0938,71.125 238.5,70.8594 Q237.9063,70.5781 237.2813,70.5781 Q235.9375,70.5781 235.25,71.6563 Q234.5625,72.7188 234.5625,74.8125 Q234.5625,76.9063 235.25,77.9844 Q235.9375,79.0469 237.2813,79.0469 Q237.9063,79.0469 238.5,78.7813 Q239.0938,78.5 239.7188,77.9219 L239.7188,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="257.25" y="79.1543">Demo</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="479" y1="91" y2="91"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="115.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="231" x="58" y="122.0151">DisplayGpsInterface displayGpsInterface</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="128.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="227" x="58" y="134.8198">DisplayGpsReceiver displayGpsReceiver</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="141.4141"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="229" x="58" y="147.6245">DisplayGpsManager displayGpsManager</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="154.2188"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="259" x="58" y="160.4292">DisplayCommInterface displayCommInterface</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="167.0234"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="317" x="58" y="173.2339">DisplayComm2WayInterface displayComm2WayInterface</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="179.8281"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="257" x="58" y="186.0386">DisplayCommManager displayCommManager</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="192.6328"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="272" x="58" y="198.8433">MiddlewareGisInterface middlewareGisInterface</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="205.4375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="288" x="58" y="211.6479">MiddlewareGisProcessor middlewareGisProcessor</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="218.2422"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="270" x="58" y="224.4526">MiddlewareGisManager middlewareGisManager</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="231.0469"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="308" x="58" y="237.2573">MiddlewareCommInterface middlewareCommInterface</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="243.8516"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="350" x="58" y="250.062">MiddlewareCommLinkManager middlewareCommLinkManager</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="256.6563"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="416" x="58" y="262.8667">MiddlewareCommDatabaseInterface middlewareCommDatabaseInterface</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="269.4609"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="249" x="58" y="275.6714">DatabaseGisInterface databaseGisInterface</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="282.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="247" x="58" y="288.4761">DatabaseGisManager databaseGisManager</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="295.0703"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="355" x="58" y="301.2808">DatabaseGisPersistentStorage databaseGisPersistentStorage</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="307.875"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="285" x="58" y="314.0854">DatabaseCommInterface databaseCommInterface</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="320.6797"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="283" x="58" y="326.8901">DatabaseCommManager databaseCommManager</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="333.4844"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="391" x="58" y="339.6948">DatabaseCommPersistentStorage databaseCommPersistentStorage</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="189" y1="105.4023" y2="105.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140" x="189" y="108.7104">Main Production Classes</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="329" x2="479" y1="105.4023" y2="105.4023"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="479" y1="346.2891" y2="346.2891"/><ellipse cx="49" cy="357.2891" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="130" x="58" y="360.4995">void main(Sting args[])</text><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect fill="#FEFECE" filter="url(#f18mwln57i5xxh)" height="60.8047" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="197" x="515.5" y="182.5"/><ellipse cx="595.25" cy="198.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M598.2188,204.1406 Q597.6406,204.4375 597,204.5781 Q596.3594,204.7344 595.6563,204.7344 Q593.1563,204.7344 591.8281,203.0938 Q590.5156,201.4375 590.5156,198.3125 Q590.5156,195.1875 591.8281,193.5313 Q593.1563,191.875 595.6563,191.875 Q596.3594,191.875 597,192.0313 Q597.6563,192.1875 598.2188,192.4844 L598.2188,195.2031 Q597.5938,194.625 597,194.3594 Q596.4063,194.0781 595.7813,194.0781 Q594.4375,194.0781 593.75,195.1563 Q593.0625,196.2188 593.0625,198.3125 Q593.0625,200.4063 593.75,201.4844 Q594.4375,202.5469 595.7813,202.5469 Q596.4063,202.5469 597,202.2813 Q597.5938,202 598.2188,201.4219 L598.2188,204.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="615.75" y="202.6543">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="516.5" x2="711.5" y1="214.5" y2="214.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="516.5" x2="711.5" y1="222.5" y2="222.5"/><ellipse cx="526.5" cy="233.5" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="171" x="535.5" y="236.7104">void useCase1(Scanner input)</text><!--MD5=[5693516634b55e02128e65efbe34c96b]
+class GpsSystems--><rect fill="#FEFECE" filter="url(#f18mwln57i5xxh)" height="60.8047" id="GpsSystems" style="stroke: #A80036; stroke-width: 1.5;" width="202" x="158" y="427"/><ellipse cx="216.75" cy="443" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M219.7188,448.6406 Q219.1406,448.9375 218.5,449.0781 Q217.8594,449.2344 217.1563,449.2344 Q214.6563,449.2344 213.3281,447.5938 Q212.0156,445.9375 212.0156,442.8125 Q212.0156,439.6875 213.3281,438.0313 Q214.6563,436.375 217.1563,436.375 Q217.8594,436.375 218.5,436.5313 Q219.1563,436.6875 219.7188,436.9844 L219.7188,439.7031 Q219.0938,439.125 218.5,438.8594 Q217.9063,438.5781 217.2813,438.5781 Q215.9375,438.5781 215.25,439.6563 Q214.5625,440.7188 214.5625,442.8125 Q214.5625,444.9063 215.25,445.9844 Q215.9375,447.0469 217.2813,447.0469 Q217.9063,447.0469 218.5,446.7813 Q219.0938,446.5 219.7188,445.9219 L219.7188,448.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="76" x="237.25" y="447.1543">GpsSystems</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="159" x2="359" y1="459" y2="459"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="159" x2="359" y1="467" y2="467"/><ellipse cx="169" cy="478" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="176" x="178" y="481.2104">void userCase2(Scanner input)</text><!--MD5=[aaa328c6dd499efd34e9a6e207358862]
+link Demo to User--><!--MD5=[dd9b75cda61e33e34f5ca3046756b41e]
+link Demo to GpsSystems--><!--MD5=[7ca354e5e002be5e66dccc1ec099053b]
+@startuml AdminProductionPackage_Closure
+
+package edu.oakland.production.admin {
+
+}
+
+
+
+package edu.oakland.production.admin {
+    class Demo {
+        .. Main Production Classes ..
+        {static} - DisplayGpsInterface displayGpsInterface
+        {static} - DisplayGpsReceiver displayGpsReceiver
+        {static} - DisplayGpsManager displayGpsManager
+        {static} - DisplayCommInterface displayCommInterface
+        {static} - DisplayComm2WayInterface displayComm2WayInterface
+        {static} - DisplayCommManager displayCommManager
+        {static} - MiddlewareGisInterface middlewareGisInterface
+        {static} - MiddlewareGisProcessor middlewareGisProcessor
+        {static} - MiddlewareGisManager middlewareGisManager
+        {static} - MiddlewareCommInterface middlewareCommInterface
+        {static} - MiddlewareCommLinkManager middlewareCommLinkManager
+        {static} - MiddlewareCommDatabaseInterface middlewareCommDatabaseInterface
+        {static} - DatabaseGisInterface databaseGisInterface
+        {static} - DatabaseGisManager databaseGisManager
+        {static} - DatabaseGisPersistentStorage databaseGisPersistentStorage
+        {static} - DatabaseCommInterface databaseCommInterface
+        {static} - DatabaseCommManager databaseCommManager
+        {static} - DatabaseCommPersistentStorage databaseCommPersistentStorage
+        __
+        {static} + void main(Sting args[])
+    }
+}
+
+
+
+
+
+
+
+
+package edu.oakland.production.admin {
+    class User {
+        + void useCase1(Scanner input)
+    }
+}
+
+
+
+
+
+
+
+
+package edu.oakland.production.admin {
+    class GpsSystems {
+        + void userCase2(Scanner input)
+    }
+}
+
+
+
+
+
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>
