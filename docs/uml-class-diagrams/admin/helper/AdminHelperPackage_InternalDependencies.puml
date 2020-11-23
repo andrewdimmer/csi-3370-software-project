@@ -1,0 +1,11 @@
+@startuml AdminHelperPackage_InternalDependencies
+
+package edu.oakland.helper.admin {
+    
+}
+
+!includesub LocationDataPoint/LocationDataPoint_DirectDependencies.puml!ADMIN_HELPER
+!includesub Satellite/Satellite_DirectDependencies.puml!ADMIN_HELPER
+!includesub TrackData/TrackData_DirectDependencies.puml!ADMIN_HELPER
+
+@enduml

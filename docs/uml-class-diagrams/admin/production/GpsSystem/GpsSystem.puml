@@ -1,0 +1,9 @@
+@startuml GpsSystem
+
+package edu.oakland.production.admin {
+    class GpsSystems {
+        + void userCase2(Scanner input)
+    }
+}
+
+@enduml

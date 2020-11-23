@@ -1,0 +1,18 @@
+@startuml AdminTestPackage_DirectDependencies
+
+package edu.oakland.test.admin {
+    
+}
+
+!startsub ADMIN
+!include AdminTestPackage_InternalDependencies.puml
+!includesub LocationDataPointTests/LocationDataPointTests_DirectDependencies.puml!ADMIN
+!includesub SatelliteTests/SatelliteTests_DirectDependencies.puml!ADMIN
+!includesub TrackDataTests/TrackDataTests_DirectDependencies.puml!ADMIN
+!endsub
+
+!includesub LocationDataPointTests/LocationDataPointTests_DirectDependencies.puml!OTHER
+!includesub SatelliteTests/SatelliteTests_DirectDependencies.puml!OTHER
+!includesub TrackDataTests/TrackDataTests_DirectDependencies.puml!OTHER
+
+@enduml

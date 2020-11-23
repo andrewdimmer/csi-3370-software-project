@@ -1,0 +1,15 @@
+@startuml Satellite_Closure
+
+!startsub ADMIN_HELPER
+!include Satellite.puml
+!endsub
+
+!startsub ADMIN
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

@@ -1,0 +1,9 @@
+@startuml User
+
+package edu.oakland.production.admin {
+    class User {
+        + void useCase1(Scanner input)
+    }
+}
+
+@enduml

@@ -1,0 +1,29 @@
+@startuml Demo
+
+package edu.oakland.production.admin {
+    class Demo {
+        .. Main Production Classes ..
+        {static} - DisplayGpsInterface displayGpsInterface
+        {static} - DisplayGpsReceiver displayGpsReceiver
+        {static} - DisplayGpsManager displayGpsManager
+        {static} - DisplayCommInterface displayCommInterface
+        {static} - DisplayComm2WayInterface displayComm2WayInterface
+        {static} - DisplayCommManager displayCommManager
+        {static} - MiddlewareGisInterface middlewareGisInterface
+        {static} - MiddlewareGisProcessor middlewareGisProcessor
+        {static} - MiddlewareGisManager middlewareGisManager
+        {static} - MiddlewareCommInterface middlewareCommInterface
+        {static} - MiddlewareCommLinkManager middlewareCommLinkManager
+        {static} - MiddlewareCommDatabaseInterface middlewareCommDatabaseInterface
+        {static} - DatabaseGisInterface databaseGisInterface
+        {static} - DatabaseGisManager databaseGisManager
+        {static} - DatabaseGisPersistentStorage databaseGisPersistentStorage
+        {static} - DatabaseCommInterface databaseCommInterface
+        {static} - DatabaseCommManager databaseCommManager
+        {static} - DatabaseCommPersistentStorage databaseCommPersistentStorage
+        __
+        {static} + void main(Sting args[])
+    }
+}
+
+@enduml

@@ -1,0 +1,36 @@
+# UML Class Diagrams: edu.oakland.production.admin.GpsSystem
+
+**Primary Owner:** Brendan Fraser, Project SCRUM Master ([@brendanfraser597](https://github.com/brendanfraser597/))
+
+**Secondary Owners:**
+
+- Tessa Peruzzi, Project SCRUM Assistant Master ([@TessaPeruzzi](https://github.com/TessaPeruzzi/))
+- Andrew Dimmer, Project SCRUM Integration Master ([@andrewdimmer](https://github.com/andrewdimmer/))
+
+## Purpose
+
+This class shall...
+
+## Class UML Diagram
+
+Below is a diagram of the GpsSystem class itself:
+
+![GpsSystem](./GpsSystem.svg)
+
+View larger as [.png](./GpsSystem.png) or [.svg](./GpsSystem.svg)
+
+## Direct Dependencies UML Diagram
+
+Below is a diagram of the direct dependencies required by the GpsSystem class:
+
+![GpsSystem Direct Dependencies](./GpsSystem_DirectDependencies.svg)
+
+View larger as [.png](./GpsSystem_DirectDependencies.png) or [.svg](./GpsSystem_DirectDependencies.svg)
+
+## Complete Dependency Closure UML Diagram
+
+Below is a diagram of the complete dependencies closure of the GpsSystem class:
+
+![GpsSystem Dependency Closure](./GpsSystem_Closure.svg)
+
+View larger as [.png](./GpsSystem_Closure.png) or [.svg](./GpsSystem_Closure.svg)

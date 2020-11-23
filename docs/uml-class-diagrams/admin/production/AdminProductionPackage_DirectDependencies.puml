@@ -1,0 +1,18 @@
+@startuml AdminProductionPackage_DirectDependencies
+
+package edu.oakland.production.admin {
+
+}
+
+!startsub ADMIN
+!include AdminProductionPackage_InternalDependencies.puml
+!includesub Demo/Demo_DirectDependencies.puml!ADMIN
+!includesub User/User_DirectDependencies.puml!ADMIN
+!includesub GpsSystem/GpsSystem_DirectDependencies.puml!ADMIN
+!endsub
+
+!includesub Demo/Demo_DirectDependencies.puml!OTHER
+!includesub User/User_DirectDependencies.puml!OTHER
+!includesub GpsSystem/GpsSystem_DirectDependencies.puml!OTHER
+
+@enduml
