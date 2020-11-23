@@ -2,7 +2,7 @@ name: GitHub CODEOWNERS Validator
 on:
   push:
     paths:
-      - './github/CODEOWNERS'
+      - 'CODEOWNERS'
 jobs:
   validate-codeowners:
     runs-on: ubuntu-latest
