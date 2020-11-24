@@ -1,0 +1,13 @@
+@startuml DatabasePersistentStorageImplementation
+
+package edu.oakland.production.database {
+    class DatabasePersistentStorageImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+@enduml

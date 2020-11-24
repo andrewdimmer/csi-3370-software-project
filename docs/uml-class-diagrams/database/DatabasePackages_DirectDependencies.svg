@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="451px" preserveAspectRatio="none" style="width:2658px;height:451px;" version="1.1" viewBox="0 0 2658 451" width="2658px" zoomAndPan="magnify"><defs><filter height="300%" id="f1d6qz0veiyvaj" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[c2e276049abfe145c9906edb061abd32]
+cluster edu.oakland.production.database--><polygon fill="#FFFFFF" filter="url(#f1d6qz0veiyvaj)" points="538.5,24,808.5,24,815.5,46.2969,2636.5,46.2969,2636.5,439,538.5,439,538.5,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="538.5" x2="815.5" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="264" x="542.5" y="38.9951">edu.oakland.production.database</text><!--MD5=[6d34700a22f737f940b471daa4ac1202]
+class DatabaseCommInterface--><rect fill="#FEFECE" filter="url(#f1d6qz0veiyvaj)" height="128.8281" id="DatabaseCommInterface" style="stroke: #A80036; stroke-width: 1.5;" width="398" x="554.5" y="86.5"/><ellipse cx="671.75" cy="102.5" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M667.6719,98.2656 L667.6719,96.1094 L675.0625,96.1094 L675.0625,98.2656 L672.5938,98.2656 L672.5938,106.3438 L675.0625,106.3438 L675.0625,108.5 L667.6719,108.5 L667.6719,106.3438 L670.1406,106.3438 L670.1406,98.2656 L667.6719,98.2656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="155" x="692.25" y="106.6543">DatabaseCommInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="555.5" x2="951.5" y1="118.5" y2="118.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="555.5" x2="951.5" y1="126.5" y2="126.5"/><ellipse cx="565.5" cy="154.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="156" x="574.5" y="157.5151">int receiveGetRfidRequest()</text><ellipse cx="565.5" cy="167.1094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="372" x="574.5" y="170.3198">LocationDataPoint receiveGetLocationDataPointRequest(int offset)</text><ellipse cx="565.5" cy="179.9141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="284" x="574.5" y="183.1245">TrackData receiveGetTrackDataRequest(int offset)</text><ellipse cx="565.5" cy="192.7188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="283" x="574.5" y="195.9292">void storeTrackDataRequest(TrackData trackData)</text><ellipse cx="565.5" cy="205.5234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="183" x="574.5" y="208.7339">String receiveGetModeRequest()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="555.5" x2="720.5" y1="140.9023" y2="140.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="720.5" y="144.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="786.5" x2="951.5" y1="140.9023" y2="140.9023"/><!--MD5=[3cbc5f43b2184d452c2937ae0a744eb6]
+class DatabaseCommManager--><rect fill="#FEFECE" filter="url(#f1d6qz0veiyvaj)" height="128.8281" id="DatabaseCommManager" style="stroke: #A80036; stroke-width: 1.5;" width="382" x="987.5" y="86.5"/><ellipse cx="1097.75" cy="102.5" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1093.6719,98.2656 L1093.6719,96.1094 L1101.0625,96.1094 L1101.0625,98.2656 L1098.5938,98.2656 L1098.5938,106.3438 L1101.0625,106.3438 L1101.0625,108.5 L1093.6719,108.5 L1093.6719,106.3438 L1096.1406,106.3438 L1096.1406,98.2656 L1093.6719,98.2656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="153" x="1118.25" y="106.6543">DatabaseCommManager</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="988.5" x2="1368.5" y1="118.5" y2="118.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="988.5" x2="1368.5" y1="126.5" y2="126.5"/><ellipse cx="998.5" cy="154.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="140" x="1007.5" y="157.5151">int passGetRfidRequest()</text><ellipse cx="998.5" cy="167.1094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="356" x="1007.5" y="170.3198">LocationDataPoint passGetLocationDataPointRequest(int offset)</text><ellipse cx="998.5" cy="179.9141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="268" x="1007.5" y="183.1245">TrackData passGetTrackDataRequest(int offset)</text><ellipse cx="998.5" cy="192.7188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="310" x="1007.5" y="195.9292">void passStoreTrackDataRequest(TrackData trackData)</text><ellipse cx="998.5" cy="205.5234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="167" x="1007.5" y="208.7339">String passGetModeRequest()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="988.5" x2="1145.5" y1="140.9023" y2="140.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1145.5" y="144.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1211.5" x2="1368.5" y1="140.9023" y2="140.9023"/><!--MD5=[3bff7e01a405ec7c4802abd699e27172]
+class DatabaseGisInterface--><rect fill="#FEFECE" filter="url(#f1d6qz0veiyvaj)" height="120.0234" id="DatabaseGisInterface" style="stroke: #A80036; stroke-width: 1.5;" width="383" x="1405" y="91"/><ellipse cx="1524.75" cy="107" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1520.6719,102.7656 L1520.6719,100.6094 L1528.0625,100.6094 L1528.0625,102.7656 L1525.5938,102.7656 L1525.5938,110.8438 L1528.0625,110.8438 L1528.0625,113 L1520.6719,113 L1520.6719,110.8438 L1523.1406,110.8438 L1523.1406,102.7656 L1520.6719,102.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="135" x="1545.25" y="111.1543">DatabaseGisInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1406" x2="1787" y1="123" y2="123"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1406" x2="1787" y1="131" y2="131"/><ellipse cx="1416" cy="158.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="357" x="1425" y="162.0151">void recieveStoreRequest(LocationDataPoint locationDataPoint)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1406" x2="1563.5" y1="145.4023" y2="145.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1563.5" y="148.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1629.5" x2="1787" y1="145.4023" y2="145.4023"/><ellipse cx="1416" cy="188.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="232" x="1425" y="191.6245">String recieveModeRequest(String mode)</text><ellipse cx="1416" cy="201.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="273" x="1425" y="204.4292">String recieveNextSatRequest(String currentSat)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1406" x2="1563.5" y1="175.0117" y2="175.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1563.5" y="178.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1629.5" x2="1787" y1="175.0117" y2="175.0117"/><!--MD5=[a9fcaa89db220a1b0201406d1ae34ee7]
+class DatabaseGisManager--><rect fill="#FEFECE" filter="url(#f1d6qz0veiyvaj)" height="120.0234" id="DatabaseGisManager" style="stroke: #A80036; stroke-width: 1.5;" width="367" x="1823" y="91"/><ellipse cx="1935.75" cy="107" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1931.6719,102.7656 L1931.6719,100.6094 L1939.0625,100.6094 L1939.0625,102.7656 L1936.5938,102.7656 L1936.5938,110.8438 L1939.0625,110.8438 L1939.0625,113 L1931.6719,113 L1931.6719,110.8438 L1934.1406,110.8438 L1934.1406,102.7656 L1931.6719,102.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="133" x="1956.25" y="111.1543">DatabaseGisManager</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1824" x2="2189" y1="123" y2="123"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1824" x2="2189" y1="131" y2="131"/><ellipse cx="1834" cy="158.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="341" x="1843" y="162.0151">void passStoreRequest(LocationDataPoint locationDataPoint)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1824" x2="1973.5" y1="145.4023" y2="145.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1973.5" y="148.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2039.5" x2="2189" y1="145.4023" y2="145.4023"/><ellipse cx="1834" cy="188.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="207" x="1843" y="191.6245">void passModeRequest(String mode)</text><ellipse cx="1834" cy="201.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="257" x="1843" y="204.4292">String passNextSatRequest(String currentSat)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1824" x2="1973.5" y1="175.0117" y2="175.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1973.5" y="178.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2039.5" x2="2189" y1="175.0117" y2="175.0117"/><!--MD5=[d8df6b105e82f698e3603261466f245f]
+class DatabasePersistentStorage--><rect fill="#FEFECE" filter="url(#f1d6qz0veiyvaj)" height="184.0469" id="DatabasePersistentStorage" style="stroke: #A80036; stroke-width: 1.5;" width="395" x="2225" y="59"/><ellipse cx="2332.75" cy="75" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M2328.6719,70.7656 L2328.6719,68.6094 L2336.0625,68.6094 L2336.0625,70.7656 L2333.5938,70.7656 L2333.5938,78.8438 L2336.0625,78.8438 L2336.0625,81 L2328.6719,81 L2328.6719,78.8438 L2331.1406,78.8438 L2331.1406,70.7656 L2328.6719,70.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="171" x="2353.25" y="79.1543">DatabasePersistentStorage</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2226" x2="2619" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="2226" x2="2619" y1="99" y2="99"/><ellipse cx="2236" cy="126.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="108" x="2245" y="130.0151">int locateRfidData()</text><ellipse cx="2236" cy="139.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="282" x="2245" y="142.8198">LocationDataPoint getLocationDataPoint(int offset)</text><ellipse cx="2236" cy="152.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="369" x="2245" y="155.6245">void storeLocationDataPoint(LocationDataPoint locationDataPoint)</text><ellipse cx="2236" cy="165.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="194" x="2245" y="168.4292">TrackData getTrackData(int offset)</text><ellipse cx="2236" cy="178.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="237" x="2245" y="181.2339">void storeTrackData(TrackData trackData)</text><ellipse cx="2236" cy="190.8281" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="93" x="2245" y="194.0386">String getMode()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2226" x2="2389.5" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="2389.5" y="116.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2455.5" x2="2619" y1="113.4023" y2="113.4023"/><ellipse cx="2236" cy="220.4375" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="164" x="2245" y="223.6479">void storeMode(String mode)</text><ellipse cx="2236" cy="233.2422" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="203" x="2245" y="236.4526">String getNextSat(String currentSat)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2226" x2="2389.5" y1="207.0352" y2="207.0352"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="2389.5" y="210.3433">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2455.5" x2="2619" y1="207.0352" y2="207.0352"/><!--MD5=[9f85d6b15dbd6dc4f6cf7395c0833d14]
+class DatabaseCommInterfaceImplementation--><rect fill="#FEFECE" filter="url(#f1d6qz0veiyvaj)" height="107.2188" id="DatabaseCommInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="284" x="611.5" y="309.5"/><ellipse cx="626.5" cy="325.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M629.4688,331.1406 Q628.8906,331.4375 628.25,331.5781 Q627.6094,331.7344 626.9063,331.7344 Q624.4063,331.7344 623.0781,330.0938 Q621.7656,328.4375 621.7656,325.3125 Q621.7656,322.1875 623.0781,320.5313 Q624.4063,318.875 626.9063,318.875 Q627.6094,318.875 628.25,319.0313 Q628.9063,319.1875 629.4688,319.4844 L629.4688,322.2031 Q628.8438,321.625 628.25,321.3594 Q627.6563,321.0781 627.0313,321.0781 Q625.6875,321.0781 625,322.1563 Q624.3125,323.2188 624.3125,325.3125 Q624.3125,327.4063 625,328.4844 Q625.6875,329.5469 627.0313,329.5469 Q627.6563,329.5469 628.25,329.2813 Q628.8438,329 629.4688,328.4219 L629.4688,331.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="252" x="640.5" y="329.6543">DatabaseCommInterfaceImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="612.5" x2="894.5" y1="341.5" y2="341.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="612.5" x2="894.5" y1="349.5" y2="349.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="621.5" y="380.5151"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="612.5" x2="720.5" y1="363.9023" y2="363.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="720.5" y="367.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="786.5" x2="894.5" y1="363.9023" y2="363.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="621.5" y="410.1245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="612.5" x2="720.5" y1="393.5117" y2="393.5117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="720.5" y="396.8198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="786.5" x2="894.5" y1="393.5117" y2="393.5117"/><!--MD5=[e62c039a107b929dc588966558a86fd5]
+class DatabaseCommManagerImplementation--><rect fill="#FEFECE" filter="url(#f1d6qz0veiyvaj)" height="107.2188" id="DatabaseCommManagerImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="283" x="1037" y="309.5"/><ellipse cx="1052" cy="325.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1054.9688,331.1406 Q1054.3906,331.4375 1053.75,331.5781 Q1053.1094,331.7344 1052.4063,331.7344 Q1049.9063,331.7344 1048.5781,330.0938 Q1047.2656,328.4375 1047.2656,325.3125 Q1047.2656,322.1875 1048.5781,320.5313 Q1049.9063,318.875 1052.4063,318.875 Q1053.1094,318.875 1053.75,319.0313 Q1054.4063,319.1875 1054.9688,319.4844 L1054.9688,322.2031 Q1054.3438,321.625 1053.75,321.3594 Q1053.1563,321.0781 1052.5313,321.0781 Q1051.1875,321.0781 1050.5,322.1563 Q1049.8125,323.2188 1049.8125,325.3125 Q1049.8125,327.4063 1050.5,328.4844 Q1051.1875,329.5469 1052.5313,329.5469 Q1053.1563,329.5469 1053.75,329.2813 Q1054.3438,329 1054.9688,328.4219 L1054.9688,331.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="251" x="1066" y="329.6543">DatabaseCommManagerImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1038" x2="1319" y1="341.5" y2="341.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1038" x2="1319" y1="349.5" y2="349.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="1047" y="380.5151"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1038" x2="1145.5" y1="363.9023" y2="363.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1145.5" y="367.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1211.5" x2="1319" y1="363.9023" y2="363.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="1047" y="410.1245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1038" x2="1145.5" y1="393.5117" y2="393.5117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1145.5" y="396.8198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1211.5" x2="1319" y1="393.5117" y2="393.5117"/><!--MD5=[08068c224d75f5ca94e2833221bd6445]
+class DatabaseGisInterfaceImplementation--><rect fill="#FEFECE" filter="url(#f1d6qz0veiyvaj)" height="120.0234" id="DatabaseGisInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="382" x="1404.5" y="303"/><ellipse cx="1474.75" cy="319" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1477.7188,324.6406 Q1477.1406,324.9375 1476.5,325.0781 Q1475.8594,325.2344 1475.1563,325.2344 Q1472.6563,325.2344 1471.3281,323.5938 Q1470.0156,321.9375 1470.0156,318.8125 Q1470.0156,315.6875 1471.3281,314.0313 Q1472.6563,312.375 1475.1563,312.375 Q1475.8594,312.375 1476.5,312.5313 Q1477.1563,312.6875 1477.7188,312.9844 L1477.7188,315.7031 Q1477.0938,315.125 1476.5,314.8594 Q1475.9063,314.5781 1475.2813,314.5781 Q1473.9375,314.5781 1473.25,315.6563 Q1472.5625,316.7188 1472.5625,318.8125 Q1472.5625,320.9063 1473.25,321.9844 Q1473.9375,323.0469 1475.2813,323.0469 Q1475.9063,323.0469 1476.5,322.7813 Q1477.0938,322.5 1477.7188,321.9219 L1477.7188,324.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="233" x="1495.25" y="323.1543">DatabaseGisInterfaceImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1405.5" x2="1785.5" y1="335" y2="335"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1405.5" x2="1785.5" y1="343" y2="343"/><ellipse cx="1415.5" cy="370.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="356" x="1424.5" y="374.0151">void recieveStoreRequest(LocationDataPoint locationDataPoint)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1405.5" x2="1562.5" y1="357.4023" y2="357.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1562.5" y="360.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1628.5" x2="1785.5" y1="357.4023" y2="357.4023"/><ellipse cx="1415.5" cy="400.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="222" x="1424.5" y="403.6245">void recieveModeRequest(String mode)</text><ellipse cx="1415.5" cy="413.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="275" x="1424.5" y="416.4292">String recieveNextSatRequest(String currentSat)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1405.5" x2="1562.5" y1="387.0117" y2="387.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1562.5" y="390.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1628.5" x2="1785.5" y1="387.0117" y2="387.0117"/><!--MD5=[cb27e8f56b23a96be3f83add8518c141]
+class DatabaseGisManagerImplementation--><rect fill="#FEFECE" filter="url(#f1d6qz0veiyvaj)" height="120.0234" id="DatabaseGisManagerImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="369" x="1822" y="303"/><ellipse cx="1886.25" cy="319" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1889.2188,324.6406 Q1888.6406,324.9375 1888,325.0781 Q1887.3594,325.2344 1886.6563,325.2344 Q1884.1563,325.2344 1882.8281,323.5938 Q1881.5156,321.9375 1881.5156,318.8125 Q1881.5156,315.6875 1882.8281,314.0313 Q1884.1563,312.375 1886.6563,312.375 Q1887.3594,312.375 1888,312.5313 Q1888.6563,312.6875 1889.2188,312.9844 L1889.2188,315.7031 Q1888.5938,315.125 1888,314.8594 Q1887.4063,314.5781 1886.7813,314.5781 Q1885.4375,314.5781 1884.75,315.6563 Q1884.0625,316.7188 1884.0625,318.8125 Q1884.0625,320.9063 1884.75,321.9844 Q1885.4375,323.0469 1886.7813,323.0469 Q1887.4063,323.0469 1888,322.7813 Q1888.5938,322.5 1889.2188,321.9219 L1889.2188,324.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="232" x="1906.75" y="323.1543">DatabaseGisManagerImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1823" x2="2190" y1="335" y2="335"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1823" x2="2190" y1="343" y2="343"/><ellipse cx="1833" cy="370.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="343" x="1842" y="374.0151">void passStoreRequest(LocationDataPoint locationDataPoint)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1823" x2="1973.5" y1="357.4023" y2="357.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1973.5" y="360.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2039.5" x2="2190" y1="357.4023" y2="357.4023"/><ellipse cx="1833" cy="400.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="209" x="1842" y="403.6245">void passModeRequest(String mode)</text><ellipse cx="1833" cy="413.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="262" x="1842" y="416.4292">String passNextSatRequest(String currentSat)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1823" x2="1973.5" y1="387.0117" y2="387.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1973.5" y="390.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2039.5" x2="2190" y1="387.0117" y2="387.0117"/><!--MD5=[6c3ae89235db7efba3a5d8ea9fd47e2d]
+class DatabasePersistentStorageImplementation--><rect fill="#FEFECE" filter="url(#f1d6qz0veiyvaj)" height="107.2188" id="DatabasePersistentStorageImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="304" x="2270.5" y="309.5"/><ellipse cx="2285.5" cy="325.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M2288.4688,331.1406 Q2287.8906,331.4375 2287.25,331.5781 Q2286.6094,331.7344 2285.9063,331.7344 Q2283.4063,331.7344 2282.0781,330.0938 Q2280.7656,328.4375 2280.7656,325.3125 Q2280.7656,322.1875 2282.0781,320.5313 Q2283.4063,318.875 2285.9063,318.875 Q2286.6094,318.875 2287.25,319.0313 Q2287.9063,319.1875 2288.4688,319.4844 L2288.4688,322.2031 Q2287.8438,321.625 2287.25,321.3594 Q2286.6563,321.0781 2286.0313,321.0781 Q2284.6875,321.0781 2284,322.1563 Q2283.3125,323.2188 2283.3125,325.3125 Q2283.3125,327.4063 2284,328.4844 Q2284.6875,329.5469 2286.0313,329.5469 Q2286.6563,329.5469 2287.25,329.2813 Q2287.8438,329 2288.4688,328.4219 L2288.4688,331.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="272" x="2299.5" y="329.6543">DatabasePersistentStorageImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2271.5" x2="2573.5" y1="341.5" y2="341.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="2271.5" x2="2573.5" y1="349.5" y2="349.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="2280.5" y="380.5151"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2271.5" x2="2389.5" y1="363.9023" y2="363.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="2389.5" y="367.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2455.5" x2="2573.5" y1="363.9023" y2="363.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="2280.5" y="410.1245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2271.5" x2="2389.5" y1="393.5117" y2="393.5117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="2389.5" y="396.8198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2455.5" x2="2573.5" y1="393.5117" y2="393.5117"/><polygon fill="#FFFFFF" filter="url(#f1d6qz0veiyvaj)" points="6,124.5,221,124.5,228,146.7969,235,146.7969,235,177.0938,6,177.0938,6,124.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="6" x2="228" y1="146.7969" y2="146.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="209" x="10" y="139.4951">edu.oakland.test.database</text><polygon fill="#FFFFFF" filter="url(#f1d6qz0veiyvaj)" points="270,124.5,505,124.5,512,146.7969,519,146.7969,519,177.0938,270,177.0938,270,124.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="270" x2="512" y1="146.7969" y2="146.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="229" x="274" y="139.4951">edu.oakland.helper.database</text><!--MD5=[b29619f0f1793d2973c3ae8f2ae417a7]
+reverse link DatabaseCommInterface to DatabaseCommInterfaceImplementation--><path d="M753.5,235.86 C753.5,260.63 753.5,287.02 753.5,309.24 " fill="none" id="DatabaseCommInterface&lt;-DatabaseCommInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="746.5,235.58,753.5,215.58,760.5,235.58,746.5,235.58" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[a58b2e4b707a50c1d2b096e4059ce319]
+reverse link DatabaseCommManager to DatabaseCommManagerImplementation--><path d="M1178.5,235.86 C1178.5,260.63 1178.5,287.02 1178.5,309.24 " fill="none" id="DatabaseCommManager&lt;-DatabaseCommManagerImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="1171.5,235.58,1178.5,215.58,1185.5,235.58,1171.5,235.58" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[8fafe5e46f3a559c7888846384f84dbe]
+reverse link DatabaseGisInterface to DatabaseGisInterfaceImplementation--><path d="M1596.12,231.26 C1596.01,254.94 1595.89,280.49 1595.78,302.66 " fill="none" id="DatabaseGisInterface&lt;-DatabaseGisInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="1589.12,231.02,1596.22,211.06,1603.12,231.09,1589.12,231.02" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4b9ab9aeff5ade3c5ddb67bcb023b127]
+reverse link DatabaseGisManager to DatabaseGisManagerImplementation--><path d="M2006.5,231.26 C2006.5,254.94 2006.5,280.49 2006.5,302.66 " fill="none" id="DatabaseGisManager&lt;-DatabaseGisManagerImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="1999.5,231.06,2006.5,211.06,2013.5,231.06,1999.5,231.06" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[eb0961a570d8086d40299e5221360d47]
+reverse link DatabasePersistentStorage to DatabasePersistentStorageImplementation--><path d="M2422.5,263.42 C2422.5,279.4 2422.5,295.17 2422.5,309.26 " fill="none" id="DatabasePersistentStorage&lt;-DatabasePersistentStorageImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="2415.5,263.19,2422.5,243.19,2429.5,263.19,2415.5,263.19" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6134d05473b772bbbe8495eb486b0e90]
+@startuml DatabasePackages_DirectDependencies
+
+
+package edu.oakland.production.database {
+    
+}
+
+
+package edu.oakland.production.database {
+    
+}
+
+
+package edu.oakland.production.database {
+    interface DatabaseCommInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + int receiveGetRfidRequest()
+        {abstract} + LocationDataPoint receiveGetLocationDataPointRequest(int offset)
+        {abstract} + TrackData receiveGetTrackDataRequest(int offset)
+        {abstract} + void storeTrackDataRequest(TrackData trackData)
+        {abstract} + String receiveGetModeRequest()
+    }
+}
+
+
+package edu.oakland.production.database {
+    interface DatabaseCommManager {
+        __
+        .. Use Case 1 ..
+        {abstract} + int passGetRfidRequest()
+        {abstract} + LocationDataPoint passGetLocationDataPointRequest(int offset)
+        {abstract} + TrackData passGetTrackDataRequest(int offset)
+        {abstract} + void passStoreTrackDataRequest(TrackData trackData)
+        {abstract} + String passGetModeRequest()
+    }
+}
+
+
+package edu.oakland.production.database {
+    interface DatabaseGisInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + void recieveStoreRequest(LocationDataPoint locationDataPoint)
+        .. Use Case 2 ..
+        {abstract} + String recieveModeRequest(String mode)
+        {abstract} + String recieveNextSatRequest(String currentSat)
+    }
+}
+
+
+package edu.oakland.production.database {
+    interface DatabaseGisManager {
+        __
+        .. Use Case 1 ..
+        {abstract} + void passStoreRequest(LocationDataPoint locationDataPoint)
+        .. Use Case 2 ..
+        {abstract} + void passModeRequest(String mode)
+        {abstract} + String passNextSatRequest(String currentSat)
+    }
+}
+
+
+package edu.oakland.production.database {
+    interface DatabasePersistentStorage {
+        __
+        .. Use Case 1 ..
+        {abstract} + int locateRfidData()
+        {abstract} + LocationDataPoint getLocationDataPoint(int offset)
+        {abstract} + void storeLocationDataPoint(LocationDataPoint locationDataPoint)
+        {abstract} + TrackData getTrackData(int offset)
+        {abstract} + void storeTrackData(TrackData trackData)
+        {abstract} + String getMode()
+        .. Use Case 2 ..
+        {abstract} + void storeMode(String mode)
+        {abstract} + String getNextSat(String currentSat)
+    }
+}
+
+
+package edu.oakland.production.database {
+    class DatabaseCommInterfaceImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+
+DatabaseCommInterfaceImplementation .up.|> DatabaseCommInterface
+
+package edu.oakland.production.database {
+    class DatabaseCommManagerImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+
+DatabaseCommManagerImplementation .up.|> DatabaseCommManager
+
+package edu.oakland.production.database {
+    class DatabaseGisInterfaceImplementation {
+        __
+        .. Use Case 1 ..
+        + void recieveStoreRequest(LocationDataPoint locationDataPoint)
+        .. Use Case 2 ..
+        + void recieveModeRequest(String mode)
+        + String recieveNextSatRequest(String currentSat)
+    }
+}
+
+
+DatabaseGisInterfaceImplementation .up.|> DatabaseGisInterface
+
+package edu.oakland.production.database {
+    class DatabaseGisManagerImplementation {
+        __
+        .. Use Case 1 ..
+        + void passStoreRequest(LocationDataPoint locationDataPoint)
+        .. Use Case 2 ..
+        + void passModeRequest(String mode)
+        + String passNextSatRequest(String currentSat)
+    }
+}
+
+
+DatabaseGisManagerImplementation .up.|> DatabaseGisManager
+
+package edu.oakland.production.database {
+    class DatabasePersistentStorageImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+
+DatabasePersistentStorageImplementation .up.|> DatabasePersistentStorage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package edu.oakland.test.database {
+    
+}
+
+
+package edu.oakland.test.database {
+    
+}
+
+
+
+package edu.oakland.helper.database {
+    
+}
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

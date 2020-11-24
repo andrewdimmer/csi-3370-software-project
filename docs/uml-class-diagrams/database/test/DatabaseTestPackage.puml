@@ -1,0 +1,7 @@
+@startuml DatabaseTestPackage
+
+package edu.oakland.test.database {
+    
+}
+
+@enduml

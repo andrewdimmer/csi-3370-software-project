@@ -1,0 +1,19 @@
+@startuml DatabasePersistentStorage
+
+package edu.oakland.production.database {
+    interface DatabasePersistentStorage {
+        __
+        .. Use Case 1 ..
+        {abstract} + int locateRfidData()
+        {abstract} + LocationDataPoint getLocationDataPoint(int offset)
+        {abstract} + void storeLocationDataPoint(LocationDataPoint locationDataPoint)
+        {abstract} + TrackData getTrackData(int offset)
+        {abstract} + void storeTrackData(TrackData trackData)
+        {abstract} + String getMode()
+        .. Use Case 2 ..
+        {abstract} + void storeMode(String mode)
+        {abstract} + String getNextSat(String currentSat)
+    }
+}
+
+@enduml

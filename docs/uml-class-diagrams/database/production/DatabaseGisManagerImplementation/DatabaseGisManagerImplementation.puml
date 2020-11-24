@@ -1,0 +1,14 @@
+@startuml DatabaseGisManagerImplementation
+
+package edu.oakland.production.database {
+    class DatabaseGisManagerImplementation {
+        __
+        .. Use Case 1 ..
+        + void passStoreRequest(LocationDataPoint locationDataPoint)
+        .. Use Case 2 ..
+        + void passModeRequest(String mode)
+        + String passNextSatRequest(String currentSat)
+    }
+}
+
+@enduml

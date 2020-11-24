@@ -1,0 +1,15 @@
+@startuml DatabaseGisManager_DirectDependencies
+
+!startsub DATABASE_PRODUCTION
+!include DatabaseGisManager.puml
+!endsub
+
+!startsub DATABASE
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

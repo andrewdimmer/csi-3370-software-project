@@ -1,0 +1,14 @@
+@startuml DatabaseGisInterface
+
+package edu.oakland.production.database {
+    interface DatabaseGisInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + void recieveStoreRequest(LocationDataPoint locationDataPoint)
+        .. Use Case 2 ..
+        {abstract} + String recieveModeRequest(String mode)
+        {abstract} + String recieveNextSatRequest(String currentSat)
+    }
+}
+
+@enduml

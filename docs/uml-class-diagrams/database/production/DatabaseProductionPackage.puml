@@ -1,0 +1,18 @@
+@startuml DatabaseProductionPackage
+
+package edu.oakland.production.database {
+
+}
+
+!include DatabaseCommInterface/DatabaseCommInterface.puml
+!include DatabaseCommManager/DatabaseCommManager.puml
+!include DatabaseGisInterface/DatabaseGisInterface.puml
+!include DatabaseGisManager/DatabaseGisManager.puml
+!include DatabasePersistentStorage/DatabasePersistentStorage.puml
+!include DatabaseCommInterfaceImplementation/DatabaseCommInterfaceImplementation.puml
+!include DatabaseCommManagerImplementation/DatabaseCommManagerImplementation.puml
+!include DatabaseGisInterfaceImplementation/DatabaseGisInterfaceImplementation.puml
+!include DatabaseGisManagerImplementation/DatabaseGisManagerImplementation.puml
+!include DatabasePersistentStorageImplementation/DatabasePersistentStorageImplementation.puml
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml DatabaseHelperPackage_InternalDependencies
+
+package edu.oakland.helper.database {
+    
+}
+
+@enduml

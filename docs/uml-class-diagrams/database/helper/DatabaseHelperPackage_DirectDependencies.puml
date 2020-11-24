@@ -1,0 +1,11 @@
+@startuml DatabaseHelperPackage_DirectDependencies
+
+package edu.oakland.helper.database {
+    
+}
+
+!startsub DATABASE
+!include DatabaseHelperPackage_InternalDependencies.puml
+!endsub
+
+@enduml
