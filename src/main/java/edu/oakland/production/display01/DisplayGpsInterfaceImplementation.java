@@ -1,8 +1,8 @@
-package main.java.edu.oakland.production;
+package edu.oakland.production;
 
 import edu.oakland.helper.admin.Satellite;
 
-public class DisplayGpsInterfaceImplemention implements DisplayGpsInterface {
+public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
 
   public void recieveGpsSingnals(Satellite satelliteSignal) {
 

@@ -1,4 +1,4 @@
-package main.java.edu.oakland.production;
+package edu.oakland.production;
 
 import edu.oakland.helper.admin.Satellite;
 
