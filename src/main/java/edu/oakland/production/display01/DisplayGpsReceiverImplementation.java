@@ -7,9 +7,9 @@ public class DisplayGpsReceiverImplementation {
 
   /** 
    * Measures GPS Signal Strength.
-   * <p>
-   * @param satelliteSignal GPS signal to measure
-   * @return Status of GPS signal measured
+   * 
+   * @param satelliteSignal GPS signal to measure.
+   * @return Status of GPS signal measured.
    */
   public String measureGpsSignalStrength(Satellite satelliteSignal) {
 
@@ -19,9 +19,9 @@ public class DisplayGpsReceiverImplementation {
 
   /**
    * Checks for origin GPS satellite of received signal.
-   * <p>
-   * @param satelliteName GPS satellite for origin of signal
-   * @return Request to reconnect to satellite
+   * 
+   * @param satelliteName GPS satellite for origin of signal.
+   * @return Request to reconnect to satellite.
    */
   public SatelliteSignalCheckRequest measureSignal(String satelliteName) {
         
