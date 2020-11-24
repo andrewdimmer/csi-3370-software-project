@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall...
+This package shall recieve a gps signal from display and check its strength before passing to database.
 
 ## Intrerfaces
 
