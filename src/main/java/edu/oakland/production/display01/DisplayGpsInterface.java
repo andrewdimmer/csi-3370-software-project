@@ -1,10 +1,10 @@
-package edu.oakland.production;
+package edu.oakland.production.display01;
 
 import edu.oakland.helper.admin.Satellite;
 
 public interface DisplayGpsInterface {
 
-  public void recieveGpsSingnals(Satellite satelliteSignal);
+  public void recieveGpsSignals(Satellite satelliteSignal);
 
   public void reportGpsSignalLoss(String satelliteName);
 
