@@ -6,7 +6,7 @@ public class SatelliteSignalCheckRequest {
     return "";
   }
 
-  String getCheckType() {
+  public String getCheckType() {
     return "";
   }
 }
