@@ -2,12 +2,12 @@ package edu.oakland.production.database;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 
-public interface DatabaseGISInterface {
+public interface DatabaseGisInterface {
 	
-	public void receiveStoreRequest(LocationDataPoint locationDataPoint);
+  public void receiveStoreRequest(LocationDataPoint locationDataPoint);
 	
-	public String receiveModeRequest(String Mode); 
+  public String receiveModeRequest(String mode); 
 	
-	public String receiveNextSatRequest(String currentStat);
+  public String receiveNextSatRequest(String currentStat);
 	
 }
