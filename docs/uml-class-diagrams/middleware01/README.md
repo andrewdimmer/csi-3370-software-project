@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This set of packages shall...
+This set of packages shall recieve gps signals from display and pass them to database.
 
 ## Packages
 
