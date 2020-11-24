@@ -5,10 +5,10 @@ import edu.oakland.helper.admin.TrackData;
 
 public interface DatabaseCommManager {
 
-	int receiveGetRfldRequest()
-	LocationDataPoint receiveGetLocationDataPointRequest(Int offset)
-	TrackData receiveGetTrackDataRequest(Int offset)
-	void storeTrackDataRequest(TrackData trackData)
-	String receiveGetModeRequest()
+  int receiveGetRfldRequest();
+  LocationDataPoint receiveGetLocationDataPointRequest(Int offset);
+  TrackData receiveGetTrackDataRequest(Int offset);
+  void storeTrackDataRequest(TrackData trackData);
+  String receiveGetModeRequest();
 
 }
