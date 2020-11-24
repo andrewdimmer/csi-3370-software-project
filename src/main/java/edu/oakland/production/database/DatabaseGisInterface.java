@@ -8,6 +8,6 @@ public interface DatabaseGisInterface {
 
   public String receiveModeRequest(String mode); 
 
-  public String receiveNextSatRequest(String currentStat);
+  public String receiveNextSatRequest(String currentSat);
 
 }
