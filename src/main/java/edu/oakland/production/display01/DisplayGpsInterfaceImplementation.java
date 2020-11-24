@@ -2,7 +2,7 @@ package main.java.edu.oakland.production;
 
 public class DisplayGpsInterfaceImplemention implements DisplayGpsInterface {
 
-  public void recieveGPSSingnals(Satellite satelliteSignal) {
+  public void recieveGpsSingnals(Satellite satelliteSignal) {
 
   }
 
