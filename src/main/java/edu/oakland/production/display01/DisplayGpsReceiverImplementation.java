@@ -6,8 +6,8 @@ import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
 public class DisplayGpsReceiverImplementation implements DisplayGpsReceiver {
 
   /** 
-   * Measures GPS Signal Strength. <br />
-   * 
+   * Measures GPS Signal Strength.
+   *
    * @param satelliteSignal GPS signal to measure.
    * @return Status of GPS signal measured.
    */
@@ -18,8 +18,8 @@ public class DisplayGpsReceiverImplementation implements DisplayGpsReceiver {
   }
 
   /**
-   * Checks for origin GPS satellite of received signal. <br />
-   * 
+   * Checks for origin GPS satellite of received signal.
+   *
    * @param satelliteName GPS satellite for origin of signal.
    * @return Request to reconnect to satellite.
    */
