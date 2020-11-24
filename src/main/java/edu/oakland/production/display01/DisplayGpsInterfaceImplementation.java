@@ -4,7 +4,7 @@ import edu.oakland.helper.admin.Satellite;
 
 public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
 
-  public void recieveGpsSignals(Satellite satelliteSignal) {
+  public void receiveGpsSignal(Satellite satelliteSignal) {
 
   }
 

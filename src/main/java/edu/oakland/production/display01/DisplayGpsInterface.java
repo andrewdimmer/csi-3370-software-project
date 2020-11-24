@@ -4,7 +4,7 @@ import edu.oakland.helper.admin.Satellite;
 
 public interface DisplayGpsInterface {
 
-  public void recieveGpsSignals(Satellite satelliteSignal);
+  public void receiveGpsSignal(Satellite satelliteSignal);
 
   public void reportGpsSignalLoss(String satelliteName);
 
