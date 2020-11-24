@@ -7,9 +7,9 @@ public interface DatabaseCommInterface {
 
   int receiveGetRfldRequest();
 
-  LocationDataPoint receiveGetLocationDataPointRequest(Int offset);
+  LocationDataPoint receiveGetLocationDataPointRequest(int offset);
 
-  TrackData receiveGetTrackDataRequest(Int offset);
+  TrackData receiveGetTrackDataRequest(int offset);
 
   void storeTrackDataRequest(TrackData trackData);
   
