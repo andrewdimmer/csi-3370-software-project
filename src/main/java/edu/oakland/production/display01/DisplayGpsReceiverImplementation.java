@@ -5,12 +5,21 @@ import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
 
 public class DisplayGpsReceiverImplementation {
 
+  /** 
+   * measureGpsSignalStrength
+   * @param satelliteSignal GPS signal to measure
+   * @return Status of GPS signal measured
+   */
   public String measureGpsSignalStrength(Satellite satelliteSignal) {
 
     return "";
 
   }
-  
+  /**
+   * measureSignal
+   * @param satelliteName GPS satellite for origin of signal
+   * @return Request to reconnect to satellite
+   */
   public SatelliteSignalCheckRequest measureSignal(String satelliteName) {
         
     return null;
