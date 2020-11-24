@@ -5,7 +5,7 @@ import edu.oakland.helper.admin.TrackData;
 
 public interface DatabaseCommInterface {
 
-  int receiveGetRfldRequest();
+  int receiveGetRfidRequest();
 
   LocationDataPoint receiveGetLocationDataPointRequest(int offset);
 
