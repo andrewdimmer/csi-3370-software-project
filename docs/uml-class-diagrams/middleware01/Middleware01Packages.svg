@@ -11,102 +11,102 @@ link MiddlewareGisProcessor to MiddlewareGisManager--><!--MD5=[65e8ae3be48d8b317
 link MiddlewareGisInterface to MiddlewareGisInterfaceImplementation--><!--MD5=[bfd30003311d14dcb404997a195ab642]
 link MiddlewareGisInterfaceImplementation to MiddlewareGisProcessorImplementation--><!--MD5=[e58f60c707b124812ecd922950d23b3a]
 link MiddlewareGisProcessorImplementation to MiddlewareGisManagerImplementation--><!--MD5=[e909e7636c3356f2c5b7f1ff3d8d94b0]
-@startuml Middleware01Packages
-
-
-package edu.oakland.production.middleware01 {
-
-}
-
-
-package edu.oakland.production.middleware01 {
-    interface MiddlewareGisInterface {
-        __
-        .. Use Case 1 ..
-        {abstract} + String receiveGpsSignalStrength(Satellite satelliteSignal)
-        .. Use Case 2 ..
-        {abstract} + String receiveGpsSignalStrength(Satellite satelliteSignal)
-    }
-}
-
-
-package edu.oakland.production.middleware01 {
-    interface MiddlewareGisProcessor {
-        __
-        .. Use Case 1 ..
-        {abstract} + String evaluateGpsSignalStrength(Satellite satelliteSignal)
-        .. Use Case 2 ..
-        {abstract} + String measureGpsSignalStrength(Satellite satelliteSignal)
-    }
-}
-
-
-package edu.oakland.production.middleware01 {
-    interface MiddlewareGisManager {
-        __
-        .. Use Case 1 ..
-        {abstract} + String receieveGpsSignalStrength(Satellite satelliteSignal)
-        {abstract} + void storeLocationDataPoint()
-        .. Use Case 2 ..
-        {abstract} + String attemptToRegainGpsLock(String satelliteName)
-        {abstract} + String evaluateGpsSignalStrength(boolean signalValid)
-    }
-}
-
-
-package edu.oakland.production.middleware01 {
-    class MiddlewareGisInterfaceImplementation {
-        - MiddlewareGisProcessor middlewareGisProcessor
-        __
-        + MiddlewareGisInterfaceImplementation(MiddlewareGisProcessor middlewareGisProcessor)
-        .. Use Case 1 ..
-        + String receiveGpsSignalStrength(Satellite satelliteSignal)
-        .. Use Case 2 ..
-        + String receiveGpsSignalStrength(Satellite satelliteSignal)
-    }
-}
-
-
-package edu.oakland.production.middleware01 {
-    class MiddlewareGisProcessorImplementation {
-        - MiddlewareGisManager middlewareGisManager
-        __
-        + MiddlewareGisProcessorImplementation(MiddlewareGisManager middlewareGisManager)
-        .. Use Case 1 ..
-        + String evaluateGpsSignalStrength(Satellite satelliteSignal)
-        .. Use Case 2 ..
-        + String measureGpsSignalStrength(Satellite satelliteSignal)
-    }
-}
-
-
-package edu.oakland.production.middleware01 {
-    class MiddlewareGisManagerImplementation {
-        - MiddlewareGisProcessor middlewareGisProcessor
-        __
-        + MiddlewareGisManagerImplementation(MiddlewareGisProcessor middlewareGisProcessor)
-        .. Use Case 1 ..
-        + String receieveGpsSignalStrength(Satellite satelliteSignal)
-        + void storeLocationDataPoint()
-        .. Use Case 2 ..
-        + String attemptToRegainGpsLock(String satelliteName)
-        + String evaluateGpsSignalStrength(boolean signalValid)
-    }
-}
-
-
-
-package edu.oakland.test.middleware01 {
-    
-}
-
-
-package edu.oakland.helper.middleware01 {
-    
-}
-
-
-@enduml
+@startuml Middleware01Packages
+
+
+package edu.oakland.production.middleware01 {
+
+}
+
+
+package edu.oakland.production.middleware01 {
+    interface MiddlewareGisInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + String receiveGpsSignalStrength(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        {abstract} + String receiveGpsSignalStrength(Satellite satelliteSignal)
+    }
+}
+
+
+package edu.oakland.production.middleware01 {
+    interface MiddlewareGisProcessor {
+        __
+        .. Use Case 1 ..
+        {abstract} + String evaluateGpsSignalStrength(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        {abstract} + String measureGpsSignalStrength(Satellite satelliteSignal)
+    }
+}
+
+
+package edu.oakland.production.middleware01 {
+    interface MiddlewareGisManager {
+        __
+        .. Use Case 1 ..
+        {abstract} + String receieveGpsSignalStrength(Satellite satelliteSignal)
+        {abstract} + void storeLocationDataPoint()
+        .. Use Case 2 ..
+        {abstract} + String attemptToRegainGpsLock(String satelliteName)
+        {abstract} + String evaluateGpsSignalStrength(boolean signalValid)
+    }
+}
+
+
+package edu.oakland.production.middleware01 {
+    class MiddlewareGisInterfaceImplementation {
+        - MiddlewareGisProcessor middlewareGisProcessor
+        __
+        + MiddlewareGisInterfaceImplementation(MiddlewareGisProcessor middlewareGisProcessor)
+        .. Use Case 1 ..
+        + String receiveGpsSignalStrength(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + String receiveGpsSignalStrength(Satellite satelliteSignal)
+    }
+}
+
+
+package edu.oakland.production.middleware01 {
+    class MiddlewareGisProcessorImplementation {
+        - MiddlewareGisManager middlewareGisManager
+        __
+        + MiddlewareGisProcessorImplementation(MiddlewareGisManager middlewareGisManager)
+        .. Use Case 1 ..
+        + String evaluateGpsSignalStrength(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + String measureGpsSignalStrength(Satellite satelliteSignal)
+    }
+}
+
+
+package edu.oakland.production.middleware01 {
+    class MiddlewareGisManagerImplementation {
+        - MiddlewareGisProcessor middlewareGisProcessor
+        __
+        + MiddlewareGisManagerImplementation(MiddlewareGisProcessor middlewareGisProcessor)
+        .. Use Case 1 ..
+        + String receieveGpsSignalStrength(Satellite satelliteSignal)
+        + void storeLocationDataPoint()
+        .. Use Case 2 ..
+        + String attemptToRegainGpsLock(String satelliteName)
+        + String evaluateGpsSignalStrength(boolean signalValid)
+    }
+}
+
+
+
+package edu.oakland.test.middleware01 {
+    
+}
+
+
+package edu.oakland.helper.middleware01 {
+    
+}
+
+
+@enduml
 
 PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
 (GPL source distribution)

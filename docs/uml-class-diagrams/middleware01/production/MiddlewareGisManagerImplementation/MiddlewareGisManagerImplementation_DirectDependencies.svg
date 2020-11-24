@@ -3,44 +3,44 @@ cluster edu.oakland.production.middleware01--><polygon fill="#FFFFFF" filter="ur
 class MiddlewareGisManagerImplementation--><rect fill="#FEFECE" filter="url(#f1xi2vnnm5k4s8)" height="158.4375" id="MiddlewareGisManagerImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="542" x="38" y="252"/><ellipse cx="184.25" cy="268" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M187.2188,273.6406 Q186.6406,273.9375 186,274.0781 Q185.3594,274.2344 184.6563,274.2344 Q182.1563,274.2344 180.8281,272.5938 Q179.5156,270.9375 179.5156,267.8125 Q179.5156,264.6875 180.8281,263.0313 Q182.1563,261.375 184.6563,261.375 Q185.3594,261.375 186,261.5313 Q186.6563,261.6875 187.2188,261.9844 L187.2188,264.7031 Q186.5938,264.125 186,263.8594 Q185.4063,263.5781 184.7813,263.5781 Q183.4375,263.5781 182.75,264.6563 Q182.0625,265.7188 182.0625,267.8125 Q182.0625,269.9063 182.75,270.9844 Q183.4375,272.0469 184.7813,272.0469 Q185.4063,272.0469 186,271.7813 Q186.5938,271.5 187.2188,270.9219 L187.2188,273.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="241" x="204.75" y="272.1543">MiddlewareGisManagerImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="579" y1="284" y2="284"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="292"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="288" x="58" y="298.2104">MiddlewareGisProcessor middlewareGisProcessor</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="579" y1="304.8047" y2="304.8047"/><ellipse cx="49" cy="315.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="516" x="58" y="319.0151">MiddlewareGisManagerImplementation(MiddlewareGisProcessor middlewareGisProcessor)</text><ellipse cx="49" cy="345.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="331" x="58" y="348.6245">String receieveGpsSignalStrength(Satellite satelliteSignal)</text><ellipse cx="49" cy="358.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="166" x="58" y="361.4292">void storeLocationDataPoint()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="276" y1="332.0117" y2="332.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="276" y="335.3198">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="342" x2="579" y1="332.0117" y2="332.0117"/><ellipse cx="49" cy="387.8281" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="306" x="58" y="391.0386">String attemptToRegainGpsLock(String satelliteName)</text><ellipse cx="49" cy="400.6328" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="311" x="58" y="403.8433">String evaluateGpsSignalStrength(boolean signalValid)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="276" y1="374.4258" y2="374.4258"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="276" y="377.7339">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="342" x2="579" y1="374.4258" y2="374.4258"/><!--MD5=[6b8f2796bf9a05cb61532ec918b7c92e]
 class MiddlewareGisManager--><rect fill="#FEFECE" filter="url(#f1xi2vnnm5k4s8)" height="132.8281" id="MiddlewareGisManager" style="stroke: #A80036; stroke-width: 1.5;" width="351" x="133.5" y="59"/><ellipse cx="232.75" cy="75" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M228.6719,70.7656 L228.6719,68.6094 L236.0625,68.6094 L236.0625,70.7656 L233.5938,70.7656 L233.5938,78.8438 L236.0625,78.8438 L236.0625,81 L228.6719,81 L228.6719,78.8438 L231.1406,78.8438 L231.1406,70.7656 L228.6719,70.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="144" x="253.25" y="79.1543">MiddlewareGisManager</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="134.5" x2="483.5" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="134.5" x2="483.5" y1="99" y2="99"/><ellipse cx="144.5" cy="126.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="325" x="153.5" y="130.0151">String receieveGpsSignalStrength(Satellite satelliteSignal)</text><ellipse cx="144.5" cy="139.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="166" x="153.5" y="142.8198">void storeLocationDataPoint()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="134.5" x2="276" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="276" y="116.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="342" x2="483.5" y1="113.4023" y2="113.4023"/><ellipse cx="144.5" cy="169.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="303" x="153.5" y="172.4292">String attemptToRegainGpsLock(String satelliteName)</text><ellipse cx="144.5" cy="182.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="308" x="153.5" y="185.2339">String evaluateGpsSignalStrength(boolean signalValid)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="134.5" x2="276" y1="155.8164" y2="155.8164"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="276" y="159.1245">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="342" x2="483.5" y1="155.8164" y2="155.8164"/><!--MD5=[ba88405600d0f63e318d28a37302bd2e]
 reverse link MiddlewareGisManager to MiddlewareGisManagerImplementation--><path d="M309,212.22 C309,225.36 309,238.86 309,251.82 " fill="none" id="MiddlewareGisManager&lt;-MiddlewareGisManagerImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="302,212.01,309,192.01,316,212.01,302,212.01" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[1c01999d10c343fb07a37e12a909cc59]
-@startuml MiddlewareGisManagerImplementation_DirectDependencies
-
-
-package edu.oakland.production.middleware01 {
-    class MiddlewareGisManagerImplementation {
-        - MiddlewareGisProcessor middlewareGisProcessor
-        __
-        + MiddlewareGisManagerImplementation(MiddlewareGisProcessor middlewareGisProcessor)
-        .. Use Case 1 ..
-        + String receieveGpsSignalStrength(Satellite satelliteSignal)
-        + void storeLocationDataPoint()
-        .. Use Case 2 ..
-        + String attemptToRegainGpsLock(String satelliteName)
-        + String evaluateGpsSignalStrength(boolean signalValid)
-    }
-}
-
-
-
-package edu.oakland.production.middleware01 {
-    interface MiddlewareGisManager {
-        __
-        .. Use Case 1 ..
-        {abstract} + String receieveGpsSignalStrength(Satellite satelliteSignal)
-        {abstract} + void storeLocationDataPoint()
-        .. Use Case 2 ..
-        {abstract} + String attemptToRegainGpsLock(String satelliteName)
-        {abstract} + String evaluateGpsSignalStrength(boolean signalValid)
-    }
-}
-
-MiddlewareGisManagerImplementation .up.|> MiddlewareGisManager
-
-
-
-
-
-@enduml
+@startuml MiddlewareGisManagerImplementation_DirectDependencies
+
+
+package edu.oakland.production.middleware01 {
+    class MiddlewareGisManagerImplementation {
+        - MiddlewareGisProcessor middlewareGisProcessor
+        __
+        + MiddlewareGisManagerImplementation(MiddlewareGisProcessor middlewareGisProcessor)
+        .. Use Case 1 ..
+        + String receieveGpsSignalStrength(Satellite satelliteSignal)
+        + void storeLocationDataPoint()
+        .. Use Case 2 ..
+        + String attemptToRegainGpsLock(String satelliteName)
+        + String evaluateGpsSignalStrength(boolean signalValid)
+    }
+}
+
+
+
+package edu.oakland.production.middleware01 {
+    interface MiddlewareGisManager {
+        __
+        .. Use Case 1 ..
+        {abstract} + String receieveGpsSignalStrength(Satellite satelliteSignal)
+        {abstract} + void storeLocationDataPoint()
+        .. Use Case 2 ..
+        {abstract} + String attemptToRegainGpsLock(String satelliteName)
+        {abstract} + String evaluateGpsSignalStrength(boolean signalValid)
+    }
+}
+
+MiddlewareGisManagerImplementation .up.|> MiddlewareGisManager
+
+
+
+
+
+@enduml
 
 PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
 (GPL source distribution)
