@@ -4,7 +4,7 @@ package edu.oakland.production.display01 {
     interface DisplayGpsManager {
         __
         .. Use Case 1 ..
-        {abstract} + String receiveGpsSignalStrengths(Satellite satelliteSignal)
+        {abstract} + String receiveGpsSignalStrength(Satellite satelliteSignal)
         .. Use Case 2 ..
         {abstract} + SatelliteSignalCheckRequest passGpsSignalStrength(String satelliteName)
     }
