@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall provide a means of starting the system.
 
 ## Class UML Diagram
 
