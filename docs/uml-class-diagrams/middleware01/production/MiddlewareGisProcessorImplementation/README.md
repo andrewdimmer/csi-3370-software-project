@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall evaluate and measure the Satellite Signal strength passed in from the MiddlewareGisInterface.
 
 ## Class UML Diagram
 
