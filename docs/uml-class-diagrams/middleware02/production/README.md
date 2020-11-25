@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall...
+This package shall house our production code for calculation of location tracking and verification of RFID.
 
 ## Intrerfaces
 
