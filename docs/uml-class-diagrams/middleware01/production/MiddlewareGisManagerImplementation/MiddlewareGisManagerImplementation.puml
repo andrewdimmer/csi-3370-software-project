@@ -2,9 +2,9 @@
 
 package edu.oakland.production.middleware01 {
     class MiddlewareGisManagerImplementation {
-        - MiddlewareGisProcessor middlewareGisProcessor
+        - DatabaseGisInterface databaseGisInterface
         __
-        + MiddlewareGisManagerImplementation(MiddlewareGisProcessor middlewareGisProcessor)
+        + MiddlewareGisManagerImplementation(DatabaseGisInterface databaseGisInterface)
         .. Use Case 1 ..
         + String receieveGpsSignalStrength(Satellite satelliteSignal)
         + void storeLocationDataPoint()
