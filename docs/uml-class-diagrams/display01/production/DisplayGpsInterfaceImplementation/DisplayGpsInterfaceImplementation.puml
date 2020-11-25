@@ -3,46 +3,16 @@
 
 package edu.oakland.production.display01 {
     class DisplayGpsInterfaceImplementation {
-        
-        private displayGpsReciever reciever;
-
-        public DisplayGpsInterfaceImplementation() {
-          reciever = new displayGpsReciever();
-        }
+        - DisplayGpsReciever reciever
         __
+        + DisplayGpsInterfaceImplementation(DisplayGpsReciever reciever)
         .. Use Case 1 ..
-        public void recieveGpsSignal(Satellite satelliteSignal) {
-      
-        }
-      
-        public string reportGpsSignalLoss(String satelliteName) {
-
-          return satelliteName;
-        }
-
-        public void recheckSignalStrength(String satelliteName) {
-
-        }
-        
-     
+        + void receiveGpsSignal(Satellite satelliteSignal)
         .. Use Case 2 ..
-        public void checkSignalStrength(String satelliteName) {
-
-        }
-        
-        public string reportSignalStrength(String satelliteName) {
-        
-          return satelliteName;
-        }
-        
-        public void detectLossGpsSignal(String satelliteName) {
-        
-        }
-        
-        public string passGpsSignaltoReciever(String satelliteName) {
-        
-          return satelliteName;
-        }
+        + void reportGpsSignalLoss(String satelliteName)
+        + void recheckSignalStength(String satelliteName)
+        + void checkSignalStength(String satelliteName)
+        - int reportSignalStrength(String satelliteName)
     }
 }
 
