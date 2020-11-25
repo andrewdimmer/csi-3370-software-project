@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall...
+This package shall contain any extra classes to assist in computing location and RFID. 
 
 ## Intrerfaces
 
