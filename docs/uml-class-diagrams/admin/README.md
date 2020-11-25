@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This set of packages shall...
+This set of packages shall provide a means of demonstrating the System's functionality.
 
 ## Packages
 
