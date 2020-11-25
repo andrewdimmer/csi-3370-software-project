@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall...
+This interface shall compare RFID number, calculate track data, instructs GIS to store location in database.
 
 ## Class UML Diagram
 
