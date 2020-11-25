@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall store and provide information about one satellite.
 
 ## Class UML Diagram
 
