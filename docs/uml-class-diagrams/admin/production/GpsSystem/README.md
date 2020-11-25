@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall contain the GPS systems and initiate Use Case 2 when the SLTS loses lock on either system.
 
 ## Class UML Diagram
 
