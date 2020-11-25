@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall...
+This interface shall pass RFID number and recieving location data from display. 
 
 ## Class UML Diagram
 
