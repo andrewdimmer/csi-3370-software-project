@@ -4,7 +4,7 @@ package edu.oakland.production.display01 {
     class DisplayGpsInterfaceImplementation {
         __
         .. Use Case 1 ..
-        public void recieveGpsSignals(Satellite satelliteSignal) {
+        public void recieveGpsSignal(Satellite satelliteSignal) {
       
         }
       
