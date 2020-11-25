@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall...
+This interface shall communicate with database to pass/receive CommLinkManager data.
 
 ## Class UML Diagram
 
