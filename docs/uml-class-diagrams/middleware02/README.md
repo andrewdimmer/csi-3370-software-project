@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This set of packages shall...
+This set of packages shall calculate location and verify proper RFID.
 
 ## Packages
 
