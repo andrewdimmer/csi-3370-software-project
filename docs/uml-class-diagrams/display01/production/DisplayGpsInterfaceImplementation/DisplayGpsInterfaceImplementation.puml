@@ -4,9 +4,38 @@ package edu.oakland.production.display01 {
     class DisplayGpsInterfaceImplementation {
         __
         .. Use Case 1 ..
+        public void recieveGpsSignals(Satellite satelliteSignal) {
+      
+        }
+      
+        public string reportGpsSignalLoss(String satelliteName) {
 
+          return satelliteName;
+        }
+
+        public void recheckSignalStrength(String satelliteName) {
+
+        }
+        
+     
         .. Use Case 2 ..
+        public void checkSignalStrength(String satelliteName) {
 
+        }
+        
+        public string reportSignalStrength(String satelliteName) {
+        
+          return satelliteName;
+        }
+        
+        public void detectLossGpsSignal(String satelliteName) {
+        
+        }
+        
+        public string passGpsSignaltoManager(String satelliteName) {
+        
+          return satelliteName;
+        }
     }
 }
 
