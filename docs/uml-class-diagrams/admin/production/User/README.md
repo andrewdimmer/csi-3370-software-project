@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall initiate Use Case 1 by requesting the SLTS location and track data.
 
 ## Class UML Diagram
 
