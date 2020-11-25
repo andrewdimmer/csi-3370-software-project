@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall...
+This package shall provide a means to start and run the system.
 
 ## Intrerfaces
 
