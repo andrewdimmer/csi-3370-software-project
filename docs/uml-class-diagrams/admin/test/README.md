@@ -1,10 +1,10 @@
 # UML Class Diagrams: edu.oakland.test.admin
 
-**Primary Owner:** Brendan Fraser, Project SCRUM Master ([@brendanfraser597](https://github.com/brendanfraser597/))
+**Primary Owner:** Tessa Peruzzi, Project SCRUM Master ([@TessaPeruzzi](https://github.com/TessaPeruzzi/))
 
 **Secondary Owners:**
 
-- Tessa Peruzzi, Project SCRUM Assistant Master ([@TessaPeruzzi](https://github.com/TessaPeruzzi/))
+- Brendan Fraser, Project SCRUM Assistant Master ([@brendanfraser597](https://github.com/brendanfraser597/))
 - Andrew Dimmer, Project SCRUM Integration Master ([@andrewdimmer](https://github.com/andrewdimmer/))
 
 ## Purpose
