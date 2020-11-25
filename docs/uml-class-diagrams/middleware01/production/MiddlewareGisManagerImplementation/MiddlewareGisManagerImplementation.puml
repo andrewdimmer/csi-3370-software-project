@@ -3,6 +3,7 @@
 package edu.oakland.production.middleware01 {
     class MiddlewareGisManagerImplementation {
         - DatabaseGisInterface databaseGisInterface
+        - LocationDataPoint locationDataPoint
         __
         + MiddlewareGisManagerImplementation(DatabaseGisInterface databaseGisInterface)
         .. Use Case 1 ..
