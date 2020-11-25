@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall recieve that GPS signal from display and pass it to GIS processor.
 
 ## Class UML Diagram
 
