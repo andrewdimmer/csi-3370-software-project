@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall receive RFID tag from User and transmit RFID to DisplayComm2WayInterface Class. This class will receive track data from DisplayComm2WayInterface and will send the track data back to the User. 
 
 ## Class UML Diagram
 
