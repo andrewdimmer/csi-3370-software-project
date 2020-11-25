@@ -9,8 +9,8 @@ package edu.oakland.helper.admin {
         + float getLat()
         + float getLng()
         + LocalDateTime getTime()
-        - boolean latIsValid(float lat)
-        - boolean lngIsValid(float lat)
+        - boolean normalizeLat(float lat)
+        - boolean normalizeLng(float lat)
         - boolean timeIsValid(LocalDateTime time)
     }
 }

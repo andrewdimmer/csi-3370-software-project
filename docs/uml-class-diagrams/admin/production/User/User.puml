@@ -2,7 +2,9 @@
 
 package edu.oakland.production.admin {
     class User {
-        + void useCase1(Scanner input)
+        - DisplayCommInterface displayCommInterface
+        + User(DisplayCommInterface displayCommInterface)
+        + void runUseCase1(Scanner input)
     }
 }
 

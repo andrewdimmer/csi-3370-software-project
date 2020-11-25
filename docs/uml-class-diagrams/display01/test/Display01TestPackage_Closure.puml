@@ -1,0 +1,7 @@
+@startuml Display01TestPackage_Closure
+
+package edu.oakland.test.display01 {
+    
+}
+
+@enduml

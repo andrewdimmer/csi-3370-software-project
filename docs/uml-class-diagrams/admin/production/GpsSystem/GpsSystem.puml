@@ -2,7 +2,17 @@
 
 package edu.oakland.production.admin {
     class GpsSystems {
-        + void userCase2(Scanner input)
+        - DisplayGpsInterface displayGpsInterface
+        - Satellite[] satellites
+        __
+        + GpsSystems(DisplayGpsInterface displayGpsInterface,
+        \tString[] satelliteNames)
+        + void runUseCase1(Scanner input)
+        + void runUseCase2(Scanner input)
+        + void configureSatellites(String[] satelliteNames
+        \tfloat incrementLatAmount, float incrementLngAmount,
+        \tLocationDataPoint initLocationDataPoint)
+        - void configureSatellites(String[] satelliteNames)
     }
 }
 
