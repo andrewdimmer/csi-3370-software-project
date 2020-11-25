@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall be the implemented code for the DisplayGPSInterface. This code will in charge of detecting and reporting the signal status of the GPSs to the other classes of the Display01 Subsystem. 
 
 ## Class UML Diagram
 
