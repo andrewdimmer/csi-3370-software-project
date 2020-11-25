@@ -9,7 +9,8 @@
 
 ## Purpose
 
-This class shall...
+This class shall pass RFID requests and RFID data to CommLinkManager. 
+This class shall pass Track data to Display.
 
 ## Class UML Diagram
 
