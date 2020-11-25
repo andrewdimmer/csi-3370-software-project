@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall...
+This interface shall receive the GPS signal strength.
 
 ## Class UML Diagram
 
