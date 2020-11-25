@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall pass data request to/from database and CommLinkManager.
 
 ## Class UML Diagram
 
