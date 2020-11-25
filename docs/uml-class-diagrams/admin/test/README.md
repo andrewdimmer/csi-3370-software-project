@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall...
+This package shall provide a means of testing the functionality of the System.
 
 ## Intrerfaces
 
