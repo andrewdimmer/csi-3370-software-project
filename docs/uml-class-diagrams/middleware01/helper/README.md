@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall...
+This package shall assist in providing functionality to the program.
 
 ## Intrerfaces
 
