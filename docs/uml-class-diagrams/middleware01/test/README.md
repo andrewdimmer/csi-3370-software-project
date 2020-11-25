@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall...
+This package shall describe the interfaces, classes, class UML Diagram, internal dependencies UML Diagram and Direct Dependencies UML diagram for middleware01.
 
 ## Intrerfaces
 
