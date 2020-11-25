@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This manager shall...
+This manager shall recieve and evaluate the GPS signal strength, attempt regaining the GPS lock if needed, and store location data points.
 
 ## Class UML Diagram
 
