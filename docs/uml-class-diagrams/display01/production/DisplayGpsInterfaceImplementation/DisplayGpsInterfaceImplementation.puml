@@ -1,7 +1,14 @@
 @startuml DisplayGpsInterfaceImplementation
 
+
 package edu.oakland.production.display01 {
     class DisplayGpsInterfaceImplementation {
+        
+        private displayGpsReciever reciever;
+
+        public DisplayGpsInterfaceImplementation() {
+          reciever = new displayGpsReciever();
+        }
         __
         .. Use Case 1 ..
         public void recieveGpsSignal(Satellite satelliteSignal) {
@@ -32,7 +39,7 @@ package edu.oakland.production.display01 {
         
         }
         
-        public string passGpsSignaltoManager(String satelliteName) {
+        public string passGpsSignaltoReciever(String satelliteName) {
         
           return satelliteName;
         }
