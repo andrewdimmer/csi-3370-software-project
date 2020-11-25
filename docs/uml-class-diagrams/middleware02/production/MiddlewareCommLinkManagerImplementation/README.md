@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall calculate location.
 
 ## Class UML Diagram
 
