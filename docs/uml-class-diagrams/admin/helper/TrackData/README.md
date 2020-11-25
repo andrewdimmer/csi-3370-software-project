@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall provide utility regarding information about a series of location data points.
 
 ## Class UML Diagram
 
