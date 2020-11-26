@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall...
+This interface shall request and pass communication data.
 
 ## Class UML Diagram
 

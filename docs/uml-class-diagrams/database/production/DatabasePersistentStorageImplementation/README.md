@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall interact with the database.
+This class shall provide a means of storing all of the track data and location data in a file.
 
 ## Class UML Diagram
 

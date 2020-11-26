@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall provide...
+This interface shall provide store the necessary information from the interface to storage.
 
 ## Class UML Diagram
 

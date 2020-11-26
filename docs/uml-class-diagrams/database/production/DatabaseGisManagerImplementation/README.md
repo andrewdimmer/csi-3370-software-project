@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall the necessary information from the interface to storage.
+This class shall store the necessary information from the interface to storage.
 
 ## Class UML Diagram
 
