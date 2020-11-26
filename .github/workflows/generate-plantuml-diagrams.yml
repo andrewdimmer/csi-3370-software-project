@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '**.puml'
+  workflow_dispatch:
 jobs:
   generate:
     runs-on: ubuntu-latest
