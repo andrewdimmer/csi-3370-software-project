@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall...
+This interface shall provide functions from middleware interact with the database.
 
 ## Class UML Diagram
 
