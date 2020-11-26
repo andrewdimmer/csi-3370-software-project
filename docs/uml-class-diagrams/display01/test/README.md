@@ -24,7 +24,7 @@ This package contains the following unit test classes:
 - [edu.oakland.test.display01.DisplayGpsInterfaceImplementationTests](DisplayGpsInterfaceImplementationTests)
 - [edu.oakland.test.display01.DisplayGpsManagerImplementationTests](DisplayGpsManagerImplementationTests)
 - [edu.oakland.test.display01.DisplayGpsReceiverImplementationTests](DisplayGpsReceiverImplementationTests)
-- [edu.oakland.test.display01.SatelliteSignalCheckRequest](SatelliteSignalCheckRequestTests)
+- [edu.oakland.test.display01.SatelliteSignalCheckRequestTests](SatelliteSignalCheckRequestTests)
 
 ## Test Stub Classes
 
