@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall request and pass communication data.
 
 ## Class UML Diagram
 

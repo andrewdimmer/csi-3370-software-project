@@ -11,7 +11,7 @@
 
 This package shall...
 
-## Intrerfaces
+## Interfaces
 
 This package contains the following interfaces:
 

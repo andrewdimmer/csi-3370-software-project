@@ -4,6 +4,10 @@ package edu.oakland.production.database {
     class DatabaseCommManagerImplementation {
         __
         .. Use Case 1 ..
+        + int passGetRfidRequest();
+        + LocationDataPoint passGetLocationDataPointRequest(int offset);
+        + TrackData passGetTrackDataRequest(int offset);
+        + void passStoreTrackDataRequest(TrackData trackData);
 
         .. Use Case 2 ..
 
