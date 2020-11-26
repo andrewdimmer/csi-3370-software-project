@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall interact with the database.
 
 ## Class UML Diagram
 
