@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="220px" preserveAspectRatio="none" style="width:376px;height:220px;" version="1.1" viewBox="0 0 376 220" width="376px" zoomAndPan="magnify"><defs><filter height="300%" id="f153eq3320f1df" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[913a5d0b9faba757f1bf119e53d411ee]
+cluster edu.oakland.test.admin--><polygon fill="#FFFFFF" filter="url(#f153eq3320f1df)" points="22,24,212,24,219,46.2969,354,46.2969,354,208,22,208,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="219" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="184" x="26" y="38.9951">edu.oakland.test.admin</text><!--MD5=[157add87c4645f5d1ba13fc88f5c77ea]
+class DisplayGpsInterfaceStub--><rect fill="#FEFECE" filter="url(#f153eq3320f1df)" height="132.8281" id="DisplayGpsInterfaceStub" style="stroke: #A80036; stroke-width: 1.5;" width="300" x="38" y="59"/><ellipse cx="107.25" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M110.2188,80.6406 Q109.6406,80.9375 109,81.0781 Q108.3594,81.2344 107.6563,81.2344 Q105.1563,81.2344 103.8281,79.5938 Q102.5156,77.9375 102.5156,74.8125 Q102.5156,71.6875 103.8281,70.0313 Q105.1563,68.375 107.6563,68.375 Q108.3594,68.375 109,68.5313 Q109.6563,68.6875 110.2188,68.9844 L110.2188,71.7031 Q109.5938,71.125 109,70.8594 Q108.4063,70.5781 107.7813,70.5781 Q106.4375,70.5781 105.75,71.6563 Q105.0625,72.7188 105.0625,74.8125 Q105.0625,76.9063 105.75,77.9844 Q106.4375,79.0469 107.7813,79.0469 Q108.4063,79.0469 109,78.7813 Q109.5938,78.5 110.2188,77.9219 L110.2188,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="153" x="127.75" y="79.1543">DisplayGpsInterfaceStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="337" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="337" y1="99" y2="99"/><ellipse cx="49" cy="126.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="264" x="58" y="130.0151">void receiveGpsSignal(Satellite satelliteSignal)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="155" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="155" y="116.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="221" x2="337" y1="113.4023" y2="113.4023"/><ellipse cx="49" cy="156.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="271" x="58" y="159.6245">void reportGpsSignalLoss(String satelliteName)</text><ellipse cx="49" cy="169.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="274" x="58" y="172.4292">void recheckSignalStength(String satelliteName)</text><ellipse cx="49" cy="182.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="262" x="58" y="185.2339">void checkSignalStength(String satelliteName)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="155" y1="143.0117" y2="143.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="155" y="146.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="221" x2="337" y1="143.0117" y2="143.0117"/><!--MD5=[3d406fa215ea02388667485c278f1e77]
+@startuml DisplayGpsInterfaceStub
+
+package edu.oakland.test.admin {
+    class DisplayGpsInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + void receiveGpsSignal(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + void reportGpsSignalLoss(String satelliteName)
+        + void recheckSignalStength(String satelliteName)
+        + void checkSignalStength(String satelliteName)
+    }
+}
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>
