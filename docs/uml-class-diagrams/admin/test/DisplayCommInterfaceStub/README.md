@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall act as a stub of [edu.oakland.production.display01.DisplayCommInterface](../../../display01/production/DisplayCommInterface) for testing.
+This class shall act as a stub of [edu.oakland.production.display02.DisplayCommInterface](../../../display02/production/DisplayCommInterface) for testing.
 
 ## Class UML Diagram
 
