@@ -1,0 +1,7 @@
+@startuml AdminPackages_Closure
+
+!include production/AdminProductionPackage_Closure.puml
+!include test/AdminTestPackage_Closure.puml
+!include helper/AdminHelperPackage_Closure.puml
+
+@enduml

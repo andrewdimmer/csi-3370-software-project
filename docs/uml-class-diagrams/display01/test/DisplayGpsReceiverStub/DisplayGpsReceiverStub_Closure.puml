@@ -1,0 +1,16 @@
+@startuml DisplayGpsReceiverStub_Closure
+
+!startsub DISPLAY01_TEST
+!include DisplayGpsReceiverStub.puml
+!endsub
+
+!startsub DISPLAY01
+!include ../../production/DisplayGpsReceiver/DisplayGpsReceiver_Closure.puml
+DisplayGpsReceiverStub .up.|> DisplayGpsReceiver
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

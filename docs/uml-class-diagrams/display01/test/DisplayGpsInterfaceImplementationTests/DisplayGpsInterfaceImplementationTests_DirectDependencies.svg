@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="302px" preserveAspectRatio="none" style="width:836px;height:302px;" version="1.1" viewBox="0 0 836 302" width="836px" zoomAndPan="magnify"><defs><filter height="300%" id="fbgr542z6rmt1" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9181924624f655b87cae45fec5f93c8d]
+cluster edu.oakland.test.display01--><polygon fill="#FFFFFF" filter="url(#fbgr542z6rmt1)" points="22,24,240,24,247,46.2969,504,46.2969,504,290,22,290,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="247" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="212" x="26" y="38.9951">edu.oakland.test.display01</text><!--MD5=[3e281e6f49e0b185d62a106a5d994a08]
+cluster edu.oakland.production.display01--><polygon fill="#FFFFFF" filter="url(#fbgr542z6rmt1)" points="528,132,801,132,808,154.2969,814,154.2969,814,290,528,290,528,132" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="528" x2="808" y1="154.2969" y2="154.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="267" x="532" y="146.9951">edu.oakland.production.display01</text><!--MD5=[31ac70925a3cf930ecc7428c11a6bdde]
+class DisplayGpsInterfaceImplementationTests--><rect fill="#FEFECE" filter="url(#fbgr542z6rmt1)" height="48" id="DisplayGpsInterfaceImplementationTests" style="stroke: #A80036; stroke-width: 1.5;" width="287" x="159.5" y="59"/><ellipse cx="174.5" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M177.4688,80.6406 Q176.8906,80.9375 176.25,81.0781 Q175.6094,81.2344 174.9063,81.2344 Q172.4063,81.2344 171.0781,79.5938 Q169.7656,77.9375 169.7656,74.8125 Q169.7656,71.6875 171.0781,70.0313 Q172.4063,68.375 174.9063,68.375 Q175.6094,68.375 176.25,68.5313 Q176.9063,68.6875 177.4688,68.9844 L177.4688,71.7031 Q176.8438,71.125 176.25,70.8594 Q175.6563,70.5781 175.0313,70.5781 Q173.6875,70.5781 173,71.6563 Q172.3125,72.7188 172.3125,74.8125 Q172.3125,76.9063 173,77.9844 Q173.6875,79.0469 175.0313,79.0469 Q175.6563,79.0469 176.25,78.7813 Q176.8438,78.5 177.4688,77.9219 L177.4688,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="255" x="188.5" y="79.1543">DisplayGpsInterfaceImplementationTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="160.5" x2="445.5" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="160.5" x2="445.5" y1="99" y2="99"/><!--MD5=[6057d86884460ab216cb89f03a202a5c]
+class DisplayGpsManagerStub--><rect fill="#FEFECE" filter="url(#fbgr542z6rmt1)" height="107.2188" id="DisplayGpsManagerStub" style="stroke: #A80036; stroke-width: 1.5;" width="450" x="38" y="167"/><ellipse cx="182.75" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M185.7188,188.6406 Q185.1406,188.9375 184.5,189.0781 Q183.8594,189.2344 183.1563,189.2344 Q180.6563,189.2344 179.3281,187.5938 Q178.0156,185.9375 178.0156,182.8125 Q178.0156,179.6875 179.3281,178.0313 Q180.6563,176.375 183.1563,176.375 Q183.8594,176.375 184.5,176.5313 Q185.1563,176.6875 185.7188,176.9844 L185.7188,179.7031 Q185.0938,179.125 184.5,178.8594 Q183.9063,178.5781 183.2813,178.5781 Q181.9375,178.5781 181.25,179.6563 Q180.5625,180.7188 180.5625,182.8125 Q180.5625,184.9063 181.25,185.9844 Q181.9375,187.0469 183.2813,187.0469 Q183.9063,187.0469 184.5,186.7813 Q185.0938,186.5 185.7188,185.9219 L185.7188,188.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="152" x="203.25" y="187.1543">DisplayGpsManagerStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="487" y1="199" y2="199"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="487" y1="207" y2="207"/><ellipse cx="49" cy="234.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="331" x="58" y="238.0151">String receiveGpsSignalStrengths(Satellite satelliteSignal)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="230" y1="221.4023" y2="221.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="230" y="224.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="296" x2="487" y1="221.4023" y2="221.4023"/><ellipse cx="49" cy="264.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="424" x="58" y="267.6245">SatelliteSignalCheckRequest passGpsSignalStrength(String satelliteName)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="230" y1="251.0117" y2="251.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="230" y="254.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="296" x2="487" y1="251.0117" y2="251.0117"/><!--MD5=[6376794c08ca75f6fa530286e1e32b13]
+class DisplayGpsInterfaceImplementation--><rect fill="#FEFECE" filter="url(#fbgr542z6rmt1)" height="107.2188" id="DisplayGpsInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="253" x="544.5" y="167"/><ellipse cx="559.5" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M562.4688,188.6406 Q561.8906,188.9375 561.25,189.0781 Q560.6094,189.2344 559.9063,189.2344 Q557.4063,189.2344 556.0781,187.5938 Q554.7656,185.9375 554.7656,182.8125 Q554.7656,179.6875 556.0781,178.0313 Q557.4063,176.375 559.9063,176.375 Q560.6094,176.375 561.25,176.5313 Q561.9063,176.6875 562.4688,176.9844 L562.4688,179.7031 Q561.8438,179.125 561.25,178.8594 Q560.6563,178.5781 560.0313,178.5781 Q558.6875,178.5781 558,179.6563 Q557.3125,180.7188 557.3125,182.8125 Q557.3125,184.9063 558,185.9844 Q558.6875,187.0469 560.0313,187.0469 Q560.6563,187.0469 561.25,186.7813 Q561.8438,186.5 562.4688,185.9219 L562.4688,188.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="221" x="573.5" y="187.1543">DisplayGpsInterfaceImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="545.5" x2="796.5" y1="199" y2="199"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="545.5" x2="796.5" y1="207" y2="207"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="554.5" y="238.0151"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="545.5" x2="638" y1="221.4023" y2="221.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="638" y="224.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="704" x2="796.5" y1="221.4023" y2="221.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="554.5" y="267.6245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="545.5" x2="638" y1="251.0117" y2="251.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="638" y="254.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="704" x2="796.5" y1="251.0117" y2="251.0117"/><!--MD5=[a39ee678f382d13a5ef855227ba9587a]
+link DisplayGpsInterfaceImplementationTests to DisplayGpsManagerStub--><path d="M296.12,107.29 C291.68,122.36 285.68,142.68 280.01,161.89 " fill="none" id="DisplayGpsInterfaceImplementationTests-&gt;DisplayGpsManagerStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="278.57,166.74,284.9506,159.2375,279.9831,161.9439,277.2768,156.9764,278.57,166.74" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[559dc6840a3fa5f6339eba398daf84da]
+link DisplayGpsInterfaceImplementationTests to DisplayGpsInterfaceImplementation--><path d="M446.52,106.64 C466.12,111.44 485.75,117.17 504,124 C532.09,134.51 561.03,149.4 586.75,164.3 " fill="none" id="DisplayGpsInterfaceImplementationTests-&gt;DisplayGpsInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="591.19,166.88,585.4167,158.9007,586.8665,164.3686,581.3985,165.8184,591.19,166.88" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[2705375dfb5f79e2379ada7f1df260bb]
+@startuml DisplayGpsInterfaceImplementationTests_DirectDependencies
+
+
+package edu.oakland.test.display01 {
+    class DisplayGpsInterfaceImplementationTests {
+
+    }
+}
+
+
+
+package edu.oakland.test.display01 {
+    class DisplayGpsManagerStub {
+        __
+        .. Use Case 1 ..
+        + String receiveGpsSignalStrengths(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + SatelliteSignalCheckRequest passGpsSignalStrength(String satelliteName)
+    }
+}
+
+DisplayGpsInterfaceImplementationTests ..> DisplayGpsManagerStub
+
+
+package edu.oakland.production.display01 {
+    class DisplayGpsInterfaceImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+DisplayGpsInterfaceImplementationTests ..> DisplayGpsInterfaceImplementation
+
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

@@ -6,6 +6,9 @@ package edu.oakland.helper.display01 {
 
 !startsub DISPLAY01
 !include Display01HelperPackage_InternalDependencies.puml
+!includesub SatelliteSignalCheckRequest/SatelliteSignalCheckRequest_DirectDependencies.puml!DISPLAY01
 !endsub
+
+!includesub SatelliteSignalCheckRequest/SatelliteSignalCheckRequest_DirectDependencies.puml!OTHER
 
 @enduml

@@ -1,0 +1,15 @@
+@startuml MiddlewareGisInterface_Closure
+
+!startsub MIDDLEWARE01_PRODUCTION
+!include MiddlewareGisInterface.puml
+!endsub
+
+!startsub MIDDLEWARE01
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

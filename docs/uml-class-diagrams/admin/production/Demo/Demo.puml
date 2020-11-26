@@ -1,0 +1,21 @@
+@startuml Demo
+
+package edu.oakland.production.admin {
+    class Demo {
+        .. Main Production Classes ..
+        - DisplayGpsInterface displayGpsInterface
+        - DisplayCommInterface displayCommInterface
+        .. Use Case Runners ..
+        - GpsSystem gpsSystem
+        - User user
+        - PersistentStorageManager persistentStorageManager
+        __
+        {static} + void main(Sting args[])
+        + void initSecureLockTrackSystem(int systemRfid,
+        \tString persistentStorageInputLocation,
+        \tString persistentStorageOutputLocation)
+        + void runUseCases(Scanner input)
+    }
+}
+
+@enduml

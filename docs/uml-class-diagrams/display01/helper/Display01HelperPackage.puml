@@ -1,7 +1,9 @@
 @startuml Display01HelperPackage
 
 package edu.oakland.helper.display01 {
-    
+
 }
+
+!include SatelliteSignalCheckRequest/SatelliteSignalCheckRequest.puml
 
 @enduml

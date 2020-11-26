@@ -1,0 +1,15 @@
+@startuml SatelliteSignalCheckRequest_Closure
+
+!startsub DISPLAY01_HELPER
+!include SatelliteSignalCheckRequest.puml
+!endsub
+
+!startsub DISPLAY01
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml
