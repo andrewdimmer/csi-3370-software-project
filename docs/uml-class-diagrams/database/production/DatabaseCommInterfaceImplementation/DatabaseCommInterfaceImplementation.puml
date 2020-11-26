@@ -2,11 +2,7 @@
 
 package edu.oakland.production.database {
     class DatabaseCommInterfaceImplementation {
-        - DatabaseCommManager databaseCommManager
-    	- int rfidData
-    	- LocationDataPoint locDataPoint
-    	- TrackData trackData
-    	- String mode
+      - DatabaseCommManager databaseCommManager
         __
         DatabaseCommInterface(int rfidData, 
         \tLocationDataPoint locDataPoint,
