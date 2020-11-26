@@ -1,4 +1,4 @@
-@startuml Middleware01Packages_InternalDependencies
+@startuml Middleware01Packages_Closure
 
 !includesub production/Middleware01ProductionPackage_DirectDependencies.puml!MIDDLEWARE01
 !includesub test/Middleware01TestPackage_DirectDependencies.puml!MIDDLEWARE01
