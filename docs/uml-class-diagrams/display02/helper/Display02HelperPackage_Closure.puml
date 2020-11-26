@@ -4,4 +4,6 @@ package edu.oakland.helper.display02 {
     
 }
 
+!include TrackDataPlotter/TrackDataPlotter_Closure.puml
+
 @enduml
