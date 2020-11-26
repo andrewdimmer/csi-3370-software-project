@@ -2,12 +2,19 @@
 
 package edu.oakland.production.database {
     class DatabaseCommManagerImplementation {
+        - DatabasePersistentStorage databasePersistentStorage
+        - int rfidData
+        - LocationDataPoint locDataPoint
+        - Trackdata trackData
         __
+        DatabaseCommManagerImplementation(int rfidData,
+         \tLocationDataPoint locDataPoint,
+         \tTrackdata trackData)
         .. Use Case 1 ..
-        + int passGetRfidRequest();
-        + LocationDataPoint passGetLocationDataPointRequest(int offset);
-        + TrackData passGetTrackDataRequest(int offset);
-        + void passStoreTrackDataRequest(TrackData trackData);
+        + int passGetRfidRequest()
+        + LocationDataPoint passGetLocationDataPointRequest(int offset)
+        + TrackData passGetTrackDataRequest(int offset)
+        + void passStoreTrackDataRequest(TrackData trackData)
 
         .. Use Case 2 ..
 
