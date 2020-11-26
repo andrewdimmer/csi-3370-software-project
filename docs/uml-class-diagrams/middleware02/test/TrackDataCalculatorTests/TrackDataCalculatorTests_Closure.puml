@@ -1,0 +1,16 @@
+@startuml TrackDataCalculatorTests_Closure
+
+!startsub MIDDLEWARE02_TEST
+!include TrackDataCalculatorTests.puml
+!endsub
+
+!startsub MIDDLEWARE02
+!include ../../helper/TrackDataCalculator/TrackDataCalculator_Closure.puml
+TrackDataCalculatorTests ..> TrackDataCalculator
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

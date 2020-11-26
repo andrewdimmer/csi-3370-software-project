@@ -17,7 +17,22 @@ This package does not contain any interfaces.
 
 ## Classes
 
-This package does not contain any classes.
+### Unit Test Classes
+
+This package contains the following unit test classes:
+
+- [edu.oakland.test.middleware02.MiddlewareCommInterfaceImplementationTests](MiddlewareCommInterfaceImplementationTests)
+- [edu.oakland.test.middleware02.MiddlewareCommLinkManagerImplementationTests](MiddlewareCommLinkManagerImplementationTests)
+- [edu.oakland.test.middleware02.MiddlewareCommDatabaseInterfaceImplementationTests](MiddlewareCommDatabaseInterfaceImplementationTests)
+- [edu.oakland.test.middleware02.LocationDataPointTests](TrackDataCalculatorTests)
+
+## Test Stub Classes
+
+This package contains the following unit test classes:
+
+- [edu.oakland.test.middleware02.MiddlewareCommLinkManagerStub](MiddlewareCommLinkManagerStub)
+- [edu.oakland.test.middleware02.MiddlewareCommDatabaseInterfaceStub](MiddlewareCommDatabaseInterfaceStub)
+- [edu.oakland.test.middleware02.DatabaseICommnterfaceStub](DatabaseCommInterfaceStub)
 
 ## Class UML Diagram
 
