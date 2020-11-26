@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall...
+This package shall contain the test methods for database.
 
 ## Intrerfaces
 
