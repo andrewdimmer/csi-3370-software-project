@@ -1,4 +1,4 @@
-@startuml GpsSystemTest
+@startuml GpsSystemTests
 
 package edu.oakland.test.admin {
     class GpsSystemTests {
