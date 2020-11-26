@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall contain any extra classes to assist in computing location and RFID. 
+This package shall contain any extra classes to assist in computing location and RFID.
 
 ## Intrerfaces
 
@@ -17,7 +17,9 @@ This package does not contain any interfaces.
 
 ## Classes
 
-This package does not contain any classes.
+This package contains the following classes:
+
+- [edu.oakland.helper.middleware02.TrackDataCalculator](TrackDataCalculator)
 
 ## Class UML Diagram
 
