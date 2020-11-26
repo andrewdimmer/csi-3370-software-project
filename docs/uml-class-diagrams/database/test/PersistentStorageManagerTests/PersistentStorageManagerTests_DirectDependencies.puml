@@ -1,0 +1,16 @@
+@startuml PersistentStorageManagerTests_DirectDependencies
+
+!startsub DATABASE_TEST
+!include PersistentStorageManagerTests.puml
+!endsub
+
+!startsub DATABASE
+!include ../../helper/PersistentStorageManager/PersistentStorageManager.puml
+PersistentStorageManagerTests ..> PersistentStorageManager
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

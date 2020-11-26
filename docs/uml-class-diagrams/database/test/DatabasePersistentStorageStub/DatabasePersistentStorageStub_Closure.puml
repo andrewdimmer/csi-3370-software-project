@@ -1,0 +1,16 @@
+@startuml DatabasePersistentStorageStub_Closure
+
+!startsub DATABASE_TEST
+!include DatabasePersistentStorageStub.puml
+!endsub
+
+!startsub DATABASE
+!include ../../production/DatabasePersistentStorage/DatabasePersistentStorage_Closure.puml
+DatabasePersistentStorageStub .up.|> DatabasePersistentStorage
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

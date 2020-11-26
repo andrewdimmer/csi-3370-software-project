@@ -1,0 +1,13 @@
+@startuml DatabasePersistentStorageStub
+
+package edu.oakland.test.database {
+    class DatabasePersistentStorageStub {
+        __
+        .. Use Case 1 ..
+        + String measureGpsSignalStrength(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + PersistentStorageManager measureSignal(String satelliteName)
+    }
+}
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml PersistentStorageManager_Closure
+
+!startsub DATABASE_HELPER
+!include PersistentStorageManager.puml
+!endsub
+
+!startsub DATABASE
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml
