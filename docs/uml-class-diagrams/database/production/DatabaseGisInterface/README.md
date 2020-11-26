@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall provide functions from middleware interact with the database.
+This interface shall provide functions from middleware to interact with the all persistant data in the SLTS.
 
 ## Class UML Diagram
 
