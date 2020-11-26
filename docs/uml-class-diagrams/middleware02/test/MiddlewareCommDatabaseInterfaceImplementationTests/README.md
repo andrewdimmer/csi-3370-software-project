@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall run unit tests on the [edu.oakland.production.middleware02.MiddlewareCommDatabaseInterface](../../production/MiddlewareCommDatabaseInterface) class.
+This class shall run unit tests on the [edu.oakland.production.middleware02.MiddlewareCommDatabaseInterfaceImplementation](../../production/MiddlewareCommDatabaseInterfaceImplementation) class.
 
 ## Class UML Diagram
 
