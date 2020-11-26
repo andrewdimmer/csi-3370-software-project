@@ -10,9 +10,6 @@ package edu.oakland.production.database {
         + LocationDataPoint passGetLocationDataPointRequest(int offset)
         + TrackData passGetTrackDataRequest(int offset)
         + void passStoreTrackDataRequest(TrackData trackData)
-
-        .. Use Case 2 ..
-
     }
 }
 
