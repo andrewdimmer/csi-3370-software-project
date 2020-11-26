@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall describe the interfaces, classes, class UML Diagram, internal dependencies UML Diagram and Direct Dependencies UML diagram for middleware01.
+This package shall contain JUnit test classes to validate production code.
 
 ## Intrerfaces
 
@@ -17,7 +17,21 @@ This package does not contain any interfaces.
 
 ## Classes
 
-This package does not contain any classes.
+### Unit Test Classes
+
+This package contains the following unit test classes:
+
+- [edu.oakland.test.middleware01.MiddlewareGisInterfaceImplementationTests](MiddlewareGisInterfaceImplementationTests)
+- [edu.oakland.test.middleware01.MiddlewareGisProcessorImplementationTests](MiddlewareGisProcessorImplementationTests)
+- [edu.oakland.test.middleware01.MiddlewareGisManagerImplementationTests](MiddlewareGisManagerImplementationTests)
+
+## Test Stub Classes
+
+This package contains the following unit test classes:
+
+- [edu.oakland.test.middleware01.MiddlewareGisProcessorStub](MiddlewareGisProcessorStub)
+- [edu.oakland.test.middleware01.MiddlewareGisManagerStub](MiddlewareGisManagerStub)
+- [edu.oakland.test.middleware01.DatabaseGisInterfaceStub](DatabaseGisInterfaceStub)
 
 ## Class UML Diagram
 

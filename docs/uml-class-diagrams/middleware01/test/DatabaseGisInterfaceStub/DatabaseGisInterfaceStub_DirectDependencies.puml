@@ -1,0 +1,16 @@
+@startuml DatabaseGisInterfaceStub_DirectDependencies
+
+!startsub MIDDLEWARE01_TEST
+!include DatabaseGisInterfaceStub.puml
+!endsub
+
+!startsub MIDDLEWARE01
+
+!endsub
+
+!startsub OTHER
+!include ../../../database/production/DatabaseGisInterface/DatabaseGisInterface.puml
+DatabaseGisInterfaceStub .up.|> DatabaseGisInterface
+!endsub
+
+@enduml

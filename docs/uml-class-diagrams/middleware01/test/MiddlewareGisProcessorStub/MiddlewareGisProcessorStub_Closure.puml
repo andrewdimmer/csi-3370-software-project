@@ -1,0 +1,16 @@
+@startuml MiddlewareGisProcessorStub_Closure
+
+!startsub MIDDLEWARE01_TEST
+!include MiddlewareGisProcessorStub.puml
+!endsub
+
+!startsub MIDDLEWARE01
+!include ../../production/MiddlewareGisProcessor/MiddlewareGisProcessor_Closure.puml
+MiddlewareGisProcessorStub .up.|> MiddlewareGisProcessor
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml
