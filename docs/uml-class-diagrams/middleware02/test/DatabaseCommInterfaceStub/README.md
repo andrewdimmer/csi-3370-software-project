@@ -1,4 +1,4 @@
-# UML Class Diagrams: edu.oakland.production.middleware02.MiddlewareCommDatabaseInterfaceStub
+# UML Class Diagrams: edu.oakland.production.middleware02.DatabaseCommInterfaceStub
 
 **Primary Owner:** Kenzie King, Middleware_02 Team SCRUM Master ([@mckenzieking](https://github.com/mckenzieking/))
 
@@ -13,24 +13,24 @@ This class shall act as a stub of [edu.oakland.production.database.DatabaseCommI
 
 ## Class UML Diagram
 
-Below is a diagram of the MiddlewareCommDatabaseInterfaceStub class itself:
+Below is a diagram of the DatabaseCommInterfaceStub class itself:
 
-![MiddlewareCommDatabaseInterfaceStub](./MiddlewareCommDatabaseInterfaceStub.svg)
+![DatabaseCommInterfaceStub](./DatabaseCommInterfaceStub.svg)
 
-View larger as [.png](./MiddlewareCommDatabaseInterfaceStub.png) or [.svg](./MiddlewareCommDatabaseInterfaceStub.svg)
+View larger as [.png](./DatabaseCommInterfaceStub.png) or [.svg](./DatabaseCommInterfaceStub.svg)
 
 ## Direct Dependencies UML Diagram
 
-Below is a diagram of the direct dependencies required by the MiddlewareCommDatabaseInterfaceStub class:
+Below is a diagram of the direct dependencies required by the DatabaseCommInterfaceStub class:
 
-![MiddlewareCommDatabaseInterfaceStub Direct Dependencies](./MiddlewareCommDatabaseInterfaceStub_DirectDependencies.svg)
+![DatabaseCommInterfaceStub Direct Dependencies](./DatabaseCommInterfaceStub_DirectDependencies.svg)
 
-View larger as [.png](./MiddlewareCommDatabaseInterfaceStub_DirectDependencies.png) or [.svg](./MiddlewareCommDatabaseInterfaceStub_DirectDependencies.svg)
+View larger as [.png](./DatabaseCommInterfaceStub_DirectDependencies.png) or [.svg](./DatabaseCommInterfaceStub_DirectDependencies.svg)
 
 ## Complete Dependency Closure UML Diagram
 
-Below is a diagram of the complete dependencies closure of the MiddlewareCommDatabaseInterfaceStub class:
+Below is a diagram of the complete dependencies closure of the DatabaseCommInterfaceStub class:
 
-![MiddlewareCommDatabaseInterfaceStub Dependency Closure](./MiddlewareCommDatabaseInterfaceStub_Closure.svg)
+![DatabaseCommInterfaceStub Dependency Closure](./DatabaseCommInterfaceStub_Closure.svg)
 
-View larger as [.png](./MiddlewareCommDatabaseInterfaceStub_Closure.png) or [.svg](./MiddlewareCommDatabaseInterfaceStub_Closure.svg)
+View larger as [.png](./DatabaseCommInterfaceStub_Closure.png) or [.svg](./DatabaseCommInterfaceStub_Closure.svg)
