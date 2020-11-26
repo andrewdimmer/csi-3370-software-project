@@ -1,0 +1,33 @@
+name: Codecov Report
+on:
+  pull_request:
+  push:
+    branches:
+      - "main"
+  workflow_dispatch:
+jobs:
+  codecov:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo Branch
+        uses: actions/checkout@v2
+      - name: Install openjdk-11.0.8 (x64)
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11.0.8 # The JDK version to make available on the path.
+          java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
+          architecture: x64 # (x64 or x86) - defaults to x64
+      - name: Build and Test with Gradle
+        run: ./gradlew jacocoTestReport
+      - name: Persist Test Reports
+        uses: actions/upload-artifact@v2
+        with:
+          name: Reports
+          path: build/reports/jacoco/test
+          retention-days: 5
+      - uses: codecov/codecov-action@v1
+        with:
+          file: build/reports/jacoco/test/jacocoTestReport.xml
+          name: codecov-umbrella # optional
+          fail_ci_if_error: true # optional (default = false)
+          verbose: true # optional (default = false)

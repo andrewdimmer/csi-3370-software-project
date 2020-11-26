@@ -1,0 +1,16 @@
+@startuml DisplayGpsInterfaceStub_Closure
+
+!startsub ADMIN_TEST
+!include DisplayGpsInterfaceStub.puml
+!endsub
+
+!startsub ADMIN
+
+!endsub
+
+!startsub OTHER
+!include ../../../display01/production/DisplayGpsInterface/DisplayGpsInterface_Closure.puml
+DisplayGpsInterfaceStub .up.|> DisplayGpsInterface
+!endsub
+
+@enduml

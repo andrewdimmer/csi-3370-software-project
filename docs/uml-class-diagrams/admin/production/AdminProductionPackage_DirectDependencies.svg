@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="533px" preserveAspectRatio="none" style="width:765px;height:533px;" version="1.1" viewBox="0 0 765 533" width="765px" zoomAndPan="magnify"><defs><filter height="300%" id="fxy09r22trwuc" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[8bd6d9786dfa802b1eecfb7372bf244a]
+cluster edu.oakland.production.admin--><polygon fill="#FFFFFF" filter="url(#fxy09r22trwuc)" points="22,24,267,24,274,46.2969,743,46.2969,743,521,22,521,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="274" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="239" x="26" y="38.9951">edu.oakland.production.admin</text><!--MD5=[3c84d2688363deb820fa9437de7249ec]
+class Demo--><rect fill="#FEFECE" filter="url(#fxy09r22trwuc)" height="209.6563" id="Demo" style="stroke: #A80036; stroke-width: 1.5;" width="334" x="38" y="59"/><ellipse cx="182.75" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M185.7188,80.6406 Q185.1406,80.9375 184.5,81.0781 Q183.8594,81.2344 183.1563,81.2344 Q180.6563,81.2344 179.3281,79.5938 Q178.0156,77.9375 178.0156,74.8125 Q178.0156,71.6875 179.3281,70.0313 Q180.6563,68.375 183.1563,68.375 Q183.8594,68.375 184.5,68.5313 Q185.1563,68.6875 185.7188,68.9844 L185.7188,71.7031 Q185.0938,71.125 184.5,70.8594 Q183.9063,70.5781 183.2813,70.5781 Q181.9375,70.5781 181.25,71.6563 Q180.5625,72.7188 180.5625,74.8125 Q180.5625,76.9063 181.25,77.9844 Q181.9375,79.0469 183.2813,79.0469 Q183.9063,79.0469 184.5,78.7813 Q185.0938,78.5 185.7188,77.9219 L185.7188,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="203.25" y="79.1543">Demo</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="371" y1="91" y2="91"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="115.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="231" x="58" y="122.0151">DisplayGpsInterface displayGpsInterface</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="128.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="259" x="58" y="134.8198">DisplayCommInterface displayCommInterface</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="135" y1="105.4023" y2="105.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140" x="135" y="108.7104">Main Production Classes</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="275" x2="371" y1="105.4023" y2="105.4023"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="158.2188"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="134" x="58" y="164.4292">GpsSystem gpsSystem</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="171.0234"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="58" y="177.2339">User user</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="183.8281"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="308" x="58" y="190.0386">PersistentStorageManager persistentStorageManager</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="152" y1="147.8164" y2="147.8164"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="152" y="151.1245">Use Case Runners</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="258" x2="371" y1="147.8164" y2="147.8164"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="371" y1="196.6328" y2="196.6328"/><ellipse cx="49" cy="207.6328" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="130" x="58" y="210.8433">void main(Sting args[])</text><ellipse cx="49" cy="220.4375" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="272" x="58" y="223.6479">void initSecureLockTrackSystem(int systemRfid,</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="220" x="90" y="236.4526">String persistentStorageInputLocation,</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="230" x="90" y="249.2573">String persistentStorageOutputLocation)</text><ellipse cx="49" cy="258.8516" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="191" x="58" y="262.062">void runUseCases(Scanner input)</text><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect fill="#FEFECE" filter="url(#fxy09r22trwuc)" height="86.4141" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="320" x="407" y="121"/><ellipse cx="548.25" cy="137" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M551.2188,142.6406 Q550.6406,142.9375 550,143.0781 Q549.3594,143.2344 548.6563,143.2344 Q546.1563,143.2344 544.8281,141.5938 Q543.5156,139.9375 543.5156,136.8125 Q543.5156,133.6875 544.8281,132.0313 Q546.1563,130.375 548.6563,130.375 Q549.3594,130.375 550,130.5313 Q550.6563,130.6875 551.2188,130.9844 L551.2188,133.7031 Q550.5938,133.125 550,132.8594 Q549.4063,132.5781 548.7813,132.5781 Q547.4375,132.5781 546.75,133.6563 Q546.0625,134.7188 546.0625,136.8125 Q546.0625,138.9063 546.75,139.9844 Q547.4375,141.0469 548.7813,141.0469 Q549.4063,141.0469 550,140.7813 Q550.5938,140.5 551.2188,139.9219 L551.2188,142.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="568.75" y="141.1543">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="408" x2="726" y1="153" y2="153"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="415" y="161"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="259" x="427" y="167.2104">DisplayCommInterface displayCommInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="408" x2="726" y1="173.8047" y2="173.8047"/><ellipse cx="418" cy="184.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="294" x="427" y="188.0151">User(DisplayCommInterface displayCommInterface)</text><ellipse cx="418" cy="197.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="191" x="427" y="200.8198">void runUseCase1(Scanner input)</text><!--MD5=[d25225d68d5e3bf6aa5fb275933b1e63]
+class GpsSystem--><rect fill="#FEFECE" filter="url(#fxy09r22trwuc)" height="176.0469" id="GpsSystem" style="stroke: #A80036; stroke-width: 1.5;" width="365" x="37.5" y="329"/><ellipse cx="181.25" cy="345" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M184.2188,350.6406 Q183.6406,350.9375 183,351.0781 Q182.3594,351.2344 181.6563,351.2344 Q179.1563,351.2344 177.8281,349.5938 Q176.5156,347.9375 176.5156,344.8125 Q176.5156,341.6875 177.8281,340.0313 Q179.1563,338.375 181.6563,338.375 Q182.3594,338.375 183,338.5313 Q183.6563,338.6875 184.2188,338.9844 L184.2188,341.7031 Q183.5938,341.125 183,340.8594 Q182.4063,340.5781 181.7813,340.5781 Q180.4375,340.5781 179.75,341.6563 Q179.0625,342.7188 179.0625,344.8125 Q179.0625,346.9063 179.75,347.9844 Q180.4375,349.0469 181.7813,349.0469 Q182.4063,349.0469 183,348.7813 Q183.5938,348.5 184.2188,347.9219 L184.2188,350.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="69" x="201.75" y="349.1543">GpsSystem</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="38.5" x2="401.5" y1="361" y2="361"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="45.5" y="369"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="231" x="57.5" y="375.2104">DisplayGpsInterface displayGpsInterface</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="45.5" y="381.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110" x="57.5" y="388.0151">Satellite[] satellites</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="38.5" x2="401.5" y1="394.6094" y2="394.6094"/><ellipse cx="48.5" cy="405.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="312" x="57.5" y="408.8198">GpsSystems(DisplayGpsInterface displayGpsInterface,</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="135" x="89.5" y="421.6245">String[] satelliteNames)</text><ellipse cx="48.5" cy="431.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="191" x="57.5" y="434.4292">void runUseCase1(Scanner input)</text><ellipse cx="48.5" cy="444.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="191" x="57.5" y="447.2339">void runUseCase2(Scanner input)</text><ellipse cx="48.5" cy="456.8281" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="268" x="57.5" y="460.0386">void configureSatellites(String[] satelliteNames</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="307" x="89.5" y="472.8433">float incrementLatAmount, float incrementLngAmount,</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="227" x="89.5" y="485.6479">LocationDataPoint initLocationDataPoint)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="45.5" y="492.2422"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="272" x="57.5" y="498.4526">void configureSatellites(String[] satelliteNames)</text><!--MD5=[aaa328c6dd499efd34e9a6e207358862]
+link Demo to User--><!--MD5=[b23464e9e5dae3eb9bc898500cff742e]
+link Demo to GpsSystem--><!--MD5=[0303d5591008dd27a67171f8e3186969]
+@startuml AdminProductionPackage_DirectDependencies
+
+package edu.oakland.production.admin {
+
+}
+
+
+package edu.oakland.production.admin {
+
+}
+
+
+package edu.oakland.production.admin {
+    class Demo {
+        .. Main Production Classes ..
+        - DisplayGpsInterface displayGpsInterface
+        - DisplayCommInterface displayCommInterface
+        .. Use Case Runners ..
+        - GpsSystem gpsSystem
+        - User user
+        - PersistentStorageManager persistentStorageManager
+        __
+        {static} + void main(Sting args[])
+        + void initSecureLockTrackSystem(int systemRfid,
+        \tString persistentStorageInputLocation,
+        \tString persistentStorageOutputLocation)
+        + void runUseCases(Scanner input)
+    }
+}
+
+
+package edu.oakland.production.admin {
+    class User {
+        - DisplayCommInterface displayCommInterface
+        + User(DisplayCommInterface displayCommInterface)
+        + void runUseCase1(Scanner input)
+    }
+}
+
+
+package edu.oakland.production.admin {
+    class GpsSystem {
+        - DisplayGpsInterface displayGpsInterface
+        - Satellite[] satellites
+        __
+        + GpsSystems(DisplayGpsInterface displayGpsInterface,
+        \tString[] satelliteNames)
+        + void runUseCase1(Scanner input)
+        + void runUseCase2(Scanner input)
+        + void configureSatellites(String[] satelliteNames
+        \tfloat incrementLatAmount, float incrementLngAmount,
+        \tLocationDataPoint initLocationDataPoint)
+        - void configureSatellites(String[] satelliteNames)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

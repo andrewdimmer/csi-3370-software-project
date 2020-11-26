@@ -1,0 +1,19 @@
+@startuml GpsSystemTests_DirectDependencies
+
+!startsub ADMIN_TEST
+!include GpsSystemTests.puml
+
+!include ../DisplayGpsInterfaceStub/DisplayGpsInterfaceStub.puml
+GpsSystemTests ..> DisplayGpsInterfaceStub
+!endsub
+
+!startsub ADMIN
+!include ../../production/GpsSystem/GpsSystem.puml
+GpsSystemTests ..> GpsSystem
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml
