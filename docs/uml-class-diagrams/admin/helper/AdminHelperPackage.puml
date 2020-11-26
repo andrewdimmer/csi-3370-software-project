@@ -1,0 +1,11 @@
+@startuml AdminHelperPackage
+
+package edu.oakland.helper.admin {
+    
+}
+
+!include LocationDataPoint/LocationDataPoint.puml
+!include Satellite/Satellite.puml
+!include TrackData/TrackData.puml
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml SatelliteTests_Closure
+
+!startsub ADMIN_TEST
+!include SatelliteTests.puml
+!endsub
+
+!startsub ADMIN
+!include ../../helper/Satellite/Satellite_Closure.puml
+SatelliteTests ..> Satellite
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

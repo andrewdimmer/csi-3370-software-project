@@ -3,7 +3,12 @@
 name: Gradle Build and Test
 
 # Controls when the action will run. Triggers the workflow on pull request events
-on: pull_request
+on:
+  pull_request:
+  push:
+    branches:
+      - "main"
+  workflow_dispatch:
 
 # This workflow contains a single job "build"
 jobs:

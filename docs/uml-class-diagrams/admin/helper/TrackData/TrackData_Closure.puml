@@ -1,0 +1,18 @@
+@startuml TrackData_Closure
+
+!startsub ADMIN_HELPER
+!include TrackData.puml
+
+!include ../LocationDataPoint/LocationDataPoint_Closure.puml
+TrackData o--> LocationDataPoint
+!endsub
+
+!startsub ADMIN
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

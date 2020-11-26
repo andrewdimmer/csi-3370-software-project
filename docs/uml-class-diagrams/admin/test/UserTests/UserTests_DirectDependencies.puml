@@ -1,0 +1,19 @@
+@startuml UserTests_DirectDependencies
+
+!startsub ADMIN_TEST
+!include UserTests.puml
+
+!include ../DisplayCommInterfaceStub/DisplayCommInterfaceStub.puml
+UserTests ..> DisplayCommInterfaceStub
+!endsub
+
+!startsub ADMIN
+!include ../../production/User/User.puml
+UserTests ..> User
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml
