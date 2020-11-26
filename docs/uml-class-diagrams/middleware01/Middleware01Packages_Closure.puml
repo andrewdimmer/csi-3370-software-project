@@ -1,7 +1,7 @@
 @startuml Middleware01Packages_Closure
 
-!includesub production/Middleware01ProductionPackage_DirectDependencies.puml!MIDDLEWARE01
-!includesub test/Middleware01TestPackage_DirectDependencies.puml!MIDDLEWARE01
-!includesub helper/Middleware01HelperPackage_DirectDependencies.puml!MIDDLEWARE01
+!include production/Middleware01ProductionPackage_Closure.puml
+!include test/Middleware01TestPackage_Closure.puml
+!include helper/Middleware01HelperPackage_Closure.puml
 
 @enduml
