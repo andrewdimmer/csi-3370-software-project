@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall run unit tests on the [edu.oakland.production.display01.DisplayGpsManager](../../production/DisplayGpsManager) class.
+This class shall run unit tests on the [edu.oakland.production.display01.DisplayGpsManagerImplementation](../../production/DisplayGpsManagerImplementation) class.
 
 ## Class UML Diagram
 
