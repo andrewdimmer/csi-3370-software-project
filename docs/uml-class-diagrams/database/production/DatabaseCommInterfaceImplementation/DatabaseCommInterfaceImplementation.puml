@@ -13,7 +13,6 @@ package edu.oakland.production.database {
         + TrackData receiveGetTrackDataRequest(int offset)
         + void storeTrackDataRequest(TrackData trackData)
         + String receiveGetModeRequest()
-
     }
 }
 
