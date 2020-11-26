@@ -9,8 +9,7 @@
 
 ## Purpose
 
-This interface shall receive and store data coming from Middleware so it can be passed on by DatabaseCommManager.
-##Dimmer4President2036
+This interface shall...
 
 ## Class UML Diagram
 
