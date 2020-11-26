@@ -1,9 +1,300 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="72px" preserveAspectRatio="none" style="width:297px;height:72px;" version="1.1" viewBox="0 0 297 72" width="297px" zoomAndPan="magnify"><defs><filter height="300%" id="fo6ciofam47vp" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><polygon fill="#FFFFFF" filter="url(#fo6ciofam47vp)" points="6,8,261,8,268,30.2969,275,30.2969,275,60.5938,6,60.5938,6,8" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="6" x2="268" y1="30.2969" y2="30.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="249" x="10" y="22.9951">edu.oakland.test.middleware02</text><!--MD5=[ac94e97c08a824966be33f8691ffef3f]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="570px" preserveAspectRatio="none" style="width:3516px;height:570px;" version="1.1" viewBox="0 0 3516 570" width="3516px" zoomAndPan="magnify"><defs><filter height="300%" id="f1s0v1a78xbzb3" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[def9027c776d62015452659d5d6059fb]
+cluster edu.oakland.test.middleware02--><polygon fill="#FFFFFF" filter="url(#f1s0v1a78xbzb3)" points="476,64.5,731,64.5,738,86.7969,1872,86.7969,1872,395,476,395,476,64.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="476" x2="738" y1="86.7969" y2="86.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="249" x="480" y="79.4951">edu.oakland.test.middleware02</text><!--MD5=[33504725b8a69ba2207f0a836957a91c]
+cluster edu.oakland.production.middleware02--><polygon fill="#FFFFFF" filter="url(#f1s0v1a78xbzb3)" points="1896,35,2206,35,2213,57.2969,3494,57.2969,3494,397,1896,397,1896,35" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1896" x2="2213" y1="57.2969" y2="57.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="304" x="1900" y="49.9951">edu.oakland.production.middleware02</text><!--MD5=[73d4e355f259fb8d2c716d693a5be920]
+cluster edu.oakland.helper.middleware02--><polygon fill="#FFFFFF" filter="url(#f1s0v1a78xbzb3)" points="1387,421,1662,421,1669,443.2969,1937,443.2969,1937,558,1387,558,1387,421" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1387" x2="1669" y1="443.2969" y2="443.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="269" x="1391" y="435.9951">edu.oakland.helper.middleware02</text><!--MD5=[c2e276049abfe145c9906edb061abd32]
+cluster edu.oakland.production.database--><polygon fill="#FFFFFF" filter="url(#f1s0v1a78xbzb3)" points="22,24,292,24,299,46.2969,452,46.2969,452,204,22,204,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="299" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="264" x="26" y="38.9951">edu.oakland.production.database</text><!--MD5=[00b94da1af6b7f5503baa4bfd88b42e0]
+class MiddlewareCommInterfaceImplementationTests--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="48" id="MiddlewareCommInterfaceImplementationTests" style="stroke: #A80036; stroke-width: 1.5;" width="327" x="1529.5" y="99.5"/><ellipse cx="1544.5" cy="115.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1547.4688,121.1406 Q1546.8906,121.4375 1546.25,121.5781 Q1545.6094,121.7344 1544.9063,121.7344 Q1542.4063,121.7344 1541.0781,120.0938 Q1539.7656,118.4375 1539.7656,115.3125 Q1539.7656,112.1875 1541.0781,110.5313 Q1542.4063,108.875 1544.9063,108.875 Q1545.6094,108.875 1546.25,109.0313 Q1546.9063,109.1875 1547.4688,109.4844 L1547.4688,112.2031 Q1546.8438,111.625 1546.25,111.3594 Q1545.6563,111.0781 1545.0313,111.0781 Q1543.6875,111.0781 1543,112.1563 Q1542.3125,113.2188 1542.3125,115.3125 Q1542.3125,117.4063 1543,118.4844 Q1543.6875,119.5469 1545.0313,119.5469 Q1545.6563,119.5469 1546.25,119.2813 Q1546.8438,119 1547.4688,118.4219 L1547.4688,121.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="295" x="1558.5" y="119.6543">MiddlewareCommInterfaceImplementationTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1530.5" x2="1855.5" y1="131.5" y2="131.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1530.5" x2="1855.5" y1="139.5" y2="139.5"/><!--MD5=[3bea4f8dbcd5725ad50d10553f2379e2]
+class MiddlewareCommLinkManagerStub--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="103.2188" id="MiddlewareCommLinkManagerStub" style="stroke: #A80036; stroke-width: 1.5;" width="248" x="1588" y="263"/><ellipse cx="1603" cy="279" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1605.9688,284.6406 Q1605.3906,284.9375 1604.75,285.0781 Q1604.1094,285.2344 1603.4063,285.2344 Q1600.9063,285.2344 1599.5781,283.5938 Q1598.2656,281.9375 1598.2656,278.8125 Q1598.2656,275.6875 1599.5781,274.0313 Q1600.9063,272.375 1603.4063,272.375 Q1604.1094,272.375 1604.75,272.5313 Q1605.4063,272.6875 1605.9688,272.9844 L1605.9688,275.7031 Q1605.3438,275.125 1604.75,274.8594 Q1604.1563,274.5781 1603.5313,274.5781 Q1602.1875,274.5781 1601.5,275.6563 Q1600.8125,276.7188 1600.8125,278.8125 Q1600.8125,280.9063 1601.5,281.9844 Q1602.1875,283.0469 1603.5313,283.0469 Q1604.1563,283.0469 1604.75,282.7813 Q1605.3438,282.5 1605.9688,281.9219 L1605.9688,284.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="216" x="1617" y="283.1543">MiddlewareCommLinkManagerStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1589" x2="1835" y1="295" y2="295"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1589" x2="1835" y1="303" y2="303"/><ellipse cx="1599" cy="330.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="160" x="1608" y="334.0151">TrackData parseRfid(int rfid)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1596" y="340.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="188" x="1608" y="346.8198">float calculateLocationDataPoint()</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1596" y="353.4141"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="144" x="1608" y="359.6245">float calculateTrackData()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1589" x2="1679" y1="317.4023" y2="317.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1679" y="320.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1745" x2="1835" y1="317.4023" y2="317.4023"/><!--MD5=[de2e25996fbf99af10f04f2aae2d0ec2]
+class MiddlewareCommLinkManagerImplementationTests--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="48" id="MiddlewareCommLinkManagerImplementationTests" style="stroke: #A80036; stroke-width: 1.5;" width="350" x="1144" y="99.5"/><ellipse cx="1159" cy="115.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1161.9688,121.1406 Q1161.3906,121.4375 1160.75,121.5781 Q1160.1094,121.7344 1159.4063,121.7344 Q1156.9063,121.7344 1155.5781,120.0938 Q1154.2656,118.4375 1154.2656,115.3125 Q1154.2656,112.1875 1155.5781,110.5313 Q1156.9063,108.875 1159.4063,108.875 Q1160.1094,108.875 1160.75,109.0313 Q1161.4063,109.1875 1161.9688,109.4844 L1161.9688,112.2031 Q1161.3438,111.625 1160.75,111.3594 Q1160.1563,111.0781 1159.5313,111.0781 Q1158.1875,111.0781 1157.5,112.1563 Q1156.8125,113.2188 1156.8125,115.3125 Q1156.8125,117.4063 1157.5,118.4844 Q1158.1875,119.5469 1159.5313,119.5469 Q1160.1563,119.5469 1160.75,119.2813 Q1161.3438,119 1161.9688,118.4219 L1161.9688,121.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="318" x="1173" y="119.6543">MiddlewareCommLinkManagerImplementationTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1145" x2="1493" y1="131.5" y2="131.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1145" x2="1493" y1="139.5" y2="139.5"/><!--MD5=[d266ff1a021c6b2abe780212ea4bc90b]
+class MiddlewareCommDatabaseInterfaceStub--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="77.6094" id="MiddlewareCommDatabaseInterfaceStub" style="stroke: #A80036; stroke-width: 1.5;" width="286" x="1221" y="275.5"/><ellipse cx="1236" cy="291.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1238.9688,297.1406 Q1238.3906,297.4375 1237.75,297.5781 Q1237.1094,297.7344 1236.4063,297.7344 Q1233.9063,297.7344 1232.5781,296.0938 Q1231.2656,294.4375 1231.2656,291.3125 Q1231.2656,288.1875 1232.5781,286.5313 Q1233.9063,284.875 1236.4063,284.875 Q1237.1094,284.875 1237.75,285.0313 Q1238.4063,285.1875 1238.9688,285.4844 L1238.9688,288.2031 Q1238.3438,287.625 1237.75,287.3594 Q1237.1563,287.0781 1236.5313,287.0781 Q1235.1875,287.0781 1234.5,288.1563 Q1233.8125,289.2188 1233.8125,291.3125 Q1233.8125,293.4063 1234.5,294.4844 Q1235.1875,295.5469 1236.5313,295.5469 Q1237.1563,295.5469 1237.75,295.2813 Q1238.3438,295 1238.9688,294.4219 L1238.9688,297.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="254" x="1250" y="295.6543">MiddlewareCommDatabaseInterfaceStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1222" x2="1506" y1="307.5" y2="307.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1222" x2="1506" y1="315.5" y2="315.5"/><ellipse cx="1232" cy="343.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="122" x="1241" y="346.5151">int checkCurrentRfid()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1222" x2="1331" y1="329.9023" y2="329.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1331" y="333.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1397" x2="1506" y1="329.9023" y2="329.9023"/><!--MD5=[002ff5c7151dea29dff01f25b38dca5f]
+class MiddlewareCommDatabaseInterfaceImplementationTests--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="48" id="MiddlewareCommDatabaseInterfaceImplementationTests" style="stroke: #A80036; stroke-width: 1.5;" width="388" x="721" y="99.5"/><ellipse cx="736" cy="115.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M738.9688,121.1406 Q738.3906,121.4375 737.75,121.5781 Q737.1094,121.7344 736.4063,121.7344 Q733.9063,121.7344 732.5781,120.0938 Q731.2656,118.4375 731.2656,115.3125 Q731.2656,112.1875 732.5781,110.5313 Q733.9063,108.875 736.4063,108.875 Q737.1094,108.875 737.75,109.0313 Q738.4063,109.1875 738.9688,109.4844 L738.9688,112.2031 Q738.3438,111.625 737.75,111.3594 Q737.1563,111.0781 736.5313,111.0781 Q735.1875,111.0781 734.5,112.1563 Q733.8125,113.2188 733.8125,115.3125 Q733.8125,117.4063 734.5,118.4844 Q735.1875,119.5469 736.5313,119.5469 Q737.1563,119.5469 737.75,119.2813 Q738.3438,119 738.9688,118.4219 L738.9688,121.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="356" x="750" y="119.6543">MiddlewareCommDatabaseInterfaceImplementationTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="722" x2="1108" y1="131.5" y2="131.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="722" x2="1108" y1="139.5" y2="139.5"/><!--MD5=[e3f4175480349659b88084d56af4bbf1]
+class DatabaseCommInterfaceStub--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="128.8281" id="DatabaseCommInterfaceStub" style="stroke: #A80036; stroke-width: 1.5;" width="398" x="679" y="250"/><ellipse cx="781.75" cy="266" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M784.7188,271.6406 Q784.1406,271.9375 783.5,272.0781 Q782.8594,272.2344 782.1563,272.2344 Q779.6563,272.2344 778.3281,270.5938 Q777.0156,268.9375 777.0156,265.8125 Q777.0156,262.6875 778.3281,261.0313 Q779.6563,259.375 782.1563,259.375 Q782.8594,259.375 783.5,259.5313 Q784.1563,259.6875 784.7188,259.9844 L784.7188,262.7031 Q784.0938,262.125 783.5,261.8594 Q782.9063,261.5781 782.2813,261.5781 Q780.9375,261.5781 780.25,262.6563 Q779.5625,263.7188 779.5625,265.8125 Q779.5625,267.9063 780.25,268.9844 Q780.9375,270.0469 782.2813,270.0469 Q782.9063,270.0469 783.5,269.7813 Q784.0938,269.5 784.7188,268.9219 L784.7188,271.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="184" x="802.25" y="270.1543">DatabaseCommInterfaceStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="680" x2="1076" y1="282" y2="282"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="680" x2="1076" y1="290" y2="290"/><ellipse cx="690" cy="317.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="156" x="699" y="321.0151">int receiveGetRfidRequest()</text><ellipse cx="690" cy="330.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="372" x="699" y="333.8198">LocationDataPoint receiveGetLocationDataPointRequest(int offset)</text><ellipse cx="690" cy="343.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="284" x="699" y="346.6245">TrackData receiveGetTrackDataRequest(int offset)</text><ellipse cx="690" cy="356.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="283" x="699" y="359.4292">void storeTrackDataRequest(TrackData trackData)</text><ellipse cx="690" cy="369.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="183" x="699" y="372.2339">String receiveGetModeRequest()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="680" x2="845" y1="304.4023" y2="304.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="845" y="307.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="911" x2="1076" y1="304.4023" y2="304.4023"/><!--MD5=[4d30ae449f97cbb7dd3c9db2a55e1ec0]
+class TrackDataCalculatorTests--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="48" id="TrackDataCalculatorTests" style="stroke: #A80036; stroke-width: 1.5;" width="193" x="492.5" y="99.5"/><ellipse cx="507.5" cy="115.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M510.4688,121.1406 Q509.8906,121.4375 509.25,121.5781 Q508.6094,121.7344 507.9063,121.7344 Q505.4063,121.7344 504.0781,120.0938 Q502.7656,118.4375 502.7656,115.3125 Q502.7656,112.1875 504.0781,110.5313 Q505.4063,108.875 507.9063,108.875 Q508.6094,108.875 509.25,109.0313 Q509.9063,109.1875 510.4688,109.4844 L510.4688,112.2031 Q509.8438,111.625 509.25,111.3594 Q508.6563,111.0781 508.0313,111.0781 Q506.6875,111.0781 506,112.1563 Q505.3125,113.2188 505.3125,115.3125 Q505.3125,117.4063 506,118.4844 Q506.6875,119.5469 508.0313,119.5469 Q508.6563,119.5469 509.25,119.2813 Q509.8438,119 510.4688,118.4219 L510.4688,121.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="161" x="521.5" y="119.6543">TrackDataCalculatorTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="493.5" x2="684.5" y1="131.5" y2="131.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="493.5" x2="684.5" y1="139.5" y2="139.5"/><!--MD5=[d01e667c21cf622da77e8a7601ca5c91]
+class MiddlewareCommLinkManager--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="107.2188" id="MiddlewareCommLinkManager" style="stroke: #A80036; stroke-width: 1.5;" width="221" x="2450.5" y="70"/><ellipse cx="2465.5" cy="86" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M2461.4219,81.7656 L2461.4219,79.6094 L2468.8125,79.6094 L2468.8125,81.7656 L2466.3438,81.7656 L2466.3438,89.8438 L2468.8125,89.8438 L2468.8125,92 L2461.4219,92 L2461.4219,89.8438 L2463.8906,89.8438 L2463.8906,81.7656 L2461.4219,81.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="189" x="2479.5" y="90.1543">MiddlewareCommLinkManager</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2451.5" x2="2670.5" y1="102" y2="102"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="2451.5" x2="2670.5" y1="110" y2="110"/><ellipse cx="2461.5" cy="137.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="160" x="2470.5" y="141.0151">TrackData parseRfid(int rfid)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2451.5" x2="2528" y1="124.4023" y2="124.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="2528" y="127.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2594" x2="2670.5" y1="124.4023" y2="124.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="2460.5" y="170.6245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2451.5" x2="2528" y1="154.0117" y2="154.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="2528" y="157.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2594" x2="2670.5" y1="154.0117" y2="154.0117"/><!--MD5=[0a03c366ade61429da89cc477d567a32]
+class MiddlewareCommInterfaceImplementation--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="132.8281" id="MiddlewareCommInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="568" x="2910" y="248"/><ellipse cx="3059.25" cy="264" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M3062.2188,269.6406 Q3061.6406,269.9375 3061,270.0781 Q3060.3594,270.2344 3059.6563,270.2344 Q3057.1563,270.2344 3055.8281,268.5938 Q3054.5156,266.9375 3054.5156,263.8125 Q3054.5156,260.6875 3055.8281,259.0313 Q3057.1563,257.375 3059.6563,257.375 Q3060.3594,257.375 3061,257.5313 Q3061.6563,257.6875 3062.2188,257.9844 L3062.2188,260.7031 Q3061.5938,260.125 3061,259.8594 Q3060.4063,259.5781 3059.7813,259.5781 Q3058.4375,259.5781 3057.75,260.6563 Q3057.0625,261.7188 3057.0625,263.8125 Q3057.0625,265.9063 3057.75,266.9844 Q3058.4375,268.0469 3059.7813,268.0469 Q3060.4063,268.0469 3061,267.7813 Q3061.5938,267.5 3062.2188,266.9219 L3062.2188,269.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="261" x="3079.75" y="268.1543">MiddlewareCommInterfaceImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2911" x2="3477" y1="280" y2="280"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2918" y="288"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="291" x="2930" y="294.2104">MiddlewareCommLinkManager middlewareManager</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2911" x2="3477" y1="300.8047" y2="300.8047"/><ellipse cx="2921" cy="311.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="542" x="2930" y="315.0151">MiddlewareCommInterfaceImplementation (MiddlewareCommLinkManager middlewareManager)</text><ellipse cx="2921" cy="341.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="171" x="2930" y="344.6245">TrackData requestRfid(int rfid)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2911" x2="3161" y1="328.0117" y2="328.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="3161" y="331.3198">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="3227" x2="3477" y1="328.0117" y2="328.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="2920" y="374.2339"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2911" x2="3161" y1="357.6211" y2="357.6211"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="3161" y="360.9292">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="3227" x2="3477" y1="357.6211" y2="357.6211"/><!--MD5=[d3cb230b9040bd9072bb1f490e167601]
+class MiddlewareCommInterface--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="107.2188" id="MiddlewareCommInterface" style="stroke: #A80036; stroke-width: 1.5;" width="198" x="3095" y="70"/><ellipse cx="3110" cy="86" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M3105.9219,81.7656 L3105.9219,79.6094 L3113.3125,79.6094 L3113.3125,81.7656 L3110.8438,81.7656 L3110.8438,89.8438 L3113.3125,89.8438 L3113.3125,92 L3105.9219,92 L3105.9219,89.8438 L3108.3906,89.8438 L3108.3906,81.7656 L3105.9219,81.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="166" x="3124" y="90.1543">MiddlewareCommInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="3096" x2="3292" y1="102" y2="102"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="3096" x2="3292" y1="110" y2="110"/><ellipse cx="3106" cy="137.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="171" x="3115" y="141.0151">TrackData requestRfid(int rfid)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="3096" x2="3161" y1="124.4023" y2="124.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="3161" y="127.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="3227" x2="3292" y1="124.4023" y2="124.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="3105" y="170.6245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="3096" x2="3161" y1="154.0117" y2="154.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="3161" y="157.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="3227" x2="3292" y1="154.0117" y2="154.0117"/><!--MD5=[4915649770e9045e9ea9156a01fd67e8]
+class MiddlewareCommDatabaseInterface--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="107.2188" id="MiddlewareCommDatabaseInterface" style="stroke: #A80036; stroke-width: 1.5;" width="258" x="2001" y="70"/><ellipse cx="2016" cy="86" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M2011.9219,81.7656 L2011.9219,79.6094 L2019.3125,79.6094 L2019.3125,81.7656 L2016.8438,81.7656 L2016.8438,89.8438 L2019.3125,89.8438 L2019.3125,92 L2011.9219,92 L2011.9219,89.8438 L2014.3906,89.8438 L2014.3906,81.7656 L2011.9219,81.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="226" x="2030" y="90.1543">MiddlewareCommDatabaseInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2002" x2="2258" y1="102" y2="102"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="2002" x2="2258" y1="110" y2="110"/><ellipse cx="2012" cy="137.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="123" x="2021" y="141.0151">int checkCurrentRfid()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2002" x2="2097" y1="124.4023" y2="124.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="2097" y="127.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2163" x2="2258" y1="124.4023" y2="124.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="2011" y="170.6245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2002" x2="2097" y1="154.0117" y2="154.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="2097" y="157.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2163" x2="2258" y1="154.0117" y2="154.0117"/><!--MD5=[d9ed64ee38938b46697008700ce69fba]
+class MiddlewareCommLinkManagerImplementation--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="132.8281" id="MiddlewareCommLinkManagerImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="316" x="2559" y="248"/><ellipse cx="2574" cy="264" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M2576.9688,269.6406 Q2576.3906,269.9375 2575.75,270.0781 Q2575.1094,270.2344 2574.4063,270.2344 Q2571.9063,270.2344 2570.5781,268.5938 Q2569.2656,266.9375 2569.2656,263.8125 Q2569.2656,260.6875 2570.5781,259.0313 Q2571.9063,257.375 2574.4063,257.375 Q2575.1094,257.375 2575.75,257.5313 Q2576.4063,257.6875 2576.9688,257.9844 L2576.9688,260.7031 Q2576.3438,260.125 2575.75,259.8594 Q2575.1563,259.5781 2574.5313,259.5781 Q2573.1875,259.5781 2572.5,260.6563 Q2571.8125,261.7188 2571.8125,263.8125 Q2571.8125,265.9063 2572.5,266.9844 Q2573.1875,268.0469 2574.5313,268.0469 Q2575.1563,268.0469 2575.75,267.7813 Q2576.3438,267.5 2576.9688,266.9219 L2576.9688,269.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="284" x="2588" y="268.1543">MiddlewareCommLinkManagerImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2560" x2="2874" y1="280" y2="280"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="2560" x2="2874" y1="288" y2="288"/><ellipse cx="2570" cy="315.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="160" x="2579" y="319.0151">TrackData parseRfid(int rfid)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2567" y="325.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="188" x="2579" y="331.8198">float calculateLocationDataPoint()</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2567" y="338.4141"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="144" x="2579" y="344.6245">float calculateTrackData()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2560" x2="2684" y1="302.4023" y2="302.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="2684" y="305.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2750" x2="2874" y1="302.4023" y2="302.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="2569" y="374.2339"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2560" x2="2684" y1="357.6211" y2="357.6211"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="2684" y="360.9292">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2750" x2="2874" y1="357.6211" y2="357.6211"/><!--MD5=[1c4f9654f103878faf4a10c0361188b9]
+class MiddlewareCommDatabaseInterfaceImplementation--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="132.8281" id="MiddlewareCommDatabaseInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="612" x="1912" y="248"/><ellipse cx="2052.75" cy="264" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M2055.7188,269.6406 Q2055.1406,269.9375 2054.5,270.0781 Q2053.8594,270.2344 2053.1563,270.2344 Q2050.6563,270.2344 2049.3281,268.5938 Q2048.0156,266.9375 2048.0156,263.8125 Q2048.0156,260.6875 2049.3281,259.0313 Q2050.6563,257.375 2053.1563,257.375 Q2053.8594,257.375 2054.5,257.5313 Q2055.1563,257.6875 2055.7188,257.9844 L2055.7188,260.7031 Q2055.0938,260.125 2054.5,259.8594 Q2053.9063,259.5781 2053.2813,259.5781 Q2051.9375,259.5781 2051.25,260.6563 Q2050.5625,261.7188 2050.5625,263.8125 Q2050.5625,265.9063 2051.25,266.9844 Q2051.9375,268.0469 2053.2813,268.0469 Q2053.9063,268.0469 2054.5,267.7813 Q2055.0938,267.5 2055.7188,266.9219 L2055.7188,269.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="322" x="2073.25" y="268.1543">MiddlewareCommDatabaseInterfaceImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1913" x2="2523" y1="280" y2="280"/><ellipse cx="1923" cy="291" fill="none" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="285" x="1932" y="294.2104">DatabaseCommInterface databaseCommInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1913" x2="2523" y1="300.8047" y2="300.8047"/><ellipse cx="1923" cy="311.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="586" x="1932" y="315.0151">MiddlewareCommDatabaseInterfaceImplementation(DatabaseCommInterface databaseCommInterface)</text><ellipse cx="1923" cy="341.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="122" x="1932" y="344.6245">int checkCurrentRfid()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1913" x2="2185" y1="328.0117" y2="328.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="2185" y="331.3198">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2251" x2="2523" y1="328.0117" y2="328.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="1922" y="374.2339"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1913" x2="2185" y1="357.6211" y2="357.6211"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="2185" y="360.9292">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2251" x2="2523" y1="357.6211" y2="357.6211"/><!--MD5=[8d86b1aa2030a05d452f78e2e1fb37ed]
+class TrackDataCalculator--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="86.4141" id="TrackDataCalculator" style="stroke: #A80036; stroke-width: 1.5;" width="518" x="1403" y="456"/><ellipse cx="1594.25" cy="472" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1597.2188,477.6406 Q1596.6406,477.9375 1596,478.0781 Q1595.3594,478.2344 1594.6563,478.2344 Q1592.1563,478.2344 1590.8281,476.5938 Q1589.5156,474.9375 1589.5156,471.8125 Q1589.5156,468.6875 1590.8281,467.0313 Q1592.1563,465.375 1594.6563,465.375 Q1595.3594,465.375 1596,465.5313 Q1596.6563,465.6875 1597.2188,465.9844 L1597.2188,468.7031 Q1596.5938,468.125 1596,467.8594 Q1595.4063,467.5781 1594.7813,467.5781 Q1593.4375,467.5781 1592.75,468.6563 Q1592.0625,469.7188 1592.0625,471.8125 Q1592.0625,473.9063 1592.75,474.9844 Q1593.4375,476.0469 1594.7813,476.0469 Q1595.4063,476.0469 1596,475.7813 Q1596.5938,475.5 1597.2188,474.9219 L1597.2188,477.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="127" x="1614.75" y="476.1543">TrackDataCalculator</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1404" x2="1920" y1="488" y2="488"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1404" x2="1920" y1="496" y2="496"/><ellipse cx="1414" cy="507" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="341" x="1423" y="510.2104">float calculateSpeed(LocationDataPoint[] locationDataPoints)</text><ellipse cx="1414" cy="519.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="355" x="1423" y="523.0151">float calculateDirection(LocationDataPoint[] locationDataPoints)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1411" y="529.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="492" x="1423" y="535.8198">LocationDataPoint[] calculateRootMeanSquared(LocationDataPoint[] locationDataPoints)</text><!--MD5=[6d34700a22f737f940b471daa4ac1202]
+class DatabaseCommInterface--><rect fill="#FEFECE" filter="url(#f1s0v1a78xbzb3)" height="128.8281" id="DatabaseCommInterface" style="stroke: #A80036; stroke-width: 1.5;" width="398" x="38" y="59"/><ellipse cx="155.25" cy="75" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M151.1719,70.7656 L151.1719,68.6094 L158.5625,68.6094 L158.5625,70.7656 L156.0938,70.7656 L156.0938,78.8438 L158.5625,78.8438 L158.5625,81 L151.1719,81 L151.1719,78.8438 L153.6406,78.8438 L153.6406,70.7656 L151.1719,70.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="155" x="175.75" y="79.1543">DatabaseCommInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="435" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="435" y1="99" y2="99"/><ellipse cx="49" cy="126.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="156" x="58" y="130.0151">int receiveGetRfidRequest()</text><ellipse cx="49" cy="139.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="372" x="58" y="142.8198">LocationDataPoint receiveGetLocationDataPointRequest(int offset)</text><ellipse cx="49" cy="152.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="284" x="58" y="155.6245">TrackData receiveGetTrackDataRequest(int offset)</text><ellipse cx="49" cy="165.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="283" x="58" y="168.4292">void storeTrackDataRequest(TrackData trackData)</text><ellipse cx="49" cy="178.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="183" x="58" y="181.2339">String receiveGetModeRequest()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="204" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="204" y="116.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="270" x2="435" y1="113.4023" y2="113.4023"/><!--MD5=[a1cf72e0ac52b4d843c7c634d1a14535]
+reverse link MiddlewareCommLinkManager to MiddlewareCommLinkManagerStub--><path d="M2431.37,170.56 C2383.42,185.96 2328.26,201.79 2277,212 C2110.19,245.21 2062.06,211.2 1896,248 C1876.39,252.35 1855.99,258.19 1836.24,264.6 " fill="none" id="MiddlewareCommLinkManager&lt;-MiddlewareCommLinkManagerStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="2429.21,163.9,2450.4,164.35,2433.56,177.21,2429.21,163.9" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[7fa180022f459ef85d1acc77bc346e55]
+link MiddlewareCommInterfaceImplementationTests to MiddlewareCommLinkManagerStub--><path d="M1695.33,147.68 C1698.06,174.83 1702.68,220.76 1706.36,257.41 " fill="none" id="MiddlewareCommInterfaceImplementationTests-&gt;MiddlewareCommLinkManagerStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="1706.9,262.74,1709.9793,253.3849,1706.3997,257.7651,1702.0194,254.1855,1706.9,262.74" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[a6f6d6498f8ad0fd1149c5a16bc55d36]
+reverse link MiddlewareCommInterface to MiddlewareCommInterfaceImplementation--><path d="M3194,197.26 C3194,213.96 3194,231.62 3194,247.99 " fill="none" id="MiddlewareCommInterface&lt;-MiddlewareCommInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="3187,197.15,3194,177.15,3201,197.15,3187,197.15" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[b7be4b6db61c888b240eee15c81cfa97]
+link MiddlewareCommInterfaceImplementationTests to MiddlewareCommInterfaceImplementation--><path d="M1734.22,147.7 C1774.19,168.85 1837.22,198.76 1896,212 C2112.28,260.71 2673.03,220.32 2893,248 C2896.92,248.49 2900.86,249.01 2904.82,249.56 " fill="none" id="MiddlewareCommInterfaceImplementationTests-&gt;MiddlewareCommInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="2909.85,250.26,2901.483,245.0645,2904.8972,249.5749,2900.3868,252.9891,2909.85,250.26" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[bcb237fc50e7c64a2e386cbf2da92530]
+reverse link MiddlewareCommDatabaseInterface to MiddlewareCommDatabaseInterfaceStub--><path d="M1981.5,180.73 C1946.03,192.52 1908,203.84 1872,212 C1740.61,241.8 1702.69,219.55 1571,248 C1538.02,255.12 1502.81,265.27 1470.94,275.46 " fill="none" id="MiddlewareCommDatabaseInterface&lt;-MiddlewareCommDatabaseInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="1979.73,173.94,2000.92,174.14,1984.23,187.19,1979.73,173.94" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[2fd20703f0701fa98274185fc4989096]
+link MiddlewareCommLinkManagerImplementationTests to MiddlewareCommDatabaseInterfaceStub--><path d="M1324.52,147.68 C1331.77,178.15 1344.66,232.27 1353.73,270.38 " fill="none" id="MiddlewareCommLinkManagerImplementationTests-&gt;MiddlewareCommDatabaseInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="1354.93,275.41,1356.7418,265.7292,1353.7745,270.5454,1348.9583,267.5781,1354.93,275.41" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[497c69cbff9542047faf5ca77780c8cb]
+reverse link MiddlewareCommLinkManager to MiddlewareCommLinkManagerImplementation--><path d="M2617.19,192.58 C2632.09,210.63 2648.14,230.08 2662.93,247.99 " fill="none" id="MiddlewareCommLinkManager&lt;-MiddlewareCommLinkManagerImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="2611.79,197.03,2604.45,177.15,2622.58,188.12,2611.79,197.03" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[07eefeefbddab6e40f3001aaadb4b811]
+link MiddlewareCommLinkManagerImplementation to TrackDataCalculator--><path d="M2603.24,381.18 C2583.34,390.48 2562.44,398.92 2542,405 C2430.41,438.18 2142.52,464.67 1926.19,480.76 " fill="none" id="MiddlewareCommLinkManagerImplementation-&gt;TrackDataCalculator" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="1921.09,481.14,1930.3528,484.4867,1926.0772,480.7827,1929.7812,476.5072,1921.09,481.14" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[103579e4ea01d223111d0dbd0a71b306]
+link MiddlewareCommLinkManagerImplementationTests to MiddlewareCommLinkManagerImplementation--><path d="M1357.67,147.52 C1395.53,168.7 1455.59,198.77 1512,212 C1734.98,264.28 2317.38,203.28 2542,248 C2545.91,248.78 2549.86,249.64 2553.82,250.56 " fill="none" id="MiddlewareCommLinkManagerImplementationTests-&gt;MiddlewareCommLinkManagerImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="2558.84,251.76,2551.0287,245.7614,2553.9794,250.5877,2549.153,253.5384,2558.84,251.76" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d8431ecc5828041ae0ff652632b69c0c]
+reverse link DatabaseCommInterface to DatabaseCommInterfaceStub--><path d="M422.73,194.62 C440.65,200.74 458.62,206.64 476,212 C541.43,232.18 613.74,251.38 678.79,267.53 " fill="none" id="DatabaseCommInterface&lt;-DatabaseCommInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="420.33,201.19,403.72,188.03,424.91,187.96,420.33,201.19" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[52509b0176968f875548ba7b6727e5db]
+link MiddlewareCommDatabaseInterfaceImplementationTests to DatabaseCommInterfaceStub--><path d="M910.46,147.68 C905.74,171.82 898.1,210.82 891.42,244.93 " fill="none" id="MiddlewareCommDatabaseInterfaceImplementationTests-&gt;DatabaseCommInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="890.45,249.92,896.1012,241.8538,891.4086,245.0127,888.2496,240.3201,890.45,249.92" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[8e69def7a54ed81078168d5d1d8487c9]
+reverse link MiddlewareCommDatabaseInterface to MiddlewareCommDatabaseInterfaceImplementation--><path d="M2162.98,195.32 C2171.02,212.59 2179.58,230.98 2187.5,247.99 " fill="none" id="MiddlewareCommDatabaseInterface&lt;-MiddlewareCommDatabaseInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="2156.61,198.23,2154.51,177.15,2169.3,192.32,2156.61,198.23" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[43c3af790da194ec4c8637f83c23fde0]
+link MiddlewareCommDatabaseInterfaceImplementationTests to MiddlewareCommDatabaseInterfaceImplementation--><path d="M958.22,147.52 C1000.08,168.55 1065.99,198.37 1127,212 C1450.52,284.3 1542.8,209.08 1872,248 C1883.42,249.35 1895.03,250.86 1906.74,252.49 " fill="none" id="MiddlewareCommDatabaseInterfaceImplementationTests-&gt;MiddlewareCommDatabaseInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="1911.77,253.19,1903.403,247.9945,1906.8172,252.5049,1902.3068,255.9191,1911.77,253.19" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[b7f4c9447f2e238dc6bbfb46bebb205f]
+link TrackDataCalculatorTests to TrackDataCalculator--><path d="M587.04,147.89 C583.87,202.58 584.55,339.17 662,405 C717.07,451.81 1120.34,477 1397.63,488.93 " fill="none" id="TrackDataCalculatorTests-&gt;TrackDataCalculator" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="1402.93,489.16,1394.1095,484.7783,1397.9346,488.9459,1393.767,492.771,1402.93,489.16" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[71a8c32646385da5c64416909610bb50]
 @startuml Middleware02TestPackage_Closure
 
 package edu.oakland.test.middleware02 {
     
 }
+
+
+
+package edu.oakland.test.middleware02 {
+    class MiddlewareCommInterfaceImplementationTests {
+
+    }
+}
+
+
+
+
+package edu.oakland.test.middleware02 {
+    class MiddlewareCommLinkManagerStub {
+        __
+        .. Use Case 1 ..
+        + TrackData parseRfid(int rfid)
+        - float calculateLocationDataPoint()
+        - float calculateTrackData()
+    }
+}
+
+
+
+
+package edu.oakland.production.middleware02 {
+    interface MiddlewareCommLinkManager {
+        __
+        .. Use Case 1 ..
+        {abstract} + TrackData parseRfid(int rfid)
+        .. Use Case 2 ..
+
+    }
+}
+
+
+
+
+
+
+MiddlewareCommLinkManagerStub .up.|> MiddlewareCommLinkManager
+
+
+
+MiddlewareCommInterfaceImplementationTests ..> MiddlewareCommLinkManagerStub
+
+
+
+package edu.oakland.production.middleware02 {
+    class MiddlewareCommInterfaceImplementation {
+        - MiddlewareCommLinkManager middlewareManager
+        __
+        + MiddlewareCommInterfaceImplementation (MiddlewareCommLinkManager middlewareManager)
+        .. Use Case 1 ..
+        + TrackData requestRfid(int rfid)
+        .. Use Case 2 ..
+
+    }
+}
+
+
+
+
+package edu.oakland.production.middleware02 {
+    interface MiddlewareCommInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + TrackData requestRfid(int rfid)
+        .. Use Case 2 ..
+
+    }
+}
+
+
+
+
+
+
+MiddlewareCommInterfaceImplementation .up.|> MiddlewareCommInterface
+
+
+
+
+
+MiddlewareCommInterfaceImplementationTests ..> MiddlewareCommInterfaceImplementation
+
+
+
+
+
+package edu.oakland.test.middleware02 {
+    class MiddlewareCommLinkManagerImplementationTests {
+
+    }
+}
+
+
+
+
+package edu.oakland.test.middleware02 {
+    class MiddlewareCommDatabaseInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + int checkCurrentRfid()
+    }
+}
+
+
+
+
+package edu.oakland.production.middleware02 {
+    interface MiddlewareCommDatabaseInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + int checkCurrentRfid()
+        .. Use Case 2 ..
+
+    }
+}
+
+
+
+
+
+
+MiddlewareCommDatabaseInterfaceStub .up.|> MiddlewareCommDatabaseInterface
+
+
+
+MiddlewareCommLinkManagerImplementationTests ..> MiddlewareCommDatabaseInterfaceStub
+
+
+
+package edu.oakland.production.middleware02 {
+    class MiddlewareCommLinkManagerImplementation {
+        __
+        .. Use Case 1 ..
+        + TrackData parseRfid(int rfid)
+        - float calculateLocationDataPoint()
+        - float calculateTrackData()
+        .. Use Case 2 ..
+
+    }
+}
+
+
+MiddlewareCommLinkManagerImplementation .up.|> MiddlewareCommLinkManager
+
+
+
+package edu.oakland.helper.middleware02 {
+    class TrackDataCalculator {
+        {static} + float calculateSpeed(LocationDataPoint[] locationDataPoints)
+        {static} + float calculateDirection(LocationDataPoint[] locationDataPoints)
+        {static} - LocationDataPoint[] calculateRootMeanSquared(LocationDataPoint[] locationDataPoints)
+    }
+}
+
+
+
+
+
+
+MiddlewareCommLinkManagerImplementation ..> TrackDataCalculator
+
+
+
+MiddlewareCommLinkManagerImplementationTests ..> MiddlewareCommLinkManagerImplementation
+
+
+
+
+
+package edu.oakland.test.middleware02 {
+    class MiddlewareCommDatabaseInterfaceImplementationTests {
+
+    }
+}
+
+
+
+
+package edu.oakland.test.middleware02 {
+    class DatabaseCommInterfaceStub {
+        __
+        .. Use Case 1 ..
+        {abstract} + int receiveGetRfidRequest()
+        {abstract} + LocationDataPoint receiveGetLocationDataPointRequest(int offset)
+        {abstract} + TrackData receiveGetTrackDataRequest(int offset)
+        {abstract} + void storeTrackDataRequest(TrackData trackData)
+        {abstract} + String receiveGetModeRequest()
+    }
+}
+
+
+
+
+
+
+package edu.oakland.production.database {
+    interface DatabaseCommInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + int receiveGetRfidRequest()
+        {abstract} + LocationDataPoint receiveGetLocationDataPointRequest(int offset)
+        {abstract} + TrackData receiveGetTrackDataRequest(int offset)
+        {abstract} + void storeTrackDataRequest(TrackData trackData)
+        {abstract} + String receiveGetModeRequest()
+    }
+}
+
+
+
+
+
+
+DatabaseCommInterfaceStub .up.|> DatabaseCommInterface
+
+MiddlewareCommDatabaseInterfaceImplementationTests ..> DatabaseCommInterfaceStub
+
+
+
+package edu.oakland.production.middleware02 {
+    class MiddlewareCommDatabaseInterfaceImplementation {
+        + DatabaseCommInterface databaseCommInterface
+        __
+        + MiddlewareCommDatabaseInterfaceImplementation(DatabaseCommInterface databaseCommInterface)
+        .. Use Case 1 ..
+        + int checkCurrentRfid()
+        .. Use Case 2 ..
+
+    }
+}
+
+
+MiddlewareCommDatabaseInterfaceImplementation .up.|> MiddlewareCommDatabaseInterface
+
+
+
+
+
+MiddlewareCommDatabaseInterfaceImplementationTests ..> MiddlewareCommDatabaseInterfaceImplementation
+
+
+
+
+
+package edu.oakland.test.middleware02 {
+    class TrackDataCalculatorTests {
+
+    }
+}
+
+
+TrackDataCalculatorTests ..> TrackDataCalculator
+
+
+
 
 @enduml
 
