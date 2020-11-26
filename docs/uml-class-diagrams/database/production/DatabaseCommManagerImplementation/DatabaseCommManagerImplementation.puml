@@ -7,7 +7,7 @@ package edu.oakland.production.database {
         - LocationDataPoint locDataPoint
         - Trackdata trackData
         __
-        DatabaseCommManagerImplementation(int rfidData,
+        + DatabaseCommManagerImplementation(int rfidData,
          \tLocationDataPoint locDataPoint,
          \tTrackdata trackData)
         .. Use Case 1 ..
