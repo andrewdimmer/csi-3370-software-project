@@ -1,0 +1,16 @@
+@startuml MiddlewareGisInterfaceStub_DirectDependencies
+
+!startsub DISPLAY01_TEST
+!include MiddlewareGisInterfaceStub.puml
+!endsub
+
+!startsub DISPLAY01
+
+!endsub
+
+!startsub OTHER
+!include ../../../middleware01/production/MiddlewareGisInterface/MiddlewareGisInterface.puml
+MiddlewareGisInterfaceStub .up.|> MiddlewareGisInterface
+!endsub
+
+@enduml

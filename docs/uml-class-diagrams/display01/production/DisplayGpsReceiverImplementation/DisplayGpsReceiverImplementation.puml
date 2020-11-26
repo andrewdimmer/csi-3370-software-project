@@ -4,17 +4,11 @@ package edu.oakland.production.display01 {
     class DisplayGpsReceiverImplementation {
         __
         .. Use Case 1 ..
-        
         + String measureGpsSignalStrength(Satellite satelliteSignal)
-        
         - void passSignalStrength(int signalStrength)
-
         .. Use Case 2 ..
-        
         + String measureGpsSignalStrength(Satellite satelliteSignal)
-        
         + SatelliteSignalCheckRequest measureSignal(String satelliteName)
-
     }
 }
 

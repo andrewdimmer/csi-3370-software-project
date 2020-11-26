@@ -1,0 +1,9 @@
+@startuml SatelliteSignalCheckRequestTests
+
+package edu.oakland.test.display01 {
+    class SatelliteSignalCheckRequestTests {
+
+    }
+}
+
+@enduml

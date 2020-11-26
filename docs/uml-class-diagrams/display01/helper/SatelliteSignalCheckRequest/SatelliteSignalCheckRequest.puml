@@ -2,6 +2,9 @@
 
 package edu.oakland.helper.display01 {
     class SatelliteSignalCheckRequest {
+        - String satelliteName
+        - String checkType
+        + SatelliteSignalCheckRequest(String satelliteName, String checkType)
         + String getSatelliteName()
         + String getCheckType()
     }

@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall pass data about checking the request for the signal.
 
 ## Class UML Diagram
 
