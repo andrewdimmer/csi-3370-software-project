@@ -5,7 +5,8 @@
 !endsub
 
 !startsub DATABASE
-
+!include ../../production/DatabasePersistentStorageImplementation/DatabasePersistentStorageImplementation_Closure.puml
+PersistentStorageManager --> DatabasePersistentStorageImplementation
 !endsub
 
 !startsub OTHER

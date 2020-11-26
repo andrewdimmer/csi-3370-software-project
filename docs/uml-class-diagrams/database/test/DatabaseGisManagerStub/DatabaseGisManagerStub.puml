@@ -4,9 +4,10 @@ package edu.oakland.test.database {
     class DatabaseGisManagerStub {
         __
         .. Use Case 1 ..
-        + String receiveGpsSignalStrengths(Satellite satelliteSignal)
+        + void passStoreRequest(LocationDataPoint locationDataPoint)
         .. Use Case 2 ..
-        + PersistentStorageManager passGpsSignalStrength(String satelliteName)
+        + void passModeRequest(String mode)
+        + String passNextSatRequest(String currentSat)
     }
 }
 

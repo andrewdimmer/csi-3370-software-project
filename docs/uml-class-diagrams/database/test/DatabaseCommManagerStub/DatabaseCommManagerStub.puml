@@ -4,9 +4,11 @@ package edu.oakland.test.database {
     class DatabaseCommManagerStub {
         __
         .. Use Case 1 ..
-        + String receiveGpsSignalStrengths(Satellite satelliteSignal)
-        .. Use Case 2 ..
-        + PersistentStorageManager passGpsSignalStrength(String satelliteName)
+        + int passGetRfidRequest()
+        + LocationDataPoint passGetLocationDataPointRequest(int offset)
+        + TrackData passGetTrackDataRequest(int offset)
+        + void passStoreTrackDataRequest(TrackData trackData)
+        + String passGetModeRequest()
     }
 }
 
