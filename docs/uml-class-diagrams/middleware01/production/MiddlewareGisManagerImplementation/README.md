@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall receive the Satellite signal, store the data point and pass the signal to the database or attempt to regain GPS lock and evaluate the signal strength.
 
 ## Class UML Diagram
 
