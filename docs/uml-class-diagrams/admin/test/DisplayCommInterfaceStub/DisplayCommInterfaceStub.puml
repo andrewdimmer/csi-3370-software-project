@@ -1,0 +1,13 @@
+@startuml DisplayCommInterfaceStub
+
+package edu.oakland.test.admin {
+    class DisplayCommInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + TrackData receiveRfidRequest(int rfidNum)
+        .. Use Case 2 ..
+
+    }
+}
+
+@enduml

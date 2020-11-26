@@ -1,7 +1,7 @@
 @startuml GpsSystem
 
 package edu.oakland.production.admin {
-    class GpsSystems {
+    class GpsSystem {
         - DisplayGpsInterface displayGpsInterface
         - Satellite[] satellites
         __

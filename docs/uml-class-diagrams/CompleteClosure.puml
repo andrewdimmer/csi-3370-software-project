@@ -1,0 +1,10 @@
+@startuml CompleteClosure
+
+!include admin/AdminPackages_DirectDependencies.puml
+!include display01/Display01Packages_DirectDependencies.puml
+!include display02/Display02Packages_DirectDependencies.puml
+!include middleware01/Middleware01Packages_DirectDependencies.puml
+!include middleware02/Middleware02Packages_DirectDependencies.puml
+!include database/DatabasePackages_DirectDependencies.puml
+
+@enduml

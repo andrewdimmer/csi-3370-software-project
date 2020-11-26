@@ -1,0 +1,9 @@
+@startuml GpsSystemTest
+
+package edu.oakland.test.admin {
+    class GpsSystemTests {
+
+    }
+}
+
+@enduml

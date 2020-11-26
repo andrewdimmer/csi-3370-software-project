@@ -1,0 +1,19 @@
+@startuml UserTests_Closure
+
+!startsub ADMIN_TESTS
+!include UserTests.puml
+
+!include ../DisplayCommInterfaceStub/DisplayCommInterfaceStub_Closure.puml
+UserTests ..> DisplayCommInterfaceStub
+!endsub
+
+!startsub ADMIN
+!include ../../production/User/User_Closure.puml
+UserTests ..> User
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

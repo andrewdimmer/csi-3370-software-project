@@ -2,6 +2,9 @@
 
 !startsub ADMIN_HELPER
 !include Satellite.puml
+
+!include ../LocationDataPoint/LocationDataPoint.puml
+Satellite *--> LocationDataPoint
 !endsub
 
 !startsub ADMIN
