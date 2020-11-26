@@ -2,21 +2,14 @@
 
 package edu.oakland.production.database {
     interface DatabaseCommInterface {
-    	- DatabaseCommManager databaseCommManager
-    	- int rfidData
-    	- LocationDataPoint locDataPoint
-    	- TrackData trackData
-    	- String mode
         __
-        DatabaseCommInterface(int rfidData, 
-        \tLocationDataPoint locDataPoint,
-        \tTrackData trackData)
+        
         .. Use Case 1 ..
-        + int receiveGetRfidRequest()
-        + LocationDataPoint receiveGetLocationDataPointRequest(int offset)
-        + TrackData receiveGetTrackDataRequest(int offset)
-        + void storeTrackDataRequest(TrackData trackData)
-        + String receiveGetModeRequest()
+        {abstract} + int receiveGetRfidRequest()
+        {abstract} + LocationDataPoint receiveGetLocationDataPointRequest(int offset)
+        {abstract} + TrackData receiveGetTrackDataRequest(int offset)
+        {abstract} + void storeTrackDataRequest(TrackData trackData)
+        {abstract} + String receiveGetModeRequest()
         
     }
 }
