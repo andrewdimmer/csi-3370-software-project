@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This processor shall...
+This processor shall evaluate the GPS signal strength or measure the signal strength.
 
 ## Class UML Diagram
 
