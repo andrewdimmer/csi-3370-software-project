@@ -3,7 +3,6 @@
 package edu.oakland.production.database {
     interface DatabaseCommInterface {
         __
-        
         .. Use Case 1 ..
         {abstract} + int receiveGetRfidRequest()
         {abstract} + LocationDataPoint receiveGetLocationDataPointRequest(int offset)
