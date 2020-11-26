@@ -1,0 +1,18 @@
+@startuml DatabaseProductionPackage_Closure
+
+package edu.oakland.production.database {
+    
+}
+
+!include DatabaseCommInterface/DatabaseCommInterface_Closure.puml
+!include DatabaseCommManager/DatabaseCommManager_Closure.puml
+!include DatabaseGisInterface/DatabaseGisInterface_Closure.puml
+!include DatabaseGisManager/DatabaseGisManager_Closure.puml
+!include DatabasePersistentStorage/DatabasePersistentStorage_Closure.puml
+!include DatabaseCommInterfaceImplementation/DatabaseCommInterfaceImplementation_Closure.puml
+!include DatabaseCommManagerImplementation/DatabaseCommManagerImplementation_Closure.puml
+!include DatabaseGisInterfaceImplementation/DatabaseGisInterfaceImplementation_Closure.puml
+!include DatabaseGisManagerImplementation/DatabaseGisManagerImplementation_Closure.puml
+!include DatabasePersistentStorageImplementation/DatabasePersistentStorageImplementation_Closure.puml
+
+@enduml

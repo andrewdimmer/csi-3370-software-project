@@ -1,0 +1,9 @@
+@startuml DatabaseCommInterfaceImplementationTests
+
+package edu.oakland.test.database {
+    class DatabaseCommInterfaceImplementationTests {
+
+    }
+}
+
+@enduml

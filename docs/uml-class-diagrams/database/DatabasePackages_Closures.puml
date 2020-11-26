@@ -1,0 +1,7 @@
+@startuml DatabasePackages_Closure
+
+!include production/DatabaseProductionPackage_Closure.puml
+!include test/DatabaseTestPackage_Closure.puml
+!include helper/DatabaseHelperPackage_Closure.puml
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml DatabaseCommManagerImplementationTests_Closure
+
+!startsub DATABASE_TEST
+!include DatabaseCommManagerImplementationTests.puml
+
+!include ../DatabasePersistentStorageStub/DatabasePersistentStorageStub_Closure.puml
+DatabaseCommManagerImplementationTests ..> DatabasePersistentStorageStub
+!endsub
+
+!startsub DATABASE
+!include ../../production/DatabaseCommManagerImplementation/DatabaseCommManagerImplementation_Closure.puml
+DatabaseCommManagerImplementationTests ..> DatabaseCommManagerImplementation
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

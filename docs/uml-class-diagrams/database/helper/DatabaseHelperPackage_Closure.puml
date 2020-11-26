@@ -1,0 +1,9 @@
+@startuml DatabaseHelperPackage_Closure
+
+package edu.oakland.helper.database {
+    
+}
+
+!include PersistentStorageManager/PersistentStorageManager_Closure.puml
+
+@enduml

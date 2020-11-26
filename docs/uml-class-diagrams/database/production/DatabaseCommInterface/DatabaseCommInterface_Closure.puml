@@ -1,0 +1,15 @@
+@startuml DatabaseCommInterface_Closure
+
+!startsub DATABASE_PRODUCTION
+!include DatabaseCommInterface.puml
+!endsub
+
+!startsub DATABASE
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

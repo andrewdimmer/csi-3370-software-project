@@ -1,0 +1,16 @@
+@startuml DatabaseCommManagerStub_DirectDependencies
+
+!startsub DATABASE_TEST
+!include DatabaseCommManagerStub.puml
+!endsub
+
+!startsub DATABASE
+!include ../../production/DatabaseCommManager/DatabaseCommManager.puml
+DatabaseCommManagerStub .up.|> DatabaseCommManager
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

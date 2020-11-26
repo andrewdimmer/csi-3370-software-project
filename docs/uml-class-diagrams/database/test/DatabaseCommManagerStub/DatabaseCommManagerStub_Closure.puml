@@ -1,0 +1,16 @@
+@startuml DatabaseCommManagerStub_Closure
+
+!startsub DATABASE_TEST
+!include DatabaseCommManagerStub.puml
+!endsub
+
+!startsub DATABASE
+!include ../../production/DatabaseCommManager/DatabaseCommManager_Closure.puml
+DatabaseCommManagerStub .up.|> DatabaseCommManager
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

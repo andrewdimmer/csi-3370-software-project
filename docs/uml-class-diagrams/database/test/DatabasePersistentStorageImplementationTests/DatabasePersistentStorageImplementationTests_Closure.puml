@@ -1,0 +1,16 @@
+@startuml DatabasePersistentStorageImplementationTests_Closure
+
+!startsub DATABASE_TESTS
+!include DatabasePersistentStorageImplementationTests.puml
+!endsub
+
+!startsub DATABASE
+!include ../../production/DatabasePersistentStorageImplementation/DatabasePersistentStorageImplementation_Closure.puml
+DatabasePersistentStorageImplementationTests ..> DatabasePersistentStorageImplementation
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

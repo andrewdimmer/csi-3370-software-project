@@ -1,0 +1,9 @@
+@startuml DatabasePersistentStorageImplementationTests
+
+package edu.oakland.test.database {
+    class DatabasePersistentStorageImplementationTests {
+
+    }
+}
+
+@enduml
