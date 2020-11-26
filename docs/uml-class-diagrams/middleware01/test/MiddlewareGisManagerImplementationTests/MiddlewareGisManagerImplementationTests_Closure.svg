@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="451px" preserveAspectRatio="none" style="width:1456px;height:451px;" version="1.1" viewBox="0 0 1456 451" width="1456px" zoomAndPan="magnify"><defs><filter height="300%" id="fvilfvvb8dwdh" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[91c45ac7eb5545a65ecec592fddfa5fd]
+cluster edu.oakland.test.middleware01--><polygon fill="#FFFFFF" filter="url(#fvilfvvb8dwdh)" points="460,66.5,715,66.5,722,88.7969,874,88.7969,874,413.5,460,413.5,460,66.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="460" x2="722" y1="88.7969" y2="88.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="249" x="464" y="81.4951">edu.oakland.test.middleware01</text><!--MD5=[c2e276049abfe145c9906edb061abd32]
+cluster edu.oakland.production.database--><polygon fill="#FFFFFF" filter="url(#fvilfvvb8dwdh)" points="22,30.5,292,30.5,299,52.7969,436,52.7969,436,201.5,22,201.5,22,30.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="299" y1="52.7969" y2="52.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="264" x="26" y="45.4951">edu.oakland.production.database</text><!--MD5=[3f116dbe56326f0321b4f8703f3bd2bd]
+cluster edu.oakland.production.middleware01--><polygon fill="#FFFFFF" filter="url(#fvilfvvb8dwdh)" points="898,24,1208,24,1215,46.2969,1434,46.2969,1434,439,898,439,898,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="898" x2="1215" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="304" x="902" y="38.9951">edu.oakland.production.middleware01</text><!--MD5=[d234de36885e20e607a6cce78b3173aa]
+class MiddlewareGisManagerImplementationTests--><rect fill="#FEFECE" filter="url(#fvilfvvb8dwdh)" height="48" id="MiddlewareGisManagerImplementationTests" style="stroke: #A80036; stroke-width: 1.5;" width="307" x="532.5" y="101.5"/><ellipse cx="547.5" cy="117.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M550.4688,123.1406 Q549.8906,123.4375 549.25,123.5781 Q548.6094,123.7344 547.9063,123.7344 Q545.4063,123.7344 544.0781,122.0938 Q542.7656,120.4375 542.7656,117.3125 Q542.7656,114.1875 544.0781,112.5313 Q545.4063,110.875 547.9063,110.875 Q548.6094,110.875 549.25,111.0313 Q549.9063,111.1875 550.4688,111.4844 L550.4688,114.2031 Q549.8438,113.625 549.25,113.3594 Q548.6563,113.0781 548.0313,113.0781 Q546.6875,113.0781 546,114.1563 Q545.3125,115.2188 545.3125,117.3125 Q545.3125,119.4063 546,120.4844 Q546.6875,121.5469 548.0313,121.5469 Q548.6563,121.5469 549.25,121.2813 Q549.8438,121 550.4688,120.4219 L550.4688,123.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="275" x="561.5" y="121.6543">MiddlewareGisManagerImplementationTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="533.5" x2="838.5" y1="133.5" y2="133.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="533.5" x2="838.5" y1="141.5" y2="141.5"/><!--MD5=[ab27779a11d5209c16fcbeb03aa21929]
+class DatabaseGisInterfaceStub--><rect fill="#FEFECE" filter="url(#fvilfvvb8dwdh)" height="120.0234" id="DatabaseGisInterfaceStub" style="stroke: #A80036; stroke-width: 1.5;" width="382" x="476" y="277.5"/><ellipse cx="580.25" cy="293.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M583.2188,299.1406 Q582.6406,299.4375 582,299.5781 Q581.3594,299.7344 580.6563,299.7344 Q578.1563,299.7344 576.8281,298.0938 Q575.5156,296.4375 575.5156,293.3125 Q575.5156,290.1875 576.8281,288.5313 Q578.1563,286.875 580.6563,286.875 Q581.3594,286.875 582,287.0313 Q582.6563,287.1875 583.2188,287.4844 L583.2188,290.2031 Q582.5938,289.625 582,289.3594 Q581.4063,289.0781 580.7813,289.0781 Q579.4375,289.0781 578.75,290.1563 Q578.0625,291.2188 578.0625,293.3125 Q578.0625,295.4063 578.75,296.4844 Q579.4375,297.5469 580.7813,297.5469 Q581.4063,297.5469 582,297.2813 Q582.5938,297 583.2188,296.4219 L583.2188,299.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="165" x="600.75" y="297.6543">DatabaseGisInterfaceStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="477" x2="857" y1="309.5" y2="309.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="477" x2="857" y1="317.5" y2="317.5"/><ellipse cx="487" cy="345.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="356" x="496" y="348.5151">void recieveStoreRequest(LocationDataPoint locationDataPoint)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="477" x2="634" y1="331.9023" y2="331.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="634" y="335.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="700" x2="857" y1="331.9023" y2="331.9023"/><ellipse cx="487" cy="374.9141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="233" x="496" y="378.1245">String recieveModeRequest(String mode)</text><ellipse cx="487" cy="387.7188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="275" x="496" y="390.9292">String recieveNextSatRequest(String currentSat)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="477" x2="634" y1="361.5117" y2="361.5117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="634" y="364.8198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="700" x2="857" y1="361.5117" y2="361.5117"/><!--MD5=[3bff7e01a405ec7c4802abd699e27172]
+class DatabaseGisInterface--><rect fill="#FEFECE" filter="url(#fvilfvvb8dwdh)" height="120.0234" id="DatabaseGisInterface" style="stroke: #A80036; stroke-width: 1.5;" width="383" x="37.5" y="65.5"/><ellipse cx="157.25" cy="81.5" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M153.1719,77.2656 L153.1719,75.1094 L160.5625,75.1094 L160.5625,77.2656 L158.0938,77.2656 L158.0938,85.3438 L160.5625,85.3438 L160.5625,87.5 L153.1719,87.5 L153.1719,85.3438 L155.6406,85.3438 L155.6406,77.2656 L153.1719,77.2656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="135" x="177.75" y="85.6543">DatabaseGisInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="38.5" x2="419.5" y1="97.5" y2="97.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="38.5" x2="419.5" y1="105.5" y2="105.5"/><ellipse cx="48.5" cy="133.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="357" x="57.5" y="136.5151">void recieveStoreRequest(LocationDataPoint locationDataPoint)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="38.5" x2="196" y1="119.9023" y2="119.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="196" y="123.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="262" x2="419.5" y1="119.9023" y2="119.9023"/><ellipse cx="48.5" cy="162.9141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="232" x="57.5" y="166.1245">String recieveModeRequest(String mode)</text><ellipse cx="48.5" cy="175.7188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="273" x="57.5" y="178.9292">String recieveNextSatRequest(String currentSat)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="38.5" x2="196" y1="149.5117" y2="149.5117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="196" y="152.8198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="262" x2="419.5" y1="149.5117" y2="149.5117"/><!--MD5=[95fb96a46a83d39a2e18236f313a92fb]
+class MiddlewareGisManagerImplementation--><rect fill="#FEFECE" filter="url(#fvilfvvb8dwdh)" height="171.2422" id="MiddlewareGisManagerImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="503" x="914.5" y="252"/><ellipse cx="1041.25" cy="268" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1044.2188,273.6406 Q1043.6406,273.9375 1043,274.0781 Q1042.3594,274.2344 1041.6563,274.2344 Q1039.1563,274.2344 1037.8281,272.5938 Q1036.5156,270.9375 1036.5156,267.8125 Q1036.5156,264.6875 1037.8281,263.0313 Q1039.1563,261.375 1041.6563,261.375 Q1042.3594,261.375 1043,261.5313 Q1043.6563,261.6875 1044.2188,261.9844 L1044.2188,264.7031 Q1043.5938,264.125 1043,263.8594 Q1042.4063,263.5781 1041.7813,263.5781 Q1040.4375,263.5781 1039.75,264.6563 Q1039.0625,265.7188 1039.0625,267.8125 Q1039.0625,269.9063 1039.75,270.9844 Q1040.4375,272.0469 1041.7813,272.0469 Q1042.4063,272.0469 1043,271.7813 Q1043.5938,271.5 1044.2188,270.9219 L1044.2188,273.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="241" x="1061.75" y="272.1543">MiddlewareGisManagerImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="915.5" x2="1416.5" y1="284" y2="284"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="922.5" y="292"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="249" x="934.5" y="298.2104">DatabaseGisInterface databaseGisInterface</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="922.5" y="304.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="203" x="934.5" y="311.0151">LocationDataPoint locationDataPoint</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="915.5" x2="1416.5" y1="317.6094" y2="317.6094"/><ellipse cx="925.5" cy="328.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="477" x="934.5" y="331.8198">MiddlewareGisManagerImplementation(DatabaseGisInterface databaseGisInterface)</text><ellipse cx="925.5" cy="358.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="331" x="934.5" y="361.4292">String receieveGpsSignalStrength(Satellite satelliteSignal)</text><ellipse cx="925.5" cy="371.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="166" x="934.5" y="374.2339">void storeLocationDataPoint()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="915.5" x2="1133" y1="344.8164" y2="344.8164"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1133" y="348.1245">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1199" x2="1416.5" y1="344.8164" y2="344.8164"/><ellipse cx="925.5" cy="400.6328" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="306" x="934.5" y="403.8433">String attemptToRegainGpsLock(String satelliteName)</text><ellipse cx="925.5" cy="413.4375" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="311" x="934.5" y="416.6479">String evaluateGpsSignalStrength(boolean signalValid)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="915.5" x2="1133" y1="387.2305" y2="387.2305"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1133" y="390.5386">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1199" x2="1416.5" y1="387.2305" y2="387.2305"/><!--MD5=[6b8f2796bf9a05cb61532ec918b7c92e]
+class MiddlewareGisManager--><rect fill="#FEFECE" filter="url(#fvilfvvb8dwdh)" height="132.8281" id="MiddlewareGisManager" style="stroke: #A80036; stroke-width: 1.5;" width="351" x="990.5" y="59"/><ellipse cx="1089.75" cy="75" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1085.6719,70.7656 L1085.6719,68.6094 L1093.0625,68.6094 L1093.0625,70.7656 L1090.5938,70.7656 L1090.5938,78.8438 L1093.0625,78.8438 L1093.0625,81 L1085.6719,81 L1085.6719,78.8438 L1088.1406,78.8438 L1088.1406,70.7656 L1085.6719,70.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="144" x="1110.25" y="79.1543">MiddlewareGisManager</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="991.5" x2="1340.5" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="991.5" x2="1340.5" y1="99" y2="99"/><ellipse cx="1001.5" cy="126.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="325" x="1010.5" y="130.0151">String receieveGpsSignalStrength(Satellite satelliteSignal)</text><ellipse cx="1001.5" cy="139.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="166" x="1010.5" y="142.8198">void storeLocationDataPoint()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="991.5" x2="1133" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1133" y="116.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1199" x2="1340.5" y1="113.4023" y2="113.4023"/><ellipse cx="1001.5" cy="169.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="303" x="1010.5" y="172.4292">String attemptToRegainGpsLock(String satelliteName)</text><ellipse cx="1001.5" cy="182.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="308" x="1010.5" y="185.2339">String evaluateGpsSignalStrength(boolean signalValid)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="991.5" x2="1133" y1="155.8164" y2="155.8164"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1133" y="159.1245">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1199" x2="1340.5" y1="155.8164" y2="155.8164"/><!--MD5=[bd4e8269d2c8a63a54bdfe08757bb4c3]
+reverse link DatabaseGisInterface to DatabaseGisInterfaceStub--><path d="M370.39,194.29 C426.19,221.04 489.71,251.5 543.61,277.34 " fill="none" id="DatabaseGisInterface&lt;-DatabaseGisInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="367.18,200.51,352.17,185.56,373.23,187.89,367.18,200.51" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[b1768f707bfe8de0e0c74c5cebb2374b]
+link MiddlewareGisManagerImplementationTests to DatabaseGisInterfaceStub--><path d="M683.89,149.78 C681.24,179.12 676.57,230.77 672.81,272.31 " fill="none" id="MiddlewareGisManagerImplementationTests-&gt;DatabaseGisInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="672.35,277.33,677.1306,268.7192,672.7924,272.3496,669.162,268.0114,672.35,277.33" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[ba88405600d0f63e318d28a37302bd2e]
+reverse link MiddlewareGisManager to MiddlewareGisManagerImplementation--><path d="M1166,212.15 C1166,225.22 1166,238.7 1166,251.74 " fill="none" id="MiddlewareGisManager&lt;-MiddlewareGisManagerImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="1159,212.08,1166,192.08,1173,212.08,1159,212.08" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d4f521e6ea7eb3b8ddc2986d2d69d161]
+link MiddlewareGisManagerImplementationTests to MiddlewareGisManagerImplementation--><path d="M738.74,149.57 C794.08,173.78 884.45,213.32 967.86,249.81 " fill="none" id="MiddlewareGisManagerImplementationTests-&gt;MiddlewareGisManagerImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="972.84,251.99,966.2086,244.7082,968.2622,249.9792,962.9912,252.0328,972.84,251.99" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[892bb9d8bbb2b4870f504e0f5d64cae8]
+@startuml MiddlewareGisManagerImplementationTests_Closure
+
+
+package edu.oakland.test.middleware01 {
+    class MiddlewareGisManagerImplementationTests {
+
+    }
+}
+
+
+
+
+package edu.oakland.test.middleware01 {
+    class DatabaseGisInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + void recieveStoreRequest(LocationDataPoint locationDataPoint)
+        .. Use Case 2 ..
+        + String recieveModeRequest(String mode)
+        + String recieveNextSatRequest(String currentSat)
+    }
+}
+
+
+
+
+
+
+package edu.oakland.production.database {
+    interface DatabaseGisInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + void recieveStoreRequest(LocationDataPoint locationDataPoint)
+        .. Use Case 2 ..
+        {abstract} + String recieveModeRequest(String mode)
+        {abstract} + String recieveNextSatRequest(String currentSat)
+    }
+}
+
+
+
+
+
+
+DatabaseGisInterfaceStub .up.|> DatabaseGisInterface
+
+MiddlewareGisManagerImplementationTests ..> DatabaseGisInterfaceStub
+
+
+
+package edu.oakland.production.middleware01 {
+    class MiddlewareGisManagerImplementation {
+        - DatabaseGisInterface databaseGisInterface
+        - LocationDataPoint locationDataPoint
+        __
+        + MiddlewareGisManagerImplementation(DatabaseGisInterface databaseGisInterface)
+        .. Use Case 1 ..
+        + String receieveGpsSignalStrength(Satellite satelliteSignal)
+        + void storeLocationDataPoint()
+        .. Use Case 2 ..
+        + String attemptToRegainGpsLock(String satelliteName)
+        + String evaluateGpsSignalStrength(boolean signalValid)
+    }
+}
+
+
+
+
+package edu.oakland.production.middleware01 {
+    interface MiddlewareGisManager {
+        __
+        .. Use Case 1 ..
+        {abstract} + String receieveGpsSignalStrength(Satellite satelliteSignal)
+        {abstract} + void storeLocationDataPoint()
+        .. Use Case 2 ..
+        {abstract} + String attemptToRegainGpsLock(String satelliteName)
+        {abstract} + String evaluateGpsSignalStrength(boolean signalValid)
+    }
+}
+
+
+
+
+
+
+MiddlewareGisManagerImplementation .up.|> MiddlewareGisManager
+
+
+
+
+
+MiddlewareGisManagerImplementationTests ..> MiddlewareGisManagerImplementation
+
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>
