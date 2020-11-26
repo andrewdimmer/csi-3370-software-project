@@ -9,9 +9,9 @@
 
 ## Purpose
 
-This package shall...
+This package shall contain the classes needed to persistently store data, provide functions for middleware to access the database, and communicate between the interface to middleware and the persisent storage.
 
-## Intrerfaces
+## Interfaces
 
 This package contains the following interfaces:
 

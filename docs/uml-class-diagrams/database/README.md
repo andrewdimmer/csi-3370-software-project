@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This set of packages shall...
+This set of packages shall maintain the database for GIS and Comm, and also pass/request data from middleware.
 
 ## Packages
 

@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall...
+This interface shall provide functions for middleware to interact with SLTS's persistent storage.
 
 ## Class UML Diagram
 
