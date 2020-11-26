@@ -2,11 +2,26 @@
 
 package edu.oakland.production.database {
     class DatabasePersistentStorageImplementation {
+        - int rfidData
+        - ArrayList<LocationDataPoint> locDataPoint
+        - ArrayList<TrackData> trackData
+        - String[] nextSatellites
+        - String mode
         __
+        + DatabasePersistentStorage(int rfidData, 
+        \tArrayList<LocationDataPoint> locDataPoint, 
+        \tArrayList<TrackData> trackData, 
+        \tString[] nextSatellites)
         .. Use Case 1 ..
-
+        + int locateRfidData()
+        + LocationDataPoint getLocationDataPoint(int offset)
+        + void storeLocationDataPoint(LocationDataPoint locationDataPoint)
+        + TrackData getTrackData(int offset)
+        + void storeTrackData(TrackData trackData)
+        + String getMode()
         .. Use Case 2 ..
-
+        + void storeMode(String mode)
+        + String getNextSat(String currentSat)
     }
 }
 

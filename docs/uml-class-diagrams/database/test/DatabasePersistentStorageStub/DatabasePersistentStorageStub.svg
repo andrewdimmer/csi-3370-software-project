@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="271px" preserveAspectRatio="none" style="width:472px;height:271px;" version="1.1" viewBox="0 0 472 271" width="472px" zoomAndPan="magnify"><defs><filter height="300%" id="fbitv614i1yu9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[1dbda88d88b075ce9aee8f1e1f073379]
+cluster edu.oakland.test.database--><polygon fill="#FFFFFF" filter="url(#fbitv614i1yu9)" points="22,24,237,24,244,46.2969,450,46.2969,450,259,22,259,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="244" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="209" x="26" y="38.9951">edu.oakland.test.database</text><!--MD5=[31f48955623aa6cc6e2828f210a550ba]
+class DatabasePersistentStorageStub--><rect fill="#FEFECE" filter="url(#fbitv614i1yu9)" height="184.0469" id="DatabasePersistentStorageStub" style="stroke: #A80036; stroke-width: 1.5;" width="395" x="38.5" y="59"/><ellipse cx="129.75" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M132.7188,80.6406 Q132.1406,80.9375 131.5,81.0781 Q130.8594,81.2344 130.1563,81.2344 Q127.6563,81.2344 126.3281,79.5938 Q125.0156,77.9375 125.0156,74.8125 Q125.0156,71.6875 126.3281,70.0313 Q127.6563,68.375 130.1563,68.375 Q130.8594,68.375 131.5,68.5313 Q132.1563,68.6875 132.7188,68.9844 L132.7188,71.7031 Q132.0938,71.125 131.5,70.8594 Q130.9063,70.5781 130.2813,70.5781 Q128.9375,70.5781 128.25,71.6563 Q127.5625,72.7188 127.5625,74.8125 Q127.5625,76.9063 128.25,77.9844 Q128.9375,79.0469 130.2813,79.0469 Q130.9063,79.0469 131.5,78.7813 Q132.0938,78.5 132.7188,77.9219 L132.7188,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="204" x="150.25" y="79.1543">DatabasePersistentStorageStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39.5" x2="432.5" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39.5" x2="432.5" y1="99" y2="99"/><ellipse cx="49.5" cy="126.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="107" x="58.5" y="130.0151">int locateRfidData()</text><ellipse cx="49.5" cy="139.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="283" x="58.5" y="142.8198">LocationDataPoint getLocationDataPoint(int offset)</text><ellipse cx="49.5" cy="152.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="369" x="58.5" y="155.6245">void storeLocationDataPoint(LocationDataPoint locationDataPoint)</text><ellipse cx="49.5" cy="165.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="195" x="58.5" y="168.4292">TrackData getTrackData(int offset)</text><ellipse cx="49.5" cy="178.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="237" x="58.5" y="181.2339">void storeTrackData(TrackData trackData)</text><ellipse cx="49.5" cy="190.8281" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="94" x="58.5" y="194.0386">String getMode()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39.5" x2="203" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="203" y="116.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="269" x2="432.5" y1="113.4023" y2="113.4023"/><ellipse cx="49.5" cy="220.4375" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="165" x="58.5" y="223.6479">void storeMode(String mode)</text><ellipse cx="49.5" cy="233.2422" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="206" x="58.5" y="236.4526">String getNextSat(String currentSat)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39.5" x2="203" y1="207.0352" y2="207.0352"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="203" y="210.3433">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="269" x2="432.5" y1="207.0352" y2="207.0352"/><!--MD5=[b4d2de90a90cd26663b5c4951e8d6a67]
+@startuml DatabasePersistentStorageStub
+
+package edu.oakland.test.database {
+    class DatabasePersistentStorageStub {
+        __
+        .. Use Case 1 ..
+        + int locateRfidData()
+        + LocationDataPoint getLocationDataPoint(int offset)
+        + void storeLocationDataPoint(LocationDataPoint locationDataPoint)
+        + TrackData getTrackData(int offset)
+        + void storeTrackData(TrackData trackData)
+        + String getMode()
+        .. Use Case 2 ..
+        + void storeMode(String mode)
+        + String getNextSat(String currentSat)
+    }
+}
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

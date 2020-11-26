@@ -4,4 +4,6 @@ package edu.oakland.helper.database {
     
 }
 
+!includesub PersistentStorageManager/PersistentStorageManager_DirectDependencies.puml!DATABASE_HELPER
+
 @enduml
