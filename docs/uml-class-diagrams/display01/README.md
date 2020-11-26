@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This set of packages shall...
+This set of packages shall receive GPS signals and pass them to Middleware.
 
 ## Packages
 

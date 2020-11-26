@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall measure the strength of GPS signals passed to it by an instance of the DisplayGpsInterface class.
 
 ## Class UML Diagram
 
