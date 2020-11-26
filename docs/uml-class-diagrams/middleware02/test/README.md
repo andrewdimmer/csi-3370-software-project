@@ -24,7 +24,7 @@ This package contains the following unit test classes:
 - [edu.oakland.test.middleware02.MiddlewareCommInterfaceImplementationTests](MiddlewareCommInterfaceImplementationTests)
 - [edu.oakland.test.middleware02.MiddlewareCommLinkManagerImplementationTests](MiddlewareCommLinkManagerImplementationTests)
 - [edu.oakland.test.middleware02.MiddlewareCommDatabaseInterfaceImplementationTests](MiddlewareCommDatabaseInterfaceImplementationTests)
-- [edu.oakland.test.middleware02.LocationDataPointTests](TrackDataCalculatorTests)
+- [edu.oakland.test.middleware02.TrackDataCalculatorTests](TrackDataCalculatorTests)
 
 ## Test Stub Classes
 
@@ -32,7 +32,7 @@ This package contains the following unit test classes:
 
 - [edu.oakland.test.middleware02.MiddlewareCommLinkManagerStub](MiddlewareCommLinkManagerStub)
 - [edu.oakland.test.middleware02.MiddlewareCommDatabaseInterfaceStub](MiddlewareCommDatabaseInterfaceStub)
-- [edu.oakland.test.middleware02.DatabaseICommnterfaceStub](DatabaseCommInterfaceStub)
+- [edu.oakland.test.middleware02.DatabaseCommInterfaceStub](DatabaseCommInterfaceStub)
 
 ## Class UML Diagram
 
