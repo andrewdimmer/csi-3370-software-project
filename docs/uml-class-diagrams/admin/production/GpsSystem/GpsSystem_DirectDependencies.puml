@@ -1,0 +1,15 @@
+@startuml GpsSystem_DirectDependencies
+
+!startsub ADMIN_PRODUCTION
+!include GpsSystem.puml
+!endsub
+
+!startsub ADMIN
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

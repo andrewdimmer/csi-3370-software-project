@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="328px" preserveAspectRatio="none" style="width:994px;height:328px;" version="1.1" viewBox="0 0 994 328" width="994px" zoomAndPan="magnify"><defs><filter height="300%" id="f1gm4ca5xgg2y9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[913a5d0b9faba757f1bf119e53d411ee]
+cluster edu.oakland.test.admin--><polygon fill="#FFFFFF" filter="url(#f1gm4ca5xgg2y9)" points="22,24,212,24,219,46.2969,972,46.2969,972,316,22,316,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="219" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="184" x="26" y="38.9951">edu.oakland.test.admin</text><!--MD5=[662c4b2ee5af84317aa79778ac14b760]
+class DemoTests--><rect fill="#FEFECE" filter="url(#f1gm4ca5xgg2y9)" height="48" id="DemoTests" style="stroke: #A80036; stroke-width: 1.5;" width="102" x="637" y="59"/><ellipse cx="652" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M654.9688,80.6406 Q654.3906,80.9375 653.75,81.0781 Q653.1094,81.2344 652.4063,81.2344 Q649.9063,81.2344 648.5781,79.5938 Q647.2656,77.9375 647.2656,74.8125 Q647.2656,71.6875 648.5781,70.0313 Q649.9063,68.375 652.4063,68.375 Q653.1094,68.375 653.75,68.5313 Q654.4063,68.6875 654.9688,68.9844 L654.9688,71.7031 Q654.3438,71.125 653.75,70.8594 Q653.1563,70.5781 652.5313,70.5781 Q651.1875,70.5781 650.5,71.6563 Q649.8125,72.7188 649.8125,74.8125 Q649.8125,76.9063 650.5,77.9844 Q651.1875,79.0469 652.5313,79.0469 Q653.1563,79.0469 653.75,78.7813 Q654.3438,78.5 654.9688,77.9219 L654.9688,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="666" y="79.1543">DemoTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="638" x2="738" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="638" x2="738" y1="99" y2="99"/><!--MD5=[3ebf7b5faf275b15b1fd90e11b759983]
+class GpsSystemTests--><rect fill="#FEFECE" filter="url(#f1gm4ca5xgg2y9)" height="48" id="GpsSystemTests" style="stroke: #A80036; stroke-width: 1.5;" width="135" x="421.5" y="59"/><ellipse cx="436.5" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M439.4688,80.6406 Q438.8906,80.9375 438.25,81.0781 Q437.6094,81.2344 436.9063,81.2344 Q434.4063,81.2344 433.0781,79.5938 Q431.7656,77.9375 431.7656,74.8125 Q431.7656,71.6875 433.0781,70.0313 Q434.4063,68.375 436.9063,68.375 Q437.6094,68.375 438.25,68.5313 Q438.9063,68.6875 439.4688,68.9844 L439.4688,71.7031 Q438.8438,71.125 438.25,70.8594 Q437.6563,70.5781 437.0313,70.5781 Q435.6875,70.5781 435,71.6563 Q434.3125,72.7188 434.3125,74.8125 Q434.3125,76.9063 435,77.9844 Q435.6875,79.0469 437.0313,79.0469 Q437.6563,79.0469 438.25,78.7813 Q438.8438,78.5 439.4688,77.9219 L439.4688,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="103" x="450.5" y="79.1543">GpsSystemTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="422.5" x2="555.5" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="422.5" x2="555.5" y1="99" y2="99"/><!--MD5=[157add87c4645f5d1ba13fc88f5c77ea]
+class DisplayGpsInterfaceStub--><rect fill="#FEFECE" filter="url(#f1gm4ca5xgg2y9)" height="132.8281" id="DisplayGpsInterfaceStub" style="stroke: #A80036; stroke-width: 1.5;" width="300" x="339" y="167"/><ellipse cx="408.25" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M411.2188,188.6406 Q410.6406,188.9375 410,189.0781 Q409.3594,189.2344 408.6563,189.2344 Q406.1563,189.2344 404.8281,187.5938 Q403.5156,185.9375 403.5156,182.8125 Q403.5156,179.6875 404.8281,178.0313 Q406.1563,176.375 408.6563,176.375 Q409.3594,176.375 410,176.5313 Q410.6563,176.6875 411.2188,176.9844 L411.2188,179.7031 Q410.5938,179.125 410,178.8594 Q409.4063,178.5781 408.7813,178.5781 Q407.4375,178.5781 406.75,179.6563 Q406.0625,180.7188 406.0625,182.8125 Q406.0625,184.9063 406.75,185.9844 Q407.4375,187.0469 408.7813,187.0469 Q409.4063,187.0469 410,186.7813 Q410.5938,186.5 411.2188,185.9219 L411.2188,188.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="153" x="428.75" y="187.1543">DisplayGpsInterfaceStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="340" x2="638" y1="199" y2="199"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="340" x2="638" y1="207" y2="207"/><ellipse cx="350" cy="234.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="264" x="359" y="238.0151">void receiveGpsSignal(Satellite satelliteSignal)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="340" x2="456" y1="221.4023" y2="221.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="456" y="224.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="522" x2="638" y1="221.4023" y2="221.4023"/><ellipse cx="350" cy="264.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="271" x="359" y="267.6245">void reportGpsSignalLoss(String satelliteName)</text><ellipse cx="350" cy="277.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="274" x="359" y="280.4292">void recheckSignalStength(String satelliteName)</text><ellipse cx="350" cy="290.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="262" x="359" y="293.2339">void checkSignalStength(String satelliteName)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="340" x2="456" y1="251.0117" y2="251.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="456" y="254.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="522" x2="638" y1="251.0117" y2="251.0117"/><!--MD5=[a3882c9454aefdd9ca25dec9d839ca8a]
+class UserTests--><rect fill="#FEFECE" filter="url(#f1gm4ca5xgg2y9)" height="48" id="UserTests" style="stroke: #A80036; stroke-width: 1.5;" width="95" x="123.5" y="59"/><ellipse cx="138.5" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M141.4688,80.6406 Q140.8906,80.9375 140.25,81.0781 Q139.6094,81.2344 138.9063,81.2344 Q136.4063,81.2344 135.0781,79.5938 Q133.7656,77.9375 133.7656,74.8125 Q133.7656,71.6875 135.0781,70.0313 Q136.4063,68.375 138.9063,68.375 Q139.6094,68.375 140.25,68.5313 Q140.9063,68.6875 141.4688,68.9844 L141.4688,71.7031 Q140.8438,71.125 140.25,70.8594 Q139.6563,70.5781 139.0313,70.5781 Q137.6875,70.5781 137,71.6563 Q136.3125,72.7188 136.3125,74.8125 Q136.3125,76.9063 137,77.9844 Q137.6875,79.0469 139.0313,79.0469 Q139.6563,79.0469 140.25,78.7813 Q140.8438,78.5 141.4688,77.9219 L141.4688,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="152.5" y="79.1543">UserTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="124.5" x2="217.5" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="124.5" x2="217.5" y1="99" y2="99"/><!--MD5=[51e45a4cba7a88c8486ae0ba512ad549]
+class DisplayCommInterfaceStub--><rect fill="#FEFECE" filter="url(#f1gm4ca5xgg2y9)" height="107.2188" id="DisplayCommInterfaceStub" style="stroke: #A80036; stroke-width: 1.5;" width="266" x="38" y="180"/><ellipse cx="83.25" cy="196" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M86.2188,201.6406 Q85.6406,201.9375 85,202.0781 Q84.3594,202.2344 83.6563,202.2344 Q81.1563,202.2344 79.8281,200.5938 Q78.5156,198.9375 78.5156,195.8125 Q78.5156,192.6875 79.8281,191.0313 Q81.1563,189.375 83.6563,189.375 Q84.3594,189.375 85,189.5313 Q85.6563,189.6875 86.2188,189.9844 L86.2188,192.7031 Q85.5938,192.125 85,191.8594 Q84.4063,191.5781 83.7813,191.5781 Q82.4375,191.5781 81.75,192.6563 Q81.0625,193.7188 81.0625,195.8125 Q81.0625,197.9063 81.75,198.9844 Q82.4375,200.0469 83.7813,200.0469 Q84.4063,200.0469 85,199.7813 Q85.5938,199.5 86.2188,198.9219 L86.2188,201.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="167" x="103.75" y="200.1543">DisplayCommInterfaceStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="303" y1="212" y2="212"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="303" y1="220" y2="220"/><ellipse cx="49" cy="247.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="240" x="58" y="251.0151">TrackData receiveRfidRequest(int rfidNum)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="138" y1="234.4023" y2="234.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="138" y="237.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="204" x2="303" y1="234.4023" y2="234.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="48" y="280.6245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="138" y1="264.0117" y2="264.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="138" y="267.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="204" x2="303" y1="264.0117" y2="264.0117"/><!--MD5=[a2f58c14a148df0ea98af95823818f27]
+class LocationDataPointTests--><rect fill="#FEFECE" filter="url(#f1gm4ca5xgg2y9)" height="48" id="LocationDataPointTests" style="stroke: #A80036; stroke-width: 1.5;" width="181" x="774.5" y="59"/><ellipse cx="789.5" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M792.4688,80.6406 Q791.8906,80.9375 791.25,81.0781 Q790.6094,81.2344 789.9063,81.2344 Q787.4063,81.2344 786.0781,79.5938 Q784.7656,77.9375 784.7656,74.8125 Q784.7656,71.6875 786.0781,70.0313 Q787.4063,68.375 789.9063,68.375 Q790.6094,68.375 791.25,68.5313 Q791.9063,68.6875 792.4688,68.9844 L792.4688,71.7031 Q791.8438,71.125 791.25,70.8594 Q790.6563,70.5781 790.0313,70.5781 Q788.6875,70.5781 788,71.6563 Q787.3125,72.7188 787.3125,74.8125 Q787.3125,76.9063 788,77.9844 Q788.6875,79.0469 790.0313,79.0469 Q790.6563,79.0469 791.25,78.7813 Q791.8438,78.5 792.4688,77.9219 L792.4688,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="149" x="803.5" y="79.1543">LocationDataPointTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="775.5" x2="954.5" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="775.5" x2="954.5" y1="99" y2="99"/><!--MD5=[2eae672171c1babeb83642fe5a70038e]
+class SatelliteTests--><rect fill="#FEFECE" filter="url(#f1gm4ca5xgg2y9)" height="48" id="SatelliteTests" style="stroke: #A80036; stroke-width: 1.5;" width="117" x="673.5" y="209.5"/><ellipse cx="688.5" cy="225.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M691.4688,231.1406 Q690.8906,231.4375 690.25,231.5781 Q689.6094,231.7344 688.9063,231.7344 Q686.4063,231.7344 685.0781,230.0938 Q683.7656,228.4375 683.7656,225.3125 Q683.7656,222.1875 685.0781,220.5313 Q686.4063,218.875 688.9063,218.875 Q689.6094,218.875 690.25,219.0313 Q690.9063,219.1875 691.4688,219.4844 L691.4688,222.2031 Q690.8438,221.625 690.25,221.3594 Q689.6563,221.0781 689.0313,221.0781 Q687.6875,221.0781 687,222.1563 Q686.3125,223.2188 686.3125,225.3125 Q686.3125,227.4063 687,228.4844 Q687.6875,229.5469 689.0313,229.5469 Q689.6563,229.5469 690.25,229.2813 Q690.8438,229 691.4688,228.4219 L691.4688,231.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="85" x="702.5" y="229.6543">SatelliteTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="674.5" x2="789.5" y1="241.5" y2="241.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="674.5" x2="789.5" y1="249.5" y2="249.5"/><!--MD5=[b385454a3ff1144a4f446b35725aeb9e]
+class TrackDataTests--><rect fill="#FEFECE" filter="url(#f1gm4ca5xgg2y9)" height="48" id="TrackDataTests" style="stroke: #A80036; stroke-width: 1.5;" width="130" x="826" y="209.5"/><ellipse cx="841" cy="225.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M843.9688,231.1406 Q843.3906,231.4375 842.75,231.5781 Q842.1094,231.7344 841.4063,231.7344 Q838.9063,231.7344 837.5781,230.0938 Q836.2656,228.4375 836.2656,225.3125 Q836.2656,222.1875 837.5781,220.5313 Q838.9063,218.875 841.4063,218.875 Q842.1094,218.875 842.75,219.0313 Q843.4063,219.1875 843.9688,219.4844 L843.9688,222.2031 Q843.3438,221.625 842.75,221.3594 Q842.1563,221.0781 841.5313,221.0781 Q840.1875,221.0781 839.5,222.1563 Q838.8125,223.2188 838.8125,225.3125 Q838.8125,227.4063 839.5,228.4844 Q840.1875,229.5469 841.5313,229.5469 Q842.1563,229.5469 842.75,229.2813 Q843.3438,229 843.9688,228.4219 L843.9688,231.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="98" x="855" y="229.6543">TrackDataTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="827" x2="955" y1="241.5" y2="241.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="827" x2="955" y1="249.5" y2="249.5"/><!--MD5=[6f8b4f69fa9a861c2139da2ec88a56c1]
+link GpsSystemTests to DisplayGpsInterfaceStub--><path d="M489,107.2 C489,122.02 489,142.09 489,161.82 " fill="none" id="GpsSystemTests-&gt;DisplayGpsInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="489,166.83,493,157.83,489,161.83,485,157.83,489,166.83" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[02893716c00c13508d1fcdcb31d2856e]
+link UserTests to DisplayCommInterfaceStub--><path d="M171,107.2 C171,125.25 171,151.1 171,174.64 " fill="none" id="UserTests-&gt;DisplayCommInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="171,179.94,175,170.94,171,174.94,167,170.94,171,179.94" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[dac6c9227392bdc15949e41b7920c976]
+link DemoTests to LocationDataPointTests--><!--MD5=[0d9aae7bc57d6f269ed9a456704055c4]
+link DemoTests to SatelliteTests--><!--MD5=[dfe5b8e0e176e829b540b1e8301a5b3f]
+link SatelliteTests to TrackDataTests--><!--MD5=[25f55d59f3f49099312e9a1e4ba3b2a0]
+@startuml AdminTestPackage_InternalDependencies
+
+package edu.oakland.test.admin {
+    
+}
+
+
+package edu.oakland.test.admin {
+    class DemoTests {
+
+    }
+}
+
+
+package edu.oakland.test.admin {
+    class GpsSystemTests {
+
+    }
+}
+
+
+
+package edu.oakland.test.admin {
+    class DisplayGpsInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + void receiveGpsSignal(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + void reportGpsSignalLoss(String satelliteName)
+        + void recheckSignalStength(String satelliteName)
+        + void checkSignalStength(String satelliteName)
+    }
+}
+
+GpsSystemTests ..> DisplayGpsInterfaceStub
+
+package edu.oakland.test.admin {
+    class UserTests {
+
+    }
+}
+
+
+
+package edu.oakland.test.admin {
+    class DisplayCommInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + TrackData receiveRfidRequest(int rfidNum)
+        .. Use Case 2 ..
+
+    }
+}
+
+UserTests ..> DisplayCommInterfaceStub
+
+package edu.oakland.test.admin {
+    class LocationDataPointTests {
+        
+    }
+}
+
+
+package edu.oakland.test.admin {
+    class SatelliteTests {
+        
+    }
+}
+
+
+package edu.oakland.test.admin {
+    class TrackDataTests {
+        
+    }
+}
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,15 @@
+@startuml DisplayGpsInterfaceStub
+
+package edu.oakland.test.admin {
+    class DisplayGpsInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + void receiveGpsSignal(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + void reportGpsSignalLoss(String satelliteName)
+        + void recheckSignalStength(String satelliteName)
+        + void checkSignalStength(String satelliteName)
+    }
+}
+
+@enduml

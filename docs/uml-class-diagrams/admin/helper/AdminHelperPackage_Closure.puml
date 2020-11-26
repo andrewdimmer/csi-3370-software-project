@@ -1,0 +1,11 @@
+@startuml AdminHelperPackage_Closure
+
+package edu.oakland.helper.admin {
+    
+}
+
+!include LocationDataPoint/LocationDataPoint_Closure.puml
+!include Satellite/Satellite_Closure.puml
+!include TrackData/TrackData_Closure.puml
+
+@enduml

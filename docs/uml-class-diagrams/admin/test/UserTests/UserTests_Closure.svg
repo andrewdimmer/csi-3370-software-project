@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="379px" preserveAspectRatio="none" style="width:1042px;height:379px;" version="1.1" viewBox="0 0 1042 379" width="1042px" zoomAndPan="magnify"><defs><filter height="300%" id="fcks3mt27dxse" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[913a5d0b9faba757f1bf119e53d411ee]
+cluster edu.oakland.test.admin--><polygon fill="#FFFFFF" filter="url(#fcks3mt27dxse)" points="346,60.5,536,60.5,543,82.7969,644,82.7969,644,367,346,367,346,60.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="346" x2="543" y1="82.7969" y2="82.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="184" x="350" y="75.4951">edu.oakland.test.admin</text><!--MD5=[fe59aae6f7bfe371a9c197ec1f7f843a]
+cluster edu.oakland.production.display02--><polygon fill="#FFFFFF" filter="url(#fcks3mt27dxse)" points="22,24.5,295,24.5,302,46.7969,322,46.7969,322,195.5,22,195.5,22,24.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="302" y1="46.7969" y2="46.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="267" x="26" y="39.4951">edu.oakland.production.display02</text><!--MD5=[8bd6d9786dfa802b1eecfb7372bf244a]
+cluster edu.oakland.production.admin--><polygon fill="#FFFFFF" filter="url(#fcks3mt27dxse)" points="668,219.5,913,219.5,920,241.7969,1020,241.7969,1020,356.5,668,356.5,668,219.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="668" x2="920" y1="241.7969" y2="241.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="239" x="672" y="234.4951">edu.oakland.production.admin</text><!--MD5=[a3882c9454aefdd9ca25dec9d839ca8a]
+class UserTests--><rect fill="#FEFECE" filter="url(#fcks3mt27dxse)" height="48" id="UserTests" style="stroke: #A80036; stroke-width: 1.5;" width="95" x="489.5" y="95.5"/><ellipse cx="504.5" cy="111.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M507.4688,117.1406 Q506.8906,117.4375 506.25,117.5781 Q505.6094,117.7344 504.9063,117.7344 Q502.4063,117.7344 501.0781,116.0938 Q499.7656,114.4375 499.7656,111.3125 Q499.7656,108.1875 501.0781,106.5313 Q502.4063,104.875 504.9063,104.875 Q505.6094,104.875 506.25,105.0313 Q506.9063,105.1875 507.4688,105.4844 L507.4688,108.2031 Q506.8438,107.625 506.25,107.3594 Q505.6563,107.0781 505.0313,107.0781 Q503.6875,107.0781 503,108.1563 Q502.3125,109.2188 502.3125,111.3125 Q502.3125,113.4063 503,114.4844 Q503.6875,115.5469 505.0313,115.5469 Q505.6563,115.5469 506.25,115.2813 Q506.8438,115 507.4688,114.4219 L507.4688,117.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="518.5" y="115.6543">UserTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="490.5" x2="583.5" y1="127.5" y2="127.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="490.5" x2="583.5" y1="135.5" y2="135.5"/><!--MD5=[51e45a4cba7a88c8486ae0ba512ad549]
+class DisplayCommInterfaceStub--><rect fill="#FEFECE" filter="url(#fcks3mt27dxse)" height="107.2188" id="DisplayCommInterfaceStub" style="stroke: #A80036; stroke-width: 1.5;" width="266" x="362" y="244"/><ellipse cx="407.25" cy="260" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M410.2188,265.6406 Q409.6406,265.9375 409,266.0781 Q408.3594,266.2344 407.6563,266.2344 Q405.1563,266.2344 403.8281,264.5938 Q402.5156,262.9375 402.5156,259.8125 Q402.5156,256.6875 403.8281,255.0313 Q405.1563,253.375 407.6563,253.375 Q408.3594,253.375 409,253.5313 Q409.6563,253.6875 410.2188,253.9844 L410.2188,256.7031 Q409.5938,256.125 409,255.8594 Q408.4063,255.5781 407.7813,255.5781 Q406.4375,255.5781 405.75,256.6563 Q405.0625,257.7188 405.0625,259.8125 Q405.0625,261.9063 405.75,262.9844 Q406.4375,264.0469 407.7813,264.0469 Q408.4063,264.0469 409,263.7813 Q409.5938,263.5 410.2188,262.9219 L410.2188,265.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="167" x="427.75" y="264.1543">DisplayCommInterfaceStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="363" x2="627" y1="276" y2="276"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="363" x2="627" y1="284" y2="284"/><ellipse cx="373" cy="311.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="240" x="382" y="315.0151">TrackData receiveRfidRequest(int rfidNum)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="363" x2="462" y1="298.4023" y2="298.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="462" y="301.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="528" x2="627" y1="298.4023" y2="298.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="372" y="344.6245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="363" x2="462" y1="328.0117" y2="328.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="462" y="331.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="528" x2="627" y1="328.0117" y2="328.0117"/><!--MD5=[c8d1e3134fecb0c949fd2a76cc0bb992]
+class DisplayCommInterface--><rect fill="#FEFECE" filter="url(#fcks3mt27dxse)" height="120.0234" id="DisplayCommInterface" style="stroke: #A80036; stroke-width: 1.5;" width="268" x="38" y="59.5"/><ellipse cx="98.25" cy="75.5" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M94.1719,71.2656 L94.1719,69.1094 L101.5625,69.1094 L101.5625,71.2656 L99.0938,71.2656 L99.0938,79.3438 L101.5625,79.3438 L101.5625,81.5 L94.1719,81.5 L94.1719,79.3438 L96.6406,79.3438 L96.6406,71.2656 L94.1719,71.2656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="139" x="118.75" y="79.6543">DisplayCommInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="305" y1="91.5" y2="91.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="305" y1="99.5" y2="99.5"/><ellipse cx="49" cy="127.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="242" x="58" y="130.5151">TrackData receiveRfidRequest(int rfidNum)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="62" y="143.3198"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="139" y1="113.9023" y2="113.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="139" y="117.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="205" x2="305" y1="113.9023" y2="113.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="48" y="172.9292"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="139" y1="156.3164" y2="156.3164"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="139" y="159.6245">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="205" x2="305" y1="156.3164" y2="156.3164"/><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect fill="#FEFECE" filter="url(#fcks3mt27dxse)" height="86.4141" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="320" x="684" y="254.5"/><ellipse cx="825.25" cy="270.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M828.2188,276.1406 Q827.6406,276.4375 827,276.5781 Q826.3594,276.7344 825.6563,276.7344 Q823.1563,276.7344 821.8281,275.0938 Q820.5156,273.4375 820.5156,270.3125 Q820.5156,267.1875 821.8281,265.5313 Q823.1563,263.875 825.6563,263.875 Q826.3594,263.875 827,264.0313 Q827.6563,264.1875 828.2188,264.4844 L828.2188,267.2031 Q827.5938,266.625 827,266.3594 Q826.4063,266.0781 825.7813,266.0781 Q824.4375,266.0781 823.75,267.1563 Q823.0625,268.2188 823.0625,270.3125 Q823.0625,272.4063 823.75,273.4844 Q824.4375,274.5469 825.7813,274.5469 Q826.4063,274.5469 827,274.2813 Q827.5938,274 828.2188,273.4219 L828.2188,276.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="845.75" y="274.6543">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="685" x2="1003" y1="286.5" y2="286.5"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="692" y="294.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="259" x="704" y="300.7104">DisplayCommInterface displayCommInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="685" x2="1003" y1="307.3047" y2="307.3047"/><ellipse cx="695" cy="318.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="294" x="704" y="321.5151">User(DisplayCommInterface displayCommInterface)</text><ellipse cx="695" cy="331.1094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="191" x="704" y="334.3198">void runUseCase1(Scanner input)</text><!--MD5=[af2611d76c154e4eb0a6c7e2b9bf4af2]
+reverse link DisplayCommInterface to DisplayCommInterfaceStub--><path d="M298.19,189.26 C331.54,207.43 367,226.75 398.49,243.91 " fill="none" id="DisplayCommInterface&lt;-DisplayCommInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="294.67,195.31,280.45,179.6,301.36,183.02,294.67,195.31" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[02893716c00c13508d1fcdcb31d2856e]
+link UserTests to DisplayCommInterfaceStub--><path d="M531.51,143.51 C525.77,167.57 516.53,206.26 508.79,238.72 " fill="none" id="UserTests-&gt;DisplayCommInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="507.56,243.87,513.5586,236.0587,508.7323,239.0094,505.7816,234.183,507.56,243.87" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[62d1f25b22c415aac898e8d02e3ff979]
+link UserTests to User--><path d="M577.13,143.51 C624.89,170.89 705.73,217.23 765.95,251.76 " fill="none" id="UserTests-&gt;User" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="770.62,254.43,764.796,246.4877,766.2805,251.9462,760.822,253.4308,770.62,254.43" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[2e62fd8eb13425792f9732414e5a3b05]
+@startuml UserTests_Closure
+
+
+package edu.oakland.test.admin {
+    class UserTests {
+
+    }
+}
+
+
+
+
+package edu.oakland.test.admin {
+    class DisplayCommInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + TrackData receiveRfidRequest(int rfidNum)
+        .. Use Case 2 ..
+
+    }
+}
+
+
+
+
+
+
+package edu.oakland.production.display02 {
+    interface DisplayCommInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + TrackData receiveRfidRequest(int rfidNum)
+
+        .. Use Case 2 ..
+
+    }
+}
+
+
+
+
+
+
+DisplayCommInterfaceStub .up.|> DisplayCommInterface
+
+UserTests ..> DisplayCommInterfaceStub
+
+
+
+package edu.oakland.production.admin {
+    class User {
+        - DisplayCommInterface displayCommInterface
+        + User(DisplayCommInterface displayCommInterface)
+        + void runUseCase1(Scanner input)
+    }
+}
+
+
+
+
+
+
+UserTests ..> User
+
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

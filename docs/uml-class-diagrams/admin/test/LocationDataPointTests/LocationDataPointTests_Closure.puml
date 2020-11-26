@@ -1,0 +1,16 @@
+@startuml LocationDataPointTests_Closure
+
+!startsub ADMIN_TEST
+!include LocationDataPointTests.puml
+!endsub
+
+!startsub ADMIN
+!include ../../helper/LocationDataPoint/LocationDataPoint_Closure.puml
+LocationDataPointTests ..> LocationDataPoint
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml AdminProductionPackage
+
+package edu.oakland.production.admin {
+
+}
+
+!include Demo/Demo.puml
+!include User/User.puml
+!include GpsSystem/GpsSystem.puml
+
+@enduml
