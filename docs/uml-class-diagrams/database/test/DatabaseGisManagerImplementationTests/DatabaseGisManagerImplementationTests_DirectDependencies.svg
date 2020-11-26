@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="409px" preserveAspectRatio="none" style="width:974px;height:409px;" version="1.1" viewBox="0 0 974 409" width="974px" zoomAndPan="magnify"><defs><filter height="300%" id="f1fw90ra3vraai" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[1dbda88d88b075ce9aee8f1e1f073379]
+cluster edu.oakland.test.database--><polygon fill="#FFFFFF" filter="url(#f1fw90ra3vraai)" points="22,24,237,24,244,46.2969,446,46.2969,446,343.5,22,343.5,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="244" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="209" x="26" y="38.9951">edu.oakland.test.database</text><!--MD5=[c2e276049abfe145c9906edb061abd32]
+cluster edu.oakland.production.database--><polygon fill="#FFFFFF" filter="url(#f1fw90ra3vraai)" points="470,132,740,132,747,154.2969,952,154.2969,952,397,470,397,470,132" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="470" x2="747" y1="154.2969" y2="154.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="264" x="474" y="146.9951">edu.oakland.production.database</text><!--MD5=[d5d5d13d78d7ebf84dba9be33d86b21c]
+class DatabaseGisManagerImplementationTests--><rect fill="#FEFECE" filter="url(#f1fw90ra3vraai)" height="48" id="DatabaseGisManagerImplementationTests" style="stroke: #A80036; stroke-width: 1.5;" width="298" x="108" y="59"/><ellipse cx="123" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M125.9688,80.6406 Q125.3906,80.9375 124.75,81.0781 Q124.1094,81.2344 123.4063,81.2344 Q120.9063,81.2344 119.5781,79.5938 Q118.2656,77.9375 118.2656,74.8125 Q118.2656,71.6875 119.5781,70.0313 Q120.9063,68.375 123.4063,68.375 Q124.1094,68.375 124.75,68.5313 Q125.4063,68.6875 125.9688,68.9844 L125.9688,71.7031 Q125.3438,71.125 124.75,70.8594 Q124.1563,70.5781 123.5313,70.5781 Q122.1875,70.5781 121.5,71.6563 Q120.8125,72.7188 120.8125,74.8125 Q120.8125,76.9063 121.5,77.9844 Q122.1875,79.0469 123.5313,79.0469 Q124.1563,79.0469 124.75,78.7813 Q125.3438,78.5 125.9688,77.9219 L125.9688,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="266" x="137" y="79.1543">DatabaseGisManagerImplementationTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="109" x2="405" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="109" x2="405" y1="99" y2="99"/><!--MD5=[31f48955623aa6cc6e2828f210a550ba]
+class DatabasePersistentStorageStub--><rect fill="#FEFECE" filter="url(#f1fw90ra3vraai)" height="107.2188" id="DatabasePersistentStorageStub" style="stroke: #A80036; stroke-width: 1.5;" width="392" x="38" y="220.5"/><ellipse cx="127.75" cy="236.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M130.7188,242.1406 Q130.1406,242.4375 129.5,242.5781 Q128.8594,242.7344 128.1563,242.7344 Q125.6563,242.7344 124.3281,241.0938 Q123.0156,239.4375 123.0156,236.3125 Q123.0156,233.1875 124.3281,231.5313 Q125.6563,229.875 128.1563,229.875 Q128.8594,229.875 129.5,230.0313 Q130.1563,230.1875 130.7188,230.4844 L130.7188,233.2031 Q130.0938,232.625 129.5,232.3594 Q128.9063,232.0781 128.2813,232.0781 Q126.9375,232.0781 126.25,233.1563 Q125.5625,234.2188 125.5625,236.3125 Q125.5625,238.4063 126.25,239.4844 Q126.9375,240.5469 128.2813,240.5469 Q128.9063,240.5469 129.5,240.2813 Q130.0938,240 130.7188,239.4219 L130.7188,242.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="204" x="148.25" y="240.6543">DatabasePersistentStorageStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="429" y1="252.5" y2="252.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="429" y1="260.5" y2="260.5"/><ellipse cx="49" cy="288.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="334" x="58" y="291.5151">String measureGpsSignalStrength(Satellite satelliteSignal)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="201" y1="274.9023" y2="274.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="201" y="278.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="267" x2="429" y1="274.9023" y2="274.9023"/><ellipse cx="49" cy="317.9141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="366" x="58" y="321.1245">PersistentStorageManager measureSignal(String satelliteName)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="201" y1="304.5117" y2="304.5117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="201" y="307.8198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="267" x2="429" y1="304.5117" y2="304.5117"/><!--MD5=[cb27e8f56b23a96be3f83add8518c141]
+class DatabaseGisManagerImplementation--><rect fill="#FEFECE" filter="url(#f1fw90ra3vraai)" height="214.4609" id="DatabaseGisManagerImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="451" x="485.5" y="167"/><ellipse cx="590.75" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M593.7188,188.6406 Q593.1406,188.9375 592.5,189.0781 Q591.8594,189.2344 591.1563,189.2344 Q588.6563,189.2344 587.3281,187.5938 Q586.0156,185.9375 586.0156,182.8125 Q586.0156,179.6875 587.3281,178.0313 Q588.6563,176.375 591.1563,176.375 Q591.8594,176.375 592.5,176.5313 Q593.1563,176.6875 593.7188,176.9844 L593.7188,179.7031 Q593.0938,179.125 592.5,178.8594 Q591.9063,178.5781 591.2813,178.5781 Q589.9375,178.5781 589.25,179.6563 Q588.5625,180.7188 588.5625,182.8125 Q588.5625,184.9063 589.25,185.9844 Q589.9375,187.0469 591.2813,187.0469 Q591.9063,187.0469 592.5,186.7813 Q593.0938,186.5 593.7188,185.9219 L593.7188,188.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="232" x="611.25" y="187.1543">DatabaseGisManagerImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="486.5" x2="935.5" y1="199" y2="199"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="493.5" y="207"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="175" x="505.5" y="213.2104">LocationDataPoint locDataPoint</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="493.5" y="219.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="70" x="505.5" y="226.0151">String mode</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="493.5" y="232.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="98" x="505.5" y="238.8198">String currentSat</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="12" x="505.5" y="251.6245">__</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="74" x="537.5" y="264.4292">String mode,</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="509.5" y="277.2339"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="505.5" x2="505.5" y1="286.2305" y2="286.2305"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="509.5" y="289.5386">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="579.5" x2="579.5" y1="286.2305" y2="286.2305"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="505.5" x2="505.5" y1="299.0352" y2="299.0352"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="509.5" y="302.3433">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="579.5" x2="579.5" y1="299.0352" y2="299.0352"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="486.5" x2="935.5" y1="309.4375" y2="309.4375"/><ellipse cx="496.5" cy="320.4375" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="425" x="505.5" y="323.6479">DatabaseGisManagerImplementation (LocationDataPoint locationDataPoint,</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="102" x="537.5" y="336.4526">String currentSat)</text><ellipse cx="496.5" cy="346.0469" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="343" x="505.5" y="349.2573">void passStoreRequest(LocationDataPoint locationDataPoint)</text><ellipse cx="496.5" cy="358.8516" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="209" x="505.5" y="362.062">void passModeRequest(String mode)</text><ellipse cx="496.5" cy="371.6563" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="262" x="505.5" y="374.8667">String passNextSatRequest(String currentSat)</text><!--MD5=[4a9f98c74c081e68e4839697413589a2]
+link DatabaseGisManagerImplementationTests to DatabasePersistentStorageStub--><path d="M254.18,107.18 C250.93,133.86 245.48,178.68 241.06,215 " fill="none" id="DatabaseGisManagerImplementationTests-&gt;DatabasePersistentStorageStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="240.41,220.29,245.4596,211.8341,241.0091,215.326,237.5172,210.8756,240.41,220.29" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[9c929dec7af7657953a6df2fdfad5714]
+link DatabaseGisManagerImplementationTests to DatabaseGisManagerImplementation--><path d="M390.9,107.03 C409.66,111.79 428.5,117.41 446,124 C475.65,135.17 505.97,149.3 535.02,164.38 " fill="none" id="DatabaseGisManagerImplementationTests-&gt;DatabaseGisManagerImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="539.67,166.81,533.5461,159.0965,535.2386,164.4942,529.8409,166.1867,539.67,166.81" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6313ca2323841ea9941ad6f9234b1cf9]
+@startuml DatabaseGisManagerImplementationTests_DirectDependencies
+
+
+package edu.oakland.test.database {
+    class DatabaseGisManagerImplementationTests {
+
+    }
+}
+
+
+
+package edu.oakland.test.database {
+    class DatabasePersistentStorageStub {
+        __
+        .. Use Case 1 ..
+        + String measureGpsSignalStrength(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + PersistentStorageManager measureSignal(String satelliteName)
+    }
+}
+
+DatabaseGisManagerImplementationTests ..> DatabasePersistentStorageStub
+
+
+package edu.oakland.production.database {
+    class DatabaseGisManagerImplementation {
+    	- LocationDataPoint locDataPoint
+    	- String mode
+    	- String currentSat
+          __
+        + DatabaseGisManagerImplementation (LocationDataPoint locationDataPoint, 
+        \tString mode, 
+        \tString currentSat)
+        
+        .. Use Case 1 ..
+        + void passStoreRequest(LocationDataPoint locationDataPoint)
+        .. Use Case 2 ..
+        + void passModeRequest(String mode)
+        + String passNextSatRequest(String currentSat)
+    }
+}
+
+DatabaseGisManagerImplementationTests ..> DatabaseGisManagerImplementation
+
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

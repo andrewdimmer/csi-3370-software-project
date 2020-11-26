@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="337px" preserveAspectRatio="none" style="width:1104px;height:337px;" version="1.1" viewBox="0 0 1104 337" width="1104px" zoomAndPan="magnify"><defs><filter height="300%" id="fbyklnkz2m0d1" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[1dbda88d88b075ce9aee8f1e1f073379]
+cluster edu.oakland.test.database--><polygon fill="#FFFFFF" filter="url(#fbyklnkz2m0d1)" points="22,24,237,24,244,46.2969,446,46.2969,446,307.5,22,307.5,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="244" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="209" x="26" y="38.9951">edu.oakland.test.database</text><!--MD5=[c2e276049abfe145c9906edb061abd32]
+cluster edu.oakland.production.database--><polygon fill="#FFFFFF" filter="url(#fbyklnkz2m0d1)" points="470,132,740,132,747,154.2969,1082,154.2969,1082,325,470,325,470,132" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="470" x2="747" y1="154.2969" y2="154.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="264" x="474" y="146.9951">edu.oakland.production.database</text><!--MD5=[19b4afd77b23828cbf862455ffd80e17]
+class DatabaseCommManagerImplementationTests--><rect fill="#FEFECE" filter="url(#fbyklnkz2m0d1)" height="48" id="DatabaseCommManagerImplementationTests" style="stroke: #A80036; stroke-width: 1.5;" width="317" x="93.5" y="59"/><ellipse cx="108.5" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M111.4688,80.6406 Q110.8906,80.9375 110.25,81.0781 Q109.6094,81.2344 108.9063,81.2344 Q106.4063,81.2344 105.0781,79.5938 Q103.7656,77.9375 103.7656,74.8125 Q103.7656,71.6875 105.0781,70.0313 Q106.4063,68.375 108.9063,68.375 Q109.6094,68.375 110.25,68.5313 Q110.9063,68.6875 111.4688,68.9844 L111.4688,71.7031 Q110.8438,71.125 110.25,70.8594 Q109.6563,70.5781 109.0313,70.5781 Q107.6875,70.5781 107,71.6563 Q106.3125,72.7188 106.3125,74.8125 Q106.3125,76.9063 107,77.9844 Q107.6875,79.0469 109.0313,79.0469 Q109.6563,79.0469 110.25,78.7813 Q110.8438,78.5 111.4688,77.9219 L111.4688,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="285" x="122.5" y="79.1543">DatabaseCommManagerImplementationTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="94.5" x2="409.5" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="94.5" x2="409.5" y1="99" y2="99"/><!--MD5=[31f48955623aa6cc6e2828f210a550ba]
+class DatabasePersistentStorageStub--><rect fill="#FEFECE" filter="url(#fbyklnkz2m0d1)" height="107.2188" id="DatabasePersistentStorageStub" style="stroke: #A80036; stroke-width: 1.5;" width="392" x="38" y="184.5"/><ellipse cx="127.75" cy="200.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M130.7188,206.1406 Q130.1406,206.4375 129.5,206.5781 Q128.8594,206.7344 128.1563,206.7344 Q125.6563,206.7344 124.3281,205.0938 Q123.0156,203.4375 123.0156,200.3125 Q123.0156,197.1875 124.3281,195.5313 Q125.6563,193.875 128.1563,193.875 Q128.8594,193.875 129.5,194.0313 Q130.1563,194.1875 130.7188,194.4844 L130.7188,197.2031 Q130.0938,196.625 129.5,196.3594 Q128.9063,196.0781 128.2813,196.0781 Q126.9375,196.0781 126.25,197.1563 Q125.5625,198.2188 125.5625,200.3125 Q125.5625,202.4063 126.25,203.4844 Q126.9375,204.5469 128.2813,204.5469 Q128.9063,204.5469 129.5,204.2813 Q130.0938,204 130.7188,203.4219 L130.7188,206.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="204" x="148.25" y="204.6543">DatabasePersistentStorageStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="429" y1="216.5" y2="216.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="429" y1="224.5" y2="224.5"/><ellipse cx="49" cy="252.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="334" x="58" y="255.5151">String measureGpsSignalStrength(Satellite satelliteSignal)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="201" y1="238.9023" y2="238.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="201" y="242.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="267" x2="429" y1="238.9023" y2="238.9023"/><ellipse cx="49" cy="281.9141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="366" x="58" y="285.1245">PersistentStorageManager measureSignal(String satelliteName)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="201" y1="268.5117" y2="268.5117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="201" y="271.8198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="267" x2="429" y1="268.5117" y2="268.5117"/><!--MD5=[e62c039a107b929dc588966558a86fd5]
+class DatabaseCommManagerImplementation--><rect fill="#FEFECE" filter="url(#fbyklnkz2m0d1)" height="141.6328" id="DatabaseCommManagerImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="579" x="486.5" y="167"/><ellipse cx="646.25" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M649.2188,188.6406 Q648.6406,188.9375 648,189.0781 Q647.3594,189.2344 646.6563,189.2344 Q644.1563,189.2344 642.8281,187.5938 Q641.5156,185.9375 641.5156,182.8125 Q641.5156,179.6875 642.8281,178.0313 Q644.1563,176.375 646.6563,176.375 Q647.3594,176.375 648,176.5313 Q648.6563,176.6875 649.2188,176.9844 L649.2188,179.7031 Q648.5938,179.125 648,178.8594 Q647.4063,178.5781 646.7813,178.5781 Q645.4375,178.5781 644.75,179.6563 Q644.0625,180.7188 644.0625,182.8125 Q644.0625,184.9063 644.75,185.9844 Q645.4375,187.0469 646.7813,187.0469 Q647.4063,187.0469 648,186.7813 Q648.5938,186.5 649.2188,185.9219 L649.2188,188.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="251" x="666.75" y="187.1543">DatabaseCommManagerImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="487.5" x2="1064.5" y1="199" y2="199"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="494.5" y="207"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="317" x="506.5" y="213.2104">DatabasePersistentStorage databasePersistentStorage</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="487.5" x2="1064.5" y1="219.8047" y2="219.8047"/><ellipse cx="497.5" cy="230.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="553" x="506.5" y="234.0151">DatabaseCommManagerImplementation(DatabasePersistentStorage databasePersistentStorage)</text><ellipse cx="497.5" cy="260.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="141" x="506.5" y="263.6245">int passGetRfidRequest()</text><ellipse cx="497.5" cy="273.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="359" x="506.5" y="276.4292">LocationDataPoint passGetLocationDataPointRequest(int offset)</text><ellipse cx="497.5" cy="286.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="271" x="506.5" y="289.2339">TrackData passGetTrackDataRequest(int offset)</text><ellipse cx="497.5" cy="298.8281" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="312" x="506.5" y="302.0386">void passStoreTrackDataRequest(TrackData trackData)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="487.5" x2="743" y1="247.0117" y2="247.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="743" y="250.3198">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="809" x2="1064.5" y1="247.0117" y2="247.0117"/><!--MD5=[a3c582c03252309712ffab00869945fc]
+link DatabaseCommManagerImplementationTests to DatabasePersistentStorageStub--><path d="M249.27,107.24 C247.02,126.36 243.73,154.3 240.78,179.36 " fill="none" id="DatabaseCommManagerImplementationTests-&gt;DatabasePersistentStorageStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="240.2,184.33,245.2016,175.8456,240.771,179.3627,237.2539,174.9321,240.2,184.33" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[75802cbd6671c98278d572a61df1eb27]
+link DatabaseCommManagerImplementationTests to DatabaseCommManagerImplementation--><path d="M375.45,107.01 C399,112.09 423.36,117.82 446,124 C489.82,135.97 536.3,150.63 580.11,165.37 " fill="none" id="DatabaseCommManagerImplementationTests-&gt;DatabaseCommManagerImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="584.89,166.98,577.6408,160.313,580.1523,165.3817,575.0836,167.8933,584.89,166.98" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[98173d9876dea9855fbbe8926dc0e72c]
+@startuml DatabaseCommManagerImplementationTests_DirectDependencies
+
+
+package edu.oakland.test.database {
+    class DatabaseCommManagerImplementationTests {
+
+    }
+}
+
+
+
+package edu.oakland.test.database {
+    class DatabasePersistentStorageStub {
+        __
+        .. Use Case 1 ..
+        + String measureGpsSignalStrength(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + PersistentStorageManager measureSignal(String satelliteName)
+    }
+}
+
+DatabaseCommManagerImplementationTests ..> DatabasePersistentStorageStub
+
+
+package edu.oakland.production.database {
+    class DatabaseCommManagerImplementation {
+        - DatabasePersistentStorage databasePersistentStorage
+        __
+        + DatabaseCommManagerImplementation(DatabasePersistentStorage databasePersistentStorage)
+        .. Use Case 1 ..
+        + int passGetRfidRequest()
+        + LocationDataPoint passGetLocationDataPointRequest(int offset)
+        + TrackData passGetTrackDataRequest(int offset)
+        + void passStoreTrackDataRequest(TrackData trackData)
+    }
+}
+
+DatabaseCommManagerImplementationTests ..> DatabaseCommManagerImplementation
+
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>
