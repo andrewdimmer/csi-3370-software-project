@@ -1,0 +1,16 @@
+@startuml AdminTestPackage
+
+package edu.oakland.test.admin {
+    
+}
+
+!include DemoTests/DemoTests.puml
+!include GpsSystemTests/GpsSystemTests.puml
+!include UserTests/UserTests.puml
+!include LocationDataPointTests/LocationDataPointTests.puml
+!include SatelliteTests/SatelliteTests.puml
+!include TrackDataTests/TrackDataTests.puml
+!include DisplayCommInterfaceStub/DisplayCommInterfaceStub.puml
+!include DisplayGpsInterfaceStub/DisplayGpsInterfaceStub.puml
+
+@enduml

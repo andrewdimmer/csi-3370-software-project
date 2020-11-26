@@ -14,6 +14,10 @@ For more information, and trainings, check out the [version-control](version-con
 
 **Primary Owner:** The Professor
 
-**Secondary Owners:** Andrew Dimmer, Project SCRUM Integration Master ([@andrewdimmer](https://github.com/andrewdimmer/)); Brendan Fraser,Project SCRUM Master ([@brendanfraser597](https://github.com/brendanfraser597/)); Tessa Peruzzi, Project SCRUM Assistant Master ([@TessaPeruzzi](https://github.com/TessaPeruzzi/))
+**Secondary Owners:**
+
+- Andrew Dimmer, Project SCRUM Integration Master ([@andrewdimmer](https://github.com/andrewdimmer/))
+- Tessa Peruzzi, Project SCRUM Master ([@TessaPeruzzi](https://github.com/TessaPeruzzi/))
+- Brendan Fraser, Project SCRUM Assistant Master ([@brendanfraser597](https://github.com/brendanfraser597/))
 
 This will contain the important docs regarding the project description and project scope, reposted here so that hopefully people have an easier time finding and referencing them than on Moodle.

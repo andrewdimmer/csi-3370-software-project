@@ -1,0 +1,16 @@
+@startuml DemoTests_DirectDependencies
+
+!startsub ADMIN_TEST
+!include DemoTests.puml
+!endsub
+
+!startsub ADMIN
+!include ../../production/Demo/Demo.puml
+DemoTests ..> Demo
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml
