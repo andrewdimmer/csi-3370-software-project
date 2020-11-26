@@ -1,4 +1,4 @@
-@startuml DatabaseCommInterfaceStub_DirectDependencies
+@startuml DatabaseCommInterfaceStub_Closure
 
 !startsub MIDDLEWARE02_TEST
 !include DatabaseCommInterfaceStub.puml
