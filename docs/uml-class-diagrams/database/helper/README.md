@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall...
+This package shall provide classes necessary for proper storing of data.
 
 ## Intrerfaces
 

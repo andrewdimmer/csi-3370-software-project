@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall...
+This interface shall provide a means of storing all of the track data and location data in a file.
 
 ## Class UML Diagram
 
