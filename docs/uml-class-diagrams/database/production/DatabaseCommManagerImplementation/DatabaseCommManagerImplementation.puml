@@ -3,13 +3,8 @@
 package edu.oakland.production.database {
     class DatabaseCommManagerImplementation {
         - DatabasePersistentStorage databasePersistentStorage
-        - int rfidData
-        - LocationDataPoint locDataPoint
-        - Trackdata trackData
         __
-        + DatabaseCommManagerImplementation(int rfidData,
-         \tLocationDataPoint locDataPoint,
-         \tTrackdata trackData)
+        + DatabaseCommManagerImplementation(DatabasePersistentStorage databasePersistentStorage)
         .. Use Case 1 ..
         + int passGetRfidRequest()
         + LocationDataPoint passGetLocationDataPointRequest(int offset)
