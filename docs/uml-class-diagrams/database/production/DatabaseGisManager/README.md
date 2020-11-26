@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall...
+This interface shall provide...
 
 ## Class UML Diagram
 
