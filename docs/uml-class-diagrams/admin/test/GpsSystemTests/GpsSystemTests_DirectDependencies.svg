@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="371px" preserveAspectRatio="none" style="width:796px;height:371px;" version="1.1" viewBox="0 0 796 371" width="796px" zoomAndPan="magnify"><defs><filter height="300%" id="f1lhnynenk0fq5" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[913a5d0b9faba757f1bf119e53d411ee]
+cluster edu.oakland.test.admin--><polygon fill="#FFFFFF" filter="url(#f1lhnynenk0fq5)" points="22,24,212,24,219,46.2969,354,46.2969,354,337.5,22,337.5,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="219" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="184" x="26" y="38.9951">edu.oakland.test.admin</text><!--MD5=[8bd6d9786dfa802b1eecfb7372bf244a]
+cluster edu.oakland.production.admin--><polygon fill="#FFFFFF" filter="url(#f1lhnynenk0fq5)" points="378,132,623,132,630,154.2969,774,154.2969,774,359,378,359,378,132" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="378" x2="630" y1="154.2969" y2="154.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="239" x="382" y="146.9951">edu.oakland.production.admin</text><!--MD5=[3ebf7b5faf275b15b1fd90e11b759983]
+class GpsSystemTests--><rect fill="#FEFECE" filter="url(#f1lhnynenk0fq5)" height="48" id="GpsSystemTests" style="stroke: #A80036; stroke-width: 1.5;" width="135" x="161.5" y="59"/><ellipse cx="176.5" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M179.4688,80.6406 Q178.8906,80.9375 178.25,81.0781 Q177.6094,81.2344 176.9063,81.2344 Q174.4063,81.2344 173.0781,79.5938 Q171.7656,77.9375 171.7656,74.8125 Q171.7656,71.6875 173.0781,70.0313 Q174.4063,68.375 176.9063,68.375 Q177.6094,68.375 178.25,68.5313 Q178.9063,68.6875 179.4688,68.9844 L179.4688,71.7031 Q178.8438,71.125 178.25,70.8594 Q177.6563,70.5781 177.0313,70.5781 Q175.6875,70.5781 175,71.6563 Q174.3125,72.7188 174.3125,74.8125 Q174.3125,76.9063 175,77.9844 Q175.6875,79.0469 177.0313,79.0469 Q177.6563,79.0469 178.25,78.7813 Q178.8438,78.5 179.4688,77.9219 L179.4688,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="103" x="190.5" y="79.1543">GpsSystemTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="162.5" x2="295.5" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="162.5" x2="295.5" y1="99" y2="99"/><!--MD5=[157add87c4645f5d1ba13fc88f5c77ea]
+class DisplayGpsInterfaceStub--><rect fill="#FEFECE" filter="url(#f1lhnynenk0fq5)" height="132.8281" id="DisplayGpsInterfaceStub" style="stroke: #A80036; stroke-width: 1.5;" width="300" x="38" y="188.5"/><ellipse cx="107.25" cy="204.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M110.2188,210.1406 Q109.6406,210.4375 109,210.5781 Q108.3594,210.7344 107.6563,210.7344 Q105.1563,210.7344 103.8281,209.0938 Q102.5156,207.4375 102.5156,204.3125 Q102.5156,201.1875 103.8281,199.5313 Q105.1563,197.875 107.6563,197.875 Q108.3594,197.875 109,198.0313 Q109.6563,198.1875 110.2188,198.4844 L110.2188,201.2031 Q109.5938,200.625 109,200.3594 Q108.4063,200.0781 107.7813,200.0781 Q106.4375,200.0781 105.75,201.1563 Q105.0625,202.2188 105.0625,204.3125 Q105.0625,206.4063 105.75,207.4844 Q106.4375,208.5469 107.7813,208.5469 Q108.4063,208.5469 109,208.2813 Q109.5938,208 110.2188,207.4219 L110.2188,210.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="153" x="127.75" y="208.6543">DisplayGpsInterfaceStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="337" y1="220.5" y2="220.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="337" y1="228.5" y2="228.5"/><ellipse cx="49" cy="256.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="264" x="58" y="259.5151">void receiveGpsSignal(Satellite satelliteSignal)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="155" y1="242.9023" y2="242.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="155" y="246.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="221" x2="337" y1="242.9023" y2="242.9023"/><ellipse cx="49" cy="285.9141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="271" x="58" y="289.1245">void reportGpsSignalLoss(String satelliteName)</text><ellipse cx="49" cy="298.7188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="274" x="58" y="301.9292">void recheckSignalStength(String satelliteName)</text><ellipse cx="49" cy="311.5234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="262" x="58" y="314.7339">void checkSignalStength(String satelliteName)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="155" y1="272.5117" y2="272.5117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="155" y="275.8198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="221" x2="337" y1="272.5117" y2="272.5117"/><!--MD5=[d25225d68d5e3bf6aa5fb275933b1e63]
+class GpsSystem--><rect fill="#FEFECE" filter="url(#f1lhnynenk0fq5)" height="176.0469" id="GpsSystem" style="stroke: #A80036; stroke-width: 1.5;" width="365" x="393.5" y="167"/><ellipse cx="537.25" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M540.2188,188.6406 Q539.6406,188.9375 539,189.0781 Q538.3594,189.2344 537.6563,189.2344 Q535.1563,189.2344 533.8281,187.5938 Q532.5156,185.9375 532.5156,182.8125 Q532.5156,179.6875 533.8281,178.0313 Q535.1563,176.375 537.6563,176.375 Q538.3594,176.375 539,176.5313 Q539.6563,176.6875 540.2188,176.9844 L540.2188,179.7031 Q539.5938,179.125 539,178.8594 Q538.4063,178.5781 537.7813,178.5781 Q536.4375,178.5781 535.75,179.6563 Q535.0625,180.7188 535.0625,182.8125 Q535.0625,184.9063 535.75,185.9844 Q536.4375,187.0469 537.7813,187.0469 Q538.4063,187.0469 539,186.7813 Q539.5938,186.5 540.2188,185.9219 L540.2188,188.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="69" x="557.75" y="187.1543">GpsSystem</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="394.5" x2="757.5" y1="199" y2="199"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="401.5" y="207"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="231" x="413.5" y="213.2104">DisplayGpsInterface displayGpsInterface</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="401.5" y="219.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110" x="413.5" y="226.0151">Satellite[] satellites</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="394.5" x2="757.5" y1="232.6094" y2="232.6094"/><ellipse cx="404.5" cy="243.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="312" x="413.5" y="246.8198">GpsSystems(DisplayGpsInterface displayGpsInterface,</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="135" x="445.5" y="259.6245">String[] satelliteNames)</text><ellipse cx="404.5" cy="269.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="191" x="413.5" y="272.4292">void runUseCase1(Scanner input)</text><ellipse cx="404.5" cy="282.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="191" x="413.5" y="285.2339">void runUseCase2(Scanner input)</text><ellipse cx="404.5" cy="294.8281" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="268" x="413.5" y="298.0386">void configureSatellites(String[] satelliteNames</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="307" x="445.5" y="310.8433">float incrementLatAmount, float incrementLngAmount,</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="227" x="445.5" y="323.6479">LocationDataPoint initLocationDataPoint)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="401.5" y="330.2422"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="272" x="413.5" y="336.4526">void configureSatellites(String[] satelliteNames)</text><!--MD5=[6f8b4f69fa9a861c2139da2ec88a56c1]
+link GpsSystemTests to DisplayGpsInterfaceStub--><path d="M223.39,107.28 C218.66,126.89 211.64,155.99 205.09,183.12 " fill="none" id="GpsSystemTests-&gt;DisplayGpsInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="203.88,188.16,209.8786,180.3487,205.0523,183.2994,202.1016,178.473,203.88,188.16" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[93066a19b3817baa3cbde90575087d1a]
+link GpsSystemTests to GpsSystem--><path d="M296.51,102.62 C315.43,108.63 335.79,115.88 354,124 C380.31,135.74 407.47,149.82 433.36,164.32 " fill="none" id="GpsSystemTests-&gt;GpsSystem" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="437.84,166.84,431.9458,158.9496,433.4787,164.3948,428.0335,165.9277,437.84,166.84" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[5e404e4d4d40149fcc741abccd75f6b2]
+@startuml GpsSystemTests_DirectDependencies
+
+
+package edu.oakland.test.admin {
+    class GpsSystemTests {
+
+    }
+}
+
+
+
+package edu.oakland.test.admin {
+    class DisplayGpsInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + void receiveGpsSignal(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + void reportGpsSignalLoss(String satelliteName)
+        + void recheckSignalStength(String satelliteName)
+        + void checkSignalStength(String satelliteName)
+    }
+}
+
+GpsSystemTests ..> DisplayGpsInterfaceStub
+
+
+package edu.oakland.production.admin {
+    class GpsSystem {
+        - DisplayGpsInterface displayGpsInterface
+        - Satellite[] satellites
+        __
+        + GpsSystems(DisplayGpsInterface displayGpsInterface,
+        \tString[] satelliteNames)
+        + void runUseCase1(Scanner input)
+        + void runUseCase2(Scanner input)
+        + void configureSatellites(String[] satelliteNames
+        \tfloat incrementLatAmount, float incrementLngAmount,
+        \tLocationDataPoint initLocationDataPoint)
+        - void configureSatellites(String[] satelliteNames)
+    }
+}
+
+GpsSystemTests ..> GpsSystem
+
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

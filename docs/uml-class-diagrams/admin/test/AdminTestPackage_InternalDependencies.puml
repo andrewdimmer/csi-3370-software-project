@@ -1,0 +1,16 @@
+@startuml AdminTestPackage_InternalDependencies
+
+package edu.oakland.test.admin {
+    
+}
+
+!includesub DemoTests/DemoTests_DirectDependencies.puml!ADMIN_TEST
+!includesub GpsSystemTests/GpsSystemTests_DirectDependencies.puml!ADMIN_TEST
+!includesub UserTests/UserTests_DirectDependencies.puml!ADMIN_TEST
+!includesub LocationDataPointTests/LocationDataPointTests_DirectDependencies.puml!ADMIN_TEST
+!includesub SatelliteTests/SatelliteTests_DirectDependencies.puml!ADMIN_TEST
+!includesub TrackDataTests/TrackDataTests_DirectDependencies.puml!ADMIN_TEST
+!includesub DisplayCommInterfaceStub/DisplayCommInterfaceStub_DirectDependencies.puml!ADMIN_TEST
+!includesub DisplayGpsInterfaceStub/DisplayGpsInterfaceStub_DirectDependencies.puml!ADMIN_TEST
+
+@enduml

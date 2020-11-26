@@ -34,269 +34,269 @@ reverse link DisplayGpsReceiver to DisplayGpsReceiverImplementation--><path d="M
 link DisplayGpsReceiverImplementation to SatelliteSignalCheckRequest--><path d="M2026.77,385.14 C2048.04,408.11 2071.76,433.73 2092.48,456.11 " fill="none" id="DisplayGpsReceiverImplementation-&gt;SatelliteSignalCheckRequest" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="2096.04,459.96,2092.8596,450.6388,2092.6427,456.2915,2086.99,456.0745,2096.04,459.96" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d57f8b26a197451ecfa28454143abdf4]
 link DisplayGpsReceiverImplementationTests to DisplayGpsReceiverImplementation--><path d="M933.98,149.54 C968.79,167.45 1020.13,191.17 1068,203 C1352.7,273.33 1436.99,202.28 1726,252 C1737.27,253.94 1748.77,256.18 1760.34,258.63 " fill="none" id="DisplayGpsReceiverImplementationTests-&gt;DisplayGpsReceiverImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="1765.3,259.7,1757.3495,253.8871,1760.4131,258.6426,1755.6576,261.7062,1765.3,259.7" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[5c125b14ebe38b28a0533ebe685b3880]
 link SatelliteSignalCheckRequestTests to SatelliteSignalCheckRequest--><path d="M520.14,149.59 C486.49,171.18 441.16,206.85 421,252 C392.55,315.71 373.2,358.17 421,409 C472.07,463.31 1483.26,497.16 1933.69,509.6 " fill="none" id="SatelliteSignalCheckRequestTests-&gt;SatelliteSignalCheckRequest" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="1938.97,509.75,1930.0879,505.4946,1933.972,509.6072,1929.8594,513.4913,1938.97,509.75" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[c845c750e688f7e453398987f5d98a3b]
-@startuml Display01TestPackage_Closure
-
-package edu.oakland.test.display01 {
-    
-}
-
-
-
-package edu.oakland.test.display01 {
-    class DisplayGpsInterfaceImplementationTests {
-
-    }
-}
-
-
-
-
-package edu.oakland.test.display01 {
-    class DisplayGpsManagerStub {
-        __
-        .. Use Case 1 ..
-        + String receiveGpsSignalStrengths(Satellite satelliteSignal)
-        .. Use Case 2 ..
-        + SatelliteSignalCheckRequest passGpsSignalStrength(String satelliteName)
-    }
-}
-
-
-
-
-package edu.oakland.production.display01 {
-    interface DisplayGpsManager {
-        __
-        .. Use Case 1 ..
-        {abstract} + String receiveGpsSignalStrengths(Satellite satelliteSignal)
-        .. Use Case 2 ..
-        {abstract} + SatelliteSignalCheckRequest passGpsSignalStrength(String satelliteName)
-    }
-}
-
-
-
-
-
-
-DisplayGpsManagerStub .up.|> DisplayGpsManager
-
-
-
-DisplayGpsInterfaceImplementationTests ..> DisplayGpsManagerStub
-
-
-
-package edu.oakland.production.display01 {
-    class DisplayGpsInterfaceImplementation {
-        __
-        .. Use Case 1 ..
-
-        .. Use Case 2 ..
-
-    }
-}
-
-
-
-
-package edu.oakland.production.display01 {
-    interface DisplayGpsInterface {
-        __
-        .. Use Case 1 ..
-        {abstract} + void revieveGPSSignals(Satellite satelliteSignal)
-        .. Use Case 2 ..
-        {abstract} + void reportGpsSignalLoss(String satelliteName)
-        {abstract} + void recheckSignalStength(String satelliteName)
-        {abstract} + void checkSignalStength(String satelliteName)
-    }
-}
-
-
-
-
-
-
-DisplayGpsInterfaceImplementation .up.|> DisplayGpsInterface
-
-
-
-package edu.oakland.helper.display01 {
-    class SatelliteSignalCheckRequest {
-        - String satelliteName
-        - String checkType
-        + SatelliteSignalCheckRequest(String satelliteName, String checkType)
-        + String getSatelliteName()
-        + String getCheckType()
-    }
-}
-
-
-
-
-
-
-DisplayGpsInterfaceImplementation ..> SatelliteSignalCheckRequest
-
-
-
-DisplayGpsInterfaceImplementationTests ..> DisplayGpsInterfaceImplementation
-
-
-
-
-
-package edu.oakland.test.display01 {
-    class DisplayGpsManagerImplementationTests {
-
-    }
-}
-
-
-
-
-package edu.oakland.test.display01 {
-    class DisplayGpsReceiverStub {
-        __
-        .. Use Case 1 ..
-        + String measureGpsSignalStrength(Satellite satelliteSignal)
-        .. Use Case 2 ..
-        + SatelliteSignalCheckRequest measureSignal(String satelliteName)
-    }
-}
-
-
-
-
-package edu.oakland.production.display01 {
-    interface DisplayGpsReceiver {
-        __
-        .. Use Case 1 ..
-        {abstract} + String measureGpsSignalStrength(Satellite satelliteSignal)
-        .. Use Case 2 ..
-        {abstract} + SatelliteSignalCheckRequest measureSignal(String satelliteName)
-    }
-}
-
-
-
-
-
-
-DisplayGpsReceiverStub .up.|> DisplayGpsReceiver
-
-
-
-DisplayGpsManagerImplementationTests ..> DisplayGpsReceiverStub
-
-
-
-package edu.oakland.production.display01 {
-    class DisplayGpsManagerImplementation {
-        __
-        .. Use Case 1 ..
-
-        .. Use Case 2 ..
-
-    }
-}
-
-
-DisplayGpsManagerImplementation .up.|> DisplayGpsManager
-
-DisplayGpsManagerImplementation ..> SatelliteSignalCheckRequest
-
-
-
-DisplayGpsManagerImplementationTests ..> DisplayGpsManagerImplementation
-
-
-
-
-
-package edu.oakland.test.display01 {
-    class DisplayGpsReceiverImplementationTests {
-
-    }
-}
-
-
-
-
-package edu.oakland.test.display01 {
-    class MiddlewareGisInterfaceStub {
-        __
-        .. Use Case 1 ..
-        + String revieveGpsSignalStrength(Satellite satelliteSignal)
-        .. Use Case 2 ..
-        + String revieveGpsSignalStrength(Satellite satelliteSignal)
-    }
-}
-
-
-
-
-
-
-package edu.oakland.production.middleware01 {
-    interface MiddlewareGisInterface {
-        __
-        .. Use Case 1 ..
-        {abstract} + String revieveGpsSignalStrength(Satellite satelliteSignal)
-        .. Use Case 2 ..
-        {abstract} + String revieveGpsSignalStrength(Satellite satelliteSignal)
-    }
-}
-
-
-
-
-
-
-MiddlewareGisInterfaceStub .up.|> MiddlewareGisInterface
-
-DisplayGpsReceiverImplementationTests ..> MiddlewareGisInterfaceStub
-
-
-
-package edu.oakland.production.display01 {
-    class DisplayGpsReceiverImplementation {
-        __
-        .. Use Case 1 ..
-        + String measureGpsSignalStrength(Satellite satelliteSignal)
-        - void passSignalStrength(int signalStrength)
-        .. Use Case 2 ..
-        + String measureGpsSignalStrength(Satellite satelliteSignal)
-        + SatelliteSignalCheckRequest measureSignal(String satelliteName)
-    }
-}
-
-
-DisplayGpsReceiverImplementation .up.|> DisplayGpsReceiver
-
-DisplayGpsReceiverImplementation ..> SatelliteSignalCheckRequest
-
-
-
-DisplayGpsReceiverImplementationTests ..> DisplayGpsReceiverImplementation
-
-
-
-
-
-package edu.oakland.test.display01 {
-    class SatelliteSignalCheckRequestTests {
-
-    }
-}
-
-
-SatelliteSignalCheckRequestTests ..> SatelliteSignalCheckRequest
-
-
-
-
-@enduml
+@startuml Display01TestPackage_Closure
+
+package edu.oakland.test.display01 {
+    
+}
+
+
+
+package edu.oakland.test.display01 {
+    class DisplayGpsInterfaceImplementationTests {
+
+    }
+}
+
+
+
+
+package edu.oakland.test.display01 {
+    class DisplayGpsManagerStub {
+        __
+        .. Use Case 1 ..
+        + String receiveGpsSignalStrengths(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + SatelliteSignalCheckRequest passGpsSignalStrength(String satelliteName)
+    }
+}
+
+
+
+
+package edu.oakland.production.display01 {
+    interface DisplayGpsManager {
+        __
+        .. Use Case 1 ..
+        {abstract} + String receiveGpsSignalStrengths(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        {abstract} + SatelliteSignalCheckRequest passGpsSignalStrength(String satelliteName)
+    }
+}
+
+
+
+
+
+
+DisplayGpsManagerStub .up.|> DisplayGpsManager
+
+
+
+DisplayGpsInterfaceImplementationTests ..> DisplayGpsManagerStub
+
+
+
+package edu.oakland.production.display01 {
+    class DisplayGpsInterfaceImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+
+
+
+package edu.oakland.production.display01 {
+    interface DisplayGpsInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + void revieveGPSSignals(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        {abstract} + void reportGpsSignalLoss(String satelliteName)
+        {abstract} + void recheckSignalStength(String satelliteName)
+        {abstract} + void checkSignalStength(String satelliteName)
+    }
+}
+
+
+
+
+
+
+DisplayGpsInterfaceImplementation .up.|> DisplayGpsInterface
+
+
+
+package edu.oakland.helper.display01 {
+    class SatelliteSignalCheckRequest {
+        - String satelliteName
+        - String checkType
+        + SatelliteSignalCheckRequest(String satelliteName, String checkType)
+        + String getSatelliteName()
+        + String getCheckType()
+    }
+}
+
+
+
+
+
+
+DisplayGpsInterfaceImplementation ..> SatelliteSignalCheckRequest
+
+
+
+DisplayGpsInterfaceImplementationTests ..> DisplayGpsInterfaceImplementation
+
+
+
+
+
+package edu.oakland.test.display01 {
+    class DisplayGpsManagerImplementationTests {
+
+    }
+}
+
+
+
+
+package edu.oakland.test.display01 {
+    class DisplayGpsReceiverStub {
+        __
+        .. Use Case 1 ..
+        + String measureGpsSignalStrength(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + SatelliteSignalCheckRequest measureSignal(String satelliteName)
+    }
+}
+
+
+
+
+package edu.oakland.production.display01 {
+    interface DisplayGpsReceiver {
+        __
+        .. Use Case 1 ..
+        {abstract} + String measureGpsSignalStrength(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        {abstract} + SatelliteSignalCheckRequest measureSignal(String satelliteName)
+    }
+}
+
+
+
+
+
+
+DisplayGpsReceiverStub .up.|> DisplayGpsReceiver
+
+
+
+DisplayGpsManagerImplementationTests ..> DisplayGpsReceiverStub
+
+
+
+package edu.oakland.production.display01 {
+    class DisplayGpsManagerImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+
+DisplayGpsManagerImplementation .up.|> DisplayGpsManager
+
+DisplayGpsManagerImplementation ..> SatelliteSignalCheckRequest
+
+
+
+DisplayGpsManagerImplementationTests ..> DisplayGpsManagerImplementation
+
+
+
+
+
+package edu.oakland.test.display01 {
+    class DisplayGpsReceiverImplementationTests {
+
+    }
+}
+
+
+
+
+package edu.oakland.test.display01 {
+    class MiddlewareGisInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + String revieveGpsSignalStrength(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + String revieveGpsSignalStrength(Satellite satelliteSignal)
+    }
+}
+
+
+
+
+
+
+package edu.oakland.production.middleware01 {
+    interface MiddlewareGisInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + String revieveGpsSignalStrength(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        {abstract} + String revieveGpsSignalStrength(Satellite satelliteSignal)
+    }
+}
+
+
+
+
+
+
+MiddlewareGisInterfaceStub .up.|> MiddlewareGisInterface
+
+DisplayGpsReceiverImplementationTests ..> MiddlewareGisInterfaceStub
+
+
+
+package edu.oakland.production.display01 {
+    class DisplayGpsReceiverImplementation {
+        __
+        .. Use Case 1 ..
+        + String measureGpsSignalStrength(Satellite satelliteSignal)
+        - void passSignalStrength(int signalStrength)
+        .. Use Case 2 ..
+        + String measureGpsSignalStrength(Satellite satelliteSignal)
+        + SatelliteSignalCheckRequest measureSignal(String satelliteName)
+    }
+}
+
+
+DisplayGpsReceiverImplementation .up.|> DisplayGpsReceiver
+
+DisplayGpsReceiverImplementation ..> SatelliteSignalCheckRequest
+
+
+
+DisplayGpsReceiverImplementationTests ..> DisplayGpsReceiverImplementation
+
+
+
+
+
+package edu.oakland.test.display01 {
+    class SatelliteSignalCheckRequestTests {
+
+    }
+}
+
+
+SatelliteSignalCheckRequestTests ..> SatelliteSignalCheckRequest
+
+
+
+
+@enduml
 
 PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
 (GPL source distribution)

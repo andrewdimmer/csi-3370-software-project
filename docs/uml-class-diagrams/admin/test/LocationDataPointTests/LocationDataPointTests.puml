@@ -1,0 +1,9 @@
+@startuml LocationDataPointTests
+
+package edu.oakland.test.admin {
+    class LocationDataPointTests {
+        
+    }
+}
+
+@enduml

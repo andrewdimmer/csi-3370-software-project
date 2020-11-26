@@ -6,51 +6,51 @@ class DisplayGpsInterface--><rect fill="#FEFECE" filter="url(#f1gk5zsquukcqz)" h
 class SatelliteSignalCheckRequest--><rect fill="#FEFECE" filter="url(#f1gk5zsquukcqz)" height="112.0234" id="SatelliteSignalCheckRequest" style="stroke: #A80036; stroke-width: 1.5;" width="416" x="38" y="434"/><ellipse cx="152.25" cy="450" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M155.2188,455.6406 Q154.6406,455.9375 154,456.0781 Q153.3594,456.2344 152.6563,456.2344 Q150.1563,456.2344 148.8281,454.5938 Q147.5156,452.9375 147.5156,449.8125 Q147.5156,446.6875 148.8281,445.0313 Q150.1563,443.375 152.6563,443.375 Q153.3594,443.375 154,443.5313 Q154.6563,443.6875 155.2188,443.9844 L155.2188,446.7031 Q154.5938,446.125 154,445.8594 Q153.4063,445.5781 152.7813,445.5781 Q151.4375,445.5781 150.75,446.6563 Q150.0625,447.7188 150.0625,449.8125 Q150.0625,451.9063 150.75,452.9844 Q151.4375,454.0469 152.7813,454.0469 Q153.4063,454.0469 154,453.7813 Q154.5938,453.5 155.2188,452.9219 L155.2188,455.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="179" x="172.75" y="454.1543">SatelliteSignalCheckRequest</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="453" y1="466" y2="466"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="474"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="116" x="58" y="480.2104">String satelliteName</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="46" y="486.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="97" x="58" y="493.0151">String checkType</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="453" y1="499.6094" y2="499.6094"/><ellipse cx="49" cy="510.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="390" x="58" y="513.8198">SatelliteSignalCheckRequest(String satelliteName, String checkType)</text><ellipse cx="49" cy="523.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="143" x="58" y="526.6245">String getSatelliteName()</text><ellipse cx="49" cy="536.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="125" x="58" y="539.4292">String getCheckType()</text><!--MD5=[5e11d977f08105e989255e48b5831e9e]
 reverse link DisplayGpsInterface to DisplayGpsInterfaceImplementation--><path d="M246,212.3 C246,225.82 246,239.44 246,251.91 " fill="none" id="DisplayGpsInterface&lt;-DisplayGpsInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="239,212.02,246,192.02,253,212.02,239,212.02" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[15c92c2a2adf203ad041f33ed955827c]
 link DisplayGpsInterfaceImplementation to SatelliteSignalCheckRequest--><path d="M246,359.29 C246,381.01 246,406.3 246,428.75 " fill="none" id="DisplayGpsInterfaceImplementation-&gt;SatelliteSignalCheckRequest" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="246,433.79,250,424.79,246,428.79,242,424.79,246,433.79" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[ae177c108eef8a0205e40780f78b3f53]
-@startuml DisplayGpsInterfaceImplementation_DirectDependencies
-
-
-package edu.oakland.production.display01 {
-    class DisplayGpsInterfaceImplementation {
-        __
-        .. Use Case 1 ..
-
-        .. Use Case 2 ..
-
-    }
-}
-
-
-
-package edu.oakland.production.display01 {
-    interface DisplayGpsInterface {
-        __
-        .. Use Case 1 ..
-        {abstract} + void revieveGPSSignals(Satellite satelliteSignal)
-        .. Use Case 2 ..
-        {abstract} + void reportGpsSignalLoss(String satelliteName)
-        {abstract} + void recheckSignalStength(String satelliteName)
-        {abstract} + void checkSignalStength(String satelliteName)
-    }
-}
-
-DisplayGpsInterfaceImplementation .up.|> DisplayGpsInterface
-
-
-package edu.oakland.helper.display01 {
-    class SatelliteSignalCheckRequest {
-        - String satelliteName
-        - String checkType
-        + SatelliteSignalCheckRequest(String satelliteName, String checkType)
-        + String getSatelliteName()
-        + String getCheckType()
-    }
-}
-
-DisplayGpsInterfaceImplementation ..> SatelliteSignalCheckRequest
-
-
-
-@enduml
+@startuml DisplayGpsInterfaceImplementation_DirectDependencies
+
+
+package edu.oakland.production.display01 {
+    class DisplayGpsInterfaceImplementation {
+        __
+        .. Use Case 1 ..
+
+        .. Use Case 2 ..
+
+    }
+}
+
+
+
+package edu.oakland.production.display01 {
+    interface DisplayGpsInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + void receiveGpsSignal(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        {abstract} + void reportGpsSignalLoss(String satelliteName)
+        {abstract} + void recheckSignalStength(String satelliteName)
+        {abstract} + void checkSignalStength(String satelliteName)
+    }
+}
+
+DisplayGpsInterfaceImplementation .up.|> DisplayGpsInterface
+
+
+package edu.oakland.helper.display01 {
+    class SatelliteSignalCheckRequest {
+        - String satelliteName
+        - String checkType
+        + SatelliteSignalCheckRequest(String satelliteName, String checkType)
+        + String getSatelliteName()
+        + String getCheckType()
+    }
+}
+
+DisplayGpsInterfaceImplementation ..> SatelliteSignalCheckRequest
+
+
+
+@enduml
 
 PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
 (GPL source distribution)

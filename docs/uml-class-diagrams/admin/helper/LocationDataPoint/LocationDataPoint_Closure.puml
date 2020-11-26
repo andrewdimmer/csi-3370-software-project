@@ -1,0 +1,15 @@
+@startuml LocationDataPoint_Closure
+
+!startsub ADMIN_HELPER
+!include LocationDataPoint.puml
+!endsub
+
+!startsub ADMIN
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

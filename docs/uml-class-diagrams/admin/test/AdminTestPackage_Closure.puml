@@ -1,0 +1,16 @@
+@startuml AdminTestPackage_Closure
+
+package edu.oakland.test.admin {
+    
+}
+
+!include DemoTests/DemoTests_Closure.puml
+!include GpsSystemTests/GpsSystemTests_Closure.puml
+!include UserTests/UserTests_Closure.puml
+!include LocationDataPointTests/LocationDataPointTests_Closure.puml
+!include SatelliteTests/SatelliteTests_Closure.puml
+!include TrackDataTests/TrackDataTests_Closure.puml
+!include DisplayCommInterfaceStub/DisplayCommInterfaceStub_Closure.puml
+!include DisplayGpsInterfaceStub/DisplayGpsInterfaceStub_Closure.puml
+
+@enduml

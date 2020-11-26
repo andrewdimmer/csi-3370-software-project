@@ -1,0 +1,7 @@
+@startuml AdminPackages_DirectDependencies
+
+!include production/AdminProductionPackage_DirectDependencies.puml
+!include test/AdminTestPackage_DirectDependencies.puml
+!include helper/AdminHelperPackage_DirectDependencies.puml
+
+@enduml

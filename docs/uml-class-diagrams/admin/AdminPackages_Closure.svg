@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="797px" preserveAspectRatio="none" style="width:3780px;height:797px;" version="1.1" viewBox="0 0 3780 797" width="3780px" zoomAndPan="magnify"><defs><filter height="300%" id="fp8gxivs9swg3" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[8bd6d9786dfa802b1eecfb7372bf244a]
+cluster edu.oakland.production.admin--><polygon fill="#FFFFFF" filter="url(#fp8gxivs9swg3)" points="1694,260,1939,260,1946,282.2969,2815,282.2969,2815,521,1694,521,1694,260" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="1694" x2="1946" y1="282.2969" y2="282.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="239" x="1698" y="274.9951">edu.oakland.production.admin</text><!--MD5=[913a5d0b9faba757f1bf119e53d411ee]
+cluster edu.oakland.test.admin--><polygon fill="#FFFFFF" filter="url(#fp8gxivs9swg3)" points="700,66.5,890,66.5,897,88.7969,1670,88.7969,1670,482.5,700,482.5,700,66.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="700" x2="897" y1="88.7969" y2="88.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="184" x="704" y="81.4951">edu.oakland.test.admin</text><!--MD5=[3e281e6f49e0b185d62a106a5d994a08]
+cluster edu.oakland.production.display01--><polygon fill="#FFFFFF" filter="url(#fp8gxivs9swg3)" points="22,24,295,24,302,46.2969,352,46.2969,352,208,22,208,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="302" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="267" x="26" y="38.9951">edu.oakland.production.display01</text><!--MD5=[fe59aae6f7bfe371a9c197ec1f7f843a]
+cluster edu.oakland.production.display02--><polygon fill="#FFFFFF" filter="url(#fp8gxivs9swg3)" points="376,30.5,649,30.5,656,52.7969,676,52.7969,676,201.5,376,201.5,376,30.5" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="376" x2="656" y1="52.7969" y2="52.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="267" x="380" y="45.4951">edu.oakland.production.display02</text><!--MD5=[850b37b0b8d882ee2cad74ae2a956f48]
+cluster edu.oakland.helper.admin--><polygon fill="#FFFFFF" filter="url(#fp8gxivs9swg3)" points="2890,232,3100,232,3107,254.2969,3758,254.2969,3758,785,2890,785,2890,232" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="2890" x2="3107" y1="254.2969" y2="254.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="204" x="2894" y="246.9951">edu.oakland.helper.admin</text><!--MD5=[3c84d2688363deb820fa9437de7249ec]
+class Demo--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="209.6563" id="Demo" style="stroke: #A80036; stroke-width: 1.5;" width="334" x="2465" y="295"/><ellipse cx="2609.75" cy="311" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M2612.7188,316.6406 Q2612.1406,316.9375 2611.5,317.0781 Q2610.8594,317.2344 2610.1563,317.2344 Q2607.6563,317.2344 2606.3281,315.5938 Q2605.0156,313.9375 2605.0156,310.8125 Q2605.0156,307.6875 2606.3281,306.0313 Q2607.6563,304.375 2610.1563,304.375 Q2610.8594,304.375 2611.5,304.5313 Q2612.1563,304.6875 2612.7188,304.9844 L2612.7188,307.7031 Q2612.0938,307.125 2611.5,306.8594 Q2610.9063,306.5781 2610.2813,306.5781 Q2608.9375,306.5781 2608.25,307.6563 Q2607.5625,308.7188 2607.5625,310.8125 Q2607.5625,312.9063 2608.25,313.9844 Q2608.9375,315.0469 2610.2813,315.0469 Q2610.9063,315.0469 2611.5,314.7813 Q2612.0938,314.5 2612.7188,313.9219 L2612.7188,316.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="36" x="2630.25" y="315.1543">Demo</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2466" x2="2798" y1="327" y2="327"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2473" y="351.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="231" x="2485" y="358.0151">DisplayGpsInterface displayGpsInterface</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2473" y="364.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="259" x="2485" y="370.8198">DisplayCommInterface displayCommInterface</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2466" x2="2562" y1="341.4023" y2="341.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="140" x="2562" y="344.7104">Main Production Classes</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2702" x2="2798" y1="341.4023" y2="341.4023"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2473" y="394.2188"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="134" x="2485" y="400.4292">GpsSystem gpsSystem</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2473" y="407.0234"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="2485" y="413.2339">User user</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2473" y="419.8281"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="308" x="2485" y="426.0386">PersistentStorageManager persistentStorageManager</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2466" x2="2579" y1="383.8164" y2="383.8164"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="106" x="2579" y="387.1245">Use Case Runners</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="2685" x2="2798" y1="383.8164" y2="383.8164"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="2466" x2="2798" y1="432.6328" y2="432.6328"/><ellipse cx="2476" cy="443.6328" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="130" x="2485" y="446.8433">void main(Sting args[])</text><ellipse cx="2476" cy="456.4375" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="272" x="2485" y="459.6479">void initSecureLockTrackSystem(int systemRfid,</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="220" x="2517" y="472.4526">String persistentStorageInputLocation,</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="230" x="2517" y="485.2573">String persistentStorageOutputLocation)</text><ellipse cx="2476" cy="494.8516" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="191" x="2485" y="498.062">void runUseCases(Scanner input)</text><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="86.4141" id="User" style="stroke: #A80036; stroke-width: 1.5;" width="320" x="2110" y="357"/><ellipse cx="2251.25" cy="373" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M2254.2188,378.6406 Q2253.6406,378.9375 2253,379.0781 Q2252.3594,379.2344 2251.6563,379.2344 Q2249.1563,379.2344 2247.8281,377.5938 Q2246.5156,375.9375 2246.5156,372.8125 Q2246.5156,369.6875 2247.8281,368.0313 Q2249.1563,366.375 2251.6563,366.375 Q2252.3594,366.375 2253,366.5313 Q2253.6563,366.6875 2254.2188,366.9844 L2254.2188,369.7031 Q2253.5938,369.125 2253,368.8594 Q2252.4063,368.5781 2251.7813,368.5781 Q2250.4375,368.5781 2249.75,369.6563 Q2249.0625,370.7188 2249.0625,372.8125 Q2249.0625,374.9063 2249.75,375.9844 Q2250.4375,377.0469 2251.7813,377.0469 Q2252.4063,377.0469 2253,376.7813 Q2253.5938,376.5 2254.2188,375.9219 L2254.2188,378.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="2271.75" y="377.1543">User</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2111" x2="2429" y1="389" y2="389"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2118" y="397"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="259" x="2130" y="403.2104">DisplayCommInterface displayCommInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2111" x2="2429" y1="409.8047" y2="409.8047"/><ellipse cx="2121" cy="420.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="294" x="2130" y="424.0151">User(DisplayCommInterface displayCommInterface)</text><ellipse cx="2121" cy="433.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="191" x="2130" y="436.8198">void runUseCase1(Scanner input)</text><!--MD5=[d25225d68d5e3bf6aa5fb275933b1e63]
+class GpsSystem--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="176.0469" id="GpsSystem" style="stroke: #A80036; stroke-width: 1.5;" width="365" x="1709.5" y="312"/><ellipse cx="1853.25" cy="328" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1856.2188,333.6406 Q1855.6406,333.9375 1855,334.0781 Q1854.3594,334.2344 1853.6563,334.2344 Q1851.1563,334.2344 1849.8281,332.5938 Q1848.5156,330.9375 1848.5156,327.8125 Q1848.5156,324.6875 1849.8281,323.0313 Q1851.1563,321.375 1853.6563,321.375 Q1854.3594,321.375 1855,321.5313 Q1855.6563,321.6875 1856.2188,321.9844 L1856.2188,324.7031 Q1855.5938,324.125 1855,323.8594 Q1854.4063,323.5781 1853.7813,323.5781 Q1852.4375,323.5781 1851.75,324.6563 Q1851.0625,325.7188 1851.0625,327.8125 Q1851.0625,329.9063 1851.75,330.9844 Q1852.4375,332.0469 1853.7813,332.0469 Q1854.4063,332.0469 1855,331.7813 Q1855.5938,331.5 1856.2188,330.9219 L1856.2188,333.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="69" x="1873.75" y="332.1543">GpsSystem</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1710.5" x2="2073.5" y1="344" y2="344"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1717.5" y="352"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="231" x="1729.5" y="358.2104">DisplayGpsInterface displayGpsInterface</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1717.5" y="364.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="110" x="1729.5" y="371.0151">Satellite[] satellites</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1710.5" x2="2073.5" y1="377.6094" y2="377.6094"/><ellipse cx="1720.5" cy="388.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="312" x="1729.5" y="391.8198">GpsSystems(DisplayGpsInterface displayGpsInterface,</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="135" x="1761.5" y="404.6245">String[] satelliteNames)</text><ellipse cx="1720.5" cy="414.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="191" x="1729.5" y="417.4292">void runUseCase1(Scanner input)</text><ellipse cx="1720.5" cy="427.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="191" x="1729.5" y="430.2339">void runUseCase2(Scanner input)</text><ellipse cx="1720.5" cy="439.8281" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="268" x="1729.5" y="443.0386">void configureSatellites(String[] satelliteNames</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="307" x="1761.5" y="455.8433">float incrementLatAmount, float incrementLngAmount,</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="227" x="1761.5" y="468.6479">LocationDataPoint initLocationDataPoint)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="1717.5" y="475.2422"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="272" x="1729.5" y="481.4526">void configureSatellites(String[] satelliteNames)</text><!--MD5=[662c4b2ee5af84317aa79778ac14b760]
+class DemoTests--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="48" id="DemoTests" style="stroke: #A80036; stroke-width: 1.5;" width="102" x="1017" y="101.5"/><ellipse cx="1032" cy="117.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1034.9688,123.1406 Q1034.3906,123.4375 1033.75,123.5781 Q1033.1094,123.7344 1032.4063,123.7344 Q1029.9063,123.7344 1028.5781,122.0938 Q1027.2656,120.4375 1027.2656,117.3125 Q1027.2656,114.1875 1028.5781,112.5313 Q1029.9063,110.875 1032.4063,110.875 Q1033.1094,110.875 1033.75,111.0313 Q1034.4063,111.1875 1034.9688,111.4844 L1034.9688,114.2031 Q1034.3438,113.625 1033.75,113.3594 Q1033.1563,113.0781 1032.5313,113.0781 Q1031.1875,113.0781 1030.5,114.1563 Q1029.8125,115.2188 1029.8125,117.3125 Q1029.8125,119.4063 1030.5,120.4844 Q1031.1875,121.5469 1032.5313,121.5469 Q1033.1563,121.5469 1033.75,121.2813 Q1034.3438,121 1034.9688,120.4219 L1034.9688,123.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="70" x="1046" y="121.6543">DemoTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1018" x2="1118" y1="133.5" y2="133.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1018" x2="1118" y1="141.5" y2="141.5"/><!--MD5=[3ebf7b5faf275b15b1fd90e11b759983]
+class GpsSystemTests--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="48" id="GpsSystemTests" style="stroke: #A80036; stroke-width: 1.5;" width="135" x="716.5" y="101.5"/><ellipse cx="731.5" cy="117.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M734.4688,123.1406 Q733.8906,123.4375 733.25,123.5781 Q732.6094,123.7344 731.9063,123.7344 Q729.4063,123.7344 728.0781,122.0938 Q726.7656,120.4375 726.7656,117.3125 Q726.7656,114.1875 728.0781,112.5313 Q729.4063,110.875 731.9063,110.875 Q732.6094,110.875 733.25,111.0313 Q733.9063,111.1875 734.4688,111.4844 L734.4688,114.2031 Q733.8438,113.625 733.25,113.3594 Q732.6563,113.0781 732.0313,113.0781 Q730.6875,113.0781 730,114.1563 Q729.3125,115.2188 729.3125,117.3125 Q729.3125,119.4063 730,120.4844 Q730.6875,121.5469 732.0313,121.5469 Q732.6563,121.5469 733.25,121.2813 Q733.8438,121 734.4688,120.4219 L734.4688,123.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="103" x="745.5" y="121.6543">GpsSystemTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="717.5" x2="850.5" y1="133.5" y2="133.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="717.5" x2="850.5" y1="141.5" y2="141.5"/><!--MD5=[157add87c4645f5d1ba13fc88f5c77ea]
+class DisplayGpsInterfaceStub--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="132.8281" id="DisplayGpsInterfaceStub" style="stroke: #A80036; stroke-width: 1.5;" width="300" x="716" y="333.5"/><ellipse cx="785.25" cy="349.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M788.2188,355.1406 Q787.6406,355.4375 787,355.5781 Q786.3594,355.7344 785.6563,355.7344 Q783.1563,355.7344 781.8281,354.0938 Q780.5156,352.4375 780.5156,349.3125 Q780.5156,346.1875 781.8281,344.5313 Q783.1563,342.875 785.6563,342.875 Q786.3594,342.875 787,343.0313 Q787.6563,343.1875 788.2188,343.4844 L788.2188,346.2031 Q787.5938,345.625 787,345.3594 Q786.4063,345.0781 785.7813,345.0781 Q784.4375,345.0781 783.75,346.1563 Q783.0625,347.2188 783.0625,349.3125 Q783.0625,351.4063 783.75,352.4844 Q784.4375,353.5469 785.7813,353.5469 Q786.4063,353.5469 787,353.2813 Q787.5938,353 788.2188,352.4219 L788.2188,355.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="153" x="805.75" y="353.6543">DisplayGpsInterfaceStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="717" x2="1015" y1="365.5" y2="365.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="717" x2="1015" y1="373.5" y2="373.5"/><ellipse cx="727" cy="401.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="264" x="736" y="404.5151">void receiveGpsSignal(Satellite satelliteSignal)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="717" x2="833" y1="387.9023" y2="387.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="833" y="391.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="899" x2="1015" y1="387.9023" y2="387.9023"/><ellipse cx="727" cy="430.9141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="271" x="736" y="434.1245">void reportGpsSignalLoss(String satelliteName)</text><ellipse cx="727" cy="443.7188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="274" x="736" y="446.9292">void recheckSignalStength(String satelliteName)</text><ellipse cx="727" cy="456.5234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="262" x="736" y="459.7339">void checkSignalStength(String satelliteName)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="717" x2="833" y1="417.5117" y2="417.5117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="833" y="420.8198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="899" x2="1015" y1="417.5117" y2="417.5117"/><!--MD5=[a3882c9454aefdd9ca25dec9d839ca8a]
+class UserTests--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="48" id="UserTests" style="stroke: #A80036; stroke-width: 1.5;" width="95" x="886.5" y="101.5"/><ellipse cx="901.5" cy="117.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M904.4688,123.1406 Q903.8906,123.4375 903.25,123.5781 Q902.6094,123.7344 901.9063,123.7344 Q899.4063,123.7344 898.0781,122.0938 Q896.7656,120.4375 896.7656,117.3125 Q896.7656,114.1875 898.0781,112.5313 Q899.4063,110.875 901.9063,110.875 Q902.6094,110.875 903.25,111.0313 Q903.9063,111.1875 904.4688,111.4844 L904.4688,114.2031 Q903.8438,113.625 903.25,113.3594 Q902.6563,113.0781 902.0313,113.0781 Q900.6875,113.0781 900,114.1563 Q899.3125,115.2188 899.3125,117.3125 Q899.3125,119.4063 900,120.4844 Q900.6875,121.5469 902.0313,121.5469 Q902.6563,121.5469 903.25,121.2813 Q903.8438,121 904.4688,120.4219 L904.4688,123.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="915.5" y="121.6543">UserTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="887.5" x2="980.5" y1="133.5" y2="133.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="887.5" x2="980.5" y1="141.5" y2="141.5"/><!--MD5=[51e45a4cba7a88c8486ae0ba512ad549]
+class DisplayCommInterfaceStub--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="107.2188" id="DisplayCommInterfaceStub" style="stroke: #A80036; stroke-width: 1.5;" width="266" x="1051" y="346.5"/><ellipse cx="1096.25" cy="362.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1099.2188,368.1406 Q1098.6406,368.4375 1098,368.5781 Q1097.3594,368.7344 1096.6563,368.7344 Q1094.1563,368.7344 1092.8281,367.0938 Q1091.5156,365.4375 1091.5156,362.3125 Q1091.5156,359.1875 1092.8281,357.5313 Q1094.1563,355.875 1096.6563,355.875 Q1097.3594,355.875 1098,356.0313 Q1098.6563,356.1875 1099.2188,356.4844 L1099.2188,359.2031 Q1098.5938,358.625 1098,358.3594 Q1097.4063,358.0781 1096.7813,358.0781 Q1095.4375,358.0781 1094.75,359.1563 Q1094.0625,360.2188 1094.0625,362.3125 Q1094.0625,364.4063 1094.75,365.4844 Q1095.4375,366.5469 1096.7813,366.5469 Q1097.4063,366.5469 1098,366.2813 Q1098.5938,366 1099.2188,365.4219 L1099.2188,368.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="167" x="1116.75" y="366.6543">DisplayCommInterfaceStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1052" x2="1316" y1="378.5" y2="378.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1052" x2="1316" y1="386.5" y2="386.5"/><ellipse cx="1062" cy="414.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="240" x="1071" y="417.5151">TrackData receiveRfidRequest(int rfidNum)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1052" x2="1151" y1="400.9023" y2="400.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1151" y="404.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1217" x2="1316" y1="400.9023" y2="400.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="1061" y="447.1245"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1052" x2="1151" y1="430.5117" y2="430.5117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="1151" y="433.8198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="1217" x2="1316" y1="430.5117" y2="430.5117"/><!--MD5=[a2f58c14a148df0ea98af95823818f27]
+class LocationDataPointTests--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="48" id="LocationDataPointTests" style="stroke: #A80036; stroke-width: 1.5;" width="181" x="1154.5" y="101.5"/><ellipse cx="1169.5" cy="117.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1172.4688,123.1406 Q1171.8906,123.4375 1171.25,123.5781 Q1170.6094,123.7344 1169.9063,123.7344 Q1167.4063,123.7344 1166.0781,122.0938 Q1164.7656,120.4375 1164.7656,117.3125 Q1164.7656,114.1875 1166.0781,112.5313 Q1167.4063,110.875 1169.9063,110.875 Q1170.6094,110.875 1171.25,111.0313 Q1171.9063,111.1875 1172.4688,111.4844 L1172.4688,114.2031 Q1171.8438,113.625 1171.25,113.3594 Q1170.6563,113.0781 1170.0313,113.0781 Q1168.6875,113.0781 1168,114.1563 Q1167.3125,115.2188 1167.3125,117.3125 Q1167.3125,119.4063 1168,120.4844 Q1168.6875,121.5469 1170.0313,121.5469 Q1170.6563,121.5469 1171.25,121.2813 Q1171.8438,121 1172.4688,120.4219 L1172.4688,123.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="149" x="1183.5" y="121.6543">LocationDataPointTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1155.5" x2="1334.5" y1="133.5" y2="133.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1155.5" x2="1334.5" y1="141.5" y2="141.5"/><!--MD5=[2eae672171c1babeb83642fe5a70038e]
+class SatelliteTests--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="48" id="SatelliteTests" style="stroke: #A80036; stroke-width: 1.5;" width="117" x="1536.5" y="101.5"/><ellipse cx="1551.5" cy="117.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1554.4688,123.1406 Q1553.8906,123.4375 1553.25,123.5781 Q1552.6094,123.7344 1551.9063,123.7344 Q1549.4063,123.7344 1548.0781,122.0938 Q1546.7656,120.4375 1546.7656,117.3125 Q1546.7656,114.1875 1548.0781,112.5313 Q1549.4063,110.875 1551.9063,110.875 Q1552.6094,110.875 1553.25,111.0313 Q1553.9063,111.1875 1554.4688,111.4844 L1554.4688,114.2031 Q1553.8438,113.625 1553.25,113.3594 Q1552.6563,113.0781 1552.0313,113.0781 Q1550.6875,113.0781 1550,114.1563 Q1549.3125,115.2188 1549.3125,117.3125 Q1549.3125,119.4063 1550,120.4844 Q1550.6875,121.5469 1552.0313,121.5469 Q1552.6563,121.5469 1553.25,121.2813 Q1553.8438,121 1554.4688,120.4219 L1554.4688,123.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="85" x="1565.5" y="121.6543">SatelliteTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1537.5" x2="1652.5" y1="133.5" y2="133.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1537.5" x2="1652.5" y1="141.5" y2="141.5"/><!--MD5=[b385454a3ff1144a4f446b35725aeb9e]
+class TrackDataTests--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="48" id="TrackDataTests" style="stroke: #A80036; stroke-width: 1.5;" width="130" x="1371" y="101.5"/><ellipse cx="1386" cy="117.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M1388.9688,123.1406 Q1388.3906,123.4375 1387.75,123.5781 Q1387.1094,123.7344 1386.4063,123.7344 Q1383.9063,123.7344 1382.5781,122.0938 Q1381.2656,120.4375 1381.2656,117.3125 Q1381.2656,114.1875 1382.5781,112.5313 Q1383.9063,110.875 1386.4063,110.875 Q1387.1094,110.875 1387.75,111.0313 Q1388.4063,111.1875 1388.9688,111.4844 L1388.9688,114.2031 Q1388.3438,113.625 1387.75,113.3594 Q1387.1563,113.0781 1386.5313,113.0781 Q1385.1875,113.0781 1384.5,114.1563 Q1383.8125,115.2188 1383.8125,117.3125 Q1383.8125,119.4063 1384.5,120.4844 Q1385.1875,121.5469 1386.5313,121.5469 Q1387.1563,121.5469 1387.75,121.2813 Q1388.3438,121 1388.9688,120.4219 L1388.9688,123.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="98" x="1400" y="121.6543">TrackDataTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1372" x2="1500" y1="133.5" y2="133.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="1372" x2="1500" y1="141.5" y2="141.5"/><!--MD5=[fa6248c05b5a852ecd50b5411f159754]
+class DisplayGpsInterface--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="132.8281" id="DisplayGpsInterface" style="stroke: #A80036; stroke-width: 1.5;" width="297" x="38.5" y="59"/><ellipse cx="120.75" cy="75" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M116.6719,70.7656 L116.6719,68.6094 L124.0625,68.6094 L124.0625,70.7656 L121.5938,70.7656 L121.5938,78.8438 L124.0625,78.8438 L124.0625,81 L116.6719,81 L116.6719,78.8438 L119.1406,78.8438 L119.1406,70.7656 L116.6719,70.7656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="124" x="141.25" y="79.1543">DisplayGpsInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39.5" x2="334.5" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39.5" x2="334.5" y1="99" y2="99"/><ellipse cx="49.5" cy="126.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="261" x="58.5" y="130.0151">void receiveGpsSignal(Satellite satelliteSignal)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39.5" x2="154" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="154" y="116.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="220" x2="334.5" y1="113.4023" y2="113.4023"/><ellipse cx="49.5" cy="156.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="266" x="58.5" y="159.6245">void reportGpsSignalLoss(String satelliteName)</text><ellipse cx="49.5" cy="169.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="271" x="58.5" y="172.4292">void recheckSignalStength(String satelliteName)</text><ellipse cx="49.5" cy="182.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="259" x="58.5" y="185.2339">void checkSignalStength(String satelliteName)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39.5" x2="154" y1="143.0117" y2="143.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="154" y="146.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="220" x2="334.5" y1="143.0117" y2="143.0117"/><!--MD5=[c8d1e3134fecb0c949fd2a76cc0bb992]
+class DisplayCommInterface--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="120.0234" id="DisplayCommInterface" style="stroke: #A80036; stroke-width: 1.5;" width="268" x="392" y="65.5"/><ellipse cx="452.25" cy="81.5" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M448.1719,77.2656 L448.1719,75.1094 L455.5625,75.1094 L455.5625,77.2656 L453.0938,77.2656 L453.0938,85.3438 L455.5625,85.3438 L455.5625,87.5 L448.1719,87.5 L448.1719,85.3438 L450.6406,85.3438 L450.6406,77.2656 L448.1719,77.2656 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="139" x="472.75" y="85.6543">DisplayCommInterface</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="393" x2="659" y1="97.5" y2="97.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="393" x2="659" y1="105.5" y2="105.5"/><ellipse cx="403" cy="133.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="242" x="412" y="136.5151">TrackData receiveRfidRequest(int rfidNum)</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="416" y="149.3198"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="393" x2="493" y1="119.9023" y2="119.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="493" y="123.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="559" x2="659" y1="119.9023" y2="119.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="0" x="402" y="178.9292"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="393" x2="493" y1="162.3164" y2="162.3164"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="493" y="165.6245">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="559" x2="659" y1="162.3164" y2="162.3164"/><!--MD5=[478f5cd13d8e163685b267303d2bfb71]
+class LocationDataPoint--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="176.0469" id="LocationDataPoint" style="stroke: #A80036; stroke-width: 1.5;" width="352" x="2948" y="593"/><ellipse cx="3062.25" cy="609" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M3065.2188,614.6406 Q3064.6406,614.9375 3064,615.0781 Q3063.3594,615.2344 3062.6563,615.2344 Q3060.1563,615.2344 3058.8281,613.5938 Q3057.5156,611.9375 3057.5156,608.8125 Q3057.5156,605.6875 3058.8281,604.0313 Q3060.1563,602.375 3062.6563,602.375 Q3063.3594,602.375 3064,602.5313 Q3064.6563,602.6875 3065.2188,602.9844 L3065.2188,605.7031 Q3064.5938,605.125 3064,604.8594 Q3063.4063,604.5781 3062.7813,604.5781 Q3061.4375,604.5781 3060.75,605.6563 Q3060.0625,606.7188 3060.0625,608.8125 Q3060.0625,610.9063 3060.75,611.9844 Q3061.4375,613.0469 3062.7813,613.0469 Q3063.4063,613.0469 3064,612.7813 Q3064.5938,612.5 3065.2188,611.9219 L3065.2188,614.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="115" x="3082.75" y="613.1543">LocationDataPoint</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2949" x2="3299" y1="625" y2="625"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2956" y="633"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="43" x="2968" y="639.2104">float lat</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2956" y="645.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="46" x="2968" y="652.0151">float lng</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2956" y="658.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="112" x="2968" y="664.8198">LocalDateTime time</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2949" x2="3299" y1="671.4141" y2="671.4141"/><ellipse cx="2959" cy="682.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="326" x="2968" y="685.6245">LocationDataPoint(float lat, float lng, LocalDateTime time)</text><ellipse cx="2959" cy="695.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72" x="2968" y="698.4292">float getLat()</text><ellipse cx="2959" cy="708.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="2968" y="711.2339">float getLng()</text><ellipse cx="2959" cy="720.8281" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="141" x="2968" y="724.0386">LocalDateTime getTime()</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2956" y="730.6328"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="172" x="2968" y="736.8433">boolean normalizeLat(float lat)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2956" y="743.4375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="175" x="2968" y="749.6479">boolean normalizeLng(float lat)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2956" y="756.2422"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="231" x="2968" y="762.4526">boolean timeIsValid(LocalDateTime time)</text><!--MD5=[39a9b949d1787538902e1dfaac894da1]
+class Satellite--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="265.6797" id="Satellite" style="stroke: #A80036; stroke-width: 1.5;" width="365" x="3377.5" y="267"/><ellipse cx="3530.25" cy="283" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M3533.2188,288.6406 Q3532.6406,288.9375 3532,289.0781 Q3531.3594,289.2344 3530.6563,289.2344 Q3528.1563,289.2344 3526.8281,287.5938 Q3525.5156,285.9375 3525.5156,282.8125 Q3525.5156,279.6875 3526.8281,278.0313 Q3528.1563,276.375 3530.6563,276.375 Q3531.3594,276.375 3532,276.5313 Q3532.6563,276.6875 3533.2188,276.9844 L3533.2188,279.7031 Q3532.5938,279.125 3532,278.8594 Q3531.4063,278.5781 3530.7813,278.5781 Q3529.4375,278.5781 3528.75,279.6563 Q3528.0625,280.7188 3528.0625,282.8125 Q3528.0625,284.9063 3528.75,285.9844 Q3529.4375,287.0469 3530.7813,287.0469 Q3531.4063,287.0469 3532,286.7813 Q3532.5938,286.5 3533.2188,285.9219 L3533.2188,288.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="51" x="3550.75" y="287.1543">Satellite</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="3378.5" x2="3741.5" y1="299" y2="299"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="3385.5" y="307"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="116" x="3397.5" y="313.2104">String satelliteName</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="3385.5" y="319.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="3397.5" y="326.0151">int strength</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="3385.5" y="332.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="146" x="3397.5" y="338.8198">float incrementLatAmount</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="3385.5" y="345.4141"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="149" x="3397.5" y="351.6245">float incrementLngAmount</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="3385.5" y="358.2188"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="223" x="3397.5" y="364.4292">LocationDataPoint initLocationDataPoint</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="3385.5" y="371.0234"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="144" x="3397.5" y="377.2339">int countGetLocationCalls</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="3378.5" x2="3741.5" y1="383.8281" y2="383.8281"/><ellipse cx="3388.5" cy="394.8281" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="244" x="3397.5" y="398.0386">Satellite(String satelliteName, int strength,</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="307" x="3429.5" y="410.8433">float incrementLatAmount, float incrementLngAmount,</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="227" x="3429.5" y="423.6479">LocationDataPoint initLocationDataPoint)</text><ellipse cx="3388.5" cy="433.2422" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="143" x="3397.5" y="436.4526">String getSatelliteName()</text><ellipse cx="3388.5" cy="446.0469" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="93" x="3397.5" y="449.2573">int getStrength()</text><ellipse cx="3388.5" cy="458.8516" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="178" x="3397.5" y="462.062">LocationDataPoint getLocation()</text><ellipse cx="3388.5" cy="471.6563" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="168" x="3397.5" y="474.8667">void setStrength(int strength)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="3385.5" y="481.4609"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="208" x="3397.5" y="487.6714">boolean strengthIsValid(int strength)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="3385.5" y="494.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="230" x="3397.5" y="500.4761">float generateNewLocationDataPointLat()</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="3385.5" y="507.0703"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="233" x="3397.5" y="513.2808">float generateNewLocationDataPointLng()</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="3385.5" y="519.875"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="233" x="3397.5" y="526.0854">float generateNewLocationDataPointLng()</text><!--MD5=[a664fa1bf59865fa43f25e28dac38862]
+class TrackData--><rect fill="#FEFECE" filter="url(#fp8gxivs9swg3)" height="240.0703" id="TrackData" style="stroke: #A80036; stroke-width: 1.5;" width="437" x="2905.5" y="280"/><ellipse cx="3087.75" cy="296" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M3090.7188,301.6406 Q3090.1406,301.9375 3089.5,302.0781 Q3088.8594,302.2344 3088.1563,302.2344 Q3085.6563,302.2344 3084.3281,300.5938 Q3083.0156,298.9375 3083.0156,295.8125 Q3083.0156,292.6875 3084.3281,291.0313 Q3085.6563,289.375 3088.1563,289.375 Q3088.8594,289.375 3089.5,289.5313 Q3090.1563,289.6875 3090.7188,289.9844 L3090.7188,292.7031 Q3090.0938,292.125 3089.5,291.8594 Q3088.9063,291.5781 3088.2813,291.5781 Q3086.9375,291.5781 3086.25,292.6563 Q3085.5625,293.7188 3085.5625,295.8125 Q3085.5625,297.9063 3086.25,298.9844 Q3086.9375,300.0469 3088.2813,300.0469 Q3088.9063,300.0469 3089.5,299.7813 Q3090.0938,299.5 3090.7188,298.9219 L3090.7188,301.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="64" x="3108.25" y="300.1543">TrackData</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2906.5" x2="3341.5" y1="312" y2="312"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2913.5" y="320"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="101" x="2925.5" y="326.2104">boolean validData</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2913.5" y="332.8047"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="118" x="2925.5" y="339.0151">float courseDirection</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2913.5" y="345.6094"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="2925.5" y="351.8198">float speed</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2913.5" y="358.4141"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="148" x="2925.5" y="364.6245">LocationDataPoint[] points</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2913.5" y="371.2188"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="125" x="2925.5" y="377.4292">String statusMessage</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="2906.5" x2="3341.5" y1="384.0234" y2="384.0234"/><ellipse cx="2916.5" cy="395.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="213" x="2925.5" y="398.2339">TrackData(LocationDataPoint[] points)</text><ellipse cx="2916.5" cy="407.8281" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="411" x="2925.5" y="411.0386">TrackData(LocationDataPoint[] points, float courseDirection, float speed)</text><ellipse cx="2916.5" cy="420.6328" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="151" x="2925.5" y="423.8433">boolean isValidTrackData()</text><ellipse cx="2916.5" cy="433.4375" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="146" x="2925.5" y="436.6479">float getCourseDirection()</text><ellipse cx="2916.5" cy="446.2422" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="91" x="2925.5" y="449.4526">float getSpeed()</text><ellipse cx="2916.5" cy="459.0469" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="247" x="2925.5" y="462.2573">LocationDataPoint[] getLocationDataPoints()</text><ellipse cx="2916.5" cy="471.8516" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="152" x="2925.5" y="475.062">String getStatusMessage()</text><ellipse cx="2916.5" cy="484.6563" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="266" x="2925.5" y="487.8667">void setStatusMessage(String statusMessage)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2913.5" y="494.4609"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="193" x="2925.5" y="500.6714">boolean speedIsValid(float speed)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="2913.5" y="507.2656"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="301" x="2925.5" y="513.4761">boolean courseDirectionIsValid(float courseDirection)</text><!--MD5=[9a39a99e3a0fa0a39c09448e240fe071]
+link DemoTests to Demo--><path d="M1078.38,149.75 C1089.45,171.37 1109.22,202.24 1137,216 C1169.61,232.16 2413.23,210.44 2447,224 C2483.32,238.58 2516.64,264.01 2544.7,291.03 " fill="none" id="DemoTests-&gt;Demo" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="2548.44,294.68,2544.7748,285.5385,2544.8548,291.1948,2539.1985,291.2748,2548.44,294.68" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[5f4ccaffe44a5ea0b13055765288308d]
+reverse link DisplayGpsInterface to DisplayGpsInterfaceStub--><path d="M340.17,200.37 C352.24,205.78 364.29,211.05 376,216 C488.61,263.59 618.29,311.73 715.94,346.69 " fill="none" id="DisplayGpsInterface&lt;-DisplayGpsInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="337.2,206.7,321.87,192.07,342.98,193.95,337.2,206.7" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6f8b4f69fa9a861c2139da2ec88a56c1]
+link GpsSystemTests to DisplayGpsInterfaceStub--><path d="M790.99,149.73 C802.76,188.85 826.99,269.38 844.74,328.36 " fill="none" id="GpsSystemTests-&gt;DisplayGpsInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="846.22,333.28,847.4518,323.5085,844.7767,328.4928,839.7923,325.8177,846.22,333.28" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[93066a19b3817baa3cbde90575087d1a]
+link GpsSystemTests to GpsSystem--><path d="M798.18,149.86 C812.85,171.56 837.96,202.49 869,216 C909.8,233.76 1628.03,209.21 1670,224 C1719.68,241.51 1766.73,275.1 1804.62,308.21 " fill="none" id="GpsSystemTests-&gt;GpsSystem" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="1808.73,311.83,1804.6246,302.8776,1804.9796,308.5233,1799.3339,308.8783,1808.73,311.83" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[af2611d76c154e4eb0a6c7e2b9bf4af2]
+reverse link DisplayCommInterface to DisplayCommInterfaceStub--><path d="M640.48,194.43 C659.78,203.22 680.04,210.91 700,216 C735.86,225.14 999.54,208.19 1033,224 C1087.06,249.55 1129.34,304.64 1155.25,346.23 " fill="none" id="DisplayCommInterface&lt;-DisplayCommInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="637.31,200.68,622.3,185.73,643.36,188.05,637.31,200.68" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[02893716c00c13508d1fcdcb31d2856e]
+link UserTests to DisplayCommInterfaceStub--><path d="M944.8,149.6 C955.61,170.18 974.21,199.52 999,216 C1011.93,224.6 1019.73,215.95 1033,224 C1081.17,253.2 1121.92,303 1148.9,342.03 " fill="none" id="UserTests-&gt;DisplayCommInterfaceStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="1151.79,346.25,1150.0031,336.5646,1148.964,342.1252,1143.4034,341.0862,1151.79,346.25" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[62d1f25b22c415aac898e8d02e3ff979]
+link UserTests to User--><path d="M943.42,149.71 C953.58,171.28 972.02,202.12 999,216 C1026,229.89 2063.94,212.4 2092,224 C2155.04,250.07 2207.86,310.25 2239.19,352.73 " fill="none" id="UserTests-&gt;User" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="2242.15,356.79,2240.0652,347.1643,2239.1981,352.7544,2233.6081,351.8873,2242.15,356.79" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[110df1e5a56fb0ecad56b090e8d9250d]
+link LocationDataPointTests to LocationDataPoint--><path d="M1264.09,149.61 C1283.76,171.45 1316.61,202.77 1353,216 C1372.08,222.94 2799.11,211.36 2815,224 C2925.42,311.87 2805.68,418.39 2888,533 C2903.31,554.31 2922.76,573.21 2943.9,589.74 " fill="none" id="LocationDataPointTests-&gt;LocationDataPoint" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="2947.87,592.8,2943.1933,584.1323,2943.9133,589.7432,2938.3024,590.4631,2947.87,592.8" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d62036522628f9b37a5d8c87f1934c41]
+link Satellite to LocationDataPoint--><path d="M3367.2031,528.3704 C3367.2031,528.3704 3362.05,531.69 3360,533 C3333.01,550.31 3304.13,568.54 3276.17,586.04 " fill="none" id="Satellite-LocationDataPoint" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="3265.09,592.96,3274.8426,591.5865,3269.3312,590.312,3270.6058,584.8006,3265.09,592.96" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="3269.3312" x2="3276.11" y1="590.312" y2="586.07"/><polygon fill="#A80036" points="3377.29,521.87,3370.0798,521.7579,3367.2031,528.3704,3374.4134,528.4825,3377.29,521.87" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6c49f7dba615b4b196fde4c8f3fd65be]
+link SatelliteTests to Satellite--><path d="M1653.98,127.48 C1942.64,132.59 3199.16,158.45 3360,224 C3384.23,233.88 3407.55,247.97 3429.16,263.92 " fill="none" id="SatelliteTests-&gt;Satellite" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="3433.17,266.92,3428.3503,258.331,3429.1631,263.9292,3423.565,264.742,3433.17,266.92" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[a834184dfe29b3f363d293bc852e6e04]
+link TrackData to LocationDataPoint--><path d="M3124,532.13 C3124,532.13 3124,564.76 3124,579.85 " fill="none" id="TrackData-LocationDataPoint" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="3124,592.91,3128,583.91,3124,587.91,3120,583.91,3124,592.91" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="3124" x2="3124" y1="587.91" y2="579.91"/><polygon fill="#FFFFFF" points="3124,520.13,3120,526.13,3124,532.13,3128,526.13,3124,520.13" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[14eb7b7339aae003357ceae01f8a05c9]
+link TrackDataTests to TrackData--><path d="M1449.7,149.88 C1463.92,171.58 1488.35,202.52 1519,216 C1553.55,231.2 2842.07,212.41 2878,224 C2914.64,235.82 2950.5,255.27 2983.02,276.99 " fill="none" id="TrackDataTests-&gt;TrackData" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="2987.38,279.92,2982.1632,271.5663,2983.2374,277.1202,2977.6835,278.1944,2987.38,279.92" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[d83f84196138ef10408a0c4a079b4a99]
+@startuml AdminPackages_Closure
+
+
+package edu.oakland.production.admin {
+
+}
+
+
+
+package edu.oakland.production.admin {
+    class Demo {
+        .. Main Production Classes ..
+        - DisplayGpsInterface displayGpsInterface
+        - DisplayCommInterface displayCommInterface
+        .. Use Case Runners ..
+        - GpsSystem gpsSystem
+        - User user
+        - PersistentStorageManager persistentStorageManager
+        __
+        {static} + void main(Sting args[])
+        + void initSecureLockTrackSystem(int systemRfid,
+        \tString persistentStorageInputLocation,
+        \tString persistentStorageOutputLocation)
+        + void runUseCases(Scanner input)
+    }
+}
+
+
+
+
+
+
+
+
+package edu.oakland.production.admin {
+    class User {
+        - DisplayCommInterface displayCommInterface
+        + User(DisplayCommInterface displayCommInterface)
+        + void runUseCase1(Scanner input)
+    }
+}
+
+
+
+
+
+
+
+
+package edu.oakland.production.admin {
+    class GpsSystem {
+        - DisplayGpsInterface displayGpsInterface
+        - Satellite[] satellites
+        __
+        + GpsSystems(DisplayGpsInterface displayGpsInterface,
+        \tString[] satelliteNames)
+        + void runUseCase1(Scanner input)
+        + void runUseCase2(Scanner input)
+        + void configureSatellites(String[] satelliteNames
+        \tfloat incrementLatAmount, float incrementLngAmount,
+        \tLocationDataPoint initLocationDataPoint)
+        - void configureSatellites(String[] satelliteNames)
+    }
+}
+
+
+
+
+
+
+
+
+package edu.oakland.test.admin {
+    
+}
+
+
+
+package edu.oakland.test.admin {
+    class DemoTests {
+
+    }
+}
+
+
+DemoTests ..> Demo
+
+
+
+
+
+package edu.oakland.test.admin {
+    class GpsSystemTests {
+
+    }
+}
+
+
+
+
+package edu.oakland.test.admin {
+    class DisplayGpsInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + void receiveGpsSignal(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + void reportGpsSignalLoss(String satelliteName)
+        + void recheckSignalStength(String satelliteName)
+        + void checkSignalStength(String satelliteName)
+    }
+}
+
+
+
+
+
+
+package edu.oakland.production.display01 {
+    interface DisplayGpsInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + void receiveGpsSignal(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        {abstract} + void reportGpsSignalLoss(String satelliteName)
+        {abstract} + void recheckSignalStength(String satelliteName)
+        {abstract} + void checkSignalStength(String satelliteName)
+    }
+}
+
+
+
+
+
+
+DisplayGpsInterfaceStub .up.|> DisplayGpsInterface
+
+GpsSystemTests ..> DisplayGpsInterfaceStub
+
+GpsSystemTests ..> GpsSystem
+
+
+
+
+
+package edu.oakland.test.admin {
+    class UserTests {
+
+    }
+}
+
+
+
+
+package edu.oakland.test.admin {
+    class DisplayCommInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + TrackData receiveRfidRequest(int rfidNum)
+        .. Use Case 2 ..
+
+    }
+}
+
+
+
+
+
+
+package edu.oakland.production.display02 {
+    interface DisplayCommInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + TrackData receiveRfidRequest(int rfidNum)
+
+        .. Use Case 2 ..
+
+    }
+}
+
+
+
+
+
+
+DisplayCommInterfaceStub .up.|> DisplayCommInterface
+
+UserTests ..> DisplayCommInterfaceStub
+
+UserTests ..> User
+
+
+
+
+
+package edu.oakland.test.admin {
+    class LocationDataPointTests {
+        
+    }
+}
+
+
+
+
+package edu.oakland.helper.admin {
+    class LocationDataPoint {
+        - float lat
+        - float lng
+        - LocalDateTime time
+        + LocationDataPoint(float lat, float lng, LocalDateTime time)
+        + float getLat()
+        + float getLng()
+        + LocalDateTime getTime()
+        - boolean normalizeLat(float lat)
+        - boolean normalizeLng(float lat)
+        - boolean timeIsValid(LocalDateTime time)
+    }
+}
+
+
+
+
+
+
+LocationDataPointTests ..> LocationDataPoint
+
+
+
+
+
+package edu.oakland.test.admin {
+    class SatelliteTests {
+        
+    }
+}
+
+
+
+
+package edu.oakland.helper.admin {
+    class Satellite {
+        - String satelliteName
+        - int strength
+        - float incrementLatAmount
+        - float incrementLngAmount
+        - LocationDataPoint initLocationDataPoint
+        {static} - int countGetLocationCalls
+        __
+        + Satellite(String satelliteName, int strength,
+        \tfloat incrementLatAmount, float incrementLngAmount,
+        \tLocationDataPoint initLocationDataPoint)
+        + String getSatelliteName()
+        + int getStrength()
+        + LocationDataPoint getLocation()
+        + void setStrength(int strength)
+        - boolean strengthIsValid(int strength)
+        - float generateNewLocationDataPointLat()
+        - float generateNewLocationDataPointLng()
+        - float generateNewLocationDataPointLng()
+    }
+}
+
+
+Satellite *- -> LocationDataPoint
+
+
+
+
+
+SatelliteTests ..> Satellite
+
+
+
+
+
+package edu.oakland.test.admin {
+    class TrackDataTests {
+        
+    }
+}
+
+
+
+
+package edu.oakland.helper.admin {
+    class TrackData {
+        - boolean validData
+        - float courseDirection
+        - float speed
+        - LocationDataPoint[] points
+        - String statusMessage
+        + TrackData(LocationDataPoint[] points)
+        + TrackData(LocationDataPoint[] points, float courseDirection, float speed)
+        + boolean isValidTrackData()
+        + float getCourseDirection()
+        + float getSpeed()
+        + LocationDataPoint[] getLocationDataPoints()
+        + String getStatusMessage()
+        + void setStatusMessage(String statusMessage)
+        - boolean speedIsValid(float speed)
+        - boolean courseDirectionIsValid(float courseDirection)
+    }
+}
+
+
+TrackData o- -> LocationDataPoint
+
+
+
+
+
+TrackDataTests ..> TrackData
+
+
+
+
+
+package edu.oakland.helper.admin {
+    
+}
+
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

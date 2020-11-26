@@ -1,0 +1,11 @@
+@startuml AdminProductionPackage_Closure
+
+package edu.oakland.production.admin {
+
+}
+
+!include Demo/Demo_Closure.puml
+!include User/User_Closure.puml
+!include GpsSystem/GpsSystem_Closure.puml
+
+@enduml

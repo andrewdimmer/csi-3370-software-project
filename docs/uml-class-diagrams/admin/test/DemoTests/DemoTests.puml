@@ -1,0 +1,9 @@
+@startuml DemoTests
+
+package edu.oakland.test.admin {
+    class DemoTests {
+
+    }
+}
+
+@enduml

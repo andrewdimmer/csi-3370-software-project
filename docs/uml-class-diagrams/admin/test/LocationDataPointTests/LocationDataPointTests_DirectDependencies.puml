@@ -1,0 +1,16 @@
+@startuml LocationDataPointTests_DirectDependencies
+
+!startsub ADMIN_TEST
+!include LocationDataPointTests.puml
+!endsub
+
+!startsub ADMIN
+!include ../../helper/LocationDataPoint/LocationDataPoint.puml
+LocationDataPointTests ..> LocationDataPoint
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

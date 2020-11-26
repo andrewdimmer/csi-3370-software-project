@@ -1,0 +1,9 @@
+@startuml SatelliteTests
+
+package edu.oakland.test.admin {
+    class SatelliteTests {
+        
+    }
+}
+
+@enduml

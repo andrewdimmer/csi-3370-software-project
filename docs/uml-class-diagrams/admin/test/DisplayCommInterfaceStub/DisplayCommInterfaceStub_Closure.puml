@@ -1,0 +1,16 @@
+@startuml DisplayCommInterfaceStub_Closure
+
+!startsub ADMIN_TEST
+!include DisplayCommInterfaceStub.puml
+!endsub
+
+!startsub ADMIN
+
+!endsub
+
+!startsub OTHER
+!include ../../../display02/production/DisplayCommInterface/DisplayCommInterface_Closure.puml
+DisplayCommInterfaceStub .up.|> DisplayCommInterface
+!endsub
+
+@enduml

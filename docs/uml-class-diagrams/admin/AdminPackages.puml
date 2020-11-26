@@ -1,0 +1,7 @@
+@startuml AdminPackages
+
+!include production/AdminProductionPackage.puml
+!include test/AdminTestPackage.puml
+!include helper/AdminHelperPackage.puml
+
+@enduml

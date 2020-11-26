@@ -1,0 +1,15 @@
+@startuml Demo_DirectDependencies
+
+!startsub ADMIN_PRODUCTION
+!include Demo.puml
+!endsub
+
+!startsub ADMIN
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml
