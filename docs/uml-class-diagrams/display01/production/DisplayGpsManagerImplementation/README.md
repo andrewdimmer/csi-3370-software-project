@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall verify and pass the strength of GPS signals passed to it by an instance of the DisplayGpsReceiver class.
 
 ## Class UML Diagram
 
