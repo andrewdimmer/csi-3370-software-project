@@ -4,7 +4,9 @@ package edu.oakland.production.display02 {
     class DisplayComm2WayInterfaceImplementation {
         __
         .. Use Case 1 ..
-        {abstract} + LocationDataPoint passRfidRequest(int rfidNum)
+        {abstract} + TrackData passRfidRequest(int rfidNum)
+        {abstract} + void determineUserRequestFormat(int rfidNum)
+        {abstract} + void receiveRequestFromDisplayCommInterface(int rfidNum)
     }
 }
 
