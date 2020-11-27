@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall...
+This interface shall interact with the GPS systems and the Display GPS Receiver to relay GPS signal status.
 
 ## Class UML Diagram
 
