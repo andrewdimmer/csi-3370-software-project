@@ -3,12 +3,28 @@ package edu.oakland.helper.admin;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 
+/**
+ * A common helper class to store the latitude and longitude of the Secure Lock Tracking Software
+ * shipping container at a given point in time.
+ *
+ * @author Andrew Dimmer
+ * @version %I%, %G%
+ */
 public class LocationDataPoint {
 
   final float lat;
   final float lng;
   final LocalDateTime time;
 
+  /**
+   * Creates a LocationDataPoint to store the latitude and longitude of the Secure Lock Tracking
+   * Software shipping container at a given point in time.
+   *
+   * @param lat  The latitude of the Secure Lock Tracking Software shipping container.
+   * @param lng  The longitude of the Secure Lock Tracking Software shipping container.
+   * @param time The time at which the location of the Secure Lock Tracking Software shipping
+   *             container was saved.
+   */
   public LocationDataPoint(float lat, float lng, LocalDateTime time) {
     // Validate time
     if (time == null) {
@@ -23,18 +39,45 @@ public class LocationDataPoint {
     this.time = time;
   }
 
+  /**
+   * Gets the latitude of the Secure Lock Tracking Software shipping container when this
+   * LocationDataPoint was created.
+   *
+   * @return The latitude of the Secure Lock Tracking Software shipping container.
+   */
   public float getLat() {
     return lat;
   }
 
+  /**
+   * Gets the longitude of the Secure Lock Tracking Software shipping container when this
+   * LocationDataPoint was created.
+   *
+   * @return The longitude of the Secure Lock Tracking Software shipping container.
+   */
   public float getLng() {
     return lng;
   }
-
+  
+  /**
+   * Gets the time that the location of the Secure Lock Tracking Software shipping container was
+   * stored.
+   *
+   * @return The time this LocationDataPoint was created.
+   */
   public LocalDateTime getTime() {
     return time;
   }
 
+  /**
+   * Normalizes the latitude and longitude of the Secure Lock Tracking Software shipping container
+   * if it passes over a pole or the antimeridian.
+   *
+   * @param lat The original latitude of the Secure Lock Tracking Software shipping container.
+   * @param lng The original longitude of the Secure Lock Tracking Software shipping container.
+   * @return The normalized [latitude,longitude] of the Secure Lock Tracking Software shipping
+   *         container.
+   */
   private float[] normalizeLatAndLng(float lat, float lng) {
     float[] normalized = new float[]{lat, lng};
 
@@ -56,6 +99,13 @@ public class LocationDataPoint {
     return normalized;
   }
 
+  /**
+   * Normalizes the longitude of the Secure Lock Tracking Software shipping container if it passes
+   * over the antimeridian.
+   *
+   * @param lng The original longitude of the Secure Lock Tracking Software shipping container.
+   * @return The original longitude of the Secure Lock Tracking Software shipping container.
+   */
   private float normalizeLng(float lng) {
     // Note: Because Java only has a remainder not a true modulo
     // We always perform the normalization on a postive number then flip it back when done.
