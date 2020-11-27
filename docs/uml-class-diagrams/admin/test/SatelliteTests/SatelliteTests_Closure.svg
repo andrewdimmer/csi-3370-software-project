@@ -11,7 +11,14 @@ link SatelliteTests to Satellite--><path d="M220,107.32 C220,124.68 220,149.96 2
 
 package edu.oakland.test.admin {
     class SatelliteTests {
-        
+       + void satNameInIsSatNameOut()
+       + void strengthInIsStrengthOut()
+       + void locInIsLocOut()
+       + void setStrengthIsStrength()
+       + void newLatPointUsedIncrementLat()
+       + void newLngPointUsedIncrementLng()
+       + void newTimeIsIncrementedByHour()
+       + void strengthIsBtwnOneAndTen()
     }
 }
 
