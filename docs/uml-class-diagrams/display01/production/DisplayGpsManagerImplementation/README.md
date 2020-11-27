@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall provide the methods used to take GPS signals from the Receiver and hand them off to Middleware.
 
 ## Class UML Diagram
 
