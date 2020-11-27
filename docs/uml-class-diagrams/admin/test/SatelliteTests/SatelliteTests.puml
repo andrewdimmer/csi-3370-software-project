@@ -2,7 +2,14 @@
 
 package edu.oakland.test.admin {
     class SatelliteTests {
-        
+       + void satNameInIsSatNameOut()
+       + void strengthInIsStrengthOut()
+       + void locInIsLocOut()
+       + void setStrengthIsStrength()
+       + void newLatPointUsedIncrementLat()
+       + void newLngPointUsedIncrementLng()
+       + void newTimeIsIncrementedByHour()
+       + void strengthIsBtwnOneAndTen()    
     }
 }
 
