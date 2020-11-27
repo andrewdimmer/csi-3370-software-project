@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall...
+This interface shall receive RFID number from DisplayComm2WayManager interface. The interface will evaluate the user request format and if it is the correct format then it will transmit the RFID number to MiddlewareCommInterface interface. If it is not correct, the use case will end. This interface will receive track data from MiddlewareCommInterface and will send the track data back to the DisplayComm2WayManager interface.
 
 ## Class UML Diagram
 
