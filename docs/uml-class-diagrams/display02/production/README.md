@@ -9,9 +9,8 @@
 
 ## Purpose
 
-This package shall...
-
-## Intrerfaces
+This package shall recieve an RFID tag from user and transmit the RFID number to MiddlewareCommInterface. This package will then receive track data from MiddlewareCommInterface and display the track data grid to the user.
+## Interfaces
 
 This package contains the following interfaces:
 
