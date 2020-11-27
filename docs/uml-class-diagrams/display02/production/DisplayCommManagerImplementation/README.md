@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This class shall...
+This class shall receive RFID number from DisplayComm2WayManager class. The class will evaluate the user request format and if it is the correct format then it will transmit the RFID number to MiddlewareCommInterface class. If it is not correct, the use case will end. This class will receive track data from MiddlewareCommInterface and will send the track data back to the DisplayComm2WayManager class. 
 
 ## Class UML Diagram
 
