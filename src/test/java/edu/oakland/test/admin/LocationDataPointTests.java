@@ -17,9 +17,9 @@ public class LocationDataPointTests {
   void validLatInIsLatOut() {
     float lat = generateRandomLat();
     LocationDataPoint locationDataPoint = new LocationDataPoint(
-      lat,
-      generateRandomLng(),
-      generateRandomTime()
+        lat,
+        generateRandomLng(),
+        generateRandomTime()
     );
     assertEquals(lat, locationDataPoint.getLat(), .001);
   }
@@ -31,9 +31,9 @@ public class LocationDataPointTests {
     float originalLng = generateRandomLngNoEdgeCases();
     float inputLat = 90 + latOffset;
     LocationDataPoint locationDataPoint = new LocationDataPoint(
-      inputLat,
-      originalLng,
-      generateRandomTime()
+        inputLat,
+        originalLng,
+        generateRandomTime()
     );
     float expectedLat = 90 - latOffset;
     float expectedLng = originalLng + 180 * (originalLng > 0 ? -1 : 1);
@@ -48,9 +48,9 @@ public class LocationDataPointTests {
     float originalLng = generateRandomLngNoEdgeCases();
     float inputLat = -90 - latOffset;
     LocationDataPoint locationDataPoint = new LocationDataPoint(
-      inputLat,
-      originalLng,
-      generateRandomTime()
+        inputLat,
+        originalLng,
+        generateRandomTime()
     );
     float expectedLat = -90 + latOffset;
     float expectedLng = originalLng + 180 * (originalLng > 0 ? -1 : 1);
@@ -66,9 +66,9 @@ public class LocationDataPointTests {
     int extraHalfTrips = (int) (Math.random() + 18 + 2);
     float inputLat = 90 + latOffset + 180 * extraHalfTrips;
     LocationDataPoint locationDataPoint = new LocationDataPoint(
-      inputLat,
-      originalLng,
-      generateRandomTime()
+        inputLat,
+        originalLng,
+        generateRandomTime()
     );
     float expectedLat = (90 - latOffset) * (extraHalfTrips % 2 == 0 ? 1 : -1);
     int lngModifier = 180 * (originalLng > 0 ? -1 : 1) * (extraHalfTrips % 2 == 0 ? 1 : 0);
@@ -85,9 +85,9 @@ public class LocationDataPointTests {
     int extraHalfTrips = (int) (Math.random() + 18 + 2);
     float inputLat = -90 - latOffset - 180 * extraHalfTrips;
     LocationDataPoint locationDataPoint = new LocationDataPoint(
-      inputLat,
-      originalLng,
-      generateRandomTime()
+        inputLat,
+        originalLng,
+        generateRandomTime()
     );
     float expectedLat = (-90 + latOffset) * (extraHalfTrips % 2 == 0 ? 1 : -1);
     int lngModifier = 180 * (originalLng > 0 ? -1 : 1) * (extraHalfTrips % 2 == 0 ? 1 : 0);
@@ -101,9 +101,9 @@ public class LocationDataPointTests {
   void validLngInIsLngOut() {
     float lng = generateRandomLng();
     LocationDataPoint locationDataPoint = new LocationDataPoint(
-      generateRandomLat(),
-      lng,
-      generateRandomTime()
+        generateRandomLat(),
+        lng,
+        generateRandomTime()
     );
     assertEquals(lng, locationDataPoint.getLng(), .001);
   }
@@ -114,9 +114,9 @@ public class LocationDataPointTests {
     float lng = generateRandomLngNoEdgeCases();
     float newLng = lng - 360;
     LocationDataPoint locationDataPoint = new LocationDataPoint(
-      generateRandomLat(),
-      newLng,
-      generateRandomTime()
+        generateRandomLat(),
+        newLng,
+        generateRandomTime()
     );
     assertEquals(lng, locationDataPoint.getLng(), .001);
   }
@@ -127,9 +127,9 @@ public class LocationDataPointTests {
     float lng = generateRandomLngNoEdgeCases();
     float newLng = lng + 360;
     LocationDataPoint locationDataPoint = new LocationDataPoint(
-      generateRandomLat(),
-      newLng,
-      generateRandomTime()
+        generateRandomLat(),
+        newLng,
+        generateRandomTime()
     );
     assertEquals(lng, locationDataPoint.getLng(), .001);
   }
@@ -140,9 +140,9 @@ public class LocationDataPointTests {
     float lng = generateRandomLngNoEdgeCases();
     float newLng = lng - 360 * (int) (Math.random() * 18 + 2);
     LocationDataPoint locationDataPoint = new LocationDataPoint(
-      generateRandomLat(),
-      newLng,
-      generateRandomTime()
+        generateRandomLat(),
+        newLng,
+        generateRandomTime()
     );
     assertEquals(lng, locationDataPoint.getLng(), .001);
   }
@@ -153,9 +153,9 @@ public class LocationDataPointTests {
     float lng = generateRandomLngNoEdgeCases();
     float newLng = lng + 360 * (int) (Math.random() * 18 + 2);
     LocationDataPoint locationDataPoint = new LocationDataPoint(
-      generateRandomLat(),
-      newLng,
-      generateRandomTime()
+        generateRandomLat(),
+        newLng,
+        generateRandomTime()
     );
     assertEquals(lng, locationDataPoint.getLng(), .001);
   }
@@ -165,9 +165,9 @@ public class LocationDataPointTests {
   void timeInIsTimeOut() {
     LocalDateTime time = generateRandomTime();
     LocationDataPoint locationDataPoint = new LocationDataPoint(
-      generateRandomLat(),
-      generateRandomLng(),
-      time
+        generateRandomLat(),
+        generateRandomLng(),
+        time
     );
     assertEquals(time, locationDataPoint.getTime());
   }
