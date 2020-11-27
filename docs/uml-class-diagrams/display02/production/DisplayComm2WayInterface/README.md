@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall...
+This interface shall receive RFID tag from DisplayCommInterface interface, determine the user request format, and transmit RFID to DisplayComm2WayManager interface. This interface will receive track data from DisplayCommManager and will send the track data back to the DisplayCommInterface interface.
 
 ## Class UML Diagram
 
