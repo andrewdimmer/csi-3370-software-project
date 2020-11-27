@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall...
+This package shall provide the class that determines the origin of a satellite signal.
 
 ## Intrerfaces
 

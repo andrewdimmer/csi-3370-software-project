@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall...
+This package shall facilitate the receiving of GPS satellite signals and pass them to Middleware.
 
 ## Intrerfaces
 
