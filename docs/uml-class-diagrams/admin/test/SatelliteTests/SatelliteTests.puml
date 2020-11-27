@@ -2,7 +2,18 @@
 
 package edu.oakland.test.admin {
     class SatelliteTests {
-        
+       + void satNameInIsSatNameOut()
+       + void strengthInIsStrengthOutConstructor()
+       + void strengthInIsStrengthOutSetter()
+       + void getLocation0IsCorrect()
+       + void getLocation1IsCorrect()
+       + void getLocationNIsCorrect()
+       + void initLocationIsNotNull()
+       + void satNameIsNotNull() 
+       + void strengthNotLessThanOneConstructor()
+       + void strengthNotMoreThanTenConstructor()
+       + void strengthNotLessThanOneSetter()
+       + void strengthNotMoreThanTenSetter()
     }
 }
 
