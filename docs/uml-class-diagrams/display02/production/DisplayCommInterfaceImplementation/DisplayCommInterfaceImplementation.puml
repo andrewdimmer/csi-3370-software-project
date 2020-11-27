@@ -5,6 +5,7 @@ package edu.oakland.production.display02 {
         __
         .. Use Case 1 ..
         {abstract} + TrackData receiveRfidRequest(int rfidNum)
+        {abstract} + TrackData passToComm2WayInterface(int rfidNum)
         .. Use Case 2 ..
 
     }
