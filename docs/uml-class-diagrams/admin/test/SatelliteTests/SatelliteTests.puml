@@ -10,7 +10,7 @@ package edu.oakland.test.admin {
        + void getLocation1IsCorrect()
        + void getLocationNIsCorrect()
        + void initLocationIsNotNull()
-       + void satNameisNotNull() 
+       + void satNameIsNotNull() 
        + void strengthIsBtwnOneAndTen()
        + void strengthNotLessThanOneConstructor()
        + void strengthNotMoreThanTenConstructor()
