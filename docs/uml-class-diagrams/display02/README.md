@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This set of packages shall...
+This set of packages shall receive RFID tag from User and transmit the RFID number to the DisplayCommInterface class, DisplayComm2WayInterface class, DisplayCommManager class, then finally to MiddlewareCommInterface class . These classes will receive track data from Middleware and will transmit the track data back to the User.
 
 ## Packages
 
