@@ -1,0 +1,13 @@
+@startuml MiddlewareGisInterfaceStub
+
+package edu.oakland.test.display01 {
+    class MiddlewareGisInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + String receiveGpsSignalStrength(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + String receiveGpsSignalStrength(Satellite satelliteSignal)
+    }
+}
+
+@enduml

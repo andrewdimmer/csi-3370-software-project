@@ -1,4 +1,4 @@
-@startuml Middleware01Package
+@startuml Middleware01ProductionPackage
 
 package edu.oakland.production.middleware01 {
 

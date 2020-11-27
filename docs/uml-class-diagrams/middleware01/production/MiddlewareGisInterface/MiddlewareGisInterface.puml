@@ -4,9 +4,9 @@ package edu.oakland.production.middleware01 {
     interface MiddlewareGisInterface {
         __
         .. Use Case 1 ..
-        {abstract} + String revieveGpsSignalStrength(Satellite satelliteSignal)
+        {abstract} + String receiveGpsSignalStrength(Satellite satelliteSignal)
         .. Use Case 2 ..
-        {abstract} + String revieveGpsSignalStrength(Satellite satelliteSignal)
+        {abstract} + String receiveGpsSignalStrength(Satellite satelliteSignal)
     }
 }
 

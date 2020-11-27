@@ -4,7 +4,7 @@ package edu.oakland.production.middleware01 {
     interface MiddlewareGisManager {
         __
         .. Use Case 1 ..
-        {abstract} + String revieveGpsSignalStrength(Satellite satelliteSignal)
+        {abstract} + String receieveGpsSignalStrength(Satellite satelliteSignal)
         ' Middleware 2 is running evalutaiton concurrently?
         {abstract} + void storeLocationDataPoint()
         ' Called by Middleware 2 in between the 2 "yes" branches
