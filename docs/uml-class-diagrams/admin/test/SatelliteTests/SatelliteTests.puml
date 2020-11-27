@@ -3,7 +3,6 @@
 package edu.oakland.test.admin {
     class SatelliteTests {
        + void satNameInIsSatNameOut()
-       + void strengthInIsStrengthOut()
        + void strengthInIsStrengthOutConstructor()
        + void strengthInIsStrengthOutSetter()
        + void getLocation0IsCorrect()
