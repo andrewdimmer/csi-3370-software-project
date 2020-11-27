@@ -2,11 +2,13 @@
 
 package edu.oakland.production.middleware01 {
     class MiddlewareGisProcessorImplementation {
+        - MiddlewareGisManager middlewareGisManager
         __
+        + MiddlewareGisProcessorImplementation(MiddlewareGisManager middlewareGisManager)
         .. Use Case 1 ..
-
+        + String evaluateGpsSignalStrength(Satellite satelliteSignal)
         .. Use Case 2 ..
-
+        + String measureGpsSignalStrength(Satellite satelliteSignal)
     }
 }
 

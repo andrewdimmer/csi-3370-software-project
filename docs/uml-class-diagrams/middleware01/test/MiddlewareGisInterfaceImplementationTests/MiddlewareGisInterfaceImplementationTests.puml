@@ -1,0 +1,9 @@
+@startuml MiddlewareGisInterfaceImplementationTests
+
+package edu.oakland.test.middleware01 {
+    class MiddlewareGisInterfaceImplementationTests {
+
+    }
+}
+
+@enduml

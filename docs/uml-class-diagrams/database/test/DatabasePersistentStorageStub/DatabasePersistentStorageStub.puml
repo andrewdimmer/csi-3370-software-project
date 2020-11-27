@@ -1,0 +1,19 @@
+@startuml DatabasePersistentStorageStub
+
+package edu.oakland.test.database {
+    class DatabasePersistentStorageStub {
+        __
+        .. Use Case 1 ..
+        + int locateRfidData()
+        + LocationDataPoint getLocationDataPoint(int offset)
+        + void storeLocationDataPoint(LocationDataPoint locationDataPoint)
+        + TrackData getTrackData(int offset)
+        + void storeTrackData(TrackData trackData)
+        + String getMode()
+        .. Use Case 2 ..
+        + void storeMode(String mode)
+        + String getNextSat(String currentSat)
+    }
+}
+
+@enduml

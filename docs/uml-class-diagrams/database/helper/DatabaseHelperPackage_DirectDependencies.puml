@@ -6,6 +6,9 @@ package edu.oakland.helper.database {
 
 !startsub DATABASE
 !include DatabaseHelperPackage_InternalDependencies.puml
+!includesub PersistentStorageManager/PersistentStorageManager_DirectDependencies.puml!DATABASE
 !endsub
+
+!includesub PersistentStorageManager/PersistentStorageManager_DirectDependencies.puml!OTHER
 
 @enduml

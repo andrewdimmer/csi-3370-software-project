@@ -1,0 +1,18 @@
+@startuml MiddlewareGisProcessorImplementation_Closure
+
+!startsub MIDDLEWARE01_PRODUCTION
+!include MiddlewareGisProcessorImplementation.puml
+
+!include ../MiddlewareGisProcessor/MiddlewareGisProcessor_Closure.puml
+MiddlewareGisProcessorImplementation .up.|> MiddlewareGisProcessor
+!endsub
+
+!startsub MIDDLEWARE01
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

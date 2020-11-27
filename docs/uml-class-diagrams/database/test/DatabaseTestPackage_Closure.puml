@@ -1,0 +1,17 @@
+@startuml DatabaseTestPackage_Closure
+
+package edu.oakland.test.database {
+    
+}
+
+!include DatabaseCommInterfaceImplementationTests/DatabaseCommInterfaceImplementationTests_Closure.puml
+!include DatabaseCommManagerImplementationTests/DatabaseCommManagerImplementationTests_Closure.puml
+!include DatabaseGisInterfaceImplementationTests/DatabaseGisInterfaceImplementationTests_Closure.puml
+!include DatabaseGisManagerImplementationTests/DatabaseGisManagerImplementationTests_Closure.puml
+!include DatabasePersistentStorageImplementationTests/DatabasePersistentStorageImplementationTests_Closure.puml
+!include PersistentStorageManagerTests/PersistentStorageManagerTests_Closure.puml
+!include DatabaseCommManagerStub/DatabaseCommManagerStub_Closure.puml
+!include DatabaseGisManagerStub/DatabaseGisManagerStub_Closure.puml
+!include DatabasePersistentStorageStub/DatabasePersistentStorageStub_Closure.puml
+
+@enduml

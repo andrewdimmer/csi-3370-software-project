@@ -1,0 +1,19 @@
+@startuml MiddlewareGisManagerImplementationTests_Closure
+
+!startsub MIDDLEWARE01_TESTS
+!include MiddlewareGisManagerImplementationTests.puml
+
+!include ../DatabaseGisInterfaceStub/DatabaseGisInterfaceStub_Closure.puml
+MiddlewareGisManagerImplementationTests ..> DatabaseGisInterfaceStub
+!endsub
+
+!startsub MIDDLEWARE01
+!include ../../production/MiddlewareGisManagerImplementation/MiddlewareGisManagerImplementation_Closure.puml
+MiddlewareGisManagerImplementationTests ..> MiddlewareGisManagerImplementation
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

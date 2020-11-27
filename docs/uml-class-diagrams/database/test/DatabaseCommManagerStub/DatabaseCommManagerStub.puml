@@ -1,0 +1,15 @@
+@startuml DatabaseCommManagerStub
+
+package edu.oakland.test.database {
+    class DatabaseCommManagerStub {
+        __
+        .. Use Case 1 ..
+        + int passGetRfidRequest()
+        + LocationDataPoint passGetLocationDataPointRequest(int offset)
+        + TrackData passGetTrackDataRequest(int offset)
+        + void passStoreTrackDataRequest(TrackData trackData)
+        + String passGetModeRequest()
+    }
+}
+
+@enduml

@@ -1,0 +1,22 @@
+@startuml PersistentStorageManager
+
+package edu.oakland.helper.database {
+    class PersistentStorageManager {
+        - String inputFileName
+        - String outputFileName
+        - DatabasePersistentStorageImplementation databasePersistentStorageImplementation
+        + PersistentStorageManager(String inputFileName, String outputFileName, Scanner scanner)
+        + DatabasePersistentStorage readPersistentData()
+        + void writePersistentData()
+        + DatabasePersistentStorageImplementation deserializeData(String data)
+        + String serializeData(DatabasePersistentStorageImplementation data)
+        - boolean inputFileExists()
+        - boolean outputFileExists()
+        - void createInputFile()
+        - void createOutputFile()
+        - String readInputFile()
+        - void writeOutputFile()
+    }
+}
+
+@enduml
