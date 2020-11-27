@@ -1,7 +1,7 @@
 @startuml DatabaseHelperPackage
 
 package edu.oakland.helper.database {
-
+    PeachPuff
 }
 
 !include PersistentStorageManager/PersistentStorageManager.puml
