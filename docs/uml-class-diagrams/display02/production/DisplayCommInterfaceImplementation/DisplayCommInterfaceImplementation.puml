@@ -4,7 +4,7 @@ package edu.oakland.production.display02 {
     class DisplayCommInterfaceImplementation {
         __
         .. Use Case 1 ..
-
+        {abstract} + TrackData receiveRfidRequest(int rfidNum)
         .. Use Case 2 ..
 
     }
