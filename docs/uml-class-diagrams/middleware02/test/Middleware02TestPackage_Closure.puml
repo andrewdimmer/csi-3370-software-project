@@ -1,0 +1,15 @@
+@startuml Middleware02TestPackage_Closure
+
+package edu.oakland.test.middleware02 {
+    
+}
+
+!include MiddlewareCommInterfaceImplementationTests/MiddlewareCommInterfaceImplementationTests_Closure.puml
+!include MiddlewareCommLinkManagerImplementationTests/MiddlewareCommLinkManagerImplementationTests_Closure.puml
+!include MiddlewareCommDatabaseInterfaceImplementationTests/MiddlewareCommDatabaseInterfaceImplementationTests_Closure.puml
+!include TrackDataCalculatorTests/TrackDataCalculatorTests_Closure.puml
+!include MiddlewareCommLinkManagerStub/MiddlewareCommLinkManagerStub_Closure.puml
+!include MiddlewareCommDatabaseInterfaceStub/MiddlewareCommDatabaseInterfaceStub_Closure.puml
+!include DatabaseCommInterfaceStub/DatabaseCommInterfaceStub_Closure.puml
+
+@enduml

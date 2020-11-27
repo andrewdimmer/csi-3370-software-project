@@ -1,0 +1,15 @@
+@startuml MiddlewareCommLinkManager_Closure
+
+!startsub MIDDLEWARE02_PRODUCTION
+!include MiddlewareCommLinkManager.puml
+!endsub
+
+!startsub MIDDLEWARE02
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

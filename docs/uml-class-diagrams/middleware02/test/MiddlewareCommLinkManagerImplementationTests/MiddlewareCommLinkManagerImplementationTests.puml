@@ -1,0 +1,9 @@
+@startuml MiddlewareCommLinkManagerImplementationTests
+
+package edu.oakland.test.middleware02 {
+    class MiddlewareCommLinkManagerImplementationTests {
+
+    }
+}
+
+@enduml
