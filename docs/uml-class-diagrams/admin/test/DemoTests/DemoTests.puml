@@ -2,7 +2,13 @@
 
 package edu.oakland.test.admin {
     class DemoTests {
-
+        + void rfidNumberIsNotNull()
+        + void storageInputLocIsNotNull()
+        + void storageOutputLocIsNotNull()
+        + void scannerInputIsUserInput()
+        + void commClassesInitialized()
+        + void gisClassesInitialized()
+        + void persistentStorageManagerInitialized()
     }
 }
 
