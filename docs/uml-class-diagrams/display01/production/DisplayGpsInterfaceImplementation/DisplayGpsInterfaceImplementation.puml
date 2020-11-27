@@ -1,12 +1,18 @@
 @startuml DisplayGpsInterfaceImplementation
 
+
 package edu.oakland.production.display01 {
     class DisplayGpsInterfaceImplementation {
+        - DisplayGpsReciever reciever
         __
+        + DisplayGpsInterfaceImplementation(DisplayGpsReciever reciever)
         .. Use Case 1 ..
-
+        + void receiveGpsSignal(Satellite satelliteSignal)
         .. Use Case 2 ..
-
+        + void reportGpsSignalLoss(String satelliteName)
+        + void recheckSignalStength(String satelliteName)
+        + void checkSignalStength(String satelliteName)
+        - int reportSignalStrength(String satelliteName)
     }
 }
 
