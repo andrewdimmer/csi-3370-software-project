@@ -16,16 +16,16 @@ This package shall facilitate the receiving of GPS satellite signals and pass th
 This package contains the following interfaces:
 
 - [edu.oakland.production.display01.DisplayGpsInterface](DisplayGpsInterface)
-- [edu.oakland.helper.display01.DisplayGpsManager](DisplayGpsManager)
 - [edu.oakland.test.display01.DisplayGpsReceiver](DisplayGpsReceiver)
+- [edu.oakland.helper.display01.DisplayGpsManager](DisplayGpsManager)
 
 ## Classes
 
 This package contains the following classes:
 
 - [edu.oakland.production.display01.DisplayGpsInterfaceImplementation](DisplayGpsInterfaceImplementation)
-- [edu.oakland.helper.display01.DisplayGpsManagerImplementation](DisplayGpsManagerImplementation)
 - [edu.oakland.test.display01.DisplayGpsReceiverImplementation](DisplayGpsReceiverImplementation)
+- [edu.oakland.helper.display01.DisplayGpsManagerImplementation](DisplayGpsManagerImplementation)
 
 ## Class UML Diagram
 

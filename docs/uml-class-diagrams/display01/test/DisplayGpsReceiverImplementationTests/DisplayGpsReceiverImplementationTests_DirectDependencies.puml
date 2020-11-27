@@ -3,8 +3,8 @@
 !startsub DISPLAY01_TEST
 !include DisplayGpsReceiverImplementationTests.puml
 
-!include ../MiddlewareGisInterfaceStub/MiddlewareGisInterfaceStub.puml
-DisplayGpsReceiverImplementationTests ..> MiddlewareGisInterfaceStub
+!include ../DisplayGpsManagerStub/DisplayGpsManagerStub.puml
+DisplayGpsReceiverImplementationTests ..> DisplayGpsManagerStub
 !endsub
 
 !startsub DISPLAY01

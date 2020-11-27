@@ -4,7 +4,7 @@ package edu.oakland.production.display01 {
   class DisplayGpsManagerImplementation {
     - MiddlewareGisInterface middlewareGis
    __
-    + DisplayGpsManagerImplementation(DisplayGpsManager manager)
+    + DisplayGpsManagerImplementation(MiddlewareGisInterface middlewareGis)
     .. Use Case 1 ..
     + String receiveGpsSignalStrength(Satellite satelliteSignal)
     + boolean EvaluateGpsSignalStrengths(int signalStrengh)
