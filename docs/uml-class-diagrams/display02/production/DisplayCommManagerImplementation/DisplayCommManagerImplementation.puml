@@ -2,13 +2,12 @@
 
 package edu.oakland.production.display02 {
     class DisplayCommManagerImplementation {
+        MiddlewareCommInterface middleware
         __
-        .. Use Case 1 ..
+        {abstract} + DisplayCommManagerImplementation(MiddlewareCommInterface middleware)
         {abstract} + TrackData evaluateRfidRequest(int rfidNum)
         {abstract} + TrackData passRequestToMiddlewareCommInterface(int rfidNum)
         {abstract} + void receiveRequestFromDisplay2WayInterface(int rfidNum)
-
-        .. Use Case 2 ..
 
     }
 }
