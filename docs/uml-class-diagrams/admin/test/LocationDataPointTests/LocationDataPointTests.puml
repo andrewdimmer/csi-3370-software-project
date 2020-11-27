@@ -2,7 +2,7 @@
 
 package edu.oakland.test.admin {
     class LocationDataPointTests {
-        + void validLatInIsLngOut()
+        + void validLatInIsLatOut()
         + void crossNorthPole()
         + void crossSouthPole()
         + void crossCrossPolesMultipleTimesGoingNorth()
