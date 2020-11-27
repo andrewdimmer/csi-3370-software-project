@@ -5,7 +5,7 @@ package edu.oakland.production.display02 {
         MiddlewareCommInterface middleware
         __
         {abstract} + DisplayCommManagerImplementation(MiddlewareCommInterface middleware)
-        Use Case 1...
+        .. Use Case 1 ..
         {abstract} + TrackData evaluateRfidRequest(int rfidNum)
         {abstract} + TrackData passRequestToMiddlewareCommInterface(int rfidNum)
         {abstract} + void receiveRequestFromDisplay2WayInterface(int rfidNum)
