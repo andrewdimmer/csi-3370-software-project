@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This interface shall...
+This interface shall facilitate the passing of GPS signals from the Receiver to Middleware.
 
 ## Class UML Diagram
 
