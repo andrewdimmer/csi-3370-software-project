@@ -1,0 +1,16 @@
+@startuml MiddlewareGisManagerStub_DirectDependencies
+
+!startsub MIDDLEWARE01_TEST
+!include MiddlewareGisManagerStub.puml
+!endsub
+
+!startsub MIDDLEWARE01
+!include ../../production/MiddlewareGisManager/MiddlewareGisManager.puml
+MiddlewareGisManagerStub .up.|> MiddlewareGisManager
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

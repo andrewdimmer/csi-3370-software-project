@@ -1,0 +1,9 @@
+@startuml MiddlewareGisProcessorImplementationTests
+
+package edu.oakland.test.middleware01 {
+    class MiddlewareGisProcessorImplementationTests {
+
+    }
+}
+
+@enduml

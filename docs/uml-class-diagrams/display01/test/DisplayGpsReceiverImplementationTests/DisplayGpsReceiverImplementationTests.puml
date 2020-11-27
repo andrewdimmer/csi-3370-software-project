@@ -1,0 +1,9 @@
+@startuml DisplayGpsReceiverImplementationTests
+
+package edu.oakland.test.display01 {
+    class DisplayGpsReceiverImplementationTests {
+
+    }
+}
+
+@enduml

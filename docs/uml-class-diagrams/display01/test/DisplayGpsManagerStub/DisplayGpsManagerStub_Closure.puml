@@ -1,0 +1,16 @@
+@startuml DisplayGpsManagerStub_Closure
+
+!startsub DISPLAY01_TEST
+!include DisplayGpsManagerStub.puml
+!endsub
+
+!startsub DISPLAY01
+!include ../../production/DisplayGpsManager/DisplayGpsManager_Closure.puml
+DisplayGpsManagerStub .up.|> DisplayGpsManager
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

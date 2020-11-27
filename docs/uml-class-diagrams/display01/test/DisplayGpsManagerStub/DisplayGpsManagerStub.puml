@@ -1,0 +1,13 @@
+@startuml DisplayGpsManagerStub
+
+package edu.oakland.test.display01 {
+    class DisplayGpsManagerStub {
+        __
+        .. Use Case 1 ..
+        + String receiveGpsSignalStrengths(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + SatelliteSignalCheckRequest passGpsSignalStrength(String satelliteName)
+    }
+}
+
+@enduml

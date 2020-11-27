@@ -1,0 +1,14 @@
+@startuml Middleware01TestPackage_Closure
+
+package edu.oakland.test.middleware01 {
+    
+}
+
+!include MiddlewareGisInterfaceImplementationTests/MiddlewareGisInterfaceImplementationTests_Closure.puml
+!include MiddlewareGisProcessorImplementationTests/MiddlewareGisProcessorImplementationTests_Closure.puml
+!include MiddlewareGisManagerImplementationTests/MiddlewareGisManagerImplementationTests_Closure.puml
+!include MiddlewareGisProcessorStub/MiddlewareGisProcessorStub_Closure.puml
+!include MiddlewareGisManagerStub/MiddlewareGisManagerStub_Closure.puml
+!include DatabaseGisInterfaceStub/DatabaseGisInterfaceStub_Closure.puml
+
+@enduml

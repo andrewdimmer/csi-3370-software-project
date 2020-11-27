@@ -2,7 +2,14 @@
 
 package edu.oakland.production.database {
     class DatabaseGisManagerImplementation {
-        __
+    	- LocationDataPoint locDataPoint
+    	- String mode
+    	- String currentSat
+          __
+        + DatabaseGisManagerImplementation (LocationDataPoint locationDataPoint, 
+        \tString mode, 
+        \tString currentSat)
+        
         .. Use Case 1 ..
         + void passStoreRequest(LocationDataPoint locationDataPoint)
         .. Use Case 2 ..

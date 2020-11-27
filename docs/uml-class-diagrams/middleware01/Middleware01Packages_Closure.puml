@@ -1,0 +1,7 @@
+@startuml Middleware01Packages_Closure
+
+!include production/Middleware01ProductionPackage_Closure.puml
+!include test/Middleware01TestPackage_Closure.puml
+!include helper/Middleware01HelperPackage_Closure.puml
+
+@enduml

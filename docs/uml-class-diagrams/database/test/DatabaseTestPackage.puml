@@ -4,4 +4,14 @@ package edu.oakland.test.database {
     
 }
 
+!include DatabaseCommInterfaceImplementationTests/DatabaseCommInterfaceImplementationTests.puml
+!include DatabaseCommManagerImplementationTests/DatabaseCommManagerImplementationTests.puml
+!include DatabaseGisInterfaceImplementationTests/DatabaseGisInterfaceImplementationTests.puml
+!include DatabaseGisManagerImplementationTests/DatabaseGisManagerImplementationTests.puml
+!include DatabasePersistentStorageImplementationTests/DatabasePersistentStorageImplementationTests.puml
+!include PersistentStorageManagerTests/PersistentStorageManagerTests.puml
+!include DatabaseCommManagerStub/DatabaseCommManagerStub.puml
+!include DatabaseGisManagerStub/DatabaseGisManagerStub.puml
+!include DatabasePersistentStorageStub/DatabasePersistentStorageStub.puml
+
 @enduml

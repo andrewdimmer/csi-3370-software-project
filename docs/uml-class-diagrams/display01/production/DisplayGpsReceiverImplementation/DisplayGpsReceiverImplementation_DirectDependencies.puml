@@ -8,7 +8,8 @@ DisplayGpsReceiverImplementation .up.|> DisplayGpsReceiver
 !endsub
 
 !startsub DISPLAY01
-
+!include ../../helper/SatelliteSignalCheckRequest/SatelliteSignalCheckRequest.puml
+DisplayGpsReceiverImplementation ..> SatelliteSignalCheckRequest
 !endsub
 
 !startsub OTHER

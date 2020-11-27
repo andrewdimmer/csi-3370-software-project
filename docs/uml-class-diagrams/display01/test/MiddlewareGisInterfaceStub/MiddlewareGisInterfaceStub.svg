@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="194px" preserveAspectRatio="none" style="width:426px;height:194px;" version="1.1" viewBox="0 0 426 194" width="426px" zoomAndPan="magnify"><defs><filter height="300%" id="f3zciwdsvd5sd" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9181924624f655b87cae45fec5f93c8d]
+cluster edu.oakland.test.display01--><polygon fill="#FFFFFF" filter="url(#f3zciwdsvd5sd)" points="22,24,240,24,247,46.2969,404,46.2969,404,182,22,182,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="247" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="212" x="26" y="38.9951">edu.oakland.test.display01</text><!--MD5=[80c749bdd7ec7c789b994dbe93702fd9]
+class MiddlewareGisInterfaceStub--><rect fill="#FEFECE" filter="url(#f3zciwdsvd5sd)" height="107.2188" id="MiddlewareGisInterfaceStub" style="stroke: #A80036; stroke-width: 1.5;" width="350" x="38" y="59"/><ellipse cx="121.75" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M124.7188,80.6406 Q124.1406,80.9375 123.5,81.0781 Q122.8594,81.2344 122.1563,81.2344 Q119.6563,81.2344 118.3281,79.5938 Q117.0156,77.9375 117.0156,74.8125 Q117.0156,71.6875 118.3281,70.0313 Q119.6563,68.375 122.1563,68.375 Q122.8594,68.375 123.5,68.5313 Q124.1563,68.6875 124.7188,68.9844 L124.7188,71.7031 Q124.0938,71.125 123.5,70.8594 Q122.9063,70.5781 122.2813,70.5781 Q120.9375,70.5781 120.25,71.6563 Q119.5625,72.7188 119.5625,74.8125 Q119.5625,76.9063 120.25,77.9844 Q120.9375,79.0469 122.2813,79.0469 Q122.9063,79.0469 123.5,78.7813 Q124.0938,78.5 124.7188,77.9219 L124.7188,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="174" x="142.25" y="79.1543">MiddlewareGisInterfaceStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="387" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="387" y1="99" y2="99"/><ellipse cx="49" cy="126.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="324" x="58" y="130.0151">String receiveGpsSignalStrength(Satellite satelliteSignal)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="180" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="180" y="116.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="246" x2="387" y1="113.4023" y2="113.4023"/><ellipse cx="49" cy="156.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="324" x="58" y="159.6245">String receiveGpsSignalStrength(Satellite satelliteSignal)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="180" y1="143.0117" y2="143.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="180" y="146.3198">Use Case 2</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="246" x2="387" y1="143.0117" y2="143.0117"/><!--MD5=[5164fb117a431621eed1bffb43e91ebe]
+@startuml MiddlewareGisInterfaceStub
+
+package edu.oakland.test.display01 {
+    class MiddlewareGisInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + String receiveGpsSignalStrength(Satellite satelliteSignal)
+        .. Use Case 2 ..
+        + String receiveGpsSignalStrength(Satellite satelliteSignal)
+    }
+}
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

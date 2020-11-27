@@ -1,0 +1,19 @@
+@startuml DatabaseGisManagerImplementationTests_DirectDependencies
+
+!startsub DATABASE_TEST
+!include DatabaseGisManagerImplementationTests.puml
+
+!include ../DatabasePersistentStorageStub/DatabasePersistentStorageStub.puml
+DatabaseGisManagerImplementationTests ..> DatabasePersistentStorageStub
+!endsub
+
+!startsub DATABASE
+!include ../../production/DatabaseGisManagerImplementation/DatabaseGisManagerImplementation.puml
+DatabaseGisManagerImplementationTests ..> DatabaseGisManagerImplementation
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

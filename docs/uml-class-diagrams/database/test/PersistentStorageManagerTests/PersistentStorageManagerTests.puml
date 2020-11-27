@@ -1,0 +1,9 @@
+@startuml PersistentStorageManagerTests
+
+package edu.oakland.test.database {
+    class PersistentStorageManagerTests {
+
+    }
+}
+
+@enduml

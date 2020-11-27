@@ -1,0 +1,19 @@
+@startuml DatabaseGisInterfaceImplementationTests_DirectDependencies
+
+!startsub DATABASE_TEST
+!include DatabaseGisInterfaceImplementationTests.puml
+
+!include ../DatabaseGisManagerStub/DatabaseGisManagerStub.puml
+DatabaseGisInterfaceImplementationTests ..> DatabaseGisManagerStub
+!endsub
+
+!startsub DATABASE
+!include ../../production/DatabaseGisInterfaceImplementation/DatabaseGisInterfaceImplementation.puml
+DatabaseGisInterfaceImplementationTests ..> DatabaseGisInterfaceImplementation
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

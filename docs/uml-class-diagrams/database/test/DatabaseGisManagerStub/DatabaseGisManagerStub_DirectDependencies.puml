@@ -1,0 +1,16 @@
+@startuml DatabaseGisManagerStub_DirectDependencies
+
+!startsub DATABASE_TEST
+!include DatabaseGisManagerStub.puml
+!endsub
+
+!startsub DATABASE
+!include ../../production/DatabaseGisManager/DatabaseGisManager.puml
+DatabaseGisManagerStub .up.|> DatabaseGisManager
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

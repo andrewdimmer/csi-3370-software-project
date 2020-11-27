@@ -1,0 +1,19 @@
+@startuml DisplayGpsManagerImplementationTests_DirectDependencies
+
+!startsub DISPLAY01_TEST
+!include DisplayGpsManagerImplementationTests.puml
+
+!include ../MiddlewareGisInterfaceStub/MiddlewareGisInterfaceStub.puml
+DisplayGpsManagerImplementationTests ..> MiddlewareGisInterfaceStub
+!endsub
+
+!startsub DISPLAY01
+!include ../../production/DisplayGpsManagerImplementation/DisplayGpsManagerImplementation.puml
+DisplayGpsManagerImplementationTests ..> DisplayGpsManagerImplementation
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml
