@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall provide test classes for the interfaces and classes of the Display_01 package
+This package shall provide test classes for the interfaces and classes of the Display_01 package.
 
 ## Intrerfaces
 
