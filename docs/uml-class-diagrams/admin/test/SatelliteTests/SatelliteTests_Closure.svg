@@ -37,7 +37,7 @@ package edu.oakland.helper.admin {
         - boolean strengthIsValid(int strength)
         - float generateNewLocationDataPointLat()
         - float generateNewLocationDataPointLng()
-        - float generateNewLocationDataPointLng()
+        - float generateNewLocationDataPointTime()
     }
 }
 
