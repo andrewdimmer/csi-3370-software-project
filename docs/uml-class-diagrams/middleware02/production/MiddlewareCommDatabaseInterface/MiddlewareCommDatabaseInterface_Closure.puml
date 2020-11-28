@@ -1,0 +1,15 @@
+@startuml MiddlewareCommDatabaseInterface_Closure
+
+!startsub MIDDLEWARE02_PRODUCTION
+!include MiddlewareCommDatabaseInterface.puml
+!endsub
+
+!startsub MIDDLEWARE02
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

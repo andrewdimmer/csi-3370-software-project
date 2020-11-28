@@ -4,4 +4,12 @@ package edu.oakland.test.middleware02 {
     
 }
 
+!include MiddlewareCommInterfaceImplementationTests/MiddlewareCommInterfaceImplementationTests.puml
+!include MiddlewareCommLinkManagerImplementationTests/MiddlewareCommLinkManagerImplementationTests.puml
+!include MiddlewareCommDatabaseInterfaceImplementationTests/MiddlewareCommDatabaseInterfaceImplementationTests.puml
+!include TrackDataCalculatorTests/TrackDataCalculatorTests.puml
+!include MiddlewareCommLinkManagerStub/MiddlewareCommLinkManagerStub.puml
+!include MiddlewareCommDatabaseInterfaceStub/MiddlewareCommDatabaseInterfaceStub.puml
+!include DatabaseCommInterfaceStub/DatabaseCommInterfaceStub.puml
+
 @enduml
