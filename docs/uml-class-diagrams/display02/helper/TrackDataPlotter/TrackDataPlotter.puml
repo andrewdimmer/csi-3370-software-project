@@ -2,10 +2,18 @@
 
 package edu.oakland.helper.display02 {
     class TrackDataPlotter {
+    XYDataset points
+    XYDataset line
+    JFreeChart chart1
+    JFreeChart chart2
+    XYPlot plot
+    ChartPanel chartPanel1
+    ChartPanel chartPanel2
     _
+    {abstract} + TrackDataPlotter(TrackData data)
     .. Use Case 1 ..
-    {abstract} + TrackDataPlotter()   
-    
+    {abstract} - XYSeries getTrackData()
+    {abstract} - XYSeries calculateLine(int x[], int y[])
     }
 }
 
