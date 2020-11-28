@@ -1,0 +1,15 @@
+@startuml DatabaseCommInterfaceStub
+
+package edu.oakland.test.middleware02 {
+    class DatabaseCommInterfaceStub {
+        __
+        .. Use Case 1 ..
+        {abstract} + int receiveGetRfidRequest()
+        {abstract} + LocationDataPoint receiveGetLocationDataPointRequest(int offset)
+        {abstract} + TrackData receiveGetTrackDataRequest(int offset)
+        {abstract} + void storeTrackDataRequest(TrackData trackData)
+        {abstract} + String receiveGetModeRequest()
+    }
+}
+
+@enduml

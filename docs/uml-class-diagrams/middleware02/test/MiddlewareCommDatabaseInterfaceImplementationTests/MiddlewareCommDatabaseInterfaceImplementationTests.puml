@@ -1,0 +1,9 @@
+@startuml MiddlewareCommDatabaseInterfaceImplementationTests
+
+package edu.oakland.test.middleware02 {
+    class MiddlewareCommDatabaseInterfaceImplementationTests {
+
+    }
+}
+
+@enduml

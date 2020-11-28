@@ -4,4 +4,12 @@ package edu.oakland.test.display02 {
     
 }
 
+!include DisplayCommInterfaceImplementationTests/DisplayCommInterfaceImplementationTests.puml
+!include DisplayComm2WayInterfaceImplementationTests/DisplayComm2WayInterfaceImplementationTests.puml
+!include DisplayCommManagerImplementationTests/DisplayCommManagerImplementationTests.puml
+!include TrackDataPlotterTests/TrackDataPlotterTests.puml
+!include DisplayComm2WayInterfaceStub/DisplayComm2WayInterfaceStub.puml
+!include DisplayCommManagerStub/DisplayCommManagerStub.puml
+!include MiddlewareCommInterfaceStub/MiddlewareCommInterfaceStub.puml
+
 @enduml

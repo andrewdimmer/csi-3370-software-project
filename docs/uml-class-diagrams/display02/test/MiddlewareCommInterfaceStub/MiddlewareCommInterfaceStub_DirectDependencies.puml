@@ -1,0 +1,16 @@
+@startuml MiddlewareCommInterfaceStub_DirectDependencies
+
+!startsub DISPLAY02_TEST
+!include MiddlewareCommInterfaceStub.puml
+!endsub
+
+!startsub DISPLAY02
+
+!endsub
+
+!startsub OTHER
+!include ../../../middleware02/production/MiddlewareCommInterface/MiddlewareCommInterface.puml
+MiddlewareCommInterfaceStub .up.|> MiddlewareCommInterface
+!endsub
+
+@enduml

@@ -1,0 +1,11 @@
+@startuml DisplayComm2WayInterfaceStub
+
+package edu.oakland.test.display02 {
+    class DisplayComm2WayInterfaceStub {
+        __
+        .. Use Case 1 ..
+        {abstract} + TrackData passRfidRequest(int rfidNum)
+    }
+}
+
+@enduml
