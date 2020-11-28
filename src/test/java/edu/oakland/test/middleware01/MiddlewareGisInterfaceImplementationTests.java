@@ -47,7 +47,7 @@ public class MiddlewareGisInterfaceImplementationTests {
   @DisplayName("MiddlewareGisProcessor is not null")
   void processorIsNotNull() {
     assertThrows(IllegalArgumentException.class, () -> {
-      new MiddlewareGisProcessorStub();
+      new MiddlewareGisInterfaceImplementation(null);
     });
   }
 }
