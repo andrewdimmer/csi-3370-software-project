@@ -9,7 +9,7 @@
 
 ## Purpose
 
-This package shall...
+This package shall display location data points in a scatter plot and a line representing the course direction.
 
 ## Intrerfaces
 
