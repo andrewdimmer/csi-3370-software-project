@@ -1,0 +1,11 @@
+@startuml MiddlewareCommDatabaseInterfaceStub
+
+package edu.oakland.test.middleware02 {
+    class MiddlewareCommDatabaseInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + int checkCurrentRfid()
+    }
+}
+
+@enduml

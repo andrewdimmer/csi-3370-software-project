@@ -1,0 +1,16 @@
+@startuml MiddlewareCommLinkManagerStub_Closure
+
+!startsub MIDDLEWARE02_TEST
+!include MiddlewareCommLinkManagerStub.puml
+!endsub
+
+!startsub MIDDLEWARE02
+!include ../../production/MiddlewareCommLinkManager/MiddlewareCommLinkManager_Closure.puml
+MiddlewareCommLinkManagerStub .up.|> MiddlewareCommLinkManager
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml
