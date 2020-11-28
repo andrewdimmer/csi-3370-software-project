@@ -2,7 +2,7 @@
 
 package edu.oakland.production.display02 {
     class DisplayCommInterfaceImplementation {
-        DisplayComm2WayInterface receiver
+        - DisplayComm2WayInterface receiver
         __
         + DisplayCommInterface(DisplayComm2WayInterface receiver)
         .. Use Case 1 ..
