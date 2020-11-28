@@ -10,7 +10,7 @@ package edu.oakland.helper.display02 {
         - XYPlot plot
         - ChartPanel chartPanel1
         - ChartPanel chartPanel2
-        _
+        __
         + TrackDataPlotter(TrackData data)
         .. Use Case 1 ..
         - XYSeries getTrackData()
