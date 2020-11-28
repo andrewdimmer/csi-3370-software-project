@@ -5,6 +5,7 @@ package edu.oakland.test.display01 {
         + void measureGpsSignalStrength()
         + void ifSignalStrengthGoodMeasureSignal()
         + void elseSignalStrengthBadRejectSignal()
+        + void displayGpsManagerIsNotNull()
     }
 }
 
