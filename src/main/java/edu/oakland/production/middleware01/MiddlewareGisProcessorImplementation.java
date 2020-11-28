@@ -1,7 +1,7 @@
 package edu.oakland.production.middleware01;
 
-import edu.oakland.production.middleware01.MiddlewareGisProcessor;
 import edu.oakland.helper.admin.Satellite;
+import edu.oakland.production.middleware01.MiddlewareGisProcessor;
 
 public class MiddlewareGisProcessorImplementation implements MiddlewareGisProcessor {
 
@@ -19,6 +19,7 @@ public class MiddlewareGisProcessorImplementation implements MiddlewareGisProces
   }
 
   public String measureGpsSignalStrength(Satellite satelliteSignal) {
-    return middlewareGisManager.evaluateGpsSignalStrength(satelliteSignal.strengthIsValid(satelliteSignal.getStrength()));
+    int signal = satelliteSignal.strengthIsValid(satelliteSignal.getStrength())
+    return middlewareGisManager.evaluateGpsSignalStrength(signal);
   }   
 }
