@@ -1,0 +1,9 @@
+@startuml DisplayComm2WayInterfaceImplementationTests
+
+package edu.oakland.test.display02 {
+    class DisplayComm2WayInterfaceImplementationTests {
+
+    }
+}
+
+@enduml

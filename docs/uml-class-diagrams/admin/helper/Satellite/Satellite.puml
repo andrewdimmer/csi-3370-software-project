@@ -4,22 +4,23 @@ package edu.oakland.helper.admin {
     class Satellite {
         - String satelliteName
         - int strength
-        - float incrementLatAmount
-        - float incrementLngAmount
-        - LocationDataPoint initLocationDataPoint
+        {static} - float incrementLatAmount
+        {static} - float incrementLngAmount
+        {static} - LocationDataPoint initLocationDataPoint
         {static} - int countGetLocationCalls
         __
-        + Satellite(String satelliteName, int strength,
-        \tfloat incrementLatAmount, float incrementLngAmount,
-        \tLocationDataPoint initLocationDataPoint)
+        + Satellite(String satelliteName, int strength)
         + String getSatelliteName()
         + int getStrength()
         + LocationDataPoint getLocation()
         + void setStrength(int strength)
         - boolean strengthIsValid(int strength)
-        - float generateNewLocationDataPointLat()
-        - float generateNewLocationDataPointLng()
-        - float generateNewLocationDataPointTime()
+        {static} + void satelliteInit(float incrementLatAmount,
+        \tfloat incrementLngAmount,
+        \tLocationDataPoint initLocationDataPoint)
+        {static} - float generateNewLocationDataPointLat()
+        {static} - float generateNewLocationDataPointLng()
+        {static} - float generateNewLocationDataPointTime()
     }
 }
 

@@ -1,4 +1,4 @@
-@startuml DISPLAY02_PRODUCTIONPackage
+@startuml Display02ProductionPackage
 
 package edu.oakland.production.display02 {
 

@@ -1,0 +1,16 @@
+@startuml TrackDataPlotterTests_DirectDependencies
+
+!startsub DISPLAY02_TEST
+!include TrackDataPlotterTests.puml
+!endsub
+
+!startsub DISPLAY02
+!include ../../helper/TrackDataPlotter/TrackDataPlotter.puml
+TrackDataPlotterTests ..> TrackDataPlotter
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

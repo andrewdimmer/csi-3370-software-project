@@ -1,0 +1,11 @@
+@startuml MiddlewareCommInterfaceStub
+
+package edu.oakland.test.display02 {
+    class MiddlewareCommInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + TrackData requestRfid(int rfid)
+    }
+}
+
+@enduml

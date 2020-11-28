@@ -1,0 +1,23 @@
+@startuml TrackDataPlotter
+
+package edu.oakland.helper.display02 {
+    class TrackDataPlotter {
+        - TrackData data
+        - XYDataset points
+        - XYDataset line
+        - JFreeChart chart1
+        - JFreeChart chart2
+        - XYPlot plot
+        - ChartPanel chartPanel1
+        - ChartPanel chartPanel2
+        __
+        + TrackDataPlotter(TrackData data)
+        .. Use Case 1 ..
+        - XYSeries getTrackData()
+        - XYSeries calculateLine(int[] x, int[] y)
+        - int[] extractLatFromTrackData(TrackData data)
+        - int[] extractLngFromTrackData(TrackData data)
+    }
+}
+
+@enduml
