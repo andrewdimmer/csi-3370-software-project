@@ -1,9 +1,14 @@
 @startuml SatelliteSignalCheckRequestTests
 
 package edu.oakland.test.display01 {
-    class SatelliteSignalCheckRequestTests {
-
-    }
+  class SatelliteSignalCheckRequestTests {
+    + void SatelliteNameInIsSatelliteNameOut()
+    + void CheckTypeInIsCheckTypeOut()
+    + void EmptyNamesNotAllowed()
+    + void EmptyTypesNotAllowed()
+    + void NullNamesNotAllowed()
+    + void NullTypesNotAllowed()
+  }
 }
 
 @enduml
