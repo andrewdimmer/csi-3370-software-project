@@ -1,0 +1,16 @@
+@startuml DatabaseCommInterfaceStub_Closure
+
+!startsub MIDDLEWARE02_TEST
+!include DatabaseCommInterfaceStub.puml
+!endsub
+
+!startsub MIDDLEWARE02
+
+!endsub
+
+!startsub OTHER
+!include ../../../database/production/DatabaseCommInterface/DatabaseCommInterface_Closure.puml
+DatabaseCommInterfaceStub .up.|> DatabaseCommInterface
+!endsub
+
+@enduml
