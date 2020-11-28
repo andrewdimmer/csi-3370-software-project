@@ -9,9 +9,9 @@
 
 ## Purpose
 
-This package shall...
+This package shall test whether the RFID tag is being transmitted to DisplayCommInterface, DisplayComm2WayInterface, DisplayCommManager, and MiddlewareCommInterface. This package shall also test whether TrackDataPlotter displays the charts correctly.
 
-## Intrerfaces
+## Interfaces
 
 This package does not contain any interfaces.
 
