@@ -4,9 +4,7 @@ package edu.oakland.production.database {
     class DatabaseCommInterfaceImplementation {
         - DatabaseCommManager databaseCommManager
         __
-        DatabaseCommInterface(int rfidData, 
-        \tLocationDataPoint locDataPoint,
-        \tTrackData trackData)
+        + DatabaseCommInterface(DatabaseCommManager databaseCommManager)
         .. Use Case 1 ..
         + int receiveGetRfidRequest()
         + LocationDataPoint receiveGetLocationDataPointRequest(int offset)
