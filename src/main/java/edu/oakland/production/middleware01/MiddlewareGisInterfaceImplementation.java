@@ -2,6 +2,7 @@ package edu.oakland.production.middleware01;
 
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.production.middleware01.MiddlewareGisInterface;
+import edu.oakland.production.middleware01.MiddlewareGisProcessor;
 
 /**
  * This class shall recieve that GPS signal from display and pass it to GIS processor.
