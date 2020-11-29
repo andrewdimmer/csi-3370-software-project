@@ -13,6 +13,13 @@ package edu.oakland.test.admin {
        + void strengthNotMoreThanTenConstructor()
        + void strengthNotLessThanOneSetter()
        + void strengthNotMoreThanTenSetter()
+       - int generateRandomStrength()
+       - float generateRandomIncrements()
+       - int generateRandomStringLength()
+       - int generateLessThanOne()
+       - int generateMoreThanTen()
+       - String generateRandomString(int length)
+       - LocationDataPoint generateRandomLocationDataPoint()
     }
 }
 

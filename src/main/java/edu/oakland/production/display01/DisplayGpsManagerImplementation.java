@@ -9,7 +9,7 @@ public class DisplayGpsManagerImplementation implements DisplayGpsManager {
     return "";
   }
 
-  public SatelliteSignalCheckRequest passGpsSignalStrength(String satelliteName) {
+  public SatelliteSignalCheckRequest passGpsSignalStrength(Satellite satelliteSignal) {
     return null;
 
   }
