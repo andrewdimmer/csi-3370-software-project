@@ -61,7 +61,6 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
    * @return The name of the satellite.
    */
   public String evaluateGpsSignalStrength(boolean signalValid) {
-
     if (signalValid == true) {
       databaseGisInterface.receiveModeRequest("normal");
       return "";
@@ -74,8 +73,6 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
         databaseGisInterface.receiveModeRequest("degraded");
       }  
       return satelliteSignal.getSatelliteName();
-    }
-              
+    }          
   }
-
 }

@@ -13,7 +13,7 @@ import java.lang.IllegalArgumentException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Middleware GIS processor test")
+@DisplayName("MiddlewareGisProcessorImplementation Unit Tests")
 public class MiddlewareGisProcessorImplementationTests {
 
   @Test
@@ -24,7 +24,6 @@ public class MiddlewareGisProcessorImplementationTests {
 
     MiddlewareGisProcessor gisProcessor = new MiddlewareGisProcessorImplementation(stub);
     assertEquals(satellite.getSatelliteName(), gisProcessor.measureGpsSignalStrength(satellite));
-
   }
 
   @Test
@@ -35,7 +34,6 @@ public class MiddlewareGisProcessorImplementationTests {
 
     MiddlewareGisProcessor gisProcessor = new MiddlewareGisProcessorImplementation(stub);
     assertEquals(satellite.getSatelliteName(), gisProcessor.evaluateGpsSignalStrength(satellite));
-
   }
 
   @Test

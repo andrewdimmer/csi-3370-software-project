@@ -13,7 +13,7 @@ import java.lang.IllegalArgumentException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Middleware GIS Manager test")
+@DisplayName("MiddlewareGisManagerImplementation Unit Tests")
 public class MiddlewareGisManagerImplementationTests {
 
   @Test

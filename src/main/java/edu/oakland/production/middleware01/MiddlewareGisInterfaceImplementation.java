@@ -21,5 +21,4 @@ public class MiddlewareGisInterfaceImplementation implements MiddlewareGisInterf
   public String receiveGpsSignalStrengthUc2(Satellite satelliteSignal) {
     return middlewareGisProcessor.measureGpsSignalStrength(satelliteSignal);
   }
-
 }
