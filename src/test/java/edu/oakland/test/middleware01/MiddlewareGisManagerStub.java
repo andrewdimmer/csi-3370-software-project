@@ -18,7 +18,7 @@ public class MiddlewareGisManagerStub implements MiddlewareGisManager {
   }
     
   public String evaluateGpsSignalStrength(Satellite satellite) {
-    return "GPS0";
+    return satellite.getSatelliteName();
   }
 
 }
