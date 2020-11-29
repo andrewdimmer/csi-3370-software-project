@@ -3,11 +3,11 @@ package edu.oakland.production.database;
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.production.database.DatabaseGisManagerStub;
 
-public class DatabaseGisInterfaceClass {
+public class DatabaseGisInterfaceImplementation {
 
   DatabaseGisManager manager;
 
-  public DatabaseGisInterfaceClass(DatabaseGisManager m) {
+  public DatabaseGisInterfaceImplementation(DatabaseGisManager m) {
     manager = m;
   }
 
