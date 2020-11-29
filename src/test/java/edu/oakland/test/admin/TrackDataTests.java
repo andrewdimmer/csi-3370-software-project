@@ -18,7 +18,7 @@ public class TrackDataTests {
   @Test
   @DisplayName("Points-Only Constructor Course Direction Is 0")
   void pointsOnlyConstructorCourseIs0() {
-    int length = (int) (Math.random() * 5);
+    int length = generateRandomLength();
     TrackData trackData = new TrackData(generateRandomLocationDataPointsArray(length));
     assertEquals(0, trackData.getCourseDirection(), .001);
   }
@@ -38,7 +38,7 @@ public class TrackDataTests {
   @Test
   @DisplayName("Points-Only Constructor Speed Is 0")
   void pointsOnlyConstructorSpeedIs0() {
-    int length = (int) (Math.random() * 5);
+    int length = generateRandomLength();
     TrackData trackData = new TrackData(generateRandomLocationDataPointsArray(length));
     assertEquals(0, trackData.getSpeed(), .001);
   }
@@ -58,7 +58,7 @@ public class TrackDataTests {
   @Test
   @DisplayName("Points-Only Constructor Valid is False")
   void pointsOnlyConstructorValidIsFalse() {
-    int length = (int) (Math.random() * 5);
+    int length = generateRandomLength();
     TrackData trackData = new TrackData(generateRandomLocationDataPointsArray(length));
     assertFalse(trackData.isValid());
   }
@@ -77,7 +77,7 @@ public class TrackDataTests {
   @Test
   @DisplayName("Points-Only Constructor Points In are Points Out")
   void pointsOnlyConstructor() {
-    int length = (int) (Math.random() * 5);
+    int length = generateRandomLength();
     LocationDataPoint[] points = generateRandomLocationDataPointsArray(length);
     TrackData trackData = new TrackData(points);
     assertEquals(points, trackData.getLocationDataPoints());
@@ -95,7 +95,20 @@ public class TrackDataTests {
     assertEquals(points, trackData.getLocationDataPoints());
   }
 
-@Test
+  @Test
+  @DisplayName("TrackData Status Message In Is the Same Status Message Out")
+  void statusMessageInIsStatusMessageOut() {
+    TrackData trackData = new TrackData(
+        generateRandomLocationDataPointsArray(5),
+        generateRandomCourse(),
+        generateRandomSpeed()
+    );
+    String message = "Test";
+    trackData.setStatusMessage(message);
+    assertEquals(message, trackData.getStatusMessage());
+  }
+
+  @Test
   @DisplayName("No LocationDataPoints Arrays with Exactly 5 Points Via Points-Only Constructor")
   void noValidDataViaPointsOnlyConstructor() {
     assertThrows(IllegalArgumentException.class, () -> {
@@ -128,7 +141,7 @@ public class TrackDataTests {
   void noTooLittleDataViaFullDataConstructor() {
     assertThrows(IllegalArgumentException.class, () -> {
       new TrackData(
-          generateRandomLocationDataPointsArray((int) (Math.random() * 5)),
+          generateRandomLocationDataPointsArray(generateRandomLength()),
           generateRandomCourse(),
           generateRandomSpeed()
       );
@@ -140,7 +153,7 @@ public class TrackDataTests {
   void noTooMuchDataViaFullDataConstructor() {
     assertThrows(IllegalArgumentException.class, () -> {
       new TrackData(
-          generateRandomLocationDataPointsArray((int) (Math.random() * 5) + 6),
+          generateRandomLocationDataPointsArray(generateRandomLength() + 6),
           generateRandomCourse(),
           generateRandomSpeed()
       );
@@ -176,7 +189,7 @@ public class TrackDataTests {
   void noTooLargeCourseViaFullDataConstructor() {
     assertThrows(IllegalArgumentException.class, () -> {
       new TrackData(
-          generateRandomLocationDataPointsArray((int) (Math.random() * 5) + 6),
+          generateRandomLocationDataPointsArray(generateRandomLength() + 6),
           generateRandomCourse() + 360,
           generateRandomSpeed()
       );
@@ -191,10 +204,14 @@ public class TrackDataTests {
     return (float) (Math.random() * 30);
   }
 
+  private int generateRandomLength() {
+      return (int) (Math.random() *5);
+  }
+
   private LocationDataPoint[] generateRandomLocationDataPointsArray(int length) {
     LocationDataPoint[] locations = new LocationDataPoint[length];
     for (int index = 0; index < locations.length; index++) {
-        locations[index] = generateRandomLocationDataPoint();
+      locations[index] = generateRandomLocationDataPoint();
     }
     return locations;
   }

@@ -8,6 +8,7 @@ public class TrackData {
   final float courseDirection;
   final float speed;
   final boolean validData;
+  String statusMessage = "";
 
   public TrackData(LocationDataPoint[] points) {
     // Validate points array
@@ -72,10 +73,10 @@ public class TrackData {
   }
 
   public String getStatusMessage() {
-    return "";
+    return statusMessage;
   }
 
   public void setStatusMessage(String statusMessage) {
-
+    this.statusMessage = statusMessage;
   }
 }
