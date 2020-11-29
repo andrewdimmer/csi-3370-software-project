@@ -11,9 +11,6 @@ import java.time.LocalDateTime;
  * store the data point and pass the signal to the database 
  * or attempt to regain GPS lock and evaluate the signal strength.
  *
- * @author Julia Wang, Brenda Morquecho, Pujan Shah, Stan Barczak, Martin Hughes, 
- *  Y Duong, Syed Hayat, Talha Memon, Steven Naoum
- * @version %I%, %G%
  */
 
 public class MiddlewareGisManagerImplementation implements MiddlewareGisManager {
