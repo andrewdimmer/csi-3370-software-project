@@ -9,10 +9,10 @@ public class MiddlewareGisProcessorImplementation implements MiddlewareGisProces
   private MiddlewareGisManager middlewareGisManager;
 
   public MiddlewareGisProcessorImplementation(MiddlewareGisManager middlewareGisManager) {
+    this.middlewareGisManager = middlewareGisManager;
     if (this.middlewareGisManager == null) {
       throw new IllegalArgumentException("manager cannot be null");
     }        
-    this.middlewareGisManager = middlewareGisManager;
   }
 
   public String evaluateGpsSignalStrength(Satellite satelliteSignal) {
@@ -20,8 +20,11 @@ public class MiddlewareGisProcessorImplementation implements MiddlewareGisProces
   }
 
   public String measureGpsSignalStrength(Satellite satelliteSignal) {
-    // UNCOMMENT LATER int signal = satelliteSignal.strengthIsValid(satelliteSignal.getStrength());
-    int signal = 5;
+    boolean signal = isStrongEnough(satelliteSignal.getStrength());
     return middlewareGisManager.evaluateGpsSignalStrength(signal);
-  }   
+  }
+
+  private boolean isStrongEnough(int strength) {
+    return strength >= 1 && strength <= 10;
+  }
 }

@@ -14,30 +14,22 @@ import edu.oakland.helper.admin.Satellite;
 import java.lang.IllegalArgumentException;
 import edu.oakland.helper.admin.LocationDataPoint;
 
-@DisplayName("Middleware GIS interface test")
+@DisplayName("MiddlewareGisInterfaceImplementation Unit Tests")
 public class MiddlewareGisInterfaceImplementationTests {
-    
-  @Test
-  @DisplayName("Signal received from Display")
-  void isGpsSignalStrengthReceived() {
-
-  }
 
   @Test
   @DisplayName("Signal pass successful from interface to Display")
-
   void passSignalStrengthUc1() {
-    Satellite satellite = new Satellite();
+    Satellite satellite = new Satellite("GPS0", 5);
 
     MiddlewareGisInterface gisInterface = new MiddlewareGisInterfaceImplementation(new MiddlewareGisProcessorStub());
     assertEquals(satellite.getSatelliteName(), gisInterface.receiveGpsSignalStrengthUc1(satellite));
-
   }
 
   @Test
   @DisplayName("Signal pass successful from interface to Display")
   void passSignalStrengthUc2() {
-    Satellite satellite = new Satellite();
+    Satellite satellite = new Satellite("GPS0", 5);
 
     MiddlewareGisInterface gisInterface = new MiddlewareGisInterfaceImplementation(new MiddlewareGisProcessorStub());
     assertEquals(satellite.getSatelliteName(), gisInterface.receiveGpsSignalStrengthUc2(satellite));    
