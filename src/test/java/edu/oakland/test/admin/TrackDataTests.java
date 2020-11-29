@@ -232,8 +232,8 @@ public class TrackDataTests {
 
   private String generateRandomString() {
     char[] randomString = new char[(int) (Math.random() * 256)];
-    for (int index = 0; index < length ; index++) {
-      randomString[index] = (int) (Math.random() * (127 - 32) + 32)
+    for (int index = 0; index < randomString.length ; index++) {
+      randomString[index] = (char) (Math.random() * (127 - 32) + 32);
     }
     return new String(randomString);
   }
