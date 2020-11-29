@@ -19,10 +19,10 @@ public class MiddlewareGisInterfaceImplementation implements MiddlewareGisInterf
    *
    */
   public MiddlewareGisInterfaceImplementation(MiddlewareGisProcessor middlewareGisProcessor) {
-    this.middlewareGisProcessor = middlewareGisProcessor;
-    if (this.middlewareGisProcessor == null) {
+    if (middlewareGisProcessor == null) {
       throw new IllegalArgumentException("processor cannot be null");
     }
+    this.middlewareGisProcessor = middlewareGisProcessor;
   }
 
   /**
