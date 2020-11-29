@@ -100,35 +100,94 @@ public class SatelliteTests {
     LocationDataPoint thePoint = generateRandomLocationDataPoint();
     int x = generateRandomIncrements();
     int y = generateRandomIncrements();
-    Satellite.satelliteInit(x, y, thePoint);
+    Satellite.satelliteInit(0, 0, thePoint);
     int strength = generateRandomStrength();
     int rndStrLength = generateRandomStringLength();
     String name = generateRandomString(rndStrLength);
-    Satellite theSatellite = new Satellite(name, strength);
+    Satellite theSatellite = new Satellite("Test", 8); //(name, strength);
     LocationDataPoint outputPoint = theSatellite.getLocation();
-    System.out.println(thePoint.getLat());
-    System.out.println(outputPoint.getLat());
     assertEquals(thePoint.getLat(), outputPoint.getLat(), .001);
-    //assertEquals(thePoint.getLng(),outputPoint.getLng(),.001);
-    //assertEquals(thePoint.getTime(),outputPoint.getTime());
+    assertEquals(thePoint.getLng(),outputPoint.getLng(),.001);
+    assertEquals(thePoint.getTime(),outputPoint.getTime());
   }
   
   @Test
   @DisplayName("Get Location 1 is Correct") 
   void getLocation1IsCorrect() {
-    LocationDataPoint thePoint = generateRandomLocationDataPoint();
+    LocationDataPoint initPoint = generateRandomLocationDataPoint();
     int x = generateRandomIncrements();
     int y = generateRandomIncrements();
-    Satellite.satelliteInit(x, y, thePoint);
+    Satellite.satelliteInit(x, y, initPoint);
     int strength = generateRandomStrength();
     int rndStrLength = generateRandomStringLength();
     String name = generateRandomString(rndStrLength);
     Satellite theSatellite = new Satellite(name, strength);
-    LocationDataPoint outputPointOne = theSatellite.getLocation();
-    LocationDataPoint outputPointFinal = theSatellite.getLocation();
-    assertEquals(thePoint.getLat(), outputPointFinal.getLat(), .001);
-    assertEquals(thePoint.getLng(), outputPointFinal.getLng(), .001);
-    assertEquals(thePoint.getTime(), outputPointFinal.getTime());
+    theSatellite.getLocation(); // Call the first point, but don't test it
+    LocationDataPoint outputPoint = theSatellite.getLocation();
+    LocationDataPoint expectedPoint = new LocationDataPoint(
+        initPoint.getLat() + x,
+        initPoint.getLng() + y,
+        initPoint.getTime().plusHours(1)
+    );
+    assertEquals(expectedPoint.getLat(), outputPoint.getLat(), .001);
+    assertEquals(expectedPoint.getLng(), outputPoint.getLng(), .001);
+    assertEquals(expectedPoint.getTime(), outputPoint.getTime());
+  }
+
+  @Test
+  @DisplayName("Get Nth Location is Correct") 
+  void getNthLocationIsCorrect() {
+    LocationDataPoint initPoint = generateRandomLocationDataPoint();
+    int x = generateRandomIncrements();
+    int y = generateRandomIncrements();
+    Satellite.satelliteInit(x, y, initPoint);
+    int strength = generateRandomStrength();
+    int rndStrLength = generateRandomStringLength();
+    String name = generateRandomString(rndStrLength);
+    Satellite theSatellite = new Satellite(name, strength);
+    int numberOfCalls = generateRandomStringLength();
+    for (int index = 0; index < numberOfCalls; index++) {
+      theSatellite.getLocation();
+    }
+    LocationDataPoint outputPoint = theSatellite.getLocation();
+    LocationDataPoint expectedPoint = new LocationDataPoint(
+        initPoint.getLat() + (x * numberOfCalls),
+        initPoint.getLng() + (y * numberOfCalls),
+        initPoint.getTime().plusHours(numberOfCalls)
+    );
+    assertEquals(expectedPoint.getLat(), outputPoint.getLat(), .001);
+    assertEquals(expectedPoint.getLng(), outputPoint.getLng(), .001);
+    assertEquals(expectedPoint.getTime(), outputPoint.getTime());
+  }
+
+  @Test
+  @DisplayName("Get Location 1 Across Multiple Objects is Consistent and in Sync") 
+  void getLocationAcrossMultipleObjectsInSync() {
+    LocationDataPoint initPoint = generateRandomLocationDataPoint();
+    int x = generateRandomIncrements();
+    int y = generateRandomIncrements();
+    Satellite.satelliteInit(x, y, initPoint);
+    int numberOfCalls = generateRandomStringLength();
+    for (int index = 0; index < numberOfCalls; index++) {
+      int strength = generateRandomStrength();
+      int rndStrLength = generateRandomStringLength();
+      String name = generateRandomString(rndStrLength);
+      Satellite theSatellite = new Satellite(name, strength);
+      theSatellite.getLocation();
+    }
+    int strength = generateRandomStrength();
+    int rndStrLength = generateRandomStringLength();
+    String name = generateRandomString(rndStrLength);
+    Satellite theSatellite = new Satellite(name, strength);
+    LocationDataPoint outputPoint = theSatellite.getLocation();
+    LocationDataPoint expectedPoint = new LocationDataPoint(
+        initPoint.getLat() + (x * numberOfCalls),
+        initPoint.getLng() + (y * numberOfCalls),
+        initPoint.getTime().plusHours(numberOfCalls)
+    );
+    assertEquals(expectedPoint.getLat(), outputPoint.getLat(), .001);
+    assertEquals(expectedPoint.getLng(), outputPoint.getLng(), .001);
+    assertEquals(expectedPoint.getTime(), outputPoint.getTime());
   }
   
   private int generateRandomStrength() {

@@ -53,29 +53,22 @@ public class Satellite {
   }
 
   public static void satelliteInit(float incLatA, float incLngA, LocationDataPoint initPoint) {
-    System.out.println(initPoint.getLat());
+    countGetLocationCalls = -1;
     incrementLatAmount = incLatA;
     incrementLngAmount = incLngA;
     initLocationDataPoint = initPoint;
   }
 
   private static float generateNewLocationDataPointLat() {
-    float lat = initLocationDataPoint.getLat() + (incrementLatAmount * countGetLocationCalls);
-    System.out.println(lat);
-    return lat;
+    return initLocationDataPoint.getLat() + (incrementLatAmount * countGetLocationCalls);
   }
 
   private static float generateNewLocationDataPointLng() {
-    float lng = initLocationDataPoint.getLng() + (incrementLngAmount * countGetLocationCalls);
-    return lng;
+    return initLocationDataPoint.getLng() + (incrementLngAmount * countGetLocationCalls);
   }
 
   private static LocalDateTime generateNewLocationDataPointTime() {
     LocalDateTime theNewTime = initLocationDataPoint.getTime();
-    theNewTime.plusHours(countGetLocationCalls);
-    return theNewTime;
+    return theNewTime.plusHours(countGetLocationCalls);
   }
-
-
-
 }
