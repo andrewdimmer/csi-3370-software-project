@@ -98,8 +98,8 @@ public class SatelliteTests {
   @DisplayName("Get Location 0 is Correct")
   void getLocation0IsCorrect() {
     LocationDataPoint thePoint = generateRandomLocationDataPoint();
-    int x = generateRandomIncrements();
-    int y = generateRandomIncrements();
+    float x = generateRandomIncrements();
+    float y = generateRandomIncrements();
     Satellite.satelliteInit(0, 0, thePoint);
     int strength = generateRandomStrength();
     int rndStrLength = generateRandomStringLength();
@@ -115,8 +115,8 @@ public class SatelliteTests {
   @DisplayName("Get Location 1 is Correct") 
   void getLocation1IsCorrect() {
     LocationDataPoint initPoint = generateRandomLocationDataPoint();
-    int x = generateRandomIncrements();
-    int y = generateRandomIncrements();
+    float x = generateRandomIncrements();
+    float y = generateRandomIncrements();
     Satellite.satelliteInit(x, y, initPoint);
     int strength = generateRandomStrength();
     int rndStrLength = generateRandomStringLength();
@@ -138,8 +138,8 @@ public class SatelliteTests {
   @DisplayName("Get Nth Location is Correct") 
   void getNthLocationIsCorrect() {
     LocationDataPoint initPoint = generateRandomLocationDataPoint();
-    int x = generateRandomIncrements();
-    int y = generateRandomIncrements();
+    float x = generateRandomIncrements();
+    float y = generateRandomIncrements();
     Satellite.satelliteInit(x, y, initPoint);
     int strength = generateRandomStrength();
     int rndStrLength = generateRandomStringLength();
@@ -164,8 +164,8 @@ public class SatelliteTests {
   @DisplayName("Get Location 1 Across Multiple Objects is Consistent and in Sync") 
   void getLocationAcrossMultipleObjectsInSync() {
     LocationDataPoint initPoint = generateRandomLocationDataPoint();
-    int x = generateRandomIncrements();
-    int y = generateRandomIncrements();
+    float x = generateRandomIncrements();
+    float y = generateRandomIncrements();
     Satellite.satelliteInit(x, y, initPoint);
     int numberOfCalls = generateRandomStringLength();
     for (int index = 0; index < numberOfCalls; index++) {
@@ -194,8 +194,8 @@ public class SatelliteTests {
     return (int) ((Math.random() * (10 - 1)) + 1); //Random int from 1 to 10
   }
 
-  private int generateRandomIncrements() {
-    return (int) ((Math.random() * (100 + 100)) - 100);
+  private float generateRandomIncrements() {
+    return (float) ((Math.random() * (100 + 100)) - 100);
   }
 
   private int generateRandomStringLength() {

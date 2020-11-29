@@ -22,15 +22,15 @@ public class Satellite {
   /**
    * Creates a new Satellite object with the given name and strength.
    *
-   * @param satName The satellite name (this is immutable, and should be unique).
-   * @param str The satellite signal strength from 1 to 10 (this can be changed later).
+   * @param satelliteName The satellite name (this is immutable, and should be unique).
+   * @param strength The satellite signal strength from 1 to 10 (this can be changed later).
    */
-  public Satellite(String satName, int str) {
-    if (!strengthIsValid(str)) {
+  public Satellite(String satelliteName, int strength) {
+    if (!strengthIsValid(strength)) {
       throw new IllegalArgumentException("Strength must be between one and ten");
     }
-    satelliteName = satName;
-    strength = str;
+    this.satelliteName = satelliteName;
+    this.strength = strength;
   }
 
   /**
@@ -56,13 +56,13 @@ public class Satellite {
    * Allows the user to update the single strength of this satellite's connection to the Secure
    * Lock Tracking System shipping container.
    *
-   * @param str The new strength of the satellite connection (between 1 and 10).
+   * @param strength The new strength of the satellite connection (between 1 and 10).
    */
-  public void setStrength(int str) {
-    if (!strengthIsValid(str)) {
+  public void setStrength(int strength) {
+    if (!strengthIsValid(strength)) {
       throw new IllegalArgumentException("Strength must be between one and ten");
     }
-    strength = str;
+    this.strength = strength;
   }
 
   /**
@@ -83,11 +83,11 @@ public class Satellite {
   /**
    * Validates that the signal strength is between 1 and 10 inclusive.
    *
-   * @param str The signal strength to validate.
+   * @param strength The signal strength to validate.
    * @return true if the singal strength is valid (between 1 and 10 inclusive); false otherwise.
    */
-  private boolean strengthIsValid(int str) {
-    return str >= 1 && str <= 10;
+  private boolean strengthIsValid(int strength) {
+    return strength >= 1 && strength <= 10;
   }
 
   /**
