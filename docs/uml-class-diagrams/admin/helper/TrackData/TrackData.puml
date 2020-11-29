@@ -2,21 +2,19 @@
 
 package edu.oakland.helper.admin {
     class TrackData {
-        - boolean validData
+        - LocationDataPoint[] points
         - float courseDirection
         - float speed
-        - LocationDataPoint[] points
+        - boolean validData
         - String statusMessage
         + TrackData(LocationDataPoint[] points)
         + TrackData(LocationDataPoint[] points, float courseDirection, float speed)
-        + boolean isValidTrackData()
+        + boolean isValid()
         + float getCourseDirection()
         + float getSpeed()
         + LocationDataPoint[] getLocationDataPoints()
         + String getStatusMessage()
         + void setStatusMessage(String statusMessage)
-        - boolean speedIsValid(float speed)
-        - boolean courseDirectionIsValid(float courseDirection)
     }
 }
 

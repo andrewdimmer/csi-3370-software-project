@@ -13,6 +13,7 @@ package edu.oakland.helper.display02 {
         __
         + TrackDataPlotter(TrackData data)
         .. Use Case 1 ..
+        + void displayPlotter()
         - XYSeries getTrackData()
         - XYSeries calculateLine(int[] x, int[] y)
         - int[] extractLatFromTrackData(TrackData data)
