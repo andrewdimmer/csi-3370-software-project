@@ -2,7 +2,9 @@
 
 package edu.oakland.test.middleware02 {
     class TrackDataCalculatorTests {
-
+      + void calculateSpeedTest()
+      + void calculateDirectionTest()
+      - void calculateRootMeanSquaredTest()
     }
 }
 
