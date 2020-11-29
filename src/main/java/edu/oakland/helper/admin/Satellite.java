@@ -4,13 +4,13 @@ import edu.oakland.helper.admin.LocationDataPoint;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 
-public class Satellite {
-private String satelliteName;
-private int strength;
-private static float incrementLatAmount;
-private static float incrementLngAmount;
-private static LocationDataPoint initLocationDataPoint;
-private static int countGetLocationCalls = -1;
+  public class Satellite {
+  private String satelliteName;
+  private int strength;
+  private static float incrementLatAmount;
+  private static float incrementLngAmount;
+  private static LocationDataPoint initLocationDataPoint;
+  private static int countGetLocationCalls = -1;
 
   public Satellite(String satName, int str) {
     if (!strengthIsValid(str)) {

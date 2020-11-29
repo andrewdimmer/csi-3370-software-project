@@ -20,7 +20,7 @@ public class SatelliteTests {
   void satNameInIsSatNameOut() {
     int strength = generateRandomStrength();
     int rndStrLength = generateRandomStringLength();
-    String name = generateRandomString(rndStrLength); //For simplicity, string size in test will be from 1 to 20. chosen randomly
+    String name = generateRandomString(rndStrLength); 
     Satellite theSatellite = new Satellite(name, strength);
     assertEquals(name, theSatellite.getSatelliteName());
   }
@@ -54,8 +54,8 @@ public class SatelliteTests {
     int rndStrLength = generateRandomStringLength();
     String name = generateRandomString(rndStrLength);
     assertThrows(IllegalArgumentException.class, () -> {
-    new Satellite(name, generateLessThanOne());
-  });
+      new Satellite(name, generateLessThanOne());
+    });
   }
 
   @Test
@@ -64,8 +64,8 @@ public class SatelliteTests {
     int rndStrLength = generateRandomStringLength();
     String name = generateRandomString(rndStrLength);
     assertThrows(IllegalArgumentException.class, () -> {
-    new Satellite(name, generateMoreThanTen());
-  });
+      new Satellite(name, generateMoreThanTen());
+    });
   }
 
   @Test
@@ -76,9 +76,9 @@ public class SatelliteTests {
     String name = generateRandomString(rndStrLength);
     Satellite theSatellite = new Satellite(name, strength);
     assertThrows(IllegalArgumentException.class, () -> {
-    int newStrength = generateLessThanOne();
-    theSatellite.setStrength(newStrength);
-  });
+      int newStrength = generateLessThanOne();
+      theSatellite.setStrength(newStrength);
+    });
   }
 
   @Test
@@ -89,9 +89,9 @@ public class SatelliteTests {
     String name = generateRandomString(rndStrLength);
     Satellite theSatellite = new Satellite(name, strength);
     assertThrows(IllegalArgumentException.class, () -> {
-    int newStrength = generateMoreThanTen();
-    theSatellite.setStrength(newStrength);
-  });
+      int newStrength = generateMoreThanTen();
+      theSatellite.setStrength(newStrength);
+    });
   }
 
   @Test
@@ -178,6 +178,4 @@ private LocationDataPoint generateRandomLocationDataPoint() {
   );
   }
  
-
-
 }
