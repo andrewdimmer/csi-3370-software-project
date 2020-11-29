@@ -61,9 +61,9 @@ public class MiddlewareGisManagerImplementationTests {
   void selectNewGps() {
     Satellite satellite = new Satellite();
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
-
+    String nextSat = stub.receiveNextSatRequest(satellite.getSatelliteName());
     MiddlewareGisManager gisManager = new DatabaseGisInterfaceImplementation(stub);
-    assertEquals(satellite.getSatelliteName(), stub.receiveNextSatRequest(satellite.getSatelliteName()));
+    assertEquals(satellite.getSatelliteName(), name);
   }
 
   @Test
