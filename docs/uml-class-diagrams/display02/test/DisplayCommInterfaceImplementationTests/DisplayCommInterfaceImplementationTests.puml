@@ -2,7 +2,6 @@
 
 package edu.oakland.test.display02 {
     class DisplayCommInterfaceImplementationTests {
-        + void isRfidRecieved()
         + void passToComm2WayisNotNull()
         + void rfidInIsRfidOut()
 
