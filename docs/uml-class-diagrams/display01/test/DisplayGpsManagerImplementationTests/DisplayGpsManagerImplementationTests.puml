@@ -5,7 +5,7 @@ package edu.oakland.test.display01 {
         + void receivedGpsSignalStrengths()
         + void ifAcceptableGpsSignalStrengths()
         + void elsePoorGpsSignalStrengths()
-        + 
+        + void middlewareGisIsNotNull()
     }
 }
 
