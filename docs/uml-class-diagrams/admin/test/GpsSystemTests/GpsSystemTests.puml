@@ -2,7 +2,21 @@
 
 package edu.oakland.test.admin {
     class GpsSystemTests {
-
+        + void initDisplayGPSInterfaceNotNull()
+        + void initSatelliteNamesNotNull()
+        + void gpsSystemsConstructedSuccessfully()
+        + void useCase1RunSuccessfully()
+        + void uC1ScannerNotNull()
+        + void useCase2RunSuccessfully()
+        + void uC2ScannerNotNull()
+        + void satellietNamesNotNull()
+        + void incrementalLatAmountNotNull()
+        + void incrementLngAmountNotNull()
+        + void LocationDataPointNotNull()
+        + void configureSatellitesRunSuccessfully()
+        - String generateRandomNames()
+        - LocationDataPoint makeRandomLDP()
+        - float makeRandomPos()
     }
 }
 
