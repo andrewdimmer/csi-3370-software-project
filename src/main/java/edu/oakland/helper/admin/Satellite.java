@@ -32,7 +32,7 @@ import java.time.LocalDateTime;
     if (!strengthIsValid(str)) {
       throw new IllegalArgumentException("Strength must be between one and ten");
     }
-    strength=str;
+    strength = str;
   }
 
   public LocationDataPoint getLocation() {
@@ -60,20 +60,20 @@ import java.time.LocalDateTime;
   }
 
   private static float generateNewLocationDataPointLat() {
-   float lat = initLocationDataPoint.getLat() + (incrementLatAmount*countGetLocationCalls);
-   System.out.println(lat);
-   return lat;
+    float lat = initLocationDataPoint.getLat() + (incrementLatAmount * countGetLocationCalls);
+    System.out.println(lat);
+    return lat;
   }
 
   private static float generateNewLocationDataPointLng() {
-   float lng = initLocationDataPoint.getLng() + (incrementLngAmount*countGetLocationCalls);
-   return lng;
+    float lng = initLocationDataPoint.getLng() + (incrementLngAmount * countGetLocationCalls);
+    return lng;
   }
 
   private static LocalDateTime generateNewLocationDataPointTime() {
-   LocalDateTime theNewTime = initLocationDataPoint.getTime();
-   theNewTime.plusHours(countGetLocationCalls);
-   return theNewTime;
+    LocalDateTime theNewTime = initLocationDataPoint.getTime();
+    theNewTime.plusHours(countGetLocationCalls);
+    return theNewTime;
   }
 
 
