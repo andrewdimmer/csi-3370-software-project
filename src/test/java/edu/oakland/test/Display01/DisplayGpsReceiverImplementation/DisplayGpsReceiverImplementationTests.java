@@ -19,7 +19,7 @@ public class DisplayGpsReceiverImplementationTests {
     if (i > 4){
       assertTrue(Integer.parseInt(s) > 4);
       DisplayGpsManagerImplementation manager = new DisplayGpsManagerImplementation();
-      manager.passGpsSignalStrength(s);
+      manager.passGpsSignalStrength(signal);
     }
     else if(i <= 4){
       displayGpsManagerIsNotNull();
