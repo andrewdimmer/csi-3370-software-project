@@ -7,7 +7,7 @@ package edu.oakland.test.middleware02 {
         + void emptyTrackData()
         + void someTrackData()
         + void enoughTrackData()
-        + void commDatabaseInterfaceeIsNotNull()
+        + void commDatabaseInterfaceIsNotNull()
         + void gisManagerIsNotNull()
         + void storedDataCheck()
     }
