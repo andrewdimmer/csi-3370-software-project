@@ -8,10 +8,10 @@ public class MiddlewareGisInterfaceImplementation implements MiddlewareGisInterf
   private MiddlewareGisProcessor middlewareGisProcessor;
 
   public MiddlewareGisInterfaceImplementation(MiddlewareGisProcessor middlewareGisProcessor){
+    this.middlewareGisProcessor = middlewareGisProcessor;
     if (this.middlewareGisProcessor == null) {
       throw new IllegalArgumentException("processor cannot be null");
     }
-    this.middlewareGisProcessor = middlewareGisProcessor;
   }
 
   public String receiveGpsSignalStrengthUc1(Satellite satelliteSignal) {

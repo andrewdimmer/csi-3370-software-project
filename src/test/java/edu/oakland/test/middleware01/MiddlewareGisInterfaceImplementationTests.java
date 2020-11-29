@@ -20,7 +20,7 @@ public class MiddlewareGisInterfaceImplementationTests {
   @Test
   @DisplayName("Signal pass successful from interface to Display")
   void passSignalStrengthUc1() {
-    Satellite satellite = new Satellite();
+    Satellite satellite = new Satellite("GPS0", 5);
 
     MiddlewareGisInterface gisInterface = new MiddlewareGisInterfaceImplementation(new MiddlewareGisProcessorStub());
     assertEquals(satellite.getSatelliteName(), gisInterface.receiveGpsSignalStrengthUc1(satellite));
@@ -29,7 +29,7 @@ public class MiddlewareGisInterfaceImplementationTests {
   @Test
   @DisplayName("Signal pass successful from interface to Display")
   void passSignalStrengthUc2() {
-    Satellite satellite = new Satellite();
+    Satellite satellite = new Satellite("GPS0", 5);
 
     MiddlewareGisInterface gisInterface = new MiddlewareGisInterfaceImplementation(new MiddlewareGisProcessorStub());
     assertEquals(satellite.getSatelliteName(), gisInterface.receiveGpsSignalStrengthUc2(satellite));    

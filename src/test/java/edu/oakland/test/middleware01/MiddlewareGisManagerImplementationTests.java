@@ -31,8 +31,8 @@ public class MiddlewareGisManagerImplementationTests {
   @Test
   @DisplayName("Evaluate Signal Strength")
   void isGpsSignalStrengthEvaluated() {
-    Satellite satellite = new Satellite();
-    DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
+    Satellite satellite = new Satellite("GPS0", 5);
+    DatabaseGisInterface stub = new DatabaseGisInterfaceStub();
 
     MiddlewareGisManager gisManager = new MiddlewareGisManagerImplementation(stub);
     assertEquals(satellite.getSatelliteName(), gisManager.receiveGpsSignalStrength(satellite));
@@ -41,26 +41,29 @@ public class MiddlewareGisManagerImplementationTests {
   @Test
   @DisplayName("Determine mode")
   void isCorrectModeEntered() {
-    Satellite satelliteSignal = new Satellite();
-    DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
-
+    Satellite satelliteSignal = new Satellite("GPS0", 5);
+    Satellite satelliteSignal2 = new Satellite("", 5);
+    DatabaseGisInterface stub = new DatabaseGisInterfaceStub();
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+    String name = satelliteSignal.getSatelliteName();
+    String name2 = satelliteSignal2.getSatelliteName();
+
+    String datapoint = stub.receiveNextSatRequest(name);
+    String datapoint2 = stub.receiveNextSatRequest(name2);
+
     assertEquals(man.evaluateGpsSignalStrength(true), stub.receiveModeRequest("normal"));
-    assertEquals(man.evaluateGpsSignalStrength(false), stub.receiveModeRequest("degraded"));
-    assertEquals(man.evaluateGpsSignalStrength(true), stub.receiveModeRequest("stand by"));
-    /* String datapoint = stub.receiveNextSatRequest(satelliteSignal.getSatelliteName());
-    if (datapoint.equals("")){
-      databaseGisInterface.receiveModeRequest("stand by");
-    } else {
-      databaseGisInterface.receiveModeRequest("degraded");
-    }  */
+    if (datapoint.equals("")) {
+      assertEquals(man.evaluateGpsSignalStrength(false), stub.receiveModeRequest("stand by"));
+    } else if (datapoint2.equals("GPS0")) {
+      assertEquals(man.evaluateGpsSignalStrength(false), stub.receiveModeRequest("degraded"));
+    }
   }
 
   @Test
   @DisplayName("Select new GPS")
   void selectNewGps() {
-    Satellite satellite = new Satellite();
-    DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
+    Satellite satellite = new Satellite("GPS0", 5);
+    DatabaseGisInterface stub = new DatabaseGisInterfaceStub();
     String nextSat = stub.receiveNextSatRequest(satellite.getSatelliteName());
     MiddlewareGisManager gisManager = new MiddlewareGisManagerImplementation(stub);
     assertEquals(satellite.getSatelliteName(), nextSat);

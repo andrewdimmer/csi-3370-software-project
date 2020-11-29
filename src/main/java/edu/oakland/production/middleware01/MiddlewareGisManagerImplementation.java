@@ -26,10 +26,10 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
    *
    */
   public MiddlewareGisManagerImplementation(DatabaseGisInterface databaseGisInterface) {
+    this.databaseGisInterface = databaseGisInterface;
     if (this.databaseGisInterface == null) {
       throw new IllegalArgumentException("database cannot be null");
     }
-    this.databaseGisInterface = databaseGisInterface;
   }
 
   /**
@@ -63,16 +63,19 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
   public String evaluateGpsSignalStrength(boolean signalValid) {
     if (signalValid == true) {
       databaseGisInterface.receiveModeRequest("normal");
-      return "";
+      return "normal";
     } else {
       String name = satelliteSignal.getSatelliteName();
       String datapoint = databaseGisInterface.receiveNextSatRequest(name);
+      
       if (datapoint.equals("")) {
         databaseGisInterface.receiveModeRequest("stand by");
+        return "stand by";
       } else {
         databaseGisInterface.receiveModeRequest("degraded");
-      }  
-      return satelliteSignal.getSatelliteName();
-    }          
+        return "degraded";
+      }
+    }
+    //return satelliteSignal.getSatelliteName();        
   }
 }
