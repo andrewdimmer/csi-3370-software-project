@@ -17,19 +17,19 @@ import org.junit.jupiter.api.Test;
 public class MiddlewareGisManagerImplementationTests {
 
   @Test
-  @DisplayName("")
+  @DisplayName("Check if the data point is null")
   void nullLocationDataPointNotStored() {
     
   }
 
   @Test
-  @DisplayName("")
+  @DisplayName("Check if lock is regained")
   void isGpsLockRegained() {
 
   }
 
   @Test
-  @DisplayName("")
+  @DisplayName("Evaluate Signal Strength")
   void isGpsSignalStrengthEvaluated() {
     Satellite satellite = new Satellite();
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
@@ -39,7 +39,7 @@ public class MiddlewareGisManagerImplementationTests {
   }
 
   @Test
-  @DisplayName("")
+  @DisplayName("Determine mode")
   void isCorrectModeEntered() {
     Satellite satelliteSignal = new Satellite();
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
@@ -57,7 +57,7 @@ public class MiddlewareGisManagerImplementationTests {
   }
 
   @Test
-  @DisplayName("")
+  @DisplayName("Select new GPS")
   void selectNewGps() {
     Satellite satellite = new Satellite();
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
@@ -67,7 +67,7 @@ public class MiddlewareGisManagerImplementationTests {
   }
 
   @Test
-  @DisplayName("Check if manager is not null")
+  @DisplayName("Check if DatabaseGISInterface is not null")
   void databaseInterfaceIsNotNull() {
     assertThrows(IllegalArgumentException.class, () -> {
       new DatabaseGisInterfaceImplementation(null);
