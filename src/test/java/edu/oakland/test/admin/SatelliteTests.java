@@ -98,14 +98,14 @@ public class SatelliteTests {
   @DisplayName("Get Location 0 is Correct")
   void getLocation0IsCorrect() {
     LocationDataPoint thePoint = generateRandomLocationDataPoint();
-    int x = generateRandomXY();
-    int y = generateRandomXY();
+    int x = generateRandomXAndY();
+    int y = generateRandomXAndY();
     Satellite.satelliteInit(x, y, thePoint);
     int strength = generateRandomStrength();
     int rndStrLength = generateRandomStringLength();
     String name = generateRandomString(rndStrLength);
-    Satellite theSatellite = new Satellite(name, strength);//last test
-    LocationDataPoint outputPoint = theSatellite.getLocation();//last test
+    Satellite theSatellite = new Satellite(name, strength);
+    LocationDataPoint outputPoint = theSatellite.getLocation();
     System.out.println(thePoint.getLat());
     System.out.println(outputPoint.getLat());
     assertEquals(thePoint.getLat(), outputPoint.getLat(), .001);
@@ -117,8 +117,8 @@ public class SatelliteTests {
   @DisplayName("Get Location 1 is Correct") 
   void getLocation1IsCorrect() {
     LocationDataPoint thePoint = generateRandomLocationDataPoint();
-    int x = generateRandomXY();
-    int y = generateRandomXY();
+    int x = generateRandomXAndY();
+    int y = generateRandomXAndY();
     Satellite.satelliteInit(x, y, thePoint);
     int strength = generateRandomStrength();
     int rndStrLength = generateRandomStringLength();
@@ -126,8 +126,8 @@ public class SatelliteTests {
     Satellite theSatellite = new Satellite(name, strength);
     LocationDataPoint outputPointOne = theSatellite.getLocation();
     LocationDataPoint outputPointFinal = theSatellite.getLocation();
-    assertEquals(thePoint.getLat(), outputPointFinal.getLat(),.001);
-    assertEquals(thePoint.getLng(), outputPointFinal.getLng(),.001);
+    assertEquals(thePoint.getLat(), outputPointFinal.getLat(), .001);
+    assertEquals(thePoint.getLng(), outputPointFinal.getLng(), .001);
     assertEquals(thePoint.getTime(), outputPointFinal.getTime());
   }
   
@@ -135,7 +135,7 @@ public class SatelliteTests {
     return (int) ((Math.random() * (10 - 1)) + 1); //Random int from 1 to 10
   }
 
-  private int generateRandomXY() {
+  private int generateRandomXAndY() {
     return (int) ((Math.random() * (100 + 100)) - 100);
   }
 
@@ -144,11 +144,11 @@ public class SatelliteTests {
   }
 
   private int generateLessThanOne() {
-    return (int) (Math.random() * (0 - Integer.MIN_VALUE)) + Integer.MIN_VALUE; //Random int from 0 to biggest negative int
+    return (int) (Math.random() * (0 - Integer.MIN_VALUE)) + Integer.MIN_VALUE;
   }
 
   private int generateMoreThanTen() {
-    return (int) (Math.random() * (Integer.MAX_VALUE - 11)) + 11; //Random int from 11 to biggest positive int
+    return (int) (Math.random() * (Integer.MAX_VALUE - 11)) + 11;
   }
 
   private String generateRandomString(int length) { //Make a random string for Satellite Name
@@ -156,26 +156,26 @@ public class SatelliteTests {
     String alphabet = "abcdefghijklmnopqrstuvwxyz";
     char [] rndString = new char[length];
 
-    for (int i = 0; i < length ; i++) { //Create array of characters for desired length
-      rndString[i] = alphabet.charAt(random.nextInt(alphabet.length())); //Pick a random letter of my chosen alphabet and add it to the char array
+    for (int i = 0 ; i < length ; i++) { //Create array of characters for desired length
+      rndString[i] = alphabet.charAt(random.nextInt(alphabet.length())); 
     }
     
     String createdString = new String(rndString);
     return createdString;
   }
 
-private LocationDataPoint generateRandomLocationDataPoint() {
-  return new LocationDataPoint(
-    (float) (Math.random() * 180 - 90),
-    (float) (Math.random() * 360 - 180),
-    LocalDateTime.of(
-    (int) (Math.random() * 50 + 1970),
-    (int) (Math.random() * 12 + 1),
-    (int) (Math.random() * 28 + 1),
-    (int) (Math.random() * 24),
-    (int) (Math.random() * 60)
-    )
-  );
+  private LocationDataPoint generateRandomLocationDataPoint() {
+    return new LocationDataPoint(
+      (float) (Math.random() * 180 - 90),
+      (float) (Math.random() * 360 - 180),
+      LocalDateTime.of(
+        (int) (Math.random() * 50 + 1970),
+        (int) (Math.random() * 12 + 1),
+        (int) (Math.random() * 28 + 1),
+        (int) (Math.random() * 24),
+        (int) (Math.random() * 60)
+      )
+    );
   }
  
 }

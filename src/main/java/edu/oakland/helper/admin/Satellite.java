@@ -4,7 +4,7 @@ import edu.oakland.helper.admin.LocationDataPoint;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 
-  public class Satellite {
+public class Satellite {
   private String satelliteName;
   private int strength;
   private static float incrementLatAmount;
