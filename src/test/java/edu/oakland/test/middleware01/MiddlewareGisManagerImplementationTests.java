@@ -44,10 +44,10 @@ public class MiddlewareGisManagerImplementationTests {
     Satellite satelliteSignal = new Satellite();
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
 
-    MiddlewareGisManager gisManager = new DatabaseGisInterfaceImplementation(stub);
-    assertEquals(gisManager.evaluateGpsSignalStrength(true), stub.receiveModeRequest("normal"));
-    assertEquals(gisManager.evaluateGpsSignalStrength(false), stub.receiveModeRequest("degraded"));
-    assertEquals(gisManager.evaluateGpsSignalStrength(true), stub.receiveModeRequest("stand by"));
+    MiddlewareGisManager man = new DatabaseGisInterfaceImplementation(stub);
+    assertEquals(man.evaluateGpsSignalStrength(true), stub.receiveModeRequest("normal"));
+    assertEquals(man.evaluateGpsSignalStrength(false), stub.receiveModeRequest("degraded"));
+    assertEquals(man.evaluateGpsSignalStrength(true), stub.receiveModeRequest("stand by"));
     /* String datapoint = stub.receiveNextSatRequest(satelliteSignal.getSatelliteName());
     if (datapoint.equals("")){
       databaseGisInterface.receiveModeRequest("stand by");
