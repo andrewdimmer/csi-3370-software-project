@@ -203,7 +203,7 @@ public class SatelliteTests {
   }
 
   private int generateLessThanOne() {
-    return (int) (Math.random() * (0 - Integer.MIN_VALUE)) + Integer.MIN_VALUE;
+    return (int) (Math.random() * (0 - Integer.MIN_VALUE));
   }
 
   private int generateMoreThanTen() {
