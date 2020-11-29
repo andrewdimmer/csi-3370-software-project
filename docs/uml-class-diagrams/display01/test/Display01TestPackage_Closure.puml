@@ -4,4 +4,12 @@ package edu.oakland.test.display01 {
     
 }
 
+!include DisplayGpsInterfaceImplementationTests/DisplayGpsInterfaceImplementationTests_Closure.puml
+!include DisplayGpsReceiverImplementationTests/DisplayGpsReceiverImplementationTests_Closure.puml
+!include DisplayGpsManagerImplementationTests/DisplayGpsManagerImplementationTests_Closure.puml
+!include SatelliteSignalCheckRequestTests/SatelliteSignalCheckRequestTests_Closure.puml
+!include DisplayGpsReceiverStub/DisplayGpsReceiverStub_Closure.puml
+!include DisplayGpsManagerStub/DisplayGpsManagerStub_Closure.puml
+!include MiddlewareGisInterfaceStub/MiddlewareGisInterfaceStub_Closure.puml
+
 @enduml

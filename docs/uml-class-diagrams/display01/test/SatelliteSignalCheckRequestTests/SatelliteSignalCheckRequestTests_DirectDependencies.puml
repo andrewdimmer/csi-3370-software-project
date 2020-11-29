@@ -1,0 +1,16 @@
+@startuml SatelliteSignalCheckRequestTests_DirectDependencies
+
+!startsub DISPLAY01_TEST
+!include SatelliteSignalCheckRequestTests.puml
+!endsub
+
+!startsub DISPLAY01
+!include ../../helper/SatelliteSignalCheckRequest/SatelliteSignalCheckRequest.puml
+SatelliteSignalCheckRequestTests ..> SatelliteSignalCheckRequest
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

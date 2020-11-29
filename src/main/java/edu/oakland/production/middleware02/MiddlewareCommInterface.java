@@ -5,5 +5,4 @@ import edu.oakland.helper.admin.TrackData;
 public interface MiddlewareCommInterface {
 
   public TrackData requestRfid(int rfid);
-
 } 

@@ -1,0 +1,19 @@
+@startuml MiddlewareCommLinkManagerImplementation_Closure
+
+!startsub MIDDLEWARE02_PRODUCTION
+!include MiddlewareCommLinkManagerImplementation.puml
+
+!include ../MiddlewareCommLinkManager/MiddlewareCommLinkManager_Closure.puml
+MiddlewareCommLinkManagerImplementation .up.|> MiddlewareCommLinkManager
+!endsub
+
+!startsub MIDDLEWARE02
+!include ../../helper/TrackDataCalculator/TrackDataCalculator_Closure.puml
+MiddlewareCommLinkManagerImplementation ..> TrackDataCalculator
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

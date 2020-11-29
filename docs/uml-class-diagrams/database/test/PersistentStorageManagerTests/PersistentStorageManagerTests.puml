@@ -2,7 +2,10 @@
 
 package edu.oakland.test.database {
     class PersistentStorageManagerTests {
-
+        + void readDataInIsDataOut()
+        + void writeDataInIsDataOut()
+        + void correctDeserialization()
+        + void correctSerialization()
     }
 }
 

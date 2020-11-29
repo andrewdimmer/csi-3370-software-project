@@ -1,0 +1,19 @@
+@startuml MiddlewareCommDatabaseInterfaceImplementationTests_Closure
+
+!startsub MIDDLEWARE02_TESTS
+!include MiddlewareCommDatabaseInterfaceImplementationTests.puml
+
+!include ../DatabaseCommInterfaceStub/DatabaseCommInterfaceStub_Closure.puml
+MiddlewareCommDatabaseInterfaceImplementationTests ..> DatabaseCommInterfaceStub
+!endsub
+
+!startsub MIDDLEWARE02
+!include ../../production/MiddlewareCommDatabaseInterfaceImplementation/MiddlewareCommDatabaseInterfaceImplementation_Closure.puml
+MiddlewareCommDatabaseInterfaceImplementationTests ..> MiddlewareCommDatabaseInterfaceImplementation
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

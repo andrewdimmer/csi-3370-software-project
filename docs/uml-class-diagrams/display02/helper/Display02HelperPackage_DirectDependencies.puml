@@ -6,6 +6,9 @@ package edu.oakland.helper.display02 {
 
 !startsub DISPLAY02
 !include Display02HelperPackage_InternalDependencies.puml
+!includesub TrackDataPlotter/TrackDataPlotter_DirectDependencies.puml!DISPLAY02
 !endsub
+
+!includesub TrackDataPlotter/TrackDataPlotter_DirectDependencies.puml!OTHER
 
 @enduml

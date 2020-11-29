@@ -2,7 +2,9 @@
 
 package edu.oakland.test.admin {
     class UserTests {
-
+        + void displayCommInterfaceIsNotNull()
+        + void userInputIsScanInput()
+        + void trackDataIsRequested()
     }
 }
 

@@ -2,7 +2,29 @@
 
 package edu.oakland.test.admin {
     class TrackDataTests {
-        
+        + void pointsOnlyConstructorCourseIs0()
+        + void fullDataConstructorCourseInIsCourseOut()
+        + void pointsOnlyConstructorSpeedIs0()
+        + void fullDataConstructorSpeedInIsSpeedOut()
+        + void pointsOnlyConstructorValidIsFalse()
+        + void fullDataConstructorValidIsTrue()
+        + void pointsOnlyConstructorPointsInArePointsOut()
+        + void fullDataConstructorPointsInArePointsOut()
+        + void statusMessageInIsStatusMessageOut()
+        + void noValidDataViaPointsOnlyConstructor()
+        + void noNullDataViaPointsOnlyConstructor()
+        + void noNullDataViaFullDataConstructor()
+        + void noTooLittleDataViaFullDataConstructor()
+        + void noTooMuchDataViaFullDataConstructor()
+        + void noNegativeSpeedViaFullDataConstructor()
+        + void noNegativeCourseViaFullDataConstructor()
+        + void noTooLargeCourseViaFullDataConstructor()
+        - float generateRandomCourse()
+        - float generateRandomSpeed()
+        - int generateRandomTooSmallArrayLength()
+        - LocationDataPoint[] generateRandomLocationDataPointsArray(int length)
+        - LocationDataPoint generateRandomLocationDataPoint()
+        - String generateRandomString()
     }
 }
 
