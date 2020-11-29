@@ -98,8 +98,8 @@ public class SatelliteTests {
   @DisplayName("Get Location 0 is Correct")
   void getLocation0IsCorrect() {
     LocationDataPoint thePoint = generateRandomLocationDataPoint();
-    int x = generateRandomXAndY();
-    int y = generateRandomXAndY();
+    int x = generateRandomIncrements();
+    int y = generateRandomIncrements();
     Satellite.satelliteInit(x, y, thePoint);
     int strength = generateRandomStrength();
     int rndStrLength = generateRandomStringLength();
@@ -117,8 +117,8 @@ public class SatelliteTests {
   @DisplayName("Get Location 1 is Correct") 
   void getLocation1IsCorrect() {
     LocationDataPoint thePoint = generateRandomLocationDataPoint();
-    int x = generateRandomXAndY();
-    int y = generateRandomXAndY();
+    int x = generateRandomIncrements();
+    int y = generateRandomIncrements();
     Satellite.satelliteInit(x, y, thePoint);
     int strength = generateRandomStrength();
     int rndStrLength = generateRandomStringLength();
@@ -135,7 +135,7 @@ public class SatelliteTests {
     return (int) ((Math.random() * (10 - 1)) + 1); //Random int from 1 to 10
   }
 
-  private int generateRandomXAndY() {
+  private int generateRandomIncrements() {
     return (int) ((Math.random() * (100 + 100)) - 100);
   }
 
@@ -156,7 +156,7 @@ public class SatelliteTests {
     String alphabet = "abcdefghijklmnopqrstuvwxyz";
     char [] rndString = new char[length];
 
-    for (int i = 0 ; i < length ; i++) { //Create array of characters for desired length
+    for (int i = 0; i < length; i++) { //Create array of characters for desired length
       rndString[i] = alphabet.charAt(random.nextInt(alphabet.length())); 
     }
     
