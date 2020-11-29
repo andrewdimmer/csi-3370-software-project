@@ -2,14 +2,14 @@
 
 package edu.oakland.test.middleware02 {
     class MiddlewareCommLinkManagerImplementationTests {
-        + void rfidOffSet()
+        + void rfidDoesNotMatchStopsTestCase()
         + void storeRequestSent()
-        + void emptyTrackData()
-        + void someTrackData()
-        + void enoughTrackData()
+        + void emptyDatabaseReturnsEmptyTrackData()
+        + void notEnoughDataReturnsPartialTrackData()
+        + void enoughTrackDataReturnsFullData()
         + void commDatabaseInterfaceIsNotNull()
         + void gisManagerIsNotNull()
-        + void storedDataCheck()
+        + void storedTrackDataCheck()
     }
 }
 
