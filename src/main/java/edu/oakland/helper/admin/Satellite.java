@@ -44,7 +44,7 @@ public class Satellite {
 
   /**
    * Gets the current signal strength of this satellite in relation to the of the Secure Lock
-   * Tracking System shipping container
+   * Tracking System shipping container.
    *
    * @return The current signal strength.
    */
