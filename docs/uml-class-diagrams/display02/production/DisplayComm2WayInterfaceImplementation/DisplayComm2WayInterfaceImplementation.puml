@@ -2,12 +2,13 @@
 
 package edu.oakland.production.display02 {
     class DisplayComm2WayInterfaceImplementation {
+        - DisplayCommManager manager
         __
+        + DisplayComm2WayInterfaceImplementation(DisplayCommManager manager)
         .. Use Case 1 ..
-        {abstract} + LocationDataPoint passRfidRequest(int rfidNum)
-
-        .. Use Case 2 ..
-
+        + TrackData passRfidRequest(int rfidNum)
+        - void determineUserRequestFormat(int rfidNum)
+        - void receiveRequestFromDisplayCommInterface(int rfidNum)
     }
 }
 

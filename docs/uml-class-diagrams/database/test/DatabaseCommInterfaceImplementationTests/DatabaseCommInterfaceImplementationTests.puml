@@ -2,7 +2,12 @@
 
 package edu.oakland.test.database {
     class DatabaseCommInterfaceImplementationTests {
-
+        + void rfidInIsRfidOut()
+        + void offsetMatchDataPoint()
+        + void offsetMatchTrackData()
+        + void trackDataInIsTrackDataOut()
+        + void modeInIsModeOut()
+        + void databaseCommManagerNotNull()
     }
 }
 

@@ -1,9 +1,11 @@
 @startuml MiddlewareGisProcessorImplementationTests
 
 package edu.oakland.test.middleware01 {
-    class MiddlewareGisProcessorImplementationTests {
-
-    }
+  class MiddlewareGisProcessorImplementationTests {
+    + void isGpsSignalStrengthNull()
+    + void checkValueGpsSignalStrength()
+    + void managerIsNotNull()
+  }
 }
 
 @enduml
