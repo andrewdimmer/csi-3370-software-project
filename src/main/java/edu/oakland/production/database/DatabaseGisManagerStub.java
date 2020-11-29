@@ -2,7 +2,7 @@ package edu.oakland.production.database;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 
-public class DatabaseGisManagerStub implements DatabaseGisManager{
+public class DatabaseGisManagerStub implements DatabaseGisManager {
 
   public String passNextSatRequest(String currentSat) {
     return "";
@@ -17,7 +17,7 @@ public class DatabaseGisManagerStub implements DatabaseGisManager{
   }
 
   public String passModeRequest(String mode) {
-    return null;
+    return "";
   }
 }
 
