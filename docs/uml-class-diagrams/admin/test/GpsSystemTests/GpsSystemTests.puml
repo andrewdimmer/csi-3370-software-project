@@ -4,6 +4,7 @@ package edu.oakland.test.admin {
     class GpsSystemTests {
         + void initDisplayGPSInterfaceNotNull()
         + void initSatelliteNamesNotNull()
+        + void initSatelliteNamesNotEmpty()
         + void gpsSystemsConstructedSuccessfully()
         + void useCase1RunSuccessfully()
         + void uC1ScannerNotNull()
