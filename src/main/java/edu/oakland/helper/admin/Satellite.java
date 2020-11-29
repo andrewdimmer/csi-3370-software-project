@@ -10,14 +10,14 @@ private int strength;
 private static float incrementLatAmount;
 private static float incrementLngAmount;
 private static LocationDataPoint initLocationDataPoint;
-private static int countGetLocationCalls=-1;
+private static int countGetLocationCalls = -1;
 
-  public Satellite(String satName, int str){
+  public Satellite(String satName, int str) {
     if (!strengthIsValid(str)) {
       throw new IllegalArgumentException("Strength must be between one and ten");
     }
-    satelliteName=satName;
-    strength=str;
+    satelliteName = satName;
+    strength = str;
   }
 
   public String getSatelliteName() {
@@ -37,10 +37,10 @@ private static int countGetLocationCalls=-1;
 
   public LocationDataPoint getLocation() {
     countGetLocationCalls++;
-    float lat=generateNewLocationDataPointLat();
-    float lng=generateNewLocationDataPointLng();
-    LocalDateTime time=generateNewLocationDataPointTime();
-    LocationDataPoint thePoint=new LocationDataPoint(lat,lng,time);
+    float lat = generateNewLocationDataPointLat();
+    float lng = generateNewLocationDataPointLng();
+    LocalDateTime time = generateNewLocationDataPointTime();
+    LocationDataPoint thePoint = new LocationDataPoint(lat, lng, time);
     return thePoint;
   }
 
@@ -54,24 +54,24 @@ private static int countGetLocationCalls=-1;
 
   public static void satelliteInit(float incLatA, float incLngA, LocationDataPoint initPoint) {
     System.out.println(initPoint.getLat());
-    incrementLatAmount=incLatA;
-    incrementLngAmount=incLngA;
-    initLocationDataPoint=initPoint;
+    incrementLatAmount = incLatA;
+    incrementLngAmount = incLngA;
+    initLocationDataPoint = initPoint;
   }
 
   private static float generateNewLocationDataPointLat() {
-   float lat=initLocationDataPoint.getLat()+(incrementLatAmount*countGetLocationCalls);
+   float lat = initLocationDataPoint.getLat() + (incrementLatAmount*countGetLocationCalls);
    System.out.println(lat);
    return lat;
   }
 
   private static float generateNewLocationDataPointLng() {
-   float lng=initLocationDataPoint.getLng()+(incrementLngAmount*countGetLocationCalls);
+   float lng = initLocationDataPoint.getLng() + (incrementLngAmount*countGetLocationCalls);
    return lng;
   }
 
   private static LocalDateTime generateNewLocationDataPointTime() {
-   LocalDateTime theNewTime=initLocationDataPoint.getTime();
+   LocalDateTime theNewTime = initLocationDataPoint.getTime();
    theNewTime.plusHours(countGetLocationCalls);
    return theNewTime;
   }

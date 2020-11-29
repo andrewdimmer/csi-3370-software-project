@@ -3,56 +3,56 @@ package edu.oakland.test.admin;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import edu.oakland.helper.admin.Satellite;
 import edu.oakland.helper.admin.LocationDataPoint;
-import java.time.LocalDateTime;
+import edu.oakland.helper.admin.Satellite;
 import java.lang.IllegalArgumentException;
+import java.time.LocalDateTime;
+import java.util.Random;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import java.util.Random;
 
 @DisplayName("Satellite Unit Tests")
-public class SatelliteTests{
+public class SatelliteTests { 
 
 
   @Test
   @DisplayName("Satellite Name In Is Satellite Name Out")
   void satNameInIsSatNameOut() {
-    int strength=generateRandomStrength();
-    int rndStrLength=generateRandomStringLength();
-    String name=generateRandomString(rndStrLength); //For simplicity, string size in test will be from 1 to 20. chosen randomly
-    Satellite theSatellite=new Satellite(name, strength);
-    assertEquals(name,theSatellite.getSatelliteName());
+    int strength = generateRandomStrength();
+    int rndStrLength = generateRandomStringLength();
+    String name = generateRandomString(rndStrLength); //For simplicity, string size in test will be from 1 to 20. chosen randomly
+    Satellite theSatellite = new Satellite(name, strength);
+    assertEquals(name, theSatellite.getSatelliteName());
   }
 
   @Test
   @DisplayName("Strength in is Strength Out for Constructor")
   void strengthInIsStrengthOutConstructor() {
-    int strength=generateRandomStrength();
-    int rndStrLength=generateRandomStringLength();
-    String name=generateRandomString(rndStrLength);
-    Satellite theSatellite=new Satellite(name, strength);
-    assertEquals(strength,theSatellite.getStrength());
+    int strength = generateRandomStrength();
+    int rndStrLength = generateRandomStringLength();
+    String name = generateRandomString(rndStrLength);
+    Satellite theSatellite = new Satellite(name, strength);
+    assertEquals(strength, theSatellite.getStrength());
   }
 
 
   @Test
   @DisplayName("Strength in is Strength Out Setter")
   void strengthInIsStrengthOutSetter() {
-    int strength=generateRandomStrength();
-    int rndStrLength=generateRandomStringLength();
-    String name=generateRandomString(rndStrLength);
-    Satellite theSatellite=new Satellite(name, strength);
-    int newStrength=generateRandomStrength();
+    int strength = generateRandomStrength();
+    int rndStrLength = generateRandomStringLength();
+    String name = generateRandomString(rndStrLength);
+    Satellite theSatellite = new Satellite(name, strength);
+    int newStrength = generateRandomStrength();
     theSatellite.setStrength(newStrength);
-    assertEquals(newStrength,theSatellite.getStrength());
+    assertEquals(newStrength, theSatellite.getStrength());
   }
 
   @Test
   @DisplayName("Strength Not Less Than One Constructor")
   void strengthNotLessThanOneConstructor() {
-    int rndStrLength=generateRandomStringLength();
-    String name=generateRandomString(rndStrLength);
+    int rndStrLength = generateRandomStringLength();
+    String name = generateRandomString(rndStrLength);
     assertThrows(IllegalArgumentException.class, () -> {
     new Satellite(name, generateLessThanOne());
   });
@@ -61,8 +61,8 @@ public class SatelliteTests{
   @Test
   @DisplayName("Strength Is Not More Than 10 Constructor")
   void strengthNotMoreThanTenConstructor() {
-    int rndStrLength=generateRandomStringLength();
-    String name=generateRandomString(rndStrLength);
+    int rndStrLength = generateRandomStringLength();
+    String name = generateRandomString(rndStrLength);
     assertThrows(IllegalArgumentException.class, () -> {
     new Satellite(name, generateMoreThanTen());
   });
@@ -71,12 +71,12 @@ public class SatelliteTests{
   @Test
   @DisplayName("Strength is Not Less Than One Setter")
   void strengthNotLessThanOneSetter() {
-    int strength=generateRandomStrength();
-    int rndStrLength=generateRandomStringLength();
-    String name=generateRandomString(rndStrLength);
-    Satellite theSatellite=new Satellite(name, strength);
+    int strength = generateRandomStrength();
+    int rndStrLength = generateRandomStringLength();
+    String name = generateRandomString(rndStrLength);
+    Satellite theSatellite = new Satellite(name, strength);
     assertThrows(IllegalArgumentException.class, () -> {
-    int newStrength=generateLessThanOne();
+    int newStrength = generateLessThanOne();
     theSatellite.setStrength(newStrength);
   });
   }
@@ -84,12 +84,12 @@ public class SatelliteTests{
   @Test
   @DisplayName("Strength is Not More Than Ten Setter")
   void strengthNotMoreThanTenSetter() {
-    int strength=generateRandomStrength();
-    int rndStrLength=generateRandomStringLength();
-    String name=generateRandomString(rndStrLength);
-    Satellite theSatellite=new Satellite(name, strength);
+    int strength = generateRandomStrength();
+    int rndStrLength = generateRandomStringLength();
+    String name = generateRandomString(rndStrLength);
+    Satellite theSatellite = new Satellite(name, strength);
     assertThrows(IllegalArgumentException.class, () -> {
-    int newStrength=generateMoreThanTen();
+    int newStrength = generateMoreThanTen();
     theSatellite.setStrength(newStrength);
   });
   }
@@ -97,18 +97,18 @@ public class SatelliteTests{
   @Test
   @DisplayName("Get Location 0 is Correct")
   void getLocation0IsCorrect() {
-    LocationDataPoint thePoint=generateRandomLocationDataPoint();
-    int x=generateRandomXY();
-    int y=generateRandomXY();
+    LocationDataPoint thePoint = generateRandomLocationDataPoint();
+    int x = generateRandomXY();
+    int y = generateRandomXY();
     Satellite.satelliteInit(x, y, thePoint);
-    int strength=generateRandomStrength();
-    int rndStrLength=generateRandomStringLength();
-    String name=generateRandomString(rndStrLength);
-    Satellite theSatellite=new Satellite(name, strength);//last test
-    LocationDataPoint outputPoint=theSatellite.getLocation();//last test
+    int strength = generateRandomStrength();
+    int rndStrLength = generateRandomStringLength();
+    String name = generateRandomString(rndStrLength);
+    Satellite theSatellite = new Satellite(name, strength);//last test
+    LocationDataPoint outputPoint = theSatellite.getLocation();//last test
     System.out.println(thePoint.getLat());
     System.out.println(outputPoint.getLat());
-    assertEquals(thePoint.getLat(),outputPoint.getLat(),.001);
+    assertEquals(thePoint.getLat(), outputPoint.getLat(), .001);
     //assertEquals(thePoint.getLng(),outputPoint.getLng(),.001);
     //assertEquals(thePoint.getTime(),outputPoint.getTime());
   }
@@ -116,19 +116,19 @@ public class SatelliteTests{
   @Test
   @DisplayName("Get Location 1 is Correct") 
   void getLocation1IsCorrect() {
-    LocationDataPoint thePoint=generateRandomLocationDataPoint();
-    int x=generateRandomXY();
-    int y=generateRandomXY();
+    LocationDataPoint thePoint = generateRandomLocationDataPoint();
+    int x = generateRandomXY();
+    int y = generateRandomXY();
     Satellite.satelliteInit(x, y, thePoint);
-    int strength=generateRandomStrength();
-    int rndStrLength=generateRandomStringLength();
-    String name=generateRandomString(rndStrLength);
-    Satellite theSatellite=new Satellite(name, strength);
-    LocationDataPoint outputPointOne=theSatellite.getLocation();
-    LocationDataPoint outputPointFinal=theSatellite.getLocation();
-    assertEquals(thePoint.getLat(),outputPointFinal.getLat(),.001);
-    assertEquals(thePoint.getLng(),outputPointFinal.getLng(),.001);
-    assertEquals(thePoint.getTime(),outputPointFinal.getTime());
+    int strength = generateRandomStrength();
+    int rndStrLength = generateRandomStringLength();
+    String name = generateRandomString(rndStrLength);
+    Satellite theSatellite = new Satellite(name, strength);
+    LocationDataPoint outputPointOne = theSatellite.getLocation();
+    LocationDataPoint outputPointFinal = theSatellite.getLocation();
+    assertEquals(thePoint.getLat(), outputPointFinal.getLat(),.001);
+    assertEquals(thePoint.getLng(), outputPointFinal.getLng(),.001);
+    assertEquals(thePoint.getTime(), outputPointFinal.getTime());
   }
   
   private int generateRandomStrength() {
@@ -152,15 +152,15 @@ public class SatelliteTests{
   }
 
   private String generateRandomString(int length) { //Make a random string for Satellite Name
-    Random random=new Random();
-    String alphabet="abcdefghijklmnopqrstuvwxyz";
-    char [] rndString=new char[length];
+    Random random = new Random();
+    String alphabet = "abcdefghijklmnopqrstuvwxyz";
+    char [] rndString = new char[length];
 
     for (int i = 0; i < length ; i++) { //Create array of characters for desired length
       rndString[i] = alphabet.charAt(random.nextInt(alphabet.length())); //Pick a random letter of my chosen alphabet and add it to the char array
     }
     
-    String createdString=new String(rndString);
+    String createdString = new String(rndString);
     return createdString;
   }
 
