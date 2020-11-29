@@ -3,8 +3,8 @@ package edu.oakland.test.middleware01;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import edu.oakland.helper.admin.Satellite;
 import edu.oakland.helper.admin.LocationDataPoint;
+import edu.oakland.helper.admin.Satellite;
 import edu.oakland.production.middleware01.MiddlewareGisManager;
 import edu.oakland.production.middleware01.MiddlewareGisProcessor;
 import edu.oakland.production.middleware01.MiddlewareGisProcessorImplementation;
