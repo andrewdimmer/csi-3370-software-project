@@ -18,7 +18,7 @@ public class TrackDataTests {
   @Test
   @DisplayName("Points-Only Constructor Course Direction Is 0")
   void pointsOnlyConstructorCourseIs0() {
-    int length = generateRandomLength();
+    int length = generateRandomTooSmallArrayLength();
     TrackData trackData = new TrackData(generateRandomLocationDataPointsArray(length));
     assertEquals(0, trackData.getCourseDirection(), .001);
   }
@@ -38,7 +38,7 @@ public class TrackDataTests {
   @Test
   @DisplayName("Points-Only Constructor Speed Is 0")
   void pointsOnlyConstructorSpeedIs0() {
-    int length = generateRandomLength();
+    int length = generateRandomTooSmallArrayLength();
     TrackData trackData = new TrackData(generateRandomLocationDataPointsArray(length));
     assertEquals(0, trackData.getSpeed(), .001);
   }
@@ -58,7 +58,7 @@ public class TrackDataTests {
   @Test
   @DisplayName("Points-Only Constructor Valid is False")
   void pointsOnlyConstructorValidIsFalse() {
-    int length = generateRandomLength();
+    int length = generateRandomTooSmallArrayLength();
     TrackData trackData = new TrackData(generateRandomLocationDataPointsArray(length));
     assertFalse(trackData.isValid());
   }
@@ -77,7 +77,7 @@ public class TrackDataTests {
   @Test
   @DisplayName("Points-Only Constructor Points In are Points Out")
   void pointsOnlyConstructor() {
-    int length = generateRandomLength();
+    int length = generateRandomTooSmallArrayLength();
     LocationDataPoint[] points = generateRandomLocationDataPointsArray(length);
     TrackData trackData = new TrackData(points);
     assertEquals(points, trackData.getLocationDataPoints());
@@ -103,7 +103,7 @@ public class TrackDataTests {
         generateRandomCourse(),
         generateRandomSpeed()
     );
-    String message = "Test";
+    String message = generateRandomString();
     trackData.setStatusMessage(message);
     assertEquals(message, trackData.getStatusMessage());
   }
@@ -141,7 +141,7 @@ public class TrackDataTests {
   void noTooLittleDataViaFullDataConstructor() {
     assertThrows(IllegalArgumentException.class, () -> {
       new TrackData(
-          generateRandomLocationDataPointsArray(generateRandomLength()),
+          generateRandomLocationDataPointsArray(generateRandomTooSmallArrayLength()),
           generateRandomCourse(),
           generateRandomSpeed()
       );
@@ -153,7 +153,7 @@ public class TrackDataTests {
   void noTooMuchDataViaFullDataConstructor() {
     assertThrows(IllegalArgumentException.class, () -> {
       new TrackData(
-          generateRandomLocationDataPointsArray(generateRandomLength() + 6),
+          generateRandomLocationDataPointsArray(generateRandomTooSmallArrayLength() + 6),
           generateRandomCourse(),
           generateRandomSpeed()
       );
@@ -189,7 +189,7 @@ public class TrackDataTests {
   void noTooLargeCourseViaFullDataConstructor() {
     assertThrows(IllegalArgumentException.class, () -> {
       new TrackData(
-          generateRandomLocationDataPointsArray(generateRandomLength() + 6),
+          generateRandomLocationDataPointsArray(5),
           generateRandomCourse() + 360,
           generateRandomSpeed()
       );
@@ -204,7 +204,7 @@ public class TrackDataTests {
     return (float) (Math.random() * 30);
   }
 
-  private int generateRandomLength() {
+  private int generateRandomTooSmallArrayLength() {
     return (int) (Math.random() * 5);
   }
 
@@ -228,5 +228,13 @@ public class TrackDataTests {
         (int) (Math.random() * 60)
       )
     );
+  }
+
+  private String generateRandomString() {
+    char[] randomString = new char[(int) (Math.random() * 256)];
+    for (int index = 0; index < length ; index++) {
+      randomString[index] = (int) (Math.random() * (127 - 32) + 32)
+    }
+    return new String(randomString);
   }
 }
