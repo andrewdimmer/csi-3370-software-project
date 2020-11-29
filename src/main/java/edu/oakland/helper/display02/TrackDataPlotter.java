@@ -1,5 +1,8 @@
 package edu.oakland.helper.display02;
 
+//include jfreechart-1.0.19.jar
+//include jcommon-1.0.23.jar
+
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.helper.admin.LocationDataPoint;
 
@@ -25,10 +28,18 @@ public class TrackDataPlotter extends JFrame{
     float[] lng = extractLngFromTrackData(data);
     XYSeries dataPoints = getTrackData();
     XYSeries dataLine = calculateLine();
-    isValidTrackData = data.isValidTrackData();
-    //where is data instanciated?
+    isValidTrackData = data.isValid();
+
+
   }
   public void displayPlotter(){
+    // TrackDataPlotter example = new TrackDataPlotter(TrackData);
+    // example.setSize(800, 400);
+    // example.setLocationRelativeTo(null);
+    // example.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+    // example.setVisible(true);\
+    //or place in constructor
+
     //Scatter Plot
     JFreeChart plotChart = ChartFactory.createScatterPlot(
     "Track Data Plot",
@@ -53,6 +64,8 @@ public class TrackDataPlotter extends JFrame{
   }
   private XYSeries calculateLine(int[] x, int[] y){
 
+
+
   }
   private float[] extractLatFromTrackData(TrackData data){
     LocationDataPoint[] points = data.getLocationDataPoints();
@@ -66,9 +79,9 @@ public class TrackDataPlotter extends JFrame{
     LocationDataPoint[] points = data.getLocationDataPoints();
     float[] lngNum = [];
     for(i < points.length){
-      latNum[i]= points[i].getLat();
+      lngNum[i]= points[i].getLng();
     }
-    return latNum;
+    return lngNum;
   }
 
 }
