@@ -205,7 +205,7 @@ public class TrackDataTests {
   }
 
   private int generateRandomLength() {
-      return (int) (Math.random() *5);
+    return (int) (Math.random() * 5);
   }
 
   private LocationDataPoint[] generateRandomLocationDataPointsArray(int length) {

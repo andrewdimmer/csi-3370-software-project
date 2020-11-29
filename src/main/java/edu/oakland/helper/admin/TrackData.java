@@ -46,7 +46,7 @@ public class TrackData {
     if (courseDirection < 0) {
       throw new IllegalArgumentException("courseDirection cannot be negative");
     }
-    if (points.length > 360) {
+    if (courseDirection > 360) {
       throw new IllegalArgumentException("courseDirection must be less than 360 degrees");
     }
 
