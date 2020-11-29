@@ -11,10 +11,6 @@ public class DatabaseGisInterfaceClass {
     manager = m;
   }
 
-  public DatabaseGisInterfaceClass(DatabaseGisManagerStub m) {
-
-  }
-
   public void receiveStoreRequest(LocationDataPoint locationDataPoint) {
     manager.passStoreRequest(locationDataPoint);
   }
