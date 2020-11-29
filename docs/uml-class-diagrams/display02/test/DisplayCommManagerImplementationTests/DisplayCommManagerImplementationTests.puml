@@ -2,7 +2,8 @@
 
 package edu.oakland.test.display02 {
     class DisplayCommManagerImplementationTests {
-
+        + void rfidInIsRfidOut()
+        + void middlewareIsNotNull()
     }
 }
 
