@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="216px" preserveAspectRatio="none" style="width:474px;height:216px;" version="1.1" viewBox="0 0 474 216" width="474px" zoomAndPan="magnify"><defs><filter height="300%" id="fo0yuagdrv84c" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[def9027c776d62015452659d5d6059fb]
+cluster edu.oakland.test.middleware02--><polygon fill="#FFFFFF" filter="url(#fo0yuagdrv84c)" points="22,24,277,24,284,46.2969,452,46.2969,452,204,22,204,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="284" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="249" x="26" y="38.9951">edu.oakland.test.middleware02</text><!--MD5=[e3f4175480349659b88084d56af4bbf1]
+class DatabaseCommInterfaceStub--><rect fill="#FEFECE" filter="url(#fo0yuagdrv84c)" height="128.8281" id="DatabaseCommInterfaceStub" style="stroke: #A80036; stroke-width: 1.5;" width="398" x="38" y="59"/><ellipse cx="140.75" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M143.7188,80.6406 Q143.1406,80.9375 142.5,81.0781 Q141.8594,81.2344 141.1563,81.2344 Q138.6563,81.2344 137.3281,79.5938 Q136.0156,77.9375 136.0156,74.8125 Q136.0156,71.6875 137.3281,70.0313 Q138.6563,68.375 141.1563,68.375 Q141.8594,68.375 142.5,68.5313 Q143.1563,68.6875 143.7188,68.9844 L143.7188,71.7031 Q143.0938,71.125 142.5,70.8594 Q141.9063,70.5781 141.2813,70.5781 Q139.9375,70.5781 139.25,71.6563 Q138.5625,72.7188 138.5625,74.8125 Q138.5625,76.9063 139.25,77.9844 Q139.9375,79.0469 141.2813,79.0469 Q141.9063,79.0469 142.5,78.7813 Q143.0938,78.5 143.7188,77.9219 L143.7188,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="184" x="161.25" y="79.1543">DatabaseCommInterfaceStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="435" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="435" y1="99" y2="99"/><ellipse cx="49" cy="126.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="156" x="58" y="130.0151">int receiveGetRfidRequest()</text><ellipse cx="49" cy="139.6094" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="372" x="58" y="142.8198">LocationDataPoint receiveGetLocationDataPointRequest(int offset)</text><ellipse cx="49" cy="152.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="284" x="58" y="155.6245">TrackData receiveGetTrackDataRequest(int offset)</text><ellipse cx="49" cy="165.2188" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="283" x="58" y="168.4292">void storeTrackDataRequest(TrackData trackData)</text><ellipse cx="49" cy="178.0234" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="183" x="58" y="181.2339">String receiveGetModeRequest()</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39" x2="204" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="204" y="116.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="270" x2="435" y1="113.4023" y2="113.4023"/><!--MD5=[3cf02d49763b936c4c15d4cd165184f8]
+@startuml DatabaseCommInterfaceStub
+
+package edu.oakland.test.middleware02 {
+    class DatabaseCommInterfaceStub {
+        __
+        .. Use Case 1 ..
+        {abstract} + int receiveGetRfidRequest()
+        {abstract} + LocationDataPoint receiveGetLocationDataPointRequest(int offset)
+        {abstract} + TrackData receiveGetTrackDataRequest(int offset)
+        {abstract} + void storeTrackDataRequest(TrackData trackData)
+        {abstract} + String receiveGetModeRequest()
+    }
+}
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

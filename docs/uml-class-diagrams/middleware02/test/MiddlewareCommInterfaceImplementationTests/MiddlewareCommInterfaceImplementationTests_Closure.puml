@@ -1,0 +1,19 @@
+@startuml MiddlewareCommInterfaceImplementationTests_Closure
+
+!startsub MIDDLEWARE02_TEST
+!include MiddlewareCommInterfaceImplementationTests.puml
+
+!include ../MiddlewareCommLinkManagerStub/MiddlewareCommLinkManagerStub_Closure.puml
+MiddlewareCommInterfaceImplementationTests ..> MiddlewareCommLinkManagerStub
+!endsub
+
+!startsub MIDDLEWARE02
+!include ../../production/MiddlewareCommInterfaceImplementation/MiddlewareCommInterfaceImplementation_Closure.puml
+MiddlewareCommInterfaceImplementationTests ..> MiddlewareCommInterfaceImplementation
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml Display02Packages_Closure
+
+!include production/Display02ProductionPackage_Closure.puml
+!include test/Display02TestPackage_Closure.puml
+!include helper/Display02HelperPackage_Closure.puml
+
+@enduml

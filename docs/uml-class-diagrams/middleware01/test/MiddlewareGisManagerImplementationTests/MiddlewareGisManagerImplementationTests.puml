@@ -2,8 +2,8 @@
 
 package edu.oakland.test.middleware01 {
   class MiddlewareGisManagerImplementationTests {
-    + void isGpsSignalStrengthReceived()
-    + void isLocationDataPointStored()
+    + void locationDataPointStoredIsOneReceived()
+    + void nullLocationDataPointNotStored()
     + void isGpsLockRegained()
     + void isGpsSignalStrengthEvaluate()
     + void isDegradedModeEntered()

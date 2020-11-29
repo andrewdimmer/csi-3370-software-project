@@ -2,7 +2,23 @@
 
 package edu.oakland.test.admin {
     class LocationDataPointTests {
-        
+        + void validLatInIsLatOut()
+        + void crossNorthPole()
+        + void crossSouthPole()
+        + void crossCrossPolesMultipleTimesGoingNorth()
+        + void crossCrossPolesMultipleTimesGoingSouth()
+        + void validLngInIsLngOut()
+        + void crossAntimeridianWestToEast()
+        + void crossAntimeridianEastToWest()
+        + void crossAntimeridianWestToEastMultipleTimes()
+        + void crossAntimeridianEastToWestMultipleTimes()
+        + void timeInIsTimeOut()
+        + void nullTimeNotAllowed()
+        - float generateRandomLat()
+        - float generateRandomLng()
+        - float generateRandomLatNoEdgeCases()
+        - float generateRandomLngNoEdgeCases()
+        - LocalDateTime generateRandomTime()
     }
 }
 
