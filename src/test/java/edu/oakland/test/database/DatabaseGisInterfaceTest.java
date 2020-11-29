@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.production.database.DatabaseGisInterfaceImplementation;
-import edu.oakland.production.database.DatabaseGisManagerStub;
+
 import java.time.LocalDateTime;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

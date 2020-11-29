@@ -1,6 +1,7 @@
-package edu.oakland.production.database;
+package edu.oakland.test.database;
 
 import edu.oakland.helper.admin.LocationDataPoint;
+import edu.oakland.production.database.DatabaseGisManager;
 
 public class DatabaseGisManagerStub implements DatabaseGisManager {
 
