@@ -34,7 +34,7 @@ public class MiddlewareGisManagerImplementationTests {
     Satellite satellite = new Satellite();
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
 
-    MiddlewareGisManager gisManager = new DatabaseGisInterfaceImplementation(stub);
+    MiddlewareGisManager gisManager = new MiddlewareGisManagerImplementation(stub);
     assertEquals(satellite.getSatelliteName(), gisManager.receiveGpsSignalStrength(satellite));
   }
 
@@ -44,7 +44,7 @@ public class MiddlewareGisManagerImplementationTests {
     Satellite satelliteSignal = new Satellite();
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
 
-    MiddlewareGisManager man = new DatabaseGisInterfaceImplementation(stub);
+    MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
     assertEquals(man.evaluateGpsSignalStrength(true), stub.receiveModeRequest("normal"));
     assertEquals(man.evaluateGpsSignalStrength(false), stub.receiveModeRequest("degraded"));
     assertEquals(man.evaluateGpsSignalStrength(true), stub.receiveModeRequest("stand by"));
@@ -62,15 +62,15 @@ public class MiddlewareGisManagerImplementationTests {
     Satellite satellite = new Satellite();
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
     String nextSat = stub.receiveNextSatRequest(satellite.getSatelliteName());
-    MiddlewareGisManager gisManager = new DatabaseGisInterfaceImplementation(stub);
-    assertEquals(satellite.getSatelliteName(), name);
+    MiddlewareGisManager gisManager = new MiddlewareGisManagerImplementation(stub);
+    assertEquals(satellite.getSatelliteName(), nextSat);
   }
 
   @Test
   @DisplayName("Check if DatabaseGISInterface is not null")
   void databaseInterfaceIsNotNull() {
     assertThrows(IllegalArgumentException.class, () -> {
-      new DatabaseGisInterfaceImplementation(null);
+      new MiddlewareGisManagerImplementation(null);
     });
   }
 }

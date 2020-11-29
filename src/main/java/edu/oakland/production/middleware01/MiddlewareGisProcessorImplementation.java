@@ -23,6 +23,7 @@ public class MiddlewareGisProcessorImplementation implements MiddlewareGisProces
     boolean signal = isStrongEnough(satelliteSignal.getStrength());
     return middlewareGisManager.evaluateGpsSignalStrength(signal);
   }
+  
   private boolean isStrongEnough(int strength) {
     return strength >= 1 && strength <= 10;
   }
