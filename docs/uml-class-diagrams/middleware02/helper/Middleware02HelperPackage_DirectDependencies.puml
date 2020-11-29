@@ -6,6 +6,9 @@ package edu.oakland.helper.middleware02 {
 
 !startsub MIDDLEWARE02
 !include Middleware02HelperPackage_InternalDependencies.puml
+!includesub TrackDataCalculator/TrackDataCalculator_DirectDependencies.puml!MIDDLEWARE02
 !endsub
+
+!includesub TrackDataCalculator/TrackDataCalculator_DirectDependencies.puml!OTHER
 
 @enduml

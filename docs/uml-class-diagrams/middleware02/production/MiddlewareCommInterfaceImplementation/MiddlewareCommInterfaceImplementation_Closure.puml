@@ -1,0 +1,18 @@
+@startuml MiddlewareCommInterfaceImplementation_Closure
+
+!startsub MIDDLEWARE02_PRODUCTION
+!include MiddlewareCommInterfaceImplementation.puml
+
+!include ../MiddlewareCommInterface/MiddlewareCommInterface_Closure.puml
+MiddlewareCommInterfaceImplementation .up.|> MiddlewareCommInterface
+!endsub
+
+!startsub MIDDLEWARE02
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

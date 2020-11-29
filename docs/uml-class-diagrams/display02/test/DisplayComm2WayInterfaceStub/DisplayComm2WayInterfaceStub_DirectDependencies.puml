@@ -1,0 +1,16 @@
+@startuml DisplayComm2WayInterfaceStub_DirectDependencies
+
+!startsub DISPLAY02_TEST
+!include DisplayComm2WayInterfaceStub.puml
+!endsub
+
+!startsub DISPLAY02
+!include ../../production/DisplayComm2WayInterface/DisplayComm2WayInterface.puml
+DisplayComm2WayInterfaceStub .up.|> DisplayComm2WayInterface
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

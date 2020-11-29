@@ -2,7 +2,20 @@
 
 package edu.oakland.test.database {
     class DatabasePersistentStorageImplementationTests {
-
+        + void rfidDataInIsRfidDataOut()
+        + void offsetMatchDataPoint()
+        + void locationDataPointInIsDataPointOut()
+        + void offsetMatchTrackData()
+        + void trackDataInIsTrackDataOut()
+        + void readModeInIsModeOut()
+        + void writeModeInIsModeOut()
+        + void currentSatMatchNextSat()
+        + void cannotStoreNullLocationDataPoint()
+        + void cannotStoreNullTrackData()
+        + void locationDataPointOffsetOutOfBoundsReturnsNull()
+        + void trackDataOffsetOutOfBoundsReturnsNull()
+        + void nonexistentSatelliteNameReturnsEmptyNext()
+        + void lastSatelliteNameInListReturnsEmptyNext()
     }
 }
 

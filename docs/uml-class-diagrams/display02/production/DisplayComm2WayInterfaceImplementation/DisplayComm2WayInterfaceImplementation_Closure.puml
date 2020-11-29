@@ -1,0 +1,18 @@
+@startuml DisplayComm2WayInterfaceImplementation_Closure
+
+!startsub DISPLAY02_PRODUCTION
+!include DisplayComm2WayInterfaceImplementation.puml
+
+!include ../DisplayComm2WayInterface/DisplayComm2WayInterface_Closure.puml
+DisplayComm2WayInterfaceImplementation .up.|> DisplayComm2WayInterface
+!endsub
+
+!startsub DISPLAY02
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml
