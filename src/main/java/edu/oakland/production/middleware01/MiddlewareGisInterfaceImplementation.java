@@ -8,7 +8,6 @@ import edu.oakland.production.middleware01.MiddlewareGisProcessor;
  * This class shall recieve that GPS signal from display and pass it to GIS processor.
  *
  */
-
 public class MiddlewareGisInterfaceImplementation implements MiddlewareGisInterface {
 
   private MiddlewareGisProcessor middlewareGisProcessor;
