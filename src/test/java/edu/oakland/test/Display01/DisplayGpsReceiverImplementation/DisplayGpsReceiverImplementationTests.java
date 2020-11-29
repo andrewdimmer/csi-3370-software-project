@@ -15,10 +15,9 @@ public class DisplayGpsReceiverImplementationTests {
     @DisplayName ("Measure GPS Signal Strength")
     public void measureGpsSignalStrength(Satellite satelliteSignal){
         Satellite signal = satelliteSignal;
-        int i = ((Integer)signal).intValue();
+        int i = signal.getStrength();
         if (i > 4){
-            DisplayGpsManagerImplementation manager = new DisplayGpsManagerImplementation(Satellite signal){
-            }
+            DisplayGpsManagerImplementation manager = new DisplayGpsManagerImplementation(Satellite signal);
         }
         else if(i <= 4){
             displayGpsReceiverIsNotNull();
