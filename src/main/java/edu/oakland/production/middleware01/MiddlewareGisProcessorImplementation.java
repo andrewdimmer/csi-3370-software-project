@@ -37,7 +37,7 @@ public class MiddlewareGisProcessorImplementation implements MiddlewareGisProces
   }
 
   /**
-   * Measures the Gps Signal Strength
+   * Measures the Gps Signal Strength.
    *
    * @return The Signal Strength.
    */
