@@ -13,7 +13,7 @@ package edu.oakland.test.admin {
         + void satellietNamesNotNull()
         + void incrementalLatAmountNotNull()
         + void incrementLngAmountNotNull()
-        + void LocationDataPointNotNull()
+        + void initLocationDataPointNotNull()
         + void configureSatellitesRunSuccessfully()
         - String generateRandomNames()
         - LocationDataPoint makeRandomLDP()
