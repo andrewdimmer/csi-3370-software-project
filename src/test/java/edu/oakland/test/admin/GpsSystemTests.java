@@ -8,6 +8,8 @@ import java.time.LocalDateTime;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import edu.oakland.production.admin.GpsSystem;
+
 @DisplayName("GpsSystem Unit Tests")
 public class GpsSystemTests {
 
