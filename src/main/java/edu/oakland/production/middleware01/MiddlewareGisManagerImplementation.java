@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
  * or attempt to regain GPS lock and evaluate the signal strength.
  *
  * @author Julia Wang, Brenda Morquecho, Pujan Shah, Stan Barczak, Martin Hughes, 
- * Y Duong, Syed Hayat, Talha Memon, Steven Naoum
+ *  Y Duong, Syed Hayat, Talha Memon, Steven Naoum
  * @version %I%, %G%
  */
 
