@@ -10,7 +10,6 @@ package edu.oakland.test.admin {
         + void uC1ScannerNotNull()
         + void useCase2RunSuccessfully()
         + void uC2ScannerNotNull()
-        + void satellietNamesNotNull()
         + void incrementalLatAmountNotNull()
         + void incrementLngAmountNotNull()
         + void initLocationDataPointNotNull()
