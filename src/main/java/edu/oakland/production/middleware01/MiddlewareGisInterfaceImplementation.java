@@ -1,7 +1,7 @@
 package edu.oakland.production.middleware01;
 
-import edu.oakland.production.middleware01.MiddlewareGisInterface;
 import edu.oakland.helper.admin.Satellite;
+import edu.oakland.production.middleware01.MiddlewareGisInterface;
 
 /**
  * This class shall recieve that GPS signal from display and pass it to GIS processor.
@@ -18,7 +18,7 @@ public class MiddlewareGisInterfaceImplementation implements MiddlewareGisInterf
    * @param middlewareGisProcessor  The class that this class will pass the Satellite signal to.
    *
    */
-  public MiddlewareGisInterfaceImplementation(MiddlewareGisProcessor middlewareGisProcessor){
+  public MiddlewareGisInterfaceImplementation(MiddlewareGisProcessor middlewareGisProcessor) {
     this.middlewareGisProcessor = middlewareGisProcessor;
     if (this.middlewareGisProcessor == null) {
       throw new IllegalArgumentException("processor cannot be null");

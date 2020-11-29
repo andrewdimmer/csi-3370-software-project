@@ -16,5 +16,6 @@ public class DatabaseGisInterfaceStub implements DatabaseGisInterface {
 
   public String receiveNextSatRequest(String currentSat) {
     return currentSat;
-  } 
+  }
+  
 }

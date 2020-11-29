@@ -5,11 +5,11 @@ import edu.oakland.production.middleware01.MiddlewareGisProcessor;
 
 public class MiddlewareGisProcessorStub implements MiddlewareGisProcessor {
     
-  public String evaluateGpsSignalStrength(Satellite satelliteSignal){
+  public String evaluateGpsSignalStrength(Satellite satelliteSignal) {
     return satelliteSignal.getSatelliteName();      
   }
 
-  public String measureGpsSignalStrength(Satellite satelliteSignal){
+  public String measureGpsSignalStrength(Satellite satelliteSignal) {
     return satelliteSignal.getSatelliteName();
   }
 
