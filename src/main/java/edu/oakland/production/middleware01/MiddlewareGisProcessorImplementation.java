@@ -20,8 +20,7 @@ public class MiddlewareGisProcessorImplementation implements MiddlewareGisProces
   }
 
   public String measureGpsSignalStrength(Satellite satelliteSignal) {
-    // UNCOMMENT LATER int signal = satelliteSignal.strengthIsValid(satelliteSignal.getStrength());
-    int signal = 5;
+    boolean signal = satelliteSignal.strengthIsValid(satelliteSignal.getStrength());
     return middlewareGisManager.evaluateGpsSignalStrength(signal);
   }   
 }
