@@ -76,7 +76,7 @@ public class TrackDataTests {
 
   @Test
   @DisplayName("Points-Only Constructor Points In are Points Out")
-  void pointsOnlyConstructor() {
+  void pointsOnlyConstructorPointsInArePointsOut() {
     int length = generateRandomTooSmallArrayLength();
     LocationDataPoint[] points = generateRandomLocationDataPointsArray(length);
     TrackData trackData = new TrackData(points);
@@ -85,7 +85,7 @@ public class TrackDataTests {
 
   @Test
   @DisplayName("Full-Data Constructor Points In are Points Out")
-  void fullDataConstructor() {
+  void fullDataConstructorPointsInArePointsOut() {
     LocationDataPoint[] points = generateRandomLocationDataPointsArray(5);
     TrackData trackData = new TrackData(
         points,
