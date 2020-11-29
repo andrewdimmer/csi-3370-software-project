@@ -4,4 +4,6 @@ package edu.oakland.helper.middleware02 {
     
 }
 
+!includesub TrackDataCalculator/TrackDataCalculator_DirectDependencies.puml!MIDDLEWARE02_HELPER
+
 @enduml

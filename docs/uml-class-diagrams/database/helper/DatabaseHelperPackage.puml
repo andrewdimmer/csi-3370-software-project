@@ -1,7 +1,7 @@
 @startuml DatabaseHelperPackage
 
 package edu.oakland.helper.database {
-
+    
 }
 
 !include PersistentStorageManager/PersistentStorageManager.puml

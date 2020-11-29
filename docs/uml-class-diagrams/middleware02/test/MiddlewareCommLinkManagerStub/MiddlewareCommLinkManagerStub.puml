@@ -1,0 +1,11 @@
+@startuml MiddlewareCommLinkManagerStub
+
+package edu.oakland.test.middleware02 {
+    class MiddlewareCommLinkManagerStub {
+        __
+        .. Use Case 1 ..
+        + TrackData parseRfid(int rfid)
+    }
+}
+
+@enduml

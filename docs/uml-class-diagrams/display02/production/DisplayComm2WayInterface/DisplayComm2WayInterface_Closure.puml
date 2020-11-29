@@ -1,0 +1,15 @@
+@startuml DisplayComm2WayInterface_Closure
+
+!startsub DISPLAY02_PRODUCTION
+!include DisplayComm2WayInterface.puml
+!endsub
+
+!startsub DISPLAY02
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

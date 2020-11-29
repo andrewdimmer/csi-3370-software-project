@@ -2,7 +2,24 @@
 
 package edu.oakland.test.admin {
     class SatelliteTests {
-        
+       + void satNameInIsSatNameOut()
+       + void strengthInIsStrengthOutConstructor()
+       + void strengthInIsStrengthOutSetter()
+       + void getLocation0IsCorrect()
+       + void getLocation1IsCorrect()
+       + void getLocationNIsCorrect()
+       + void getLocationAcrossMultipleObjectsInSync()
+       + void strengthNotLessThanOneConstructor()
+       + void strengthNotMoreThanTenConstructor()
+       + void strengthNotLessThanOneSetter()
+       + void strengthNotMoreThanTenSetter()
+       - int generateRandomStrength()
+       - float generateRandomIncrements()
+       - int generateRandomStringLength()
+       - int generateLessThanOne()
+       - int generateMoreThanTen()
+       - String generateRandomString(int length)
+       - LocationDataPoint generateRandomLocationDataPoint()
     }
 }
 

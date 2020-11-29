@@ -1,0 +1,19 @@
+@startuml DisplayComm2WayInterfaceImplementationTests_Closure
+
+!startsub DISPLAY02_TEST
+!include DisplayComm2WayInterfaceImplementationTests.puml
+
+!include ../DisplayCommManagerStub/DisplayCommManagerStub_Closure.puml
+DisplayComm2WayInterfaceImplementationTests ..> DisplayCommManagerStub
+!endsub
+
+!startsub DISPLAY02
+!include ../../production/DisplayComm2WayInterfaceImplementation/DisplayComm2WayInterfaceImplementation_Closure.puml
+DisplayComm2WayInterfaceImplementationTests ..> DisplayComm2WayInterfaceImplementation
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

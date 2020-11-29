@@ -1,0 +1,11 @@
+@startuml TrackDataCalculator
+
+package edu.oakland.helper.middleware02 {
+    class TrackDataCalculator {
+        {static} + float calculateSpeed(LocationDataPoint[] locationDataPoints)
+        {static} + float calculateDirection(LocationDataPoint[] locationDataPoints)
+        {static} - LocationDataPoint[] calculateRootMeanSquared(LocationDataPoint[] locationDataPoints)
+    }
+}
+
+@enduml

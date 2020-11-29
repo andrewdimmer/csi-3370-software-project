@@ -2,11 +2,12 @@
 
 package edu.oakland.production.display02 {
     class DisplayCommInterfaceImplementation {
+        - DisplayComm2WayInterface receiver
         __
+        + DisplayCommInterface(DisplayComm2WayInterface receiver)
         .. Use Case 1 ..
-
-        .. Use Case 2 ..
-
+        + TrackData receiveRfidRequest(int rfidNum)
+        - TrackData passToComm2WayInterface(int rfidNum)
     }
 }
 

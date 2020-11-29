@@ -1,0 +1,19 @@
+@startuml MiddlewareCommDatabaseInterfaceImplementationTests_DirectDependencies
+
+!startsub MIDDLEWARE02_TEST
+!include MiddlewareCommDatabaseInterfaceImplementationTests.puml
+
+!include ../DatabaseCommInterfaceStub/DatabaseCommInterfaceStub.puml
+MiddlewareCommDatabaseInterfaceImplementationTests ..> DatabaseCommInterfaceStub
+!endsub
+
+!startsub MIDDLEWARE02
+!include ../../production/MiddlewareCommDatabaseInterfaceImplementation/MiddlewareCommDatabaseInterfaceImplementation.puml
+MiddlewareCommDatabaseInterfaceImplementationTests ..> MiddlewareCommDatabaseInterfaceImplementation
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml
