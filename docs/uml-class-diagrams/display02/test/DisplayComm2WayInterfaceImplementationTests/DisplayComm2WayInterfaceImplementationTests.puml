@@ -3,7 +3,7 @@
 package edu.oakland.test.display02 {
     class DisplayComm2WayInterfaceImplementationTests {
         + void rfidInIsRfidOut()
-        + void returnIsOfTypeTrackData()
+        + void displayCommManagerIsNotNull()
     }
 }
 
