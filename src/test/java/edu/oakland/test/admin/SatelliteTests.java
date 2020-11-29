@@ -104,11 +104,11 @@ public class SatelliteTests {
     int strength = generateRandomStrength();
     int rndStrLength = generateRandomStringLength();
     String name = generateRandomString(rndStrLength);
-    Satellite theSatellite = new Satellite("Test", 8); //(name, strength);
+    Satellite theSatellite = new Satellite(name, strength);
     LocationDataPoint outputPoint = theSatellite.getLocation();
     assertEquals(thePoint.getLat(), outputPoint.getLat(), .001);
-    assertEquals(thePoint.getLng(),outputPoint.getLng(),.001);
-    assertEquals(thePoint.getTime(),outputPoint.getTime());
+    assertEquals(thePoint.getLng(), outputPoint.getLng(), .001);
+    assertEquals(thePoint.getTime(), outputPoint.getTime());
   }
   
   @Test

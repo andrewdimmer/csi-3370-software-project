@@ -45,11 +45,7 @@ public class Satellite {
   }
 
   private boolean strengthIsValid(int str) {
-    if (str < 1 || str > 10) {
-      return false;
-    } else {
-      return true;
-    }
+    return str >= 1 && str <= 10;
   }
 
   public static void satelliteInit(float incLatA, float incLngA, LocationDataPoint initPoint) {
