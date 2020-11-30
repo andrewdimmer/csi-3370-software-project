@@ -1,18 +1,17 @@
 package edu.oakland.production.database;
 
 import edu.oakland.helper.admin.LocationDataPoint;
-import edu.oakland.production.database.DatabaseGisManager;
 
 public class DatabaseGisInterfaceImplementation {
 
   DatabaseGisManager manager;
+
   /**
    * Creates an database interface to middleware
    * to provide methods for managing GIS info.
    *
    * @param m an instance of the DatabaseGisManagerImplementation class.
    */
-
   public DatabaseGisInterfaceImplementation(DatabaseGisManager m) {
     if (m == null) {
       throw new IllegalArgumentException("manager cannot be null");

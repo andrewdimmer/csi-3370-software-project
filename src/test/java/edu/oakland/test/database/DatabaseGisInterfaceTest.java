@@ -27,9 +27,8 @@ public class DatabaseGisInterfaceTest {
         (int) (Math.random() * 24),
         (int) (Math.random() * 60)
     ));
-    int i = 0;
     dgi.receiveStoreRequest(ldp);
-    assertEquals(ldp, dgms.getLocationDataPoint(i));
+    assertEquals(ldp, dgms.getLocationDataPoint());
   }
 
   @Test
