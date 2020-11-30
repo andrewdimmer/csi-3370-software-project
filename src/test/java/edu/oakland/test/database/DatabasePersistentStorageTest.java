@@ -2,9 +2,10 @@ package edu.oakland.test.database;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabasePersistentStorage;
@@ -50,7 +51,8 @@ public class DatabasePersistentStorageTest {
     int random = (int) (Math.random() * 60);
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
-    DatabasePersistentStorageImplementation dpsc = new DatabasePersistentStorageImplementation(random, 
+    DatabasePersistentStorageImplementation dpsc = new DatabasePersistentStorageImplementation(
+        random, 
         locDataPoint, 
         trackData, 
         randomArray
@@ -71,10 +73,10 @@ public class DatabasePersistentStorageTest {
     );
 
     // rand from 1 to 5.
-    int random_int = (int)(Math.random() * (5 - 1 + 1) + 1); 
+    int randomInt = (int) (Math.random() * (5 - 1 + 1) + 1); 
     ArrayList<LocationDataPoint> locDataPointList = new ArrayList<LocationDataPoint>();
     
-    for(int i=0;i<=random_int; i++){
+    for (int i=0; i <= randomInt; i++) {
 
         LocationDataPoint ldpData = new LocationDataPoint(0, 0, LocalDateTime.of(
           (int) (Math.random() * 50 + 1970),
@@ -90,7 +92,7 @@ public class DatabasePersistentStorageTest {
     }
 
 
-    assertEquals(locDataPointList.get(random_int), dpsc.getLocationDataPoint(random_int));
+    assertEquals(locDataPointList.get(randomInt), dpsc.getLocationDataPoint(randomInt));
   }
 
   @Test
@@ -123,10 +125,10 @@ public class DatabasePersistentStorageTest {
     );
 
     // rand from 1 to 5.
-    int random_int = (int)(Math.random() * (5 - 1 + 1) + 1); 
+    int randomInt = (int) (Math.random() * (5 - 1 + 1) + 1); 
     ArrayList<TrackData> trackDataList = new ArrayList<TrackData>();
 
-    for(int i=0;i<=random_int; i++){
+    for (int i=0; i <= randomInt; i++) {
 
         float course = generateRandomCourse();
         TrackData trackDataPointSample = new TrackData(
@@ -140,7 +142,7 @@ public class DatabasePersistentStorageTest {
 
     }
 
-    assertEquals(trackDataList.get(random_int), dpsc.getTrackData(random_int));
+    assertEquals(trackDataList.get(randomInt), dpsc.getTrackData(randomInt));
     
   }
 
