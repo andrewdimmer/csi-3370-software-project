@@ -7,6 +7,7 @@ import edu.oakland.test.admin.DisplayGpsInterfaceStub;
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.helper.admin.LocationDataPoint;
 
+
 /**
  * A production class to contain the GPS system object and satellites, as well as iniate UC2 when the SLTS loses lock on GPS.
  *
@@ -27,7 +28,8 @@ public class GpsSystem {
    *
    */
   public GpsSystem(DisplayGpsInterfaceStub displayGpsInterface, String[] satelliteNames) {
-
+	  satellites = new Satellite[10];
+	  
   }
 
 }

@@ -9,6 +9,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import edu.oakland.production.admin.GpsSystem;
+import edu.oakland.test.admin.DisplayGpsInterfaceStub;
 
 @DisplayName("GpsSystem Unit Tests")
 public class GpsSystemTests {
