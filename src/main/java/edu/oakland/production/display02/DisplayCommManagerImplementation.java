@@ -33,7 +33,7 @@ public class DisplayCommManagerImplementation implements DisplayCommManager {
   *
   * @return the TrackData
   */
-  public TrackData receiveRfid(int rfid) {
+  public TrackData evaluateRfidRequest(int rfid) {
     return middleware.requestRfid(rfid);
   }
 }
