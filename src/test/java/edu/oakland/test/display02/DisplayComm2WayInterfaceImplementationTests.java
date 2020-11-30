@@ -1,9 +1,10 @@
 package edu.oakland.test.display02;
 
-import edu.oakland.production.display02.DisplayComm2WayInterface;
-import edu.oakland.production.display02.DisplayCommManager;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import edu.oakland.production.display02.DisplayComm2WayInterface;
+import edu.oakland.production.display02.DisplayCommManager;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
