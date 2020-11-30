@@ -49,12 +49,19 @@ public class DatabasePersistentStorageClass {
     return rfidData;
   }
 
+  /**
+   * Returns a locationpoint point.
+   * after providing the offset.
+   *
+   * @param offset the offset (int) of the data needed
+   */
+
   public LocationDataPoint getLocationDataPoint(int offset) {
 
-  	// If we have a trackdata of length 4 for example, then the offset can not be more than 3 so we use length-1
-  	if (offset > this.locDataPoint.size()-1) {
-  		// throw new IndexOutOfBoundsException("Offset " + offset + " is out of bounds!");
-     return null;
+    // If trackdata has size of length 4 , then the offset can not be > 3 so we use size-1
+    if (offset > this.locDataPoint.size() - 1) {
+      // throw new IndexOutOfBoundsException("Offset " + offset + " is out of bounds!");
+      return null;
     }
 
   	return this.locDataPoint.get(offset);
