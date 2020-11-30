@@ -5,7 +5,7 @@ import edu.oakland.helper.admin.TrackData;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class DatabasePersistentStorageClass {
+public class DatabasePersistentStorageImplementation implements DatabasePersistentStorage {
 
   int rfidData;
   ArrayList<LocationDataPoint> locDataPoint = new ArrayList<LocationDataPoint>();
