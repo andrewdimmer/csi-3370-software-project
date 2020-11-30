@@ -80,9 +80,9 @@ public class DatabasePersistentStorageTest {
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
     DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
-      locDataPoint, 
-      trackData, 
-      randomArray
+        locDataPoint, 
+        trackData, 
+        randomArray
     );
     int i = 0;
     dpsc.storeLocationDataPoint(ldp);
@@ -96,7 +96,7 @@ public class DatabasePersistentStorageTest {
     
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
-  	DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
         locDataPoint, 
         trackData, 
         randomArray
@@ -115,7 +115,7 @@ public class DatabasePersistentStorageTest {
     
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
-  	DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
         locDataPoint, 
         trackData, 
         randomArray
