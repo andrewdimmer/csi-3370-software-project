@@ -5,7 +5,10 @@ import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.display02.DisplayCommManager;
 import edu.oakland.production.middleware02.MiddlewareCommInterface;
 
-
+/*
+* Stub Method of MiddlewareCommInterface.
+* Used solely for testing.
+*/
 public class MiddlewareCommInterfaceStub implements MiddlewareCommInterface {
   
   /*
