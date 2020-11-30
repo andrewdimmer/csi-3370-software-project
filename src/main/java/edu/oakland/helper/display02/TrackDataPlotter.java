@@ -70,7 +70,7 @@ public class TrackDataPlotter extends JFrame{
   }
   private XYSeries getTrackData(){
     XYSeries dataPoints = new XYSeries("Locations");
-    for(i < lat.length){
+    for(int i < lat.length; i<=5; i++){
       dataPoints.add(lat[i], lng[i]);
     }
     return dataPoints;
