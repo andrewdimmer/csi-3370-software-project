@@ -4,7 +4,7 @@ import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabaseCommInterface;
 
-public class DatabaseCommInterfaceStub implements DatabaseCommInterface{
+public class DatabaseCommInterfaceStub implements DatabaseCommInterface {
     private int rfid;
     public DatabaseCommInterfaceStub(int rfid){
         this.rfid = rfid;
@@ -15,7 +15,7 @@ public class DatabaseCommInterfaceStub implements DatabaseCommInterface{
     public String receiveGetModeRequest() {
         return null;
     }
-    public void storeTrackDataRequest(TrackData trackData){
+    public void storeTrackDataRequest(TrackData trackData) {
 
     }
     public LocationDataPoint receiveGetLocationDataPointRequest(int offset) {
