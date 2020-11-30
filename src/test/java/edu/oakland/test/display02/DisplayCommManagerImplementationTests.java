@@ -20,7 +20,8 @@ public class DisplayCommManagerImplementationTests {
   @DisplayName("RFID In Is the same as Rfid Out")
   void rfidInIsRfidOut() {
     int rfid = generateRandomRfid();
-    DisplayCommManagerImplementation displayComm = new DisplayCommManagerImplementation(null);
+    MiddlewareCommInterfaceStub testStub = new MiddlewareCommInterfaceStub();
+    DisplayCommManagerImplementation displayComm = new DisplayCommManagerImplementation(testStub);
     displayComm.receiveRfid(rfid);
     assertEquals(rfid, displayComm.rfid);
   }
