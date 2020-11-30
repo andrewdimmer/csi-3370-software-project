@@ -45,6 +45,10 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
     }
   }
 
+  /**
+   * Store the location data point.
+   *
+   */
   public void storeLocationDataPoint() {
     if (locationDataPoint != null) {
       databaseGisInterface.receiveStoreRequest(locationDataPoint);
@@ -61,16 +65,16 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
 
     if (signalValid == true) {
       databaseGisInterface.receiveModeRequest("normal");
-      return "normal";
+      return "";
     } else {
       String name = satellite.getSatelliteName();
       String datapoint = databaseGisInterface.receiveNextSatRequest(name);
       if (datapoint.equals("")) {
         databaseGisInterface.receiveModeRequest("stand by");
-        return "stand by";
+        return "";
       } else {
         databaseGisInterface.receiveModeRequest("degraded");
-        return "degraded";
+        return databaseGisInterface.receiveNextSatRequest(satellite.getSatelliteName());
       }
     }     
   }  

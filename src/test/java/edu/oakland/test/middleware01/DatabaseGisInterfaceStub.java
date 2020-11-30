@@ -6,7 +6,8 @@ import edu.oakland.production.database.DatabaseGisInterface;
 import java.time.LocalDateTime;
 
 public class DatabaseGisInterfaceStub implements DatabaseGisInterface {
-  private LocationDataPoint locationDataPoint = new LocationDataPoint(0.0f, 0.0f, LocalDateTime.now());
+  private LocationDataPoint locationDataPoint = new LocationDataPoint(0, 0, LocalDateTime.now());
+  private String mode;
 
   public void receiveStoreRequest(LocationDataPoint locationDataPoint) {
     this.locationDataPoint = locationDataPoint;
@@ -16,7 +17,11 @@ public class DatabaseGisInterfaceStub implements DatabaseGisInterface {
     return locationDataPoint;
   }
 
-  public String receiveModeRequest(String mode) {
+  public void receiveModeRequest(String mode) {
+    this.mode = mode;
+  }
+
+  public String getMode() {
     return mode;
   }
 
