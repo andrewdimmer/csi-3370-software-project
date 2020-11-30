@@ -9,7 +9,7 @@ public class DatabaseGisManagerStub implements DatabaseGisManager {
   }
 
   public LocationDataPoint getLocationDataPoint(int offset) {
-    return null;
+    return ldp;
   }
 
   public void passStoreRequest(LocationDataPoint locationDataPoint) {
@@ -17,7 +17,7 @@ public class DatabaseGisManagerStub implements DatabaseGisManager {
   }
 
   public String passModeRequest(String mode) {
-    return "normal";
+    return mode;
   }
 }
 
