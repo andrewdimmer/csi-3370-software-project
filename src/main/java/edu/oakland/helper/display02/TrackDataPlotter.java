@@ -26,11 +26,10 @@ public class TrackDataPlotter extends JFrame{
   public TrackDataPlotter(TrackData data){
     private float[] lat = extractLatFromTrackData(data);
     private float[] lng = extractLngFromTrackData(data);
-    private XYSeries dataPoints = getTrackData();
-    private XYSeries fitLine = calculateLine();
+    private XYSeries dataPoints = getTrackData(lat, lng);
+    private XYSeries fitLine = calculateLine(lat, lng);
     private Boolean isValidTrackData = data.isValid();
     private JFreeChart chart = createChart();
-
 
   }
   private JFreeChart createChart(){
@@ -46,32 +45,36 @@ public class TrackDataPlotter extends JFrame{
     JFreeChart plotChart = ChartFactory.createScatterPlot(
     "Track Data Plot",
     "X-Axis", "Y-Axis", dataPoints);
-    ChartPanel panel1 = new ChartPanel(plotChart, 600, 600, 600, 600, 600, 600,
+    ChartPanel panel = new ChartPanel(plotChart, 600, 600, 600, 600, 600, 600,
             true, false, false, false, false, false);
-    setContentPane(panel1);
+      //panel.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
+      add(panel);
+      pack();
+      setTitle("Line chart");
+      XYPlot plot = plotChart.getXYPlot();
+      // Create a renderer and alter how the series are displayed
+      XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
+      renderer.setSeriesLinesVisible(0, false);
+      renderer.setSeriesLinesVisible(1, true);
+      renderer.setSeriesShapesVisible(0, true);
+      renderer.setSeriesShapesVisible(1, false);
+      renderer.setSeriesPaint(0, Color.RED);
+      renderer.setSeriesPaint(1, Color.BLUE);
+      renderer.setSeriesStroke(0, new BasicStroke(2.0f));
+      plot.setDomainGridlinesVisible(true);
+      plot.setDomainGridlinePaint(Color.BLACK);
 
-    XYPlot plot = plotChart.getXYPlot();
-    // Create a renderer and alter how the series are displayed
-    XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
-    renderer.setSeriesLinesVisible(0, false);
-    renderer.setSeriesLinesVisible(1, true);
-    renderer.setSeriesShapesVisible(0, true);
-    renderer.setSeriesShapesVisible(1, false);
-    renderer.setSeriesPaint(0, Color.RED);
-    renderer.setSeriesPaint(1 Color.BLUE);
-    //renderer.setSeriesStroke(1, new BasicStroke(2.0f));
-    plot.setDomainGridlinesVisible(true);
-    plot.setDomainGridlinePaint(Color.BLACK);
-
-    plot.setRenderer(renderer);
-
-    return plotChart;
+      plot.setRenderer(renderer);
+      setLocationRelativeTo(null);
+      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      setVisible(true);
+      return plotChart;
 
   }
-  private XYSeries getTrackData(){
+  public XYSeries getTrackData(int[] x, int[] y){
     XYSeries dataPoints = new XYSeries("Locations");
-    for(i < lat.length){
-      dataPoints.add(lat[i], lng[i]);
+    for(int i = 0; i < x.length; i++){
+      dataPoints.add(x[i], y[i]);
     }
     return dataPoints;
   }
@@ -81,16 +84,27 @@ public class TrackDataPlotter extends JFrame{
       //placeholder for testing
       //fitLine.add(3, 5);
       //fitLine.add(12, 15);
-          float sumOfX = 0;
+      float sumOfX = 0;
       float sumOfY = 0;
       float sumOfXy = 0;
       float sumOfXSquared = 0;
+      float xMin = x[0];
+      float xMax = x[0];
 
       for(int i = 0; i < 5; i++) {
     		sumOfXSquared += x[i] * x[i];
     		sumOfX += x[i];
     	  sumOfXy += x[i] * y[i];
     	  sumOfY += y[i];
+
+    	  if (x[i] < xMin){
+    	    xMin = x[i];
+          }
+
+    	  if (x[i] > xMax){
+    	    xMax = x[i];
+          }
+
     	}
 
       float topHalfOfEquation = 5 * sumOfXy - sumOfX * sumOfY;
@@ -99,13 +113,15 @@ public class TrackDataPlotter extends JFrame{
       float b = (sumOfY - (slope * sumOfX))/ 5;
       //Least Squares Regression = mx+b
 
+      fitLine.add(xMin, slope * xMin + b);
+      fitLine.add(xMax, slope * xMax + b);
+
       return fitLine;
-
-
   }
+
   private float[] extractLatFromTrackData(TrackData data){
     LocationDataPoint[] points = data.getLocationDataPoints();
-    float[] latNum = 5;
+    float[] latNum = new float[5];
     for(int i < points.length; i<=5; i++){
       latNum[i]= points[i].getLat();
     }
@@ -114,27 +130,13 @@ public class TrackDataPlotter extends JFrame{
 
   private float[] extractLngFromTrackData(TrackData data){
     LocationDataPoint[] points = data.getLocationDataPoints();
-    float[] lngNum = 5;
+    float[] lngNum = new float[5];
     for(int i < points.length; i<=5; i++){
       lngNum[i]= points[i].getLng();
     }
     return lngNum;
   }
 
-  public void displayPlot(){
-
-    // Create Panel
-    ChartPanel panel = new ChartPanel(this.chart);
-    setContentPane(panel);
-    chartPanel.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
-    chartPanel.setBackground(Color.white);
-    add(chartPanel);
-    pack();
-    setLocationRelativeTo(null);
-    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    setVisible(true);
-
-  }
 
 
 }
