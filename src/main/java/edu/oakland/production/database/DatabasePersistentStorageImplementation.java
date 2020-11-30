@@ -22,10 +22,22 @@ public class DatabasePersistentStorageImplementation implements DatabasePersiste
    * @param trackData the track data  array list to initialize.
    * @param nextSatellites the string array of satellites.
    */
-  public DatabasePersistentStorageClass(int rfidData, 
+  public DatabasePersistentStorageImplementation(int rfidData, 
       ArrayList<LocationDataPoint> locDataPoint, 
       ArrayList<TrackData> trackData, 
       String[] nextSatellites) {
+
+    if (locDataPoint == null) {
+      throw new IllegalArgumentException("locationDataPoint cannot be null");
+    }
+
+    if (trackData == null) {
+      throw new IllegalArgumentException("trackData cannot be null");
+    }
+
+    if (nextSatellites == null) {
+      throw new IllegalArgumentException("nextSatellites cannot be null");
+    }
 
     this.rfidData = rfidData;
     this.locDataPoint = locDataPoint;
@@ -78,7 +90,7 @@ public class DatabasePersistentStorageImplementation implements DatabasePersiste
       throw new IllegalArgumentException("locationDataPoint cannot be null");
     }
 
-    this.locDataPoint.add(locationDataPoint);
+    this.locDataPoint.add(0, locationDataPoint);
   }
 
   /**
@@ -91,7 +103,7 @@ public class DatabasePersistentStorageImplementation implements DatabasePersiste
   public TrackData getTrackData(int offset) {
     // If we have a td of L=4, then the offset can't be >3 so we use length-1
     if (offset > this.trackData.size() - 1) {
-      return null;
+      return new TrackData(new LocationDataPoint[0]);
     }
 
     return this.trackData.get(offset);
