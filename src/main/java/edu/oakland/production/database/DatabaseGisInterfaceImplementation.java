@@ -6,7 +6,12 @@ import edu.oakland.production.database.DatabaseGisManagerStub;
 public class DatabaseGisInterfaceImplementation {
 
   DatabaseGisManager manager;
-
+  /**
+   * Creates an database interface to middleware
+   * to provide methods for managing GIS info.
+   *
+   * @param manager  an instance of the DatabaseGisManagerImplementation class.
+   */
   public DatabaseGisInterfaceImplementation(DatabaseGisManager m) {
     if (m == null) {
       throw new IllegalArgumentException("manager cannot be null");
