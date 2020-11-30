@@ -5,9 +5,9 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
+import edu.oakland.production.display02.DisplayComm2WayInterface;
 import edu.oakland.production.display02.DisplayCommInterface;
 import edu.oakland.production.display02.DisplayCommInterfaceImplementation;
-import edu.oakland.production.display02.DisplayComm2WayInterface;
 import edu.oakland.test.display02.DisplayComm2WayInterfaceStub;
 import java.lang.IllegalArgumentException;
 import org.junit.jupiter.api.DisplayName;
@@ -22,7 +22,8 @@ public class DisplayCommInterfaceImplementationTests {
   void rfidInIsRfidOut() {
     int rfid = generateRandomRfid();
     DisplayComm2WayInterfaceStub testStub = new DisplayComm2WayInterfaceStub();
-    DisplayCommInterfaceImplementation displayComm = new DisplayCommInterfaceImplementation(testStub);
+    DisplayCommInterfaceImplementation displayComm = 
+    new DisplayCommInterfaceImplementation(testStub);
     assertEquals(rfid, Integer.parseInt(displayComm.receiveRfidRequest(rfid).getStatusMessage()));
 
   }

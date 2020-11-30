@@ -2,8 +2,8 @@ package edu.oakland.production.display02;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
-import edu.oakland.production.display02.DisplayCommInterface;
 import edu.oakland.production.display02.DisplayComm2WayInterface;
+import edu.oakland.production.display02.DisplayCommInterface;
 import java.lang.IllegalArgumentException;
 
 /**
