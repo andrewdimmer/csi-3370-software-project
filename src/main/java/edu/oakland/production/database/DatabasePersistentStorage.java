@@ -5,20 +5,20 @@ import edu.oakland.helper.admin.TrackData;
 
 public interface DatabasePersistentStorage {
 
-  public int locateRfidData() 
+  public int locateRfidData(); 
 
-  public LocationDataPoint getLocationDataPoint(int offset) 
+  public LocationDataPoint getLocationDataPoint(int offset); 
 
-  public void storeLocationDataPoint(LocationDataPoint locationDataPoint) 
+  public void storeLocationDataPoint(LocationDataPoint locationDataPoint); 
     
-  public TrackData getTrackData(int offset) 
+  public TrackData getTrackData(int offset); 
 
-  public void storeTrackData(TrackData trackData) 
+  public void storeTrackData(TrackData trackData); 
   
-  public String getMode() 
+  public String getMode(); 
 
-  public void storeMode(String mode) 
+  public void storeMode(String mode); 
   
-  public String getNextSat(String currentSat) 
+  public String getNextSat(String currentSat); 
 }
 
