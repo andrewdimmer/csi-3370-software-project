@@ -11,8 +11,8 @@ import java.time.LocalDateTime;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Database CommManager Test")
-public class DatabaseCommManagerTest {
+@DisplayName("DatabaseCommManagerImplementation Unit Tests")
+public class DatabaseCommManagerImplementationTest {
 
   @Test
   @DisplayName("rfid going in is Rfid coming Out")
@@ -20,8 +20,9 @@ public class DatabaseCommManagerTest {
 
     int i = 10;
 
-    DatabasePersistentStorageStub dpss = new DatabasePersistentStorageStub();
-    assertEquals(i, dpss.locateRfidData());
+    DatabasePersistentStorageStub dpss = new DatabasePersistentStorageStub(i);
+    DatabaseCommManager dcm = new DatabaseCommManagerImplementation(dpss);
+    assertEquals(i, dcm.passGetRfidRequest());
   }
 
   @Test
@@ -39,9 +40,10 @@ public class DatabaseCommManagerTest {
              (int) (Math.random() * 24),
               (int) (Math.random() * 60)));
 
-    ldp = null;
+    dpss.storeLocationDataPoint(ldp);
     int i = (int) Math.random();
-    assertEquals(ldp, dpss.getLocationDataPoint(i));
+    DatabaseCommManager dcm = new DatabaseCommManagerImplementation(dpss);
+    assertEquals(ldp, dcm.passGetLocationDataPointRequest(i));
   }
 
   @Test
