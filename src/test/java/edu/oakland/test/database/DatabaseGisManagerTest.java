@@ -28,7 +28,7 @@ public class DatabaseGisManagerTest {
         (int) (Math.random() * 60)
     ));
     dgm.passStoreRequest(ldp);
-    assertEquals(ldp, dpss.getLocationDataPoint());
+    assertEquals(ldp, dpss.getLocationDataPoint(int 0));
   }
 
   @Test
