@@ -3,14 +3,25 @@ package edu.oakland.production.database;
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class DatabasePersistentStorageClass {
 
   int rfidData;
   ArrayList<LocationDataPoint> locDataPoint = new ArrayList<LocationDataPoint>();
   ArrayList<TrackData> trackData = new ArrayList<TrackData>();
-  String[] nextSatellites; 
+  String[] nextSatellites;
   String mode;
+
+
+  public DatabasePersistentStorageClass(int rfidData, ArrayList<LocationDataPoint> locDataPoint, ArrayList<TrackData> trackData, String[] nextSatellites){
+    this.rfidData = rfidData;
+    this.locDataPoint = locDataPoint;
+    this.trackData = trackData;
+    this.nextSatellites = nextSatellites;
+    this.mode = "normal";
+  }
+
 
 
   public int locateRfidData() {
@@ -62,10 +73,23 @@ public class DatabasePersistentStorageClass {
     this.mode = mode;
   }
 
-  public String getNextSat(String currentSat) {
-  	return "";
-  }
+ public String getNextSat(String currentSat) {
+    int satArrayLength = this.nextSatellites.length;
+    int posOfCurrentSat = Arrays.asList(this.nextSatellites).indexOf(currentSat);
 
+    boolean found = false;
+    for (String sat : this.nextSatellites) {
+      if(sat == currentSat) found = true;
+    }
+
+    if(!found)return "";
+
+    if(satArrayLength-1 > posOfCurrentSat){
+        return this.nextSatellites[posOfCurrentSat+1];
+    }else{
+        return "";
+    }
+  }
 
 }
 

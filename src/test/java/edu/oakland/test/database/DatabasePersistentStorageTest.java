@@ -11,6 +11,8 @@ import edu.oakland.production.database.DatabasePersistentStorage;
 import edu.oakland.production.database.DatabasePersistentStorageClass;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -18,20 +20,9 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Database PersistentStorage Test")
 public class DatabasePersistentStorageTest {
 
+  String[] randomArray = {"A","B"};
 
-  @Test
-  @DisplayName("RFID data in is RFID data out")
-  void rfidDataInIsRfidDataOut() {
-    //int random = (int) (Math.random() * 60);
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass();
-    assertEquals(0, dpsc.locateRfidData());
-  }
-
-  @Test
-  @DisplayName("offset matches data point")
-  void offsetMatchDataPoint() {
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass();
-    LocationDataPoint ldp = new LocationDataPoint(0, 0, LocalDateTime.of(
+  LocationDataPoint ldp = new LocationDataPoint(0, 0, LocalDateTime.of(
         (int) (Math.random() * 50 + 1970),
         (int) (Math.random() * 12 + 1),
         (int) (Math.random() * 28 + 1),
@@ -39,6 +30,37 @@ public class DatabasePersistentStorageTest {
         (int) (Math.random() * 60)
     ));
 
+
+    float course = generateRandomCourse();
+    TrackData trackDataPoint = new TrackData(
+        generateRandomLocationDataPointsArray(5),
+        course,
+        generateRandomSpeed()
+    );
+
+
+  ArrayList<LocationDataPoint> locDataPoint = new ArrayList<LocationDataPoint>();
+  ArrayList<TrackData> trackData = new ArrayList<TrackData>();
+
+  
+
+  @Test
+  @DisplayName("RFID data in is RFID data out")
+  void rfidDataInIsRfidDataOut() {
+    //int random = (int) (Math.random() * 60);
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
+    assertEquals(0, dpsc.locateRfidData());
+  }
+
+  @Test
+  @DisplayName("offset matches data point")
+  void offsetMatchDataPoint() {
+    
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
     dpsc.storeLocationDataPoint(ldp);
     assertEquals(ldp, dpsc.getLocationDataPoint(0));
   }
@@ -47,14 +69,9 @@ public class DatabasePersistentStorageTest {
   @DisplayName("Location Data Point In Is Data Point Out")
   void locationDataPointInIsDataPointOut() {
   	
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass();
-    LocationDataPoint ldp = new LocationDataPoint(0, 0, LocalDateTime.of(
-        (int) (Math.random() * 50 + 1970),
-        (int) (Math.random() * 12 + 1),
-        (int) (Math.random() * 28 + 1),
-        (int) (Math.random() * 24),
-        (int) (Math.random() * 60)
-    ));
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
     int i = 0;
     dpsc.storeLocationDataPoint(ldp);
     assertEquals(ldp, dpsc.getLocationDataPoint(i));
@@ -64,17 +81,14 @@ public class DatabasePersistentStorageTest {
   @Test
   @DisplayName("Offset matches track data")
   void offsetMatchTrackData() {
-  	DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass();
+    
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+  	DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
 
-  	float course = generateRandomCourse();
-    TrackData trackData = new TrackData(
-        generateRandomLocationDataPointsArray(5),
-        course,
-        generateRandomSpeed()
-    );
 
-    dpsc.storeTrackData(trackData);
-    assertEquals(trackData, dpsc.getTrackData(0));
+    dpsc.storeTrackData(trackDataPoint);
+    assertEquals(trackDataPoint, dpsc.getTrackData(0));
     
   }
 
@@ -82,18 +96,13 @@ public class DatabasePersistentStorageTest {
   @Test
   @DisplayName("Track Data In Is Track Data Out")
   void trackDataInIsTrackDataOut() {
+    
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+  	DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
 
-  	DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass();
-
-  	float course = generateRandomCourse();
-    TrackData trackData = new TrackData(
-        generateRandomLocationDataPointsArray(5),
-        course,
-        generateRandomSpeed()
-    );
-
-    dpsc.storeTrackData(trackData);
-    assertEquals(trackData, dpsc.getTrackData(0));
+    dpsc.storeTrackData(trackDataPoint);
+    assertEquals(trackDataPoint, dpsc.getTrackData(0));
 
 
   }
@@ -101,8 +110,10 @@ public class DatabasePersistentStorageTest {
   @Test
   @DisplayName("read Mode In Is Mode Out")
   void readModeInIsModeOut() {
-
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass();
+    
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
     dpsc.storeMode("normal");
     assertEquals("normal", dpsc.getMode());
   }
@@ -111,7 +122,9 @@ public class DatabasePersistentStorageTest {
   @DisplayName("write Mode In Is Mode Out")
   void writeModeInIsModeOut() {
 
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass();
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
     dpsc.storeMode("normal");
     assertEquals("normal", dpsc.getMode());
   }
@@ -119,14 +132,22 @@ public class DatabasePersistentStorageTest {
   @Test
   @DisplayName("current Satellite matches next satellite")
   void currentSatMatchNextSat() {
-    
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+
+    String[] sampleSatArray = {"Sat1", "Sat2", "Sat3", "Sat4"};
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, sampleSatArray);
+
+    assertEquals("Sat3", dpsc.getNextSat("Sat2"));
   }
 
   @Test
   @DisplayName("cannot store null location data point")
   void cannotStoreNullLocationDataPoint() {
-   
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass();
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
 
     assertThrows(IllegalArgumentException.class, () -> {
       dpsc.storeLocationDataPoint(null);
@@ -137,8 +158,10 @@ public class DatabasePersistentStorageTest {
   @Test
   @DisplayName("cannot store null track data")
   void cannotStoreNullTrackData() {
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
 
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass();
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
 
     assertThrows(IllegalArgumentException.class, () -> {
       dpsc.storeTrackData(null);
@@ -148,15 +171,10 @@ public class DatabasePersistentStorageTest {
   @Test
   @DisplayName("location data point offset out of bounds returns null")
   void locationDataPointOffsetOutOfBoundsReturnsNull() {
-    
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass();
-    LocationDataPoint ldp = new LocationDataPoint(0, 0, LocalDateTime.of(
-        (int) (Math.random() * 50 + 1970),
-        (int) (Math.random() * 12 + 1),
-        (int) (Math.random() * 28 + 1),
-        (int) (Math.random() * 24),
-        (int) (Math.random() * 60)
-    ));
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
     dpsc.storeLocationDataPoint(ldp);
     assertEquals(null, dpsc.getLocationDataPoint(99999));
   }
@@ -164,17 +182,12 @@ public class DatabasePersistentStorageTest {
   @Test
   @DisplayName("track data offset out of bounds returns null")
   void trackDataOffsetOutOfBoundsIsReturnsNull() {
-    
-  	DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass();
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
 
-    float course = generateRandomCourse();
-    TrackData trackData = new TrackData(
-        generateRandomLocationDataPointsArray(5),
-        course,
-        generateRandomSpeed()
-    );
+  	DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
 
-    dpsc.storeTrackData(trackData);
+    dpsc.storeTrackData(trackDataPoint);
     assertEquals(null, dpsc.getTrackData(99999));
 
   }
@@ -182,13 +195,24 @@ public class DatabasePersistentStorageTest {
   @Test
   @DisplayName("nonexistent satellite name returns empty next")
   void nonexistentSatelliteNameReturnsEmptyNext() {
-    
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+
+    String[] sampleSatArray = {"Sat1", "Sat2", "Sat3", "Sat4"};
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, sampleSatArray);
+
+    assertEquals("", dpsc.getNextSat("Sat5"));
   }
 
   @Test
   @DisplayName("last satellite name in list returns empty next")
   void lastSatelliteNameInListReturnsEmptyNext() {
-    
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+
+    String[] sampleSatArray = {"Sat1", "Sat2", "Sat3", "Sat4"};
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, sampleSatArray);
+    assertEquals("", dpsc.getNextSat("Sat4"));
   }
 
 
