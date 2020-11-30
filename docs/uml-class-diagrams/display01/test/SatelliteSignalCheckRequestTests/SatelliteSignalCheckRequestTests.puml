@@ -2,12 +2,12 @@
 
 package edu.oakland.test.display01 {
   class SatelliteSignalCheckRequestTests {
-    + void SatelliteNameInIsSatelliteNameOut()
-    + void CheckTypeInIsCheckTypeOut()
-    + void EmptyNamesNotAllowed()
-    + void EmptyTypesNotAllowed()
-    + void NullNamesNotAllowed()
-    + void NullTypesNotAllowed()
+    + void satelliteNameInIsSatelliteNameOut()
+    + void checkTypeInIsCheckTypeOut()
+    + void emptyNamesNotAllowed()
+    + void emptyTypesNotAllowed()
+    + void nullNamesNotAllowed()
+    + void nullTypesNotAllowed()
   }
 }
 

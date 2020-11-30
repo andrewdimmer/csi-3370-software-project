@@ -15,5 +15,4 @@ public interface DatabaseCommManager {
 
   public String passGetModeRequest();
 
-    
 }
