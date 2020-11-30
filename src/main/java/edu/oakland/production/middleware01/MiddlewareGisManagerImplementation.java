@@ -37,11 +37,18 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
    * @return The name of the Satellite.
    */
   public String receiveGpsSignalStrength(Satellite satelliteSignal) {
-    return satelliteSignal.getSatelliteName();
+    if (isStrongEnough(satelliteSignal.getStrength())) {
+      locationDataPoint = satelliteSignal.getLocation();
+      return "GPS signal was strong enough, saving location data point";
+    } else {
+      return "GPS signal was not strong enough, starting use case 2";
+    }
   }
 
   public void storeLocationDataPoint() {
-    
+    if (locationDataPoint != null) {
+      databaseGisInterface.receiveStoreRequest(locationDataPoint);
+    }
   }
 
   /**
