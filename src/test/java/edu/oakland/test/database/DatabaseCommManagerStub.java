@@ -5,26 +5,26 @@ import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabaseCommManager;
 
 public class DatabaseCommManagerStub implements DatabaseCommManager{
-    int rfid = 10;
-    LocationDataPoint ldp = null;
-    
-    public int passGetRfidRequest(){
-        return rfid;
-    }
+  int rfid = 10;
+  LocationDataPoint ldp = null;
 
-    public LocationDataPoint passGetLocationDataPointRequest(int offset){
-        return ldp;
-    }
+  public int passGetRfidRequest(){
+    return rfid;
+  }
 
-    public TrackData passGetTrackDataRequest(int offset){
-        return null;
-    }
+  public LocationDataPoint passGetLocationDataPointRequest(int offset) {
+    return ldp;
+  }
 
-    public void passStoreTrackDataRequest(TrackData trackData){
+  public TrackData passGetTrackDataRequest(int offset) {
+    return null;
+  }
 
-    }
+  public void passStoreTrackDataRequest(TrackData trackData) {
 
-    public String passGetModeRequest(){
-        return "";
-    }
+  }
+
+  public String passGetModeRequest() {
+    return "";
+  }
 }

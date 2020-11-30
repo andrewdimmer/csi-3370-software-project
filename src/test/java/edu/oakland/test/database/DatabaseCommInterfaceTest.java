@@ -2,7 +2,6 @@ package edu.oakland.test.database;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabaseCommInterface;
@@ -30,7 +29,7 @@ public class DatabaseCommInterfaceTest {
   
   @Test
   @DisplayName("Offset matches Datapoint")
-  void offsetMatchDataPoint(){
+  void offsetMatchDataPoint() {
     
     DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
 
@@ -46,7 +45,7 @@ public class DatabaseCommInterfaceTest {
   
   @Test
   @DisplayName("Offset matches TrackData")
-  void offsetMatchTrackData(){
+  void offsetMatchTrackData() {
     
 
     DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
@@ -58,7 +57,7 @@ public class DatabaseCommInterfaceTest {
   
   @Test
   @DisplayName("TrackData In is same as TrackData Out")
-  void trackDataInIsTrackDataOut(){
+  void trackDataInIsTrackDataOut() {
    
    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
     
@@ -72,7 +71,7 @@ public class DatabaseCommInterfaceTest {
 
   @Test
   @DisplayName("Mode in is mode out")
-  void modeInIsModeOut(){
+  void modeInIsModeOut() {
 
     DatabaseCommManagerStub dcms = new DatabaseCommManagerStub();
     DatabaseCommInterfaceClass dci = new DatabaseCommInterfaceClass(dcms);
@@ -83,7 +82,7 @@ public class DatabaseCommInterfaceTest {
   
   @Test
   @DisplayName("Database Comm Manager is not Null")
-  void databaseCommManagerNotNull(){
+  void databaseCommManagerNotNull() {
 
     assertThrows(IllegalArgumentException.class, () -> {
       new DatabaseCommInterfaceClass(null);
