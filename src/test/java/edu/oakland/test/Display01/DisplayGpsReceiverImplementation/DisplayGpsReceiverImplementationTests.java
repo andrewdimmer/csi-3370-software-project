@@ -13,15 +13,15 @@ import edu.oakland.production.display01.DisplayGpsReceiverImplementation;
 public class DisplayGpsReceiverImplementationTests {
   @Test
   @DisplayName ("Display GPS Manager Is Not Null")
-  public void displayGpsManagerIsNotNull(Satellite satelliteSignal){
+  public void displayGpsManagerIsNotNull(Satellite satelliteSignal) {
     Satellite signal = satelliteSignal;
     Integer i = signal.getStrength();
     String s = i.toString();
-    if(s != null){
+    if (s != null) {
       DisplayGpsManagerImplementation manager = new DisplayGpsManagerImplementation();
       assertNotNull(manager, "Verified that signal is not null");
     }
-    else{
+    else {
       throw new IllegalArgumentException("Signal strength cannot be null");
     }
   }
