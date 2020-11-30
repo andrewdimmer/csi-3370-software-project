@@ -4,11 +4,11 @@ import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabaseCommManager;
 
-public class DatabaseCommManagerStub implements DatabaseCommManager{
+public class DatabaseCommManagerStub implements DatabaseCommManager {
   int rfid = 10;
   LocationDataPoint ldp = null;
 
-  public int passGetRfidRequest(){
+  public int passGetRfidRequest() {
     return rfid;
   }
 

@@ -9,7 +9,7 @@ public class DatabaseCommInterfaceClass {
   DatabaseCommManager databaseCommManager;
 
   public DatabaseCommInterfaceClass(DatabaseCommManager databaseCommManager) {
-     if (databaseCommManager == null) {
+    if (databaseCommManager == null) {
       throw new IllegalArgumentException("manager cannot be null");
     }
     
