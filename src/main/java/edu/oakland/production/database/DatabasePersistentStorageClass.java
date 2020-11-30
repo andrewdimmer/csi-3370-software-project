@@ -64,8 +64,15 @@ public class DatabasePersistentStorageClass {
       return null;
     }
 
-  	return this.locDataPoint.get(offset);
+    return this.locDataPoint.get(offset);
   }
+
+  /**
+   * Takes a location data point and stores it.
+   *
+   *
+   * @param locationDataPoint the locationDataPoint data type.
+   */
 
   public void storeLocationDataPoint(LocationDataPoint locationDataPoint) {
     if (locationDataPoint == null) {
@@ -74,6 +81,13 @@ public class DatabasePersistentStorageClass {
 
     this.locDataPoint.add(locationDataPoint);
   }
+
+  /**
+   * Retrieve track data.
+   *
+   *
+   * @param offset the offset (int) of the track data needed
+   */
 
   public TrackData getTrackData(int offset) {
     // If we have a trackdata of length 4 for example, then the offset can not be more than 3 so we use length-1
@@ -117,7 +131,9 @@ public class DatabasePersistentStorageClass {
       } 
     }
 
-    if (!found)return "";
+      if (!found){
+        return "";
+      }
 
       if(satArrayLength - 1 > posOfCurrentSat){
         return this.nextSatellites[posOfCurrentSat + 1];
