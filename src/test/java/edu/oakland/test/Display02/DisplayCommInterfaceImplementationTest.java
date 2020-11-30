@@ -26,8 +26,8 @@ public class DisplayCommInterfaceImplementationTest {
     assertNotNull(dc, "Verify that class is not null");
   }
 
+  
   private int generateRandomRfid() {
-
     return (int) Math.random();
   }
 }
