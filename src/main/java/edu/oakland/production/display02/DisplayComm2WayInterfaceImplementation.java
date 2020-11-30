@@ -17,5 +17,8 @@ public class DisplayComm2WayInterfaceImplementation implements DisplayComm2WayIn
 
     return commManager.receiveRfid(rfidNum);
   }
+  public int returnRfidNum(int rfidNum) {
 
+    return rfidNum;
+  }
 }
