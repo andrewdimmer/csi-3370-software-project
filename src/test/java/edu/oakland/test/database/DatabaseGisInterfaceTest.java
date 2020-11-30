@@ -8,6 +8,7 @@ import edu.oakland.production.database.DatabaseGisInterfaceImplementation;
 import edu.oakland.production.database.DatabaseGisManagerStub;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
+import java.util.Random;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
