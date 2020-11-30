@@ -8,6 +8,7 @@ import java.lang.IllegalArgumentException;
 
 
 public class DisplayComm2WayInterfaceImplementation implements DisplayComm2WayInterface {
+  
   private DisplayCommManager commManager;
   
   /**
@@ -29,7 +30,7 @@ public class DisplayComm2WayInterfaceImplementation implements DisplayComm2WayIn
   *
   * @return the TrackData
   */
-  public TrackData receiveRfidRequest(int rfidNum) {
+  private TrackData receiveRfidRequest(int rfidNum) {
 
     return determineUserRequestFormat(rfidNum);
   }
@@ -54,15 +55,5 @@ public class DisplayComm2WayInterfaceImplementation implements DisplayComm2WayIn
   public TrackData passRfidRequest(int rfidNum) {
 
     return commManager.receiveRfid(rfidNum);
-  }
-
-  /**
-  * returns rfid if requested.
-  *
-  * @return rfidNum
-  */
-  public int returnRfidNum(int rfidNum) {
-
-    return rfidNum;
   }
 }
