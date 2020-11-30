@@ -14,7 +14,6 @@ import java.lang.IllegalArgumentException;
 public class DisplayCommManagerImplementation implements DisplayCommManager {
 
     private MiddlewareCommInterface middleware;
-    public int rfid;
     
     /**
     * Creates a DisplayCommManagerImplementation to receive the rfid.
