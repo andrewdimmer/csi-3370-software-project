@@ -135,28 +135,28 @@ public class DatabasePersistentStorageClass {
     this.mode = mode;
   }
 
- /**
-  * Finds the position of the currentSat provided.
-  * and retuns the the sat in the next position.
-  *
-  * @param currentSat the current satellite string
-  */
- public String getNextSat(String currentSat) {
+  /**
+   * Finds the position of the currentSat provided.
+   * and retuns the the sat in the next position.
+   *
+   * @param currentSat the current satellite string
+   */
+  public String getNextSat(String currentSat) {
     int satArrayLength = this.nextSatellites.length;
     int posOfCurrentSat = Arrays.asList(this.nextSatellites).indexOf(currentSat);
 
     boolean found = false;
     for (String sat : this.nextSatellites) {
-      if (sat == currentSat){
+      if (sat == currentSat) {
         found = true;
       } 
     }
 
-    if (!found){
+    if (!found) {
       return "";
     }
 
-    if(satArrayLength - 1 > posOfCurrentSat){
+    if (satArrayLength - 1 > posOfCurrentSat) {
       return this.nextSatellites[posOfCurrentSat + 1];
     } else {
       return "";
