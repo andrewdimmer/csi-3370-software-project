@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabaseCommInterface;
-import edu.oakland.production.database.DatabaseCommInterfaceClass;
+import edu.oakland.production.database.DatabaseCommInterfaceImplementation;
 import edu.oakland.production.database.DatabasePersistentStorage;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
@@ -78,7 +78,7 @@ public class DatabaseCommInterfaceImplementationTests {
   void modeInIsModeOut() {
 
     DatabaseCommManagerStub dcms = new DatabaseCommManagerStub();
-    DatabaseCommInterfaceClass dci = new DatabaseCommInterfaceClass(dcms);
+    DatabaseCommInterfaceImplementation dci = new DatabaseCommInterfaceImplementation(dcms);
     dci.receiveGetModeRequest();
     assertEquals("", dcms.passGetModeRequest());
   }
@@ -89,7 +89,7 @@ public class DatabaseCommInterfaceImplementationTests {
   void databaseCommManagerNotNull() {
 
     assertThrows(IllegalArgumentException.class, () -> {
-      new DatabaseCommInterfaceClass(null);
+      new DatabaseCommInterfaceImplementation(null);
     });
 
   }
