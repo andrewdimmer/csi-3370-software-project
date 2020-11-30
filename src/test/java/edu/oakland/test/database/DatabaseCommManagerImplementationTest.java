@@ -48,6 +48,16 @@ public class DatabaseCommManagerImplementationTest {
   }
 
   @Test
+  @DisplayName("Mode in is mode out")
+  void modeInIsModeOut() {
+    DatabasePersistentStorageStub dpss = new DatabasePersistentStorageStub();
+    DatabaseCommManager dcm = new DatabaseCommManagerImplementation(dpss);
+
+    dpss.storeMode("norm");
+    assertEquals("norm", dcm.passGetModeRequest());
+  }
+
+  @Test
   @DisplayName("TrackData In is same as TrackData Out")
   void trackDataInIsTrackDataOut() {
     int i = (int) (Math.random() * 100);
