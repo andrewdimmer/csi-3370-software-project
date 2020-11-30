@@ -36,7 +36,7 @@ public class DatabaseGisManagerTest {
   void currentSatGetsNextSat() {
     DatabasePersistentStorageStub dpss = new DatabasePersistentStorageStub();
     DatabaseGisManagerImplementation dgm = new DatabaseGisManagerImplementation(dpss);
-    String currentSat = "";
+    String currentSat = "Satellite";
     assertEquals(currentSat, dgm.passNextSatRequest(currentSat));
   }
 
