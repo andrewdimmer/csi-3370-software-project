@@ -14,7 +14,7 @@ public class DatabasePersistentStorageClass {
   String mode;
 
 
-  public DatabasePersistentStorageClass(int rfidData, ArrayList<LocationDataPoint> locDataPoint, ArrayList<TrackData> trackData, String[] nextSatellites){
+  public DatabasePersistentStorageClass(int rfidData, ArrayList<LocationDataPoint> locDataPoint, ArrayList<TrackData> trackData, String[] nextSatellites) {
     this.rfidData = rfidData;
     this.locDataPoint = locDataPoint;
     this.trackData = trackData;
