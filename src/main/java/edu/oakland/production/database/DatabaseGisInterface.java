@@ -6,7 +6,7 @@ public interface DatabaseGisInterface {
 
   public void receiveStoreRequest(LocationDataPoint locationDataPoint);
 
-  public String receiveModeRequest(String mode); 
+  public void receiveModeRequest(String mode); 
 
   public String receiveNextSatRequest(String currentSat);
 
