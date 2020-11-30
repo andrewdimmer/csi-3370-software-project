@@ -3,10 +3,12 @@
 package edu.oakland.test.middleware01 {
   class MiddlewareGisManagerImplementationTests {
     + void nullLocationDataPointNotStored()
-    + void isGpsLockRegained()
-    + void isGpsSignalStrengthEvaluate()
-    + void isCorrectModeEntered()
-    + void selectNewGps()
+    + void isGpsSignalStrengthEvaluateTrue()
+    + void isGpsSignalStrengthEvaluateFalse()
+    + void ldpInIsLdpOut()
+    + void isNormalModeEntered()
+    + void isStandbyModeEntered()
+    + void isDegradedModeEntered()
     + void databaseInterfaceIsNotNull()
   }
 }

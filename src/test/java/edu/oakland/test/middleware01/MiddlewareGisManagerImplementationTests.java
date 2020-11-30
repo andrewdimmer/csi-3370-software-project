@@ -69,7 +69,7 @@ public class MiddlewareGisManagerImplementationTests {
 
   @Test
   @DisplayName("Enter normal mode")
-  void isCorrectModeEntered() {
+  void isNormalModeEntered() {
     Satellite satSignal = new Satellite("GPS0", 5);
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
@@ -95,16 +95,6 @@ public class MiddlewareGisManagerImplementationTests {
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
     assertEquals(satSignal.getSatelliteName(), man.evaluateGpsSignalStrength(satSignal));
     assertEquals("degraded", stub.getMode());
-  }
-  
-  @Test
-  @DisplayName("Select new GPS")
-  void selectNewGps() {
-    Satellite satellite = new Satellite("GPS0", 5);
-    DatabaseGisInterface stub = new DatabaseGisInterfaceStub();
-    String nextSat = stub.receiveNextSatRequest(satellite.getSatelliteName());
-    MiddlewareGisManager gisManager = new MiddlewareGisManagerImplementation(stub);
-    assertEquals(satellite.getSatelliteName(), nextSat);
   }
 
   @Test
