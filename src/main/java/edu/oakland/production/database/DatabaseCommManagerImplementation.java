@@ -15,22 +15,22 @@ public class DatabaseCommManagerImplementation implements DatabaseCommManager {
   }
 
   public int passGetRfidRequest() {
-    return 0;
+    return dps.locateRfidData();
   }
 
   public LocationDataPoint passGetLocationDataPointRequest(int offset) {
-    return null;
+    return dps.getLocationDataPoint(offset);
   }
 
   public TrackData passGetTrackDataRequest(int offset) {
-    return null;
+    return dps.getTrackData(offset);
   }
 
   public void passStoreTrackDataRequest(TrackData trackData) {
-
+    dps.storeTrackData(trackData);
   }
 
   public String passGetModeRequest() {
-    return "";
+    return dps.getMode();
   }
 }
