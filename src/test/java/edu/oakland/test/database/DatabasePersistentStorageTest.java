@@ -47,7 +47,7 @@ public class DatabasePersistentStorageTest {
   @Test
   @DisplayName("RFID data in is RFID data out")
   void rfidDataInIsRfidDataOut() {
-    //int random = (int) (Math.random() * 60);
+    int random = (int) (Math.random() * 60);
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
     DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
@@ -321,5 +321,4 @@ public class DatabasePersistentStorageTest {
 
 
 }
-
 
