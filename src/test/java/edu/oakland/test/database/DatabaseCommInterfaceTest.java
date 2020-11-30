@@ -54,7 +54,7 @@ public class DatabaseCommInterfaceTest {
     DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
 
     TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
-    int i = (int)(Math.random() * 7);
+    int i = (int) (Math.random() * 7);
     assertEquals(null, dcm.passGetTrackDataRequest(i));  
   }
   
@@ -62,7 +62,7 @@ public class DatabaseCommInterfaceTest {
   @DisplayName("TrackData In is same as TrackData Out")
   void trackDataInIsTrackDataOut() {
    
-   DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
+    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
     
     TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
     td = null;
@@ -95,25 +95,25 @@ public class DatabaseCommInterfaceTest {
 
 
   private LocationDataPoint[] generateRandomLocationDataPointsArray(int length) {
-        LocationDataPoint[] locations = new LocationDataPoint[length];
-        for (int index = 0; index < locations.length; index++) {
-          locations[index] = generateRandomLocationDataPoint();
-        }
-        return locations;
-      }
+    LocationDataPoint[] locations = new LocationDataPoint[length];
+    for (int index = 0; index < locations.length; index++) {
+      locations[index] = generateRandomLocationDataPoint();
+    }
+    return locations;
+  }
     
-      private LocationDataPoint generateRandomLocationDataPoint() {
-        return new LocationDataPoint(
-          (float) (Math.random() * 180 - 90),
-          (float) (Math.random() * 360 - 180),
-          LocalDateTime.of(
-            (int) (Math.random() * 50 + 1970),
-            (int) (Math.random() * 12 + 1),
-            (int) (Math.random() * 28 + 1),
-            (int) (Math.random() * 24),
-            (int) (Math.random() * 60)
-          )
-        );
-      }
+  private LocationDataPoint generateRandomLocationDataPoint() {
+    return new LocationDataPoint(
+    (float) (Math.random() * 180 - 90),
+    (float) (Math.random() * 360 - 180),
+    LocalDateTime.of(
+    (int) (Math.random() * 50 + 1970),
+    (int) (Math.random() * 12 + 1),
+    (int) (Math.random() * 28 + 1),
+    (int) (Math.random() * 24),
+    (int) (Math.random() * 60)
+    )
+    );
+  }
   
 }
