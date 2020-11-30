@@ -8,6 +8,13 @@ public class DatabaseCommInterfaceClass {
   
   DatabaseCommManager databaseCommManager;
 
+  /**
+   * Creates an database interface to middleware
+   * to provide methods for managing Comm info.
+   *
+   * @param databaseCommManager is an instance of the DatabaseCommManagerImplementation class.
+   */
+
   public DatabaseCommInterfaceClass(DatabaseCommManager databaseCommManager) {
     if (databaseCommManager == null) {
       throw new IllegalArgumentException("manager cannot be null");
