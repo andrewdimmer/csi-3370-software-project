@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
-import org.junit.jupiter.api.DisplayName;
 import java.lang.IllegalArgumentException;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("Sattelite Signal Check Request Tests")
