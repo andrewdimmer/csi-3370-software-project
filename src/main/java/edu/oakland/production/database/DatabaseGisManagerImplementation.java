@@ -2,7 +2,7 @@ package edu.oakland.production.database;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 
-public class DatabaseGisManagerImplementation {
+public class DatabaseGisManagerImplementation implements DatabaseGisManager {
 
   DatabasePersistentStorage storage;
 
