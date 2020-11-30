@@ -1,6 +1,7 @@
 package edu.oakland.test.middleware01;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import edu.oakland.helper.admin.LocationDataPoint;
@@ -17,15 +18,13 @@ import org.junit.jupiter.api.Test;
 public class MiddlewareGisManagerImplementationTests {
 
   @Test
-  @DisplayName("Check if the data point is null")
+  @DisplayName("Check if the data point is not null")
   void nullLocationDataPointNotStored() {
-
-  }
-
-  @Test
-  @DisplayName("Check if lock is regained")
-  void isGpsLockRegained() {
-
+    DatabaseGisInterface stub = new DatabaseGisInterfaceStub();
+    Satellite satellite = new Satellite("GPS0", 5);
+    assertNotNull(satellite.getLocation());
+    stub.receiveStoreRequest(satellite.getLocation());
+    assertNotNull(satellite.getLocation());
   }
 
   @Test

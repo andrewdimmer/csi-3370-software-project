@@ -37,21 +37,11 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
    * @return The name of the Satellite.
    */
   public String receiveGpsSignalStrength(Satellite satelliteSignal) {
-    //storeLocationData();
     return satelliteSignal.getSatelliteName();
   }
 
   public void storeLocationDataPoint() {
-
-  }
-
-  /**
-   * Attempts to regain the GPS lock.
-   *
-   * @return An empty string if successful.
-   */
-  public String attemptToRegainGpsLock(String satelliteName) {
-    return "";
+    
   }
 
   /**

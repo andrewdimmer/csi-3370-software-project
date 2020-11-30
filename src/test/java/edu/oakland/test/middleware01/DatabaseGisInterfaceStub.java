@@ -7,7 +7,7 @@ import edu.oakland.production.database.DatabaseGisInterface;
 public class DatabaseGisInterfaceStub implements DatabaseGisInterface {
 
   public void receiveStoreRequest(LocationDataPoint locationDataPoint) {
-
+    
   }
 
   public String receiveModeRequest(String mode) {
@@ -17,5 +17,5 @@ public class DatabaseGisInterfaceStub implements DatabaseGisInterface {
   public String receiveNextSatRequest(String currentSat) {
     return currentSat;
   }
-  
+
 }
