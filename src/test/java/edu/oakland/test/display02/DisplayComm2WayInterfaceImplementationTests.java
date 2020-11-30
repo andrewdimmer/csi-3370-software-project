@@ -12,15 +12,15 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Display Comm 2 Way Interface Implementation Tests")
 public class DisplayComm2WayInterfaceImplementationTests {
   @Test
-  void rfidInIsRfidOut(){
-    int rfid = 1101; //rfid number?
+  void rfidInIsRfidOut() {
+    int rfid = 1101;        //rfid number?
     DisplayComm2WayInterfaceImplementation comm2Way = new DisplayComm2WayInterfaceImplementation();
     int out = comm2Way.rfid;
     assertEquals(rfid, out);
   }
 
   @Test
-  void displayComm2WayIsNotNull(){
+  void displayComm2WayIsNotNull() {
     DisplayCommManager manager = new DisplayCommManager();
     assertNotNull(manager, "Checking if class is null");
   }
