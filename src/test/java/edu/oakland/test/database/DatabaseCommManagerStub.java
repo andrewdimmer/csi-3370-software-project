@@ -27,4 +27,5 @@ public class DatabaseCommManagerStub implements DatabaseCommManager {
   public String passGetModeRequest() {
     return "";
   }
+  
 }

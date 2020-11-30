@@ -37,10 +37,10 @@ public class DatabaseCommInterfaceTest {
     float lat = (float) (Math.random() * 360 - 180);
     float lng = (float) (Math.random() * 360 - 180);
     LocationDataPoint ldp = new LocationDataPoint(lat, lng,
-    LocalDateTime.of((int) (Math.random() * 50 + 1970),
-    (int) (Math.random() * 12 + 1),
-    (int) (Math.random() * 28 + 1), (int) (Math.random() * 24),
-    (int) (Math.random() * 60)));
+        LocalDateTime.of((int) (Math.random() * 50 + 1970),
+        (int) (Math.random() * 12 + 1),
+        (int) (Math.random() * 28 + 1), (int) (Math.random() * 24),
+        (int) (Math.random() * 60)));
     ldp = null;    
     int i = (int) Math.random();    
     assertEquals(ldp, dcm.passGetLocationDataPointRequest(i));
