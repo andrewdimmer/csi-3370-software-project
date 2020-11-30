@@ -8,6 +8,10 @@ public class DatabaseCommManagerStub implements DatabaseCommManager {
   private int rfid;
   LocationDataPoint ldp = null;
 
+  public DatabaseCommManagerStub(int rfid) {
+    this.rfid = rfid;
+  }
+
   public int passGetRfidRequest() {
     return rfid;
   }
