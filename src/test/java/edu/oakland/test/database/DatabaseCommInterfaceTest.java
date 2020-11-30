@@ -23,9 +23,10 @@ public class DatabaseCommInterfaceImplementationTests {
   @Test
   @DisplayName("rfid going in is Rfid coming Out")
   void rfidInIsRfidOut() {
-    int i = 10;
-    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
-    assertEquals(i, dcm.passGetRfidRequest());
+    int i = (int) (Math.random() * 100);
+    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub(i);
+    DatabaseCommInterface dci = new DatabaseCommInterfaceImpementation(dcm);
+    assertEquals(i, dci.receiveGetRfidRequest());
   }
   
   @Test
