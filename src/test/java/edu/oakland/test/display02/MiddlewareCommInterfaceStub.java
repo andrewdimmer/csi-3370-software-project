@@ -7,10 +7,9 @@ import edu.oakland.production.middleware02.MiddlewareCommInterface;
 
 
 public class MiddlewareCommInterfaceStub implements MiddlewareCommInterface {
-    public TrackData requestRfid(int rfid) {
-        TrackData trackStub = new TrackData(new LocationDataPoint[0]);
-        trackStub.setStatusMessage(String.valueOf(rfid));
-        return trackStub;
-    }
-
+  public TrackData requestRfid(int rfid) {
+    TrackData trackStub = new TrackData(new LocationDataPoint[0]);
+    trackStub.setStatusMessage(String.valueOf(rfid));
+    return trackStub;
+  }
 }
