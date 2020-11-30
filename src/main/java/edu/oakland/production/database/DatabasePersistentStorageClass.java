@@ -60,7 +60,6 @@ public class DatabasePersistentStorageClass {
 
     // If trackdata has size of length 4 , then the offset can not be > 3 so we use size-1
     if (offset > this.locDataPoint.size() - 1) {
-      // throw new IndexOutOfBoundsException("Offset " + offset + " is out of bounds!");
       return null;
     }
 
@@ -164,4 +163,3 @@ public class DatabasePersistentStorageClass {
   }
 
 }
-
