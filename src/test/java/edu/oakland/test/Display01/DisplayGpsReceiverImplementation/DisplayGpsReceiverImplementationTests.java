@@ -1,4 +1,4 @@
-package edu.oakland.test.Display01.DisplayGpsReceiverImplementation;
+package edu.oakland.test.display01.DisplayGpsReceiverImplementation;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
@@ -22,8 +22,7 @@ public class DisplayGpsReceiverImplementationTests {
     if (s != null) {
       DisplayGpsManagerImplementation manager = new DisplayGpsManagerImplementation();
       assertNotNull(manager, "Verified that signal is not null");
-    }
-    else {
+    } else {
       throw new IllegalArgumentException("Signal strength cannot be null");
     }
   }
