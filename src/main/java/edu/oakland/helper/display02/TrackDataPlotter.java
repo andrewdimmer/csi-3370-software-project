@@ -81,7 +81,7 @@ public class TrackDataPlotter extends JFrame{
       //placeholder for testing
       //fitLine.add(3, 5);
       //fitLine.add(12, 15);
-          float sumOfX = 0;
+      float sumOfX = 0;
       float sumOfY = 0;
       float sumOfXy = 0;
       float sumOfXSquared = 0;
@@ -105,7 +105,7 @@ public class TrackDataPlotter extends JFrame{
   }
   private float[] extractLatFromTrackData(TrackData data){
     LocationDataPoint[] points = data.getLocationDataPoints();
-    float[] latNum = 5;
+    float[] latNum = new float[5];
     for(int i < points.length; i<=5; i++){
       latNum[i]= points[i].getLat();
     }
@@ -114,7 +114,7 @@ public class TrackDataPlotter extends JFrame{
 
   private float[] extractLngFromTrackData(TrackData data){
     LocationDataPoint[] points = data.getLocationDataPoints();
-    float[] lngNum = 5;
+    float[] lngNum = new float[5];
     for(int i < points.length; i<=5; i++){
       lngNum[i]= points[i].getLng();
     }
