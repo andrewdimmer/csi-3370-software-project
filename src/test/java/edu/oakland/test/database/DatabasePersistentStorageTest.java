@@ -76,7 +76,7 @@ public class DatabasePersistentStorageTest {
     int randomInt = (int) (Math.random() * (5 - 1 + 1) + 1); 
     ArrayList<LocationDataPoint> locDataPointList = new ArrayList<LocationDataPoint>();
     
-      for (int i = 0; i <= randomInt; i++) {
+    for (int i = 0; i <= randomInt; i++) {
 
         LocationDataPoint ldpData = new LocationDataPoint(0, 0, LocalDateTime.of(
             (int) (Math.random() * 50 + 1970),
@@ -86,8 +86,8 @@ public class DatabasePersistentStorageTest {
             (int) (Math.random() * 60)
         ));
 
-        locDataPointList.add(0, ldpData);
-        dpsc.storeLocationDataPoint(ldpData);
+      locDataPointList.add(0, ldpData);
+      dpsc.storeLocationDataPoint(ldpData);
 
     }
 
@@ -132,13 +132,13 @@ public class DatabasePersistentStorageTest {
 
         float course = generateRandomCourse();
         TrackData trackDataPointSample = new TrackData(
-          generateRandomLocationDataPointsArray(5),
-          course,
-          generateRandomSpeed()
+            generateRandomLocationDataPointsArray(5),
+            course,
+            generateRandomSpeed()
         );
 
-        trackDataList.add(0, trackDataPointSample); // Add to local
-        dpsc.storeTrackData(trackDataPointSample); //Add to implementation
+      trackDataList.add(0, trackDataPointSample); // Add to local
+      dpsc.storeTrackData(trackDataPointSample); //Add to implementation
 
     }
 
@@ -252,7 +252,7 @@ public class DatabasePersistentStorageTest {
   //@DisplayName("track data offset out of bounds returns null")
   //void trackDataOffsetOutOfBoundsIsReturnsNull() {
   @DisplayName("track data offset out of bounds returns empty trackdata")
-  void trackDataOffsetOutOfBoundsIsReturnsEmptyTD() {
+  void trackDataOffsetOutOfBoundsIsReturnsEmptyTd() {
     // Made changes per r532465218
     // Not sure if we needed to change the DisplayName and func name
 
