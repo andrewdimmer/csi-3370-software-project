@@ -12,7 +12,6 @@ public class DisplayGpsReceiverImplementation implements DisplayGpsReceiver {
    * Measures GPS Signal Strength.
    *
    * @param satelliteSignal GPS signal to measure.
-   * @return no return value.
    */
   public void measureGpsSignalStrength(Satellite satelliteSignal) {
 
