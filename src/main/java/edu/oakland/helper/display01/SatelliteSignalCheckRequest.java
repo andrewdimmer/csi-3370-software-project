@@ -3,8 +3,8 @@ package edu.oakland.helper.display01;
 import java.lang.IllegalArgumentException;
 
 /**
- * A common helper class to check name and type of the Satellite Signal for the Secure Lock Tracking Software
- * shipping container.
+ * A common helper class to check name and type of the Satellite Signal for the Secure Lock
+ * Tracking Software shipping container.
  *
  * @author John Akroush, Steven Catherman
  */
@@ -14,11 +14,12 @@ public class SatelliteSignalCheckRequest {
   final String satelliteName;
   final String checkType;
 
-/**
-   * Creates a SatelliteSignalCheckRequest to check the satellite name and type of the Satellite Signal for Secure Lock Tracking
-   * Software shipping container.
+  /**
+   * Creates a SatelliteSignalCheckRequest to check the satellite name and type of the
+   * Satellite Signal for Secure Lock Tracking Software shipping container.
    *
-   * @param satelliteName  The name of the satellite of the Secure Lock Tracking Software shipping container.
+   * @param satelliteName  The name of the satellite of the Secure Lock Tracking Software
+   * shipping container.
    * @param checkType  The type of the Secure Lock Tracking Software shipping container.
    */
 

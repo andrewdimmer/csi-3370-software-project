@@ -5,8 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 import java.lang.IllegalArgumentException;
+import org.junit.jupiter.api.Test;
 
 @DisplayName("Sattelite Signal Check Request Tests")
 public class SatelliteSignalCheckRequestTests {
@@ -33,7 +33,7 @@ public class SatelliteSignalCheckRequestTests {
   @DisplayName("Empty Name Is Not Allowed")
   void emptyNamesNotAllowed() {
     assertThrows(IllegalArgumentException.class, () -> {
-    new SatelliteSignalCheckRequest("", "ok");
+      new SatelliteSignalCheckRequest("", "ok");
     });
   }
 
@@ -41,7 +41,7 @@ public class SatelliteSignalCheckRequestTests {
   @DisplayName("Empty Type Is Not Allowed")
   void emptyTypesNotAllowed() {
     assertThrows(IllegalArgumentException.class, () -> {
-    new SatelliteSignalCheckRequest("wow", "");
+      new SatelliteSignalCheckRequest("wow", "");
     });
   }
 
