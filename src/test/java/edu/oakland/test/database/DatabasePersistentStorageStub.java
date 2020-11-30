@@ -6,9 +6,11 @@ import edu.oakland.production.database.DatabasePersistentStorage;
 
 public class DatabasePersistentStorageStub implements DatabasePersistentStorage {
   private int rfid;
+  private TrackData trackData;
   
-  public DatabasePersistentStorageStub(int rfid) {
+  public DatabasePersistentStorageStub(int rfid, TrackData trackdata) {
     this.rfid = rfid;
+    this.trackData = trackdata;
   }
   public int locateRfidData() {
     return rfid;
@@ -23,7 +25,7 @@ public class DatabasePersistentStorageStub implements DatabasePersistentStorage 
   }
 
   public TrackData getTrackData(int offset) {
-    return null;
+    return trackData;
   }
 
   public void storeTrackData(TrackData trackData) {
