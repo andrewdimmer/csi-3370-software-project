@@ -17,8 +17,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Database CommInterface Test")
-public class DatabaseCommInterfaceTest {
+@DisplayName("DatabaseCommInterfaceImplementation Unit Tests")
+public class DatabaseCommInterfaceImplementationTests {
 
   @Test
   @DisplayName("rfid going in is Rfid coming Out")
