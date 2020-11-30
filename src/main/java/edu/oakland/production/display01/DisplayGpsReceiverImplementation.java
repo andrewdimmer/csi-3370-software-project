@@ -1,26 +1,31 @@
 package edu.oakland.production.display01;
 
 import edu.oakland.helper.admin.Satellite;
+import edu.oakland.production.display01.DisplayGpsManager;
 import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
 import java.lang.IllegalArgumentException;
 
 public class DisplayGpsReceiverImplementation implements DisplayGpsReceiver {
 
-  private Satellite satelliteSignal;
+  private DisplayGpsManager displayGpsManager;
+
+  public DisplayGpsReceiverImplementation(DisplayGpsManager displayGpsManager) {
+    if (displayGpsManager == null) {
+      throw new IllegalArgumentException("Signal strength cannot be null");
+    }
+    this.displayGpsManager = displayGpsManager;
+  }
 
   /**
    * Measures GPS Signal Strength.
    *
    * @param satelliteSignal GPS signal to measure.
    */
-  public void measureGpsSignalStrength(Satellite satelliteSignal) {
-
-    Integer i = satelliteSignal.getStrength();
-    String s = i.toString();
-    if (s == null) {
+  public String measureGpsSignalStrength(Satellite satelliteSignal) {
+    if (satelliteSignal == null) {
       throw new IllegalArgumentException("Signal strength cannot be null");
     }
-    this.satelliteSignal = satelliteSignal;
+    return displayGpsManager.receiveGpsSignalStrength(satelliteSignal);
   }
 
   /**
@@ -30,9 +35,9 @@ public class DisplayGpsReceiverImplementation implements DisplayGpsReceiver {
    * @return Request to reconnect to satellite.
    */
   public SatelliteSignalCheckRequest measureSignal(Satellite satelliteSignal) {
-        
-    return null;
-
+    if (satelliteSignal == null) {
+      throw new IllegalArgumentException("Signal strength cannot be null");
+    }
+    return displayGpsManager.passGpsSignalStrength(satelliteSignal);
   }
-
 }

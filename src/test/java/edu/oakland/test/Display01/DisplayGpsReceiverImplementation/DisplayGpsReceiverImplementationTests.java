@@ -15,7 +15,7 @@ public class DisplayGpsReceiverImplementationTests {
   @DisplayName ("Display GPS Manager Is Not Null")
   public void displayGpsManagerIsNotNull() {
     assertThrows(IllegalArgumentException.class, () -> {
-      new measureGpsSignalStrength(null);
+      new DisplayGpsReceiverImplementation(null);
     });
   }
 }
