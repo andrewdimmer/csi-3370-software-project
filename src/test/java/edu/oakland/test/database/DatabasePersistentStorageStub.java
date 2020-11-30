@@ -45,3 +45,4 @@ public class DatabasePersistentStorageStub implements DatabasePersistentStorage 
   }
 
 }
+
