@@ -9,7 +9,13 @@ public class DatabaseGisManagerStub implements DatabaseGisManager {
   public String passNextSatRequest(String currentSat) {
     return currentSat;
   }
-
+  /**
+   * Creates an database interface to middleware
+   * to provide methods for managing GIS info.
+   *
+   * @param offset an int to find the ldp.
+   */
+  
   public LocationDataPoint getLocationDataPoint(int offset) {
     if (offset = 0) {
       return ldp;
