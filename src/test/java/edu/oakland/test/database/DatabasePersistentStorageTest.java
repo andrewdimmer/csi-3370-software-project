@@ -182,9 +182,9 @@ public class DatabasePersistentStorageTest {
     trackData.add(trackDataPoint);
 
     DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
-       locDataPoint, 
-       trackData, 
-       randomArray
+        locDataPoint, 
+        trackData, 
+        randomArray
     );
 
     assertThrows(IllegalArgumentException.class, () -> {
@@ -199,7 +199,11 @@ public class DatabasePersistentStorageTest {
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
 
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
+        locDataPoint, 
+        trackData, 
+        randomArray
+    );
 
     assertThrows(IllegalArgumentException.class, () -> {
       dpsc.storeTrackData(null);
@@ -212,7 +216,11 @@ public class DatabasePersistentStorageTest {
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
 
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
+        locDataPoint, 
+        trackData, 
+        randomArray
+    );
     dpsc.storeLocationDataPoint(ldp);
     assertEquals(null, dpsc.getLocationDataPoint(99999));
   }
@@ -223,7 +231,11 @@ public class DatabasePersistentStorageTest {
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
 
-  	DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
+  	DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
+        locDataPoint, 
+        trackData, 
+        randomArray
+    );
 
     dpsc.storeTrackData(trackDataPoint);
     assertEquals(null, dpsc.getTrackData(99999));
@@ -237,7 +249,11 @@ public class DatabasePersistentStorageTest {
     trackData.add(trackDataPoint);
 
     String[] sampleSatArray = {"Sat1", "Sat2", "Sat3", "Sat4"};
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, sampleSatArray);
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
+        locDataPoint, 
+        trackData, 
+        sampleSatArray
+    );
 
     assertEquals("", dpsc.getNextSat("Sat5"));
   }
@@ -249,7 +265,11 @@ public class DatabasePersistentStorageTest {
     trackData.add(trackDataPoint);
 
     String[] sampleSatArray = {"Sat1", "Sat2", "Sat3", "Sat4"};
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, sampleSatArray);
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
+        locDataPoint, 
+        trackData, 
+        sampleSatArray
+    );
     assertEquals("", dpsc.getNextSat("Sat4"));
   }
 
