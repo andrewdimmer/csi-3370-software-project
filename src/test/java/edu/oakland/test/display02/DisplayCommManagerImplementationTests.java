@@ -3,7 +3,8 @@ package edu.oakland.test.display02;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import edu.oakland.helper.admin.*;
+import edu.oakland.helper.admin.LocationDataPoint;
+import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.display02.DisplayCommManager;
 import edu.oakland.production.display02.DisplayCommManagerImplementation;
 import edu.oakland.production.middleware02.MiddlewareCommInterface;
