@@ -27,7 +27,7 @@ public class DisplayGpsReceiverImplementation implements DisplayGpsReceiver {
    */
   public String measureGpsSignalStrength(Satellite satelliteSignal) {
     if (satelliteSignal == null) {
-      throw new IllegalArgumentException("Signal strength cannot be null");
+      throw new IllegalArgumentException("satelliteSignal cannot be null");
     }
     return displayGpsManager.receiveGpsSignalStrength(satelliteSignal);
   }
