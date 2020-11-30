@@ -10,7 +10,7 @@ public class DisplayComm2WayInterfaceImplementation implements DisplayComm2WayIn
   DisplayCommManagerImplementation commManager;
   
   /**
-  * 
+  * Creates a DisplayComm2WayInterfaceImplementation to receive the rfid.
   *
   * @param DisplayCommManagerImplementation: The class that DisplayComm2Way will pass RFID to. 
   *
