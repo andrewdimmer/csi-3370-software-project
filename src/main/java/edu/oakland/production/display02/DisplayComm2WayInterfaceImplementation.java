@@ -14,14 +14,14 @@ public class DisplayComm2WayInterfaceImplementation implements DisplayComm2WayIn
   /**
   * Creates a DisplayComm2WayInterfaceImplementation to receive the rfid.
   *
-  * @param dCommManager The class that DisplayComm2Way will pass RFID to. 
+  * @param displayCommManager The class that DisplayComm2Way will pass RFID to. 
   *
   */
-  public DisplayComm2WayInterfaceImplementation(DisplayCommManagerImplementation dCommManager) {
-    if (dCommManager == null) {
+  public DisplayComm2WayInterfaceImplementation(DisplayCommManagerImplementation displayCommManager) {
+    if (displayCommManager == null) {
       throw new IllegalArgumentException("cannot be null");
     }
-    this.commManager = dCommManager;
+    this.commManager = displayCommManager;
   }
 
   /**
