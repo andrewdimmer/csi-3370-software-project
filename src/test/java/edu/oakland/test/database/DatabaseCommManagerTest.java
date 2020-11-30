@@ -6,12 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabaseCommManagerImplementation;
-import edu.oakland.production.database.DatabasePersistentStorage;
-import edu.oakland.test.database.DatabasePersistentStorageStub;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
-import javax.tools.DocumentationTool.Location;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -24,14 +20,14 @@ public class DatabaseCommManagerTest {
 
     int i = 10;
 
-    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
-    assertEquals(i, dcm.passGetRfidRequest());
+    DatabasePersistentStorageStub dpss = new DatabasePersistentStorageStub();
+    assertEquals(i, dpss.locateRfidData());
   }
 
   @Test
   @DisplayName("Offset matches Datapoint")
   void offsetMatchDataPoint() {
-    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
+    DatabasePersistentStorageStub dpss = new DatabasePersistentStorageStub();
 
     float lat = (float) (Math.random() * 360 - 180);
     float lng = (float) (Math.random() * 360 - 180);
@@ -45,36 +41,29 @@ public class DatabaseCommManagerTest {
 
     ldp = null;
     int i = (int) Math.random();
-    assertEquals(ldp, dcm.passGetLocationDataPointRequest(i));
+    assertEquals(ldp, dpss.getLocationDataPoint(i));
   }
 
   @Test
   @DisplayName("Offset matches TrackData")
   void offsetMatchTrackData() {
-    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
+    DatabasePersistentStorageStub dpss = new DatabasePersistentStorageStub();
 
     TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
 
     int i = (int) (Math.random() * 7);
-    assertEquals(null, dcm.passGetTrackDataRequest(i));
+    assertEquals(null, dpss.getTrackData(i));
   }
 
   @Test
   @DisplayName("TrackData In is same as TrackData Out")
   void trackDataInIsTrackDataOut() {
-    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
-    float lat = (float) (Math.random() * 360 - 180);
-    float lng = (float) (Math.random() * 360 - 180);
-
-    LocationDataPoint ldp = new LocationDataPoint(lat, lng,
-        LocalDateTime.of((int) (Math.random() * 50 + 1970), (int) (Math.random() * 12 + 1),
-            (int) (Math.random() * 28 + 1), (int) (Math.random() * 24),
-             (int) (Math.random() * 60)));
+    DatabasePersistentStorageStub dpss = new DatabasePersistentStorageStub();
 
     TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
     td = null;
     int i = (int) Math.random();
-    assertEquals(td, dcm.passGetTrackDataRequest(i));
+    assertEquals(td, dpss.getTrackData(i));
   }
 
   @Test

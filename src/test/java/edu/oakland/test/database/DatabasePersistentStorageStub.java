@@ -5,9 +5,10 @@ import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabasePersistentStorage;
 
 public class DatabasePersistentStorageStub implements DatabasePersistentStorage {
+  int rfid = 10;
 
   public int locateRfidData() {
-    return 0;
+    return rfid;
   }
 
   public LocationDataPoint getLocationDataPoint(int offset) {
