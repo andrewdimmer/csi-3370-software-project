@@ -66,7 +66,7 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
       databaseGisInterface.receiveModeRequest("normal");
       return "normal";
     } else {
-      String name = satelliteSignal.getSatelliteName();
+      String name = satellite.getSatelliteName();
       String datapoint = databaseGisInterface.receiveNextSatRequest(name);
       if (datapoint.equals("")) {
         databaseGisInterface.receiveModeRequest("stand by");

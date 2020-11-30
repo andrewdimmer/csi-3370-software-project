@@ -39,23 +39,17 @@ public class MiddlewareGisManagerImplementationTests {
   }
 
   @Test
-  @DisplayName("Determine mode")
+  @DisplayName("Enter mode")
   void isCorrectModeEntered() {
     Satellite satSignal = new Satellite("GPS0", 5);
-    Satellite satSignal2 = new Satellite("", 5);
+    Satellite satSignal1 = new Satellite("GPS1", 1);
+    Satellite satSignal2 = new Satellite("", 1);
     DatabaseGisInterface stub = new DatabaseGisInterfaceStub();
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
-    String name = satSignal.getSatelliteName();
-    String name2 = satSignal2.getSatelliteName();
-    String datapoint = stub.receiveNextSatRequest(name);
-    String datapoint2 = stub.receiveNextSatRequest(name2);
 
     assertEquals(man.evaluateGpsSignalStrength(satSignal), stub.receiveModeRequest("normal"));
-    if (datapoint.equals("")) {
-      assertEquals(man.evaluateGpsSignalStrength(satSignal), stub.receiveModeRequest("stand by"));
-    } else if (datapoint2.equals("GPS0")) {
-      assertEquals(man.evaluateGpsSignalStrength(satSignal2), stub.receiveModeRequest("degraded"));
-    }
+    assertEquals(man.evaluateGpsSignalStrength(satSignal2), stub.receiveModeRequest("stand by"));
+    assertEquals(man.evaluateGpsSignalStrength(satSignal1), stub.receiveModeRequest("degraded"));
   }
 
   @Test
