@@ -95,9 +95,9 @@ public class DatabasePersistentStorageClass {
 
     if(!found)return "";
 
-    if(satArrayLength-1 > posOfCurrentSat){
+      if(satArrayLength-1 > posOfCurrentSat){
         return this.nextSatellites[posOfCurrentSat+1];
-    }else{
+      } else {
         return "";
     }
   }

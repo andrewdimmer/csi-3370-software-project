@@ -20,7 +20,7 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Database PersistentStorage Test")
 public class DatabasePersistentStorageTest {
 
-  String[] randomArray = {"A","B"};
+  String[] randomArray = {"A", "B"};
 
   LocationDataPoint ldp = new LocationDataPoint(0, 0, LocalDateTime.of(
         (int) (Math.random() * 50 + 1970),
@@ -31,8 +31,8 @@ public class DatabasePersistentStorageTest {
     ));
 
 
-    float course = generateRandomCourse();
-    TrackData trackDataPoint = new TrackData(
+  float course = generateRandomCourse();
+  TrackData trackDataPoint = new TrackData(
         generateRandomLocationDataPointsArray(5),
         course,
         generateRandomSpeed()
@@ -50,7 +50,11 @@ public class DatabasePersistentStorageTest {
     //int random = (int) (Math.random() * 60);
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
+      locDataPoint, 
+      trackData, 
+      randomArray
+    );
     assertEquals(0, dpsc.locateRfidData());
   }
 
@@ -68,10 +72,14 @@ public class DatabasePersistentStorageTest {
   @Test
   @DisplayName("Location Data Point In Is Data Point Out")
   void locationDataPointInIsDataPointOut() {
-  	
+
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
+      locDataPoint, 
+      trackData, 
+      randomArray
+    );
     int i = 0;
     dpsc.storeLocationDataPoint(ldp);
     assertEquals(ldp, dpsc.getLocationDataPoint(i));
