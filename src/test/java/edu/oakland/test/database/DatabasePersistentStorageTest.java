@@ -143,21 +143,6 @@ public class DatabasePersistentStorageTest {
     assertEquals("normal", dpsc.getMode());
   }
 
-  @Test
-  @DisplayName("write Mode In Is Mode Out")
-  void writeModeInIsModeOut() {
-
-    locDataPoint.add(ldp);
-    trackData.add(trackDataPoint);
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
-        locDataPoint, 
-        trackData, 
-        randomArray
-    );
-
-    dpsc.storeMode("normal");
-    assertEquals("normal", dpsc.getMode());
-  }
 
   @Test
   @DisplayName("current Satellite matches next satellite")
