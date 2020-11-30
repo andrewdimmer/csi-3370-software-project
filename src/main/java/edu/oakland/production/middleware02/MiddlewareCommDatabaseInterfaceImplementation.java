@@ -16,10 +16,10 @@ public class MiddlewareCommDatabaseInterfaceImplementation implements
     if (databaseCommInterface == null) {
       throw new IllegalArgumentException("databaseCommInterface cannot be null");
       }
-      this.databaseCommInterface = databaseCommInterface;
-      }
+    this.databaseCommInterface = databaseCommInterface;
+  }
   
-   public int checkCurrentRfid() {
-     return databaseCommInterface.receiveGetRfidRequest();
-    } 
+  public int checkCurrentRfid() {
+    return databaseCommInterface.receiveGetRfidRequest();
+  } 
 }
