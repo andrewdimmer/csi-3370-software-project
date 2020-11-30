@@ -18,14 +18,14 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("DatabaseCommInterfaceImplementation Unit Tests")
-public class DatabaseCommInterfaceImplementationTests {
+public class DatabaseCommInterfaceTest {
 
   @Test
   @DisplayName("rfid going in is Rfid coming Out")
   void rfidInIsRfidOut() {
     int i = (int) (Math.random() * 100);
     DatabaseCommManagerStub dcm = new DatabaseCommManagerStub(i);
-    DatabaseCommInterface dci = new DatabaseCommInterfaceImpementation(dcm);
+    DatabaseCommInterfaceImplementation dci = new DatabaseCommInterfaceImpementation(dcm);
     assertEquals(i, dci.receiveGetRfidRequest());
   }
   
