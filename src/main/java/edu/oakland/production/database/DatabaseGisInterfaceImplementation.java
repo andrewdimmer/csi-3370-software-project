@@ -1,7 +1,7 @@
 package edu.oakland.production.database;
 
 import edu.oakland.helper.admin.LocationDataPoint;
-import edu.oakland.test.database.DatabaseGisManagerStub;
+import edu.oakland.production.database.DatabaseGisManager;
 
 public class DatabaseGisInterfaceImplementation {
 
