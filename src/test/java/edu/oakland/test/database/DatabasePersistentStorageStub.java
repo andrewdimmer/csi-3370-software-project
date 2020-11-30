@@ -27,4 +27,17 @@ public class DatabasePersistentStorageStub implements DatabasePersistentStorage 
   public String getMode() {
     return mode;
   }
+  
+  public TrackData getTrackData(int offset) {
+	  return null;
+  }
+  
+  public int locateRfidData() {
+	  return int(10);
+  }
+  public void storeTrackData() {
+	  
+  }
+  
+ 
 }
