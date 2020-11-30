@@ -20,7 +20,7 @@ package edu.oakland.helper.admin {
         \tLocationDataPoint initLocationDataPoint)
         {static} - float generateNewLocationDataPointLat()
         {static} - float generateNewLocationDataPointLng()
-        {static} - float generateNewLocationDataPointTime()
+        {static} - LocalDateTime generateNewLocationDataPointTime()
     }
 }
 

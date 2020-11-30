@@ -10,6 +10,6 @@ public interface MiddlewareGisManager {
     
   public String attemptToRegainGpsLock(String satelliteName);
     
-  public String evaluateGpsSignalStrength(boolean signalValid);
+  public String evaluateGpsSignalStrength(Satellite satellite);
 
 }

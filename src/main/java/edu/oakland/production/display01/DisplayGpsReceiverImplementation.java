@@ -20,10 +20,10 @@ public class DisplayGpsReceiverImplementation implements DisplayGpsReceiver {
   /**
    * Checks for origin GPS satellite of received signal.
    *
-   * @param satelliteName GPS satellite for origin of signal.
+   * @param satelliteSignal GPS satellite to determine origin of signal.
    * @return Request to reconnect to satellite.
    */
-  public SatelliteSignalCheckRequest measureSignal(String satelliteName) {
+  public SatelliteSignalCheckRequest measureSignal(Satellite satelliteSignal) {
         
     return null;
 
