@@ -1,41 +1,41 @@
 package edu.oakland.test.database;
 
+import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabasePersistentStorage;
 import edu.oakland.helper.admin.LocationDataPoint;
-import edu.oakland.helper.admin.TrackData;
 
 public class DatabasePersistentStorageStub implements DatabasePersistentStorage {
 
-public int locateRfidData(){
+  public int locateRfidData() {
     return 0;
-}
+  }
 
-public LocationDataPoint getLocationDataPoint(int offset){
+  public LocationDataPoint getLocationDataPoint(int offset) {
     return null;
-}
+  }
 
-public void storeLocationDataPoint(LocationDataPoint locationDataPoint){
-    
-}
+  public void storeLocationDataPoint(LocationDataPoint locationDataPoint) {
 
-public TrackData getTrackData(int offset){
+  }
+
+  public TrackData getTrackData(int offset) {
     return null;
-}
+  }
 
-public void storeTrackData(TrackData trackData){
-    
-}
+  public void storeTrackData(TrackData trackData) {
 
-public String getMode(){
+  }
+
+  public String getMode() {
     return "";
-}
+  }
 
-public void storeMode(String mode){
+  public void storeMode(String mode) {
 
-}
+  }
 
-public String getNextSat(String currentSat){
+  public String getNextSat(String currentSat) {
     return "";
-}
-  
+  }
+
 }

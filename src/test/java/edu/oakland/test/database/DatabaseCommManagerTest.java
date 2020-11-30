@@ -10,9 +10,7 @@ import edu.oakland.production.database.DatabasePersistentStorage;
 import edu.oakland.test.database.DatabasePersistentStorageStub;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
-
 import javax.tools.DocumentationTool.Location;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -39,8 +37,11 @@ public class DatabaseCommManagerTest {
     float lng = (float) (Math.random() * 360 - 180);
 
     LocationDataPoint ldp = new LocationDataPoint(lat, lng,
-        LocalDateTime.of((int) (Math.random() * 50 + 1970), (int) (Math.random() * 12 + 1),
-            (int) (Math.random() * 28 + 1), (int) (Math.random() * 24), (int) (Math.random() * 60)));
+        LocalDateTime.of((int) (Math.random() * 50 + 1970),
+         (int) (Math.random() * 12 + 1),
+            (int) (Math.random() * 28 + 1),
+             (int) (Math.random() * 24),
+              (int) (Math.random() * 60)));
 
     ldp = null;
     int i = (int) Math.random();
@@ -67,7 +68,8 @@ public class DatabaseCommManagerTest {
 
     LocationDataPoint ldp = new LocationDataPoint(lat, lng,
         LocalDateTime.of((int) (Math.random() * 50 + 1970), (int) (Math.random() * 12 + 1),
-            (int) (Math.random() * 28 + 1), (int) (Math.random() * 24), (int) (Math.random() * 60)));
+            (int) (Math.random() * 28 + 1), (int) (Math.random() * 24),
+             (int) (Math.random() * 60)));
 
     TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
     td = null;
@@ -94,6 +96,7 @@ public class DatabaseCommManagerTest {
   private LocationDataPoint generateRandomLocationDataPoint() {
     return new LocationDataPoint((float) (Math.random() * 180 - 90), (float) (Math.random() * 360 - 180),
         LocalDateTime.of((int) (Math.random() * 50 + 1970), (int) (Math.random() * 12 + 1),
-            (int) (Math.random() * 28 + 1), (int) (Math.random() * 24), (int) (Math.random() * 60)));
+            (int) (Math.random() * 28 + 1), (int) (Math.random() * 24),
+             (int) (Math.random() * 60)));
   }
 }
