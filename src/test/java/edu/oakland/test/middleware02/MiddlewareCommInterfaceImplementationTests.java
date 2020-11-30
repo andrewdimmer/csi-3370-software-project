@@ -19,8 +19,9 @@ public class MiddlewareCommInterfaceImplementationTests {
     void rfidInIsRfIdOut() {
     int ranRfid = (int)(Math.floor(100000 + Math.random() * 900000));
     MiddlewareCommInterface mid02Interface = new MiddlewareCommInterfaceImplementation(
-    new MiddlewareCommLinkManagerStub());
-    assertEquals(ranRfid, Integer.parseInt(mid02Interface.requestRfid(ranRfid).getStatusMessage())); 
+        new MiddlewareCommLinkManagerStub());
+    assertEquals(ranRfid, Integer.parseInt(
+        mid02Interface.requestRfid(ranRfid).getStatusMessage())); 
 
   }
 
