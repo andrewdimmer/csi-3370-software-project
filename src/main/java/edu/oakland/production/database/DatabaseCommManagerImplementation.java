@@ -7,6 +7,12 @@ public class DatabaseCommManagerImplementation implements DatabaseCommManager {
 
   DatabasePersistentStorage dps;
 
+  /**
+   * Creates a database manager to CommManager to provide methods for managing
+   * Comm info.
+   *
+   * @param dps an instance of the DatabasePersistent class.
+   */
   public DatabaseCommManagerImplementation(DatabasePersistentStorage dps) {
 
     if (dps == null) {
