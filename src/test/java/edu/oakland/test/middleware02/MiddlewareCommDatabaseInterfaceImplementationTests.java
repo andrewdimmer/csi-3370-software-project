@@ -24,7 +24,7 @@ public class MiddlewareCommDatabaseInterfaceImplementationTests {
 
   @Test 
   @DisplayName("Verifies if middlewareManager is set to Null")
-  void nullCheck(){
+  void nullCheck() {
     assertThrows(IllegalArgumentException.class, () -> {
       new MiddlewareCommDatabaseInterfaceImplementation(null);
     });
