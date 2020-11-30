@@ -11,26 +11,6 @@ import edu.oakland.production.display01.DisplayGpsReceiverImplementation;
 @DisplayName ("Display GPS Receiver Implementation")
 public class DisplayGpsReceiverImplementationTests {
   @Test
-  @DisplayName ("Measure GPS Signal Strength")
-  public void measureGpsSignalStrength(Satellite satelliteSignal){
-    Satellite signal = satelliteSignal;
-    Integer i = signal.getStrength();
-    String s = i.toString();
-    if (i > 4){
-      assertTrue(Integer.parseInt(s) > 4);
-      DisplayGpsManagerImplementation manager = new DisplayGpsManagerImplementation();
-      manager.passGpsSignalStrength(signal);
-    }
-    else if(i <= 4){
-      displayGpsManagerIsNotNull();
-    }
-    else if(s == null){
-      System.out.println("GPS Signal Strength Passed is Null. Exiting...");
-      System.exit(10);
-    }
-  }
- 
-  @Test
   @DisplayName ("Display GPS Manager Is Not Null")
   public void displayGpsManagerIsNotNull(){
     DisplayGpsManagerImplementation manager = new DisplayGpsManagerImplementation();
