@@ -13,7 +13,6 @@ import org.junit.jupiter.api.Test;
 
 @DisplayName("MiddlewareCommInterfaceImplementation Unit Tests")
 public class MiddlewareCommInterfaceImplementationTests {
-  int rfid;
 
   @Test
   @DisplayName("Rfid In Is the same Rfid Out")
