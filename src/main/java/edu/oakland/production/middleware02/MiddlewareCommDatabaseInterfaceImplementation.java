@@ -6,18 +6,18 @@ import edu.oakland.production.middleware02.MiddlewareCommDatabaseInterface;
 
 
 public class MiddlewareCommDatabaseInterfaceImplementation implements MiddlewareCommDatabaseInterface {
-    int rfid;
+  int rfid;
   
-    private DatabaseCommInterface databaseCommInterface;
+  private DatabaseCommInterface databaseCommInterface;
   
-    public MiddlewareCommDatabaseInterfaceImplementation(DatabaseCommInterface databaseCommInterface) {
-      if(databaseCommInterface == null) {
-        throw new IllegalArgumentException("databaseCommInterface cannot be null");
+  public MiddlewareCommDatabaseInterfaceImplementation(DatabaseCommInterface databaseCommInterface) {
+    if(databaseCommInterface == null) {
+      throw new IllegalArgumentException("databaseCommInterface cannot be null");
       }
       this.databaseCommInterface = databaseCommInterface;
-    }
+      }
   
-    public int checkCurrentRfid() {
-      return databaseCommInterface.receiveGetRfidRequest();
+   public int checkCurrentRfid() {
+     return databaseCommInterface.receiveGetRfidRequest();
     } 
 }
