@@ -25,15 +25,17 @@ public class DatabaseCommInterfaceTest {
   void rfidInIsRfidOut() {
     int i = (int) (Math.random() * 100);
     DatabaseCommManagerStub dcm = new DatabaseCommManagerStub(i);
-    DatabaseCommInterfaceImplementation dci = new DatabaseCommInterfaceImpementation(dcm);
+    DatabaseCommInterfaceImplementation dci = new DatabaseCommInterfaceImplementation(dcm);
     assertEquals(i, dci.receiveGetRfidRequest());
   }
   
   @Test
   @DisplayName("Offset matches Datapoint")
   void offsetMatchDataPoint() {
-    
-    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
+
+    int i = (int) (Math.random() * 100);
+    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub(i);
+    DatabaseCommInterfaceImplementation dci = new DatabaseCommInterfaceImplementation(dcm);
 
     float lat = (float) (Math.random() * 360 - 180);
     float lng = (float) (Math.random() * 360 - 180);
@@ -43,7 +45,6 @@ public class DatabaseCommInterfaceTest {
         (int) (Math.random() * 28 + 1), (int) (Math.random() * 24),
         (int) (Math.random() * 60)));
     ldp = null;    
-    int i = (int) Math.random();    
     assertEquals(ldp, dci.receiveGetLocationDataPointRequest(i));
   }
   
@@ -51,23 +52,22 @@ public class DatabaseCommInterfaceTest {
   @DisplayName("Offset matches TrackData")
   void offsetMatchTrackData() {
     
-
-    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
+    int i = (int) (Math.random() * 100);
+    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub(i);
 
     TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
-    int i = (int) (Math.random() * 7);
     assertEquals(null, dcm.passGetTrackDataRequest(i));  
   }
   
   @Test
   @DisplayName("TrackData In is same as TrackData Out")
   void trackDataInIsTrackDataOut() {
-   
-    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
+
+    int i = (int) Math.random();
+    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub(i);
     
     TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
     td = null;
-    int i = (int) Math.random();
     assertEquals(td, dcm.passGetTrackDataRequest(i));
 
 
@@ -77,7 +77,8 @@ public class DatabaseCommInterfaceTest {
   @DisplayName("Mode in is mode out")
   void modeInIsModeOut() {
 
-    DatabaseCommManagerStub dcms = new DatabaseCommManagerStub();
+    int i = (int) Math.random();
+    DatabaseCommManagerStub dcms = new DatabaseCommManagerStub(i);
     DatabaseCommInterfaceImplementation dci = new DatabaseCommInterfaceImplementation(dcms);
     dci.receiveGetModeRequest();
     assertEquals("", dcms.passGetModeRequest());
