@@ -26,7 +26,7 @@ public class DisplayCommInterfaceImplementationTest {
     assertNotNull(dc, "Verify that class is not null");
   }
 
-  /** Generates random number to stand in for the rfid*/
+  /** Generates random number to stand in for the rfid.*/
   private int generateRandomRfid() {
     return (int) Math.random();
   }
