@@ -13,7 +13,8 @@ import java.lang.IllegalArgumentException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Display Comm Manager Implementation Tests")
+@DisplayName("DisplayCommManagerImplementation Unit Tests")
+
 public class DisplayCommManagerImplementationTests {
 
   @Test
