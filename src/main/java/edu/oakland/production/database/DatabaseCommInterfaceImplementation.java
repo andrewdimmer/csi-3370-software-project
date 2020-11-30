@@ -15,7 +15,7 @@ public class DatabaseCommInterfaceImplementation implements DatabaseCommInterfac
    * @param databaseCommManager is an instance of the DatabaseCommManagerImplementation class.
    */
 
-  public DatabaseCommInterfaceClass(DatabaseCommManager databaseCommManager) {
+  public DatabaseCommInterfaceImplementation(DatabaseCommManager databaseCommManager) {
     if (databaseCommManager == null) {
       throw new IllegalArgumentException("manager cannot be null");
     }
