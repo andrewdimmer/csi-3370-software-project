@@ -5,7 +5,7 @@ import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabaseCommManager;
 
 public class DatabaseCommManagerStub implements DatabaseCommManager {
-  int rfid = 10;
+  private int rfid;
   LocationDataPoint ldp = null;
 
   public int passGetRfidRequest() {
