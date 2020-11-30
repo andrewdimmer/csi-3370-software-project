@@ -4,7 +4,7 @@ import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabaseCommManager;
 
-public class DatabaseCommInterfaceClass {
+public class DatabaseCommInterfaceImplementation implements DatabaseCommInterface {
   
   DatabaseCommManager databaseCommManager;
 
