@@ -13,8 +13,12 @@ public class DisplayGpsReceiverImplementation implements DisplayGpsReceiver {
    */
   public String measureGpsSignalStrength(Satellite satelliteSignal) {
 
-    return "";
-
+    Integer i = satelliteSignal.getStrength();
+    String s = i.toString();
+    if (s == null) {
+      throw new IllegalArgumentException("Signal strength cannot be null");
+    }
+    this.satelliteSignal = satelliteSignal;
   }
 
   /**
