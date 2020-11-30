@@ -76,14 +76,14 @@ public class DatabasePersistentStorageTest {
     int randomInt = (int) (Math.random() * (5 - 1 + 1) + 1); 
     ArrayList<LocationDataPoint> locDataPointList = new ArrayList<LocationDataPoint>();
     
-    for (int i=0; i <= randomInt; i++) {
+      for (int i = 0; i <= randomInt; i++) {
 
         LocationDataPoint ldpData = new LocationDataPoint(0, 0, LocalDateTime.of(
-          (int) (Math.random() * 50 + 1970),
-          (int) (Math.random() * 12 + 1),
-          (int) (Math.random() * 28 + 1),
-          (int) (Math.random() * 24),
-          (int) (Math.random() * 60)
+            (int) (Math.random() * 50 + 1970),
+            (int) (Math.random() * 12 + 1),
+            (int) (Math.random() * 28 + 1),
+            (int) (Math.random() * 24),
+            (int) (Math.random() * 60)
         ));
 
         locDataPointList.add(0, ldpData);
@@ -128,7 +128,7 @@ public class DatabasePersistentStorageTest {
     int randomInt = (int) (Math.random() * (5 - 1 + 1) + 1); 
     ArrayList<TrackData> trackDataList = new ArrayList<TrackData>();
 
-    for (int i=0; i <= randomInt; i++) {
+    for (int i = 0; i <= randomInt; i++) {
 
         float course = generateRandomCourse();
         TrackData trackDataPointSample = new TrackData(
