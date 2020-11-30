@@ -4,10 +4,12 @@ package edu.oakland.test.middleware01 {
     class DatabaseGisInterfaceStub {
         __
         .. Use Case 1 ..
-        + void recieveStoreRequest(LocationDataPoint locationDataPoint)
+        + void receiveStoreRequest(LocationDataPoint locationDataPoint)
+        + LocationDataPoint getLocation()
         .. Use Case 2 ..
-        + String recieveModeRequest(String mode)
-        + String recieveNextSatRequest(String currentSat)
+        + void receiveModeRequest(String mode)
+        + String getMode()
+        + String receiveNextSatRequest(String currentSat)
     }
 }
 
