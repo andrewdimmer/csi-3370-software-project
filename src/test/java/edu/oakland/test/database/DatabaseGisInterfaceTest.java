@@ -1,8 +1,10 @@
 package edu.oakland.test.database;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import edu.oakland.helper.admin.LocationDataPoint;
+import java.lang.IllegalArgumentException;
 import edu.oakland.production.database.DatabaseGisInterfaceImplementation;
 import edu.oakland.production.database.DatabaseGisManagerStub;
 import java.time.LocalDateTime;
@@ -50,9 +52,9 @@ public class DatabaseGisInterfaceTest {
   @Test
   @DisplayName("Checks that manager isn't null")
   void databaseGisManagerNotNull() {
-    DatabaseGisManagerStub dgms = new DatabaseGisManagerStub();
-    String currentSat = "";
-    assertEquals("", dgms.passNextSatRequest(currentSat));
+    assertThrows(IllegalArgumentException.class, () -> {
+      new DatabaseGisInterfaceImplementation(null);
+    });
   }
 
 }
