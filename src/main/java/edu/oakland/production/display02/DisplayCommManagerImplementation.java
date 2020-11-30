@@ -29,29 +29,11 @@ public class DisplayCommManagerImplementation implements DisplayCommManager {
 
     /**
     * Receives the rfid from DisplayComm2WayInterface
-    * before passing along for evaluation.
+    * before passing along to Middleware.
     *
     * @return the TrackData
     */
     public TrackData receiveRfid(int rfid) {
-        return evaluateRfidRequest(rfid);
-    }
-
-    /**
-    * Evaluates the rfid received.
-    *
-    * @return the TrackData
-    */
-    private TrackData evaluateRfidRequest(int rfid) {
-        return passRfidToMiddlewareCommInterface(rfid);
-    }
-
-    /**
-    * Passes the evaluated rfid along to MiddlewareCommInterface.
-    *
-    * @return the TrackData
-    */
-    private TrackData passRfidToMiddlewareCommInterface(int rfid) {
         return middleware.requestRfid(rfid);
     }
 
