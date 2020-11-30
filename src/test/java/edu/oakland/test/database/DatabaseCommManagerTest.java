@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Database CommManager Test")
+@DisplayName("Database CommManagerImplementation Unit Tests")
 public class DatabaseCommManagerTest {
 
   @Test
