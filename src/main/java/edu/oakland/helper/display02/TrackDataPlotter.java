@@ -28,17 +28,11 @@ public class TrackDataPlotter extends JFrame{
     float[] lng = extractLngFromTrackData(data);
     XYSeries dataPoints = getTrackData();
     XYSeries dataLine = calculateLine();
-    isValidTrackData = data.isValid();
+    Boolean isValidTrackData = data.isValid();
 
 
   }
   public void displayPlotter(){
-    // TrackDataPlotter example = new TrackDataPlotter(TrackData);
-    // example.setSize(800, 400);
-    // example.setLocationRelativeTo(null);
-    // example.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-    // example.setVisible(true);\
-    //or place in constructor
 
     //Scatter Plot
     JFreeChart plotChart = ChartFactory.createScatterPlot(
@@ -46,6 +40,7 @@ public class TrackDataPlotter extends JFrame{
     "X-Axis", "Y-Axis", dataPoints);
     ChartPanel panel1 = new ChartPanel(plotChart);
     setContentPane(panel1);
+
 
     //Line Chart
     JFreeChart lineChart = ChartFactory.createXYLineChart(
@@ -85,3 +80,10 @@ public class TrackDataPlotter extends JFrame{
   }
 
 }
+
+//place in displayCommInterface:
+// TrackDataPlotter example = new TrackDataPlotter(TrackData);
+// example.setSize(800, 400);
+// example.setLocationRelativeTo(null);
+// example.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+// example.setVisible(true);
