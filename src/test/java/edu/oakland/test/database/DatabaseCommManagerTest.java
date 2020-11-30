@@ -94,7 +94,8 @@ public class DatabaseCommManagerTest {
   }
 
   private LocationDataPoint generateRandomLocationDataPoint() {
-    return new LocationDataPoint((float) (Math.random() * 180 - 90), (float) (Math.random() * 360 - 180),
+    return new LocationDataPoint((float) (Math.random() * 180 - 90),
+     (float) (Math.random() * 360 - 180),
         LocalDateTime.of((int) (Math.random() * 50 + 1970), (int) (Math.random() * 12 + 1),
             (int) (Math.random() * 28 + 1), (int) (Math.random() * 24),
              (int) (Math.random() * 60)));
