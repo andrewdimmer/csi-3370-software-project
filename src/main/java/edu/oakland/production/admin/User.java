@@ -5,9 +5,8 @@ import java.lang.IllegalArgumentException;
 import java.util.Scanner;
 
 /**
- * A production class that allows a user to be created so that Use Case One
+ * A production class that allows a user to be created so that Use Case One 
  * (SLTS location and track data is requested) can be initiated.
- *
  * @author Tessa Peruzzi
  * @version %I%, %G%
  */

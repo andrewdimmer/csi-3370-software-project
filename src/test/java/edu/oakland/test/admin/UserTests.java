@@ -1,12 +1,13 @@
-package edu.oakland.test.UserTests;
+package edu.oakland.test.admin;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import edu.oakland.production.admin.User;
 import edu.oakland.production.display02.DisplayCommInterface;
 import java.lang.IllegalArgumentException;
 import java.util.Random;
 import java.util.Scanner;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
