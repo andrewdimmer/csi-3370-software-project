@@ -8,20 +8,23 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("Display Comm Interface Implementation Tests")
-public class DisplayCommInterfaceImplementationTest {
+public class DisplayCommInterfaceImplementationTest
+{
 
     @Test
 
-    void rfidInIsRfidOut(){
+    void rfidInIsRfidOut()
+    {
         int rfid = generateRandomRfid();
         DisplayCommInterfaceImplementation displayComm = new DisplayCommInterfaceImplementation();
         displayComm.receiveRfidRequest(rfid);
         int output = displayComm.rfid;
         assertEquals(rfid, output);
-        }
+      }
 
     @Test
-    void displayComm2WayIsNotNull(){
+    void displayComm2WayIsNotNull()
+    {
         DisplayComm2WayInterfaceImplementation DC = new DisplayComm2WayInterfaceImplementation();
         assertNotNull(DC, "Verify that class is not null");
     }
