@@ -12,11 +12,11 @@ public class DatabaseGisInterfaceImplementation {
    *
    * @param m an instance of the DatabaseGisManagerImplementation class.
    */
+
   public DatabaseGisInterfaceImplementation(DatabaseGisManager m) {
     if (m == null) {
       throw new IllegalArgumentException("manager cannot be null");
     }
-
     manager = m;
   }
 
