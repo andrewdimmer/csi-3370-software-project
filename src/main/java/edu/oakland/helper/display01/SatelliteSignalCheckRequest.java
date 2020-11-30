@@ -18,8 +18,8 @@ public class SatelliteSignalCheckRequest {
    * Creates a SatelliteSignalCheckRequest to check the satellite name and type of the
    * Satellite Signal for Secure Lock Tracking Software shipping container.
    *
-   * @param satelliteName  The name of the satellite of the Secure Lock Tracking Software
-   * shipping container.
+   * @param satelliteName  The name of the satellite of the Secure Lock
+   * Tracking Software shipping container.
    * @param checkType  The type of the Secure Lock Tracking Software shipping container.
    */
 
