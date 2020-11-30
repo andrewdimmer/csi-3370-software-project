@@ -8,7 +8,7 @@ import java.lang.IllegalArgumentException;
 
 /**
 * This class receives the rfid, evaluates it,
-* then passes it along to Middleware
+* then passes it along to Middleware.
 *
 */
 public class DisplayCommManagerImplementation implements DisplayCommManager {
@@ -19,7 +19,7 @@ public class DisplayCommManagerImplementation implements DisplayCommManager {
     /**
     * Creates a DisplayCommManagerImplementation to receive the rfid.
     *
-    * @param MiddlewareCommInterface: The class that DisplayCommManager will pass the rfid to.
+    * param MiddlewareCommInterface: The class that DisplayCommManager will pass the rfid to.
     *
     */
     public DisplayCommManagerImplementation(MiddlewareCommInterface middlewareCommInterface) {
