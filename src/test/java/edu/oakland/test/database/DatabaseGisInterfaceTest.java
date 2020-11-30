@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.production.database.DatabaseGisInterfaceImplementation;
-import edu.oakland.production.database.DatabaseGisManagerStub;
+import edu.oakland.test.database.DatabaseGisManagerStub;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 import java.util.Random;
