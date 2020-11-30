@@ -11,7 +11,7 @@ package edu.oakland.production.middleware01 {
         + void storeLocationDataPoint()
         .. Use Case 2 ..
         + String attemptToRegainGpsLock(String satelliteName)
-        + String evaluateGpsSignalStrength(boolean signalValid)
+        + String evaluateGpsSignalStrength(Satellite satellite)
     }
 }
 

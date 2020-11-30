@@ -7,6 +7,6 @@ public interface DisplayGpsReceiver {
     
   public String measureGpsSignalStrength(Satellite satelliteSignal);
     
-  public SatelliteSignalCheckRequest measureSignal(String satelliteName);
+  public SatelliteSignalCheckRequest measureSignal(Satellite satelliteSignal);
 
 }
