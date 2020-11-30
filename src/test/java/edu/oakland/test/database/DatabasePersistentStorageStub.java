@@ -29,14 +29,15 @@ public class DatabasePersistentStorageStub implements DatabasePersistentStorage 
   }
   
   public TrackData getTrackData(int offset) {
-	  return null;
+    return null;
   }
   
   public int locateRfidData() {
-	  return int(10);
+    return 10;
   }
+
   public void storeTrackData() {
-	  
+    
   }
   
  
