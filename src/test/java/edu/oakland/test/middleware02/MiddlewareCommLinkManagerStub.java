@@ -7,10 +7,9 @@ import edu.oakland.production.middleware02.MiddlewareCommLinkManager;
 
 public class MiddlewareCommLinkManagerStub implements MiddlewareCommLinkManager{
   public TrackData checkCurrentRfid(int rfid) {
-      TrackData tD = new TrackData(new LocationDataPoint[0]);
-      tD.setStatusMessage(String.valueOf(rfid));
-      System.out.println(tD);
-      return tD;
+    TrackData trackD = new TrackData(new LocationDataPoint[0]);
+    trackD.setStatusMessage(String.valueOf(rfid));
+    return trackD;
 
   }
     
