@@ -2,8 +2,8 @@
 
 package edu.oakland.test.middleware01 {
   class MiddlewareGisInterfaceImplementationTests {
-    + void isGpsSignalStrengthReceived()
-    + void passSignalStrengthToDisplay()
+    + void passedSignalStrengthUc1()
+    + void passedSignalStrengthUc2()
     + void processorIsNotNull()
   }
 }
