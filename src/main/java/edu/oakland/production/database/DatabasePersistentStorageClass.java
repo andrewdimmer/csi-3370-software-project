@@ -26,16 +26,17 @@ public class DatabasePersistentStorageClass {
       ArrayList<LocationDataPoint> locDataPoint, 
       ArrayList<TrackData> trackData, 
       String[] nextSatellites) {
-        this.rfidData = rfidData;
-        this.locDataPoint = locDataPoint;
-        this.trackData = trackData;
-        this.nextSatellites = nextSatellites;
-        this.mode = "normal";
+
+    this.rfidData = rfidData;
+    this.locDataPoint = locDataPoint;
+    this.trackData = trackData;
+    this.nextSatellites = nextSatellites;
+    this.mode = "normal";
   }
 
 
   /**
-   * Returns the rfidData integer
+   * Returns the rfidData integer.
    * 
    *
    * 

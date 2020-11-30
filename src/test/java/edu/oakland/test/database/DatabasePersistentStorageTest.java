@@ -231,11 +231,11 @@ public class DatabasePersistentStorageTest {
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
 
-  	DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
-        locDataPoint, 
-        trackData, 
-        randomArray
-    );
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
+            locDataPoint, 
+            trackData, 
+            randomArray
+        );
 
     dpsc.storeTrackData(trackDataPoint);
     assertEquals(null, dpsc.getTrackData(99999));
