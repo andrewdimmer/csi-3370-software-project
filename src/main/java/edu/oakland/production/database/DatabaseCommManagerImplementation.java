@@ -3,13 +3,12 @@ package edu.oakland.production.database;
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 
-
-public class DatabaseCommManagerImplementation implements DatabaseCommManager{
+public class DatabaseCommManagerImplementation implements DatabaseCommManager {
 
   DatabasePersistentStorage dps;
 
-  public DatabaseCommManagerImplementation(DatabasePersistentStorage dps){
-    
+  public DatabaseCommManagerImplementation(DatabasePersistentStorage dps) {
+
   }
 
   public int passGetRfidRequest() {
