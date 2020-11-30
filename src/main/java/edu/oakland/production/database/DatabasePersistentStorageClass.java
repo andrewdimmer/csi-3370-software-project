@@ -90,13 +90,20 @@ public class DatabasePersistentStorageClass {
    */
 
   public TrackData getTrackData(int offset) {
-    // If we have a trackdata of length 4 for example, then the offset can not be more than 3 so we use length-1
-    if (offset > this.trackData.size()-1) {
+    // If we have a td of L=4, then the offset can't be >3 so we use length-1
+    if (offset > this.trackData.size() - 1) {
       return null;
-  	}
+    }
 
-  	return this.trackData.get(offset);
+    return this.trackData.get(offset);
   }
+
+  /**
+   * Store track data
+   *
+   *
+   * @param trackData the track data provided in the trackData data type
+   */
 
   public void storeTrackData(TrackData trackData) {
     if (trackData == null) {
@@ -106,9 +113,23 @@ public class DatabasePersistentStorageClass {
     this.trackData.add(trackData);
   }
 
+  /**
+   * Returns the mode
+   *
+   *
+   *
+   */
+
   public String getMode() {
     return this.mode;
   }
+
+  /**
+   * Stores the mode
+   *
+   *
+   * @param mode The mode to utilize in string format.
+   */
 
   public void storeMode(String mode) {
     this.mode = mode;
