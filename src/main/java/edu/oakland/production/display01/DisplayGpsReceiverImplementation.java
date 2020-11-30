@@ -2,6 +2,7 @@ package edu.oakland.production.display01;
 
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
+import java.lang.IllegalArgumentException;
 
 public class DisplayGpsReceiverImplementation implements DisplayGpsReceiver {
 
@@ -13,8 +14,12 @@ public class DisplayGpsReceiverImplementation implements DisplayGpsReceiver {
    */
   public String measureGpsSignalStrength(Satellite satelliteSignal) {
 
-    return "";
-
+    Integer i = satelliteSignal.getStrength();
+    String s = i.toString();
+    if (s == null) {
+      throw new IllegalArgumentException("Signal strength cannot be null");
+    }
+    this.satelliteSignal = satelliteSignal;
   }
 
   /**
