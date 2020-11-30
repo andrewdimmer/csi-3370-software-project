@@ -24,7 +24,7 @@ public class DisplayGpsReceiverImplementationTests {
     else if(i <= 4){
       displayGpsManagerIsNotNull();
     }
-    else{
+    else if(s == null){
       System.out.println("GPS Signal Strength Passed is Null. Exiting...");
       System.exit(10);
     }
