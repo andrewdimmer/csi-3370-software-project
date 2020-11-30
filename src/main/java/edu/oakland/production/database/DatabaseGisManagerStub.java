@@ -17,7 +17,7 @@ public class DatabaseGisManagerStub implements DatabaseGisManager {
    */
   
   public LocationDataPoint getLocationDataPoint(int offset) {
-    if (offset = 0) {
+    if (offset == 0) {
       return ldp;
     }
     return null;
