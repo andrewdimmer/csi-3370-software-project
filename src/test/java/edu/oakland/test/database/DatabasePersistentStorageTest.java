@@ -129,7 +129,7 @@ public class DatabasePersistentStorageTest {
 
   @Test
   @DisplayName("read Mode In Is Mode Out")
-  void readModeInIsModeOut() {
+  void modeInIsModeOut() {
     
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
@@ -321,4 +321,3 @@ public class DatabasePersistentStorageTest {
 
 
 }
-
