@@ -4,6 +4,7 @@ import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 
 import edu.oakland.helper.admin.Satellite;
+import edu.oakland.production.display01.DisplayGpsInterface;
 
 /**
  * A test class to act as a stub for DisplayGpsInterface
@@ -11,13 +12,22 @@ import edu.oakland.helper.admin.Satellite;
  * @author Brendan Fraser
  * @version %I%, %G%
  */
-public class DisplayGpsInterfaceStub {
+public class DisplayGpsInterfaceStub implements DisplayGpsInterface {
 
-  /**
-   * Creates a DisplayGpsInterfaceStub object to be a stub.
-   */
-  public DisplayGpsInterfaceStub() {
+  public boolean receiveGpsSignal(Satellite satelliteSignal) {
+    return true;
+  }
 
+  public String reportGpsSignalLoss(Satellite satelliteSignal) {
+    return "";
+  }
+
+  public int recheckSignalStrength(Satellite satelliteSignal) {
+    return 0;
+  }
+
+  public int checkSignalStrength(Satellite satelliteSignal) {
+    return 0;
   }
 
 }

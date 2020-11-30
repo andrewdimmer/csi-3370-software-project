@@ -14,4 +14,13 @@ import edu.oakland.test.admin.DisplayGpsInterfaceStub;
 @DisplayName("GpsSystem Unit Tests")
 public class GpsSystemTests {
 
+	@Test
+	@DisplayName("Init DisplayGpsInterfaceNotNull")
+	void initDisplayGpsInterfaceNotNull(){
+	String[] str =  new String[]{"1","2","3"};
+	DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
+	assertThrows(IllegalArgumentException.class, () -> {
+      new GpsSystem(null, str);
+    });
+	}
 }

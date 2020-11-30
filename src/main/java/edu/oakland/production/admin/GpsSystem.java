@@ -3,7 +3,7 @@ package edu.oakland.production.admin;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 
-import edu.oakland.test.admin.DisplayGpsInterfaceStub;
+import edu.oakland.production.display01.DisplayGpsInterface;
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.helper.admin.LocationDataPoint;
 
@@ -16,9 +16,8 @@ import edu.oakland.helper.admin.LocationDataPoint;
  */
 public class GpsSystem {
 
-  final DisplayGpsInterfaceStub displayGpsInterface;
+  final DisplayGpsInterface displayGpsInterface;
   final Satellite[] satellites;
-
 
   /**
    * Creates a GpsSystem object to store the GpsInterface and satellites.
@@ -27,9 +26,9 @@ public class GpsSystem {
    * @param satelliteNames  An array of Strings that will become satellites!
    *
    */
-  public GpsSystem(DisplayGpsInterfaceStub displayGpsInterface, String[] satelliteNames) {
+  public GpsSystem(DisplayGpsInterface displayGpsInterfaceIn, String[] satelliteNames) {
 	  satellites = new Satellite[10];
-	  
+	  displayGpsInterface = displayGpsInterfaceIn;
   }
 
 }
