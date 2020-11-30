@@ -9,6 +9,10 @@ public class DisplayGpsReceiverImplementation implements DisplayGpsReceiver {
 
   private DisplayGpsManager displayGpsManager;
 
+  /**
+   *
+   * @param displayGpsManager Calls on displayGpsManager to check value for null.
+   */
   public DisplayGpsReceiverImplementation(DisplayGpsManager displayGpsManager) {
     if (displayGpsManager == null) {
       throw new IllegalArgumentException("Signal strength cannot be null");
