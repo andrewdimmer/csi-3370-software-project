@@ -254,7 +254,7 @@ public class DatabasePersistentStorageTest {
   @DisplayName("track data offset out of bounds returns empty track data")
   void trackDataOffsetOutOfBoundsIsReturnsEmptyTd() {
     // Made changes per r532465218
-    // Not sure if we needed to change the DisplayName and func name
+    // Not sure if we needed to change the DisplayName and func name.
 
     // Setup
     locDataPoint.add(ldp);
