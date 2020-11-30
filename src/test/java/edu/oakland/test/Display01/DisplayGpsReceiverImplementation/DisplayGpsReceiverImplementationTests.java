@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 
 
-@DisplayName ("Display GPS Receiver Implementation")
+@DisplayName ("DisplayGpsReceiverImplementation Unit Tests")
 public class DisplayGpsReceiverImplementationTests {
   @Test
   @DisplayName ("Display GPS Manager Is Not Null")
