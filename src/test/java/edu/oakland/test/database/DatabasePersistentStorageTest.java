@@ -17,7 +17,7 @@ import java.util.Random;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Database PersistentStorage Test")
+@DisplayName("DatabasePersistentStorage Unit Tests")
 public class DatabasePersistentStorageTest {
 
   String[] randomArray = {"A", "B"};
@@ -321,6 +321,5 @@ public class DatabasePersistentStorageTest {
 
 
 }
-
 
 
