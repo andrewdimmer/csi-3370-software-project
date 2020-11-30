@@ -38,6 +38,8 @@ public class GpsSystem {
 	  }
 	  satellites = new Satellite[satelliteNames.length];
 	  displayGpsInterface = displayGpsInterfaceIn;
+    
+    
   }
   
   /**
@@ -66,8 +68,34 @@ public class GpsSystem {
       throw new IllegalArgumentException("Scanner input must not be null");
     }
   }
-  
+  /**
+   * Method to set the instance variable satellites based on the paramaters that are passed in.
+   *
+   * @param satelliteNames   Names for the satellites to create, as an array of strings
+   * @param incrementLatAmount  amount to increment Lat for each satellite
+   * @param incrementLngAmount  amount to increment Lng for each satellite
+   * @param initLocationDataPoint  inital location data point to include with satellites
+   *
+   */
   public void configureSatellites(String[] satelliteNames, float incrementLatAmount, float incrementLngAmount, LocationDataPoint initLocationDataPoint) {
+    Random rnd = new Random();
+    for (int i = 0; i < satelliteNames.length; i++){
+      satellites[i] = new Satellite(satelliteNames[i], rnd.nextInt(10) + 1);
+      satellites[i].satelliteInit(incrementLatAmount, incrementLngAmount, initLocationDataPoint);
+    }
+  }
+  
+  /**
+   * Method to generate the values for the public method with the same name, generating incrementLatAmount, incrementLngAmount, and initLocationDataPoint. With initLocationDataPoint, lat will be between 45 and 46, and lng will be between 44 and 46.
+   *
+   * @param satelliteNames   Array of strings representing names of satellites provided by the constructor.
+   *
+   */
+  private void configureSatellites(String[] satelliteNames) {
+    Random rnd = new Random();
+    float lat = rnd.nextFloat() + 45;
+    float lng = (rnd.nextFloat() * 2) + 44;
+    LocationDataPoint ldp = new LocationDataPoint(
   }
   
   /**
