@@ -13,6 +13,15 @@ public class SatelliteSignalCheckRequest {
 
   final String satelliteName;
   final String checkType;
+  
+  /**
+   * Creates a SatelliteSignalCheckRequest to check the satellite name and type of the
+   * Satellite Signal for Secure Lock Tracking Software shipping container.
+   *
+   * @param satelliteName  The name of satellite of Secure Lock Tracking Software shipping container.
+   * 
+   * @param checkType  The type of the Secure Lock Tracking Software shipping container.
+   */
 
   public SatelliteSignalCheckRequest(String satelliteName, String checkType) {
     //Validate name and type
