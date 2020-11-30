@@ -12,7 +12,7 @@ import java.util.Random;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Database GisInterface Test")
+@DisplayName("DatabaseGisInterfaceImplementation Unit Tests")
 public class DatabaseGisInterfaceTest {
 
   @Test
