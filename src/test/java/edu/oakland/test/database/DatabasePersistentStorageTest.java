@@ -276,9 +276,6 @@ public class DatabasePersistentStorageTest {
   @Test
   @DisplayName("track data offset out of bounds is invalid")
   void trackDataOffsetOutOfBoundsIsInvalid() {
-    // Made changes per r532465218
-    // Not sure if we needed to change the DisplayName and func name
-
     // Setup
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
