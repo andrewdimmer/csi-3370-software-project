@@ -9,7 +9,7 @@ public class DatabaseCommManagerImplementation implements DatabaseCommManager {
 
   public DatabaseCommManagerImplementation(DatabasePersistentStorage dps) {
 
-    if (dps == null){
+    if (dps == null) {
       throw new IllegalArgumentException("DatabasePersistentStorage cannot be null");
     }
   }
