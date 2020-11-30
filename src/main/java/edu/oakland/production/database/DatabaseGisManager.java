@@ -6,7 +6,7 @@ public interface DatabaseGisManager {
 
   public void passStoreRequest(LocationDataPoint locationDataPoint);
   
-  public String passModeRequest(String mode);
+  public void passModeRequest(String mode);
   
   public String passNextSatRequest(String currentSat);
   

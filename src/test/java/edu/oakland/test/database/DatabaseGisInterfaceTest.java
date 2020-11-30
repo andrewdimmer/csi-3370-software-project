@@ -46,7 +46,8 @@ public class DatabaseGisInterfaceTest {
     DatabaseGisManagerStub dgms = new DatabaseGisManagerStub();
     DatabaseGisInterfaceImplementation dgi = new DatabaseGisInterfaceImplementation(dgms);
     String n = "normal";
-    assertEquals(n, dgi.receiveModeRequest(n)); //supposed to return a String with the mode
+    dgi.receiveModeRequest(n);
+    assertEquals(n, dgms.getMode()); //supposed to return a String with the mode
   }
    
   @Test

@@ -23,8 +23,8 @@ public class DatabaseGisInterfaceImplementation {
     manager.passStoreRequest(locationDataPoint);
   }
 
-  public String receiveModeRequest(String mode) {
-    return manager.passModeRequest(mode);
+  public void receiveModeRequest(String mode) {
+    manager.passModeRequest(mode);
   } 
 
   public String receiveNextSatRequest(String currentSat) {
