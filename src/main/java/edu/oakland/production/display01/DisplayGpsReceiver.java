@@ -5,7 +5,7 @@ import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
 
 public interface DisplayGpsReceiver {
     
-  public String measureGpsSignalStrength(Satellite satelliteSignal);
+  public void measureGpsSignalStrength(Satellite satelliteSignal);
     
   public SatelliteSignalCheckRequest measureSignal(Satellite satelliteSignal);
 

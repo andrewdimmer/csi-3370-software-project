@@ -6,13 +6,15 @@ import java.lang.IllegalArgumentException;
 
 public class DisplayGpsReceiverImplementation implements DisplayGpsReceiver {
 
-  /** 
+  private Satellite satelliteSignal;
+
+  /**
    * Measures GPS Signal Strength.
    *
    * @param satelliteSignal GPS signal to measure.
-   * @return Status of GPS signal measured.
+   * @return no return value.
    */
-  public String measureGpsSignalStrength(Satellite satelliteSignal) {
+  public void measureGpsSignalStrength(Satellite satelliteSignal) {
 
     Integer i = satelliteSignal.getStrength();
     String s = i.toString();
