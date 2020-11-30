@@ -8,6 +8,9 @@ public class DatabaseGisInterfaceImplementation {
   DatabaseGisManager manager;
 
   public DatabaseGisInterfaceImplementation(DatabaseGisManager m) {
+    if (m == null) {
+      throw new IllegalArgumentException("manager cannot be null");
+    }
     manager = m;
   }
 
