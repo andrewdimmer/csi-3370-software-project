@@ -1,0 +1,11 @@
+@startuml MiddlewareGisInterfaceImplementationTests
+
+package edu.oakland.test.middleware01 {
+  class MiddlewareGisInterfaceImplementationTests {
+    + void isGpsSignalStrengthReceived()
+    + void passSignalStrengthToDisplay()
+    + void processorIsNotNull()
+  }
+}
+
+@enduml

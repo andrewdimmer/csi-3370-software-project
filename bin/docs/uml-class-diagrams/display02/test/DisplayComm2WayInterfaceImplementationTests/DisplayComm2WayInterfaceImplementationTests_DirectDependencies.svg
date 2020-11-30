@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="324px" preserveAspectRatio="none" style="width:928px;height:324px;" version="1.1" viewBox="0 0 928 324" width="928px" zoomAndPan="magnify"><defs><filter height="300%" id="f1me3up2iaiszv" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9258003ec405d300d3379b4a3d8dd6ad]
+cluster edu.oakland.test.display02--><polygon fill="#FFFFFF" filter="url(#f1me3up2iaiszv)" points="22,24,240,24,247,46.2969,388,46.2969,388,286.5,22,286.5,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="247" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="212" x="26" y="38.9951">edu.oakland.test.display02</text><!--MD5=[fe59aae6f7bfe371a9c197ec1f7f843a]
+cluster edu.oakland.production.display02--><polygon fill="#FFFFFF" filter="url(#f1me3up2iaiszv)" points="412,132,685,132,692,154.2969,906,154.2969,906,312,412,312,412,132" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="412" x2="692" y1="154.2969" y2="154.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="267" x="416" y="146.9951">edu.oakland.production.display02</text><!--MD5=[178181f4c7684560c711246055fc01d3]
+class DisplayComm2WayInterfaceImplementationTests--><rect fill="#FEFECE" filter="url(#f1me3up2iaiszv)" height="48" id="DisplayComm2WayInterfaceImplementationTests" style="stroke: #A80036; stroke-width: 1.5;" width="334" x="38" y="59"/><ellipse cx="53" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M55.9688,80.6406 Q55.3906,80.9375 54.75,81.0781 Q54.1094,81.2344 53.4063,81.2344 Q50.9063,81.2344 49.5781,79.5938 Q48.2656,77.9375 48.2656,74.8125 Q48.2656,71.6875 49.5781,70.0313 Q50.9063,68.375 53.4063,68.375 Q54.1094,68.375 54.75,68.5313 Q55.4063,68.6875 55.9688,68.9844 L55.9688,71.7031 Q55.3438,71.125 54.75,70.8594 Q54.1563,70.5781 53.5313,70.5781 Q52.1875,70.5781 51.5,71.6563 Q50.8125,72.7188 50.8125,74.8125 Q50.8125,76.9063 51.5,77.9844 Q52.1875,79.0469 53.5313,79.0469 Q54.1563,79.0469 54.75,78.7813 Q55.3438,78.5 55.9688,77.9219 L55.9688,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="302" x="67" y="79.1543">DisplayComm2WayInterfaceImplementationTests</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="371" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39" x2="371" y1="99" y2="99"/><!--MD5=[2970358178d6cf57fc5a801b39eb8d0b]
+class DisplayCommManagerStub--><rect fill="#FEFECE" filter="url(#f1me3up2iaiszv)" height="77.6094" id="DisplayCommManagerStub" style="stroke: #A80036; stroke-width: 1.5;" width="273" x="68.5" y="192.5"/><ellipse cx="117.75" cy="208.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M120.7188,214.1406 Q120.1406,214.4375 119.5,214.5781 Q118.8594,214.7344 118.1563,214.7344 Q115.6563,214.7344 114.3281,213.0938 Q113.0156,211.4375 113.0156,208.3125 Q113.0156,205.1875 114.3281,203.5313 Q115.6563,201.875 118.1563,201.875 Q118.8594,201.875 119.5,202.0313 Q120.1563,202.1875 120.7188,202.4844 L120.7188,205.2031 Q120.0938,204.625 119.5,204.3594 Q118.9063,204.0781 118.2813,204.0781 Q116.9375,204.0781 116.25,205.1563 Q115.5625,206.2188 115.5625,208.3125 Q115.5625,210.4063 116.25,211.4844 Q116.9375,212.5469 118.2813,212.5469 Q118.9063,212.5469 119.5,212.2813 Q120.0938,212 120.7188,211.4219 L120.7188,214.1406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="166" x="138.25" y="212.6543">DisplayCommManagerStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="69.5" x2="340.5" y1="224.5" y2="224.5"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="69.5" x2="340.5" y1="232.5" y2="232.5"/><ellipse cx="79.5" cy="260.3047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="247" x="88.5" y="263.5151">TrackData evaluateRfidRequest(int rfidNum)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="69.5" x2="172" y1="246.9023" y2="246.9023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="172" y="250.2104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="238" x2="340.5" y1="246.9023" y2="246.9023"/><!--MD5=[46657c2900260d4d40350fe3f8c544df]
+class DisplayComm2WayInterfaceImplementation--><rect fill="#FEFECE" filter="url(#f1me3up2iaiszv)" height="128.8281" id="DisplayComm2WayInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.5;" width="461" x="428.5" y="167"/><ellipse cx="520.75" cy="183" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M523.7188,188.6406 Q523.1406,188.9375 522.5,189.0781 Q521.8594,189.2344 521.1563,189.2344 Q518.6563,189.2344 517.3281,187.5938 Q516.0156,185.9375 516.0156,182.8125 Q516.0156,179.6875 517.3281,178.0313 Q518.6563,176.375 521.1563,176.375 Q521.8594,176.375 522.5,176.5313 Q523.1563,176.6875 523.7188,176.9844 L523.7188,179.7031 Q523.0938,179.125 522.5,178.8594 Q521.9063,178.5781 521.2813,178.5781 Q519.9375,178.5781 519.25,179.6563 Q518.5625,180.7188 518.5625,182.8125 Q518.5625,184.9063 519.25,185.9844 Q519.9375,187.0469 521.2813,187.0469 Q521.9063,187.0469 522.5,186.7813 Q523.0938,186.5 523.7188,185.9219 L523.7188,188.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="268" x="541.25" y="187.1543">DisplayComm2WayInterfaceImplementation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="429.5" x2="888.5" y1="199" y2="199"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="436.5" y="207"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="182" x="448.5" y="213.2104">DisplayCommManager manager</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="429.5" x2="888.5" y1="219.8047" y2="219.8047"/><ellipse cx="439.5" cy="230.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="435" x="448.5" y="234.0151">DisplayComm2WayInterfaceImplementation(DisplayCommManager manager)</text><ellipse cx="439.5" cy="260.4141" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="227" x="448.5" y="263.6245">TrackData passRfidRequest(int rfidNum)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="436.5" y="270.2188"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="269" x="448.5" y="276.4292">void determineUserRequestFormat(int rfidNum)</text><rect fill="#F24D5C" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="436.5" y="283.0234"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="342" x="448.5" y="289.2339">void receiveRequestFromDisplayCommInterface(int rfidNum)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="429.5" x2="626" y1="247.0117" y2="247.0117"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="626" y="250.3198">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="692" x2="888.5" y1="247.0117" y2="247.0117"/><!--MD5=[69695ace36e753468876c8d4fe5d2708]
+link DisplayComm2WayInterfaceImplementationTests to DisplayCommManagerStub--><path d="M205,107.21 C205,128.62 205,160.95 205,187.13 " fill="none" id="DisplayComm2WayInterfaceImplementationTests-&gt;DisplayCommManagerStub" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="205,192.28,209,183.28,205,187.28,201,183.28,205,192.28" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[ce67f838794c14794f693dd46a642b9a]
+link DisplayComm2WayInterfaceImplementationTests to DisplayComm2WayInterfaceImplementation--><path d="M323.84,107.09 C345.35,112.08 367.46,117.76 388,124 C426.31,135.63 466.85,150.26 504.57,164.92 " fill="none" id="DisplayComm2WayInterfaceImplementationTests-&gt;DisplayComm2WayInterfaceImplementation" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="509.64,166.89,502.7059,159.8959,504.9811,165.075,499.8019,167.3502,509.64,166.89" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[410beec23a09824061cd617330533c95]
+@startuml DisplayComm2WayInterfaceImplementationTests_DirectDependencies
+
+
+package edu.oakland.test.display02 {
+    class DisplayComm2WayInterfaceImplementationTests {
+
+    }
+}
+
+
+
+package edu.oakland.test.display02 {
+    class DisplayCommManagerStub {
+        __
+        .. Use Case 1 ..
+        + TrackData evaluateRfidRequest(int rfidNum)
+    }
+}
+
+DisplayComm2WayInterfaceImplementationTests ..> DisplayCommManagerStub
+
+
+package edu.oakland.production.display02 {
+    class DisplayComm2WayInterfaceImplementation {
+        - DisplayCommManager manager
+        __
+        + DisplayComm2WayInterfaceImplementation(DisplayCommManager manager)
+        .. Use Case 1 ..
+        + TrackData passRfidRequest(int rfidNum)
+        - void determineUserRequestFormat(int rfidNum)
+        - void receiveRequestFromDisplayCommInterface(int rfidNum)
+    }
+}
+
+DisplayComm2WayInterfaceImplementationTests ..> DisplayComm2WayInterfaceImplementation
+
+
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

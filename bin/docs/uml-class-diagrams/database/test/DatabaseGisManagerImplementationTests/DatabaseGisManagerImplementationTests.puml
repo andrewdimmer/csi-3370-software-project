@@ -1,0 +1,12 @@
+@startuml DatabaseGisManagerImplementationTests
+
+package edu.oakland.test.database {
+    class DatabaseGisManagerImplementationTests {
+        + void dataPointInIsDataPointOut()
+        + void modeInIsModeOut()
+        + void currentSatGetNextSat()
+        + void persistentStorageIsNotNull()
+    }
+}
+
+@enduml

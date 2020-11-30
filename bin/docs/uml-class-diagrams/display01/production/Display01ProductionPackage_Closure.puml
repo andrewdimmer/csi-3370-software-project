@@ -1,0 +1,14 @@
+@startuml Display01ProductionPackage_Closure
+
+package edu.oakland.production.display01 {
+    
+}
+
+!include DisplayGpsInterface/DisplayGpsInterface_Closure.puml
+!include DisplayGpsReceiver/DisplayGpsReceiver_Closure.puml
+!include DisplayGpsManager/DisplayGpsManager_Closure.puml
+!include DisplayGpsInterfaceImplementation/DisplayGpsInterfaceImplementation_Closure.puml
+!include DisplayGpsReceiverImplementation/DisplayGpsReceiverImplementation_Closure.puml
+!include DisplayGpsManagerImplementation/DisplayGpsManagerImplementation_Closure.puml
+
+@enduml

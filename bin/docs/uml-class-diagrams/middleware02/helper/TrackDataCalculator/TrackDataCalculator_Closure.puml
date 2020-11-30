@@ -1,0 +1,15 @@
+@startuml TrackDataCalculator_Closure
+
+!startsub MIDDLEWARE02_HELPER
+!include TrackDataCalculator.puml
+!endsub
+
+!startsub MIDDLEWARE02
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml MiddlewareGisInterfaceImplementationTests_DirectDependencies
+
+!startsub MIDDLEWARE01_TEST
+!include MiddlewareGisInterfaceImplementationTests.puml
+
+!include ../MiddlewareGisProcessorStub/MiddlewareGisProcessorStub.puml
+MiddlewareGisInterfaceImplementationTests ..> MiddlewareGisProcessorStub
+!endsub
+
+!startsub MIDDLEWARE01
+!include ../../production/MiddlewareGisInterfaceImplementation/MiddlewareGisInterfaceImplementation.puml
+MiddlewareGisInterfaceImplementationTests ..> MiddlewareGisInterfaceImplementation
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

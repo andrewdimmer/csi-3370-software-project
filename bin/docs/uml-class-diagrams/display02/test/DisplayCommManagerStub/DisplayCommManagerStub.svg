@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="165px" preserveAspectRatio="none" style="width:350px;height:165px;" version="1.1" viewBox="0 0 350 165" width="350px" zoomAndPan="magnify"><defs><filter height="300%" id="f1r2dkefjazz3p" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9258003ec405d300d3379b4a3d8dd6ad]
+cluster edu.oakland.test.display02--><polygon fill="#FFFFFF" filter="url(#f1r2dkefjazz3p)" points="22,24,240,24,247,46.2969,328,46.2969,328,153,22,153,22,24" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="22" x2="247" y1="46.2969" y2="46.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="212" x="26" y="38.9951">edu.oakland.test.display02</text><!--MD5=[2970358178d6cf57fc5a801b39eb8d0b]
+class DisplayCommManagerStub--><rect fill="#FEFECE" filter="url(#f1r2dkefjazz3p)" height="77.6094" id="DisplayCommManagerStub" style="stroke: #A80036; stroke-width: 1.5;" width="273" x="38.5" y="59"/><ellipse cx="87.75" cy="75" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M90.7188,80.6406 Q90.1406,80.9375 89.5,81.0781 Q88.8594,81.2344 88.1563,81.2344 Q85.6563,81.2344 84.3281,79.5938 Q83.0156,77.9375 83.0156,74.8125 Q83.0156,71.6875 84.3281,70.0313 Q85.6563,68.375 88.1563,68.375 Q88.8594,68.375 89.5,68.5313 Q90.1563,68.6875 90.7188,68.9844 L90.7188,71.7031 Q90.0938,71.125 89.5,70.8594 Q88.9063,70.5781 88.2813,70.5781 Q86.9375,70.5781 86.25,71.6563 Q85.5625,72.7188 85.5625,74.8125 Q85.5625,76.9063 86.25,77.9844 Q86.9375,79.0469 88.2813,79.0469 Q88.9063,79.0469 89.5,78.7813 Q90.0938,78.5 90.7188,77.9219 L90.7188,80.6406 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="166" x="108.25" y="79.1543">DisplayCommManagerStub</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="39.5" x2="310.5" y1="91" y2="91"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="39.5" x2="310.5" y1="99" y2="99"/><ellipse cx="49.5" cy="126.8047" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="247" x="58.5" y="130.0151">TrackData evaluateRfidRequest(int rfidNum)</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="39.5" x2="142" y1="113.4023" y2="113.4023"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="66" x="142" y="116.7104">Use Case 1</text><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,2.0;" x1="208" x2="310.5" y1="113.4023" y2="113.4023"/><!--MD5=[a7951ff4d9ac52bf953a1c61effc95d4]
+@startuml DisplayCommManagerStub
+
+package edu.oakland.test.display02 {
+    class DisplayCommManagerStub {
+        __
+        .. Use Case 1 ..
+        + TrackData evaluateRfidRequest(int rfidNum)
+    }
+}
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 GMT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.9+11-Ubuntu-0ubuntu1
+Operating System: Linux
+Default Encoding: ANSI_X3.4-1968
+Language: en
+Country: US
+--></g></svg>

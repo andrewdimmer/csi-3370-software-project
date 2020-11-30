@@ -1,0 +1,15 @@
+@startuml MiddlewareCommInterface_DirectDependencies
+
+!startsub MIDDLEWARE02_PRODUCTION
+!include MiddlewareCommInterface.puml
+!endsub
+
+!startsub MIDDLEWARE02
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

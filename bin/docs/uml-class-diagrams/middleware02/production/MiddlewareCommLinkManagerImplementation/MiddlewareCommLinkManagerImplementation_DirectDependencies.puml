@@ -1,0 +1,19 @@
+@startuml MiddlewareCommLinkManagerImplementation_DirectDependencies
+
+!startsub MIDDLEWARE02_PRODUCTION
+!include MiddlewareCommLinkManagerImplementation.puml
+
+!include ../MiddlewareCommLinkManager/MiddlewareCommLinkManager.puml
+MiddlewareCommLinkManagerImplementation .up.|> MiddlewareCommLinkManager
+!endsub
+
+!startsub MIDDLEWARE02
+!include ../../helper/TrackDataCalculator/TrackDataCalculator.puml
+MiddlewareCommLinkManagerImplementation ..> TrackDataCalculator
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml Middleware02Packages_DirectDependencies
+
+!include production/Middleware02ProductionPackage_DirectDependencies.puml
+!include test/Middleware02TestPackage_DirectDependencies.puml
+!include helper/Middleware02HelperPackage_InternalDependencies.puml
+
+@enduml

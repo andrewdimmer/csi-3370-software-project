@@ -1,0 +1,19 @@
+@startuml DatabaseCommInterfaceImplementationTests_Closure
+
+!startsub DATABASE_TEST
+!include DatabaseCommInterfaceImplementationTests.puml
+
+!include ../DatabaseCommManagerStub/DatabaseCommManagerStub_Closure.puml
+DatabaseCommInterfaceImplementationTests ..> DatabaseCommManagerStub
+!endsub
+
+!startsub DATABASE
+!include ../../production/DatabaseCommInterfaceImplementation/DatabaseCommInterfaceImplementation_Closure.puml
+DatabaseCommInterfaceImplementationTests ..> DatabaseCommInterfaceImplementation
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

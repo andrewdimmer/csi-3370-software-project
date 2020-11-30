@@ -1,0 +1,15 @@
+@startuml DatabasePersistentStorage_Closure
+
+!startsub DATABASE_PRODUCTION
+!include DatabasePersistentStorage.puml
+!endsub
+
+!startsub DATABASE
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

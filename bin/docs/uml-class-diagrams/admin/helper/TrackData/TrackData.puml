@@ -1,0 +1,21 @@
+@startuml TrackData
+
+package edu.oakland.helper.admin {
+    class TrackData {
+        - LocationDataPoint[] points
+        - float courseDirection
+        - float speed
+        - boolean validData
+        - String statusMessage
+        + TrackData(LocationDataPoint[] points)
+        + TrackData(LocationDataPoint[] points, float courseDirection, float speed)
+        + boolean isValid()
+        + float getCourseDirection()
+        + float getSpeed()
+        + LocationDataPoint[] getLocationDataPoints()
+        + String getStatusMessage()
+        + void setStatusMessage(String statusMessage)
+    }
+}
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml MiddlewareGisProcessor_DirectDependencies
+
+!startsub MIDDLEWARE01_PRODUCTION
+!include MiddlewareGisProcessor.puml
+!endsub
+
+!startsub MIDDLEWARE01
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml DatabaseCommInterface
+
+package edu.oakland.production.database {
+    interface DatabaseCommInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + int receiveGetRfidRequest()
+        {abstract} + LocationDataPoint receiveGetLocationDataPointRequest(int offset)
+        {abstract} + TrackData receiveGetTrackDataRequest(int offset)
+        {abstract} + void storeTrackDataRequest(TrackData trackData)
+        {abstract} + String receiveGetModeRequest()
+    }
+}
+
+@enduml

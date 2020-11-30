@@ -1,0 +1,14 @@
+@startuml Display02ProductionPackage_InternalDependencies
+
+package edu.oakland.production.display02 {
+    
+}
+
+!includesub DisplayCommInterface/DisplayCommInterface_DirectDependencies.puml!DISPLAY02_PRODUCTION
+!includesub DisplayComm2WayInterface/DisplayComm2WayInterface_DirectDependencies.puml!DISPLAY02_PRODUCTION
+!includesub DisplayCommManager/DisplayCommManager_DirectDependencies.puml!DISPLAY02_PRODUCTION
+!includesub DisplayCommInterfaceImplementation/DisplayCommInterfaceImplementation_DirectDependencies.puml!DISPLAY02_PRODUCTION
+!includesub DisplayComm2WayInterfaceImplementation/DisplayComm2WayInterfaceImplementation_DirectDependencies.puml!DISPLAY02_PRODUCTION
+!includesub DisplayCommManagerImplementation/DisplayCommManagerImplementation_DirectDependencies.puml!DISPLAY02_PRODUCTION
+
+@enduml

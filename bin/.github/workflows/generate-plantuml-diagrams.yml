@@ -1,0 +1,80 @@
+name: Generate PlantUML Diagrams
+on:
+  push:
+    paths:
+      - '**.puml'
+  workflow_dispatch:
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    env:
+        UML_FILES: ".puml"
+    steps:
+      - name: Checkout Source 
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Get changed UML files
+        id: getfile
+        run: |
+          echo "::set-output name=files::$(find | grep ${{ env.UML_FILES }} | xargs)"
+      - name: UML files considered echo output
+        run: |
+          echo ${{ steps.getfile.outputs.files }}
+      - name: Generate SVG Diagrams
+        uses: cloudbees/plantuml-github-action@master
+        with:
+            args: -v -tsvg ${{ steps.getfile.outputs.files }}
+      - name: Generate PNG Diagrams
+        uses: cloudbees/plantuml-github-action@master
+        with:
+            args: -v -tpng ${{ steps.getfile.outputs.files }}
+      - name: Stage Local Changes to Commit
+        run:
+          echo COMMIT=$(git status | grep "nothing to commit, working tree clean");
+          echo COMMIT=$(git status | grep "nothing to commit, working tree clean") >> $GITHUB_ENV;
+          git status;
+          git add *;
+          git status;
+      - name: Commit PlantUML Diagrams
+        if: ${{ !env.COMMIT}}
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Generate SVG and PNG Images for PlantUML Diagrams
+      - name: Get the Pull Request Check Results to Propagate
+        if: ${{ !env.COMMIT }}
+        run:
+          echo Old SHA $(git rev-parse HEAD~1);
+          curl https://api.github.com/repos/andrewdimmer/csi-3370-software-project/commits/$(git rev-parse HEAD~1)/check-runs > check_runs.json;
+          cat check_runs.json | python3 .github/github_action_workflow_to_job_attribute.py "checkstyle" "id" > checkstyle_job_run_id.txt;
+          echo checkstyle Job Run Id $(cat checkstyle_job_run_id.txt);
+          echo CHECKSTYLE_JOB_RUN_ID=$(cat checkstyle_job_run_id.txt) >> $GITHUB_ENV;
+          cat check_runs.json | python3 .github/github_action_workflow_to_job_attribute.py "checkstyle" "conclusion" > checkstyle_job_run_conclusion.txt;
+          echo checkstyle Conclusion $(cat checkstyle_job_run_conclusion.txt);
+          echo CHECKSTYLE_CONCLUSION=$(cat checkstyle_job_run_conclusion.txt) >> $GITHUB_ENV;
+          cat check_runs.json | python3 .github/github_action_workflow_to_job_attribute.py "build" "id" > build_job_run_id.txt;
+          echo build Job Run Id $(cat build_job_run_id.txt);
+          echo BUILD_JOB_RUN_ID=$(cat build_job_run_id.txt) >> $GITHUB_ENV;
+          cat check_runs.json | python3 .github/github_action_workflow_to_job_attribute.py "build" "conclusion" > build_job_run_conclusion.txt;
+          echo build Conclusion $(cat build_job_run_conclusion.txt);
+          echo BUILD_CONCLUSION=$(cat build_job_run_conclusion.txt) >> $GITHUB_ENV;
+          echo New SHA $(git rev-parse HEAD);
+          echo NEW_SHA=$(git rev-parse HEAD) >> $GITHUB_ENV;
+      - name: Propagate checkstyle Status to the New Commit
+        if: ${{ !env.COMMIT && env.CHECKSTYLE_JOB_RUN_ID > 0}}
+        uses: Sibz/github-status-action@v1
+        with: 
+          authToken: ${{secrets.GITHUB_TOKEN}}
+          context: checkstyle
+          state: ${{env.CHECKSTYLE_CONCLUSION}}
+          sha: ${{env.NEW_SHA}}
+          target_url: https://github.com/andrewdimmer/csi-3370-software-project/runs/${{env.CHECKSTYLE_JOB_RUN_ID}}
+      - name: Propagate build Status to the New Commit
+        if: ${{ !env.COMMIT && env.BUILD_JOB_RUN_ID > 0}}
+        uses: Sibz/github-status-action@v1
+        with: 
+          authToken: ${{secrets.GITHUB_TOKEN}}
+          context: build
+          state: ${{env.BUILD_CONCLUSION}}
+          sha: ${{env.NEW_SHA}}
+          target_url: https://github.com/andrewdimmer/csi-3370-software-project/runs/${{env.BUILD_JOB_RUN_ID}}

@@ -1,0 +1,18 @@
+@startuml DisplayGpsManagerImplementation
+
+package edu.oakland.production.display01 {
+  class DisplayGpsManagerImplementation {
+    - MiddlewareGisInterface middlewareGis
+   __
+    + DisplayGpsManagerImplementation(MiddlewareGisInterface middlewareGis)
+    .. Use Case 1 ..
+    + String receiveGpsSignalStrength(Satellite satelliteSignal)
+    + boolean EvaluateGpsSignalStrengths(int signalStrengh)
+    + void passGpsSignalStrength(int signalStrength)
+    .. Use Case 2 ..
+    + String receiveGpsSignalStrength(Satellite signal)
+    + SatelliteSignalCheckRequest passGpsSignalStrength(String satelliteName)
+    }
+}
+
+@enduml

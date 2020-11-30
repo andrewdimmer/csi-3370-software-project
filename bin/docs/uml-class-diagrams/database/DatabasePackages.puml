@@ -1,0 +1,7 @@
+@startuml DatabasePackages
+
+!include production/DatabaseProductionPackage.puml
+!include test/DatabaseTestPackage.puml
+!include helper/DatabaseHelperPackage.puml
+
+@enduml

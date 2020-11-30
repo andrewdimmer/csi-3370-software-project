@@ -1,0 +1,11 @@
+@startuml DisplayCommInterface
+
+package edu.oakland.production.display02 {
+    interface DisplayCommInterface {
+        __
+        .. Use Case 1 ..
+        {abstract} + TrackData receiveRfidRequest(int rfidNum)
+    }
+}
+
+@enduml

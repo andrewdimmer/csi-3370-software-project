@@ -1,0 +1,11 @@
+@startuml Middleware01HelperPackage_DirectDependencies
+
+package edu.oakland.helper.middleware01 {
+    
+}
+
+!startsub MIDDLEWARE01
+!include Middleware01HelperPackage_InternalDependencies.puml
+!endsub
+
+@enduml

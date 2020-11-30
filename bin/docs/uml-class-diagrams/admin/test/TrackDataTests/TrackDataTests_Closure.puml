@@ -1,0 +1,16 @@
+@startuml TrackDataTests_Closure
+
+!startsub ADMIN_TEST
+!include TrackDataTests.puml
+!endsub
+
+!startsub ADMIN
+!include ../../helper/TrackData/TrackData_Closure.puml
+TrackDataTests ..> TrackData
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

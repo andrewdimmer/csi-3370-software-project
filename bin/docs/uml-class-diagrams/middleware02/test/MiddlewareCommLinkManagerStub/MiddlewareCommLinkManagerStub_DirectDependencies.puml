@@ -1,0 +1,16 @@
+@startuml MiddlewareCommLinkManagerStub_DirectDependencies
+
+!startsub MIDDLEWARE02_TEST
+!include MiddlewareCommLinkManagerStub.puml
+!endsub
+
+!startsub MIDDLEWARE02
+!include ../../production/MiddlewareCommLinkManager/MiddlewareCommLinkManager.puml
+MiddlewareCommLinkManagerStub .up.|> MiddlewareCommLinkManager
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

@@ -1,0 +1,7 @@
+@startuml Middleware02Packages
+
+!include production/Middleware02ProductionPackage.puml
+!include test/Middleware02TestPackage.puml
+!include helper/Middleware02HelperPackage.puml
+
+@enduml

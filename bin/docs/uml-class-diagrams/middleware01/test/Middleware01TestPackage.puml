@@ -1,0 +1,14 @@
+@startuml Middleware01TestPackage
+
+package edu.oakland.test.middleware01 {
+    
+}
+
+!include MiddlewareGisInterfaceImplementationTests/MiddlewareGisInterfaceImplementationTests.puml
+!include MiddlewareGisProcessorImplementationTests/MiddlewareGisProcessorImplementationTests.puml
+!include MiddlewareGisManagerImplementationTests/MiddlewareGisManagerImplementationTests.puml
+!include MiddlewareGisProcessorStub/MiddlewareGisProcessorStub.puml
+!include MiddlewareGisManagerStub/MiddlewareGisManagerStub.puml
+!include DatabaseGisInterfaceStub/DatabaseGisInterfaceStub.puml
+
+@enduml

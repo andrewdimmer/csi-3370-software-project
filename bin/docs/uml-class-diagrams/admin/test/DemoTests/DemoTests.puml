@@ -1,0 +1,16 @@
+@startuml DemoTests
+
+package edu.oakland.test.admin {
+    class DemoTests {
+        + void storageInputLocIsNotNull()
+        + void storageOutputLocIsNotNull()
+        + void storageInputLocIsNotEmpty()
+        + void storageOutputLocIsNotEmpty()
+        + void scannerInputIsUserInput()
+        + void commClassesInitialized()
+        + void gisClassesInitialized()
+        + void persistentStorageManagerInitialized()
+    }
+}
+
+@enduml

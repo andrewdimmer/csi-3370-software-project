@@ -1,0 +1,27 @@
+@startuml Satellite
+
+package edu.oakland.helper.admin {
+    class Satellite {
+        - String satelliteName
+        - int strength
+        {static} - float incrementLatAmount
+        {static} - float incrementLngAmount
+        {static} - LocationDataPoint initLocationDataPoint
+        {static} - int countGetLocationCalls
+        __
+        + Satellite(String satelliteName, int strength)
+        + String getSatelliteName()
+        + int getStrength()
+        + LocationDataPoint getLocation()
+        + void setStrength(int strength)
+        - boolean strengthIsValid(int strength)
+        {static} + void satelliteInit(float incrementLatAmount,
+        \tfloat incrementLngAmount,
+        \tLocationDataPoint initLocationDataPoint)
+        {static} - float generateNewLocationDataPointLat()
+        {static} - float generateNewLocationDataPointLng()
+        {static} - LocalDateTime generateNewLocationDataPointTime()
+    }
+}
+
+@enduml

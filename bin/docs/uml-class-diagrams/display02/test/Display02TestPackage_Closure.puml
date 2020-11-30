@@ -1,0 +1,15 @@
+@startuml Display02TestPackage_Closure
+
+package edu.oakland.test.display02 {
+    
+}
+
+!include DisplayCommInterfaceImplementationTests/DisplayCommInterfaceImplementationTests_Closure.puml
+!include DisplayComm2WayInterfaceImplementationTests/DisplayComm2WayInterfaceImplementationTests_Closure.puml
+!include DisplayCommManagerImplementationTests/DisplayCommManagerImplementationTests_Closure.puml
+!include TrackDataPlotterTests/TrackDataPlotterTests_Closure.puml
+!include DisplayComm2WayInterfaceStub/DisplayComm2WayInterfaceStub_Closure.puml
+!include DisplayCommManagerStub/DisplayCommManagerStub_Closure.puml
+!include MiddlewareCommInterfaceStub/MiddlewareCommInterfaceStub_Closure.puml
+
+@enduml

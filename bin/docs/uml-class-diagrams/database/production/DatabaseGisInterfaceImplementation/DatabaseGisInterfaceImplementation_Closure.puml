@@ -1,0 +1,18 @@
+@startuml DatabaseGisInterfaceImplementation_Closure
+
+!startsub DATABASE_PRODUCTION
+!include DatabaseGisInterfaceImplementation.puml
+
+!include ../DatabaseGisInterface/DatabaseGisInterface_Closure.puml
+DatabaseGisInterfaceImplementation .up.|> DatabaseGisInterface
+!endsub
+
+!startsub DATABASE
+
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

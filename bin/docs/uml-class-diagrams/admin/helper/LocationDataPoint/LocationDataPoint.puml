@@ -1,0 +1,17 @@
+@startuml LocationDataPoint
+
+package edu.oakland.helper.admin {
+    class LocationDataPoint {
+        - float lat
+        - float lng
+        - LocalDateTime time
+        + LocationDataPoint(float lat, float lng, LocalDateTime time)
+        + float getLat()
+        + float getLng()
+        + LocalDateTime getTime()
+        - float[] normalizeLatAndLng(float lat, float lng)
+        - float normalizeLng(float lng)
+    }
+}
+
+@enduml

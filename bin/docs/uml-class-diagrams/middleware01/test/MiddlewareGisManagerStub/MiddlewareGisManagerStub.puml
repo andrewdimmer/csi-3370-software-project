@@ -1,0 +1,15 @@
+@startuml MiddlewareGisManagerStub
+
+package edu.oakland.test.middleware01 {
+    class MiddlewareGisManagerStub {
+        __
+        .. Use Case 1 ..
+        + String receieveGpsSignalStrength(Satellite satelliteSignal)
+        + void storeLocationDataPoint()
+        .. Use Case 2 ..
+        + String attemptToRegainGpsLock(String satelliteName)
+        + String evaluateGpsSignalStrength(boolean signalValid)
+    }
+}
+
+@enduml

@@ -1,0 +1,19 @@
+@startuml DisplayGpsInterfaceImplementation_DirectDependencies
+
+!startsub DISPLAY01_PRODUCTION
+!include DisplayGpsInterfaceImplementation.puml
+
+!include ../DisplayGpsInterface/DisplayGpsInterface.puml
+DisplayGpsInterfaceImplementation .up.|> DisplayGpsInterface
+!endsub
+
+!startsub DISPLAY01
+!include ../../helper/SatelliteSignalCheckRequest/SatelliteSignalCheckRequest.puml
+DisplayGpsInterfaceImplementation ..> SatelliteSignalCheckRequest
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml

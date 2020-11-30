@@ -1,0 +1,14 @@
+@startuml DatabaseGisInterfaceStub
+
+package edu.oakland.test.middleware01 {
+    class DatabaseGisInterfaceStub {
+        __
+        .. Use Case 1 ..
+        + void recieveStoreRequest(LocationDataPoint locationDataPoint)
+        .. Use Case 2 ..
+        + String recieveModeRequest(String mode)
+        + String recieveNextSatRequest(String currentSat)
+    }
+}
+
+@enduml
