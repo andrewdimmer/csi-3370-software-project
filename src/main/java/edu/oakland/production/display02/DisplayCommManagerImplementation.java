@@ -13,28 +13,27 @@ import java.lang.IllegalArgumentException;
 */
 public class DisplayCommManagerImplementation implements DisplayCommManager {
 
-    private MiddlewareCommInterface middleware;
+  private MiddlewareCommInterface middleware;
     
-    /**
-    * Creates a DisplayCommManagerImplementation to receive the rfid.
-    * param MiddlewareCommInterface: The class that DisplayCommManager will pass the rfid to.
-    *
-    */
-    public DisplayCommManagerImplementation(MiddlewareCommInterface middlewareCommInterface) {
-        if (middlewareCommInterface == null) {
-            throw new IllegalArgumentException("processor cannot be null");
-        }
-        this.middleware = middlewareCommInterface;
+  /**
+  * Creates a DisplayCommManagerImplementation to receive the rfid.
+  * param MiddlewareCommInterface: The class that DisplayCommManager will pass the rfid to.
+  *
+  */
+  public DisplayCommManagerImplementation(MiddlewareCommInterface middlewareCommInterface) {
+    if (middlewareCommInterface == null) {
+        throw new IllegalArgumentException("processor cannot be null");
     }
+    this.middleware = middlewareCommInterface;
+  }
 
-    /**
-    * Receives the rfid from DisplayComm2WayInterface
-    * before passing along to Middleware.
-    *
-    * @return the TrackData
-    */
-    public TrackData receiveRfid(int rfid) {
-        return middleware.requestRfid(rfid);
-    }
-
+  /**
+  * Receives the rfid from DisplayComm2WayInterface
+  * before passing along to Middleware.
+  *
+  * @return the TrackData
+  */
+  public TrackData receiveRfid(int rfid) {
+    return middleware.requestRfid(rfid);
+  }
 }
