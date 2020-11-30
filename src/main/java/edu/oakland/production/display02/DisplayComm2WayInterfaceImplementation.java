@@ -12,10 +12,10 @@ public class DisplayComm2WayInterfaceImplementation implements DisplayComm2WayIn
   *
   */
   public DisplayComm2WayInterfaceImplementation(DisplayCommManagerImplementation displayCommManager) {
-      if (displayCommManager == null) {
-          throw new IllegalArgumentException("cannot be null");
-      }
-      this.commManager = displayCommManager;
+    if (displayCommManager == null) {
+      throw new IllegalArgumentException("cannot be null");
+    }
+    this.commManager = displayCommManager;
   }
 
    /**
