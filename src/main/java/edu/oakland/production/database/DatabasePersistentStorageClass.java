@@ -109,7 +109,7 @@ public class DatabasePersistentStorageClass {
       throw new IllegalArgumentException("trackData cannot be null");
     }
 
-    this.trackData.add(trackData);
+    this.trackData.add(0, trackData);
   }
 
   /**
