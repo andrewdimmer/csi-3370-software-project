@@ -48,18 +48,6 @@ public class DatabaseCommManagerImplementationTest {
   }
 
   @Test
-  @DisplayName("Offset matches TrackData")
-  void offsetMatchTrackData() {
-    int i = (int) (Math.random() * 100);
-
-    DatabasePersistentStorageStub dpss = new DatabasePersistentStorageStub(i);
-    DatabaseCommManager dcm = new DatabaseCommManagerImplementation(dpss);
-    int j = (int) (Math.random() * 100);
-
-    assertEquals(j, dcm.passGetTrackDataRequest(j));
-  }
-
-  @Test
   @DisplayName("TrackData In is same as TrackData Out")
   void trackDataInIsTrackDataOut() {
     int i = (int) (Math.random() * 100);
@@ -69,7 +57,7 @@ public class DatabaseCommManagerImplementationTest {
 
     int j = (int) (Math.random() * 100);
     dcm.passStoreTrackDataRequest(td);
-    assertEquals(td, dpss.getTrackData(j));
+    assertEquals(td, dcm.passGetTrackDataRequest(j));
   }
 
   @Test

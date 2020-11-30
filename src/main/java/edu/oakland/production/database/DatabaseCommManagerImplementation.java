@@ -14,10 +14,10 @@ public class DatabaseCommManagerImplementation implements DatabaseCommManager {
    * @param dps an instance of the DatabasePersistent class.
    */
   public DatabaseCommManagerImplementation(DatabasePersistentStorage dps) {
-
     if (dps == null) {
       throw new IllegalArgumentException("DatabasePersistentStorage cannot be null");
     }
+    this.dps = dps;
   }
 
   public int passGetRfidRequest() {
