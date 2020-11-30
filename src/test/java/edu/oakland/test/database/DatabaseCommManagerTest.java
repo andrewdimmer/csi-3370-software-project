@@ -8,7 +8,11 @@ import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabaseCommManagerImplementation;
 import edu.oakland.production.database.DatabasePersistentStorage;
 import edu.oakland.test.database.DatabasePersistentStorageStub;
+import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
+
+import javax.tools.DocumentationTool.Location;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -47,27 +51,58 @@ public class DatabaseCommManagerTest {
     @DisplayName("Offset matches TrackData")
     void offsetMatchTrackData() {
         DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
-        TrackData td = new TrackData();
-        td = null;
-        int i = (int) Math.random();
-        assertEquals(td, dcm.passGetTrackDataRequest(i));
+
+        TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
+        
+        int i = (int)(Math.random() * 7);
+        assertEquals(null, dcm.passGetTrackDataRequest(i));
     }
 
-    // @Test
-    // @DisplayName("TrackData In is same as TrackData Out")
-    // void trackDataInIsTrackDataOut() {
-    // DatabaseCommManager dcm = new DatabaseCommManager();
-    // TrackData td = new TrackData();
-    // int i = (int) Math.random();
-    // dcm.passStoreTrackDataRequest(td);
-    // assertEquals(td, dcm.passGetTrackDataRequest(i));
-    // }
+    @Test
+    @DisplayName("TrackData In is same as TrackData Out")
+    void trackDataInIsTrackDataOut() {
+    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
+    float lat = (float) (Math.random() * 360 - 180);
+    float lng = (float) (Math.random() * 360 - 180);
 
-    // @Test
-    // @DisplayName("Database Persistent Storage is not Null")
-    // void databasePersistentStorageIsNotNull() {
-    // assertThrows(IllegalArgumentException.class, () -> {
-    // new DatabaseCommManagerImplementation(null);
-    // });
+    LocationDataPoint ldp = new LocationDataPoint(lat, lng,
+            LocalDateTime.of((int) (Math.random() * 50 + 1970), (int) (Math.random() * 12 + 1),
+                    (int) (Math.random() * 28 + 1), (int) (Math.random() * 24), (int) (Math.random() * 60)));
 
+    
+    
+    TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
+    td = null;
+    int i = (int) Math.random();
+    assertEquals(td, dcm.passGetTrackDataRequest(i));
+    }
+
+    @Test
+    @DisplayName("Database Persistent Storage is not Null")
+    void databasePersistentStorageIsNotNull() {
+    assertThrows(IllegalArgumentException.class, () -> {
+    new DatabaseCommManagerImplementation(null);
+    });
+}
+    private LocationDataPoint[] generateRandomLocationDataPointsArray(int length) {
+        LocationDataPoint[] locations = new LocationDataPoint[length];
+        for (int index = 0; index < locations.length; index++) {
+          locations[index] = generateRandomLocationDataPoint();
+        }
+        return locations;
+      }
+    
+      private LocationDataPoint generateRandomLocationDataPoint() {
+        return new LocationDataPoint(
+          (float) (Math.random() * 180 - 90),
+          (float) (Math.random() * 360 - 180),
+          LocalDateTime.of(
+            (int) (Math.random() * 50 + 1970),
+            (int) (Math.random() * 12 + 1),
+            (int) (Math.random() * 28 + 1),
+            (int) (Math.random() * 24),
+            (int) (Math.random() * 60)
+          )
+        );
+      }
 }
