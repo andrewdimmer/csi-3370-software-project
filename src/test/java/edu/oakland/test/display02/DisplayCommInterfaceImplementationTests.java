@@ -23,7 +23,7 @@ public class DisplayCommInterfaceImplementationTests {
     int rfid = generateRandomRfid();
     DisplayComm2WayInterfaceStub testStub = new DisplayComm2WayInterfaceStub();
     DisplayCommInterfaceImplementation displayComm = new DisplayCommInterfaceImplementation(testStub);
-    assertEquals(rfid, Integer.parseInt(displayComm.evaluateRfidRequest(rfid).getStatusMessage()));
+    assertEquals(rfid, Integer.parseInt(displayComm.receiveRfidRequest(rfid).getStatusMessage()));
 
   }
   

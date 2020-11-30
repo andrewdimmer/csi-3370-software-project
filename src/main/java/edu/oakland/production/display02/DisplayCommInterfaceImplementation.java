@@ -33,9 +33,8 @@ public class DisplayCommInterfaceImplementation implements DisplayCommInterface{
   *
   * @return the TrackData
   */
-  public TrackData evaluateRfidRequest(int rfid) {
-    return comm2Way.requestRfid(rfid);
+  public TrackData receiveRfidRequest(int rfidNum) {
+    return comm2Way.passRfidRequest(rfidNum);
   }
 }
 
-}
