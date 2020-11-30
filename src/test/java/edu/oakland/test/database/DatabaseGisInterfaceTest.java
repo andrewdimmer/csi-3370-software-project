@@ -1,11 +1,14 @@
 package edu.oakland.test.database;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.production.database.DatabaseGisInterfaceImplementation;
-
+import edu.oakland.production.database.DatabaseGisManagerStub;
+import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
+import java.util.Random;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -26,7 +29,7 @@ public class DatabaseGisInterfaceTest {
     ));
     int i = 0;
     dgi.receiveStoreRequest(ldp);
-    assertEquals(null, dgms.getLocationDataPoint(i));
+    assertEquals(ldp, dgms.getLocationDataPoint(i));
   }
 
   @Test
@@ -35,7 +38,7 @@ public class DatabaseGisInterfaceTest {
     DatabaseGisManagerStub dgms = new DatabaseGisManagerStub();
     DatabaseGisInterfaceImplementation dgi = new DatabaseGisInterfaceImplementation(dgms);
     String currentSat = "";
-    assertEquals("", dgi.receiveNextSatRequest(currentSat));
+    assertEquals(currentSat, dgi.receiveNextSatRequest(currentSat));
   }
 
   @Test
@@ -43,16 +46,16 @@ public class DatabaseGisInterfaceTest {
   void modeInIsModeOut() {
     DatabaseGisManagerStub dgms = new DatabaseGisManagerStub();
     DatabaseGisInterfaceImplementation dgi = new DatabaseGisInterfaceImplementation(dgms);
-    String n = "";
+    String n = "normal";
     assertEquals(n, dgi.receiveModeRequest(n)); //supposed to return a String with the mode
   }
    
   @Test
   @DisplayName("Checks that manager isn't null")
   void databaseGisManagerNotNull() {
-    DatabaseGisManagerStub dgms = new DatabaseGisManagerStub();
-    String currentSat = "";
-    assertEquals("", dgms.passNextSatRequest(currentSat));
+    assertThrows(IllegalArgumentException.class, () -> {
+      new DatabaseGisInterfaceImplementation(null);
+    });
   }
 
 }
