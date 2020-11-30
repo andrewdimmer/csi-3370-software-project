@@ -53,7 +53,7 @@ public class DatabasePersistentStorageClass {
    * Returns a locationpoint point.
    * after providing the offset.
    *
-   * @param offset the offset (int) of the data needed
+   * @param offset the offset (int) of the data needed.
    */
 
   public LocationDataPoint getLocationDataPoint(int offset) {
@@ -86,7 +86,7 @@ public class DatabasePersistentStorageClass {
    * Retrieve track data.
    *
    *
-   * @param offset the offset (int) of the track data needed
+   * @param offset the offset (int) of the track data needed.
    */
 
   public TrackData getTrackData(int offset) {
@@ -99,10 +99,10 @@ public class DatabasePersistentStorageClass {
   }
 
   /**
-   * Store track data
+   * Store track data.
    *
    *
-   * @param trackData the track data provided in the trackData data type
+   * @param trackData the track data provided in the trackData data type.
    */
 
   public void storeTrackData(TrackData trackData) {
@@ -114,7 +114,7 @@ public class DatabasePersistentStorageClass {
   }
 
   /**
-   * Returns the mode
+   * Returns the mode.
    *
    *
    *
@@ -125,7 +125,7 @@ public class DatabasePersistentStorageClass {
   }
 
   /**
-   * Stores the mode
+   * Stores the mode.
    *
    *
    * @param mode The mode to utilize in string format.
@@ -135,12 +135,12 @@ public class DatabasePersistentStorageClass {
     this.mode = mode;
   }
 
-  /**
-   * Finds the position of the currentSat provided.
-   * and retuns the the sat in the next position.
-   *
-   * @param currentSat the current satellite string
-   */
+ /**
+  * Finds the position of the currentSat provided.
+  * and retuns the the sat in the next position.
+  *
+  * @param currentSat the current satellite string
+  */
  public String getNextSat(String currentSat) {
     int satArrayLength = this.nextSatellites.length;
     int posOfCurrentSat = Arrays.asList(this.nextSatellites).indexOf(currentSat);
@@ -152,14 +152,14 @@ public class DatabasePersistentStorageClass {
       } 
     }
 
-      if (!found){
-        return "";
-      }
+    if (!found){
+      return "";
+    }
 
-      if(satArrayLength - 1 > posOfCurrentSat){
-        return this.nextSatellites[posOfCurrentSat + 1];
-      } else {
-        return "";
+    if(satArrayLength - 1 > posOfCurrentSat){
+      return this.nextSatellites[posOfCurrentSat + 1];
+    } else {
+      return "";
     }
   }
 
