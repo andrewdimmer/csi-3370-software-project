@@ -81,6 +81,23 @@ public class TrackDataPlotter extends JFrame{
       //placeholder for testing
       //fitLine.add(3, 5);
       //fitLine.add(12, 15);
+          float sumOfX = 0;
+      float sumOfY = 0;
+      float sumOfXy = 0;
+      float sumOfXSquared = 0;
+
+      for(int i = 0; i < 5; i++) {
+    		sumOfXSquared += x[i] * x[i];
+    		sumOfX += x[i];
+    	  sumOfXy += x[i] * y[i];
+    	  sumOfY += y[i];
+    	}
+
+      float topHalfOfEquation = 5 * sumOfXy - sumOfX * sumOfY;
+      float bottomHalfOfEquation = 5 * sumOfXSquared - sumOfX * sumOfX;
+      float slope = topHalfOfEquation/bottomHalfOfEquation;
+      float b = (sumOfY - (slope * sumOfX))/ 5;
+      //Least Squares Regression = mx+b
 
       return fitLine;
 
@@ -88,8 +105,8 @@ public class TrackDataPlotter extends JFrame{
   }
   private float[] extractLatFromTrackData(TrackData data){
     LocationDataPoint[] points = data.getLocationDataPoints();
-    float[] latNum = [];
-    for(i < points.length){
+    float[] latNum = 5;
+    for(int i < points.length; i<=5; i++){
       latNum[i]= points[i].getLat();
     }
     return latNum;
@@ -97,8 +114,8 @@ public class TrackDataPlotter extends JFrame{
 
   private float[] extractLngFromTrackData(TrackData data){
     LocationDataPoint[] points = data.getLocationDataPoints();
-    float[] lngNum = [];
-    for(i < points.length){
+    float[] lngNum = 5;
+    for(int i < points.length; i<=5; i++){
       lngNum[i]= points[i].getLng();
     }
     return lngNum;
@@ -123,9 +140,3 @@ public class TrackDataPlotter extends JFrame{
 }
 
 
-//place in displayCommInterface:
-// TrackDataPlotter example = new TrackDataPlotter(TrackData);
-// example.setSize(800, 400);
-// example.setLocationRelativeTo(null);
-// example.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-// example.setVisible(true);
