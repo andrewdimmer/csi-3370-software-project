@@ -44,14 +44,14 @@ public class DatabasePersistentStorageClass {
   	// If we have a trackdata of length 4 for example, then the offset can not be more than 3 so we use length-1
   	if (offset > this.locDataPoint.size()-1) {
   		// throw new IndexOutOfBoundsException("Offset " + offset + " is out of bounds!");
-  		return null;
-  	}
+     return null;
+    }
 
   	return this.locDataPoint.get(offset);
   }
 
   public void storeLocationDataPoint(LocationDataPoint locationDataPoint) {
-  	if (locationDataPoint == null) {
+    if (locationDataPoint == null) {
       throw new IllegalArgumentException("locationDataPoint cannot be null");
     }
 
