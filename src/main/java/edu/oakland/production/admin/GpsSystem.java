@@ -28,6 +28,9 @@ public class GpsSystem {
    */
   public GpsSystem(DisplayGpsInterface displayGpsInterfaceIn, String[] satelliteNames) {
 	  satellites = new Satellite[10];
+	  if (displayGpsInterfaceIn == null) {
+		  throw new IllegalArgumentException("displayGpsInterface must not be null");
+	  }
 	  displayGpsInterface = displayGpsInterfaceIn;
   }
 
