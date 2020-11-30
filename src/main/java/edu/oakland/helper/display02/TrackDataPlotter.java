@@ -24,30 +24,48 @@ public class TrackDataPlotter extends JFrame{
 
   //constructor
   public TrackDataPlotter(TrackData data){
-    float[] lat = extractLatFromTrackData(data);
-    float[] lng = extractLngFromTrackData(data);
-    XYSeries dataPoints = getTrackData();
-    XYSeries dataLine = calculateLine();
-    Boolean isValidTrackData = data.isValid();
+    private float[] lat = extractLatFromTrackData(data);
+    private float[] lng = extractLngFromTrackData(data);
+    private XYSeries dataPoints = getTrackData();
+    private XYSeries fitLine = calculateLine();
+    private Boolean isValidTrackData = data.isValid();
+    private JFreeChart chart = createChart();
 
 
   }
-  public void displayPlotter(){
+  private JFreeChart createChart(){
 
-    //Scatter Plot
+    // Create new series colection
+    XYSeriesCollection dataset = new XYSeriesCollection();
+    // Add series to series collection
+    dataset.addSeries(this.dataPoints);
+    dataset.addSeries(this.fitLine);
+    // Create dataset with series collection
+    XYDataset dataPoints = dataset;
+    // Create Scatter Plot with Fit Line
     JFreeChart plotChart = ChartFactory.createScatterPlot(
     "Track Data Plot",
     "X-Axis", "Y-Axis", dataPoints);
-    ChartPanel panel1 = new ChartPanel(plotChart);
+    ChartPanel panel1 = new ChartPanel(plotChart, 600, 600, 600, 600, 600, 600,
+            true, false, false, false, false, false);
     setContentPane(panel1);
 
+    XYPlot plot = plotChart.getXYPlot();
+    // Create a renderer and alter how the series are displayed
+    XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
+    renderer.setSeriesLinesVisible(0, false);
+    renderer.setSeriesLinesVisible(1, true);
+    renderer.setSeriesShapesVisible(0, true);
+    renderer.setSeriesShapesVisible(1, false);
+    renderer.setSeriesPaint(0, Color.RED);
+    renderer.setSeriesPaint(1 Color.BLUE);
+    //renderer.setSeriesStroke(1, new BasicStroke(2.0f));
+    plot.setDomainGridlinesVisible(true);
+    plot.setDomainGridlinePaint(Color.BLACK);
 
-    //Line Chart
-    JFreeChart lineChart = ChartFactory.createXYLineChart(
-    "Track Data Line Chart",
-    "X-Axis", "Y-Axis", dataLine);
-    ChartPanel panel2 = new ChartPanel(lineChart);
-    setContentPane(panel2);
+    plot.setRenderer(renderer);
+
+    return plotChart;
 
   }
   private XYSeries getTrackData(){
@@ -57,8 +75,14 @@ public class TrackDataPlotter extends JFrame{
     }
     return dataPoints;
   }
-  private XYSeries calculateLine(int[] x, int[] y){
 
+  private XYSeries calculateLine(int[] x, int[] y){
+      XYSeries fitLine = new XYSeries("Locations");
+      //placeholder for testing
+      //fitLine.add(3, 5);
+      //fitLine.add(12, 15);
+
+      return fitLine;
 
 
   }
@@ -70,6 +94,7 @@ public class TrackDataPlotter extends JFrame{
     }
     return latNum;
   }
+
   private float[] extractLngFromTrackData(TrackData data){
     LocationDataPoint[] points = data.getLocationDataPoints();
     float[] lngNum = [];
@@ -79,7 +104,24 @@ public class TrackDataPlotter extends JFrame{
     return lngNum;
   }
 
+  public void displayPlot(){
+
+    // Create Panel
+    ChartPanel panel = new ChartPanel(this.chart);
+    setContentPane(panel);
+    chartPanel.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
+    chartPanel.setBackground(Color.white);
+    add(chartPanel);
+    pack();
+    setLocationRelativeTo(null);
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    setVisible(true);
+
+  }
+
+
 }
+
 
 //place in displayCommInterface:
 // TrackDataPlotter example = new TrackDataPlotter(TrackData);
