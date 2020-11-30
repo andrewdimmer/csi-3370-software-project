@@ -261,8 +261,6 @@ public class DatabasePersistentStorageTest {
             randomArray
         );
 
-    // UPDATE: We return an empty trackData now.
-    //TrackData randomTd = new TrackData(new LocationDataPoint[0]);
     dpsc.storeTrackData(trackDataPoint);
     // test if empty track data compared to empty track data.
     TrackData testTrackData = dpsc.getTrackData(99999);
