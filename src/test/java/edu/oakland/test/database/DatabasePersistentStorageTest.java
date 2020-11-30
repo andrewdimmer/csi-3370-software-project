@@ -274,8 +274,8 @@ public class DatabasePersistentStorageTest {
   }
 
   @Test
-  @DisplayName("track data offset out of bounds is invalid")
-  void trackDataOffsetOutOfBoundsIsInvalid() {
+  @DisplayName("track data offset out of bounds returns empty track data")
+  void trackDataOffsetOutOfBoundsReturnsEmptyTrackData() {
     // Setup
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
