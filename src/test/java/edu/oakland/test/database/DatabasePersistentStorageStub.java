@@ -8,10 +8,10 @@ public class DatabasePersistentStorageStub implements DatabasePersistentStorage 
   private int rfid;
   private TrackData trackData;
   
-  public DatabasePersistentStorageStub(int rfid, TrackData trackdata) {
+  public DatabasePersistentStorageStub(int rfid) {
     this.rfid = rfid;
-    this.trackData = trackdata;
   }
+  
   public int locateRfidData() {
     return rfid;
   }
@@ -29,7 +29,7 @@ public class DatabasePersistentStorageStub implements DatabasePersistentStorage 
   }
 
   public void storeTrackData(TrackData trackData) {
-
+    this.trackData = trackData;
   }
 
   public String getMode() {

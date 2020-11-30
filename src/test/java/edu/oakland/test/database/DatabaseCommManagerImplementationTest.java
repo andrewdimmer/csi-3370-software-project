@@ -62,7 +62,7 @@ public class DatabaseCommManagerImplementationTest {
   void trackDataInIsTrackDataOut() {
     int i = (int) (Math.random() * 100);
     TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
-    DatabasePersistentStorageStub dpss = new DatabasePersistentStorageStub(i, td);
+    DatabasePersistentStorageStub dpss = new DatabasePersistentStorageStub(i);
     DatabaseCommManager dcm = new DatabaseCommManagerImplementation(dpss);
 
     int j = (int) (Math.random() * 100);
