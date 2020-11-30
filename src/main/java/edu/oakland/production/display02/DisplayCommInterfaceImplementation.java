@@ -14,7 +14,7 @@ import java.lang.IllegalArgumentException;
 public class DisplayCommInterfaceImplementation implements DisplayCommInterface{
 
   private DisplayComm2WayInterface comm2Way;
-    
+
   /**
   * Creates a DisplayCommInterfaceImplementation to receive the rfid.
   * param DisplatComm2WayInterface: The class that DisplayCommInterface will pass the rfid to.
