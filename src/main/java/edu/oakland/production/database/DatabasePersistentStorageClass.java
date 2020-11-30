@@ -39,7 +39,8 @@ public class DatabasePersistentStorageClass {
   public TrackData getTrackData(int offset) {
   	// If we have a trackdata of length 4 for example, then the offset can not be more than 3 so we use length-1
   	if (offset > this.trackData.size()-1) {
-  		throw new IndexOutOfBoundsException("Offset " + offset + " is out of bounds!");
+  		//throw new IndexOutOfBoundsException("Offset " + offset + " is out of bounds!");
+      return null;
   	}
 
   	return this.trackData.get(offset);

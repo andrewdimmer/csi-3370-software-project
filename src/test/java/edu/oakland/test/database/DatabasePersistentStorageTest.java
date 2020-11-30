@@ -1,6 +1,9 @@
 package edu.oakland.test.database;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
@@ -71,7 +74,7 @@ public class DatabasePersistentStorageTest {
     );
 
     dpsc.storeTrackData(trackData);
-    assertEquals(trackData, dpsc.trackData(0));
+    assertEquals(trackData, dpsc.getTrackData(0));
     
   }
 
@@ -155,7 +158,7 @@ public class DatabasePersistentStorageTest {
         (int) (Math.random() * 60)
     ));
     dpsc.storeLocationDataPoint(ldp);
-    assertEquals(null, dpss.getLocationDataPoint(99999));
+    assertEquals(null, dpsc.getLocationDataPoint(99999));
   }
 
   @Test
@@ -171,8 +174,8 @@ public class DatabasePersistentStorageTest {
         generateRandomSpeed()
     );
 
-    dpsc.storeTrackData(ldp);
-    assertEquals(null, dpss.getTrackData(99999));
+    dpsc.storeTrackData(trackData);
+    assertEquals(null, dpsc.getTrackData(99999));
 
   }
 
