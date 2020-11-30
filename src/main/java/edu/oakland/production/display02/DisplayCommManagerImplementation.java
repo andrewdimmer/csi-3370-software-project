@@ -22,7 +22,7 @@ public class DisplayCommManagerImplementation implements DisplayCommManager {
   */
   public DisplayCommManagerImplementation(MiddlewareCommInterface middlewareCommInterface) {
     if (middlewareCommInterface == null) {
-        throw new IllegalArgumentException("processor cannot be null");
+      throw new IllegalArgumentException("processor cannot be null");
     }
     this.middleware = middlewareCommInterface;
   }
