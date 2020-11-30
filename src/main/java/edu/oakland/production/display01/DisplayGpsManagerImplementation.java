@@ -6,9 +6,13 @@ import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
 public class DisplayGpsManagerImplementation implements DisplayGpsManager {
     
   public String receiveGpsSignalStrength(Satellite satelliteSignal) {
-    return "";
+    if (satelliteSignal.getStrength() > 4) {
+      return "Acceptable";
+    }
+    else {
+      return "Poor";
   }
-
+}
   public SatelliteSignalCheckRequest passGpsSignalStrength(Satellite satelliteSignal) {
     return null;
 
