@@ -20,89 +20,80 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Database CommManager Test")
 public class DatabaseCommManagerTest {
 
-    @Test
-    @DisplayName("rfid going in is Rfid coming Out")
-    void rfidInIsRfidOut() {
+  @Test
+  @DisplayName("rfid going in is Rfid coming Out")
+  void rfidInIsRfidOut() {
 
-        int i = 10;
+    int i = 10;
 
-        DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
-        assertEquals(i, dcm.passGetRfidRequest());
-    }
+    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
+    assertEquals(i, dcm.passGetRfidRequest());
+  }
 
-    @Test
-    @DisplayName("Offset matches Datapoint")
-    void offsetMatchDataPoint() {
-        DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
+  @Test
+  @DisplayName("Offset matches Datapoint")
+  void offsetMatchDataPoint() {
+    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
 
-        float lat = (float) (Math.random() * 360 - 180);
-        float lng = (float) (Math.random() * 360 - 180);
+    float lat = (float) (Math.random() * 360 - 180);
+    float lng = (float) (Math.random() * 360 - 180);
 
-        LocationDataPoint ldp = new LocationDataPoint(lat, lng,
-                LocalDateTime.of((int) (Math.random() * 50 + 1970), (int) (Math.random() * 12 + 1),
-                        (int) (Math.random() * 28 + 1), (int) (Math.random() * 24), (int) (Math.random() * 60)));
+    LocationDataPoint ldp = new LocationDataPoint(lat, lng,
+        LocalDateTime.of((int) (Math.random() * 50 + 1970), (int) (Math.random() * 12 + 1),
+            (int) (Math.random() * 28 + 1), (int) (Math.random() * 24), (int) (Math.random() * 60)));
 
-        ldp = null;
-        int i = (int) Math.random();
-        assertEquals(ldp, dcm.passGetLocationDataPointRequest(i));
-    }
+    ldp = null;
+    int i = (int) Math.random();
+    assertEquals(ldp, dcm.passGetLocationDataPointRequest(i));
+  }
 
-    @Test
-    @DisplayName("Offset matches TrackData")
-    void offsetMatchTrackData() {
-        DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
+  @Test
+  @DisplayName("Offset matches TrackData")
+  void offsetMatchTrackData() {
+    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
 
-        TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
-        
-        int i = (int)(Math.random() * 7);
-        assertEquals(null, dcm.passGetTrackDataRequest(i));
-    }
+    TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
 
-    @Test
-    @DisplayName("TrackData In is same as TrackData Out")
-    void trackDataInIsTrackDataOut() {
+    int i = (int) (Math.random() * 7);
+    assertEquals(null, dcm.passGetTrackDataRequest(i));
+  }
+
+  @Test
+  @DisplayName("TrackData In is same as TrackData Out")
+  void trackDataInIsTrackDataOut() {
     DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
     float lat = (float) (Math.random() * 360 - 180);
     float lng = (float) (Math.random() * 360 - 180);
 
     LocationDataPoint ldp = new LocationDataPoint(lat, lng,
-            LocalDateTime.of((int) (Math.random() * 50 + 1970), (int) (Math.random() * 12 + 1),
-                    (int) (Math.random() * 28 + 1), (int) (Math.random() * 24), (int) (Math.random() * 60)));
+        LocalDateTime.of((int) (Math.random() * 50 + 1970), (int) (Math.random() * 12 + 1),
+            (int) (Math.random() * 28 + 1), (int) (Math.random() * 24), (int) (Math.random() * 60)));
 
-    
-    
     TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
     td = null;
     int i = (int) Math.random();
     assertEquals(td, dcm.passGetTrackDataRequest(i));
-    }
+  }
 
-    @Test
-    @DisplayName("Database Persistent Storage is not Null")
-    void databasePersistentStorageIsNotNull() {
+  @Test
+  @DisplayName("Database Persistent Storage is not Null")
+  void databasePersistentStorageIsNotNull() {
     assertThrows(IllegalArgumentException.class, () -> {
-    new DatabaseCommManagerImplementation(null);
+      new DatabaseCommManagerImplementation(null);
     });
-}
-    private LocationDataPoint[] generateRandomLocationDataPointsArray(int length) {
-        LocationDataPoint[] locations = new LocationDataPoint[length];
-        for (int index = 0; index < locations.length; index++) {
-          locations[index] = generateRandomLocationDataPoint();
-        }
-        return locations;
-      }
-    
-      private LocationDataPoint generateRandomLocationDataPoint() {
-        return new LocationDataPoint(
-          (float) (Math.random() * 180 - 90),
-          (float) (Math.random() * 360 - 180),
-          LocalDateTime.of(
-            (int) (Math.random() * 50 + 1970),
-            (int) (Math.random() * 12 + 1),
-            (int) (Math.random() * 28 + 1),
-            (int) (Math.random() * 24),
-            (int) (Math.random() * 60)
-          )
-        );
-      }
+  }
+
+  private LocationDataPoint[] generateRandomLocationDataPointsArray(int length) {
+    LocationDataPoint[] locations = new LocationDataPoint[length];
+    for (int index = 0; index < locations.length; index++) {
+      locations[index] = generateRandomLocationDataPoint();
+    }
+    return locations;
+  }
+
+  private LocationDataPoint generateRandomLocationDataPoint() {
+    return new LocationDataPoint((float) (Math.random() * 180 - 90), (float) (Math.random() * 360 - 180),
+        LocalDateTime.of((int) (Math.random() * 50 + 1970), (int) (Math.random() * 12 + 1),
+            (int) (Math.random() * 28 + 1), (int) (Math.random() * 24), (int) (Math.random() * 60)));
+  }
 }
