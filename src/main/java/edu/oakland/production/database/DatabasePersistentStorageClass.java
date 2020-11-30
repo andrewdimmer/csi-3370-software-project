@@ -13,8 +13,19 @@ public class DatabasePersistentStorageClass {
   String[] nextSatellites;
   String mode;
 
-
-  public DatabasePersistentStorageClass(int rfidData, ArrayList<LocationDataPoint> locDataPoint, ArrayList<TrackData> trackData, String[] nextSatellites) {
+  /**
+   * Creates the the class for managing the persistent storage
+   * Provides rest of Database with functions
+   *
+   * @param rfidData the rfid integer
+   * @param locDataPoint the location data point array list to initialize.
+   * @param trackData the track data  array list to initialize.
+   * @param nextSatellites the string array of satellites
+   */
+  public DatabasePersistentStorageClass(int rfidData, 
+  ArrayList<LocationDataPoint> locDataPoint, 
+  ArrayList<TrackData> trackData, 
+  String[] nextSatellites) {
     this.rfidData = rfidData;
     this.locDataPoint = locDataPoint;
     this.trackData = trackData;
