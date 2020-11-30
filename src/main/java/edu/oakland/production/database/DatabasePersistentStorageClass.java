@@ -59,9 +59,8 @@ public class DatabasePersistentStorageClass {
   }
 
   public TrackData getTrackData(int offset) {
-  	// If we have a trackdata of length 4 for example, then the offset can not be more than 3 so we use length-1
-  	if (offset > this.trackData.size()-1) {
-  		//throw new IndexOutOfBoundsException("Offset " + offset + " is out of bounds!");
+    // If we have a trackdata of length 4 for example, then the offset can not be more than 3 so we use length-1
+    if (offset > this.trackData.size()-1) {
       return null;
   	}
 
@@ -69,34 +68,42 @@ public class DatabasePersistentStorageClass {
   }
 
   public void storeTrackData(TrackData trackData) {
-  	if (trackData == null) {
+    if (trackData == null) {
       throw new IllegalArgumentException("trackData cannot be null");
     }
 
-  	this.trackData.add(trackData);
+    this.trackData.add(trackData);
   }
 
   public String getMode() {
-  	return this.mode;
+    return this.mode;
   }
 
   public void storeMode(String mode) {
     this.mode = mode;
   }
 
+  /**
+   * Finds the position of the currentSat providd
+   * and retuns the the sat in the next position
+   *
+   * @param currentSat the current satellite string
+   */
  public String getNextSat(String currentSat) {
     int satArrayLength = this.nextSatellites.length;
     int posOfCurrentSat = Arrays.asList(this.nextSatellites).indexOf(currentSat);
 
     boolean found = false;
     for (String sat : this.nextSatellites) {
-      if(sat == currentSat) found = true;
+      if (sat == currentSat){
+        found = true;
+      } 
     }
 
-    if(!found)return "";
+    if (!found)return "";
 
-      if(satArrayLength-1 > posOfCurrentSat){
-        return this.nextSatellites[posOfCurrentSat+1];
+      if(satArrayLength - 1 > posOfCurrentSat){
+        return this.nextSatellites[posOfCurrentSat + 1];
       } else {
         return "";
     }
