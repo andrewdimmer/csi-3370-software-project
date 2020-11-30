@@ -15,7 +15,7 @@ public class DisplayComm2WayInterfaceImplementationTests {
   void rfidInIsRfidOut() {
     int rfid = 1101;  //rfid number?
     DisplayComm2WayInterfaceImplementation comm2Way = new DisplayComm2WayInterfaceImplementation();
-    int out = comm2Way.returnRfidNum(rfid);
+    int out = comm2Way.rfid;
     assertEquals(rfid, out);
   }
 
