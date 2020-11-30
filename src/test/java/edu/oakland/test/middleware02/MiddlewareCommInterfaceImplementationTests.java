@@ -8,7 +8,6 @@ import edu.oakland.production.middleware02.MiddlewareCommInterface;
 import edu.oakland.production.middleware02.MiddlewareCommInterfaceImplementation;
 import edu.oakland.production.middleware02.MiddlewareCommLinkManager;
 import edu.oakland.test.middleware02.MiddlewareCommLinkManagerStub;
-
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -28,7 +27,7 @@ public class MiddlewareCommInterfaceImplementationTests {
 
   @Test 
   @DisplayName("Verifies if middlewareManager is set to Null")
-  void nullCheck(){
+  void nullCheck() {
     assertThrows(IllegalArgumentException.class, () -> {
       new MiddlewareCommInterfaceImplementation(null);
     });

@@ -10,7 +10,7 @@ public class MiddlewareCommInterfaceImplementation implements MiddlewareCommInte
 
   public MiddlewareCommInterfaceImplementation(MiddlewareCommLinkManager middlewareManager) {
     if(middlewareManager == null) {
-      throw new IllegalArgumentException("middlewareManager cannot be null");
+    throw new IllegalArgumentException("middlewareManager cannot be null");
     }
     this.middlewareManager = middlewareManager;
   }
