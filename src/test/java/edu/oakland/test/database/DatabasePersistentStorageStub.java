@@ -6,12 +6,12 @@ import edu.oakland.production.database.DatabasePersistentStorage;
 
 public class DatabasePersistentStorageStub implements DatabasePersistentStorage {
 
-  public int locateRfidData(){
-  	return 0;
+  public int locateRfidData() {
+    return 0;
   }
 
   public LocationDataPoint getLocationDataPoint(int offset) {
-  	return null;
+    return null;
   }
 
   public void storeLocationDataPoint(LocationDataPoint locationDataPoint) {
@@ -19,7 +19,7 @@ public class DatabasePersistentStorageStub implements DatabasePersistentStorage 
   }
 
   public TrackData getTrackData(int offset) {
-  	return null;
+    return null;
   }
 
   public void storeTrackData(TrackData trackData) {
@@ -27,7 +27,7 @@ public class DatabasePersistentStorageStub implements DatabasePersistentStorage 
   }
 
   public String getMode() {
-  	return "";
+    return "";
   }
 
   public void storeMode(String mode) {
@@ -35,7 +35,7 @@ public class DatabasePersistentStorageStub implements DatabasePersistentStorage 
   }
 
   public String getNextSat(String currentSat) {
-  	return "";
+    return "";
   }
 
 
