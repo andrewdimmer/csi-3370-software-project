@@ -7,6 +7,7 @@ import java.util.Scanner;
 /**
  * A production class that allows a user to be created so that Use Case One 
  * (SLTS location and track data is requested) can be initiated.
+ *
  * @author Tessa Peruzzi
  * @version %I%, %G%
  */
@@ -14,7 +15,7 @@ public class User {
   private DisplayCommInterface displayCommInterface;
 
   /**
-   * Creates a new User object with the given DisplayCommInterface
+   * Creates a new User object with the given DisplayCommInterface.
    *
    * @param displayCommInterface The DisplayCommInterface
    */
@@ -28,7 +29,7 @@ public class User {
   /**
    * Allows the user to initiate Use Case One by accepting a scanner that
    * should ask for an RFID number. DisplayCommInterface will then
-   * create a new TrackData Object
+   * create a new TrackData Object.
    *
    * @param input The Scanner used to intake the RFID number
    */
