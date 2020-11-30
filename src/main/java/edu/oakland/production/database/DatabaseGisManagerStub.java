@@ -17,7 +17,7 @@ public class DatabaseGisManagerStub implements DatabaseGisManager {
   }
 
   public String passModeRequest(String mode) {
-    return "";
+    return "normal";
   }
 }
 
