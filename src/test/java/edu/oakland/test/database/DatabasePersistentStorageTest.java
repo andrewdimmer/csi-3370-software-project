@@ -353,6 +353,55 @@ public class DatabasePersistentStorageTest {
     assertEquals("", dpsc.getNextSat("Sat4"));
   }
 
+  @Test
+  @DisplayName("cannot pass null location data point in constructor")
+  void cannotPassNullLocationDataPointInConstructor() {
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+
+    assertThrows(IllegalArgumentException.class, () -> {
+      new DatabasePersistentStorageImplementation(0, 
+        null, 
+        trackData, 
+        randomArray
+    );
+    });
+
+  }
+
+
+  @Test
+  @DisplayName("cannot pass null track data in constructor")
+  void cannotPassNullTrackDataInConstructor() {
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+
+    assertThrows(IllegalArgumentException.class, () -> {
+      new DatabasePersistentStorageImplementation(0, 
+        locDataPoint, 
+        null, 
+        randomArray
+    );
+    });
+
+  }
+
+
+  @Test
+  @DisplayName("cannot pass null next Satellites in constructor")
+  void cannotPassNullNextSatellitesInConstructor() {
+    locDataPoint.add(ldp);
+    trackData.add(trackDataPoint);
+
+    assertThrows(IllegalArgumentException.class, () -> {
+      new DatabasePersistentStorageImplementation(0, 
+        locDataPoint, 
+        trackData, 
+        null
+    );
+    });
+
+  }
 
   // Functions stolen from admin for TrackData use
 
