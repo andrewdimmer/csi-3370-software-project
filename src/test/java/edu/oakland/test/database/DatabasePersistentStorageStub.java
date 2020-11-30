@@ -13,7 +13,7 @@ public class DatabasePersistentStorageStub implements DatabasePersistentStorage 
     return currentSat;
   }
 
-  public LocationDataPoint getLocationDataPoint() {
+  public LocationDataPoint getLocationDataPoint(int offset) {
     return ldp;
   }
 
