@@ -22,10 +22,10 @@ public class DatabaseCommInterfaceTest {
 
   @Test
   @DisplayName("rfid going in is Rfid coming Out")
-    void rfidInIsRfidOut() {
-      int i = 10;
-      DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
-      assertEquals(i, dcm.passGetRfidRequest());
+  void rfidInIsRfidOut() {
+    int i = 10;
+    DatabaseCommManagerStub dcm = new DatabaseCommManagerStub();
+    assertEquals(i, dcm.passGetRfidRequest());
   }
   
   @Test
