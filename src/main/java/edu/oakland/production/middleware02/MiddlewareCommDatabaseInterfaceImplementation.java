@@ -12,7 +12,7 @@ public class MiddlewareCommDatabaseInterfaceImplementation implements
   private DatabaseCommInterface databaseCommInterface;
   
   public MiddlewareCommDatabaseInterfaceImplementation
-    (DatabaseCommInterface databaseCommInterface) {
+      (DatabaseCommInterface databaseCommInterface) {
     if (databaseCommInterface == null) {
       throw new IllegalArgumentException("databaseCommInterface cannot be null");
       }
