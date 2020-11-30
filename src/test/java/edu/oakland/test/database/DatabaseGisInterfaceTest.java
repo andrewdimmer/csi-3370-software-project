@@ -35,7 +35,7 @@ public class DatabaseGisInterfaceTest {
     DatabaseGisManagerStub dgms = new DatabaseGisManagerStub();
     DatabaseGisInterfaceImplementation dgi = new DatabaseGisInterfaceImplementation(dgms);
     String currentSat = "";
-    assertEquals("", dgi.receiveNextSatRequest(currentSat));
+    assertEquals(currentSat, dgi.receiveNextSatRequest(currentSat));
   }
 
   @Test
