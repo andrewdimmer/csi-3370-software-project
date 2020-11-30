@@ -6,7 +6,7 @@ package edu.oakland.test.display01 {
         .. Use Case 1 ..
         + String measureGpsSignalStrength(Satellite satelliteSignal)
         .. Use Case 2 ..
-        + SatelliteSignalCheckRequest measureSignal(String satelliteName)
+        + SatelliteSignalCheckRequest measureSignal(Satellite satelliteSignal)
     }
 }
 

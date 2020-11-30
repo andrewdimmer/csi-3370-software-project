@@ -11,7 +11,7 @@ package edu.oakland.production.display01 {
     + void passGpsSignalStrength(int signalStrength)
     .. Use Case 2 ..
     + String receiveGpsSignalStrength(Satellite signal)
-    + SatelliteSignalCheckRequest passGpsSignalStrength(String satelliteName)
+    + SatelliteSignalCheckRequest passGpsSignalStrength(Satellite satelliteSignal)
     }
 }
 
