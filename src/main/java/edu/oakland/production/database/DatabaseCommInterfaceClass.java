@@ -1,8 +1,8 @@
 package edu.oakland.production.database;
 
-import edu.oakland.production.database.DatabaseCommManager;
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
+import edu.oakland.production.database.DatabaseCommManager;
 
 public class DatabaseCommInterfaceClass {
   

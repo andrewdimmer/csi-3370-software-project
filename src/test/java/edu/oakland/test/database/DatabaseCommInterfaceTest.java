@@ -6,8 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabaseCommInterface;
-import edu.oakland.production.database.DatabasePersistentStorage;
 import edu.oakland.production.database.DatabaseCommInterfaceClass;
+import edu.oakland.production.database.DatabasePersistentStorage;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 import org.junit.jupiter.api.AfterAll;
@@ -37,8 +37,10 @@ public class DatabaseCommInterfaceTest {
     float lat = (float) (Math.random() * 360 - 180);
     float lng = (float) (Math.random() * 360 - 180);
     LocationDataPoint ldp = new LocationDataPoint(lat, lng,
-                                LocalDateTime.of((int) (Math.random() * 50 + 1970), (int) (Math.random() * 12 + 1),
-                                (int) (Math.random() * 28 + 1), (int) (Math.random() * 24), (int) (Math.random() * 60)));
+                                LocalDateTime.of((int) (Math.random() * 50 + 1970),
+                                 (int) (Math.random() * 12 + 1),
+                                (int) (Math.random() * 28 + 1), (int) (Math.random() * 24),
+                                 (int) (Math.random() * 60)));
     ldp = null;    
     int i = (int) Math.random();    
     assertEquals(ldp, dcm.passGetLocationDataPointRequest(i));
