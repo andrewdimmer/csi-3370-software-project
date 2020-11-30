@@ -11,7 +11,7 @@ import java.lang.IllegalArgumentException;
 * then passes it along to Comm2Way.
 *
 */
-public class DisplayCommInterfaceImplementation implements DisplayCommInterface{
+public class DisplayCommInterfaceImplementation implements DisplayCommInterface {
 
   private DisplayComm2WayInterface comm2Way;
 
