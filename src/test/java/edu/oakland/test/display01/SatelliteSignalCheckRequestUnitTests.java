@@ -9,7 +9,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("Sattelite Signal Check Request Tests")
-public class SatelliteSignalCheckRequestTests {
+public class SatelliteSignalCheckRequestUnitTests {
 
   @Test
   @DisplayName("SatelliteName In Is the same SatelliteName Out")
