@@ -3,7 +3,8 @@ package edu.oakland.test.display02;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import edu.oakland.production.display02;
+import edu.oakland.production.display02.DisplayCommInterfaceImplementation;
+import edu.oakland.production.display02.DisplayComm2WayInterfaceImplementation;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -24,7 +25,7 @@ public class DisplayCommInterfaceImplementationTest {
     DisplayComm2WayInterfaceImplementation dc = new DisplayComm2WayInterfaceImplementation();
     assertNotNull(dc, "Verify that class is not null");
   }
-  
+
   private int generateRandomRfid() {
 
     return (int) Math.random();
