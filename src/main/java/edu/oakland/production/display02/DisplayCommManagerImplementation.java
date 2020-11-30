@@ -17,7 +17,6 @@ public class DisplayCommManagerImplementation implements DisplayCommManager {
     
     /**
     * Creates a DisplayCommManagerImplementation to receive the rfid.
-    *
     * param MiddlewareCommInterface: The class that DisplayCommManager will pass the rfid to.
     *
     */
@@ -34,7 +33,7 @@ public class DisplayCommManagerImplementation implements DisplayCommManager {
     *
     * @return the TrackData
     */
-    public TrackData receiveRfid(int rfidNum) {
+    public TrackData receiveRfid(int rfid) {
         return evaluateRfidRequest(rfid);
     }
 
@@ -43,7 +42,7 @@ public class DisplayCommManagerImplementation implements DisplayCommManager {
     *
     * @return the TrackData
     */
-    public TrackData evaluateRfidRequest(int rfid) {
+    private TrackData evaluateRfidRequest(int rfid) {
         return passRfidToMiddlewareCommInterface(rfid);
     }
 
@@ -52,10 +51,7 @@ public class DisplayCommManagerImplementation implements DisplayCommManager {
     *
     * @return the TrackData
     */
-    public TrackData passRfidToMiddlewareCommInterface(int rfid) {
-        if (middleware == null) {
-            throw new IllegalArgumentException("MiddlewareCommInterface cannot be null");
-        }
+    private TrackData passRfidToMiddlewareCommInterface(int rfid) {
         return middleware.requestRfid(rfid);
     }
 
