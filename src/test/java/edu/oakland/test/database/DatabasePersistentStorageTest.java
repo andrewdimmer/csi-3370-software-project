@@ -64,7 +64,11 @@ public class DatabasePersistentStorageTest {
     
     locDataPoint.add(ldp);
     trackData.add(trackDataPoint);
-    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, locDataPoint, trackData, randomArray);
+    DatabasePersistentStorageClass dpsc = new DatabasePersistentStorageClass(0, 
+        locDataPoint, 
+        trackData, 
+        randomArray
+    );
     dpsc.storeLocationDataPoint(ldp);
     assertEquals(ldp, dpsc.getLocationDataPoint(0));
   }

@@ -14,29 +14,38 @@ public class DatabasePersistentStorageClass {
   String mode;
 
   /**
-   * Creates the the class for managing the persistent storage
-   * Provides rest of Database with functions
+   * Creates the the class for managing the persistent storage.
+   * Provides rest of Database with functions.
    *
-   * @param rfidData the rfid integer
+   * @param rfidData the rfid integer.
    * @param locDataPoint the location data point array list to initialize.
    * @param trackData the track data  array list to initialize.
-   * @param nextSatellites the string array of satellites
+   * @param nextSatellites the string array of satellites.
    */
   public DatabasePersistentStorageClass(int rfidData, 
-  ArrayList<LocationDataPoint> locDataPoint, 
-  ArrayList<TrackData> trackData, 
-  String[] nextSatellites) {
-    this.rfidData = rfidData;
-    this.locDataPoint = locDataPoint;
-    this.trackData = trackData;
-    this.nextSatellites = nextSatellites;
-    this.mode = "normal";
+      ArrayList<LocationDataPoint> locDataPoint, 
+      ArrayList<TrackData> trackData, 
+      String[] nextSatellites) {
+        this.rfidData = rfidData;
+        this.locDataPoint = locDataPoint;
+        this.trackData = trackData;
+        this.nextSatellites = nextSatellites;
+        this.mode = "normal";
   }
 
 
+  /**
+   * Returns the rfidData integer
+   * 
+   *
+   * 
+   * 
+   * 
+   * 
+   */
 
   public int locateRfidData() {
-  	return rfidData;
+    return rfidData;
   }
 
   public LocationDataPoint getLocationDataPoint(int offset) {
@@ -84,8 +93,8 @@ public class DatabasePersistentStorageClass {
   }
 
   /**
-   * Finds the position of the currentSat providd
-   * and retuns the the sat in the next position
+   * Finds the position of the currentSat provided.
+   * and retuns the the sat in the next position.
    *
    * @param currentSat the current satellite string
    */
