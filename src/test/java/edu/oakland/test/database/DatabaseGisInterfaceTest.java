@@ -29,7 +29,7 @@ public class DatabaseGisInterfaceTest {
     ));
     int i = 0;
     dgi.receiveStoreRequest(ldp);
-    assertEquals(null, dgms.getLocationDataPoint(i));
+    assertEquals(ldp, dgms.getLocationDataPoint(i));
   }
 
   @Test
