@@ -268,30 +268,6 @@ public class DatabasePersistentStorageTest {
     assertEquals(0, testTrackData.getLocationDataPoints().length);
   }
 
-  @Test
-  //@DisplayName("track data offset out of bounds returns null")
-  //void trackDataOffsetOutOfBoundsIsReturnsNull() {
-  @DisplayName("track data offset out of bounds returns trackData of length 0")
-  void trackDataOffsetOutOfBoundsReturnsTdOfLengthZero() {
-    // Made changes per r532465218
-    // Not sure if we needed to change the DisplayName and func name
-
-    // Setup
-    locDataPoint.add(ldp);
-    trackData.add(trackDataPoint);
-    DatabasePersistentStorageImplementation dpsc = new DatabasePersistentStorageImplementation(0, 
-            locDataPoint, 
-            trackData, 
-            randomArray
-        );
-
-    // UPDATE: We return an empty trackData now.
-    //TrackData randomTd = new TrackData(new LocationDataPoint[0]);
-    dpsc.storeTrackData(trackDataPoint);
-    // test if empty track data compared to empty track data.
-    TrackData testTrackData = dpsc.getTrackData(99999);
-    assertEquals(0, testTrackData.getLocationDataPoints().length);
-  }
 
   @Test
   @DisplayName("nonexistent satellite name returns empty next")
