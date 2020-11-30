@@ -6,9 +6,9 @@ public class DisplayComm2WayInterfaceImplementation implements DisplayComm2WayIn
   DisplayCommManagerImplementation commManager;
   
   /**
-  * Creates a DisplayCommManagerImplementation to receive the rfid.
+  * 
   *
-  * @param DisplayCommManagerImplementation: The class that DisplayCommManager will pass the rfid to.
+  * @param DisplayCommManagerImplementation:
   *
   */
   public DisplayComm2WayInterfaceImplementation(DisplayCommManagerImplementation displayCommManager) {
@@ -26,7 +26,7 @@ public class DisplayComm2WayInterfaceImplementation implements DisplayComm2WayIn
    */
   public TrackData receiveRfidRequest(int rfidNum) {
 
-      return determineUserRequestFormat(rfidNum);
+    return determineUserRequestFormat(rfidNum);
   }
   
   
