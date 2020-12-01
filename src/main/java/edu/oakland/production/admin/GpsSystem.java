@@ -36,10 +36,10 @@ public class GpsSystem {
 	  } else if (isEmptyStringInArray(satelliteNames)) {
 		  throw new IllegalArgumentException("satelliteNames must not be null");
 	  }
-	  satellites = new Satellite[satelliteNames.length];
-	  displayGpsInterface = displayGpsInterfaceIn;
+	  this.satellites = new Satellite[satelliteNames.length];
+	  this.displayGpsInterface = displayGpsInterfaceIn;
     
-    
+    configureSatellites(satelliteNames);
   }
   
   /**
@@ -80,8 +80,8 @@ public class GpsSystem {
   public void configureSatellites(String[] satelliteNames, float incrementLatAmount, float incrementLngAmount, LocationDataPoint initLocationDataPoint) {
     Random rnd = new Random();
     for (int i = 0; i < satelliteNames.length; i++){
-      satellites[i] = new Satellite(satelliteNames[i], rnd.nextInt(10) + 1);
-      satellites[i].satelliteInit(incrementLatAmount, incrementLngAmount, initLocationDataPoint);
+      this.satellites[i] = new Satellite(satelliteNames[i], rnd.nextInt(10) + 1);
+      this.satellites[i].satelliteInit(incrementLatAmount, incrementLngAmount, initLocationDataPoint);
     }
   }
   
@@ -94,19 +94,20 @@ public class GpsSystem {
   private void configureSatellites(String[] satelliteNames) {
     Random rnd = new Random();
     
-    float maxSpeedPerTick = (float) .5 / 6;               //assumes up to 30 knots per hour and 10 minutes per ping
-    float speed = maxSpeedPerTick - (float) (rnd.nextFloat() * .02);
+    float maxSpeedPerTick = (float) (.5 / 6);               //assumes up to 30 knots per hour and 10 minutes per ping
+    float speed = (float) (maxSpeedPerTick - (rnd.nextFloat() * .02));
     
-    float movementDirection = rnd.nextFloat() * (float) (2 * Math.PI);
-    float incrementLatAmount = speed * (float) Math.sin(movementDirection);
-    float incrementLngAmount = speed * -1 * (float) Math.cos(movementDirection);
+    float movementDirection = (float) (rnd.nextFloat() * (2 * Math.PI));  //direction and starting position for our LocationDataPoint
+    float incrementLatAmount = (float) (speed * Math.sin(movementDirection));
+    float incrementLngAmount = (float) (speed * -1 *  Math.cos(movementDirection));
+    float lat = (float) ((rnd.nextFloat() * .16) + 45.42);
+    float lng = (float) ((rnd.nextFloat() * 1.16) + 44.42);
     
     LocalDateTime time = LocalDateTime.now().minusMinutes(50);
     
+    LocationDataPoint initLocationDataPoint = new LocationDataPoint(lat, lng, time);
     
-    /*float lat = rnd.nextFloat() + 45;
-    float lng = (rnd.nextFloat() * 2) + 44;*/
-    //LocationDataPoint ldp = new LocationDataPoint(
+    configureSatellites(satelliteNames, incrementLatAmount, incrementLngAmount, initLocationDataPoint);
   }
   
   /**
