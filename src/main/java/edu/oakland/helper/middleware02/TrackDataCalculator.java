@@ -4,14 +4,19 @@ import edu.oakland.helper.admin.LocationDataPoint;
 import java.time.Duration;
 import java.time.LocalDateTime;
 /**
-     * This is a class that calcs speed and direction
      * <p>
-
+     * This is a class that calcs speed and direction.
+     * </p>
      */
 public class TrackDataCalculator {
 
   private LocationDataPoint[] locationDataPoint;
 
+/**
+    * <p> 
+    * This is a method that calcs speed.
+    * </p>
+    */
   public float calculateSpeed(LocationDataPoint[] locationDataPoint) {
     this.locationDataPoint = locationDataPoint;
     LocationDataPoint point1 = locationDataPoint[0];
@@ -36,11 +41,13 @@ public class TrackDataCalculator {
     return newSpeed2;  
       
   }
+
   /**
-     * This is a method that calcs direction
-     * <p>
+     * <p> 
+     * This is a method that calcs direction.
+     * </p>
      */
-     
+
   public float calculateDirection(LocationDataPoint[] locationDataPoint) {
     this.locationDataPoint = locationDataPoint;
     
