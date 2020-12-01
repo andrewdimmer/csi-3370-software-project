@@ -14,6 +14,7 @@ import org.junit.jupiter.api.Test;
 @DisplayName("MiddlewareCommDatabaseInterfaceImplementationTests Unit Tests")
 public class MiddlewareCommDatabaseInterfaceImplementationTests {
   int rfid;
+  
   @Test
   @DisplayName("Rfid In Is the same Rfid Out")
     void rfidInIsRfIdOut() {
