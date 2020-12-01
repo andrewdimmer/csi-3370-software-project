@@ -12,7 +12,6 @@ import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.XYPlot;
 import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 import org.jfree.data.xy.XYDataset;
-import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
@@ -39,30 +38,30 @@ public class TrackDataPlotter extends JFrame {
   */
   public TrackDataPlotter(TrackData data) {
 
-      if (data == null) {
-        throw new IllegalArgumentException("Track data is null");
-      }
-      this.isValidTrackData = data.isValid();
-      if (!isValidTrackData) {
-        throw new IllegalArgumentException("Track data is invalid");
-      }
-      this.lat = extractLatFromTrackData(data);
-      this.lng = extractLngFromTrackData(data);
-      this.dataPoints = getTrackData(this.lat, this.lng);
-      if (this.dataPoints.getItemCount() == 0) {
-        throw new IllegalArgumentException("Data series is empty");
-      }
-      if (this.dataPoints.getItemCount() != 5) {
-        throw new IllegalArgumentException("Data series contains an invalid number of points");
-      }
-      this.fitLine = calculateLine(this.lat, this.lng);
-      if (this.fitLine.getItemCount() == 0) {
-        throw new IllegalArgumentException("Fit Line representation contains no points");
-      }
-      if (this.fitLine.getItemCount() != 2) {
-        throw new IllegalArgumentException("Fit line contains an invalid number of points");
-      }
-      this.chart = createChart();
+    if (data == null) {
+      throw new IllegalArgumentException("Track data is null");
+    }
+    this.isValidTrackData = data.isValid();
+    if (!isValidTrackData) {
+      throw new IllegalArgumentException("Track data is invalid");
+    }
+    this.lat = extractLatFromTrackData(data);
+    this.lng = extractLngFromTrackData(data);
+    this.dataPoints = getTrackData(this.lat, this.lng);
+    if (this.dataPoints.getItemCount() == 0) {
+      throw new IllegalArgumentException("Data series is empty");
+    }
+    if (this.dataPoints.getItemCount() != 5) {
+      throw new IllegalArgumentException("Data series contains an invalid number of points");
+    }
+    this.fitLine = calculateLine(this.lat, this.lng);
+    if (this.fitLine.getItemCount() == 0) {
+      throw new IllegalArgumentException("Fit Line representation contains no points");
+    }
+    if (this.fitLine.getItemCount() != 2) {
+      throw new IllegalArgumentException("Fit line contains an invalid number of points");
+    }
+    this.chart = createChart();
   }
 
   /**
@@ -181,7 +180,7 @@ public class TrackDataPlotter extends JFrame {
 
   /**
   * Gets the longitudes of location data points from TrackData and stores a float array.
-   * 
+  *
   * @param data TrackData object representing the location data to be plotted
   * @return float[] lngNum containing y coordinates of location data points
   */
