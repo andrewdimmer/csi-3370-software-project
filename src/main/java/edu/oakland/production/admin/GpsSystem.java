@@ -86,7 +86,7 @@ public class GpsSystem {
     for (int i = 0; i < satelliteNames.length; i++) {
       this.satellites[i] = new Satellite(satelliteNames[i], rnd.nextInt(10) + 1);
       this.satellites[i].satelliteInit(incrementLatAmount, 
-        incrementLngAmount, initLocationDataPoint);
+          incrementLngAmount, initLocationDataPoint);
     }
   }
   
