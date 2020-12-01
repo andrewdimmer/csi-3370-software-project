@@ -7,89 +7,36 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.production.display01.DisplayGpsInterfaceImplementation;
+import edu.oakland.production.display01.DisplayGpsReceiver;
+import edu.oakland.test.display01.DisplayGpsReceiverStub;
 
   @DisplayName("Display GPS Interface Unit Tests")
     public class DisplayGpsInterfaceImplementationTests {
       @Test
-      @DisplayName("Sending indication that signal is lost...")
-      void sendMessageIfSingalLost() {
-      Satellite s = new Satellite();
-        Random r = new Random();
-        int signal = r.nextInt(4);
-        s.setStrength(signal);
-        DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation();
-        AssertEquals(d.reportGpsSignalLoss(s),"No Signal");
+      @DisplayName("Verifying Signal In is Signal Out")
+      void SignalInIsSignalOut() {
+        Satellite s = new Sattelite("New Satellite", 7);
+        DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation(new DisplayGpsReceiverStub());
+        assertEquals(d.recieveGpsSignal(s),"New Satellite");
       }
       @Test
-      @DisplayName("Sending signal confirmation")
-      void dontSendMessageIfSignalFound() {
-        Satellite s = new Satellite();
-        Random r = new Random();
-        int signal = r.nextInt(6) + 4;
-        s.setStrength(signal);
-        DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation();
-        AssertEquals(d.reportGpsSignalLoss(s),"");
-
+      @DisplayName("Verifying Satellite Name in is Satellite Name Out")
+      void SatelliteInIsSatelliteOut() {
+        Satellite s = new Satellite("New Satellite", 7);
+        DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation(new DisplayGpsReceiverStub());
+        assertEquals(d.reportGpsSignalLoss(s), "New Satellite");
       }
       @Test
-      @DisplayName("Sending GPS Signal confirmation to reciever")
-      void recievedGpsSignal() {
-        Satellite s = new Satellite();
-        Random r = new Random();
-        int signal = r.nextInt(6) + 4;
-        s.setStrength(signal);
-        DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation();
-        AssertEquals(d.recieveGpsSignal(s),true);
-      }
-
-      @Test
-      @DisplayName("Sending Empty GPS Signal to reciever")
-      void didNotRevieveGpsSignal() {
-        Satellite s = new Satellite();
-        Random r = new Random();
-        int signal = r.nextInt(4);
-        s.setStrength(signal);
-        DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation();
-        AssertEquals(d.recieveGpsSignal(s),false);
+      @DisplayName("Checking Satellite Signal")
+      void SatelliteInIsSatelliteOut() {
+        Satellite s = new Satellite("New Satellite", 7);
+        DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation(new DisplayGpsReceiverStub());
+        assertEquals(d.checkSignalStrength(s), "New Satellite");
       }
       @Test
-      @DisplayName("Checking that the reciever identifies a weak signal")
-      void foundNoSignal() {
-        Satellite s = new Satellite();
-        Random r = new Random();
-        int signal = r.nextInt(4);
-        s.setStrength(signal);
-        DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation();
-        AssertEquals(d.checkSignalStrength(s),signal);
-      }
-      @Test
-      @DisplayName("Checking that the reciever identifies a strong singal")
-      void foundStrongSignal(){
-        Satellite s = new Satellite();
-        Random r = new Random();
-        int signal = r.nextInt(6) + 4;
-        s.setStrength(signal);
-        DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation();
-        AssertEquals(d.checkSignalStrength(s),signal);
-      }
-      @Test
-      @DisplayName("Checking that the secondary reciever identifies a weak signal")
-      void recheckFoundNoSignal(){
-        Satellite s = new Satellite();
-        Random r = new Random();
-        int signal = r.nextInt(4);
-        s.setStrength(signal);
-        DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation();
-        AssertEquals(d.recheckSignalStrength(s),signal);
-      }
-      @Test
-      @DisplayName("Checking that the secondary reciever identifies a strong singal")
-      void recheckFoundStrongSignal(){
-        Satellite s = new Satellite();
-        Random r = new Random();
-        int signal = r.nextInt(6) + 4;
-        s.setStrength(signal);
-        DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation();
-        AssertEquals(d.recheckSignalStrength(s),signal);
-      }
+      @DisplayName("Rechecking Satellite Signal")
+      void SatelliteInIsSatelliteOut() {
+        Satellite s = new Satellite("New Satellite", 7);
+        DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation(new DisplayGpsReceiverStub());
+        assertEquals(d.recheckSignalStrength(s), "New Satellite");
     }

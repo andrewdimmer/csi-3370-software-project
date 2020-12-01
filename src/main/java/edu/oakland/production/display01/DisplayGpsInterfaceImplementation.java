@@ -1,31 +1,41 @@
 package edu.oakland.production.display01;
 
 import edu.oakland.helper.admin.Satellite;
+import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
+import edu.oakland.production.display01.DisplayGpsReceiver;
+import edu.oakland.test.display01.DisplayGpsReceiverStub;
 
 public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
-
-  public boolean receiveGpsSignal(Satellite satelliteSignal) {
-    if (satelliteSignal.getStrength() > 4) {
-      return true;
-    } else {
-      return false;
-    }
+  public DisplayGpsReceiverStub reciever;
+  public DisplayGpsInterfaceImplementation(DisplayGpsReceiverStub reciever) {
+    this.reciever = reciever;
+  }
+  public String receiveGpsSignal(Satellite satelliteSignal) {
+    System.out.println("Recieved GPS Signal from:");
+    String satellite = reciever.measureGpsSignalStrength(satelliteSignal);
+    System.out.println(satellite);
+    return satellite;
   }
 
   public String reportGpsSignalLoss(Satellite satelliteSignal) {
-    if (satelliteSignal.getStrength() > 4) {
-      return "";
-    } else {
-      return "No Signal";
-    }
+    System.out.println("Reporting loss for:");
+    SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
+    System.out.println(satellite.getSatelliteName());
+    return satellite.getSatelliteName();
   }
 
-  public int recheckSignalStrength(Satellite satelliteSignal) {
-    return satelliteSignal.getStrength();
+  public String recheckSignalStrength(Satellite satelliteSignal) {
+    System.out.println("Rechecking signal strength");
+    SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
+    System.out.println(satellite.getSatelliteName());
+    return satellite.getSatelliteName();
   }
 
-  public int checkSignalStrength(Satellite satelliteSignal) {
-    return satelliteSignal.getStrength();
+  public String checkSignalStrength(Satellite satelliteSignal) {
+    System.out.println("Checking signal strength");
+    SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
+    System.out.println(satellite.getSatelliteName());
+    return satellite.getSatelliteName();
   }
 
 } 
