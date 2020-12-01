@@ -82,11 +82,11 @@ public class TrackDataPlotterTests {
 				(float) (Math.random() * 180 - 90),
 				(float) (Math.random() * 360 - 180),
 				LocalDateTime.of(
-					(int) (Math.random() * 50 + 1970),
-					(int) (Math.random() * 12 + 1),
-					(int) (Math.random() * 28 + 1),
-					(int) (Math.random() * 24),
-					(int) (Math.random() * 60)
+				(int) (Math.random() * 50 + 1970),
+				(int) (Math.random() * 12 + 1),
+				(int) (Math.random() * 28 + 1),
+				(int) (Math.random() * 24),
+				(int) (Math.random() * 60)
 				)
 		);
 	}
