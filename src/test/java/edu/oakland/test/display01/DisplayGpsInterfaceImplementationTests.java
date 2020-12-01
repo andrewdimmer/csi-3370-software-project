@@ -41,7 +41,7 @@ public class DisplayGpsInterfaceImplementationTests {
     DisplayGpsInterfaceImplementation d;
     d = new DisplayGpsInterfaceImplementation(new DisplayGpsReceiverStub());
     SatelliteSignalCheckRequest ssrc = new SatelliteSignalCheckRequest("New Satellite", "Type 2");
-    assertEquals(d.checkSignalStrength(s).getSatelliteName(), ssrc.getSatelliteName());
+    assertEquals(ssrc.getSatelliteName(), d.checkSignalStrength(s).getSatelliteName());
   }
 
   @Test
