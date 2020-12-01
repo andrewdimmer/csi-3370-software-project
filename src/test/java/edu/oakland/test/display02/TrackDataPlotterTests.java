@@ -57,7 +57,7 @@ public class TrackDataPlotterTests {
 			generateRandomSpeed());
 		return invalidData;
 	}
-	
+
 	/**
 	 * Methods borrowed from our lovely admin
 	 */
@@ -87,7 +87,7 @@ public class TrackDataPlotterTests {
 						(int) (Math.random() * 28 + 1),
 						(int) (Math.random() * 24),
 						(int) (Math.random() * 60)
-				)
+				);
 		);
 	}
 
