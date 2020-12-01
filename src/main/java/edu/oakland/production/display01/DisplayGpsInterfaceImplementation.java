@@ -3,11 +3,10 @@ package edu.oakland.production.display01;
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
 import edu.oakland.production.display01.DisplayGpsReceiver;
-import edu.oakland.test.display01.DisplayGpsReceiverStub;
 
 public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
-  public DisplayGpsReceiverStub reciever;
-  public DisplayGpsInterfaceImplementation(DisplayGpsReceiverStub reciever) {
+  public DisplayGpsReceiver reciever;
+  public DisplayGpsInterfaceImplementation(DisplayGpsReceiver reciever) {
     this.reciever = reciever;
   }
   public String receiveGpsSignal(Satellite satelliteSignal) {

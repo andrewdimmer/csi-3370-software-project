@@ -3,7 +3,7 @@ package edu.oakland.test.display01;
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
 
-public class DisplayGpsReceiverStub {
+public class DisplayGpsReceiverStub implements DisplayGpsReceiver {
 
   /** 
    * Measures GPS Signal Strength.
