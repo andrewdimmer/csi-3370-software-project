@@ -15,9 +15,9 @@ import edu.oakland.test.display01.DisplayGpsReceiverStub;
       @Test
       @DisplayName("Verifying Signal In is Signal Out")
       void SignalInIsSignalOut() {
-        Satellite s = new Sattelite("New Satellite", 7);
+        Satellite s = new Satellite("New Satellite", 7);
         DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation(new DisplayGpsReceiverStub());
-        assertEquals(d.recieveGpsSignal(s),"New Satellite");
+        assertEquals(d.receiveGpsSignal(s),"New Satellite");
       }
       @Test
       @DisplayName("Verifying Satellite Name in is Satellite Name Out")
@@ -40,3 +40,4 @@ import edu.oakland.test.display01.DisplayGpsReceiverStub;
         DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation(new DisplayGpsReceiverStub());
         assertEquals(d.recheckSignalStrength(s), "New Satellite");
     }
+  }

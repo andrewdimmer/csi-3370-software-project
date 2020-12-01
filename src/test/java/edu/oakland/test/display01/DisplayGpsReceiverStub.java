@@ -2,6 +2,7 @@ package edu.oakland.test.display01;
 
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
+import edu.oakland.production.display01.DisplayGpsReceiver;
 
 public class DisplayGpsReceiverStub implements DisplayGpsReceiver {
 
@@ -13,7 +14,7 @@ public class DisplayGpsReceiverStub implements DisplayGpsReceiver {
    */
   public String measureGpsSignalStrength(Satellite satelliteSignal) {
     Satellite s = satelliteSignal;
-    return s.getName();
+    return s.getSatelliteName();
 
   }
 
@@ -25,7 +26,7 @@ public class DisplayGpsReceiverStub implements DisplayGpsReceiver {
    */
   public SatelliteSignalCheckRequest measureSignal(Satellite satelliteSignal) {
     SatelliteSignalCheckRequest request;
-    request = new SatelliteSignalCheckRequest(satelliteSignal.getName(), "Type 2");
+    request = new SatelliteSignalCheckRequest(satelliteSignal.getSatelliteName(), "Type 2");
     return request;
 
   }
