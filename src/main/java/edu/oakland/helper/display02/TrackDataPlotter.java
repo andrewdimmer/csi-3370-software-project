@@ -33,7 +33,7 @@ public class TrackDataPlotter extends JFrame {
   /**
   * Creates a TrackDataPlotter object which contains a chart with the location
   * data as a series and the line of best fit represented by two points.
-   *
+  *
   * @param data TrackData object representing the location data to be plotted
   */
   public TrackDataPlotter(TrackData data) {
@@ -130,7 +130,7 @@ public class TrackDataPlotter extends JFrame {
   /**
   * Calculates the line of best fit for the location points and represents it as a
   * series containing two endpoints of a line segment spanning the x range of the data.
-   *
+  *
   * @param x float array of latitudes of location data points
   * @param y float array of longitudes of location data points
   * @return XYSeries fitLine representing a line of best fit for the location data points
@@ -165,7 +165,7 @@ public class TrackDataPlotter extends JFrame {
 
   /**
   * Gets the latitudes of location data points from TrackData and stores a float array.
-   *
+  *
   * @param data TrackData object representing the location data to be plotted
   * @return float[] latNum containing x coordinates of location data points
   */
