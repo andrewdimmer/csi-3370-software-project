@@ -59,8 +59,9 @@ public class DisplayGpsReceiverImplementationTests {
   @Test
   @DisplayName ("Measure Signal In Is Signal Out")
   public void measureSignalSignalInIsSignalOut() {
-    DisplayGpsReceiverImplementation d = 
-        new DisplayGpsReceiverImplementation(new DisplayGpsManagerStub());
+    DisplayGpsReceiverImplementation d = new DisplayGpsReceiverImplementation(
+        new DisplayGpsManagerStub()
+    );
     Satellite s = new Satellite("New Satellite", 7);
     assertEquals(s.getSatelliteName(), d.measureSignal(s).getSatelliteName());
   }
