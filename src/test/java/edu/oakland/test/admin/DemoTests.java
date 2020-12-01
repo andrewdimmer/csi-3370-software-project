@@ -39,7 +39,7 @@ public class DemoTests {
 
   @Test
   @DisplayName("Storage Input Location is Not Empty")
-  void storageInputLocIsNotEmpty(){
+  void storageInputLocIsNotEmpty() {
     int rfid = generateRandomNumber();
     int stringLength = generateRandomStringLength();
     String output = generateRandomString(stringLength);
