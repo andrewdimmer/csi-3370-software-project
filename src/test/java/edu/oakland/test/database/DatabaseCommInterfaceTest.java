@@ -78,7 +78,8 @@ public class DatabaseCommInterfaceTest {
   @Test
   @DisplayName("Mode in is mode out")
   void modeInIsModeOut() {
-
+    
+    int i = (int) (Math.random() * 100);
     DatabaseCommManagerStub dcms = new DatabaseCommManagerStub(i);
     DatabaseCommInterfaceImplementation dci = new DatabaseCommInterfaceImplementation(dcms);
     String m = "normal";
