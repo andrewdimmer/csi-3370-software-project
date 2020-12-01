@@ -127,7 +127,7 @@ public class GpsSystemTests {
     char [] rndString = new char[length];
 
     for (int i = 0; i < length; i++) { 
-    //Create array of characters for desired length
+      //Create array of characters for desired length
       rndString[i] = alphabet.charAt(random.nextInt(alphabet.length())); 
     }
     
