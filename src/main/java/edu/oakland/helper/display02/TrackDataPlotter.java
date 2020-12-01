@@ -2,6 +2,7 @@ package edu.oakland.helper.display02;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
+import java.awt.BasicStroke;
 import java.awt.Color;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
@@ -157,8 +158,8 @@ public class TrackDataPlotter extends JFrame {
     float b = (sumOfY - (slope * sumOfX)) / 5;
 
     // Least Squares Regression = mx+b
-    fitLine.add(xMin, slope * minX + b);
-    fitLine.add(xMax, slope * maxX + b);
+    fitLine.add(minX, slope * minX + b);
+    fitLine.add(maxX, slope * maxX + b);
 
     return fitLine;
   }

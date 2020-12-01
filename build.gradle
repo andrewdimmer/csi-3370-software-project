@@ -32,6 +32,11 @@ dependencies {
 
     // Use JUnit Jupiter Engine for testing.
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.2'
+
+    // JCommon and JFreeChart for the Display_02 Plotter
+    compile 'org.jfree:jcommon:1.0.23'
+    compile 'org.jfree:jfreechart:1.0.19'
+
 }
 
 application {
