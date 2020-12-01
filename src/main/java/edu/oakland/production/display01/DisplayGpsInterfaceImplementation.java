@@ -8,9 +8,8 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
   
   public DisplayGpsReceiver reciever;
 
-  public DisplayGpsInterfaceImplementation (DisplayGpsReceiver reciever) {
+  public DisplayGpsInterfaceImplementation(DisplayGpsReceiver reciever) {
     this.reciever = reciever;
-
   }
 
   public String receiveGpsSignal(Satellite satelliteSignal) {
