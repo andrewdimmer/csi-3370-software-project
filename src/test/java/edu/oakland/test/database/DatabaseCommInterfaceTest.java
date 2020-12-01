@@ -68,7 +68,6 @@ public class DatabaseCommInterfaceTest {
     DatabaseCommManagerStub dcm = new DatabaseCommManagerStub(i);
     DatabaseCommInterfaceImplementation dci = new DatabaseCommInterfaceImplementation(dcm);
     TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
-    td = null;
     dci.storeTrackDataRequest(td);
     assertEquals(td, dci.receiveGetTrackDataRequest(i));
 
