@@ -12,6 +12,12 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
     this.reciever = reciever;
   }
 
+ /** 
+   * Recieves GPS Signal Strength.
+   *
+   * @param satelliteSignal GPS signal to measure.
+   * @return Which GPS Recived 
+   */
   public String receiveGpsSignal(Satellite satelliteSignal) {
     System.out.println("Recieved GPS Signal from:");
     String satellite = reciever.measureGpsSignalStrength(satelliteSignal);
@@ -19,6 +25,12 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
     return satellite;
   }
 
+ /** 
+   * Reports GPS Signal Loss.
+   *
+   * @param satelliteSignal GPS signal to report.
+   * @return Which GPS has Loss of Signal 
+   */
   public String reportGpsSignalLoss(Satellite satelliteSignal) {
     System.out.println("Reporting loss for:");
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
@@ -26,6 +38,12 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
     return satellite.getSatelliteName();
   }
 
+ /** 
+   * Rechecks GPS Signal Strength.
+   *
+   * @param satelliteSignal GPS signal to measure.
+   * @return Which GPS Rechecked 
+   */
   public String recheckSignalStrength(Satellite satelliteSignal) {
     System.out.println("Rechecking signal strength");
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
@@ -33,11 +51,17 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
     return satellite.getSatelliteName();
   }
 
+ /** 
+   * Checks GPS Signal Strength.
+   *
+   * @param satelliteSignal GPS signal to measure.
+   * @return Which GPS Checked 
+   */
   public String checkSignalStrength(Satellite satelliteSignal) {
     System.out.println("Checking signal strength");
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
     System.out.println(satellite.getSatelliteName());
     return satellite.getSatelliteName();
   }
-  
+
 } 
