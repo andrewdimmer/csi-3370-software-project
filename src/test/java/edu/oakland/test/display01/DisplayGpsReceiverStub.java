@@ -13,9 +13,7 @@ public class DisplayGpsReceiverStub implements DisplayGpsReceiver {
    * @return Status of GPS signal measured.
    */
   public String measureGpsSignalStrength(Satellite satelliteSignal) {
-    Satellite s = satelliteSignal;
-    return s.getSatelliteName();
-
+    return satelliteSignal.getSatelliteName();
   }
 
   /**
