@@ -3,12 +3,16 @@ package edu.oakland.production.display01;
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
 import edu.oakland.production.display01.DisplayGpsReceiver;
+import java.lang.IllegalArgumentException;
 
 public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
   
   public DisplayGpsReceiver reciever;
 
   public DisplayGpsInterfaceImplementation(DisplayGpsReceiver reciever) {
+    if(reciever == null) {
+      throw new IllegalArgumentException("Receiver cannot be null");
+    }
     this.reciever = reciever;
   }
 
@@ -34,7 +38,8 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
   public SatelliteSignalCheckRequest reportGpsSignalLoss(Satellite satelliteSignal) {
     System.out.println("Reporting loss for " + satelliteSignal.getSatelliteName());
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
-    System.out.println("Attempting to " + satellite.getCheckType() + " " + satellite.getSatelliteName());
+    System.out.println("Attempting to " + satellite.getCheckType() +
+     " " + satellite.getSatelliteName());
     return satellite;
   }
 
@@ -47,7 +52,8 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
   public SatelliteSignalCheckRequest recheckSignalStrength(Satellite satelliteSignal) {
     System.out.println("Rechecking signal strength");
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
-    System.out.println("Attempting to " + satellite.getCheckType() + " " + satellite.getSatelliteName());
+    System.out.println("Attempting to " + satellite.getCheckType() +
+     " " + satellite.getSatelliteName());
     return satellite;
   }
 
@@ -60,7 +66,8 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
   public SatelliteSignalCheckRequest checkSignalStrength(Satellite satelliteSignal) {
     System.out.println("Checking signal strength");
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
-    System.out.println("Attempting to " + satellite.getCheckType() + " " + satellite.getSatelliteName());
+    System.out.println("Attempting to " + satellite.getCheckType() +
+     " " + satellite.getSatelliteName());
     return satellite;
   }
 

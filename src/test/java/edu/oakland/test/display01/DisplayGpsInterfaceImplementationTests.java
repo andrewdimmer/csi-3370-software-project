@@ -12,9 +12,16 @@ import java.util.Random;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-
 @DisplayName("DisplayGpsInterfaceImplementation Unit Tests")
 public class DisplayGpsInterfaceImplementationTests {
+  @Test
+  @DisplayName("Verifying That Receiver Cannot Be Null")
+  void verifyReceiverCannotBeNull() {
+    assertThrows(IllegalArgumentException.class, () -> {
+      new DisplayGpsInterfaceImplementation(null);
+    });
+  }
+
   @Test
   @DisplayName("Verifying Signal In is Signal Out")
   void signalInIsSignalOut() {
