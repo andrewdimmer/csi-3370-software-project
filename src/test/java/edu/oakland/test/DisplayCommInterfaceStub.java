@@ -4,7 +4,7 @@ import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.display02.DisplayCommInterface;
 
 /**
- * A test class to act as a stub for DisplayGpsInterface
+ * A test class to act as a stub for DisplayGpsInterface.
  *
  * @author Tessa Peruzzi
  * @version %I%, %G%
