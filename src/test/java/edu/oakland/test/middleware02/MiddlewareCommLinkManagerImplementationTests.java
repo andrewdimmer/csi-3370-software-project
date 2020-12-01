@@ -31,7 +31,16 @@ public class MiddlewareCommLinkManagerImplementationTests {
   @Test 
   @DisplayName("Store Request Sent")
   void storeRequestSent() {
-      
+    int rfid3 = (int) (Math.floor(100000 + Math.random() * 900000));
+    LocationDataPoint ranLocationDataPoint = generateRandomLocationDataPoint();
+    MiddlewareCommLinkManager mid03Interface = new MiddlewareCommLinkManagerImplementation(
+        new MiddlewareCommDatabaseInterfaceStub(rfid3),
+        new MiddlewareGisManagerStub()
+    );
+    
+    
+
+    mid03Interface.recieveStoreRequest();
   }
   @Test 
   @DisplayName("Empty Database Returns Empty Track Data")
@@ -69,5 +78,19 @@ public class MiddlewareCommLinkManagerImplementationTests {
       assertThrows(IllegalArgumentException.class, () -> {
       new MiddlewareCommLinkManagerImplementation(null, new MiddlewareGisManagerStub());
     });
+  }
+
+  private LocationDataPoint generateRandomLocationDataPoint() {
+  return new LocationDataPoint(
+    (float) (Math.random() * 180 - 90),
+    (float) (Math.random() * 360 - 180),
+    LocalDateTime.of(
+      (int) (Math.random() * 50 + 1970),
+      (int) (Math.random() * 12 + 1),
+      (int) (Math.random() * 28 + 1),
+      (int) (Math.random() * 24),
+      (int) (Math.random() * 60)
+      )
+    );
   }
 }
