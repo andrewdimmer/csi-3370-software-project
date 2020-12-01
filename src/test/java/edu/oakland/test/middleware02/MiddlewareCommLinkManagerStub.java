@@ -8,12 +8,12 @@ import edu.oakland.production.middleware02.MiddlewareCommLinkManager;
  * This class shall get the current rfid and set it in trackdata.
  */
 
-public class MiddlewareCommLinkManagerStub implements MiddlewareCommLinkManager {
+  public class MiddlewareCommLinkManagerStub implements MiddlewareCommLinkManager {
   
 /**
- *
- * This class set the status message in track data to a string of Rfid
- *
+ *<p>
+ * This class set the status message in track data to a string of Rfid.
+ *</p>
  */
 
   public TrackData checkCurrentRfid(int rfid) {
