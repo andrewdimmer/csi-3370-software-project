@@ -64,11 +64,11 @@ public class TrackDataCalculatorTests {
   @DisplayName("Calculate Direction")
   void calculateDirectionTest() {
     LocationDataPoint[] points = generateRandomLocationDataPointsArray(5);
-      TrackData trackData = new TrackData(
-        points,
-        generateRandomCourse(),
-        generateRandomSpeed()
-    );
+    TrackData trackData = new TrackData(
+          points,
+          generateRandomCourse(),
+          generateRandomSpeed()
+      );
     LocationDataPoint[] points2 = trackData.getLocationDataPoints();
     LocationDataPoint firstpoint = points2[0];
     LocationDataPoint lastpoint = points2[points2.length - 1];
