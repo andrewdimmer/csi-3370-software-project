@@ -19,6 +19,8 @@ public class TrackDataPlotterTests {
 	@DisplayName("Plot is Displayed")
 	void plotIsDisplayed() {
 		TrackDataPlotter plotter = new TrackDataPlotter(generateValidTrackData());
+		plotter.displayChart();
+		assertNotNull(plotter.chart);
 	}
 
 	@Test
@@ -26,12 +28,16 @@ public class TrackDataPlotterTests {
 	void nullTrackDataNotAllowed() {
 		Trackdata data = null;
 		TrackDataPlotter plotter = new TrackDataPlotter(data);
+		Throwable exception = assertThrows(IllegalArgumentException.class, () -> plotter.displayChart());
+		assertEquals("Track data is null", exception.getMessage());
 	}
 
 	@Test
 	@DisplayName("Invalid TrackData is not permitted")
 	void invalidTrackDataNotAllowed() {
 		TrackDataPlotter plotter = new TrackDataPlotter(generateInvalidTrackData());
+		Throwable exception = assertThrows(IllegalArgumentException.class, () -> plotter.displayChart());
+		assertEquals("Not enough points to create a valid TrackData object", exception.getMessage());
 	}
 
 	private TrackData generateValidTrackData(){
@@ -50,6 +56,9 @@ public class TrackDataPlotterTests {
 		return invalidData;
 	}
 
+	/**
+	 * Methods borrowed from our lovely admin
+	 */
 	private float generateRandomCourse() {
 		return (float) (Math.random() * 360);
 	}
