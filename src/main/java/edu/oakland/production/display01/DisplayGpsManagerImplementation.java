@@ -9,6 +9,12 @@ public class DisplayGpsManagerImplementation implements DisplayGpsManager {
   
   private MiddlewareGisInterface gisInterface;
 
+  /** 
+   * Constructs the DisplayGpsManager object. 
+   *
+   * @param gisInterface The instance of gisInterface passed to the manager. 
+   *  
+  */
   public DisplayGpsManagerImplementation(MiddlewareGisInterface gisInterface) {
     if (gisInterface == null) {
       throw new IllegalArgumentException("middelewareGisInterface cannot be null");

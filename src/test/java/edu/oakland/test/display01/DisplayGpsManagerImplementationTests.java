@@ -42,7 +42,7 @@ public class DisplayGpsManagerImplementationTests {
         new MiddlewareGisInterfaceStub()
     );
 
-    SatelliteSignalCheckRequest check = new SatelliteSignalCheckRequest()
+    SatelliteSignalCheckRequest check = new SatelliteSignalCheckRequest();
     assertEquals("word", man.receiveGpsSignalStrength(sat));
   }
   
