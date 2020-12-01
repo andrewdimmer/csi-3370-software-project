@@ -7,7 +7,6 @@ import edu.oakland.production.database.DatabaseCommInterface;
 import edu.oakland.production.middleware02.MiddlewareCommDatabaseInterface;
 import edu.oakland.production.middleware02.MiddlewareCommDatabaseInterfaceImplementation;
 import edu.oakland.test.middleware02.DatabaseCommInterfaceStub;
-
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
