@@ -3,8 +3,9 @@ package edu.oakland.test.admin;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.admin.User;
-import edu.oakland.production.display02.DisplayCommInterface;
+import edu.oakland.test.admin.DisplayCommInterfaceStub;
 import java.lang.IllegalArgumentException;
 import java.util.Random;
 import java.util.Scanner;
@@ -25,19 +26,25 @@ public class UserTests {
   @Test
   @DisplayName("Scanner is Not Null") 
   void userInputIsScanInput() {
-    /*User user=new User(new DisplayCommInterface()); 
+    DisplayCommInterfaceStub stub = new DisplayCommInterfaceStub();
+    User user = new User(stub); 
     assertThrows(IllegalArgumentException.class, () -> {
       user.runUseCase1(null);
-    });*/
-  } //I don't think I am thinking about this correctly
-  //Cannot do it this way because an object cannot be created from interface
+    });
+  } 
 
   @Test
   @DisplayName("TrackDataIsRequested")
   void trackDataIsRequested() {
-  
+    DisplayCommInterfaceStub stub = new DisplayCommInterfaceStub();
+    User user = new User(stub); 
+
+
   }  
   
+  private int generateRandomNumber() {
+    return (int) ((Math.random() * (100 - 1)) + 1); 
+  }
 
 }
 
