@@ -8,8 +8,6 @@ public interface MiddlewareGisManager {
     
   public void storeLocationDataPoint();
     
-  public String attemptToRegainGpsLock(String satelliteName);
-    
   public String evaluateGpsSignalStrength(Satellite satellite);
 
 }
