@@ -10,6 +10,7 @@ public class DisplayGpsReceiverImplementation implements DisplayGpsReceiver {
   private DisplayGpsManager displayGpsManager;
 
   /**
+   * Constructor for DisplayGpsReceiverImplementation that checks whether or not passed displayGpsManager value is null.
    *
    * @param displayGpsManager Calls on displayGpsManager to check value for null.
    */
