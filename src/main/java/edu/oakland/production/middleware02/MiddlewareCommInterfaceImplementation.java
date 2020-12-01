@@ -34,7 +34,7 @@ public class MiddlewareCommInterfaceImplementation implements MiddlewareCommInte
    */
 
   public TrackData requestRfid(int rfid) {
-    return middlewareManager.checkCurrentRfid(rfid);
+    return middlewareManager.parseRfid(rfid);
   }
 
 } 
