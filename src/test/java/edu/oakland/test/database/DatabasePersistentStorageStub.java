@@ -5,12 +5,21 @@ import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabasePersistentStorage;
 
 public class DatabasePersistentStorageStub implements DatabasePersistentStorage {
-
-  private LocationDataPoint ldp;
   private String mode;
+  private LocationDataPoint ldp;
+  private int rfid;
+  private TrackData trackData;
+  
+  public DatabasePersistentStorageStub(){
 
-  public String getNextSat(String currentSat) {
-    return currentSat;
+  }
+
+  public DatabasePersistentStorageStub(int rfid) {
+    this.rfid = rfid;
+  }
+  
+  public int locateRfidData() {
+    return rfid;
   }
 
   public LocationDataPoint getLocationDataPoint(int offset) {
@@ -21,26 +30,24 @@ public class DatabasePersistentStorageStub implements DatabasePersistentStorage 
     ldp = locationDataPoint;
   }
 
-  public void storeMode(String mode) {
-    this.mode = mode;
+  public TrackData getTrackData(int offset) {
+    return trackData;
+  }
+
+  public void storeTrackData(TrackData trackData) {
+    this.trackData = trackData;
   }
 
   public String getMode() {
     return mode;
   }
-  
-  public TrackData getTrackData(int offset) {
-    TrackData td = null;
-    return td;
-  }
-  
-  public int locateRfidData() {
-    return 10;
+
+  public void storeMode(String mode) {
+    this.mode = mode;
   }
 
-  public void storeTrackData(TrackData trackData) {
-    
+  public String getNextSat(String currentSat) {
+    return currentSat;
   }
-  
- 
+
 }
