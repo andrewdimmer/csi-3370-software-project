@@ -14,7 +14,7 @@ public class DisplayComm2WayInterfaceImplementationTests {
   void rfidInIsRfidOut() {
     int rfid = generateRandomRfid();
     DisplayCommManagerStub testStub = new DisplayCommManagerStub();
-    DisplayComm2WayInterfaceImplementation displayComm = 
+    DisplayComm2WayInterfaceImplementation comm2Way = 
         new DisplayComm2WayInterfaceImplementation(testStub);
     assertEquals(rfid, Integer.parseInt(comm2Way.passRfidRequest(rfid).getStatusMessage()));
 

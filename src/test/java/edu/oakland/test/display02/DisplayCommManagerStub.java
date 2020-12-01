@@ -10,7 +10,7 @@ public class DisplayCommManagerStub implements DisplayCommManager {
   * Stub method, recieves the rfid
   * and returns a blank TrackData.
   */
-  public TrackData requestRfid(int rfid) {
+  public TrackData evaluateRfidRequest(int rfid) {
     TrackData trackStub = new TrackData(new LocationDataPoint[0]);
     trackStub.setStatusMessage(String.valueOf(rfid));
     return trackStub;
