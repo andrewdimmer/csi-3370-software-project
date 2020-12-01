@@ -11,7 +11,6 @@ public class DisplayGpsManagerImplementation implements DisplayGpsManager {
     this.manager = manager;
   }
 
-
   public String receiveGpsSignalStrength(Satellite satelliteSignal) {
   
     System.out.println(satellite);
