@@ -27,8 +27,9 @@ public class DisplayGpsReceiverImplementationTests {
   @Test
   @DisplayName ("Gps Signal Strength Signal Is Not Null")
   public void measureGpsSignalStrengthSatelliteSignalIsNotNull() {
-    DisplayGpsReceiverImplementation d = 
-        new DisplayGpsReceiverImplementation(new DisplayGpsManagerStub());
+    DisplayGpsReceiverImplementation d = new DisplayGpsReceiverImplementation(
+        new DisplayGpsManagerStub()
+    );
     assertThrows(IllegalArgumentException.class, () -> {
       d.measureGpsSignalStrength(null);
     });
