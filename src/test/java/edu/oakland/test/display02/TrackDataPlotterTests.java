@@ -62,14 +62,17 @@ public class TrackDataPlotterTests {
 	 * Methods borrowed from our lovely admin
 	 */
 	private float generateRandomCourse() {
+
 		return (float) (Math.random() * 360);
 	}
 
 	private float generateRandomSpeed() {
+
 		return (float) (Math.random() * 30);
 	}
 
 	private int generateRandomTooSmallArrayLength() {
+
 		return (int) (Math.random() * 5);
 	}
 
