@@ -22,7 +22,7 @@ public class DisplayCommInterfaceImplementation implements DisplayCommInterface 
   */
   public DisplayCommInterfaceImplementation(DisplayComm2WayInterface displayComm2WayInterface) {
     if (displayComm2WayInterface == null) {
-      throw new IllegalArgumentException("processor cannot be null");
+      throw new IllegalArgumentException("displayComm2WayInterface cannot be null");
     }
     this.comm2Way = displayComm2WayInterface;
   }
@@ -37,4 +37,3 @@ public class DisplayCommInterfaceImplementation implements DisplayCommInterface 
     return comm2Way.passRfidRequest(rfidNum);
   }
 }
-
