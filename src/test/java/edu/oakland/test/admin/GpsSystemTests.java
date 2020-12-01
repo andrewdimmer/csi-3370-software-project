@@ -4,16 +4,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.fail;
 
+import edu.oakland.helper.admin.LocationDataPoint;
+import edu.oakland.production.admin.GpsSystem;
+import edu.oakland.test.admin.DisplayGpsInterfaceStub;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
-import org.junit.jupiter.api.DisplayName;
 import java.util.Random;
 import java.util.Scanner;
-import edu.oakland.production.admin.GpsSystem;
-import edu.oakland.helper.admin.LocationDataPoint;
-import edu.oakland.test.admin.DisplayGpsInterfaceStub;
-import org.junit.jupiter.api.Test;
 import java.util.Scanner;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 @DisplayName("GpsSystem Unit Tests")
 public class GpsSystemTests {
