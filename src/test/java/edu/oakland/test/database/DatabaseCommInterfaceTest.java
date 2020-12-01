@@ -57,7 +57,7 @@ public class DatabaseCommInterfaceTest {
     DatabaseCommInterfaceImplementation dci = new DatabaseCommInterfaceImplementation(dcm);
     //TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
     dci.recieveGetTrackDataRequest(i);
-    assertEquals(i, dci.index);  
+    assertEquals(i, dci.getIndex);  
   }
   
   @Test
@@ -69,7 +69,7 @@ public class DatabaseCommInterfaceTest {
     DatabaseCommInterfaceImplementation dci = new DatabaseCommInterfaceImplementation(dcm);
     TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
     td = null;
-    dci.storeTrackDataRequest(i);
+    dci.storeTrackDataRequest(td);
     assertEquals(td, dci.recieveGetTrackDataRequest(i));
 
 
