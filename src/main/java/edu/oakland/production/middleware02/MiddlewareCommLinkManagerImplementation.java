@@ -15,6 +15,16 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
   private MiddlewareCommDatabaseInterface midDatabaseInterface;
   private MiddlewareGisManager gisManager;
 
+  private float calculateLocationData(){
+    
+    return 1;
+  } 
+
+  private float calculateTrackData(){
+
+    return 1;
+  }
+
   LocationDataPoint[] locations = new LocationDataPoint[0];
 
   public TrackData parseRfid(int rfid){
@@ -37,6 +47,8 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
     }
     this.gisManager = gisManager;
   }
+
+
 
 
 }

@@ -8,21 +8,13 @@ import java.time.LocalDateTime;
 public class DatabaseGisInterfaceStub implements DatabaseGisInterface {
   private LocationDataPoint locationDataPoint = new LocationDataPoint(0, 0, LocalDateTime.now());
   private String mode;
-  public LocationDataPoint locationDataPoint1;
-  public LocationDataPoint locationDataPoint2;
   
-  public DatabaseGisInterfaceStub(LocationDataPoint locationDataPoint1) {
-    this.locationDataPoint1 = locationDataPoint1;
-  }
   public void receiveStoreRequest(LocationDataPoint locationDataPoint) {
     this.locationDataPoint = locationDataPoint;
   }
 
   public LocationDataPoint getLocation() {
     return locationDataPoint;
-  }
-  public LocationDataPoint getLocation2() {
-    return locationDataPoint2;
   }
 
   public void receiveModeRequest(String mode) {
