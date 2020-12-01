@@ -6,10 +6,10 @@ import edu.oakland.production.database.DatabaseCommManager;
 
 public class DatabaseCommManagerStub implements DatabaseCommManager {
   private int rfid;
-  LocationDataPoint ldp = null;
-  int index = 0;
-  TrackData td = null;
-  String mode = "";
+  private LocationDataPoint ldp = null;
+  private int index = 0;
+  private TrackData td = null;
+  private String mode = "";
 
   public DatabaseCommManagerStub(int rfid) {
     this.rfid = rfid;
