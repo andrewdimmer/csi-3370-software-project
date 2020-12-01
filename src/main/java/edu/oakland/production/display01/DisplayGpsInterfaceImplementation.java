@@ -7,13 +7,9 @@ import edu.oakland.production.display01.DisplayGpsReceiver;
 public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
   
   public DisplayGpsReceiver reciever;
-  
-  /**
-   * Creates a DisplayGpsInterfaceImplementation that takes a DisplayGpsReceiver.
-   *
-   * @param reciever a DisplayGpsReceiver that we pass Satellites to.
-   */
+
   public DisplayGpsInterfaceImplementation(DisplayGpsReceiver reciever) {
+
     this.reciever = reciever;
   }
 
