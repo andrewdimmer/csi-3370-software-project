@@ -24,7 +24,6 @@ public class TrackDataPlotterTests {
 		plotter.displayChart();
 		assertNotNull(plotter.chart);
 	}
-
 	@Test
 	@DisplayName("Null TrackData is not permitted")
 	void nullTrackDataNotAllowed() {
@@ -33,7 +32,6 @@ public class TrackDataPlotterTests {
 		Throwable exception = assertThrows(IllegalArgumentException.class, () -> plotter.displayChart());
 		assertEquals("Track data is null", exception.getMessage());
 	}
-
 	@Test
 	@DisplayName("Invalid TrackData is not permitted")
 	void invalidTrackDataNotAllowed() {
@@ -41,7 +39,6 @@ public class TrackDataPlotterTests {
 		Throwable exception = assertThrows(IllegalArgumentException.class, () -> plotter.displayChart());
 		assertEquals("Not enough points to create a valid TrackData object", exception.getMessage());
 	}
-
 	private TrackData generateValidTrackData() {
 		TrackData validData = new TrackData(
 			generateRandomLocationDataPointsArray(5),
@@ -49,7 +46,6 @@ public class TrackDataPlotterTests {
 			generateRandomSpeed());
 		return validData;
 	}
-
 	private TrackData generateInvalidTrackData() {
 		TrackData invalidData = new TrackData(
 			generateRandomLocationDataPointsArray(2),
@@ -57,22 +53,18 @@ public class TrackDataPlotterTests {
 			generateRandomSpeed());
 		return invalidData;
 	}
-
 	/**
 	 * Methods borrowed from our lovely admin
 	 */
 	private float generateRandomCourse() {
 		return (float) (Math.random() * 360);
 	}
-
 	private float generateRandomSpeed() {
 		return (float) (Math.random() * 30);
 	}
-
 	private int generateRandomTooSmallArrayLength() {
 		return (int) (Math.random() * 5);
 	}
-
 	private LocationDataPoint[] generateRandomLocationDataPointsArray(int length) {
 		LocationDataPoint[] locations = new LocationDataPoint[length];
 		for (int index = 0; index < locations.length; index++) {
@@ -80,7 +72,6 @@ public class TrackDataPlotterTests {
 		}
 		return locations;
 	}
-
 	private LocationDataPoint generateRandomLocationDataPoint() {
 		return new LocationDataPoint(
 				(float) (Math.random() * 180 - 90),
