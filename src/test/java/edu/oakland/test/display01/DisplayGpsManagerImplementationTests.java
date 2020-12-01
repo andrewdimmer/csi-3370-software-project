@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
-
 import edu.oakland.production.display01.DisplayGpsManager;
 import edu.oakland.production.display01.DisplayGpsManagerImplementation;
 import edu.oakland.production.middleware01.MiddlewareGisInterface;
