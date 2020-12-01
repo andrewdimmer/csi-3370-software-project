@@ -74,26 +74,6 @@ public class GpsSystemTests {
     }
   }
   
-  @Test
-  @DisplayName("Use Case 1 Run Successfully")
-  void useCase1RunSuccessfully(){
-    try {
-      Scanner scan = new Scanner(System.in);
-      DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
-      Random rnd = new Random();    
-      int rndLength = rnd.nextInt(100);
-      String[] str = new String[rndLength];
-      for (int i = 0; i < rndLength; i++) {
-        str[i] = generateRandomNames();
-      }
-      GpsSystem gpsSystem = new GpsSystem(stub, str);
-      gpsSystem.runUseCase1(scan);
-    } catch (Exception e) {
-      fail(e.getMessage());
-    }
-  }
-  
-  
   
   private String generateRandomNames() { //Make a random string for Satellite Name, borrowed from Tessa, thanks!
     int length = 10;

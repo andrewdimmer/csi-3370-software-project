@@ -15,11 +15,7 @@ import edu.oakland.production.display01.DisplayGpsInterface;
 public class DisplayGpsInterfaceStub implements DisplayGpsInterface {
 
   public boolean receiveGpsSignal(Satellite satelliteSignal) {
-    if(satelliteSignal.getStrength() < 5){
-      return true;
-    } else {
-      return false;
-    }
+    return true;
   }
 
   public String reportGpsSignalLoss(Satellite satelliteSignal) {

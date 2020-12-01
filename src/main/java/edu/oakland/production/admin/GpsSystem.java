@@ -52,9 +52,6 @@ public class GpsSystem {
     if (input == null) { //check for null unput
       throw new IllegalArgumentException("Scanner input must not be null");
     } 
-    if (!this.displayGpsInterface.receiveGpsSignal(this.satellites[0])) {
-      runUseCase2(input);
-    } 
   }
       
   /**
@@ -78,6 +75,14 @@ public class GpsSystem {
    *
    */
   public void configureSatellites(String[] satelliteNames, float incrementLatAmount, float incrementLngAmount, LocationDataPoint initLocationDataPoint) {
+    if (incrementLatAmount == null) {
+      throw new IllegalArgumentException("incrementLatAmount must not be null");
+    } else if (incrementLngAmount == null) {
+      throw new IllegalArgumentException("incrementLngAmount must not be null");
+    } else if (initLocationDataPoint == null) {
+      throw new IllegalArgumentException("initLocationDataPoint must not be null");
+    }
+    
     Random rnd = new Random();
     for (int i = 0; i < satelliteNames.length; i++){
       this.satellites[i] = new Satellite(satelliteNames[i], rnd.nextInt(10) + 1);
