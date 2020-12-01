@@ -50,17 +50,17 @@ public class TrackDataPlotter extends JFrame {
         this.lng = extractLngFromTrackData(data);
         this.dataPoints = getTrackData(this.lat, this.lng);
         if(this.dataPoints.getItemCount() == 0) {
-            throw new IllegalArgumentException("Data series is empty")
+            throw new IllegalArgumentException("Data series is empty");
         }
         if(this.dataPoints.getItemCount() != 5) {
-            throw new IllegalArgumentException("Data series contains an invalid number of points")
+            throw new IllegalArgumentException("Data series contains an invalid number of points");
         }
         this.fitLine = calculateLine(this.lat, this.lng);
         if(this.fitLine.getItemCount() == 0) {
-            throw new IllegalArgumentException("Fit Line representation contains no points")
+            throw new IllegalArgumentException("Fit Line representation contains no points");
         }
         if(this.fitLine.getItemCount() != 2) {
-            throw new IllegalArgumentException("Fit line contains an invalid number of points")
+            throw new IllegalArgumentException("Fit line contains an invalid number of points");
         }
         this.chart = createChart();
   }
@@ -168,7 +168,7 @@ public class TrackDataPlotter extends JFrame {
     private float[] extractLatFromTrackData(TrackData data) {
         LocationDataPoint[] points = data.getLocationDataPoints();
         float[] latNum = new float[5];
-        for(int i < points.length; i<=5; i++){
+        for(int i = 0; i < points.length; i++){
             latNum[i]= points[i].getLat();
         }
         return latNum;
@@ -182,7 +182,7 @@ public class TrackDataPlotter extends JFrame {
     private float[] extractLngFromTrackData(TrackData data) {
         LocationDataPoint[] points = data.getLocationDataPoints();
         float[] lngNum = new float[5];
-        for(int i < points.length; i<=5; i++) {
+        for(int i = 0; i < points.length; i++) {
             lngNum[i]= points[i].getLng();
         }
         return lngNum;
