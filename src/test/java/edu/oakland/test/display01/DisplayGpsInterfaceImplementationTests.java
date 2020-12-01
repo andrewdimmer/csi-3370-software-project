@@ -21,7 +21,7 @@ public class DisplayGpsInterfaceImplementationTests {
     Satellite s = new Satellite("New Satellite", 7);
     DisplayGpsInterfaceImplementation d;
     d = new DisplayGpsInterfaceImplementation(new DisplayGpsReceiverStub());
-    assertEquals(d.receiveGpsSignal(s), "New Satellite");
+    assertEquals("New Satellite", d.receiveGpsSignal(s));
   }
 
   @Test
