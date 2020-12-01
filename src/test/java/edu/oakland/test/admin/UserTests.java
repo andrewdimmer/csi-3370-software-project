@@ -36,18 +36,8 @@ public class UserTests {
   @Test
   @DisplayName("TrackDataIsRequested")
   void trackDataIsRequested() {
-    DisplayCommInterfaceStub stub = new DisplayCommInterfaceStub();
-    User user = new User(stub); 
-    int rfid = generateRandomNumber();
-    TrackData outputData = stub.receiveRfidRequest(rfid);
-    DisplayCommInterfaceStub expected = new DisplayCommInterfaceStub();
-    TrackData expectedData = expected.receiveRfidRequest(rfid);
-    assertEquals(expectedData, outputData);
+
   }  
   
-  private int generateRandomNumber() {
-    return (int) ((Math.random() * (100 - 1)) + 1); 
-  }
-
 }
 
