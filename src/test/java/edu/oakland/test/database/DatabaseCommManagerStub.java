@@ -7,6 +7,8 @@ import edu.oakland.production.database.DatabaseCommManager;
 public class DatabaseCommManagerStub implements DatabaseCommManager {
   private int rfid;
   LocationDataPoint ldp = null;
+  int index = 0;
+  TrackData td = null;
 
   public DatabaseCommManagerStub(int rfid) {
     this.rfid = rfid;
@@ -21,11 +23,12 @@ public class DatabaseCommManagerStub implements DatabaseCommManager {
   }
 
   public TrackData passGetTrackDataRequest(int offset) {
-    return null;
+    index = offset;
+    return td;
   }
 
   public void passStoreTrackDataRequest(TrackData trackData) {
-
+    td = trackData;
   }
 
   public String passGetModeRequest() {
