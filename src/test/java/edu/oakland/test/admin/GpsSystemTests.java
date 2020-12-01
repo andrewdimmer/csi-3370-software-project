@@ -108,7 +108,7 @@ public class GpsSystemTests {
     float incrementLngAmount = rnd.nextFloat() * 40;
     GpsSystem gpsSystem = new GpsSystem(stub, satelliteNames);
     LocationDataPoint ldp = generateRandomLocationDataPoint();
-    try{
+    try {
       gpsSystem.configureSatellites(satelliteNames, incrementLatAmount, incrementLngAmount, ldp);
     } catch (Exception e) {
       fail(e.getMessage());
@@ -120,7 +120,7 @@ public class GpsSystemTests {
   
   
   private String generateRandomNames() { 
-  //Make a random string for Satellite Name, borrowed from Tessa, thanks!
+    //Make a random string for Satellite Name, borrowed from Tessa, thanks!
     int length = 10;
     Random random = new Random();
     String alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -136,7 +136,7 @@ public class GpsSystemTests {
   }
   
   private LocationDataPoint generateRandomLocationDataPoint() {  
-  //borrowed from Tessa again, thanks!
+    //borrowed from Tessa again, thanks!
     return new LocationDataPoint(
       (float) (Math.random() * 180 - 90),
       (float) (Math.random() * 360 - 180),
@@ -151,7 +151,7 @@ public class GpsSystemTests {
   }
   
   private float makeRandomPos() {   
-  //will return a float value between -90.0 and 90.0
+    //will return a float value between -90.0 and 90.0
     Random rnd = new Random();
     return rnd.nextFloat() * 180 - 90;
   }
