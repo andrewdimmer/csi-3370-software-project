@@ -42,15 +42,17 @@ public class DisplayGpsReceiverImplementationTests {
 
   @Test
   @DisplayName ("Gps Signal Strength In Is Signal Strength Out ")
-  public void measureGpsSignalStrengthSatelliteInIsSignalOut(Satellite satelliteSignal) {
-    DisplayGpsManagerStub stub = new DisplayGpsManagerStub();
-    stub.receiveGpsSignalStrength(satelliteSignal);
-    DisplayGpsReceiver gpsReceiver = new DisplayGpsReceiverImplementation(stub);
-    SatelliteSignalCheckRequest ssrc = new SatelliteSignalCheckRequest("oreo", "Type-2");
-    assertEquals(ssrc.getSatelliteName(), DisplayGpsReceiver.gpsReceiver(stub).getSatelliteName());
+  public void measureGpsSignalStrengthSatelliteInIsSignalOut() {
+    DisplayGpsReceiverImplementation d = new DisplayGpsReceiverImplementation(new DisplayGpsManagerStub());
+    Satellite s = new Satellite("New Satellite", 7);
+    assertEquals(s.getSatelliteName(), d.measureGpsSignalStrength(s));
   }
 
+  @Test
+  @DisplayName ("Measure Signal In Is Signal Out")
   public void measureSignalSignalInIsSignalOut() {
-    
+    DisplayGpsReceiverImplementation d = new DisplayGpsReceiverImplementation(new DisplayGpsManagerStub());
+    Satellite s = new Satellite("New Satellite", 7);
+    assertEquals(s.getSatelliteName(), d.measureSignal(s).getSatelliteName());
   }
 }
