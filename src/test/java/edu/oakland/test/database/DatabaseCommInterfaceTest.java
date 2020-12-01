@@ -79,11 +79,11 @@ public class DatabaseCommInterfaceTest {
   @DisplayName("Mode in is mode out")
   void modeInIsModeOut() {
 
-    int i = (int) Math.random();
     DatabaseCommManagerStub dcms = new DatabaseCommManagerStub(i);
     DatabaseCommInterfaceImplementation dci = new DatabaseCommInterfaceImplementation(dcms);
-    dcms.storeMode();
-    assertEquals("", dci.receiveGetModeRequest());
+    String m = "normal";
+    dcms.storeMode(m);
+    assertEquals(m, dci.receiveGetModeRequest());
   }
   
   
