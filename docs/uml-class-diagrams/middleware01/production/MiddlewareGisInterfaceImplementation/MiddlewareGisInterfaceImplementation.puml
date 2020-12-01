@@ -6,9 +6,9 @@ package edu.oakland.production.middleware01 {
         __
         + MiddlewareGisInterfaceImplementation(MiddlewareGisProcessor middlewareGisProcessor)
         .. Use Case 1 ..
-        + String receiveGpsSignalStrength(Satellite satelliteSignal)
+        + String receiveGpsSignalStrengthUc1(Satellite satelliteSignal)
         .. Use Case 2 ..
-        + String receiveGpsSignalStrength(Satellite satelliteSignal)
+        + String receiveGpsSignalStrengthUc2(Satellite satelliteSignal)
     }
 }
 

@@ -2,7 +2,10 @@
 
 package edu.oakland.test.display01 {
     class DisplayGpsManagerImplementationTests {
-
+        + void receivedGpsSignalStrengths()
+        + void ifAcceptableGpsSignalStrengths()
+        + void elsePoorGpsSignalStrengths()
+        + void middlewareGisIsNotNull()
     }
 }
 
