@@ -44,7 +44,7 @@ public class DatabaseCommInterfaceTest {
         (int) (Math.random() * 12 + 1),
         (int) (Math.random() * 28 + 1), (int) (Math.random() * 24),
         (int) (Math.random() * 60)));
-    ldp = null;    
+    dcm.storeLocationDataPoint(ldp); 
     assertEquals(ldp, dci.receiveGetLocationDataPointRequest(i));
   }
   
