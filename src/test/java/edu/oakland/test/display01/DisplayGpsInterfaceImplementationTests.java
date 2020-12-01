@@ -13,7 +13,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 
-@DisplayName("Display GPS Interface Unit Tests")
+@DisplayName("DisplayGpsInterfaceImplementation Unit Tests")
 public class DisplayGpsInterfaceImplementationTests {
   @Test
   @DisplayName("Verifying Signal In is Signal Out")
