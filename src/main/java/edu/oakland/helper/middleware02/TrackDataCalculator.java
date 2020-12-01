@@ -8,15 +8,17 @@ import java.time.LocalDateTime;
      * This is a class that calcs speed and direction.
      * </p>
      */
+
 public class TrackDataCalculator {
 
   private LocationDataPoint[] locationDataPoint;
 
-/**
-    * <p> 
-    * This is a method that calcs speed.
-    * </p>
-    */
+  /**
+     * <p> 
+     * This is a method that calcs speed.
+     * </p>
+     */
+     
   public float calculateSpeed(LocationDataPoint[] locationDataPoint) {
     this.locationDataPoint = locationDataPoint;
     LocationDataPoint point1 = locationDataPoint[0];
