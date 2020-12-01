@@ -96,10 +96,10 @@ public class Satellite {
    * is shared across all satellites, but can be reset for all satellites by calling this method
    * again.
    *
-   * @param incLatA The amount to increment the latitude for each 10 minutes the shipping container is
-   *                traveling.
-   * @param incLngA The amount to increment the longitude for each 10 minutes the shipping container is
-   *                traveling.
+   * @param incLatA The amount to increment the latitude for each 10 minutes the 
+   *                 shipping container is traveling.
+   * @param incLngA The amount to increment the longitude for each 10 minutes the 
+   *                 shipping container is traveling.
    * @param initPoint The inital LocationDataPoint of the shipping container the first time it
    *                  connects to the Secure Lock Tracking System after coming online.
    */

@@ -77,7 +77,7 @@ public class GpsSystem {
    *
    */
   public void configureSatellites(String[] satelliteNames, float incrementLatAmount, 
-  float incrementLngAmount, LocationDataPoint initLocationDataPoint) {
+      float incrementLngAmount, LocationDataPoint initLocationDataPoint) {
     if (initLocationDataPoint == null) {
       throw new IllegalArgumentException("initLocationDataPoint must not be null");
     }
@@ -86,16 +86,17 @@ public class GpsSystem {
     for (int i = 0; i < satelliteNames.length; i++) {
       this.satellites[i] = new Satellite(satelliteNames[i], rnd.nextInt(10) + 1);
       this.satellites[i].satelliteInit(incrementLatAmount, 
-      incrementLngAmount, initLocationDataPoint);
+        incrementLngAmount, initLocationDataPoint);
     }
   }
   
   /**
    * Method to generate the values for the public method with the same name,.
    * generating incrementLatAmount, incrementLngAmount, and initLocationDataPoint. 
-   * With initLocationDataPoint, lat will be between 45.42 and 45.58, and lng will be between 44.42 and 45.58.
+   * With initLocationDataPoint, lat will be between 45.42 and 45.58, 
+   * and lng will be between 44.42 and 45.58.
    *
-   * @param satelliteNames   Array of strings representing names of satellites provided by the constructor.
+   * @param satelliteNames   Array of strings, names of satellites provided by the constructor.
    *
    */
   private void configureSatellites(String[] satelliteNames) {
@@ -116,7 +117,8 @@ public class GpsSystem {
     
     LocationDataPoint initLocationDataPoint = new LocationDataPoint(lat, lng, time);
     
-    configureSatellites(satelliteNames, incrementLatAmount, incrementLngAmount, initLocationDataPoint);
+    configureSatellites(satelliteNames, incrementLatAmount, incrementLngAmount, 
+        initLocationDataPoint);
   }
   
   /**
