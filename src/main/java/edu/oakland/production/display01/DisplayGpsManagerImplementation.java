@@ -2,19 +2,22 @@ package edu.oakland.production.display01;
 
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
+import edu.oakland.production.middleware01.MiddlewareGisInterface;
+import java.lang.IllegalArgumentException;
 
 public class DisplayGpsManagerImplementation implements DisplayGpsManager {
   
-  public DisplayGpsManager manager;
+  private MiddlewareGisInterface gisInterface;
 
-  public DisplayGpsManagerImplementation(DisplayGpsManager manager) {
-    this.manager = manager;
+  public DisplayGpsManagerImplementation(MiddlewareGisInterface gisInterface) {
+    if (gisInterface == null) {
+      throw new IllegalArgumentException("middelewareGisInterface cannot be null");
+    }
+    this.gisInterface = gisInterface;
   }
 
   public String receiveGpsSignalStrength(Satellite satelliteSignal) {
-  
-    System.out.println(satellite);
-    return satellite;
+    return gisInterface.receiveGpsSignalStrengthUc1(satelliteSignal);
   }
 
   public SatelliteSignalCheckRequest passGpsSignalStrength(Satellite satelliteSignal) {
