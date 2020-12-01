@@ -21,8 +21,12 @@ public class DisplayGpsManagerImplementation implements DisplayGpsManager {
   }
 
   public SatelliteSignalCheckRequest passGpsSignalStrength(Satellite satelliteSignal) {
-    return null;
-
+    String lastSat = satelliteSignal.getSatelliteName();
+    String nextSat = gisInterface.receiveGpsSignalStrengthUc2(satelliteSignal);
+    return new SatelliteSignalCheckRequest(
+        nextSat,
+        lastSat.equals(nextSat) ? "recheck" : "check"
+    );
   }
 
 }

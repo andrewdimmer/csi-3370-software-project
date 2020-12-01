@@ -5,12 +5,22 @@ import edu.oakland.production.middleware01.MiddlewareGisInterface;
 
 public class MiddlewareGisInterfaceStub implements MiddlewareGisInterface {
 
-  public String receiveGpsSignalStrengthsUc1(Satellite satelliteSignal) {
+  private String satelliteName; 
+
+  public MiddlewareGisInterfaceStub() {
+  
+  }
+
+  public MiddlewareGisInterfaceStub(String satelliteName) {
+    this.satelliteName = satelliteName; 
+  }
+
+  public String receiveGpsSignalStrengthUc1(Satellite satelliteSignal) {
     return satelliteSignal.getSatelliteName();
   }
 
-  public String receiveGpsSignalStrengthsUc2(Satellite satelliteSignal) {
-    return satelliteSignal.getSatelliteName();
+  public String receiveGpsSignalStrengthUc2(Satellite satelliteSignal) {
+    return satelliteName == null ? satelliteSignal.getSatelliteName() : satelliteName;
   }
 }
 
