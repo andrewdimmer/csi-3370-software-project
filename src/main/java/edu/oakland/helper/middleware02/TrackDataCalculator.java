@@ -3,15 +3,19 @@ package edu.oakland.helper.middleware02;
 import edu.oakland.helper.admin.LocationDataPoint;
 import java.time.Duration;
 import java.time.LocalDateTime;
+/**
+     * This is a class that calcs speed and direction
+     * <p>
 
+     */
 public class TrackDataCalculator {
 
   private LocationDataPoint[] locationDataPoint;
 
-  public float calculateSpeed(LocationDataPoint[] locationDataPoint){
+  public float calculateSpeed(LocationDataPoint[] locationDataPoint) {
     this.locationDataPoint = locationDataPoint;
     LocationDataPoint point1 = locationDataPoint[0];
-    LocationDataPoint point2 = locationDataPoint[locationDataPoint.length-1];
+    LocationDataPoint point2 = locationDataPoint[locationDataPoint.length - 1];
     float lattitude1 = point1.getLat();
     float longitude1 = point1.getLng();
     float lattitude2 = point2.getLat();
@@ -32,8 +36,12 @@ public class TrackDataCalculator {
     return newSpeed2;  
       
   }
-
-  public float calculateDirection(LocationDataPoint[] locationDataPoint){
+  /**
+     * This is a method that calcs direction
+     * <p>
+     */
+     
+  public float calculateDirection(LocationDataPoint[] locationDataPoint) {
     this.locationDataPoint = locationDataPoint;
     
     LocationDataPoint point1 = locationDataPoint[0];
@@ -59,7 +67,7 @@ public class TrackDataCalculator {
     return alpha3;
   }
 
-  private LocationDataPoint[] calculateRootMeanSquared(LocationDataPoint[] locationDataPoint){
+  private LocationDataPoint[] calculateRootMeanSquared(LocationDataPoint[] locationDataPoint) {
     return locationDataPoint;
   }
 }
