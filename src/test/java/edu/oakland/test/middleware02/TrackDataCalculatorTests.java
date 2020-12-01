@@ -49,11 +49,15 @@ public class TrackDataCalculatorTests {
     float deltaX = lattitude2 - lattitude1;
     double trackLength = Math.sqrt((deltaY * deltaY) + (deltaX * deltaX));    
       
-    trackLength = Math.sqrt((deltaX * deltaX) + (deltaY * deltaY));
+    //trackLength = Math.sqrt((deltaX * deltaX) + (deltaY * deltaY));
 
-    double speed = (trackLength / newDuration);
+    double speed =  (trackLength / newDuration);
     System.out.println("***Calculated Speed***");
     System.out.println(speed);
+    double newSpeed = Math.round(speed * 100.0) / 100.0;
+    newSpeed = (float) newSpeed;
+    System.out.println(newSpeed);
+    
 
   }
   
