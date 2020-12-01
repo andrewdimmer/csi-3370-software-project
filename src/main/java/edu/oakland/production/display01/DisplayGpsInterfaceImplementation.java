@@ -10,7 +10,7 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
   /**
    * Creates a DisplayGpsInterfaceImplementation that takes a DisplayGpsReceiver.
    * 
-   * @param reciever a DisplayGpsReceiver that we pass Satellites to.
+   *@param reciever a DisplayGpsReceiver that we pass Satellites to.
    * 
    */
   public DisplayGpsInterfaceImplementation(DisplayGpsReceiver reciever) {
