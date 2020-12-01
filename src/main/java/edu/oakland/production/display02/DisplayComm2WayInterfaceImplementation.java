@@ -31,7 +31,7 @@ public class DisplayComm2WayInterfaceImplementation implements DisplayComm2WayIn
   *
   * @return the TrackData
   */
-  private TrackData receiveRfidRequest(int rfidNum) {
+  public TrackData passRfidRequest(int rfidNum) {
 
     return commManager.evaluateRfidRequest(rfidNum);
   }
