@@ -82,8 +82,8 @@ public class DatabaseCommInterfaceTest {
     int i = (int) Math.random();
     DatabaseCommManagerStub dcms = new DatabaseCommManagerStub(i);
     DatabaseCommInterfaceImplementation dci = new DatabaseCommInterfaceImplementation(dcms);
-    dci.receiveGetModeRequest();
-    assertEquals("", dcms.passGetModeRequest());
+    dcms.storeMode();
+    assertEquals("", dci.receiveGetModeRequest());
   }
   
   
