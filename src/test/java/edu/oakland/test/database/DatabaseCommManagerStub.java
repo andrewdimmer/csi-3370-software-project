@@ -9,6 +9,7 @@ public class DatabaseCommManagerStub implements DatabaseCommManager {
   LocationDataPoint ldp = null;
   int index = 0;
   TrackData td = null;
+  String mode = "";
 
   public DatabaseCommManagerStub(int rfid) {
     this.rfid = rfid;
@@ -32,7 +33,11 @@ public class DatabaseCommManagerStub implements DatabaseCommManager {
   }
 
   public String passGetModeRequest() {
-    return "";
+    return mode;
+  }
+  
+  public void storeMode(String m) {
+    mode = m;
   }
   
   public int getIndex() {
