@@ -6,6 +6,7 @@ import edu.oakland.production.display01.DisplayGpsReceiver;
 
 public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
   public DisplayGpsReceiver reciever;
+  
   public DisplayGpsInterfaceImplementation(DisplayGpsReceiver reciever) {
     this.reciever = reciever;
   }
