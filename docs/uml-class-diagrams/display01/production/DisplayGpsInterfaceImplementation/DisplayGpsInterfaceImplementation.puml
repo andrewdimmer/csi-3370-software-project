@@ -7,12 +7,12 @@ package edu.oakland.production.display01 {
         __
         + DisplayGpsInterfaceImplementation(DisplayGpsReciever reciever)
         .. Use Case 1 ..
-        + void receiveGpsSignal(Satellite satelliteSignal)
+        + String receiveGpsSignal(Satellite satelliteSignal)
         .. Use Case 2 ..
-        + void reportGpsSignalLoss(String satelliteName)
-        + void recheckSignalStength(String satelliteName)
-        + void checkSignalStength(String satelliteName)
-        - int reportSignalStrength(String satelliteName)
+        + SatelliteSignalCheckRequest reportGpsSignalLoss(Satellite satelliteSignal)
+        + SatelliteSignalCheckRequest recheckSignalStength(Satellite satelliteSignal)
+        + SatelliteSignalCheckRequest checkSignalStength(Satellite satelliteSignal)
+        
     }
 }
 
