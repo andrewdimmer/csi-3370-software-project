@@ -145,6 +145,6 @@ public class GpsSystemTests {
   
   private float makeRandomPos() {   //will return a float value between -90.0 and 90.0
     Random rnd = new Random();
-    return rnd.nextFloat()*180-90;
+    return rnd.nextFloat() * 180 - 90;
   }
 }
