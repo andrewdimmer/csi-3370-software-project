@@ -30,7 +30,7 @@ public class TrackDataPlotter extends JFrame {
     private float[] lng;
     private XYSeries dataPoints;
     private XYSeries fitLine;
-    private JFreeChart chart;
+    public JFreeChart chart;
 
   /**
    * Creates a TrackDataPlotter object which contains a chart with the location
