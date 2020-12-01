@@ -17,7 +17,6 @@ import org.junit.jupiter.api.Test;
 
 @DisplayName("Track Data Plotter Unit Tests")
 public class TrackDataPlotterTests {
-
 	@Test
 	@DisplayName("Plot is Displayed")
 	void plotIsDisplayed() {
@@ -43,19 +42,19 @@ public class TrackDataPlotterTests {
 		assertEquals("Not enough points to create a valid TrackData object", exception.getMessage());
 	}
 
-	private TrackData generateValidTrackData(){
+	private TrackData generateValidTrackData() {
 		TrackData validData = new TrackData(
-				generateRandomLocationDataPointsArray(5),
-				generateRandomCourse(),
-				generateRandomSpeed());
+			generateRandomLocationDataPointsArray(5),
+			generateRandomCourse(),
+			generateRandomSpeed());
 		return validData;
 	}
 
-	private TrackData generateInvalidTrackData(){
+	private TrackData generateInvalidTrackData() {
 		TrackData invalidData = new TrackData(
-				generateRandomLocationDataPointsArray(2),
-				generateRandomCourse(),
-				generateRandomSpeed());
+			generateRandomLocationDataPointsArray(2),
+			generateRandomCourse(),
+			generateRandomSpeed());
 		return invalidData;
 	}
 
