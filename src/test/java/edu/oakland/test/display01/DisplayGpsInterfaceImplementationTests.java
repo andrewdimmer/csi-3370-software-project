@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import edu.oakland.helper.admin.Satellite;
+import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
 import edu.oakland.production.display01.DisplayGpsInterfaceImplementation;
 import edu.oakland.production.display01.DisplayGpsReceiver;
 import edu.oakland.test.display01.DisplayGpsReceiverStub;
@@ -29,7 +30,8 @@ public class DisplayGpsInterfaceImplementationTests {
     Satellite s = new Satellite("New Satellite", 7);
     DisplayGpsInterfaceImplementation d;
     d = new DisplayGpsInterfaceImplementation(new DisplayGpsReceiverStub());
-    assertEquals(d.reportGpsSignalLoss(s), "New Satellite");
+    SatelliteSignalCheckRequest ssrc = new SatelliteSignalCheckRequest("New Satellite", "Type 2");
+    assertEquals(d.reportGpsSignalLoss(s).getSatelliteName(), ssrc.getSatelliteName());
   }
 
   @Test
@@ -38,7 +40,8 @@ public class DisplayGpsInterfaceImplementationTests {
     Satellite s = new Satellite("New Satellite", 7);
     DisplayGpsInterfaceImplementation d;
     d = new DisplayGpsInterfaceImplementation(new DisplayGpsReceiverStub());
-    assertEquals(d.checkSignalStrength(s), "New Satellite");
+    SatelliteSignalCheckRequest ssrc = new SatelliteSignalCheckRequest("New Satellite", "Type 2");
+    assertEquals(d.checkSignalStrength(s).getSatelliteName(), ssrc.getSatelliteName());
   }
 
   @Test
@@ -47,7 +50,8 @@ public class DisplayGpsInterfaceImplementationTests {
     Satellite s = new Satellite("New Satellite", 7);
     DisplayGpsInterfaceImplementation d;
     d = new DisplayGpsInterfaceImplementation(new DisplayGpsReceiverStub());
-    assertEquals(d.recheckSignalStrength(s), "New Satellite");
+    SatelliteSignalCheckRequest ssrc = new SatelliteSignalCheckRequest("New Satellite", "Type 2");
+    assertEquals(d.recheckSignalStrength(s).getSatelliteName(), ssrc.getSatelliteName());
   }
 
 }

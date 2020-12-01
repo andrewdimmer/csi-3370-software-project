@@ -31,11 +31,11 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
    * @param satelliteSignal GPS signal to report.
    * @return Which GPS has Loss of Signal 
    */
-  public String reportGpsSignalLoss(Satellite satelliteSignal) {
+  public SatelliteSignalCheckRequest reportGpsSignalLoss(Satellite satelliteSignal) {
     System.out.println("Reporting loss for:");
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
     System.out.println(satellite.getSatelliteName());
-    return satellite.getSatelliteName();
+    return satellite;
   }
 
   /** 
@@ -44,11 +44,11 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
    * @param satelliteSignal GPS signal to measure.
    * @return Which GPS Rechecked 
    */
-  public String recheckSignalStrength(Satellite satelliteSignal) {
+  public SatelliteSignalCheckRequest recheckSignalStrength(Satellite satelliteSignal) {
     System.out.println("Rechecking signal strength");
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
     System.out.println(satellite.getSatelliteName());
-    return satellite.getSatelliteName();
+    return satellite;
   }
 
   /** 
@@ -57,11 +57,11 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
    * @param satelliteSignal GPS signal to measure.
    * @return Which GPS Checked 
    */
-  public String checkSignalStrength(Satellite satelliteSignal) {
+  public SatelliteSignalCheckRequest checkSignalStrength(Satellite satelliteSignal) {
     System.out.println("Checking signal strength");
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
     System.out.println(satellite.getSatelliteName());
-    return satellite.getSatelliteName();
+    return satellite;
   }
 
 } 
