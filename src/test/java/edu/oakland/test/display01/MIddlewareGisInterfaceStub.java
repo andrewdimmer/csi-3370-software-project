@@ -1,4 +1,5 @@
 package edu.oakland.test.display01;
+
 import edu.oakland.production.middleware01.MiddlewareGisInterface;
 
 public class MiddlewareGisInterface implements MiddlewareGisInterfaceStub {
