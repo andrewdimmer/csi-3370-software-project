@@ -18,7 +18,7 @@ import org.jfree.data.xy.XYSeriesCollection;
 
 /**
  * This helper class plots the TrackData LocationDataPoints and calculates a line of best fit
- * and displays both in a JFreeChart
+ * and displays both in a JFreeChart.
  * Based on example from boraji.com/jfreechart-scatter-chart-example
  */
 public class TrackDataPlotter extends JFrame {
