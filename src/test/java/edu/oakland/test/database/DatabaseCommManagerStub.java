@@ -35,4 +35,8 @@ public class DatabaseCommManagerStub implements DatabaseCommManager {
     return "";
   }
   
+  public int getIndex() {
+    return index;
+  }
+  
 }
