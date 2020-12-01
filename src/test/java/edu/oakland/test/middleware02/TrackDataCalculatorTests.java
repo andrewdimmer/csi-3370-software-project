@@ -2,14 +2,13 @@ package edu.oakland.test.middleware02;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.Satellite;
 import java.time.LocalDateTime;
 import java.time.*;
-
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 @DisplayName("TrackDataCalculator Unit Tests")
 public class TrackDataCalculatorTests {
