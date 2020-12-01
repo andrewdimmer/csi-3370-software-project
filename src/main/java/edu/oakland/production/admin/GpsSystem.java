@@ -86,15 +86,24 @@ public class GpsSystem {
   }
   
   /**
-   * Method to generate the values for the public method with the same name, generating incrementLatAmount, incrementLngAmount, and initLocationDataPoint. With initLocationDataPoint, lat will be between 45 and 46, and lng will be between 44 and 46.
+   * Method to generate the values for the public method with the same name, generating incrementLatAmount, incrementLngAmount, and initLocationDataPoint. With initLocationDataPoint, lat will be between 45.42 and 45.58, and lng will be between 44.42 and 45.58.
    *
    * @param satelliteNames   Array of strings representing names of satellites provided by the constructor.
    *
    */
   private void configureSatellites(String[] satelliteNames) {
     Random rnd = new Random();
-    float lat = rnd.nextFloat() + 45;
-    float lng = (rnd.nextFloat() * 2) + 44;
+    
+    float maxSpeedPerTick = .5 / 6;               //assumes up to 30 knots per hour and 10 minutes per ping
+    float speed = maxSpeedPerTick - (rnd.nextFloat() * .02);
+    
+    float movementDirection = rnd.nextFloat() * 2 * Math.PI;
+    float incrementLatAmount = speed * Math.sin(movementDirection);
+    float incrementLngAmount = speed * -1 * Math.cos(movementDirection);
+    
+    
+    /*float lat = rnd.nextFloat() + 45;
+    float lng = (rnd.nextFloat() * 2) + 44;*/
     LocationDataPoint ldp = new LocationDataPoint(
   }
   

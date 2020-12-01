@@ -112,7 +112,7 @@ public class Satellite {
 
   /**
    * Creates the new latitude of the shipping container based on how much simulated time has
-   * passed. It is assumed to be 1 hour between each ping for simplicity.
+   * passed. It is assumed to be 10 minutes between each ping for simplicity.
    */
   private static float generateNewLocationDataPointLat() {
     return initLocationDataPoint.getLat() + (incrementLatAmount * countGetLocationCalls);
@@ -120,7 +120,7 @@ public class Satellite {
 
   /**
    * Creates the new longitude of the shipping container based on how much simulated time has
-   * passed. It is assumed to be 1 hour between each ping for simplicity.
+   * passed. It is assumed to be 10 minutes between each ping for simplicity.
    */
   private static float generateNewLocationDataPointLng() {
     return initLocationDataPoint.getLng() + (incrementLngAmount * countGetLocationCalls);
@@ -128,10 +128,10 @@ public class Satellite {
 
   /**
    * Creates the new timestamp of the shipping container location based on how much simulated time
-   * has passed. It is assumed to be 1 hour between each ping for simplicity.
+   * has passed. It is assumed to be 10 minutes between each ping for simplicity.
    */
   private static LocalDateTime generateNewLocationDataPointTime() {
     LocalDateTime theNewTime = initLocationDataPoint.getTime();
-    return theNewTime.plusHours(countGetLocationCalls);
+    return theNewTime.plusMinutes(countGetLocationCalls * 10);
   }
 }
