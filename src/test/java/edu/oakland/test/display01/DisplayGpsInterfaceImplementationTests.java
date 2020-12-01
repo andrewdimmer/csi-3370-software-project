@@ -21,21 +21,21 @@ import edu.oakland.test.display01.DisplayGpsReceiverStub;
       }
       @Test
       @DisplayName("Verifying Satellite Name in is Satellite Name Out")
-      void SatelliteInIsSatelliteOut() {
+      void SatelliteInIsSatelliteOutReportLoss() {
         Satellite s = new Satellite("New Satellite", 7);
         DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation(new DisplayGpsReceiverStub());
         assertEquals(d.reportGpsSignalLoss(s), "New Satellite");
       }
       @Test
       @DisplayName("Checking Satellite Signal")
-      void SatelliteInIsSatelliteOut() {
+      void SatelliteInIsSatelliteOutCheck() {
         Satellite s = new Satellite("New Satellite", 7);
         DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation(new DisplayGpsReceiverStub());
         assertEquals(d.checkSignalStrength(s), "New Satellite");
       }
       @Test
       @DisplayName("Rechecking Satellite Signal")
-      void SatelliteInIsSatelliteOut() {
+      void SatelliteInIsSatelliteOutRecheck() {
         Satellite s = new Satellite("New Satellite", 7);
         DisplayGpsInterfaceImplementation d = new DisplayGpsInterfaceImplementation(new DisplayGpsReceiverStub());
         assertEquals(d.recheckSignalStrength(s), "New Satellite");

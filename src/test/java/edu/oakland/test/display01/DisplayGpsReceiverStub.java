@@ -24,7 +24,8 @@ public class DisplayGpsReceiverStub implements DisplayGpsReceiver {
    * @return Request to reconnect to satellite.
    */
   public SatelliteSignalCheckRequest measureSignal(Satellite satelliteSignal) {
-    SatelliteSignalCheckRequest request = new SatelliteSignalCheckRequest(satelliteSignal.getName(),"Type 2");
+    SatelliteSignalCheckRequest request;
+    request = new SatelliteSignalCheckRequest(satelliteSignal.getName(), "Type 2");
     return request;
 
   }
