@@ -47,7 +47,7 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
   public SatelliteSignalCheckRequest recheckSignalStrength(Satellite satelliteSignal) {
     System.out.println("Rechecking signal strength");
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
-    System.out.println(satellite.getSatelliteName());
+    System.out.println("Attempting to " + satellite.getCheckType() + " " + satellite.getSatelliteName());
     return satellite;
   }
 
