@@ -4,12 +4,12 @@ import edu.oakland.helper.admin.Satellite;
 
 public interface DisplayGpsInterface {
 
-  public void receiveGpsSignal(Satellite satelliteSignal);
+  public boolean receiveGpsSignal(Satellite satelliteSignal);
 
-  public void reportGpsSignalLoss(String satelliteName);
+  public String reportGpsSignalLoss(Satellite satelliteSignal);
 
-  public void recheckSignalStrength(String satelliteName);
+  public int recheckSignalStrength(Satellite satelliteSignal);
 
-  public void checkSignalStrength(String satelliteName);
+  public int checkSignalStrength(Satellite satelliteSignal);
 
 }

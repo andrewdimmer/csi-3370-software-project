@@ -4,14 +4,15 @@ package edu.oakland.production.middleware01 {
     class MiddlewareGisManagerImplementation {
         - DatabaseGisInterface databaseGisInterface
         - LocationDataPoint locationDataPoint
+        - Satellite satelliteSignal
         __
         + MiddlewareGisManagerImplementation(DatabaseGisInterface databaseGisInterface)
         .. Use Case 1 ..
         + String receieveGpsSignalStrength(Satellite satelliteSignal)
         + void storeLocationDataPoint()
         .. Use Case 2 ..
-        + String attemptToRegainGpsLock(String satelliteName)
-        + String evaluateGpsSignalStrength(boolean signalValid)
+        + String evaluateGpsSignalStrength(Satellite satellite)
+        - boolean isStrongEnough(int strength)
     }
 }
 
