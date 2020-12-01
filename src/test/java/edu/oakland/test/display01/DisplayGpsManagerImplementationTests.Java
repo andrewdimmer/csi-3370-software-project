@@ -10,10 +10,10 @@ import edu.oakland.production.middleware01.MiddlewareGisInterface;
 
   @DisplayName("Display GPS Manager Unit Tests")
     public class DisplayGpsManagerImplementationTests {
-        @Test
-        @DisplayName("Indication that GPS signal strengths are received.")
-        void receivedGpsSignalStrengths() {
-            Satellite sat = new Satellite();
+      @Test
+      @DisplayName("Indication that GPS signal strengths are received.")
+      void receivedGpsSignalStrengths() {
+          Satellite sat = new Satellite();
             DisplayGpsManagerImplementation man = new DisplayGpsInterfaceImplementation();
             AssertEquals(satelliteSignal.receivedGpsSignalStrengths(sat));
 
@@ -21,8 +21,9 @@ import edu.oakland.production.middleware01.MiddlewareGisInterface;
 
         @Test
         @DisplayName("Check if middleware GIS is not null")
-        void middlewareGisIsNotNull() {
-            if (MiddlewareGisInterface == null) {
-                throw new IllegalArgumentException("MiddlewareGisInterface cannot be null");
+        public void middlewareGisIsNotNull() {
+          assertThrows(IllegalArgumentException.class, () -> {
+            new DisplayGpsManagerImplementation(null);
+          });
         }
     }
