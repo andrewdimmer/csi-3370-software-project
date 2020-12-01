@@ -8,7 +8,7 @@ import java.lang.IllegalArgumentException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("Sattelite Signal Check Request Tests")
+@DisplayName("SatelliteSignalCheckRequest Unit Tests")
 public class SatelliteSignalCheckRequestTests {
 
   @Test
