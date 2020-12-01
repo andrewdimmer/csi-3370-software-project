@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.helper.admin.TrackData;
-import java.time.*;
+import java.time.Duration;
 import java.time.LocalDateTime;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
