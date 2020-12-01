@@ -103,7 +103,7 @@ public class GpsSystemTests {
     float incrementLatAmount = rnd.nextFloat()*40;
     float incrementLngAmount = rnd.nextFloat()*40;
     GpsSystem gpsSystem = new GpsSystem(stub, satelliteNames);
-    LocationDataPoint ldp = new LocationDataPoint(rnd.nextFloat(), rnd.nextFloat(), LocalDateTime.now());
+    LocationDataPoint ldp = generateRandomLocationDataPoint();
     try{
       gpsSystem.configureSatellites(satelliteNames, incrementLatAmount, incrementLngAmount, ldp);
     } catch (Exception e) {
