@@ -7,44 +7,44 @@ import static org.junit.jupiter.api.Assertions.fail;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 import java.util.Random;
 import java.util.Scanner;
-
 import edu.oakland.production.admin.GpsSystem;
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.test.admin.DisplayGpsInterfaceStub;
+import org.junit.jupiter.api.Test;
+import java.util.Scanner;
 
 @DisplayName("GpsSystem Unit Tests")
 public class GpsSystemTests {
 
-	@Test
-	@DisplayName("Init Display GpsInterface Not Null")
-	void initDisplayGpsInterfaceNotNull(){
+  @Test
+  @DisplayName("Init Display GpsInterface Not Null")
+  void initDisplayGpsInterfaceNotNull(){
     Random rnd = new Random();                          //make a moderately long array of random strings
     int rndLength = rnd.nextInt(100);
     String[] str = new String[rndLength];
     for (int i = 0; i < rndLength; i++) {
       str[i] = generateRandomNames();
     }
-		assertThrows(IllegalArgumentException.class, () -> {
-			new GpsSystem(null, str);
-		});
-	}
-	
-	@Test
-	@DisplayName("Init Satelllite Names Not Null")
-	void initSatelliteNamesNotNull(){
-		DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
-		assertThrows(IllegalArgumentException.class, () -> {
-			new GpsSystem(stub, null);
-		});
-	}
-	
-	@Test
-	@DisplayName("Init Satelllite Names Not Empty")
-	void initSatelliteNamesNotEmpty(){
-		DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
+    assertThrows(IllegalArgumentException.class, () -> {
+      new GpsSystem(null, str);
+    });
+  }
+  
+  @Test
+  @DisplayName("Init Satelllite Names Not Null")
+  void initSatelliteNamesNotNull(){
+    DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
+    assertThrows(IllegalArgumentException.class, () -> {
+      new GpsSystem(stub, null);
+    });
+  }
+  
+  @Test
+  @DisplayName("Init Satelllite Names Not Empty")
+  void initSatelliteNamesNotEmpty(){
+    DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
     Random rnd = new Random();                                    //make a moderately long array of random strings
     int rndLength = rnd.nextInt(100);
     String[] str = new String[rndLength];
@@ -52,13 +52,13 @@ public class GpsSystemTests {
       str[i] = generateRandomNames();
     }
     str[rnd.nextInt(rndLength)] = "";                              //set random item in array to be empty
-		assertThrows(IllegalArgumentException.class, () -> {
-			new GpsSystem(stub, str);
-		});
-	}
+    assertThrows(IllegalArgumentException.class, () -> {
+      new GpsSystem(stub, str);
+    });
+  }
   
-	@Test
-	@DisplayName("GPS Systems Constructed Successfully")
+  @Test
+  @DisplayName("GPS Systems Constructed Successfully")
   void gpsSystemsConstructedSuccessfully(){
     try {
       DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
@@ -86,9 +86,9 @@ public class GpsSystemTests {
     float incrementLatAmount = rnd.nextFloat()*40;
     float incrementLngAmount = rnd.nextFloat()*40;
     GpsSystem gpsSystem = new GpsSystem(stub, satelliteNames);
-		assertThrows(IllegalArgumentException.class, () -> {
-			gpsSystem.configureSatellites(satelliteNames, incrementLatAmount, incrementLngAmount, null);
-		});
+    assertThrows(IllegalArgumentException.class, () -> {
+      gpsSystem.configureSatellites(satelliteNames, incrementLatAmount, incrementLngAmount, null);
+    });
   }
   
   @Test

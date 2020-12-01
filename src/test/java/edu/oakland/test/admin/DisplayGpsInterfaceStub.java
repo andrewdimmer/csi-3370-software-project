@@ -1,13 +1,14 @@
 package edu.oakland.test.admin;
 
 import java.lang.IllegalArgumentException;
-import java.time.LocalDateTime;
-
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.production.display01.DisplayGpsInterface;
+import java.time.LocalDateTime;
+
+
 
 /**
- * A test class to act as a stub for DisplayGpsInterface
+ * A test class to act as a stub for DisplayGpsInterface.
  *
  * @author Brendan Fraser
  * @version %I%, %G%
