@@ -69,7 +69,7 @@ public class GpsSystem {
     }
   }
   /**
-   * Method to set the instance variable satellites based on the paramaters that are passed in.
+   * Method to set the instance variable satellites based on the paramaters that are passed in. Also makes each satellite have a random strength between 1 and 10.
    *
    * @param satelliteNames   Names for the satellites to create, as an array of strings
    * @param incrementLatAmount  amount to increment Lat for each satellite
@@ -94,17 +94,19 @@ public class GpsSystem {
   private void configureSatellites(String[] satelliteNames) {
     Random rnd = new Random();
     
-    float maxSpeedPerTick = .5 / 6;               //assumes up to 30 knots per hour and 10 minutes per ping
-    float speed = maxSpeedPerTick - (rnd.nextFloat() * .02);
+    float maxSpeedPerTick = (float) .5 / 6;               //assumes up to 30 knots per hour and 10 minutes per ping
+    float speed = maxSpeedPerTick - (float) (rnd.nextFloat() * .02);
     
-    float movementDirection = rnd.nextFloat() * 2 * Math.PI;
-    float incrementLatAmount = speed * Math.sin(movementDirection);
-    float incrementLngAmount = speed * -1 * Math.cos(movementDirection);
+    float movementDirection = rnd.nextFloat() * (float) (2 * Math.PI);
+    float incrementLatAmount = speed * (float) Math.sin(movementDirection);
+    float incrementLngAmount = speed * -1 * (float) Math.cos(movementDirection);
+    
+    LocalDateTime time = LocalDateTime.now().minusMinutes(50);
     
     
     /*float lat = rnd.nextFloat() + 45;
     float lng = (rnd.nextFloat() * 2) + 44;*/
-    LocationDataPoint ldp = new LocationDataPoint(
+    //LocationDataPoint ldp = new LocationDataPoint(
   }
   
   /**
