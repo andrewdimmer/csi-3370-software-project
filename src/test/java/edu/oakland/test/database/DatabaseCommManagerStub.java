@@ -39,4 +39,8 @@ public class DatabaseCommManagerStub implements DatabaseCommManager {
     return index;
   }
   
+  public void storeLocationDataPoint(LocationDataPoint locationDataPoint) {
+    ldp = locationDataPoint;
+  }
+  
 }
