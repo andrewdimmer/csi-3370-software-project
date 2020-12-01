@@ -20,8 +20,9 @@ public class GpsSystemTests {
 
   @Test
   @DisplayName("Init Display GpsInterface Not Null")
-  void initDisplayGpsInterfaceNotNull(){
-    Random rnd = new Random();                          //make a moderately long array of random strings
+  void initDisplayGpsInterfaceNotNull() {
+    Random rnd = new Random();                          
+    //make a moderately long array of random strings
     int rndLength = rnd.nextInt(100);
     String[] str = new String[rndLength];
     for (int i = 0; i < rndLength; i++) {
@@ -34,7 +35,7 @@ public class GpsSystemTests {
   
   @Test
   @DisplayName("Init Satelllite Names Not Null")
-  void initSatelliteNamesNotNull(){
+  void initSatelliteNamesNotNull() {
     DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
     assertThrows(IllegalArgumentException.class, () -> {
       new GpsSystem(stub, null);
@@ -43,15 +44,17 @@ public class GpsSystemTests {
   
   @Test
   @DisplayName("Init Satelllite Names Not Empty")
-  void initSatelliteNamesNotEmpty(){
+  void initSatelliteNamesNotEmpty() {
     DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
-    Random rnd = new Random();                                    //make a moderately long array of random strings
+    Random rnd = new Random();                                    
+    //make a moderately long array of random strings
     int rndLength = rnd.nextInt(100);
     String[] str = new String[rndLength];
     for (int i = 0; i < rndLength; i++) {
       str[i] = generateRandomNames();
     }
-    str[rnd.nextInt(rndLength)] = "";                              //set random item in array to be empty
+    str[rnd.nextInt(rndLength)] = "";                              
+    //set random item in array to be empty
     assertThrows(IllegalArgumentException.class, () -> {
       new GpsSystem(stub, str);
     });
@@ -59,10 +62,11 @@ public class GpsSystemTests {
   
   @Test
   @DisplayName("GPS Systems Constructed Successfully")
-  void gpsSystemsConstructedSuccessfully(){
+  void gpsSystemsConstructedSuccessfully() {
     try {
       DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
-      Random rnd = new Random();                          //make a moderately long array of random strings
+      Random rnd = new Random();                          
+      //make a moderately long array of random strings
       int rndLength = rnd.nextInt(100);
       String[] str = new String[rndLength];
       for (int i = 0; i < rndLength; i++) {
@@ -76,15 +80,15 @@ public class GpsSystemTests {
   
   @Test
   @DisplayName("InitLocationDataPoint Not Null")
-  void initLocationDataPointNotNull(){
+  void initLocationDataPointNotNull() {
     DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
     Random rnd = new Random();
     String[] satelliteNames = new String[10];
     for (int i = 0; i < 10; i++) {
       satelliteNames[i] = generateRandomNames();
     }
-    float incrementLatAmount = rnd.nextFloat()*40;
-    float incrementLngAmount = rnd.nextFloat()*40;
+    float incrementLatAmount = rnd.nextFloat() * 40;
+    float incrementLngAmount = rnd.nextFloat() * 40;
     GpsSystem gpsSystem = new GpsSystem(stub, satelliteNames);
     assertThrows(IllegalArgumentException.class, () -> {
       gpsSystem.configureSatellites(satelliteNames, incrementLatAmount, incrementLngAmount, null);
@@ -93,15 +97,15 @@ public class GpsSystemTests {
   
   @Test
   @DisplayName("Configure Satellites Run Successfully")
-  void configureSatellitesRunSuccessfully(){
+  void configureSatellitesRunSuccessfully() {
     DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
     Random rnd = new Random();
     String[] satelliteNames = new String[10];
     for (int i = 0; i < 10; i++) {
       satelliteNames[i] = generateRandomNames();
     }
-    float incrementLatAmount = rnd.nextFloat()*40;
-    float incrementLngAmount = rnd.nextFloat()*40;
+    float incrementLatAmount = rnd.nextFloat() * 40;
+    float incrementLngAmount = rnd.nextFloat() * 40;
     GpsSystem gpsSystem = new GpsSystem(stub, satelliteNames);
     LocationDataPoint ldp = generateRandomLocationDataPoint();
     try{
@@ -115,13 +119,15 @@ public class GpsSystemTests {
   
   
   
-  private String generateRandomNames() { //Make a random string for Satellite Name, borrowed from Tessa, thanks!
+  private String generateRandomNames() { 
+  //Make a random string for Satellite Name, borrowed from Tessa, thanks!
     int length = 10;
     Random random = new Random();
     String alphabet = "abcdefghijklmnopqrstuvwxyz";
     char [] rndString = new char[length];
 
-    for (int i = 0; i < length; i++) { //Create array of characters for desired length
+    for (int i = 0; i < length; i++) { 
+    //Create array of characters for desired length
       rndString[i] = alphabet.charAt(random.nextInt(alphabet.length())); 
     }
     
@@ -129,7 +135,8 @@ public class GpsSystemTests {
     return createdString;
   }
   
-  private LocationDataPoint generateRandomLocationDataPoint() {  //borrowed from Tessa again, thanks!
+  private LocationDataPoint generateRandomLocationDataPoint() {  
+  //borrowed from Tessa again, thanks!
     return new LocationDataPoint(
       (float) (Math.random() * 180 - 90),
       (float) (Math.random() * 360 - 180),
@@ -143,7 +150,8 @@ public class GpsSystemTests {
     );
   }
   
-  private float makeRandomPos() {   //will return a float value between -90.0 and 90.0
+  private float makeRandomPos() {   
+  //will return a float value between -90.0 and 90.0
     Random rnd = new Random();
     return rnd.nextFloat() * 180 - 90;
   }
