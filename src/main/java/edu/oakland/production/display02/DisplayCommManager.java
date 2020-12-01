@@ -4,6 +4,6 @@ import edu.oakland.helper.admin.TrackData;
 
 public interface DisplayCommManager {
 
-  public TrackData evaluateRfidRequest(int rfidNum);
+  public TrackData evaluateRfidRequest(int rfid);
 
 }
