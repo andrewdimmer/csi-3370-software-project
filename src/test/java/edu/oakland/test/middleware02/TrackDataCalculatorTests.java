@@ -22,9 +22,9 @@ public class TrackDataCalculatorTests {
      
     LocationDataPoint[] points = generateRandomLocationDataPointsArray(5);
     TrackData trackData = new TrackData(
-        points,
-        generateRandomCourse(),
-        generateRandomSpeed()
+      points,
+      generateRandomCourse(),
+      generateRandomSpeed()
     );
     LocationDataPoint[] points2 = trackData.getLocationDataPoints();
     LocationDataPoint firstpoint = points2[0];
@@ -48,20 +48,11 @@ public class TrackDataCalculatorTests {
     float deltaX = lattitude2 - lattitude1;
     double trackLength = Math.sqrt((deltaY*deltaY) + (deltaX * deltaX));    
       
-      int time = 12; //Minutes
+    
+    double expectedSpeed = 14.14;
+    trackLength = Math.sqrt((deltaX*deltaX) + (deltaY*deltaY));
 
-      
-      float trackData2Lon;
-      float trackData2Lat;
-      
-      //double trackLength;
-      //int deltaX = 2;
-      //int deltaY = 2;
-      double speed;
-      double expectedSpeed = 14.14;
-      trackLength = Math.sqrt((deltaX*deltaX) + (deltaY*deltaY));
-
-      speed = (trackLength / 4) * 20;
+      //speed = (trackLength / 4) * 20;
       //System.out.println(speed);
       //System.out.println(trackLength);
     
@@ -98,13 +89,9 @@ public class TrackDataCalculatorTests {
         alpha = (deltaY/trackLength);
         alpha = (Math.asin(alpha));
         double alpha2 = Math.toDegrees(alpha);
-        //alpha2 = Math.floor(alpha2);
-
-        //System.out.println(alpha);
-        //System.out.println(alpha2);
+        
         System.out.println(alpha2);
-        //System.out.println(trackLength);
-        //assertEquals(expectedDirection, alpha2);
+        
     }
    private LocationDataPoint generateRandomLocationDataPoint() {
     return new LocationDataPoint(
