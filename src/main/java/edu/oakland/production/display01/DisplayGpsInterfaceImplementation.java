@@ -44,7 +44,7 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
     System.out.println("Reporting loss for " + satelliteSignal.getSatelliteName());
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
     System.out.println("Attempting to " + satellite.getCheckType() 
-      + " " + satellite.getSatelliteName());
+        + " " + satellite.getSatelliteName());
     return satellite;
   }
 
@@ -57,8 +57,8 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
   public SatelliteSignalCheckRequest recheckSignalStrength(Satellite satelliteSignal) {
     System.out.println("Rechecking signal strength");
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
-    System.out.println("Attempting to " + satellite.getCheckType() 
-      + " " + satellite.getSatelliteName());
+    System.out.println("Attempting to " + satellite.getCheckType()
+        + " " + satellite.getSatelliteName());
     return satellite;
   }
 
@@ -72,7 +72,7 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
     System.out.println("Checking signal strength");
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
     System.out.println("Attempting to " + satellite.getCheckType() 
-      + " " + satellite.getSatelliteName());
+        + " " + satellite.getSatelliteName());
     return satellite;
   }
 
