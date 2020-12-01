@@ -8,6 +8,7 @@ import java.lang.IllegalArgumentException;
 public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
   
   public DisplayGpsReceiver reciever;
+
   /**
    * Constructor for DisplayGpsInterfaceImplementation.
    *
@@ -43,7 +44,7 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
     System.out.println("Reporting loss for " + satelliteSignal.getSatelliteName());
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
     System.out.println("Attempting to " + satellite.getCheckType() 
-    + " " + satellite.getSatelliteName());
+      + " " + satellite.getSatelliteName());
     return satellite;
   }
 
@@ -57,7 +58,7 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
     System.out.println("Rechecking signal strength");
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
     System.out.println("Attempting to " + satellite.getCheckType() 
-    + " " + satellite.getSatelliteName());
+      + " " + satellite.getSatelliteName());
     return satellite;
   }
 
@@ -71,7 +72,7 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
     System.out.println("Checking signal strength");
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
     System.out.println("Attempting to " + satellite.getCheckType() 
-    + " " + satellite.getSatelliteName());
+      + " " + satellite.getSatelliteName());
     return satellite;
   }
 
