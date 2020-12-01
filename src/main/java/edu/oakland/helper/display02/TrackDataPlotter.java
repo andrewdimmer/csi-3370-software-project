@@ -11,8 +11,8 @@ import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.XYPlot;
 import org.jfree.data.xy.XYDataset;
-import org.jfree.data.xy.XYSeries;
 import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
+import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
 
@@ -32,40 +32,40 @@ public class TrackDataPlotter extends JFrame {
 
   /**
    * Creates a TrackDataPlotter object which contains a chart with the location
-   * data as a series and the line of best fit represented by two points
-   * @param data TrackData object representing the location data to be plotted
+   * data as a series and the line of best fit represented by two points.
+   * @param data TrackData object representing the location data to be plotted.
    */
   public TrackDataPlotter(TrackData data) {
 
-    if(data == null) {
+    if (data == null) {
       throw new IllegalArgumentException("Track data is null");
     }
     this.isValidTrackData = data.isValid();
-    if(!isValidTrackData) {
+    if (!isValidTrackData) {
       throw new IllegalArgumentException("Track data is invalid");
     }
     this.lat = extractLatFromTrackData(data);
     this.lng = extractLngFromTrackData(data);
     this.dataPoints = getTrackData(this.lat, this.lng);
-    if(this.dataPoints.getItemCount() == 0) {
+    if (this.dataPoints.getItemCount() == 0) {
       throw new IllegalArgumentException("Data series is empty");
     }
-    if(this.dataPoints.getItemCount() != 5) {
+    if (this.dataPoints.getItemCount() != 5) {
       throw new IllegalArgumentException("Data series contains an invalid number of points");
     }
     this.fitLine = calculateLine(this.lat, this.lng);
-    if(this.fitLine.getItemCount() == 0) {
+    if (this.fitLine.getItemCount() == 0) {
       throw new IllegalArgumentException("Fit Line representation contains no points");
     }
-    if(this.fitLine.getItemCount() != 2) {
+    if (this.fitLine.getItemCount() != 2) {
       throw new IllegalArgumentException("Fit line contains an invalid number of points");
     }
     this.chart = createChart();
   }
 
   /**
-   * Creates a JFreeChart from the dataPoint series and fitLine series
-   * @return JFreeChart poltting the location data points and line of best fit
+   * Creates a JFreeChart from the dataPoint series and fitLine series.
+   * @return JFreeChart plotting the location data points and line of best fit.
    */
   private JFreeChart createChart() {
 
@@ -77,9 +77,9 @@ public class TrackDataPlotter extends JFrame {
     // Create dataset with series collection
     XYDataset dataPoints = dataset;
     // Create Scatter Plot with Fit Line
-    JFreeChart plotChart = ChartFactory.createScatterPlot("Track Data Plot","X-Axis", "Y-Axis", dataPoints);
+    JFreeChart plotChart = ChartFactory.createScatterPlot("Track Data Plot", "X-Axis", "Y-Axis", dataPoints);
 
-    /** Parameters for the chart, including size of draw area free.org/jfreechart/javadoc/org/jfree/chart/ChartPanel*/
+    /** Parameters for the chart, including size of draw area free.org/jfreechart/javadoc/org/jfree/chart/ChartPanel */
     ChartPanel panel = new ChartPanel(plotChart, 600, 600, 600,   600, 600, 600,
             true, false, false, false, false, false);
 
@@ -108,15 +108,15 @@ public class TrackDataPlotter extends JFrame {
   }
 
   /**
-  * Adds the coordinates of the location data as points in the dataPoints series
+  * Adds the coordinates of the location data as points in the dataPoints series.
   * @param x float array of latitudes of location data points
   * @param y float array of longitudes of location data points
   * @return XYSeries dataPoints representing location data points
   */
   public XYSeries getTrackData(float[] x, float[] y) {
     XYSeries dataPoints = new XYSeries("Locations");
-      for(int i = 0; i < x.length; i++){
-        dataPoints.add(x[i], y[i]);
+    for (int i = 0; i < x.length; i++) {
+      dataPoints.add(x[i], y[i]);
     }
     return dataPoints;
   }
@@ -137,7 +137,7 @@ public class TrackDataPlotter extends JFrame {
       double xMin = this.dataPoints.getMinX();
       double xMax = this.dataPoints.getMaxX();
 
-      for(int i = 0; i < 5; i++) {
+      for (int i = 0; i < 5; i++) {
         sumOfXSquared += x[i] * x[i];
   		  sumOfX += x[i];
   	    sumOfXy += x[i] * y[i];
@@ -164,7 +164,7 @@ public class TrackDataPlotter extends JFrame {
     private float[] extractLatFromTrackData(TrackData data) {
       LocationDataPoint[] points = data.getLocationDataPoints();
       float[] latNum = new float[5];
-      for(int i = 0; i < points.length; i++){
+      for (int i = 0; i < points.length; i++) {
           latNum[i]= points[i].getLat();
       }
       return latNum;
@@ -178,7 +178,7 @@ public class TrackDataPlotter extends JFrame {
     private float[] extractLngFromTrackData(TrackData data) {
       LocationDataPoint[] points = data.getLocationDataPoints();
       float[] lngNum = new float[5];
-      for(int i = 0; i < points.length; i++) {
+      for (int i = 0; i < points.length; i++) {
           lngNum[i]= points[i].getLng();
       }
       return lngNum;
@@ -187,7 +187,7 @@ public class TrackDataPlotter extends JFrame {
     /**
     * Displays the chart
     */
-    public void displayChart(){
+    public void displayChart() {
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       setVisible(true);
     }
