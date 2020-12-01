@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
+
 import edu.oakland.production.display01.DisplayGpsManager;
 import edu.oakland.production.display01.DisplayGpsManagerImplementation;
 import edu.oakland.production.middleware01.MiddlewareGisInterface;
@@ -31,7 +32,9 @@ public class DisplayGpsManagerImplementationTests {
     DisplayGpsManager man = new DisplayGpsManagerImplementation(
         new MiddlewareGisInterfaceStub()
     );
-    assertEquals("word", man.receiveGpsSignalStrength(sat));
+    SatelliteSignalCheckRequest check = man.passGpsSignalStrength(sat);
+    assertEquals("word", check.getSatelliteName());
+    assertEquals("recheck", check.getCheckType());
   }
 
   @Test
@@ -39,7 +42,7 @@ public class DisplayGpsManagerImplementationTests {
   void checkGpsSignalStrength() {
     Satellite sat = new Satellite("word", 3);
     DisplayGpsManager man = new DisplayGpsManagerImplementation(
-        new MiddlewareGisInterfaceStub()
+        new MiddlewareGisInterfaceStub("test")
     );
 
     SatelliteSignalCheckRequest check = new SatelliteSignalCheckRequest();
