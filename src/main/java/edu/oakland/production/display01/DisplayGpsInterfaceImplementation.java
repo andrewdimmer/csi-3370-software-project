@@ -39,4 +39,5 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
     System.out.println(satellite.getSatelliteName());
     return satellite.getSatelliteName();
   }
+  
 } 
