@@ -36,38 +36,38 @@ public class TrackDataCalculatorTests {
 
     LocalDateTime time1 = firstpoint.getTime();
     LocalDateTime time2 = lastpoint.getTime();
-    Duration duration = Duration.between(time2 , time1);
-    System.out.println(duration.getSeconds());
+    Duration duration = Duration.between(time1 , time2);
+    System.out.println(duration.getSeconds() / 60);
     System.out.println(lattitude1);
     System.out.println(lattitude2);
     System.out.println(longitude1);
     System.out.println(longitude2);
+    long newDuration;
+    newDuration = duration.getSeconds() / 3600;
+    System.out.println(newDuration);
 
 
     float deltaY = longitude2 - longitude1;
     float deltaX = lattitude2 - lattitude1;
     double trackLength = Math.sqrt((deltaY*deltaY) + (deltaX * deltaX));    
       
-    
-    double expectedSpeed = 14.14;
     trackLength = Math.sqrt((deltaX*deltaX) + (deltaY*deltaY));
 
-      //speed = (trackLength / 4) * 20;
-      //System.out.println(speed);
-      //System.out.println(trackLength);
-    
-      //assertEquals(expectedSpeed, speed, 0.01);
+    double speed = (trackLength / newDuration);
+    System.out.println("***Calculated Speed***");
+    System.out.println(speed);
+
     }
     //Delta x == Lat2 - Lat1
     //Delta y == Lon2 - Lon1
   @Test
   @DisplayName("Calculate Direction")
     void calculateDirectionTest(){
-        LocationDataPoint[] points = generateRandomLocationDataPointsArray(5);
+      LocationDataPoint[] points = generateRandomLocationDataPointsArray(5);
     TrackData trackData = new TrackData(
-        points,
-        generateRandomCourse(),
-        generateRandomSpeed()
+      points,
+      generateRandomCourse(),
+      generateRandomSpeed()
     );
     LocationDataPoint[] points2 = trackData.getLocationDataPoints();
     LocationDataPoint firstpoint = points2[0];
@@ -81,16 +81,17 @@ public class TrackDataCalculatorTests {
     System.out.println(longitude1);
     System.out.println(longitude2);
 
-        double alpha;
-        int expectedDirection = 45;
-        float deltaY = longitude2 - longitude1;
-        float deltaX = lattitude2 - lattitude1;
-        double trackLength = Math.sqrt((deltaY*deltaY) + (deltaX * deltaX));
-        alpha = (deltaY/trackLength);
-        alpha = (Math.asin(alpha));
-        double alpha2 = Math.toDegrees(alpha);
-        
-        System.out.println(alpha2);
+    double alpha;
+    int expectedDirection = 45;
+    float deltaY = longitude2 - longitude1;
+    float deltaX = lattitude2 - lattitude1;
+    double trackLength = Math.sqrt((deltaY*deltaY) + (deltaX * deltaX));
+    alpha = (deltaY/trackLength);
+    alpha = (Math.asin(alpha));
+    double alpha2 = Math.toDegrees(alpha);
+
+    System.out.println("***Calculated Direction***");    
+    System.out.println(alpha2);
         
     }
    private LocationDataPoint generateRandomLocationDataPoint() {
@@ -107,15 +108,16 @@ public class TrackDataCalculatorTests {
     );
   }
   private LocationDataPoint[] generateRandomLocationDataPointsArray(int length) {
-    /*Satellite.satelliteInit(
+    Satellite.satelliteInit(
         (float) (Math.random() * 20),
         (float) (Math.random() * 20),
         generateRandomLocationDataPoint()
-    );*/
+    );
     LocationDataPoint[] locations = new LocationDataPoint[length];
-    //Satellite satellite = new Satellite();
+    
+    Satellite satellite = new Satellite("tester", 7);
     for (int index = 0; index < locations.length; index++) {
-      locations[index] = generateRandomLocationDataPoint();
+      locations[index] = satellite.getLocation();
     }
     return locations;
   }
