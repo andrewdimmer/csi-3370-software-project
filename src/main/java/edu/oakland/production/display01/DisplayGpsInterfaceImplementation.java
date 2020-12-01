@@ -12,7 +12,7 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
     this.reciever = reciever;
   }
 
- /** 
+  /** 
    * Recieves GPS Signal Strength.
    *
    * @param satelliteSignal GPS signal to measure.
@@ -25,7 +25,7 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
     return satellite;
   }
 
- /** 
+  /** 
    * Reports GPS Signal Loss.
    *
    * @param satelliteSignal GPS signal to report.
@@ -38,7 +38,7 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
     return satellite.getSatelliteName();
   }
 
- /** 
+  /** 
    * Rechecks GPS Signal Strength.
    *
    * @param satelliteSignal GPS signal to measure.
@@ -51,7 +51,7 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
     return satellite.getSatelliteName();
   }
 
- /** 
+  /** 
    * Checks GPS Signal Strength.
    *
    * @param satelliteSignal GPS signal to measure.
