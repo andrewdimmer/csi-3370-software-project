@@ -75,11 +75,7 @@ public class GpsSystem {
    *
    */
   public void configureSatellites(String[] satelliteNames, float incrementLatAmount, float incrementLngAmount, LocationDataPoint initLocationDataPoint) {
-    if (incrementLatAmount == null) {
-      throw new IllegalArgumentException("incrementLatAmount must not be null");
-    } else if (incrementLngAmount == null) {
-      throw new IllegalArgumentException("incrementLngAmount must not be null");
-    } else if (initLocationDataPoint == null) {
+    if (initLocationDataPoint == null) {
       throw new IllegalArgumentException("initLocationDataPoint must not be null");
     }
     

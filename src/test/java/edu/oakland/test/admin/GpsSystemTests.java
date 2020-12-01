@@ -74,6 +74,46 @@ public class GpsSystemTests {
     }
   }
   
+  @Test
+  @DisplayName("InitLocationDataPoint Not Null")
+  void initLocationDataPointNotNull(){
+    DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
+    Random rnd = new Random();
+    String[] satelliteNames = new String[10];
+    for (int i = 0; i < 10; i++) {
+      satelliteNames[i] = generateRandomNames();
+    }
+    float incrementLatAmount = rnd.nextFloat()*40;
+    float incrementLngAmount = rnd.nextFloat()*40;
+    GpsSystem gpsSystem = new GpsSystem(stub, satelliteNames);
+		assertThrows(IllegalArgumentException.class, () -> {
+			gpsSystem.configureSatellites(satelliteNames, incrementLatAmount, incrementLngAmount, null);
+		});
+  }
+  
+  @Test
+  @DisplayName("Configure Satellites Run Successfully")
+  void configureSatellitesRunSuccessfully(){
+    DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
+    Random rnd = new Random();
+    String[] satelliteNames = new String[10];
+    for (int i = 0; i < 10; i++) {
+      satelliteNames[i] = generateRandomNames();
+    }
+    float incrementLatAmount = rnd.nextFloat()*40;
+    float incrementLngAmount = rnd.nextFloat()*40;
+    GpsSystem gpsSystem = new GpsSystem(stub, satelliteNames);
+    LocationDataPoint ldp = new LocationDataPoint(rnd.nextFloat(), rnd.nextFloat(), LocalDateTime.now());
+    try{
+      gpsSystem.configureSatellites(satelliteNames, incrementLatAmount, incrementLngAmount, ldp);
+    } catch (Exception e) {
+      fail(e.getMessage());
+    }
+  }
+  
+  
+  
+  
   
   private String generateRandomNames() { //Make a random string for Satellite Name, borrowed from Tessa, thanks!
     int length = 10;
