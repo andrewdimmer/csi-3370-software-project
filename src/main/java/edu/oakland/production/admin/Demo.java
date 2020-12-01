@@ -17,7 +17,7 @@ public class Demo {
    * @param persistentStorageOutputLocation The output location.
    */
   public void initSecureLockTrackSystem(int systemRfid, String persistentStorageInputLocation, 
-  String persistentStorageOutputLocation) {
+      String persistentStorageOutputLocation) {
     if (persistentStorageInputLocation == null) {
       throw new IllegalArgumentException("Input Location cannot be null");
     }  
