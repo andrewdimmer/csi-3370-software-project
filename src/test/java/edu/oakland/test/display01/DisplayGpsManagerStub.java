@@ -16,9 +16,7 @@ public class DisplayGpsManagerStub implements DisplayGpsManager {
    * @param satelliteSignal passes satellite object to pull name and checktype from
    */
   public String receiveGpsSignalStrength(Satellite satelliteSignal) {
-    SatelliteSignalCheckRequest ssrc = 
-        new SatelliteSignalCheckRequest(satelliteSignal.getSatelliteName(), checkType);
-    return ssrc.getSatelliteName();
+    return satelliteSignal.getSatelliteName();
   }
 
   /**
