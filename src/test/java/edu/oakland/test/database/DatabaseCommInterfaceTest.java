@@ -54,9 +54,10 @@ public class DatabaseCommInterfaceTest {
     
     int i = (int) (Math.random() * 100);
     DatabaseCommManagerStub dcm = new DatabaseCommManagerStub(i);
-
+    DatabaseCommInterfaceImplementation dci = new DatabaseCommInterfaceImplementation(dcm)
     TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
-    assertEquals(null, dcm.passGetTrackDataRequest(i));  
+    dci.recieveGetTrackDataRequest(i);
+    assertEquals(i, dci.index);  
   }
   
   @Test
@@ -65,10 +66,11 @@ public class DatabaseCommInterfaceTest {
 
     int i = (int) Math.random();
     DatabaseCommManagerStub dcm = new DatabaseCommManagerStub(i);
-    
+    DatabaseCommInterfaceImplementation dci = new DatabaseCommInterfaceImplementation(dcm);
     TrackData td = new TrackData(generateRandomLocationDataPointsArray(10));
     td = null;
-    assertEquals(td, dcm.passGetTrackDataRequest(i));
+    dci.storeTrackDataRequest(i)
+    assertEquals(td, dci.recieveGetTrackDataRequest(i));
 
 
   }
