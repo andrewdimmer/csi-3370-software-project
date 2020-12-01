@@ -11,7 +11,8 @@ public class MiddlewareCommInterfaceImplementation implements MiddlewareCommInte
   int rfid;
   
   private MiddlewareCommLinkManager middlewareManager;
-  /** 
+  
+  /**
    * Creates a MiddlewareCommInterfaceImplementation to recive the Rfid.
    *
    * @param middlewareManager the class that this class will pass the Rfid to.
