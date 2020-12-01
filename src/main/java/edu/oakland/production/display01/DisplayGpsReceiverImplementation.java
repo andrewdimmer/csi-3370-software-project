@@ -16,7 +16,7 @@ public class DisplayGpsReceiverImplementation implements DisplayGpsReceiver {
    */
   public DisplayGpsReceiverImplementation(DisplayGpsManager displayGpsManager) {
     if (displayGpsManager == null) {
-      throw new IllegalArgumentException("Signal strength cannot be null");
+      throw new IllegalArgumentException("displayGpsManager cannot be null");
     }
     this.displayGpsManager = displayGpsManager;
   }
