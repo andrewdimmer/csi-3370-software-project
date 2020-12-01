@@ -1,7 +1,7 @@
 package edu.oakland.test.display01;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import edu.oakland.helper.admin.Satellite;
 import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
@@ -26,7 +26,7 @@ public class DisplayGpsReceiverImplementationTests {
 
   @Test
   @DisplayName ("Gps Signal Strength Signal Is Not Null")
-  public void measureGpsSignalStrengthSatelliteSignalIsNotNull(){
+  public void measureGpsSignalStrengthSatelliteSignalIsNotNull() {
     assertThrows(IllegalArgumentException.class, () -> {
       new DisplayGpsReceiverImplementation(null);
     });
@@ -34,7 +34,7 @@ public class DisplayGpsReceiverImplementationTests {
 
   @Test
   @DisplayName ("Satellite Signal Is Not Null")
-  public void measureSignalSatelliteSignalIsNotNull(){
+  public void measureSignalSatelliteSignalIsNotNull() {
     assertThrows(IllegalArgumentException.class, () -> {
       new DisplayGpsReceiverImplementation(null);
     });
@@ -43,7 +43,8 @@ public class DisplayGpsReceiverImplementationTests {
   @Test
   @DisplayName ("Gps Signal Strength In Is Signal Strength Out ")
   public void measureGpsSignalStrengthSatelliteInIsSignalOut() {
-    DisplayGpsReceiverImplementation d = new DisplayGpsReceiverImplementation(new DisplayGpsManagerStub());
+    DisplayGpsReceiverImplementation d = 
+    new DisplayGpsReceiverImplementation(new DisplayGpsManagerStub());
     Satellite s = new Satellite("New Satellite", 7);
     assertEquals(s.getSatelliteName(), d.measureGpsSignalStrength(s));
   }
@@ -51,7 +52,8 @@ public class DisplayGpsReceiverImplementationTests {
   @Test
   @DisplayName ("Measure Signal In Is Signal Out")
   public void measureSignalSignalInIsSignalOut() {
-    DisplayGpsReceiverImplementation d = new DisplayGpsReceiverImplementation(new DisplayGpsManagerStub());
+    DisplayGpsReceiverImplementation d = 
+    new DisplayGpsReceiverImplementation(new DisplayGpsManagerStub());
     Satellite s = new Satellite("New Satellite", 7);
     assertEquals(s.getSatelliteName(), d.measureSignal(s).getSatelliteName());
   }
