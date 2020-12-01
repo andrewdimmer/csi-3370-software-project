@@ -11,6 +11,9 @@ public class MiddlewareCommDatabaseInterfaceImplementation implements
   
   private DatabaseCommInterface databaseCommInterface;
   
+  /**
+     * The constructor for MiddlewareCommDatabaseInterfaceImplementation.
+     */
   public 
       MiddlewareCommDatabaseInterfaceImplementation(DatabaseCommInterface databaseCommInterface) {
     if (databaseCommInterface == null) {
