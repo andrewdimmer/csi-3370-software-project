@@ -18,8 +18,9 @@ public class MiddlewareCommDatabaseInterfaceImplementationTests {
   @Test
   @DisplayName("Rfid In Is the same Rfid Out")
     void rfidInIsRfIdOut() {
-    int ranRfid = (int)(Math.floor(100000 + Math.random() * 900000));
-    MiddlewareCommDatabaseInterface mid02DatabaseInterface = new MiddlewareCommDatabaseInterfaceImplementation(new DatabaseCommInterfaceStub(ranRfid));
+    int ranRfid = (int) (Math.floor(100000 + Math.random() * 900000));
+    MiddlewareCommDatabaseInterface mid02DatabaseInterface = 
+        new MiddlewareCommDatabaseInterfaceImplementation(new DatabaseCommInterfaceStub(ranRfid));
     assertEquals(ranRfid, mid02DatabaseInterface.checkCurrentRfid());
   }
 
@@ -29,5 +30,5 @@ public class MiddlewareCommDatabaseInterfaceImplementationTests {
     assertThrows(IllegalArgumentException.class, () -> {
       new MiddlewareCommDatabaseInterfaceImplementation(null);
     });
-}
+  }
 }
