@@ -7,7 +7,7 @@ import edu.oakland.production.database.DatabaseCommInterface;
 public class DatabaseCommInterfaceStub implements DatabaseCommInterface {
   private int rfid;
   
-  public DatabaseCommInterfaceStub(int rfid){
+  public DatabaseCommInterfaceStub(int rfid) {
     this.rfid = rfid;
   }
   
