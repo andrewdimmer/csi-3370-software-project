@@ -2,7 +2,8 @@
 
 package edu.oakland.test.middleware02 {
     class MiddlewareCommDatabaseInterfaceImplementationTests {
-
+        + void rfidInIsRfidOut()
+        + void databaseCommInterfaceIsNotNull()
     }
 }
 
