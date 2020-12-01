@@ -55,21 +55,23 @@ public class TrackDataCalculatorTests {
     System.out.println("***Calculated Speed***");
     System.out.println(speed);
 
-    }
-    //Delta x == Lat2 - Lat1
-    //Delta y == Lon2 - Lon1
+  }
+  
+  //Delta x == Lat2 - Lat1
+  //Delta y == Lon2 - Lon1
+  
   @Test
   @DisplayName("Calculate Direction")
-    void calculateDirectionTest(){
-      LocationDataPoint[] points = generateRandomLocationDataPointsArray(5);
-    TrackData trackData = new TrackData(
-      points,
-      generateRandomCourse(),
-      generateRandomSpeed()
+  void calculateDirectionTest() {
+    LocationDataPoint[] points = generateRandomLocationDataPointsArray(5);
+      TrackData trackData = new TrackData(
+        points,
+        generateRandomCourse(),
+        generateRandomSpeed()
     );
     LocationDataPoint[] points2 = trackData.getLocationDataPoints();
     LocationDataPoint firstpoint = points2[0];
-    LocationDataPoint lastpoint = points2[points2.length-1];
+    LocationDataPoint lastpoint = points2[points2.length - 1];
     float lattitude1 = firstpoint.getLat();
     float longitude1 = firstpoint.getLng();
     float lattitude2 = lastpoint.getLat();
@@ -84,15 +86,16 @@ public class TrackDataCalculatorTests {
     float deltaY = longitude2 - longitude1;
     float deltaX = lattitude2 - lattitude1;
     double trackLength = Math.sqrt((deltaY * deltaY) + (deltaX * deltaX));
-    alpha = (deltaY/trackLength);
+    alpha = (deltaY / trackLength);
     alpha = (Math.asin(alpha));
     double alpha2 = Math.toDegrees(alpha);
 
     System.out.println("***Calculated Direction***");    
     System.out.println(alpha2);
         
-    }
-   private LocationDataPoint generateRandomLocationDataPoint() {
+  }
+  
+  private LocationDataPoint generateRandomLocationDataPoint() {
     return new LocationDataPoint(
       (float) (Math.random() * 180 - 90),
       (float) (Math.random() * 360 - 180),
@@ -105,6 +108,7 @@ public class TrackDataCalculatorTests {
       )
     );
   }
+  
   private LocationDataPoint[] generateRandomLocationDataPointsArray(int length) {
     Satellite.satelliteInit(
         (float) (Math.random() * 20),
@@ -119,6 +123,7 @@ public class TrackDataCalculatorTests {
     }
     return locations;
   }
+  
   private float generateRandomCourse() {
     return (float) (Math.random() * 360);
   }
