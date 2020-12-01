@@ -64,12 +64,15 @@ public class TrackDataPlotterTests {
 	private float generateRandomCourse() {
 		return (float) (Math.random() * 360);
 	}
+
 	private float generateRandomSpeed() {
 		return (float) (Math.random() * 30);
 	}
+
 	private int generateRandomTooSmallArrayLength() {
 		return (int) (Math.random() * 5);
 	}
+
 	private LocationDataPoint[] generateRandomLocationDataPointsArray(int length) {
 		LocationDataPoint[] locations = new LocationDataPoint[length];
 		for (int index = 0; index < locations.length; index++) {
@@ -77,6 +80,7 @@ public class TrackDataPlotterTests {
 		}
 		return locations;
 	}
+
   private LocationDataPoint generateRandomLocationDataPoint() {
 		return new LocationDataPoint(
 			(float) (Math.random() * 180 - 90),
