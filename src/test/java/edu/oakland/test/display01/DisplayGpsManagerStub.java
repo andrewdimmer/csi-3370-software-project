@@ -10,15 +10,25 @@ public class DisplayGpsManagerStub implements DisplayGpsManager {
 
   private String checkType = "oreo";
   
+  /**
+   * Receives Gps Signal Strength and pulls satellite name.
+   *
+   * @param satelliteSignal passes satellite object to pull name and checktype from
+   */
   public String receiveGpsSignalStrength(Satellite satelliteSignal) {
     SatelliteSignalCheckRequest ssrc = 
-    new SatelliteSignalCheckRequest(satelliteSignal.getSatelliteName(), checkType);
+        new SatelliteSignalCheckRequest(satelliteSignal.getSatelliteName(), checkType);
     return ssrc.getSatelliteName();
   }
 
+  /**
+   * Receives Gps Signal Strength and pulls satellite name.
+   *
+   * @param satelliteSignal passes satellite object to pull name and checktype from
+   */
   public SatelliteSignalCheckRequest passGpsSignalStrength(Satellite satelliteSignal) {
     SatelliteSignalCheckRequest ssrc = 
-    new SatelliteSignalCheckRequest(satelliteSignal.getSatelliteName(), checkType);
+        new SatelliteSignalCheckRequest(satelliteSignal.getSatelliteName(), checkType);
     return ssrc;           
   }
 

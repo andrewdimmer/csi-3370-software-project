@@ -44,7 +44,7 @@ public class DisplayGpsReceiverImplementationTests {
   @DisplayName ("Gps Signal Strength In Is Signal Strength Out ")
   public void measureGpsSignalStrengthSatelliteInIsSignalOut() {
     DisplayGpsReceiverImplementation d = 
-    new DisplayGpsReceiverImplementation(new DisplayGpsManagerStub());
+        new DisplayGpsReceiverImplementation(new DisplayGpsManagerStub());
     Satellite s = new Satellite("New Satellite", 7);
     assertEquals(s.getSatelliteName(), d.measureGpsSignalStrength(s));
   }
@@ -53,7 +53,7 @@ public class DisplayGpsReceiverImplementationTests {
   @DisplayName ("Measure Signal In Is Signal Out")
   public void measureSignalSignalInIsSignalOut() {
     DisplayGpsReceiverImplementation d = 
-    new DisplayGpsReceiverImplementation(new DisplayGpsManagerStub());
+        new DisplayGpsReceiverImplementation(new DisplayGpsManagerStub());
     Satellite s = new Satellite("New Satellite", 7);
     assertEquals(s.getSatelliteName(), d.measureSignal(s).getSatelliteName());
   }
