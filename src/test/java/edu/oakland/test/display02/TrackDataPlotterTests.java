@@ -77,7 +77,7 @@ public class TrackDataPlotterTests {
 		}
 		return locations;
 	}
-	private LocationDataPoint generateRandomLocationDataPoint() {
+  private LocationDataPoint generateRandomLocationDataPoint() {
 		return new LocationDataPoint(
 			(float) (Math.random() * 180 - 90),
 			(float) (Math.random() * 360 - 180),
@@ -90,5 +90,4 @@ public class TrackDataPlotterTests {
 			)
 		);
 	}
-
 }
