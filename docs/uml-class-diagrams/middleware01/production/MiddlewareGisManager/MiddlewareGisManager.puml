@@ -9,8 +9,7 @@ package edu.oakland.production.middleware01 {
         {abstract} + void storeLocationDataPoint()
         ' Called by Middleware 2 in between the 2 "yes" branches
         .. Use Case 2 ..
-        {abstract} + String attemptToRegainGpsLock(String satelliteName)
-        {abstract} + String evaluateGpsSignalStrength(boolean signalValid)
+        {abstract} + String evaluateGpsSignalStrength(Satellite satellite)
         ' Can we print from evaluate? If not, need a way to surface mode
         ' Get mode methods
     }
