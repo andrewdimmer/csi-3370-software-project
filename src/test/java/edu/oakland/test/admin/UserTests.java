@@ -38,8 +38,11 @@ public class UserTests {
   void trackDataIsRequested() {
     DisplayCommInterfaceStub stub = new DisplayCommInterfaceStub();
     User user = new User(stub); 
-
-
+    int rfid = generateRandomNumber();
+    TrackData outputData = stub.receiveRfidRequest(rfid);
+    DisplayCommInterfaceStub expected = new DisplayCommInterfaceStub();
+    TrackData expectedData = expected.receiveRfidRequest(rfid);
+    assertEquals(expectedData, outputData);
   }  
   
   private int generateRandomNumber() {
