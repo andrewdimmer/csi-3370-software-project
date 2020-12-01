@@ -10,9 +10,8 @@ import edu.oakland.test.middleware02.DatabaseCommInterfaceStub;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("MiddlewareCommDatabaseInterfaceImplementationTests Unit Tests")
+@DisplayName("MiddlewareCommDatabaseInterfaceImplementation Unit Tests")
 public class MiddlewareCommDatabaseInterfaceImplementationTests {
-  int rfid;
   
   @Test
   @DisplayName("Rfid In Is the same Rfid Out")

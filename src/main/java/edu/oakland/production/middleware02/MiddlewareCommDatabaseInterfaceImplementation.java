@@ -7,15 +7,15 @@ import edu.oakland.production.middleware02.MiddlewareCommDatabaseInterface;
 
 public class MiddlewareCommDatabaseInterfaceImplementation implements 
       MiddlewareCommDatabaseInterface {
-  int rfid;
-  
+
   private DatabaseCommInterface databaseCommInterface;
   
   /**
-     * The constructor for MiddlewareCommDatabaseInterfaceImplementation.
-     */
-  public 
-      MiddlewareCommDatabaseInterfaceImplementation(DatabaseCommInterface databaseCommInterface) {
+   * The constructor for MiddlewareCommDatabaseInterfaceImplementation.
+   */
+  public MiddlewareCommDatabaseInterfaceImplementation(
+      DatabaseCommInterface databaseCommInterface
+  ) {
     if (databaseCommInterface == null) {
       throw new IllegalArgumentException("databaseCommInterface cannot be null");
     }
