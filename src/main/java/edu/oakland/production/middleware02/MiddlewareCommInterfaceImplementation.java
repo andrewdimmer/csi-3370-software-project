@@ -11,7 +11,7 @@ public class MiddlewareCommInterfaceImplementation implements MiddlewareCommInte
   int rfid;
   
   private MiddlewareCommLinkManager middlewareManager;
-  
+
   /**
    * Creates a MiddlewareCommInterfaceImplementation to recive the Rfid.
    *
@@ -20,7 +20,7 @@ public class MiddlewareCommInterfaceImplementation implements MiddlewareCommInte
   */
 
   public MiddlewareCommInterfaceImplementation(MiddlewareCommLinkManager middlewareManager) {
-    if(middlewareManager == null) {
+    if (middlewareManager == null) {
       throw new IllegalArgumentException("middlewareManager cannot be null");
     }
     this.middlewareManager = middlewareManager;
