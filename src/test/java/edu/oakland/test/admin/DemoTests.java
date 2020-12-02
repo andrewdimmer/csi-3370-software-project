@@ -66,6 +66,15 @@ public class DemoTests {
   }
 
   @Test
+  @DisplayName("run Scanner Input is Not Null")
+  void runScannerInputIsUserInput() {
+    Demo demo = new Demo();
+    assertThrows(IllegalArgumentException.class, () -> {
+      demo.run(null);
+    });
+  }
+
+  @Test
   @DisplayName("Secure Lock Tracking System Initialization Successful")
   void initSuccessful() {
     Demo demo = new Demo();
