@@ -27,14 +27,17 @@ public class TrackDataPlotterTests {
   @Test
   @DisplayName("Null TrackData is not permitted")
   void nullTrackDataNotAllowed() {
-    assertThrows(IllegalArgumentException.class, () -> new TrackDataPlotter(null));
+    assertThrows(IllegalArgumentException.class, () -> {
+      new TrackDataPlotter(null);
+    });
   }
 
   @Test
   @DisplayName("Invalid TrackData is not permitted")
   void invalidTrackDataNotAllowed() {
-    assertThrows(IllegalArgumentException.class, () ->
+    assertThrows(IllegalArgumentException.class, () -> {
       new TrackDataPlotter(generateInvalidTrackData());
+    });
   }
 
   private TrackData generateValidTrackData() {
