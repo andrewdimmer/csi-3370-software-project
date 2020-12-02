@@ -13,6 +13,7 @@ public class MiddlewareGisManagerStub implements MiddlewareGisManager {
   public MiddlewareGisManagerStub() {
     
   }
+  
   public MiddlewareGisManagerStub(LocationDataPoint locationDataPoint1) {
     this.locationDataPoint1 = locationDataPoint1;
   }
