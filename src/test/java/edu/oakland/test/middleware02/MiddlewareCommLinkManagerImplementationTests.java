@@ -24,8 +24,9 @@ public class MiddlewareCommLinkManagerImplementationTests {
     int rfid2 = (int) (Math.floor(100000 + Math.random() * 900000));
     MiddlewareCommLinkManager mid02Interface = new MiddlewareCommLinkManagerImplementation(
         new MiddlewareCommDatabaseInterfaceStub(rfid1),
-        new MiddlewareGisManagerStub(generateRandomLocationDataPoint())
+        new MiddlewareGisManagerStub()
     );
+    
     TrackData trackData = mid02Interface.parseRfid(rfid2);
     assertEquals("hello", trackData.getStatusMessage()); //write prod code to trigger
   }
@@ -38,14 +39,12 @@ public class MiddlewareCommLinkManagerImplementationTests {
     MiddlewareGisManagerStub stub2 = new MiddlewareGisManagerStub(
         generateRandomLocationDataPoint()
       );
-    MiddlewareCommLinkManager mid03Interface = new MiddlewareCommLinkManagerImplementation(
+    MiddlewareCommLinkManager mid02Manager = new MiddlewareCommLinkManagerImplementation(
         new MiddlewareCommDatabaseInterfaceStub(rfid3),
         new MiddlewareGisManagerStub(generateRandomLocationDataPoint())
     );
     stub2.storeLocationDataPoint();
-    
-
-    assertEquals(mid03Interface.getLocation2(), ranLocationDataPoint);
+    assertEquals(mid02Manager, ranLocationDataPoint);
   }
 
   @Test 

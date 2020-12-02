@@ -6,4 +6,5 @@ public interface MiddlewareCommLinkManager {
 
   public TrackData parseRfid(int rfid);
 
+
 }

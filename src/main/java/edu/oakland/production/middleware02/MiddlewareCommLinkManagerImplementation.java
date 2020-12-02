@@ -14,12 +14,12 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
 
   private float calculateLocationData() {
     
-    return 1;
+    return null;
   } 
 
   private float calculateTrackData() {
 
-    return 1;
+    return null;
   }
 
   /**
