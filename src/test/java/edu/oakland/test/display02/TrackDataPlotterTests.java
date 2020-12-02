@@ -30,11 +30,10 @@ public class TrackDataPlotterTests {
   @Test
   @DisplayName("Null TrackData is not permitted")
   void nullTrackDataNotAllowed() {
-    Trackdata data = null;
-    TrackDataPlotter plotter = new TrackDataPlotter(data);
-    Throwable exception = assertThrows(IllegalArgumentException.class,
-	  	() -> plotter.displayChart());
-  assertEquals("Track data is null", exception.getMessage());
+	Trackdata data = null;
+	TrackDataPlotter plotter = new TrackDataPlotter(data);
+	Throwable exception = assertThrows(IllegalArgumentException.class, () -> plotter.displayChart());
+	assertEquals("Track data is null", exception.getMessage());
   }
 
   @Test
@@ -46,11 +45,11 @@ public class TrackDataPlotterTests {
   }
 
   private TrackData generateValidTrackData() {
-  TrackData validData = new TrackData(
-    generateRandomLocationDataPointsArray(5),
-    generateRandomCourse(),
-    generateRandomSpeed());
-  return validData;
+    TrackData validData = new TrackData(
+      generateRandomLocationDataPointsArray(5),
+      generateRandomCourse(),
+      generateRandomSpeed());
+    return validData;
   }
 
   private TrackData generateInvalidTrackData() {
