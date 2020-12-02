@@ -5,29 +5,25 @@ import edu.oakland.production.middleware02.MiddlewareCommLinkManager;
 import edu.oakland.production.middleware02.MiddlewareCommDatabaseInterface;
 import edu.oakland.production.middleware01.MiddlewareGisManager;
 import edu.oakland.helper.admin.LocationDataPoint;
-/** 
-* Change this
-*
-*/
 
 public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLinkManager {
 
   private MiddlewareCommDatabaseInterface midDatabaseInterface;
   private MiddlewareGisManager gisManager;
 
-  private float calculateLocationData(){
+  private float calculateLocationData() {
     
     return 1;
   } 
 
-  private float calculateTrackData(){
+  private float calculateTrackData() {
 
     return 1;
   }
 
   LocationDataPoint[] locations = new LocationDataPoint[0];
 
-  public TrackData parseRfid(int rfid){
+  public TrackData parseRfid(int rfid) {
 
     TrackData trackData = new TrackData(locations);
     return trackData;
