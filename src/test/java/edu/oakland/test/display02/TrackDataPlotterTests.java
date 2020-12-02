@@ -35,8 +35,9 @@ public class TrackDataPlotterTests {
   @Test
   @DisplayName("Invalid TrackData is not permitted")
   void invalidTrackDataNotAllowed() {
+    TrackData invalidData = generateInvalidTrackData();
     assertThrows(IllegalArgumentException.class, () -> {
-      new TrackDataPlotter(generateInvalidTrackData());
+      new TrackDataPlotter(invalidData);
     });
   }
 
