@@ -5,11 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import edu.oakland.helper.admin.LocationDataPoint;
+import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.middleware02.MiddlewareCommLinkManager;
 import edu.oakland.production.middleware02.MiddlewareCommLinkManagerImplementation;
-import edu.oakland.helper.admin.TrackData;
 import edu.oakland.test.middleware01.MiddlewareGisManagerStub;
-
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 import org.junit.jupiter.api.DisplayName;
@@ -36,8 +35,8 @@ public class MiddlewareCommLinkManagerImplementationTests {
   void storeRequestSent() {
     int rfid3 = (int) (Math.floor(100000 + Math.random() * 900000));
     LocationDataPoint ranLocationDataPoint = generateRandomLocationDataPoint();
-    MiddlewareGisManagerStub stub2 = new MiddlewareGisManagerStub
-        (generateRandomLocationDataPoint()
+    MiddlewareGisManagerStub stub2 = new MiddlewareGisManagerStub(
+    generateRandomLocationDataPoint()
       );
     MiddlewareCommLinkManager mid03Interface = new MiddlewareCommLinkManagerImplementation(
         new MiddlewareCommDatabaseInterfaceStub(rfid3),
@@ -81,17 +80,17 @@ public class MiddlewareCommLinkManagerImplementationTests {
           new MiddlewareCommDatabaseInterfaceStub(0), 
           null
       );
-      });
+    });
   }
 
   @Test 
   @DisplayName("Gis Manager is Not Null")
   void gisManagerIsNotNull() {
     assertThrows(IllegalArgumentException.class, () -> {
-        new MiddlewareCommLinkManagerImplementation(null, 
+      new MiddlewareCommLinkManagerImplementation(null, 
           new MiddlewareGisManagerStub(generateRandomLocationDataPoint()
       ));
-      });
+    });
   }
 
   private LocationDataPoint generateRandomLocationDataPoint() {

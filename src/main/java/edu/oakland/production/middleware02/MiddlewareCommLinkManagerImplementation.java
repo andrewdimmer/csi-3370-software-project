@@ -21,19 +21,24 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
 
     return 1;
   }
+
 /**
  * sets locationdatapoint[] into object called locations.
  */
-  LocationDataPoint[] locations = new LocationDataPoint[0];
 
+  LocationDataPoint[] locations = new LocationDataPoint[0];
+/**
+ * we parserfid to get locationdatapoint.
+ */
   public TrackData parseRfid(int rfid) {
 
     TrackData trackData = new TrackData(locations);
     return trackData;
   }
-  /**
-   * MiddlewareComLinkManagerImplementaions takes in a paraameter of Gismanager and Middatabase interface. 
-   */
+
+    /**
+     * MiddlewareComLinkManagerImplementaions takes paraameter of Gismanager and Midatabaseinterface. 
+    */
 
   public MiddlewareCommLinkManagerImplementation(
       MiddlewareCommDatabaseInterface midDatabaseInterface,
