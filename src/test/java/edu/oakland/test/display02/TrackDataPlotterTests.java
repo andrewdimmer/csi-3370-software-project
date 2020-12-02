@@ -33,7 +33,7 @@ public class TrackDataPlotterTests {
     Trackdata data = null;
     TrackDataPlotter plotter = new TrackDataPlotter(data);
     Throwable exception = assertThrows(IllegalArgumentException.class,
-        () -> plotter.displayChart());
+                () -> plotter.displayChart());
     assertEquals("Track data is null", exception.getMessage());
   }
 
@@ -42,7 +42,7 @@ public class TrackDataPlotterTests {
   void invalidTrackDataNotAllowed() {
     TrackDataPlotter plotter = new TrackDataPlotter(generateInvalidTrackData());
     Throwable exception = assertThrows(IllegalArgumentException.class,
-        () -> plotter.displayChart());
+                () -> plotter.displayChart());
     assertEquals("Not enough points to create a valid TrackData object", exception.getMessage());
   }
 
@@ -51,7 +51,7 @@ public class TrackDataPlotterTests {
         generateRandomLocationDataPointsArray(5),
         generateRandomCourse(),
         generateRandomSpeed());
-  return validData;
+    return validData;
   }
 
   private TrackData generateInvalidTrackData() {
@@ -59,7 +59,7 @@ public class TrackDataPlotterTests {
         generateRandomLocationDataPointsArray(2),
         generateRandomCourse(),
         generateRandomSpeed());
-  return invalidData;
+    return invalidData;
   }
 
 
@@ -84,7 +84,7 @@ public class TrackDataPlotterTests {
     for (int index = 0; index < locations.length; index++) {
       locations[index] = generateRandomLocationDataPoint();
     }
-  return locations;
+    return locations;
   }
 
   private LocationDataPoint generateRandomLocationDataPoint() {
