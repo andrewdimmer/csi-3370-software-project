@@ -1,6 +1,7 @@
 package edu.oakland.test.admin;
 
 import edu.oakland.helper.admin.Satellite;
+import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
 import edu.oakland.production.display01.DisplayGpsInterface;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
@@ -13,20 +14,20 @@ import java.time.LocalDateTime;
  */
 public class DisplayGpsInterfaceStub implements DisplayGpsInterface {
 
-  public boolean receiveGpsSignal(Satellite satelliteSignal) {
-    return true;
-  }
-
-  public String reportGpsSignalLoss(Satellite satelliteSignal) {
+  public String receiveGpsSignal(Satellite satelliteSignal) {
     return "";
   }
 
-  public int recheckSignalStrength(Satellite satelliteSignal) {
-    return 0;
+  public SatelliteSignalCheckRequest reportGpsSignalLoss(Satellite satelliteSignal) {
+    return null;
   }
 
-  public int checkSignalStrength(Satellite satelliteSignal) {
-    return 0;
+  public SatelliteSignalCheckRequest recheckSignalStrength(Satellite satelliteSignal) {
+    return null;
+  }
+
+  public SatelliteSignalCheckRequest checkSignalStrength(Satellite satelliteSignal) {
+    return null;
   }
 
 }

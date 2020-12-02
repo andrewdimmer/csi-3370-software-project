@@ -19,6 +19,7 @@ public class GpsSystem {
 
   private final DisplayGpsInterface displayGpsInterface;
   private final Satellite[] satellites;
+  private int satelliteInUse = 0;
 
   /**
    * Creates a GpsSystem object to store the GpsInterface and satellites.
@@ -65,6 +66,17 @@ public class GpsSystem {
       throw new IllegalArgumentException("Scanner input must not be null");
     }
   }
+
+  /**
+   * Method to run UseCase 2, using supplied Scanner and assuming the current satellite has lost
+   * the signal already.
+   *
+   * @param input   The scanner object we are passing in.
+   *
+   */
+  private void runUseCase2NoPrompt(Scanner input) {
+    
+  }
   
   /**
    * Method to set the instance variable satellites based on the paramaters that are passed in. 
@@ -84,7 +96,8 @@ public class GpsSystem {
     
     Random rnd = new Random();
     for (int i = 0; i < satelliteNames.length; i++) {
-      this.satellites[i] = new Satellite(satelliteNames[i], rnd.nextInt(10) + 1);
+      // Note: when the system starts up, all Satellites are connected.
+      this.satellites[i] = new Satellite(satelliteNames[i], rnd.nextInt(5) + 5);
       this.satellites[i].satelliteInit(incrementLatAmount, 
           incrementLngAmount, initLocationDataPoint);
     }

@@ -114,6 +114,36 @@ public class GpsSystemTests {
       fail(e.getMessage());
     }
   }
+
+  @Test
+  @DisplayName("Use Case 1 Scanner Not Null")
+  void uc1ScannerNotNull() {
+    DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
+    Random rnd = new Random();
+    String[] satelliteNames = new String[10];
+    for (int i = 0; i < 10; i++) {
+      satelliteNames[i] = generateRandomNames();
+    }
+    GpsSystem gpsSystem = new GpsSystem(stub, satelliteNames);
+    assertThrows(IllegalArgumentException.class, () -> {
+      gpsSystem.runUseCase1(null);
+    });
+  }
+
+  @Test
+  @DisplayName("Use Case 2 Scanner Not Null")
+  void uc2ScannerNotNull() {
+    DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
+    Random rnd = new Random();
+    String[] satelliteNames = new String[10];
+    for (int i = 0; i < 10; i++) {
+      satelliteNames[i] = generateRandomNames();
+    }
+    GpsSystem gpsSystem = new GpsSystem(stub, satelliteNames);
+    assertThrows(IllegalArgumentException.class, () -> {
+      gpsSystem.runUseCase2(null);
+    });
+  }
   
   
   
