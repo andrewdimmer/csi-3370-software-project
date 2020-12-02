@@ -40,12 +40,24 @@ import java.lang.IllegalArgumentException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * The main runner class for the Secure Lock Tracking Software Demo.
+ *
+ * @author Andrew Dimmer
+ * @version %I%, %G%
+ */
 public class Demo {
 
   private GpsSystem gpsSystem;
   private User user;
   private boolean wasRun = false;
 
+  /**
+   * Gets the system RFID number from the user.
+   *
+   * @param input The scanner used by the user.
+   * @return The system RFID number.
+   */
   public int configureRfid(Scanner input) {
     if (input == null) {
       throw new IllegalArgumentException("Scanner cannot be null");
@@ -55,6 +67,12 @@ public class Demo {
     return input.nextInt();
   }
 
+  /**
+   * Gets the list of connected satellite to be used for the demo from the user.
+   *
+   * @param input The scanner used by the user.
+   * @return The list of satellite names to use in the demo.
+   */
   public String[] configureSatelliteNames(Scanner input) {
     if (input == null) {
       throw new IllegalArgumentException("Scanner cannot be null");

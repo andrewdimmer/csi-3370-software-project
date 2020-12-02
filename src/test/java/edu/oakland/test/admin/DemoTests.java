@@ -94,7 +94,6 @@ public class DemoTests {
   @Test
   @DisplayName("Run Method Terminates on Quit Command")
   void runCanQuit() {
-    Demo demo = new Demo();
     int rfid = generateRandomNumber();
     int count = generateRandomStringLength();
     String inputString = String.valueOf(rfid) + "\n";
@@ -103,6 +102,7 @@ public class DemoTests {
       inputString += generateRandomString(generateRandomStringLength()) + "\n";
     }
     inputString += "q\n";
+    Demo demo = new Demo();
     demo.run(new Scanner(inputString));
     assertTrue(demo.getWasRun());
   }
