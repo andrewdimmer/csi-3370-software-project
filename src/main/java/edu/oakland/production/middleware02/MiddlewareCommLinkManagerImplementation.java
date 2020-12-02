@@ -1,10 +1,11 @@
 package edu.oakland.production.middleware02;
 
-import edu.oakland.helper.admin.TrackData;
-import edu.oakland.production.middleware02.MiddlewareCommLinkManager;
-import edu.oakland.production.middleware02.MiddlewareCommDatabaseInterface;
-import edu.oakland.production.middleware01.MiddlewareGisManager;
 import edu.oakland.helper.admin.LocationDataPoint;
+import edu.oakland.helper.admin.TrackData;
+import edu.oakland.production.middleware01.MiddlewareGisManager;
+import edu.oakland.production.middleware02.MiddlewareCommDatabaseInterface;
+import edu.oakland.production.middleware02.MiddlewareCommLinkManager;
+
 
 public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLinkManager {
 
@@ -20,7 +21,9 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
 
     return 1;
   }
-
+/**
+ * sets locationdatapoint[] into object called locations.
+ */
   LocationDataPoint[] locations = new LocationDataPoint[0];
 
   public TrackData parseRfid(int rfid) {
@@ -28,6 +31,9 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
     TrackData trackData = new TrackData(locations);
     return trackData;
   }
+  /**
+   * MiddlewareComLinkManagerImplementaions takes in a paraameter of Gismanager and Middatabase interface. 
+   */
 
   public MiddlewareCommLinkManagerImplementation(
       MiddlewareCommDatabaseInterface midDatabaseInterface,

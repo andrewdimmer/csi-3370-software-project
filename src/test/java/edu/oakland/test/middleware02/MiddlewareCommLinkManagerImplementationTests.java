@@ -1,14 +1,15 @@
 package edu.oakland.test.middleware02;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import edu.oakland.helper.admin.LocationDataPoint;
-import edu.oakland.production.middleware02.MiddlewareCommLinkManagerImplementation;
 import edu.oakland.production.middleware02.MiddlewareCommLinkManager;
-import edu.oakland.test.middleware01.MiddlewareGisManagerStub;
+import edu.oakland.production.middleware02.MiddlewareCommLinkManagerImplementation;
 import edu.oakland.helper.admin.TrackData;
+import edu.oakland.test.middleware01.MiddlewareGisManagerStub;
+
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 import org.junit.jupiter.api.DisplayName;
@@ -16,6 +17,7 @@ import org.junit.jupiter.api.Test;
 
 @DisplayName("MiddlewareCommLinkManagerImplementation Unit Tests")
 public class MiddlewareCommLinkManagerImplementationTests {
+
   @Test 
   @DisplayName("Rfid Does Not Match")
   void rfidDoesNotMatchStopsTestCase() {
@@ -34,7 +36,9 @@ public class MiddlewareCommLinkManagerImplementationTests {
   void storeRequestSent() {
     int rfid3 = (int) (Math.floor(100000 + Math.random() * 900000));
     LocationDataPoint ranLocationDataPoint = generateRandomLocationDataPoint();
-    MiddlewareGisManagerStub stub2 = new MiddlewareGisManagerStub(generateRandomLocationDataPoint());
+    MiddlewareGisManagerStub stub2 = new MiddlewareGisManagerStub
+        (generateRandomLocationDataPoint()
+      );
     MiddlewareCommLinkManager mid03Interface = new MiddlewareCommLinkManagerImplementation(
         new MiddlewareCommDatabaseInterfaceStub(rfid3),
         new MiddlewareGisManagerStub(generateRandomLocationDataPoint())
@@ -50,41 +54,48 @@ public class MiddlewareCommLinkManagerImplementationTests {
   void emptyDatabaseReturnsEmptyTrackData() {
       
   }
+
   @Test 
   @DisplayName("Partial data Returns Partial Track Data")
   void notEnoughDataReturnsPartialTrackData() {
       
   }
+
   @Test 
   @DisplayName("Enough Data Returns Full Data")
   void enoughTrackDataReturnsFullData() {
       
   }
+
   @Test
   @DisplayName("Stored data is Stored data") 
   void storedTrackDataCheck() {
       
   }
+
   @Test 
   @DisplayName("Comm Database Interface is not Null")
-  void commDatabaseInterfaceIsNotNull(){
-      assertThrows(IllegalArgumentException.class, () -> {
+  void commDatabaseInterfaceIsNotNull() {
+    assertThrows(IllegalArgumentException.class, () -> {
       new MiddlewareCommLinkManagerImplementation(
           new MiddlewareCommDatabaseInterfaceStub(0), 
           null
       );
-    });
+      });
   }
+
   @Test 
   @DisplayName("Gis Manager is Not Null")
   void gisManagerIsNotNull() {
-      assertThrows(IllegalArgumentException.class, () -> {
-      new MiddlewareCommLinkManagerImplementation(null, new MiddlewareGisManagerStub(generateRandomLocationDataPoint()));
-    });
+    assertThrows(IllegalArgumentException.class, () -> {
+        new MiddlewareCommLinkManagerImplementation(null, 
+          new MiddlewareGisManagerStub(generateRandomLocationDataPoint()
+      ));
+      });
   }
 
   private LocationDataPoint generateRandomLocationDataPoint() {
-  return new LocationDataPoint(
+    return new LocationDataPoint(
     (float) (Math.random() * 180 - 90),
     (float) (Math.random() * 360 - 180),
     LocalDateTime.of(
