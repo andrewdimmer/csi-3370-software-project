@@ -1,20 +1,21 @@
 package edu.oakland.test.display02;
 
-import edu.oakland.helper.display02.TrackDataPlotter;
-import edu.oakland.helper.admin.TrackData;
 import edu.oakland.helper.admin.LocationDataPoint;
+import edu.oakland.helper.admin.TrackData;
+import edu.oakland.helper.display02.TrackDataPlotter;
 import edu.oakland.test.admin.TrackDataTests;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 import java.lang.IllegalArgumentException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 @DisplayName("Track Data Plotter Unit Tests")
 public class TrackDataPlotterTests {
-
 	@Test
 	@DisplayName("Plot is Displayed")
 	void plotIsDisplayed() {
@@ -92,7 +93,7 @@ public class TrackDataPlotterTests {
 				(int) (Math.random() * 28 + 1),
 				(int) (Math.random() * 24),
 				(int) (Math.random() * 60)
-				)
+			)
 		);
 	}
 }
