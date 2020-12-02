@@ -28,7 +28,7 @@ public class TrackDataPlotterTests {
   @Test
   @DisplayName("Null TrackData is not permitted")
   void nullTrackDataNotAllowed() {
-    Trackdata data = null;
+    TrackData data = null;
     TrackDataPlotter plotter = new TrackDataPlotter(data);
     Throwable exception = assertThrows(IllegalArgumentException.class,
                 () -> plotter.displayChart());
