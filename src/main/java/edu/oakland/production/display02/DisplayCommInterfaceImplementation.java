@@ -35,16 +35,16 @@ public class DisplayCommInterfaceImplementation implements DisplayCommInterface 
   * @return the TrackData
   */
   public TrackData receiveRfidRequest(int rfidNum) {
-    TrackData returnedTrackData = comm2Way.passRfidRequest(rfidNum);
+    TrackData returnedTd = comm2Way.passRfidRequest(rfidNum);
 
-    System.out.println("Course Direction: " + returnedTrackData.getCourseDirection());
-    System.out.println("Speed: " + returnedTrackData.getSpeed());
-    System.out.println("Location Data Points: " + Arrays.toString(returnedTrackData.getLocationDataPoints()));
-    System.out.println("Status: " + returnedTrackData.getStatusMessage());
+    System.out.println("Course Direction: " + returnedTd.getCourseDirection());
+    System.out.println("Speed: " + returnedTd.getSpeed());
+    System.out.println("Location Data Points: " + Arrays.toString(returnedTd.getLocationDataPoints()));
+    System.out.println("Status: " + returnedTd.getStatusMessage());
 
-    TrackDataPlotter plotter = new TrackDataPlotter(returnedTrackData);
+    TrackDataPlotter plotter = new TrackDataPlotter(returnedTd);
     plotter.displayPlot();
 
-    return returnedTrackData;
+    return returnedTd;
   }
 }
