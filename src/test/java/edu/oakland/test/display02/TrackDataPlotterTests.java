@@ -30,17 +30,19 @@ public class TrackDataPlotterTests {
   @Test
   @DisplayName("Null TrackData is not permitted")
   void nullTrackDataNotAllowed() {
-	Trackdata data = null;
-	TrackDataPlotter plotter = new TrackDataPlotter(data);
-	Throwable exception = assertThrows(IllegalArgumentException.class, () -> plotter.displayChart());
-	assertEquals("Track data is null", exception.getMessage());
+    Trackdata data = null;
+    TrackDataPlotter plotter = new TrackDataPlotter(data);
+    Throwable exception = assertThrows(IllegalArgumentException.class,
+    () -> plotter.displayChart());
+    assertEquals("Track data is null", exception.getMessage());
   }
 
   @Test
   @DisplayName("Invalid TrackData is not permitted")
   void invalidTrackDataNotAllowed() {
     TrackDataPlotter plotter = new TrackDataPlotter(generateInvalidTrackData());
-    Throwable exception = assertThrows(IllegalArgumentException.class, () -> plotter.displayChart());
+    Throwable exception = assertThrows(IllegalArgumentException.class,
+			() -> plotter.displayChart());
     assertEquals("Not enough points to create a valid TrackData object", exception.getMessage());
   }
 
@@ -49,14 +51,14 @@ public class TrackDataPlotterTests {
       generateRandomLocationDataPointsArray(5),
       generateRandomCourse(),
       generateRandomSpeed());
-    return validData;
+  return validData;
   }
 
   private TrackData generateInvalidTrackData() {
-  TrackData invalidData = new TrackData(
-    generateRandomLocationDataPointsArray(2),
-    generateRandomCourse(),
-    generateRandomSpeed());
+    TrackData invalidData = new TrackData(
+      generateRandomLocationDataPointsArray(2),
+      generateRandomCourse(),
+      generateRandomSpeed());
   return invalidData;
   }
 
@@ -88,15 +90,15 @@ public class TrackDataPlotterTests {
 
   private LocationDataPoint generateRandomLocationDataPoint() {
     return new LocationDataPoint(
-	  (float) (Math.random() * 180 - 90),
-	  (float) (Math.random() * 360 - 180),
-	  LocalDateTime.of(
-	    (int) (Math.random() * 50 + 1970),
-	    (int) (Math.random() * 12 + 1),
-	    (int) (Math.random() * 28 + 1),
-	    (int) (Math.random() * 24),
-	    (int) (Math.random() * 60)
-	  )
+      (float) (Math.random() * 180 - 90),
+      (float) (Math.random() * 360 - 180),
+      LocalDateTime.of(
+        (int) (Math.random() * 50 + 1970),
+        (int) (Math.random() * 12 + 1),
+        (int) (Math.random() * 28 + 1),
+        (int) (Math.random() * 24),
+        (int) (Math.random() * 60)
+      )
     );
   }
 }
