@@ -8,6 +8,8 @@ import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.helper.display02.TrackDataPlotter;
 import edu.oakland.test.admin.TrackDataTests;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -25,14 +27,15 @@ public class TrackDataPlotterTests {
     assertNotNull(plotter.chart);
   }
 
-	@Test
-	@DisplayName("Null TrackData is not permitted")
-	void nullTrackDataNotAllowed() {
-		TrackData data = null;
-		TrackDataPlotter plotter = new TrackDataPlotter(data);
-		Throwable exception = assertThrows(IllegalArgumentException.class, () -> plotter.displayChart());
-		assertEquals("Track data is null", exception.getMessage());
-	}
+  @Test
+  @DisplayName("Null TrackData is not permitted")
+  void nullTrackDataNotAllowed() {
+    Trackdata data = null;
+    TrackDataPlotter plotter = new TrackDataPlotter(data);
+    Throwable exception = assertThrows(IllegalArgumentException.class,
+	  	() -> plotter.displayChart());
+  assertEquals("Track data is null", exception.getMessage());
+  }
 
   @Test
   @DisplayName("Invalid TrackData is not permitted")
@@ -43,24 +46,24 @@ public class TrackDataPlotterTests {
   }
 
   private TrackData generateValidTrackData() {
-    TrackData validData = new TrackData(
-	  generateRandomLocationDataPointsArray(5),
-	  generateRandomCourse(),
-	  generateRandomSpeed());
-    return validData;
+  TrackData validData = new TrackData(
+    generateRandomLocationDataPointsArray(5),
+    generateRandomCourse(),
+    generateRandomSpeed());
+  return validData;
   }
 
   private TrackData generateInvalidTrackData() {
-    TrackData invalidData = new TrackData(
-	  generateRandomLocationDataPointsArray(2),
-	  generateRandomCourse(),
-	  generateRandomSpeed());
-    return invalidData;
+  TrackData invalidData = new TrackData(
+    generateRandomLocationDataPointsArray(2),
+    generateRandomCourse(),
+    generateRandomSpeed());
+  return invalidData;
   }
 
   /**
-   * Methods borrowed from our lovely admin
-   */
+  * Methods borrowed from our lovely admin.
+  */
   private float generateRandomCourse() {
 
     return (float) (Math.random() * 360);
@@ -79,22 +82,22 @@ public class TrackDataPlotterTests {
   private LocationDataPoint[] generateRandomLocationDataPointsArray(int length) {
     LocationDataPoint[] locations = new LocationDataPoint[length];
     for (int index = 0; index < locations.length; index++) {
-	  locations[index] = generateRandomLocationDataPoint();
+      locations[index] = generateRandomLocationDataPoint();
     }
-    return locations;
+  return locations;
   }
 
   private LocationDataPoint generateRandomLocationDataPoint() {
-	  return new LocationDataPoint(
-	    (float) (Math.random() * 180 - 90),
-	    (float) (Math.random() * 360 - 180),
-	    LocalDateTime.of(
-		  (int) (Math.random() * 50 + 1970),
-		  (int) (Math.random() * 12 + 1),
-		  (int) (Math.random() * 28 + 1),
-		  (int) (Math.random() * 24),
-		  (int) (Math.random() * 60)
-	    )
-	  );
-	}
+    return new LocationDataPoint(
+	  (float) (Math.random() * 180 - 90),
+	  (float) (Math.random() * 360 - 180),
+	  LocalDateTime.of(
+	    (int) (Math.random() * 50 + 1970),
+	    (int) (Math.random() * 12 + 1),
+	    (int) (Math.random() * 28 + 1),
+	    (int) (Math.random() * 24),
+	    (int) (Math.random() * 60)
+	  )
+    );
+  }
 }
