@@ -1,17 +1,17 @@
 package edu.oakland.test.display02;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.helper.display02.TrackDataPlotter;
 import edu.oakland.test.admin.TrackDataTests;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-
 import java.lang.IllegalArgumentException;
-import org.junit.jupiter.api.DisplayName;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 
@@ -25,14 +25,14 @@ public class TrackDataPlotterTests {
     assertNotNull(plotter.chart);
   }
 
-  @Test
-  @DisplayName("Null TrackData is not permitted")
-  void nullTrackDataNotAllowed() {
-    Trackdata data = null;
-    TrackDataPlotter plotter = new TrackDataPlotter(data);
-    Throwable exception = assertThrows(IllegalArgumentException.class, () -> plotter.displayChart());
-    assertEquals("Track data is null", exception.getMessage());
-  }
+	@Test
+	@DisplayName("Null TrackData is not permitted")
+	void nullTrackDataNotAllowed() {
+		TrackData data = null;
+		TrackDataPlotter plotter = new TrackDataPlotter(data);
+		Throwable exception = assertThrows(IllegalArgumentException.class, () -> plotter.displayChart());
+		assertEquals("Track data is null", exception.getMessage());
+	}
 
   @Test
   @DisplayName("Invalid TrackData is not permitted")
