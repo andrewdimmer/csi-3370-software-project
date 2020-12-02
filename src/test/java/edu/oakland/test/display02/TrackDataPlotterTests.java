@@ -36,7 +36,7 @@ public class TrackDataPlotterTests {
   @DisplayName("Invalid TrackData is not permitted")
   void invalidTrackDataNotAllowed() {
     Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
-        new TrackDataPlotter(generateInvalidTrackData());
+      new TrackDataPlotter(generateInvalidTrackData());
     });
     assertEquals("Not enough points to create a valid TrackData object", exception.getMessage());
   }
