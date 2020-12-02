@@ -16,6 +16,8 @@ import java.util.Arrays;
 public class DisplayCommInterfaceImplementation implements DisplayCommInterface {
 
   private DisplayComm2WayInterface comm2Way;
+  private TrackData data;
+  private TrackDataPlotter plotter;
 
   /**
   * Creates a DisplayCommInterfaceImplementation to receive the rfid.
@@ -36,14 +38,15 @@ public class DisplayCommInterfaceImplementation implements DisplayCommInterface 
   * @return the TrackData
   */
   public TrackData receiveRfidRequest(int rfidNum) {
-    TrackData data = comm2Way.passRfidRequest(rfidNum);
+    this.data = comm2Way.passRfidRequest(rfidNum);
 
+    System.out.println("Track Data for RFID tag number "+ rfidNum);
+    System.out.println("Location Data Points: " + Arrays.toString(data.getLocationDataPoints()));
     System.out.println("Course Direction: " + data.getCourseDirection());
     System.out.println("Speed: " + data.getSpeed());
-    System.out.println("Location Data Points: " + Arrays.toString(data.getLocationDataPoints()));
     System.out.println("Status: " + data.getStatusMessage());
 
-    TrackDataPlotter plotter = new TrackDataPlotter(data);
+    this.plotter = new TrackDataPlotter(data);
     plotter.displayPlot();
 
     return data;
