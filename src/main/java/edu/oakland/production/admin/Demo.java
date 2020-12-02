@@ -83,52 +83,55 @@ public class Demo {
       new ArrayList<TrackData>(),
       satelliteNames
     );
-    DatabaseGisManager database01_2 = new DatabaseGisManagerImplementation(database3);
-    DatabaseCommManager database02_2 = new DatabaseCommManagerImplementation(database3);
-    DatabaseGisInterface database01_1 = new DatabaseGisInterfaceImplementation(database01_2);
-    DatabaseCommInterface database02_1 = new DatabaseCommInterfaceImplementation(database02_2);
+    DatabaseGisManager database01Class2 = new DatabaseGisManagerImplementation(database3);
+    DatabaseCommManager database02Class2 = new DatabaseCommManagerImplementation(database3);
+    DatabaseGisInterface database01Class1 =
+        new DatabaseGisInterfaceImplementation(database01Class2);
+    DatabaseCommInterface database02Class1 =
+        new DatabaseCommInterfaceImplementation(database02Class2);
 
     // Stand Up Middleware01
-    MiddlewareGisManager middleware01_3 = new MiddlewareGisManagerImplementation(database01_1);
-    MiddlewareGisProcessor middleware01_2 = new MiddlewareGisProcessorImplementation(
-        middleware01_3
+    MiddlewareGisManager middleware01Class3 =
+        new MiddlewareGisManagerImplementation(database01Class1);
+    MiddlewareGisProcessor middleware01Class2 = new MiddlewareGisProcessorImplementation(
+        middleware01Class3
     );
-    MiddlewareGisInterface middleware01_1 = new MiddlewareGisInterfaceImplementation(
-        middleware01_2
+    MiddlewareGisInterface middleware01Class1 = new MiddlewareGisInterfaceImplementation(
+        middleware01Class2
     );
 
     // Stand Up Middleware02
-    MiddlewareCommDatabaseInterface middleware02_3 =
-        new MiddlewareCommDatabaseInterfaceImplementation(database02_1);
-    MiddlewareCommLinkManager middleware02_2 = new MiddlewareCommLinkManagerImplementation(
-        middleware02_3,
-        middleware01_3
+    MiddlewareCommDatabaseInterface middleware02Class3 =
+        new MiddlewareCommDatabaseInterfaceImplementation(database02Class1);
+    MiddlewareCommLinkManager middleware02Class2 = new MiddlewareCommLinkManagerImplementation(
+        middleware02Class3,
+        middleware01Class3
     );
-    MiddlewareCommInterface middleware02_1 = new MiddlewareCommInterfaceImplementation(
-        middleware02_2
+    MiddlewareCommInterface middleware02Class1 = new MiddlewareCommInterfaceImplementation(
+        middleware02Class2
     );
 
     // Stand Up Display01
-    DisplayGpsManager display01_3 = new DisplayGpsManagerImplementation(middleware01_1);
-    DisplayGpsReceiver display01_2 = new DisplayGpsReceiverImplementation(
-        display01_3
+    DisplayGpsManager display01Class3 = new DisplayGpsManagerImplementation(middleware01Class1);
+    DisplayGpsReceiver display01Class2 = new DisplayGpsReceiverImplementation(
+        display01Class3
     );
-    DisplayGpsInterface display01_1 = new DisplayGpsInterfaceImplementation(
-        display01_2
+    DisplayGpsInterface display01Class1 = new DisplayGpsInterfaceImplementation(
+        display01Class2
     );
 
     // Stand Up Display02
-    DisplayCommManager display02_3 = new DisplayCommManagerImplementation(middleware02_1);
-    DisplayComm2WayInterface display02_2 = new DisplayComm2WayInterfaceImplementation(
-        display02_3
+    DisplayCommManager display02Class3 = new DisplayCommManagerImplementation(middleware02Class1);
+    DisplayComm2WayInterface display02Class2 = new DisplayComm2WayInterfaceImplementation(
+        display02Class3
     );
-    DisplayCommInterface display02_1 = new DisplayCommInterfaceImplementation(
-        display02_2
+    DisplayCommInterface display02Class1 = new DisplayCommInterfaceImplementation(
+        display02Class2
     );
 
     // Stand Up End User Classes
-    gpsSystem = new GpsSystem(display01_1, satelliteNames);
-    user = new User(display02_1);
+    gpsSystem = new GpsSystem(display01Class1, satelliteNames);
+    user = new User(display02Class1);
   }
 
   /**
