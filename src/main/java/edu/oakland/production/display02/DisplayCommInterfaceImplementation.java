@@ -40,7 +40,7 @@ public class DisplayCommInterfaceImplementation implements DisplayCommInterface 
   public TrackData receiveRfidRequest(int rfidNum) {
     this.data = comm2Way.passRfidRequest(rfidNum);
 
-    System.out.println("Track Data for RFID tag number "+ rfidNum);
+    System.out.println("Track Data for RFID tag number " + rfidNum);
     System.out.println("Location Data Points: " + Arrays.toString(data.getLocationDataPoints()));
     System.out.println("Course Direction: " + data.getCourseDirection());
     System.out.println("Speed: " + data.getSpeed());
