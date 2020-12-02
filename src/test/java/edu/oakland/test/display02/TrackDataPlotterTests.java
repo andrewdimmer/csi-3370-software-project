@@ -8,8 +8,6 @@ import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.helper.display02.TrackDataPlotter;
 import edu.oakland.test.admin.TrackDataTests;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
