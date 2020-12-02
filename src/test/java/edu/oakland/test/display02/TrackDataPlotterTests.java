@@ -51,9 +51,7 @@ public class TrackDataPlotterTests {
 
   private TrackData generateInvalidTrackData() {
     TrackData invalidData = new TrackData(
-        generateRandomLocationDataPointsArray(2),
-        generateRandomCourse(),
-        generateRandomSpeed());
+        generateRandomLocationDataPointsArray(2);
     return invalidData;
   }
 
