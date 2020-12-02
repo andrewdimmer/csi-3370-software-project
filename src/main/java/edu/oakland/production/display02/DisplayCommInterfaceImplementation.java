@@ -2,6 +2,7 @@ package edu.oakland.production.display02;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
+import edu.oakland.helper.display02.TrackDataPlotter;
 import edu.oakland.production.display02.DisplayComm2WayInterface;
 import edu.oakland.production.display02.DisplayCommInterface;
 import java.lang.IllegalArgumentException;
@@ -35,16 +36,16 @@ public class DisplayCommInterfaceImplementation implements DisplayCommInterface 
   * @return the TrackData
   */
   public TrackData receiveRfidRequest(int rfidNum) {
-    TrackData returnedTd = comm2Way.passRfidRequest(rfidNum);
+    TrackData data = comm2Way.passRfidRequest(rfidNum);
 
-    System.out.println("Course Direction: " + returnedTd.getCourseDirection());
-    System.out.println("Speed: " + returnedTd.getSpeed());
-    System.out.println("Location Data Points: " + Arrays.toString(returnedTd.getLocationDataPoints()));
-    System.out.println("Status: " + returnedTd.getStatusMessage());
+    System.out.println("Course Direction: " + data.getCourseDirection());
+    System.out.println("Speed: " + data.getSpeed());
+    System.out.println("Location Data Points: " + Arrays.toString(data.getLocationDataPoints()));
+    System.out.println("Status: " + data.getStatusMessage());
 
-    TrackDataPlotter plotter = new TrackDataPlotter(returnedTd);
+    TrackDataPlotter plotter = new TrackDataPlotter(data);
     plotter.displayPlot();
 
-    return returnedTd;
+    return data;
   }
 }
