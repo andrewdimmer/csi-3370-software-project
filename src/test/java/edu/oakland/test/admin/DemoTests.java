@@ -76,6 +76,37 @@ public class DemoTests {
     assertTrue(demo.getGpsSystem() != null && demo.getUser() != null);
   }
 
+  // @Test
+  // @DisplayName("Run Method Handles Use Case Errors")
+  // void runHandlesUseCaseErrors() {
+  //   Demo demo = new Demo();
+  //   int count = generateRandomNumber();
+  //   String[] inputSatelliteNames = new String[count];
+  //   String inputString = String.valueOf(count) + "\n";
+  //   for (int index = 0; index < count; index++) {
+  //     String satelliteName = generateRandomString(generateRandomStringLength());
+  //     inputSatelliteNames[index] = satelliteName;
+  //     inputString += satelliteName + "\n";
+  //   }
+  //   assertTrue(demo.getGpsSystem() != null && demo.getUser() != null);
+  // }
+
+  @Test
+  @DisplayName("Run Method Terminates on Quit Command")
+  void runCanQuit() {
+    Demo demo = new Demo();
+    int rfid = generateRandomNumber();
+    int count = generateRandomStringLength();
+    String inputString = String.valueOf(rfid) + "\n";
+    inputString += String.valueOf(count) + "\n";
+    for (int index = 0; index < count; index++) {
+      inputString += generateRandomString(generateRandomStringLength()) + "\n";
+    }
+    inputString += "q\n";
+    demo.run(new Scanner(inputString));
+    assertTrue(demo.getWasRun());
+  }
+
   private int generateRandomNumber() {
     return (int) (Math.random() * 100); 
   }

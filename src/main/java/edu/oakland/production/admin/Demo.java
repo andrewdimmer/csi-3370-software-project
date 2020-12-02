@@ -44,6 +44,7 @@ public class Demo {
 
   private GpsSystem gpsSystem;
   private User user;
+  private boolean wasRun = false;
 
   public int configureRfid(Scanner input) {
     if (input == null) {
@@ -78,10 +79,10 @@ public class Demo {
   public void initSecureLockTrackSystem(int systemRfid, String[] satelliteNames) {
     // Stand Up Database
     DatabasePersistentStorage database3 = new DatabasePersistentStorageImplementation(
-      systemRfid,
-      new ArrayList<LocationDataPoint>(),
-      new ArrayList<TrackData>(),
-      satelliteNames
+        systemRfid,
+        new ArrayList<LocationDataPoint>(),
+        new ArrayList<TrackData>(),
+        satelliteNames
     );
     DatabaseGisManager database01Class2 = new DatabaseGisManagerImplementation(database3);
     DatabaseCommManager database02Class2 = new DatabaseCommManagerImplementation(database3);
@@ -135,6 +136,61 @@ public class Demo {
   }
 
   /**
+   * Allows each use case to begin depending on user's choice.
+   *
+   * @param input The scanner used by the user.
+   */
+  public void runUseCases(Scanner input) {
+    if (input == null) {
+      throw new IllegalArgumentException("Scanner cannot be null");
+    }
+    char mode = ' ';
+    do {
+      System.out.println("Select a mode to demo:");
+      System.out.println("1: View the current position and track data of a shipping container.");
+      System.out.println("2: Simulate Satellite Signal Change.");
+      System.out.println("q: Quit the Secure Lock Tracking System Demo.");
+      mode = input.nextLine().charAt(0);
+      try {
+        switch (mode) {
+          case '1':
+            gpsSystem.runUseCase1(input);
+            user.runUseCase1(input);
+            break;
+          case '2':
+            gpsSystem.runUseCase2(input);
+            break;
+          case 'q':
+            System.out.println("Exiting the Secure Lock Tracking System...");
+            break;
+          default:
+            System.out.println("Sorry... didn't quite catch that...");
+            break;
+        }
+      } catch (IllegalArgumentException e) {
+        System.out.println("Something didn't work right...");
+        System.out.println(e);
+      }
+    } while (mode != 'q');
+  }
+
+  /**
+   * Start the Secure Lock Tracking Software Demo.
+   *
+   * @param input The scanner used by the user.
+   */
+  public void run(Scanner input) {
+    if (input == null) {
+      throw new IllegalArgumentException("Scanner cannot be null");
+    }
+    int rfid = configureRfid(input);
+    String[] satelliteNames = configureSatelliteNames(input);
+    initSecureLockTrackSystem(rfid, satelliteNames);
+    runUseCases(input);
+    wasRun = true;
+  }
+
+  /**
    * Exposes the current GpsSystem for testing and verification. Not to be used for production.
    *
    * @return The GpsSystem object stored in the current instance of the Demo class.
@@ -151,25 +207,19 @@ public class Demo {
   public User getUser() {
     return user;
   }
-  
+
   /**
-   * Allows each use case to begin depending on user's choice.
+   * Exposes the wasRun attribute for testing and verification. Not to be used for production.
    *
-   * @param input The scanner used by the user.
+   * @return The boolean indicating the system was run.
    */
-  public void runUseCases(Scanner input) {
-    if (input == null) {
-      throw new IllegalArgumentException("Scanner cannot be null");
-    } 
+  public boolean getWasRun() {
+    return wasRun;
   }
 
   public static void main(String[] args) {
     System.out.println("Welcome to the Secure Lock Tracking Software!");
-    Demo demo = new Demo();
-    Scanner scanner = new Scanner(System.in);
-    int rfid = demo.configureRfid(scanner);
-    String[] satelliteNames = demo.configureSatelliteNames(scanner);
-    demo.initSecureLockTrackSystem(rfid, satelliteNames);
+    (new Demo()).run(new Scanner(System.in));
   }
 
 }
