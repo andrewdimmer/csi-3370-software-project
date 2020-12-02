@@ -5,6 +5,7 @@ import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.display02.DisplayComm2WayInterface;
 import edu.oakland.production.display02.DisplayCommInterface;
 import java.lang.IllegalArgumentException;
+import java.util.Arrays;
 
 /**
 * This class receives the rfid, evaluates it,
@@ -35,8 +36,15 @@ public class DisplayCommInterfaceImplementation implements DisplayCommInterface 
   */
   public TrackData receiveRfidRequest(int rfidNum) {
     TrackData returnedTrackData = comm2Way.passRfidRequest(rfidNum);
+
+    System.out.println("Course Direction: " + returnedTrackData.getCourseDirection());
+    System.out.println("Speed: " + returnedTrackData.getSpeed());
+    System.out.println("Location Data Points: " + Arrays.toString(returnedTrackData.getLocationDataPoints()));
+    System.out.println("Status: " + returnedTrackData.getStatusMessage());
+
     TrackDataPlotter plotter = new TrackDataPlotter(returnedTrackData);
     plotter.displayPlot();
+
     return returnedTrackData;
   }
 }
