@@ -36,7 +36,7 @@ public class MiddlewareCommLinkManagerImplementationTests {
     int rfid3 = (int) (Math.floor(100000 + Math.random() * 900000));
     LocationDataPoint ranLocationDataPoint = generateRandomLocationDataPoint();
     MiddlewareGisManagerStub stub2 = new MiddlewareGisManagerStub(
-    generateRandomLocationDataPoint()
+        generateRandomLocationDataPoint()
       );
     MiddlewareCommLinkManager mid03Interface = new MiddlewareCommLinkManagerImplementation(
         new MiddlewareCommDatabaseInterfaceStub(rfid3),
