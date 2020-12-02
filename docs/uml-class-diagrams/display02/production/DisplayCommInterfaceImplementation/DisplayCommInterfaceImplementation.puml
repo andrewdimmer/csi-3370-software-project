@@ -3,6 +3,8 @@
 package edu.oakland.production.display02 {
     class DisplayCommInterfaceImplementation {
         - DisplayComm2WayInterface receiver
+        - TrackData data
+        - TrackDataPlotter plotter
         __
         + DisplayCommInterface(DisplayComm2WayInterface receiver)
         .. Use Case 1 ..
