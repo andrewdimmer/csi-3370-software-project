@@ -22,25 +22,19 @@ public class TrackDataPlotterTests {
   void plotIsDisplayed() {
     TrackDataPlotter plotter = new TrackDataPlotter(generateValidTrackData());
     assertNotNull(plotter.chart);
-    //plotter.displayChart();
   }
 
   @Test
   @DisplayName("Null TrackData is not permitted")
   void nullTrackDataNotAllowed() {
-    Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
-      new TrackDataPlotter(null);
-    });
-    assertEquals("Track data is null", exception.getMessage());
+    assertThrows(IllegalArgumentException.class, () -> new TrackDataPlotter(null));
   }
 
   @Test
   @DisplayName("Invalid TrackData is not permitted")
   void invalidTrackDataNotAllowed() {
-    Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
+    assertThrows(IllegalArgumentException.class, () ->
       new TrackDataPlotter(generateInvalidTrackData());
-    });
-    assertEquals("Not enough points to create a valid TrackData object", exception.getMessage());
   }
 
   private TrackData generateValidTrackData() {
