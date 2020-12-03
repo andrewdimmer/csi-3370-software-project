@@ -1,8 +1,8 @@
 package edu.oakland.test.display02;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
@@ -21,7 +21,8 @@ public class TrackDataPlotterTests {
   @DisplayName("Plot is Displayed")
   void plotIsDisplayed() {
     TrackDataPlotter plotter = new TrackDataPlotter(generateValidTrackData());
-    assertNotNull(plotter.chart);
+    plotter.displayChart();
+    assertTrue(plotter.getDisplayedChart());
   }
 
   @Test

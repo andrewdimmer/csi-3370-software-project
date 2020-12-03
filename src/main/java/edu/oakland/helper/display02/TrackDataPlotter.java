@@ -28,7 +28,8 @@ public class TrackDataPlotter extends JFrame {
   private float[] lng;
   private XYSeries dataPoints;
   private XYSeries fitLine;
-  public JFreeChart chart;
+  private JFreeChart chart;
+  private boolean displayedChart;
 
   /**
   * Creates a TrackDataPlotter object which contains a chart with the location
@@ -47,19 +48,7 @@ public class TrackDataPlotter extends JFrame {
     this.lat = extractLatFromTrackData(data);
     this.lng = extractLngFromTrackData(data);
     this.dataPoints = getTrackData(this.lat, this.lng);
-    if (this.dataPoints.getItemCount() == 0) {
-      throw new IllegalArgumentException("Data series is empty");
-    }
-    if (this.dataPoints.getItemCount() != 5) {
-      throw new IllegalArgumentException("Data series contains an invalid number of points");
-    }
     this.fitLine = calculateLine(this.lat, this.lng);
-    if (this.fitLine.getItemCount() == 0) {
-      throw new IllegalArgumentException("Fit Line representation contains no points");
-    }
-    if (this.fitLine.getItemCount() != 2) {
-      throw new IllegalArgumentException("Fit line contains an invalid number of points");
-    }
     this.chart = createChart();
   }
 
@@ -198,5 +187,15 @@ public class TrackDataPlotter extends JFrame {
   public void displayChart() {
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setVisible(true);
+    displayedChart = true;
+  }
+
+  /**
+   * Exposes the displayedChart attribute for testing and verification. Not to be used for production.
+   *
+   * @return true if the chart was displayed to the user; false otherwise.
+   */
+  public boolean getDisplayedChart() {
+    return displayedChart;
   }
 }
