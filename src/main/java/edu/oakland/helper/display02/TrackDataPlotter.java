@@ -24,7 +24,6 @@ import org.jfree.data.xy.XYSeriesCollection;
  */
 public class TrackDataPlotter extends JFrame {
 
-  private Boolean isValidTrackData;
   private float[] lat;
   private float[] lng;
   private XYSeries dataPoints;
@@ -42,8 +41,7 @@ public class TrackDataPlotter extends JFrame {
     if (data == null) {
       throw new IllegalArgumentException("Track data is null");
     }
-    this.isValidTrackData = data.isValid();
-    if (!isValidTrackData) {
+    if (!data.isValid()) {
       throw new IllegalArgumentException("Track data is invalid");
     }
     this.lat = extractLatFromTrackData(data);

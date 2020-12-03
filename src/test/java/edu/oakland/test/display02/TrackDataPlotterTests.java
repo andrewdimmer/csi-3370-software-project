@@ -38,7 +38,6 @@ public class TrackDataPlotterTests {
     Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
       new TrackDataPlotter(generateInvalidTrackData());
     });
-    assertEquals("Not enough points to create a valid TrackData object", exception.getMessage());
   }
 
   private TrackData generateValidTrackData() {
@@ -51,9 +50,8 @@ public class TrackDataPlotterTests {
 
   private TrackData generateInvalidTrackData() {
     TrackData invalidData = new TrackData(
-        generateRandomLocationDataPointsArray(2),
-        generateRandomCourse(),
-        generateRandomSpeed());
+        generateRandomLocationDataPointsArray((int) (Math.random() * 5))
+    );
     return invalidData;
   }
 
