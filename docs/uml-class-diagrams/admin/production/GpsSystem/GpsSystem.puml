@@ -13,6 +13,7 @@ package edu.oakland.production.admin {
         \tfloat incrementLatAmount, float incrementLngAmount,
         \tLocationDataPoint initLocationDataPoint)
         - void configureSatellites(String[] satelliteNames)
+        - boolean isEmptyStringInArray(String[] in)
     }
 }
 
