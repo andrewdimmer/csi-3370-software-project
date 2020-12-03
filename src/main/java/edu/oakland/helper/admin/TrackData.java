@@ -131,8 +131,8 @@ public class TrackData {
   @Override
   public String toString() {
     StringBuilder str = new StringBuilder();
+    str.append("Track Data Status: " + getStatusMessage() + "\n");
     if (isValid()) {
-      System.out.println("Status: " + getStatusMessage());
       System.out.println("Speed: " + getSpeed());
       System.out.println("Course Direction: " + getCourseDirection());
     }
