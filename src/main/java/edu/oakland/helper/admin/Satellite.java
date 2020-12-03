@@ -96,10 +96,10 @@ public class Satellite {
    * is shared across all satellites, but can be reset for all satellites by calling this method
    * again.
    *
-   * @param incLatA The amount to increment the latitude for each hour the shipping container is
-   *                traveling.
-   * @param incLngA The amount to increment the longitude for each hour the shipping container is
-   *                traveling.
+   * @param incLatA The amount to increment the latitude for each 10 minutes the 
+   *                 shipping container is traveling.
+   * @param incLngA The amount to increment the longitude for each 10 minutes the 
+   *                 shipping container is traveling.
    * @param initPoint The inital LocationDataPoint of the shipping container the first time it
    *                  connects to the Secure Lock Tracking System after coming online.
    */
@@ -112,7 +112,7 @@ public class Satellite {
 
   /**
    * Creates the new latitude of the shipping container based on how much simulated time has
-   * passed. It is assumed to be 1 hour between each ping for simplicity.
+   * passed. It is assumed to be 10 minutes between each ping for simplicity.
    */
   private static float generateNewLocationDataPointLat() {
     return initLocationDataPoint.getLat() + (incrementLatAmount * countGetLocationCalls);
@@ -120,7 +120,7 @@ public class Satellite {
 
   /**
    * Creates the new longitude of the shipping container based on how much simulated time has
-   * passed. It is assumed to be 1 hour between each ping for simplicity.
+   * passed. It is assumed to be 10 minutes between each ping for simplicity.
    */
   private static float generateNewLocationDataPointLng() {
     return initLocationDataPoint.getLng() + (incrementLngAmount * countGetLocationCalls);
@@ -128,10 +128,10 @@ public class Satellite {
 
   /**
    * Creates the new timestamp of the shipping container location based on how much simulated time
-   * has passed. It is assumed to be 1 hour between each ping for simplicity.
+   * has passed. It is assumed to be 10 minutes between each ping for simplicity.
    */
   private static LocalDateTime generateNewLocationDataPointTime() {
     LocalDateTime theNewTime = initLocationDataPoint.getTime();
-    return theNewTime.plusHours(countGetLocationCalls);
+    return theNewTime.plusMinutes(countGetLocationCalls * 10);
   }
 }
