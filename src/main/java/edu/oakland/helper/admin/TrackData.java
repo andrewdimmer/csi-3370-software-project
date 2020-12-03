@@ -123,6 +123,11 @@ public class TrackData {
     return points;
   }
 
+  /**
+   * Creates a print-friendly string of the TrackData data.
+   *
+   * @return The print friendly string of the TrackData data.
+   */
   @Override
   public String toString() {
     StringBuilder str = new StringBuilder();
