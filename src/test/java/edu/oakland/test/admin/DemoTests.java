@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import edu.oakland.production.admin.Demo;
 import java.lang.IllegalArgumentException;
+import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.Scanner;
 import org.junit.jupiter.api.DisplayName;
@@ -114,6 +115,16 @@ public class DemoTests {
     Demo demo = new Demo();
     demo.run(new Scanner(inputString));
     assertTrue(demo.getWasRun());
+  }
+
+  @Test
+  @DisplayName("Main Method Smoke Test")
+  void mainMethodSmokeTest() {
+    try {
+      Demo.main(new String[0]);
+    } catch (NoSuchElementException e) {
+      System.out.println("The only issue was that Gradle Test doesn't have a standard input.");
+    }
   }
 
   private int generateRandomNumber() {
