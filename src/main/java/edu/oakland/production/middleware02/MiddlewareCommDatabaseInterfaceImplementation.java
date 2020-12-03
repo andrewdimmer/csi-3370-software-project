@@ -1,9 +1,9 @@
 package edu.oakland.production.middleware02;
 
+import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.database.DatabaseCommInterface;
 import edu.oakland.production.middleware02.MiddlewareCommDatabaseInterface;
-
 
 public class MiddlewareCommDatabaseInterfaceImplementation implements 
       MiddlewareCommDatabaseInterface {
@@ -26,4 +26,22 @@ public class MiddlewareCommDatabaseInterfaceImplementation implements
   public int checkCurrentRfid() {
     return databaseCommInterface.receiveGetRfidRequest();
   } 
+      
+  public String requestMode() {
+    return databaseCommInterface.receiveGetModeRequest();
+  }
+
+  public TrackData getTrackData() {
+    return databaseCommInterface.receiveGetTrackDataRequest(0);
+  }
+
+  public void storeTrackData(TrackData trackData) {
+    databaseCommInterface.storeTrackDataRequest(trackData);
+  }
+
+  public LocationDataPoint getLocationDataPoint(int offset) {
+    return databaseCommInterface.receiveGetLocationDataPointRequest(offset);
+  }
+
+
 }

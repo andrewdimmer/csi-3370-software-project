@@ -18,7 +18,7 @@ public class MiddlewareCommLinkManagerStub implements MiddlewareCommLinkManager 
    *</p>
   */
 
-  public TrackData checkCurrentRfid(int rfid) {
+  public TrackData parseRfid(int rfid) {
     TrackData trackD = new TrackData(new LocationDataPoint[0]);
     trackD.setStatusMessage(String.valueOf(rfid));
     return trackD;
