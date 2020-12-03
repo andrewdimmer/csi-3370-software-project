@@ -28,7 +28,7 @@ public class TrackDataPlotterTests {
   @Test
   @DisplayName("Single-Point Plot is Displayed")
   void plotIsDisplayedWith1DataPoint() {
-    TrackDataPlotter plotter = new TrackDataPlotter(generateValidTrackData());
+    TrackDataPlotter plotter = new TrackDataPlotter(generateSinglePointTrackData());
     plotter.displayChart();
     assertTrue(plotter.getDisplayedChart());
   }
