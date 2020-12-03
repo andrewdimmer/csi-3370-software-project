@@ -42,13 +42,16 @@ public class TrackDataPlotter extends JFrame {
     if (data == null) {
       throw new IllegalArgumentException("Track data is null");
     }
-    if (!data.isValid()) {
-      throw new IllegalArgumentException("Track data is invalid");
+    if (data.getLocationDataPoints().length == 0) {
+      throw new IllegalArgumentException("Track data has no points in it");
     }
+
     this.lat = extractLatFromTrackData(data);
     this.lng = extractLngFromTrackData(data);
     this.dataPoints = getTrackData(this.lat, this.lng);
-    this.fitLine = calculateLine(this.lat, this.lng);
+    if (data.getLocationDataPoints().length >= 2) {
+      this.fitLine = calculateLine(this.lat, this.lng);
+    }
     this.chart = createChart();
   }
 
@@ -63,7 +66,9 @@ public class TrackDataPlotter extends JFrame {
     XYSeriesCollection dataset = new XYSeriesCollection();
     // Add series to series collection
     dataset.addSeries(this.dataPoints);
-    dataset.addSeries(this.fitLine);
+    if (fitLine != null) {
+      dataset.addSeries(this.fitLine);
+    }
     // Create dataset with series collection
     XYDataset dataPoints = dataset;
     // Create Scatter Plot with Fit Line
@@ -125,6 +130,7 @@ public class TrackDataPlotter extends JFrame {
   */
   private XYSeries calculateLine(float[] x, float[] y) {
     XYSeries fitLine = new XYSeries("Line");
+    int length = x.length;
     float sumOfX = 0;
     float sumOfY = 0;
     float sumOfXy = 0;
@@ -132,17 +138,17 @@ public class TrackDataPlotter extends JFrame {
     double minX = this.dataPoints.getMinX();
     double maxX = this.dataPoints.getMaxX();
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < length; i++) {
       sumOfxSquared += x[i] * x[i];
       sumOfX += x[i];
       sumOfXy += x[i] * y[i];
       sumOfY += y[i];
     }
 
-    float topHalfOfEquation = 5 * sumOfXy - sumOfX * sumOfY;
-    float bottomHalfOfEquation = 5 * sumOfxSquared - sumOfX * sumOfX;
+    float topHalfOfEquation = length * sumOfXy - sumOfX * sumOfY;
+    float bottomHalfOfEquation = length * sumOfxSquared - sumOfX * sumOfX;
     float slope = topHalfOfEquation / bottomHalfOfEquation;
-    float b = (sumOfY - (slope * sumOfX)) / 5;
+    float b = (sumOfY - (slope * sumOfX)) / length;
 
     // Least Squares Regression = mx+b
     fitLine.add(minX, slope * minX + b);
@@ -159,7 +165,7 @@ public class TrackDataPlotter extends JFrame {
   */
   private float[] extractLatFromTrackData(TrackData data) {
     LocationDataPoint[] points = data.getLocationDataPoints();
-    float[] latNum = new float[5];
+    float[] latNum = new float[points.length];
     for (int i = 0; i < points.length; i++) {
       latNum[i] = points[i].getLat();
     }
@@ -174,7 +180,7 @@ public class TrackDataPlotter extends JFrame {
   */
   private float[] extractLngFromTrackData(TrackData data) {
     LocationDataPoint[] points = data.getLocationDataPoints();
-    float[] lngNum = new float[5];
+    float[] lngNum = new float[points.length];
     for (int i = 0; i < points.length; i++) {
       lngNum[i] = points[i].getLng();
     }

@@ -124,6 +124,30 @@ public class TrackData {
   }
 
   /**
+   * Creates a print-friendly string of the TrackData data.
+   *
+   * @return The print friendly string of the TrackData data.
+   */
+  @Override
+  public String toString() {
+    StringBuilder str = new StringBuilder();
+    str.append("Track Data Status: " + getStatusMessage() + "\n");
+    if (isValid()) {
+      str.append("Speed: " + getSpeed() + "knots \n");
+      str.append("Course Direction: " + getCourseDirection() + " degrees North of East\n");
+    }
+    str.append("Raw Location Data Points:");
+    if (points.length > 0) {
+      for (LocationDataPoint point : points) {
+        str.append(point.toString() + "\n");
+      }
+    } else {
+      str.append("There are no Location Data Points associated with this Track Data.");
+    }
+    return str.toString();
+  }
+
+  /**
    * Gets the status message associated with the current data in this TrackData object. Note that
    * this message is NOT persistent, and relates to the current usage of the data, not the data
    * itself. If no message is set, it defaults to the empty string.
