@@ -23,11 +23,11 @@ public class DisplayCommInterfaceImplementationTests {
   void rfidInIsRfidOut() {
     int rfid = generateRandomRfid();
     DisplayComm2WayInterfaceStub testStub = new DisplayComm2WayInterfaceStub(
-      new TrackData(
-        generateRandomLocationDataPointsArray(5),
-        generateRandomCourse(),
-        generateRandomSpeed()
-      )
+        new TrackData(
+            generateRandomLocationDataPointsArray(5),
+            generateRandomCourse(),
+            generateRandomSpeed()
+        )
     );
     DisplayCommInterfaceImplementation displayComm = 
         new DisplayCommInterfaceImplementation(testStub);
@@ -39,7 +39,7 @@ public class DisplayCommInterfaceImplementationTests {
   void zeroPointTrackDataDoesNotDisplayPlot() {
     int rfid = generateRandomRfid();
     DisplayComm2WayInterfaceStub testStub = new DisplayComm2WayInterfaceStub(
-      new TrackData(new LocationDataPoint[0])
+        new TrackData(new LocationDataPoint[0])
     );
     DisplayCommInterfaceImplementation displayComm = 
         new DisplayCommInterfaceImplementation(testStub);
