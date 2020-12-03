@@ -41,7 +41,7 @@ public class DisplayCommInterfaceImplementation implements DisplayCommInterface 
     System.out.println(data);
 
     TrackDataPlotter plotter = new TrackDataPlotter(data);
-    plotter.displayPlot();
+    plotter.displayChart();
 
     return data;
   }
