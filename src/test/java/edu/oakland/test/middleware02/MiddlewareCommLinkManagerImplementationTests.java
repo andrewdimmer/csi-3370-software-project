@@ -37,6 +37,7 @@ public class MiddlewareCommLinkManagerImplementationTests {
         "The system RFID does not match the requested RFID.",
         trackData.getStatusMessage()
     );
+    assertEquals(0, trackData.getLocationDataPoints().length);
   }
 
   @Test 
