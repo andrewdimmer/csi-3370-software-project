@@ -22,7 +22,7 @@ public class Uc1IntegrationTests {
     int rfid = generateRandomNumber();
     Demo demo = new Demo();
     demo.initSecureLockTrackSystem(
-        rfid+ generateRandomNumber(),
+        rfid + generateRandomNumber(),
         generateRandomStringArray(generateRandomStringLength())
     );
     String gpsOutput = demo.getGpsSystem().runUseCase1(new Scanner(""));
@@ -46,7 +46,9 @@ public class Uc1IntegrationTests {
     for (int i = 0; i < (int) (Math.random() * 3) + 1; i++) {
       String gpsOutput = demo.getGpsSystem().runUseCase1(new Scanner(""));
       TrackData userOutput = demo.getUser().runUseCase1(new Scanner(String.valueOf(rfid) + "\n"));
-      assertTrue(userOutput.getStatusMessage().contains("normal mode, but there's not enough data"));
+      assertTrue(
+          userOutput.getStatusMessage().contains("normal mode, but there's not enough data")
+      );
       assertEquals(i + 1, userOutput.getLocationDataPoints().length);
     }
   }
