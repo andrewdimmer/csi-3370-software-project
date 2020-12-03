@@ -92,9 +92,10 @@ public class TrackDataCalculatorTests {
   }
   
   private LocationDataPoint generateRandomLocationDataPoint() {
+    // Note: this library is not built to handle the roll-overs that LocationDataPoints supports.
     return new LocationDataPoint(
-      (float) (Math.random() * 180 - 90),
-      (float) (Math.random() * 360 - 180),
+      (float) (Math.random() * 120 - 60),
+      (float) (Math.random() * 240 - 120),
       LocalDateTime.of(
         (int) (Math.random() * 50 + 1970),
         (int) (Math.random() * 12 + 1),
