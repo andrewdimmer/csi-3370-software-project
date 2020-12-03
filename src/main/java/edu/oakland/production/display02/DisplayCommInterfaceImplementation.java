@@ -2,6 +2,7 @@ package edu.oakland.production.display02;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
+import edu.oakland.helper.display02.TrackDataPlotter;
 import edu.oakland.production.display02.DisplayComm2WayInterface;
 import edu.oakland.production.display02.DisplayCommInterface;
 import java.lang.IllegalArgumentException;
@@ -34,6 +35,16 @@ public class DisplayCommInterfaceImplementation implements DisplayCommInterface 
   * @return the TrackData
   */
   public TrackData receiveRfidRequest(int rfidNum) {
-    return comm2Way.passRfidRequest(rfidNum);
+    TrackData data = comm2Way.passRfidRequest(rfidNum);
+
+    System.out.println("Track Data for RFID tag number " + rfidNum);
+    System.out.println(data);
+
+    if (data.getLocationDataPoints().length > 0) {
+      TrackDataPlotter plotter = new TrackDataPlotter(data);
+      plotter.displayChart();
+    }
+
+    return data;
   }
 }

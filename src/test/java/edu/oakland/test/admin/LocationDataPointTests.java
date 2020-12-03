@@ -2,6 +2,7 @@ package edu.oakland.test.admin;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 import java.lang.IllegalArgumentException;
@@ -178,6 +179,20 @@ public class LocationDataPointTests {
     assertThrows(IllegalArgumentException.class, () -> {
       new LocationDataPoint(generateRandomLat(), generateRandomLng(), null);
     });
+  }
+
+  
+  @Test
+  @DisplayName("toString method contains all the relevant info about a LocationDataPoint")
+  void toStringContainsAllInfo() {
+    LocationDataPoint locationDataPoint = new LocationDataPoint(
+        generateRandomLat(),
+        generateRandomLng(),
+        generateRandomTime()
+    );
+    assertTrue(locationDataPoint.toString().contains(String.valueOf(locationDataPoint.getLat())));
+    assertTrue(locationDataPoint.toString().contains(String.valueOf(locationDataPoint.getLng())));
+    assertTrue(locationDataPoint.toString().contains(locationDataPoint.getTime().toString()));
   }
 
   private float generateRandomLat() {
