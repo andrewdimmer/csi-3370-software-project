@@ -127,9 +127,9 @@ public class TrackData {
   public String toString() {
     StringBuilder str = new StringBuilder();
     if (isValid()) {
-      System.out.println("Status: " + data.getStatusMessage());
-      System.out.println("Speed: " + data.getSpeed());
-      System.out.println("Course Direction: " + data.getCourseDirection());
+      System.out.println("Status: " + getStatusMessage());
+      System.out.println("Speed: " + getSpeed());
+      System.out.println("Course Direction: " + getCourseDirection());
     }
     for (int i = 0; i < points.length; i++) {
       str.append(points[i] + "\n");
