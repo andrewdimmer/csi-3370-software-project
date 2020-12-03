@@ -18,9 +18,25 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Track Data Plotter Unit Tests")
 public class TrackDataPlotterTests {
   @Test
-  @DisplayName("Plot is Displayed")
-  void plotIsDisplayed() {
+  @DisplayName("5 Point Plot is Displayed")
+  void plotIsDisplayedWith5DataPoints() {
     TrackDataPlotter plotter = new TrackDataPlotter(generateValidTrackData());
+    plotter.displayChart();
+    assertTrue(plotter.getDisplayedChart());
+  }
+
+  @Test
+  @DisplayName("Single-Point Plot is Displayed")
+  void plotIsDisplayedWith1DataPoint() {
+    TrackDataPlotter plotter = new TrackDataPlotter(generateValidTrackData());
+    plotter.displayChart();
+    assertTrue(plotter.getDisplayedChart());
+  }
+
+  @Test
+  @DisplayName("2+ Point Plot is Displayed")
+  void plotIsDisplayedWith2PlusDataPoints() {
+    TrackDataPlotter plotter = new TrackDataPlotter(generateInvalidTrackData());
     plotter.displayChart();
     assertTrue(plotter.getDisplayedChart());
   }
@@ -34,26 +50,31 @@ public class TrackDataPlotterTests {
   }
 
   @Test
-  @DisplayName("Invalid TrackData is not permitted")
-  void invalidTrackDataNotAllowed() {
-    Throwable exception = assertThrows(IllegalArgumentException.class, () -> {
-      new TrackDataPlotter(generateInvalidTrackData());
+  @DisplayName("Zero Point TrackData is not permitted")
+  void zeroPointTrackDataNotAllowed() {
+    assertThrows(IllegalArgumentException.class, () -> {
+      new TrackDataPlotter(new TrackData(new LocationDataPoint[0]));
     });
   }
 
   private TrackData generateValidTrackData() {
-    TrackData validData = new TrackData(
+    return new TrackData(
         generateRandomLocationDataPointsArray(5),
         generateRandomCourse(),
-        generateRandomSpeed());
-    return validData;
+        generateRandomSpeed()
+    );
+  }
+
+  private TrackData generateSinglePointTrackData() {
+    return new TrackData(
+        generateRandomLocationDataPointsArray(1)
+    );
   }
 
   private TrackData generateInvalidTrackData() {
-    TrackData invalidData = new TrackData(
+    return new TrackData(
         generateRandomLocationDataPointsArray((int) (Math.random() * 5))
     );
-    return invalidData;
   }
 
 
