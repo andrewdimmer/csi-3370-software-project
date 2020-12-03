@@ -35,7 +35,7 @@ public class DatabaseCommInterfaceStub implements DatabaseCommInterface {
   }
   
   public void storeTrackDataRequest(TrackData trackData) {
-      this.trackData = trackData;
+    this.trackData = trackData;
   }
   
   public LocationDataPoint receiveGetLocationDataPointRequest(int offset) {
