@@ -101,6 +101,22 @@ public class DemoTests {
   // }
 
   @Test
+  @DisplayName("Run Method Handles Invalid Mode")
+  void runHandleInvalidMode() {
+    int rfid = generateRandomNumber();
+    int count = generateRandomStringLength();
+    String inputString = String.valueOf(rfid) + "\n";
+    inputString += String.valueOf(count) + "\n";
+    for (int index = 0; index < count; index++) {
+      inputString += generateRandomString(generateRandomStringLength()) + "\n";
+    }
+    inputString += "c\nq\n";
+    Demo demo = new Demo();
+    demo.run(new Scanner(inputString));
+    assertTrue(demo.getWasRun());
+  }
+
+  @Test
   @DisplayName("Run Method Terminates on Quit Command")
   void runCanQuit() {
     int rfid = generateRandomNumber();

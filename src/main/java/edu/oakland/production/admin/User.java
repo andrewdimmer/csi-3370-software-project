@@ -1,5 +1,6 @@
 package edu.oakland.production.admin;
 
+import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.display02.DisplayCommInterface;
 import java.lang.IllegalArgumentException;
 import java.util.Scanner;
@@ -33,13 +34,15 @@ public class User {
    *
    * @param input The Scanner used to intake the RFID number
    */
-  public void runUseCase1(Scanner input) {
+  public TrackData runUseCase1(Scanner input) {
     if (input == null) {
       throw new IllegalArgumentException("Scanner cannot be null");
     }
-    System.out.println("Please enter an RFID number");
+    System.out.println("Enter the RFID number of the shipping container you want to track:");
     int rfid = input.nextInt();
-    displayCommInterface.receiveRfidRequest(rfid);
+    input.nextLine(); // Eat new line character
+    System.out.println();
+    return displayCommInterface.receiveRfidRequest(rfid);
   }
 
 

@@ -133,10 +133,10 @@ public class TrackData {
     StringBuilder str = new StringBuilder();
     str.append("Track Data Status: " + getStatusMessage() + "\n");
     if (isValid()) {
-      str.append("Speed: " + getSpeed() + "knots \n");
+      str.append("Speed: " + getSpeed() + " knots \n");
       str.append("Course Direction: " + getCourseDirection() + " degrees North of East\n");
     }
-    str.append("Raw Location Data Points:");
+    str.append("Raw Location Data Points:\n");
     if (points.length > 0) {
       for (LocationDataPoint point : points) {
         str.append(point.toString() + "\n");
