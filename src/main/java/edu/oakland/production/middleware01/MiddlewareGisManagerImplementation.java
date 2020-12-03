@@ -65,7 +65,7 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
 
     if (signalValid == true) {
       databaseGisInterface.receiveModeRequest("normal");
-      return "";
+      return "N/A. Reconnected.";
     } else {
       String name = satellite.getSatelliteName();
       String datapoint = databaseGisInterface.receiveNextSatRequest(name);

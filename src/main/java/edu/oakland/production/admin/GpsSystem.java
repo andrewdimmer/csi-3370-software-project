@@ -2,6 +2,7 @@ package edu.oakland.production.admin;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.Satellite;
+import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
 import edu.oakland.production.display01.DisplayGpsInterface;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
@@ -24,12 +25,12 @@ public class GpsSystem {
   /**
    * Creates a GpsSystem object to store the GpsInterface and satellites.
    *
-   * @param displayGpsInterfaceIn  The inputted GpsInterface to store.
+   * @param displayGpsInterface  The inputted GpsInterface to store.
    * @param satelliteNames  An array of Strings that will become satellites!
    *
    */
-  public GpsSystem(DisplayGpsInterface displayGpsInterfaceIn, String[] satelliteNames) {
-    if (displayGpsInterfaceIn == null) {  
+  public GpsSystem(DisplayGpsInterface displayGpsInterface, String[] satelliteNames) {
+    if (displayGpsInterface == null) {  
       //3 checks to make sure the data that was passed in is valid
       throw new IllegalArgumentException("displayGpsInterface must not be null");
     } else if (satelliteNames == null) {
@@ -38,7 +39,7 @@ public class GpsSystem {
       throw new IllegalArgumentException("satelliteNames must not be null");
     }
     this.satellites = new Satellite[satelliteNames.length];
-    this.displayGpsInterface = displayGpsInterfaceIn;
+    this.displayGpsInterface = displayGpsInterface;
     
     configureSatellites(satelliteNames);
   }
@@ -67,17 +68,60 @@ public class GpsSystem {
     if (input == null) { //check for null unput
       throw new IllegalArgumentException("Scanner input must not be null");
     }
+    System.out.println("Select a satellite to adjust the signal strength of:");
+    System.out.println(printOptions());
+    int modify = input.nextInt();
+    if (modify > satelliteInUse) {
+      throw new IllegalArgumentException("You cannot modify that satellite!");
+    }
+    modifySatelliteStrength(modify, input);
+
+    SatelliteSignalCheckRequest nextSat = displayGpsInterface.reportGpsSignalLoss(
+        satellites[satelliteInUse]
+    );
+    while (
+        !nextSat.getSatelliteName().contains("Reconnected") &&
+        nextSat.getSatelliteName().length() > 0
+    ) {
+      modifySatelliteStrength(nextSat.getSatelliteName(), input);
+      if (nextSat.getCheckType().contains("recheck")) {
+        nextSat = displayGpsInterface.recheckSignalStrength(satellites[satelliteInUse]);
+      } else {
+        nextSat = displayGpsInterface.checkSignalStrength(satellites[satelliteInUse]);
+      }
+    }
+
+    if (nextSat.getSatelliteName().length() == 0) {
+      satelliteInUse = 0;
+    }
+
+    input.nextLine(); // Eat new line character
+    System.out.println();
   }
 
-  /**
-   * Method to run UseCase 2, using supplied Scanner and assuming the current satellite has lost
-   * the signal already.
-   *
-   * @param input   The scanner object we are passing in.
-   *
-   */
-  private void runUseCase2NoPrompt(Scanner input) {
-    
+  private String printOptions() {
+    String options = "";
+    for (int i = 0; i <= satelliteInUse; i++) {
+      String marker = (i == satelliteInUse ? "> :" : ":  ");
+      options += i + marker + satellites[i].getSatelliteName() + "\n";
+    }
+    return options;
+  }
+
+  private void modifySatelliteStrength(String name, Scanner input) {
+    for (int i = 0; i < satellites.length; i++) {
+      if (satellites[i].getSatelliteName() == name) {
+        modifySatelliteStrength(i, input);
+        break;
+      }
+    }
+  }
+
+  private void modifySatelliteStrength(int index, Scanner input) {
+    System.out.println("Enter a signal strength between 1 and 10:");
+    int strength = input.nextInt();
+    satelliteInUse = index;
+    satellites[index].setStrength(strength);
   }
   
   /**
