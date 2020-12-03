@@ -68,6 +68,7 @@ public class LocationDataPoint {
   public LocalDateTime getTime() {
     return time;
   }
+  
   /**
    * Creates a print-friendly string of the LocationDataPoint data.
    *
