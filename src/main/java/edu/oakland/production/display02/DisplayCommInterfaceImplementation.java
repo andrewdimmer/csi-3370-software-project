@@ -15,8 +15,6 @@ import java.lang.IllegalArgumentException;
 public class DisplayCommInterfaceImplementation implements DisplayCommInterface {
 
   private DisplayComm2WayInterface comm2Way;
-  private TrackData data;
-  private TrackDataPlotter plotter;
 
   /**
   * Creates a DisplayCommInterfaceImplementation to receive the rfid.
