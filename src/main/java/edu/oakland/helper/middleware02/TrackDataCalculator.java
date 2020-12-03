@@ -3,26 +3,21 @@ package edu.oakland.helper.middleware02;
 import edu.oakland.helper.admin.LocationDataPoint;
 import java.time.Duration;
 import java.time.LocalDateTime;
-/**
-     * <p>
-     * This is a class that calcs speed and direction.
-     * </p>
-     */
 
+/**
+ * This class contains helper methods to determine the speed and direction of a set of points.
+ */
 public class TrackDataCalculator {
 
-  private LocationDataPoint[] locationDataPoint;
-
   /**
-     * <p> 
-     * This is a method that calcs speed.
-     * </p>
-     */
-     
-  public float calculateSpeed(LocationDataPoint[] locationDataPoint) {
-    this.locationDataPoint = locationDataPoint;
-    LocationDataPoint point1 = locationDataPoint[0];
-    LocationDataPoint point2 = locationDataPoint[locationDataPoint.length - 1];
+   * This is a method that calculates a speed from a LocationDataPoint array.
+   *
+   * @param locationDataPoints An array of LocationDataPoints to calculate the speed of.
+   * @return The speed in knots the set of points is moving at.
+   */
+  public static float calculateSpeed(LocationDataPoint[] locationDataPoints) {
+    LocationDataPoint point1 = locationDataPoints[0];
+    LocationDataPoint point2 = locationDataPoints[locationDataPoints.length - 1];
     float lattitude1 = point1.getLat();
     float longitude1 = point1.getLng();
     float lattitude2 = point2.getLat();
@@ -45,27 +40,20 @@ public class TrackDataCalculator {
   }
 
   /**
-     * <p> 
-     * This is a method that calcs direction.
-     * </p>
-     */
-
-  public float calculateDirection(LocationDataPoint[] locationDataPoint) {
-    this.locationDataPoint = locationDataPoint;
-    
-    LocationDataPoint point1 = locationDataPoint[0];
-    LocationDataPoint point2 = locationDataPoint[locationDataPoint.length - 1];
+   * This is a method that calculates a course direction from a LocationDataPoint array.
+   *
+   * @param locationDataPoints An array of LocationDataPoints to calculate the direction of.
+   * @return The direction in degrees the set of points is trending in.
+   */
+  public static float calculateDirection(LocationDataPoint[] locationDataPoints) {
+    LocationDataPoint point1 = locationDataPoints[0];
+    LocationDataPoint point2 = locationDataPoints[locationDataPoints.length - 1];
     float lattitude1 = point1.getLat();
     float longitude1 = point1.getLng();
     float lattitude2 = point2.getLat();
     float longitude2 = point2.getLng();
-    System.out.println(lattitude1);
-    System.out.println(lattitude2);
-    System.out.println(longitude1);
-    System.out.println(longitude2);
 
     double alpha;
-    int expectedDirection = 45;
     float deltaY = longitude2 - longitude1;
     float deltaX = lattitude2 - lattitude1;
     double trackLength = Math.sqrt((deltaY * deltaY) + (deltaX * deltaX));
@@ -76,7 +64,7 @@ public class TrackDataCalculator {
     return alpha3;
   }
 
-  private LocationDataPoint[] calculateRootMeanSquared(LocationDataPoint[] locationDataPoint) {
-    return locationDataPoint;
+  private LocationDataPoint[] calculateRootMeanSquared(LocationDataPoint[] locationDataPoints) {
+    return locationDataPoints;
   }
 }
