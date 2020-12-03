@@ -36,20 +36,22 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
   }
 
   public TrackData parseRfid(int rfid) {
+    TrackData trackData;
+    trackData = new TrackData(new LocationDataPoint[0]);
     if (midDatabaseInterface.checkCurrentRfid() != rfid ){
-      TrackData trackData = new TrackData(new LocationDataPoint[0]);
+      trackData = new TrackData(new LocationDataPoint[0]);
       trackData.setStatusMessage("There's no match, exiting SLTS."); //Concat Later
       
     } else { 
       gisManager.storeLocationDataPoint();
       if (midDatabaseInterface.requestMode() == "normal") {
-
+        calculateLocationData();
       } else {
-        TrackData trackData = midDatabaseInterface.getTrackData();
+        trackData = midDatabaseInterface.getTrackData();
         trackData.setStatusMessage("Getting Historical Data" ); //Concat Later
       } 
     } 
-    return null;
+    return trackData;
   }
 
   private TrackData calculateLocationData() {
@@ -75,8 +77,8 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
         trackData.setStatusMessage("There's not enough data to conduct calculations for speed and direction.");
       } 
       
-      //speed = calculateSpeed(pointsForCalculations);
-      //direction = calculateDirection(pointsForCalculations);
+    //speed = calculateSpeed(pointsForCalculations);
+    //direction = calculateDirection(pointsForCalculations);
       
     //TrackData returnTrackData = new TrackData(pointsForCalculations, direction, speed);
     
