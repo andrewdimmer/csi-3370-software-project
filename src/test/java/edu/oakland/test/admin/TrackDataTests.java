@@ -196,6 +196,58 @@ public class TrackDataTests {
     });
   }
 
+  @Test
+  @DisplayName("toString method contains all the relevant info about an empty TrackData object")
+  void toStringContainsAllInfoEmptyObject() {
+    TrackData trackData = new TrackData(
+        new LocationDataPoint[0]
+    );
+    String statusMessage = generateRandomString();
+    trackData.setStatusMessage(statusMessage);
+    assertTrue(trackData.toString().contains(statusMessage));
+    assertTrue(trackData.toString().contains("There are no Location Data Points"));
+  }
+
+  @Test
+  @DisplayName("toString method contains all the relevant info about an invalid TrackDataObject")
+  void toStringContainsAllInfoInvalidObject() {
+    LocationDataPoint[] locationDataPoints = generateRandomLocationDataPointsArray(
+        generateRandomTooSmallArrayLength()
+    );
+    TrackData trackData = new TrackData(
+        locationDataPoints
+    );
+    String statusMessage = generateRandomString();
+    trackData.setStatusMessage(statusMessage);
+    assertTrue(trackData.toString().contains(statusMessage));
+    assertTrue(!trackData.toString().contains("Speed"));
+    assertTrue(!trackData.toString().contains("Course Direction"));
+    for (LocationDataPoint locationDataPoint : locationDataPoints) {
+      assertTrue(trackData.toString().contains(locationDataPoint.toString()));
+    }
+  }
+
+  @Test
+  @DisplayName("toString method contains all the relevant info about a valid TrackData Object")
+  void toStringContainsAllInfoValidObject() {
+    LocationDataPoint[] locationDataPoints = generateRandomLocationDataPointsArray(5);
+    float speed = generateRandomSpeed();
+    float course = generateRandomCourse();
+    TrackData trackData = new TrackData(
+        locationDataPoints,
+        course,
+        speed
+    );
+    String statusMessage = generateRandomString();
+    trackData.setStatusMessage(statusMessage);
+    assertTrue(trackData.toString().contains(statusMessage));
+    assertTrue(trackData.toString().contains(String.valueOf(speed)));
+    assertTrue(trackData.toString().contains(String.valueOf(course)));
+    for (LocationDataPoint locationDataPoint : locationDataPoints) {
+      assertTrue(trackData.toString().contains(locationDataPoint.toString()));
+    }
+  }
+
   private float generateRandomCourse() {
     return (float) (Math.random() * 360);
   }
