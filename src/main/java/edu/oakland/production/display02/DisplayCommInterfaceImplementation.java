@@ -40,8 +40,10 @@ public class DisplayCommInterfaceImplementation implements DisplayCommInterface 
     System.out.println("Track Data for RFID tag number " + rfidNum);
     System.out.println(data);
 
-    TrackDataPlotter plotter = new TrackDataPlotter(data);
-    plotter.displayChart();
+    if (data.getLocationDataPoints().length > 0) {
+      TrackDataPlotter plotter = new TrackDataPlotter(data);
+      plotter.displayChart();
+    }
 
     return data;
   }

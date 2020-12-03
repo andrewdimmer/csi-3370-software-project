@@ -10,14 +10,19 @@ import edu.oakland.production.display02.DisplayCommInterface;
 * Used solely for testing.
 */
 public class DisplayComm2WayInterfaceStub implements DisplayComm2WayInterface {
+
+  private TrackData trackData;
   
+  public DisplayComm2WayInterfaceStub(TrackData trackData) {
+    this.trackData = trackData;
+  }
+
   /**
   * Stub method, recieves the rfid
   * and returns a blank TrackData.
   */
   public TrackData passRfidRequest(int rfid) {
-    TrackData trackStub = new TrackData(new LocationDataPoint[0]);
-    trackStub.setStatusMessage(String.valueOf(rfid));
-    return trackStub;
+    trackData.setStatusMessage(String.valueOf(rfid));
+    return trackData;
   }
 }
