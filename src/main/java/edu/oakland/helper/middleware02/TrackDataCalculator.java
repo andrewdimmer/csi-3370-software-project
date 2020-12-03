@@ -33,7 +33,7 @@ public class TrackDataCalculator {
     double trackLength = Math.sqrt((deltaY * deltaY) + (deltaX * deltaX));
     float speed = (float) (trackLength / newDuration);
 
-    return speed;
+    return 60 * speed;
   }
 
   /**
