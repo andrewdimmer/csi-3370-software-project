@@ -20,6 +20,7 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
   /**
    * The constructor for MiddlewareCommLinkManagerImplementation.
    */
+  
   public MiddlewareCommLinkManagerImplementation(
       MiddlewareCommDatabaseInterface midDatabaseInterface,
       MiddlewareGisManager gisManager
@@ -34,6 +35,10 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
     }
     this.gisManager = gisManager;
   }
+  
+  /**
+  * Method to parse the Rfid with a mode check.
+  */
 
   public TrackData parseRfid(int rfid) {
     TrackData trackData;
@@ -75,8 +80,8 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
     points.toArray(pointsForCalculations);   
 
     if (pointsForCalculations.length != 5) {
-      trackData.setStatusMessage("There's not enough data to conduct calculations" + 
-                                 "for speed and direction.");
+      trackData.setStatusMessage("There's not enough data to conduct calculations" 
+                                 + "for speed and direction.");
     } 
       
     //speed = calculateSpeed(pointsForCalculations);
