@@ -191,7 +191,8 @@ public class TrackDataPlotter extends JFrame {
   }
 
   /**
-   * Exposes the displayedChart attribute for testing and verification. Not to be used for production.
+   * Exposes the displayedChart attribute for testing and verification. Not to be used for
+   * production.
    *
    * @return true if the chart was displayed to the user; false otherwise.
    */
