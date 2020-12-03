@@ -26,4 +26,7 @@ public class MiddlewareCommDatabaseInterfaceImplementation implements
   public int checkCurrentRfid() {
     return databaseCommInterface.receiveGetRfidRequest();
   } 
+  public String requestMode() {
+    return databaseCommInterface.receiveGetModeRequest();
+  }
 }

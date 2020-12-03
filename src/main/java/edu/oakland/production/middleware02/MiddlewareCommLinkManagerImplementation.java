@@ -4,14 +4,16 @@ import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.middleware01.MiddlewareGisManager;
 import edu.oakland.production.middleware02.MiddlewareCommDatabaseInterface;
+import edu.oakland.production.middleware02.MiddlewareCommDatabaseInterfaceImplementation;
 import edu.oakland.production.middleware02.MiddlewareCommLinkManager;
+import edu.oakland.production.database.DatabaseCommInterface;
 
 
 public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLinkManager {
 
-  private MiddlewareCommDatabaseInterface midDatabaseInterface;
+  private MiddlewareCommDatabaseInterfaceImplementation midDatabaseInterface;
   private MiddlewareGisManager gisManager;
-  private LocationDataPoint[] locationDataPoint = new LocationDataPoint();
+  //private LocationDataPoint[] locationDataPoint = new LocationDataPoint();
 
   /**
    * sets locationdatapoint[] into object called locations.
@@ -21,16 +23,12 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
    * we parserfid to get locationdatapoint.
   */
 
-  public TrackData parseRfid(int rfid) {
-    if ()
-  }
-
   /**
    * MiddlewareComLinkManagerImplementaions takes in Gismanager and Midatabaseinterface. 
   */
 
   public MiddlewareCommLinkManagerImplementation(
-      MiddlewareCommDatabaseInterface midDatabaseInterface,
+      MiddlewareCommDatabaseInterfaceImplementation midDatabaseInterface,
       MiddlewareGisManager gisManager
   ) {
     if (midDatabaseInterface == null) {
@@ -45,22 +43,23 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
   }
 
   public TrackData parseRfid(int rfid) {
-    if (midDatabaseInterface.checkCurrentRfid() == midDatabaseInterface()){
-      gisManager.storeLocationDataPoint();
-      midDatabaseInterface.
-    }
+    //if (midDatabaseInterface.checkCurrentRfid() == midDatabaseInterface()){
+      //gisManager.storeLocationDataPoint();
+     // midDatabaseInterface.
+     return null;
+    
   }
 
   
   private float calculateLocationData() {
     gisManager.storeLocationDataPoint();
-    midDatabaseInterface.checkCurrentRfid();
+    midDatabaseInterface.requestMode();
     float fL = 1.0;
   } 
 
-  private float calculateTrackData() {
-    float speed = trackData.getSpeed();
-  }
+  //private float calculateTrackData() {
+    
+  //}
 
 
 
