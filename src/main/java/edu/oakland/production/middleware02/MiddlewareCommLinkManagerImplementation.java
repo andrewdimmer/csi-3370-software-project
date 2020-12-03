@@ -3,10 +3,12 @@ package edu.oakland.production.middleware02;
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.TrackData;
 import edu.oakland.production.middleware01.MiddlewareGisManager;
+import edu.oakland.production.database.DatabaseCommInterface;
 import edu.oakland.production.middleware02.MiddlewareCommDatabaseInterface;
 import edu.oakland.production.middleware02.MiddlewareCommDatabaseInterfaceImplementation;
 import edu.oakland.production.middleware02.MiddlewareCommLinkManager;
-import edu.oakland.production.database.DatabaseCommInterface;
+import java.util.ArrayList;
+import java.util.Collections;
 
 
 public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLinkManager {
@@ -16,17 +18,8 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
   //private LocationDataPoint[] locationDataPoint = new LocationDataPoint();
 
   /**
-   * sets locationdatapoint[] into object called locations.
-  */
-
-  /**
-   * we parserfid to get locationdatapoint.
-  */
-
-  /**
-   * MiddlewareComLinkManagerImplementaions takes in Gismanager and Midatabaseinterface. 
-  */
-
+   * The constructor for MiddlewareCommLinkManagerImplementation.
+   */
   public MiddlewareCommLinkManagerImplementation(
       MiddlewareCommDatabaseInterface midDatabaseInterface,
       MiddlewareGisManager gisManager
@@ -43,33 +36,55 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
   }
 
   public TrackData parseRfid(int rfid) {
-    //if (midDatabaseInterface.checkCurrentRfid() == midDatabaseInterface()){
-      //gisManager.storeLocationDataPoint();
-     // midDatabaseInterface.
-     return null;
-    
+    if (midDatabaseInterface.checkCurrentRfid() != rfid ){
+      TrackData trackData = new TrackData(new LocationDataPoint[0]);
+      trackData.setStatusMessage("There's no match, exiting SLTS."); //Concat Later
+      
+    } else { 
+      gisManager.storeLocationDataPoint();
+      if (midDatabaseInterface.requestMode() == "normal") {
+
+      } else {
+        TrackData trackData = midDatabaseInterface.getTrackData();
+        trackData.setStatusMessage("Getting Historical Data" ); //Concat Later
+      } 
+    } 
+    return null;
   }
 
-  
-  private float calculateLocationData() {
-    gisManager.storeLocationDataPoint();
-    //if (midDatabaseInterface.checkCurrentRfid() == )
-    if (midDatabaseInterface.requestMode() == "normal"){
+  private TrackData calculateLocationData() {
+    ArrayList<LocationDataPoint> points = new ArrayList<LocationDataPoint>();
+    TrackData trackData = midDatabaseInterface.getTrackData();
+      
+      float speed;
+      float direction;
+      
+      for (int i = 0; i < 5; i++) {
+        if (midDatabaseInterface.getLocationDataPoint(i) == null) {
+          break;
+        }
+        LocationDataPoint newPoint = midDatabaseInterface.getLocationDataPoint(i);
+        points.add(newPoint);
 
-    }
-    else {
-      //TrackData trackData = new TrackData(midDatabaseInterface.getTrackData());
-      midDatabaseInterface.getTrackData();
-    }
-    float fL = (float) 1.111;
-    return fL;
+      }
+      Collections.reverse(points);
+      LocationDataPoint[] pointsForCalculations = new LocationDataPoint[points.size()];
+      points.toArray(pointsForCalculations);   
+      
+      if(pointsForCalculations.length != 5) {
+        trackData.setStatusMessage("There's not enough data to conduct calculations for speed and direction.");
+      } 
+      
+      //speed = calculateSpeed(pointsForCalculations);
+      //direction = calculateDirection(pointsForCalculations);
+      
+    //TrackData returnTrackData = new TrackData(pointsForCalculations, direction, speed);
+    
+    return trackData;
   } 
 
   //private float calculateTrackData() {
     
   //}
-
-
-
 
 }
