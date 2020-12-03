@@ -15,7 +15,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 
-@DisplayName("Track Data Plotter Unit Tests")
+@DisplayName("TrackDataPlotter Unit Tests")
 public class TrackDataPlotterTests {
   @Test
   @DisplayName("5 Point Plot is Displayed")
@@ -36,7 +36,7 @@ public class TrackDataPlotterTests {
   @Test
   @DisplayName("2+ Point Plot is Displayed")
   void plotIsDisplayedWith2PlusDataPoints() {
-    TrackDataPlotter plotter = new TrackDataPlotter(generateInvalidTrackData());
+    TrackDataPlotter plotter = new TrackDataPlotter(generate2To4PointTrackData());
     plotter.displayChart();
     assertTrue(plotter.getDisplayedChart());
   }
@@ -71,9 +71,9 @@ public class TrackDataPlotterTests {
     );
   }
 
-  private TrackData generateInvalidTrackData() {
+  private TrackData generate2To4PointTrackData() {
     return new TrackData(
-        generateRandomLocationDataPointsArray((int) (Math.random() * 5))
+        generateRandomLocationDataPointsArray((int) (Math.random() * 3) + 2)
     );
   }
 
