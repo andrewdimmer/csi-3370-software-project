@@ -46,7 +46,7 @@ public class TrackDataCalculatorTests {
 
     double speed =  (trackLength / newDuration);
 
-    assertEquals(speed, TrackDataCalculator.calculateSpeed(locations),.01);
+    assertEquals(speed, TrackDataCalculator.calculateSpeed(locations), .01);
   }
   
   //Delta x == Lat2 - Lat1
