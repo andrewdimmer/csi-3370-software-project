@@ -84,6 +84,12 @@ public class TrackDataCalculatorTests {
 
     assertEquals(alpha2, TrackDataCalculator.calculateDirection(locations), .01);
   }
+
+  @Test
+  @DisplayName("TrackDataCalculator is constructable.")
+  public void trackDataCalculatorIsConstructable() {
+    new TrackDataCalculator();
+  }
   
   private LocationDataPoint generateRandomLocationDataPoint() {
     return new LocationDataPoint(

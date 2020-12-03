@@ -32,7 +32,7 @@ public class TrackDataCalculator {
     float deltaX = lattitude2 - lattitude1;
     double trackLength = Math.sqrt((deltaY * deltaY) + (deltaX * deltaX));
     double speed = (trackLength / newDuration);
-    double newSpeed = Math.round(speed * 100.0) / 100.0;
+    double newSpeed = Math.round(speed * 1000.0) / 1000.0;
     float newSpeed2 = (float) newSpeed;
 
     return newSpeed2;  
@@ -64,7 +64,4 @@ public class TrackDataCalculator {
     return alpha3;
   }
 
-  private LocationDataPoint[] calculateRootMeanSquared(LocationDataPoint[] locationDataPoints) {
-    return locationDataPoints;
-  }
 }
