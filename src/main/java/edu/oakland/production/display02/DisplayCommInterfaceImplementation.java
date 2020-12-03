@@ -43,7 +43,7 @@ public class DisplayCommInterfaceImplementation implements DisplayCommInterface 
     System.out.println("Speed: " + data.getSpeed());
     System.out.println("Status: " + data.getStatusMessage());
 
-    this.plotter = new TrackDataPlotter(data);
+    TrackDataPlotter plotter = new TrackDataPlotter(data);
     plotter.displayPlot();
 
     return data;
