@@ -49,10 +49,12 @@ public class GpsSystem {
    * @param input   The scanner object we are passing in.
    *
    */
-  public void runUseCase1(Scanner input) {
+  public String runUseCase1(Scanner input) {
     if (input == null) { //check for null unput
       throw new IllegalArgumentException("Scanner input must not be null");
-    } 
+    }
+    String output = displayGpsInterface.receiveGpsSignal(satellites[satelliteInUse]);
+    return output;
   }
       
   /**
