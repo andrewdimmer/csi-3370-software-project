@@ -38,7 +38,7 @@ public class TrackDataCalculatorTests {
     LocalDateTime time1 = firstpoint.getTime();
     LocalDateTime time2 = lastpoint.getTime();
     Duration duration = Duration.between(time1, time2);
-    long newDuration = duration.getSeconds() / 3600;
+    double newDuration = duration.getSeconds() / 3600.0;
 
     float deltaY = longitude2 - longitude1;
     float deltaX = lattitude2 - lattitude1;
