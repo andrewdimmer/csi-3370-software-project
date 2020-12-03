@@ -58,7 +58,7 @@ public class LocationDataPoint {
   public float getLng() {
     return lng;
   }
-  
+
   /**
    * Gets the time that the location of the Secure Lock Tracking Software shipping container was
    * stored.
@@ -67,6 +67,10 @@ public class LocationDataPoint {
    */
   public LocalDateTime getTime() {
     return time;
+  }
+
+  public String toString(){
+    return lat + " " + lng + " " + time;
   }
 
   /**
