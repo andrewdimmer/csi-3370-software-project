@@ -25,11 +25,11 @@ public class TrackDataCalculator {
 
     LocalDateTime time1 = point1.getTime();
     LocalDateTime time2 = point2.getTime();
-    Duration duration = Duration.between(time1, time2);
+    Duration duration = Duration.between(time2, time1);
     double newDuration = duration.getSeconds() / 3600.0;
 
-    float deltaY = longitude2 - longitude1;
-    float deltaX = lattitude2 - lattitude1;
+    float deltaY = longitude1 - longitude2;
+    float deltaX = lattitude1 - lattitude2;
     double trackLength = Math.sqrt((deltaY * deltaY) + (deltaX * deltaX));
     float speed = (float) (trackLength / newDuration);
 
@@ -51,14 +51,13 @@ public class TrackDataCalculator {
     float longitude2 = point2.getLng();
 
     double alpha;
-    float deltaY = longitude2 - longitude1;
-    float deltaX = lattitude2 - lattitude1;
+    float deltaY = longitude1 - longitude2;
+    float deltaX = lattitude1 - lattitude2;
     double trackLength = Math.sqrt((deltaY * deltaY) + (deltaX * deltaX));
     alpha = (deltaY / trackLength);
     alpha = (Math.asin(alpha));
-    double alpha2 = Math.toDegrees(alpha);
-    float alpha3 = (float) alpha2;
-    return alpha3;
+    double alpha2 = (Math.toDegrees(alpha) + 360) % 360;
+    return (float) alpha2;
   }
 
 }
