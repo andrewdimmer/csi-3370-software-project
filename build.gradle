@@ -36,7 +36,7 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClassName = 'edu.oakland.production.admin.Demo'
+    mainClassName = 'edu.oakland.production.admin.Main'
 }
 
 run{
@@ -57,5 +57,10 @@ jacocoTestReport {
     dependsOn test
     reports {
         xml.enabled true
+    }
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: ['edu/oakland/production/admin/Main.class'])
+        }))
     }
 }

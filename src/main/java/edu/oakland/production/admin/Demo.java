@@ -201,6 +201,7 @@ public class Demo {
     if (input == null) {
       throw new IllegalArgumentException("Scanner cannot be null");
     }
+    System.out.println("Welcome to the Secure Lock Tracking Software!");
     int rfid = configureRfid(input);
     String[] satelliteNames = configureSatelliteNames(input);
     initSecureLockTrackSystem(rfid, satelliteNames);
@@ -233,11 +234,6 @@ public class Demo {
    */
   public boolean getWasRun() {
     return wasRun;
-  }
-
-  public static void main(String[] args) {
-    System.out.println("Welcome to the Secure Lock Tracking Software!");
-    (new Demo()).run(new Scanner(System.in));
   }
 
 }
