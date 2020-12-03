@@ -31,12 +31,9 @@ public class TrackDataCalculator {
     float deltaY = longitude2 - longitude1;
     float deltaX = lattitude2 - lattitude1;
     double trackLength = Math.sqrt((deltaY * deltaY) + (deltaX * deltaX));
-    double speed = (trackLength / newDuration);
-    double newSpeed = Math.round(speed * 1000.0) / 1000.0;
-    float newSpeed2 = (float) newSpeed;
+    float speed = (float) (trackLength / newDuration);
 
-    return newSpeed2;  
-      
+    return speed;
   }
 
   /**
