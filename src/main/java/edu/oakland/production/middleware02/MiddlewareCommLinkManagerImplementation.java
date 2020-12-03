@@ -11,31 +11,18 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
 
   private MiddlewareCommDatabaseInterface midDatabaseInterface;
   private MiddlewareGisManager gisManager;
-
-  private float calculateLocationData() {
-    
-    return null;
-  } 
-
-  private float calculateTrackData() {
-
-    return null;
-  }
+  private LocationDataPoint[] locationDataPoint = new LocationDataPoint();
 
   /**
    * sets locationdatapoint[] into object called locations.
   */
-
-  LocationDataPoint[] locations = new LocationDataPoint[0];
 
   /**
    * we parserfid to get locationdatapoint.
   */
 
   public TrackData parseRfid(int rfid) {
-
-    TrackData trackData = new TrackData(locations);
-    return trackData;
+    if ()
   }
 
   /**
@@ -55,6 +42,24 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
       throw new IllegalArgumentException("gisManager cannot be null");
     }
     this.gisManager = gisManager;
+  }
+
+  public TrackData parseRfid(int rfid) {
+    if (midDatabaseInterface.checkCurrentRfid() == midDatabaseInterface()){
+      gisManager.storeLocationDataPoint();
+      midDatabaseInterface.
+    }
+  }
+
+  
+  private float calculateLocationData() {
+    gisManager.storeLocationDataPoint();
+    midDatabaseInterface.checkCurrentRfid();
+    float fL = 1.0;
+  } 
+
+  private float calculateTrackData() {
+    float speed = trackData.getSpeed();
   }
 
 
