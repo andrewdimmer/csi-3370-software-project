@@ -3,21 +3,19 @@
 package edu.oakland.helper.display02 {
     class TrackDataPlotter {
         - TrackData data
-        - XYDataset points
-        - XYDataset line
-        - JFreeChart chart1
-        - JFreeChart chart2
-        - XYPlot plot
-        - ChartPanel chartPanel1
-        - ChartPanel chartPanel2
+        - XYSeries points
+        - XYSeries fitLine
+        - JFreeChart chart
         __
         + TrackDataPlotter(TrackData data)
         .. Use Case 1 ..
-        + void displayPlotter()
+        + void displayChart()
+        + boolean getDisplayeChart()
         - XYSeries getTrackData()
         - XYSeries calculateLine(int[] x, int[] y)
-        - int[] extractLatFromTrackData(TrackData data)
-        - int[] extractLngFromTrackData(TrackData data)
+        - float[] extractLatFromTrackData(TrackData data)
+        - float[] extractLngFromTrackData(TrackData data)
+        - JFreeChart createChart()
     }
 }
 
