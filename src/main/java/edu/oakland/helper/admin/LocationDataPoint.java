@@ -70,7 +70,7 @@ public class LocationDataPoint {
   }
 
   public String toString() {
-    return lat + " " + lng + " " + time;
+    return "Location Data at " + time.toString() + ":\n\tLatitude: " + lat + "\n\tLongitude: " + lng;
   }
 
   /**
