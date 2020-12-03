@@ -32,11 +32,20 @@ dependencies {
 
     // Use JUnit Jupiter Engine for testing.
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.2'
+
+    // JCommon and JFreeChart for the Display_02 Plotter
+    implementation 'org.jfree:jcommon:1.0.23'
+    implementation 'org.jfree:jfreechart:1.0.19'
+
 }
 
 application {
     // Define the main class for the application.
-    mainClassName = 'edu.oakland.production.admin.Demo'
+    mainClassName = 'edu.oakland.production.admin.Main'
+}
+
+run{
+    standardInput = System.in
 }
 
 test {
@@ -53,5 +62,10 @@ jacocoTestReport {
     dependsOn test
     reports {
         xml.enabled true
+    }
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: ['edu/oakland/production/admin/Main.class'])
+        }))
     }
 }

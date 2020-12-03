@@ -42,7 +42,7 @@ public class TrackData {
 
   /**
    * Creates a TrackData object for cases where there are enough data points to calculate the speed
-   * and course direction of the Secure Lock Tracking System shipping container. 
+   * and course direction of the Secure Lock Tracking System shipping container.
    *
    * @param points A list of the most recent LocationDataPoints stored by the Secure Lock Tracking
    *               Software. Note: there should be exactly 5 points to use this constructor.
@@ -66,7 +66,7 @@ public class TrackData {
     if (speed < 0) {
       throw new IllegalArgumentException("speed cannot be negative");
     }
-    
+
     // Validate courseDirection
     if (courseDirection < 0) {
       throw new IllegalArgumentException("courseDirection cannot be negative");
@@ -121,6 +121,30 @@ public class TrackData {
    */
   public LocationDataPoint[] getLocationDataPoints() {
     return points;
+  }
+
+  /**
+   * Creates a print-friendly string of the TrackData data.
+   *
+   * @return The print friendly string of the TrackData data.
+   */
+  @Override
+  public String toString() {
+    StringBuilder str = new StringBuilder();
+    str.append("Track Data Status: " + getStatusMessage() + "\n");
+    if (isValid()) {
+      str.append("Speed: " + getSpeed() + "knots \n");
+      str.append("Course Direction: " + getCourseDirection() + " degrees North of East\n");
+    }
+    str.append("Raw Location Data Points:");
+    if (points.length > 0) {
+      for (LocationDataPoint point : points) {
+        str.append(point.toString() + "\n");
+      }
+    } else {
+      str.append("There are no Location Data Points associated with this Track Data.");
+    }
+    return str.toString();
   }
 
   /**

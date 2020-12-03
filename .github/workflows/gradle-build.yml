@@ -30,9 +30,17 @@ jobs:
           java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
           architecture: x64 # (x64 or x86) - defaults to x64
 
+      # Install Xvfb for visual testing on a headless environment
+      - name: Install Xvfb for Testing Visual Components
+        run: sudo apt-get install xvfb      
+
       # Run Gradle Build
       - name: Build and Test with Gradle
-        run: ./gradlew build
+        run: xvfb-run ./gradlew build
+
+      # Cleanup Xvfb resources
+      - name: Cleanup Xvfb Resources
+        uses: bcomnes/cleanup-xvfb@v1
 
       # Persist Test Reports
       - name: Persist Test Reports

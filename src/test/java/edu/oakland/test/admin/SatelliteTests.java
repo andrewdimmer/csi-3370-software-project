@@ -127,7 +127,7 @@ public class SatelliteTests {
     LocationDataPoint expectedPoint = new LocationDataPoint(
         initPoint.getLat() + x,
         initPoint.getLng() + y,
-        initPoint.getTime().plusHours(1)
+        initPoint.getTime().plusMinutes(10)
     );
     assertEquals(expectedPoint.getLat(), outputPoint.getLat(), .001);
     assertEquals(expectedPoint.getLng(), outputPoint.getLng(), .001);
@@ -153,7 +153,7 @@ public class SatelliteTests {
     LocationDataPoint expectedPoint = new LocationDataPoint(
         initPoint.getLat() + (x * numberOfCalls),
         initPoint.getLng() + (y * numberOfCalls),
-        initPoint.getTime().plusHours(numberOfCalls)
+        initPoint.getTime().plusMinutes(numberOfCalls * 10)
     );
     assertEquals(expectedPoint.getLat(), outputPoint.getLat(), .001);
     assertEquals(expectedPoint.getLng(), outputPoint.getLng(), .001);
@@ -183,7 +183,7 @@ public class SatelliteTests {
     LocationDataPoint expectedPoint = new LocationDataPoint(
         initPoint.getLat() + (x * numberOfCalls),
         initPoint.getLng() + (y * numberOfCalls),
-        initPoint.getTime().plusHours(numberOfCalls)
+        initPoint.getTime().plusMinutes(numberOfCalls * 10)
     );
     assertEquals(expectedPoint.getLat(), outputPoint.getLat(), .001);
     assertEquals(expectedPoint.getLng(), outputPoint.getLng(), .001);
