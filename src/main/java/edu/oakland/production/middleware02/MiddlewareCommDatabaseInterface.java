@@ -11,6 +11,8 @@ public interface MiddlewareCommDatabaseInterface {
   
   public TrackData getTrackData();
 
+  public void storeTrackData(TrackData trackData);
+
   public LocationDataPoint getLocationDataPoint(int offset);
 
 } 

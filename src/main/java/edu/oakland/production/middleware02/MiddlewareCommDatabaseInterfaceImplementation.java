@@ -32,8 +32,11 @@ public class MiddlewareCommDatabaseInterfaceImplementation implements
   }
 
   public TrackData getTrackData() {
-    int offset = 0;
-    return databaseCommInterface.receiveGetTrackDataRequest(offset);
+    return databaseCommInterface.receiveGetTrackDataRequest(0);
+  }
+
+  public void storeTrackData(TrackData trackData) {
+    databaseCommInterface.storeTrackDataRequest(trackData);
   }
 
   public LocationDataPoint getLocationDataPoint(int offset) {

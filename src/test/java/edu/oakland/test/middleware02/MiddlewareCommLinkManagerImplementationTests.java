@@ -85,9 +85,9 @@ public class MiddlewareCommLinkManagerImplementationTests {
   @Test
   @DisplayName("Verifies that MiddlewareGisManager cannot be set to null")
   void nullMiddwareGisManagerIsNotAllowed() { 
-    MiddlewareCommDatabaseInterface commDatabaseInterface = new MiddlewareCommDatabaseInterfaceStub(0);
+    MiddlewareCommDatabaseInterface commDbInterface = new MiddlewareCommDatabaseInterfaceStub(0);
     assertThrows(IllegalArgumentException.class, () -> {
-      new MiddlewareCommLinkManagerImplementation(commDatabaseInterface, null);
+      new MiddlewareCommLinkManagerImplementation(commDbInterface, null);
     });
   }
 

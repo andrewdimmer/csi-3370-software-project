@@ -26,6 +26,10 @@ public class MiddlewareCommDatabaseInterfaceStub implements MiddlewareCommDataba
     return null;
   }
 
+  public void storeTrackData(TrackData trackData) {
+    
+  }
+
   public LocationDataPoint getLocationDataPoint(int offset) {
     return null;
   }
