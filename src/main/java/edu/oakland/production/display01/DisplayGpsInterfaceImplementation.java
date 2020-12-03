@@ -28,9 +28,9 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
    * @return Which GPS Recived 
    */
   public String receiveGpsSignal(Satellite satelliteSignal) {
-    System.out.println("Recieved GPS Signal from:");
+    System.out.println("Recieved GPS Signal from: " + satelliteSignal.getSatelliteName());
     String satellite = reciever.measureGpsSignalStrength(satelliteSignal);
-    System.out.println(satellite);
+    //System.out.println(satelliteSignal.getSatelliteName());
     return satellite;
   }
 
