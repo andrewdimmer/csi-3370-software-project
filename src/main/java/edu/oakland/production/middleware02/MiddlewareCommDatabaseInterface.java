@@ -5,5 +5,15 @@ import edu.oakland.helper.admin.TrackData;
 public interface MiddlewareCommDatabaseInterface {
 
   public int checkCurrentRfid();
+  
 
+  public String requestMode(); 
+  
+  public TrackData getTrackData();
+
+
+
+  
+  
+  
 } 

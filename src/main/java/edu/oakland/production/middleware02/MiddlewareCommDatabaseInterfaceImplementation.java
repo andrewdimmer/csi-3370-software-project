@@ -29,4 +29,11 @@ public class MiddlewareCommDatabaseInterfaceImplementation implements
   public String requestMode() {
     return databaseCommInterface.receiveGetModeRequest();
   }
+
+  public TrackData getTrackData() {
+    int offset = 0;
+    return databaseCommInterface.receiveGetTrackDataRequest(offset);
+  }
+
+
 }

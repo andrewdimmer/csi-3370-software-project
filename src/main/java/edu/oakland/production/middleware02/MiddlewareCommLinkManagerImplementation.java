@@ -11,7 +11,7 @@ import edu.oakland.production.database.DatabaseCommInterface;
 
 public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLinkManager {
 
-  private MiddlewareCommDatabaseInterfaceImplementation midDatabaseInterface;
+  private MiddlewareCommDatabaseInterface midDatabaseInterface;
   private MiddlewareGisManager gisManager;
   //private LocationDataPoint[] locationDataPoint = new LocationDataPoint();
 
@@ -28,7 +28,7 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
   */
 
   public MiddlewareCommLinkManagerImplementation(
-      MiddlewareCommDatabaseInterfaceImplementation midDatabaseInterface,
+      MiddlewareCommDatabaseInterface midDatabaseInterface,
       MiddlewareGisManager gisManager
   ) {
     if (midDatabaseInterface == null) {
@@ -53,8 +53,16 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
   
   private float calculateLocationData() {
     gisManager.storeLocationDataPoint();
-    midDatabaseInterface.requestMode();
-    float fL = 1.0;
+    //if (midDatabaseInterface.checkCurrentRfid() == )
+    if (midDatabaseInterface.requestMode() == "normal"){
+
+    }
+    else {
+      //TrackData trackData = new TrackData(midDatabaseInterface.getTrackData());
+      midDatabaseInterface.getTrackData();
+    }
+    float fL = (float) 1.111;
+    return fL;
   } 
 
   //private float calculateTrackData() {

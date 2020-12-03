@@ -15,5 +15,15 @@ public class MiddlewareCommDatabaseInterfaceStub implements MiddlewareCommDataba
   public int checkCurrentRfid() {
     return rfid;
   }
+
+  public String requestMode() {
+    String st = "String";
+    return st;
+  }
+
+  public TrackData getTrackData() {
+    int offset = 0;
+    return null;
+  }
   
 }
