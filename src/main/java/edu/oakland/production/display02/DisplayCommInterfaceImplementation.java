@@ -6,7 +6,6 @@ import edu.oakland.helper.display02.TrackDataPlotter;
 import edu.oakland.production.display02.DisplayComm2WayInterface;
 import edu.oakland.production.display02.DisplayCommInterface;
 import java.lang.IllegalArgumentException;
-import java.util.Arrays;
 
 /**
 * This class receives the rfid, evaluates it,
@@ -41,7 +40,7 @@ public class DisplayCommInterfaceImplementation implements DisplayCommInterface 
     this.data = comm2Way.passRfidRequest(rfidNum);
 
     System.out.println("Track Data for RFID tag number " + rfidNum);
-    System.out.println("Location Data Points: " + Arrays.toString(data.getLocationDataPoints()));
+    System.out.println("Location Data Points: " + data.getLocationDataPoints());
     System.out.println("Course Direction: " + data.getCourseDirection());
     System.out.println("Speed: " + data.getSpeed());
     System.out.println("Status: " + data.getStatusMessage());
