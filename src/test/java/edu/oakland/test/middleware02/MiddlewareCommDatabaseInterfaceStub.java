@@ -10,11 +10,17 @@ public class MiddlewareCommDatabaseInterfaceStub implements MiddlewareCommDataba
   private String mode;
   private LocationDataPoint[] points;
   private TrackData trackData;
-
+  
+  /**
+   * Creates a test stub to simulate MiddlewareCommDatabaseInterface.
+   */
   public MiddlewareCommDatabaseInterfaceStub(int rfid) {
     this.rfid = rfid;
   }
 
+  /**
+   * Creates a test stub to simulate MiddlewareCommDatabaseInterface.
+   */
   public MiddlewareCommDatabaseInterfaceStub(
       int rfid,
       String mode,
@@ -43,6 +49,9 @@ public class MiddlewareCommDatabaseInterfaceStub implements MiddlewareCommDataba
     this.trackData = trackData;
   }
 
+  /**
+   * Simulates getLocationDataPoint in MiddlewareCommDatabaseInterface.
+   */
   public LocationDataPoint getLocationDataPoint(int offset) {
     if (offset >= points.length) {
       return null;

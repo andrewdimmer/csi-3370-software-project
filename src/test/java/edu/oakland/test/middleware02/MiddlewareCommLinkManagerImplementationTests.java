@@ -2,8 +2,8 @@ package edu.oakland.test.middleware02;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.Satellite;

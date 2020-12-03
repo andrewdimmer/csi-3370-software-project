@@ -46,8 +46,8 @@ public class MiddlewareCommLinkManagerImplementation implements MiddlewareCommLi
       trackData.setStatusMessage("The system RFID does not match the requested RFID.");
       return trackData;
     } else if (midDatabaseInterface.requestMode() == "normal") {
-        gisManager.storeLocationDataPoint();
-        return calculateLocationData();
+      gisManager.storeLocationDataPoint();
+      return calculateLocationData();
     } else {
       TrackData trackData = midDatabaseInterface.getTrackData();
       trackData.setStatusMessage("The system is in " + midDatabaseInterface.requestMode()
