@@ -133,8 +133,8 @@ public class TrackData {
     StringBuilder str = new StringBuilder();
     str.append("Track Data Status: " + getStatusMessage() + "\n");
     if (isValid()) {
-      System.out.println("Speed: " + getSpeed());
-      System.out.println("Course Direction: " + getCourseDirection());
+      str.append("Speed: " + getSpeed() + "\n");
+      str.append("Course Direction: " + getCourseDirection() + "\n");
     }
     for (int i = 0; i < points.length; i++) {
       str.append(points[i] + "\n");
