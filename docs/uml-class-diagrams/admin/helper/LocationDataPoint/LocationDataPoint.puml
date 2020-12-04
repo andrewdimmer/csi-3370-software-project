@@ -9,6 +9,7 @@ package edu.oakland.helper.admin {
         + float getLat()
         + float getLng()
         + LocalDateTime getTime()
+        + String toString()
         - float[] normalizeLatAndLng(float lat, float lng)
         - float normalizeLng(float lng)
     }
