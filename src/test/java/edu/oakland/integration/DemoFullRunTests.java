@@ -55,7 +55,7 @@ public class DemoFullRunTests {
 
   private String generateRandomString(int length) { 
     Random random = new Random();
-    String alphabet = "abcdefghijklmnopqrstuvwxyz";
+    String alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     char [] rndString = new char[length];
 
     for (int i = 0; i < length; i++) {
@@ -65,5 +65,7 @@ public class DemoFullRunTests {
     String createdString = new String(rndString);
     return createdString;
   }
+//Random String Generator Learned From:
+//https://stackoverflow.com/questions/2863852/how-to-generate-a-random-string-in-java
 
 }
