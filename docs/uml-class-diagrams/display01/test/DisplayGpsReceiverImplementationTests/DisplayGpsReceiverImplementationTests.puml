@@ -2,11 +2,11 @@
 
 package edu.oakland.test.display01 {
     class DisplayGpsReceiverImplementationTests {
-        + void verifyReceiverCannotBeNull()
-        + void signalInIsSignalOut()
-        + void satelliteInIsSatelliteOutReportLoss()
-        + void satelliteInIsSatelliteOutCheck()
-        + void satelliteInIsSatelliteOutRecheck()
+        + void displayGpsManagerIsNotNull()
+        + void measureGpsSignalStrengthSatelliteSignalIsNotNull()
+        + void measureSignalSatelliteSignalIsNotNull() 
+        + void measureGpsSignalStrengthSatelliteInIsSignalOut()
+        + void measureSignalSignalInIsSignalOut()
     }
 }
 
