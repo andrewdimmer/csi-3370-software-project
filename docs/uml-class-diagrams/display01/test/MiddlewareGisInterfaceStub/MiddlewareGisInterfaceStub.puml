@@ -4,6 +4,7 @@ package edu.oakland.test.display01 {
     class MiddlewareGisInterfaceStub {
         - String satelliteName
         __
+        + MiddlewareGisInterfaceStub()
         + MiddlewareGisInterfaceStub(String satelliteName)
         .. Use Case 1 ..
         + String receiveGpsSignalStrength(Satellite satelliteSignal)

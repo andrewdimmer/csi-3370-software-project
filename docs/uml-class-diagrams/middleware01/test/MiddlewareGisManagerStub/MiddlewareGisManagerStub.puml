@@ -2,10 +2,15 @@
 
 package edu.oakland.test.middleware01 {
     class MiddlewareGisManagerStub {
+        + LocationDataPoint locationDataPoint1
+        + LocationDataPoint locationDataPoint2
         __
+        + MiddlewareGisManagerStub()
+        + MiddlewareGisManagerStub(LocationDataPoint locationDataPoint1)
         .. Use Case 1 ..
         + String receieveGpsSignalStrength(Satellite satelliteSignal)
         + void storeLocationDataPoint()
+        + LocationDataPoint getLocation2()
         .. Use Case 2 ..
         + String attemptToRegainGpsLock(String satelliteName)
         + String evaluateGpsSignalStrength(Satellite satellite)
