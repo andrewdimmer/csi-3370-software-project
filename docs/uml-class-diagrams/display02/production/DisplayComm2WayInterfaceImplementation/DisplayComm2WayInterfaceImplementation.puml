@@ -2,9 +2,9 @@
 
 package edu.oakland.production.display02 {
     class DisplayComm2WayInterfaceImplementation {
-        - DisplayCommManager manager
+        - DisplayCommManager commManager
         __
-        + DisplayComm2WayInterfaceImplementation(DisplayCommManager manager)
+        + DisplayComm2WayInterfaceImplementation(DisplayCommManager commManager)
         .. Use Case 1 ..
         + TrackData passRfidRequest(int rfidNum)
     }

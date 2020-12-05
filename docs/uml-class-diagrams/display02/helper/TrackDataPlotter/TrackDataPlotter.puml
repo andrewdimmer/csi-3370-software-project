@@ -2,17 +2,19 @@
 
 package edu.oakland.helper.display02 {
     class TrackDataPlotter {
-        - TrackData data
-        - XYSeries points
+        - float[] lat
+        - float[] lng
+        - XYSeries dataPoints
         - XYSeries fitLine
         - JFreeChart chart
+        - boolean displayedChart
         __
         + TrackDataPlotter(TrackData data)
         .. Use Case 1 ..
         + void displayChart()
         + boolean getDisplayeChart()
-        - XYSeries getTrackData()
-        - XYSeries calculateLine(int[] x, int[] y)
+        + XYSeries getTrackData(float[] x, float[] y)
+        - XYSeries calculateLine(float[] x, float[] y)
         - float[] extractLatFromTrackData(TrackData data)
         - float[] extractLngFromTrackData(TrackData data)
         - JFreeChart createChart()

@@ -3,7 +3,8 @@
 package edu.oakland.test.display02 {
     class DisplayComm2WayInterfaceImplementationTests {
         + void rfidInIsRfidOut()
-        + void displayCommManagerIsNotNull()
+        + void commManagerIsNotNull()
+        - int generateRandomRfid()
     }
 }
 
