@@ -14,6 +14,7 @@ package edu.oakland.test.admin {
         + void crossAntimeridianEastToWestMultipleTimes()
         + void timeInIsTimeOut()
         + void nullTimeNotAllowed()
+        + void toStringContainsAllInfo()
         - float generateRandomLat()
         - float generateRandomLng()
         - float generateRandomLatNoEdgeCases()

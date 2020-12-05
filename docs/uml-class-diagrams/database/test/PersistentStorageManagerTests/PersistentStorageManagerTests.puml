@@ -2,10 +2,33 @@
 
 package edu.oakland.test.database {
     class PersistentStorageManagerTests {
-        + void readDataInIsDataOut()
-        + void writeDataInIsDataOut()
-        + void correctDeserialization()
-        + void correctSerialization()
+        + String randomArray
+        + LocationDataPoint ldp
+        + float course
+        ArrayList<LocationDataPoint> locDataPoint
+        ArrayList<TrackData> trackData
+        + void rfidDataInIsRfidDataOut()
+        + void offsetMatchDataPoint()
+        + void locationDataPointInIsDataPointOut()
+        + void offsetMatchTrackData()
+        + void trackDataInIsTrackDataOut()
+        + void modeInIsModeOut()
+        + void currentSatMatchNextSat()
+        + void cannotStoreNullLocationDataPoint()
+        + void cannotStoreNullTrackData()
+        + void locationDataPointOffsetOutOfBoundsReturnsNull()
+        + void trackDataOffsetOutOfBoundsReturnsEmptyTrackData()
+        + void nonexistentSatelliteNameReturnsEmptyNext()
+        + void lastSatelliteNameInListReturnsEmptyNext()
+        + void cannotPassNullLocationDataPointInConstructor()
+        + void cannotPassNullTrackDataInConstructor()
+        + void cannotPassNullNextSatellitesInConstructor()
+        - float generateRandomCourse()
+        - float generateRandomSpeed()
+        - int generateRandomTooSmallArrayLength()
+        - LocationDataPoint[] generateRandomLocationDataPointsArray(int length)
+        - LocationDataPoint generateRandomLocationDataPoint()
+        - String generateRandomString()
     }
 }
 

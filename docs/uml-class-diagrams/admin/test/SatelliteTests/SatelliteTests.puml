@@ -7,7 +7,7 @@ package edu.oakland.test.admin {
        + void strengthInIsStrengthOutSetter()
        + void getLocation0IsCorrect()
        + void getLocation1IsCorrect()
-       + void getLocationNIsCorrect()
+       + void getNthLocationIsCorrect()
        + void getLocationAcrossMultipleObjectsInSync()
        + void strengthNotLessThanOneConstructor()
        + void strengthNotMoreThanTenConstructor()

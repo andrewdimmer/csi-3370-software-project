@@ -13,6 +13,7 @@ package edu.oakland.helper.admin {
         + float getCourseDirection()
         + float getSpeed()
         + LocationDataPoint[] getLocationDataPoints()
+        + String toString()
         + String getStatusMessage()
         + void setStatusMessage(String statusMessage)
     }
