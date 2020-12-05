@@ -1,0 +1,16 @@
+@startuml DatabasePersistentStorageImplementationTests_DirectDependencies
+
+!startsub DATABASE_TEST
+!include DatabasePersistentStorageImplementationTests.puml
+!endsub
+
+!startsub DATABASE
+!include ../../production/DatabasePersistentStorageImplementation/DatabasePersistentStorageImplementation.puml
+DatabasePersistentStorageImplementationTests ..> DatabasePersistentStorageImplementation
+!endsub
+
+!startsub OTHER
+
+!endsub
+
+@enduml
