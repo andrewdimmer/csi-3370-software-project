@@ -5,6 +5,11 @@ package edu.oakland.test.display02 {
         + void displayComm2WayIsNotNull()
         + void zeroPointTrackDataDoesNotDisplayPlot()
         + void display2WayIsNotNull()
+        - int generateRandomRfid()
+        - float generateRandomCourse()
+        - float generateRandomSpeed()
+        - LocationDataPoint[] generateRandomLocationDataPointsArray(int length)
+        - LocationDataPoint generateRandomLocationDataPoint()
     }
 }
 

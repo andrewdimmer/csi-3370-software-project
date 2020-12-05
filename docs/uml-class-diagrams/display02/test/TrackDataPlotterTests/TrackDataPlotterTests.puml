@@ -7,6 +7,15 @@ package edu.oakland.test.display02 {
         + void plotIsDisplayedWith2PlusDataPoints()
         + void nullTrackDataNotAllowed()
         + void zeroPointTrackDataNotAllowed() 
+        - TrackData generateValidTrackData()
+        - TrackData generateSinglePointTrackData()
+        - TrackData generate2To4PointTrackData()
+        - float generateRandomCourse()
+        - float generateRandomSpeed()
+        - int generateRandomTooSmallArrayLength()
+        - LocationDataPoint[] generateRandomLocationDataPointsArray(int length)
+        - LocationDataPoint generateRandomLocationDataPoint()
+
     }
 }
 
