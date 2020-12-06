@@ -68,7 +68,8 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
 
     if (signalValid == true) {
       if (
-          mode.equals("degraded") &&
+          mode.equals("degraded") 
+          &&
           databaseGisInterface.receiveNextSatRequest(name).length() > 0
       ) {
         // Upgrade from degraded to normal

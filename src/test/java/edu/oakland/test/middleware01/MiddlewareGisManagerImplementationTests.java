@@ -84,9 +84,10 @@ public class MiddlewareGisManagerImplementationTests {
     Satellite satSignal = new Satellite("", 1);
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
-    stub.receiveModeRequest("stand by");
-    assertEquals("", man.evaluateGpsSignalStrength(satSignal));
-    assertEquals("stand by", stub.getMode());
+    stub.receiveModeRequest("standby");
+    Satellite stubSat = new Satellite(man.evaluateGpsSignalStrength(satSignal), 1);
+    assertEquals("", man.evaluateGpsSignalStrength(stubSat));
+    assertEquals("standby", stub.getMode());
   }
   
   @Test
@@ -96,7 +97,8 @@ public class MiddlewareGisManagerImplementationTests {
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
     stub.receiveModeRequest("degraded");
-    assertEquals(satSignal.getSatelliteName(), man.evaluateGpsSignalStrength(satSignal));
+    Satellite stubSat = new Satellite(man.evaluateGpsSignalStrength(satSignal), 1);
+    assertEquals(satSignal.getSatelliteName(), man.evaluateGpsSignalStrength(stubSat));
     assertEquals("degraded", stub.getMode());
   }
 
