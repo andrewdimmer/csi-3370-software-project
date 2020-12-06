@@ -128,10 +128,11 @@ public class MiddlewareGisManagerImplementationTests {
   @Test
   @DisplayName("Enter standby from normal")
   void enterStandbyFromNormal() {
-    Satellite satSignal = new Satellite("", 1);
+    Satellite satSignal = new Satellite("GPS1", 1);
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
     String stubName = man.evaluateGpsSignalStrength(satSignal);
+    stubName = "";
     Satellite stubSignal = new Satellite(stubName, 1);
     assertEquals("", man.evaluateGpsSignalStrength(stubSignal));
     stub.receiveModeRequest("standby");
@@ -141,10 +142,11 @@ public class MiddlewareGisManagerImplementationTests {
   @Test
   @DisplayName("Enter degraded from standby")
   void enterDegradedFromStandby() {
-    Satellite satSignal = new Satellite("", 1);
+    Satellite satSignal = new Satellite("GPS1", 1);
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
     String stubName = man.evaluateGpsSignalStrength(satSignal);
+    stubName = "";
     Satellite stubSignal = new Satellite(stubName, 1);
     String newName = man.evaluateGpsSignalStrength(stubSignal);
     Satellite newSignal = new Satellite(newName, 5);
