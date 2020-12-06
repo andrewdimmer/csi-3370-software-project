@@ -68,14 +68,25 @@ public class MiddlewareGisManagerImplementationTests {
   }
 
   @Test
-  @DisplayName("Enter normal mode")
-  void isNormalModeEntered() {
+  @DisplayName("Enter normal mode from degraded")
+  void enterNormalFromDegraded() {
     Satellite satSignal = new Satellite("GPS0", 5);
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
-    stub.receiveModeRequest("normal");
+    stub.receiveModeRequest("degraded");
     assertEquals("N/A. Reconnected.", man.evaluateGpsSignalStrength(satSignal));
-    assertEquals("normal", stub.getMode());
+    assertEquals("degraded", stub.getMode());
+  }
+
+  @Test
+  @DisplayName("Enter degraded mode from stand by")
+  void enterDegradedFromStandby() {
+    Satellite satSignal = new Satellite("GPS0", 5);
+    DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
+    MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+    stub.receiveModeRequest("standby");
+    assertEquals("N/A. Reconnected.", man.evaluateGpsSignalStrength(satSignal));
+    assertEquals("standby", stub.getMode());
   }
 
   @Test
