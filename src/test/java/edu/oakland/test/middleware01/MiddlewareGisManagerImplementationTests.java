@@ -67,49 +67,81 @@ public class MiddlewareGisManagerImplementationTests {
     assertEquals(ldp.getTime(), stub.getLocation().getTime());
   }
 
+  // @Test
+  // @DisplayName("Enter normal mode")
+  // void isNormalModeEntered() {
+  //   Satellite satSignal = new Satellite("GPS0", 5);
+  //   DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
+  //   MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+  //   assertEquals("", man.evaluateGpsSignalStrength(satSignal));
+  //   assertEquals("normal", stub.getMode());
+  // }
+
+  // @Test
+  // @DisplayName("Enter stand by mode")
+  // void isStandbyModeEntered() {
+  //   Satellite satSignal = new Satellite("", 1);
+  //   DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
+  //   MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+  //   assertEquals("", man.evaluateGpsSignalStrength(satSignal));
+  //   assertEquals("stand by", stub.getMode());
+  // }
+  
+  // @Test
+  // @DisplayName("Enter degraded mode")
+  // void isDegradedModeEntered() {
+  //   Satellite satSignal = new Satellite("GPS1", 1);
+  //   DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
+  //   MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+  //   assertEquals(satSignal.getSatelliteName(), man.evaluateGpsSignalStrength(satSignal));
+  //   assertEquals("degraded", stub.getMode());
+  // }
+
   @Test
-  @DisplayName("Enter normal mode from degraded")
-  void enterNormalFromDegraded() {
-    Satellite satSignal = new Satellite("GPS0", 5);
+  @DisplayName("Enter degraded from normal")
+  void enterDegradedFromNormal() {
+    Satellite satSignal = new Satellite("GPS0", 1);
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+    assertEquals(satSignal.getSatelliteName(), man.evaluateGpsSignalStrength(satSignal));
     stub.receiveModeRequest("degraded");
-    assertEquals("N/A. Reconnected.", man.evaluateGpsSignalStrength(satSignal));
     assertEquals("degraded", stub.getMode());
   }
 
   @Test
-  @DisplayName("Enter degraded mode from stand by")
-  void enterDegradedFromStandby() {
-    Satellite satSignal = new Satellite("GPS0", 5);
+  @DisplayName("Enter normal from degraded")
+  void enterNormalFromDegraded() {
+    Satellite satSignal = new Satellite("GPS0", 1);
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+    String newName = man.evaluateGpsSignalStrength(satSignal);
+    Satellite newSignal = new Satellite(newName, 5);
+    assertEquals("N/A. Reconnected.", man.evaluateGpsSignalStrength(newSignal));
+    stub.receiveModeRequest("normal");
+    assertEquals("normal", stub.getMode());
+  }
+
+  @Test
+  @DisplayName("Enter standby from normal")
+  void enterStandbyFromNormal() {
+    Satellite satSignal = new Satellite("", 1);
+    DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
+    MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+    assertEquals("", man.evaluateGpsSignalStrength(satSignal));
     stub.receiveModeRequest("standby");
-    assertEquals("N/A. Reconnected.", man.evaluateGpsSignalStrength(satSignal));
     assertEquals("standby", stub.getMode());
   }
 
   @Test
-  @DisplayName("Enter stand by mode")
-  void isStandbyModeEntered() {
+  @DisplayName("Enter degraded from standby")
+  void enterDegradedFromStandby() {
     Satellite satSignal = new Satellite("", 1);
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
-    stub.receiveModeRequest("standby");
-    Satellite stubSat = new Satellite(man.evaluateGpsSignalStrength(satSignal), 1);
-    assertEquals("", man.evaluateGpsSignalStrength(stubSat));
-    assertEquals("standby", stub.getMode());
-  }
-  
-  @Test
-  @DisplayName("Enter degraded mode")
-  void isDegradedModeEntered() {
-    Satellite satSignal = new Satellite("GPS1", 1);
-    DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
-    MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+    String newName = man.evaluateGpsSignalStrength(satSignal);
+    Satellite newSignal = new Satellite(newName, 5);
+    assertEquals("N/A. Reconnected.", man.evaluateGpsSignalStrength(newSignal));
     stub.receiveModeRequest("degraded");
-    Satellite stubSat = new Satellite(man.evaluateGpsSignalStrength(satSignal), 1);
-    assertEquals(satSignal.getSatelliteName(), man.evaluateGpsSignalStrength(stubSat));
     assertEquals("degraded", stub.getMode());
   }
 
