@@ -2,7 +2,15 @@
 
 package edu.oakland.test.middleware02 {
     class DatabaseCommInterfaceStub {
+        - int rfid
+        - String mode
+        - LocationDataPoint locationDataPoint
+        - TrackData trackData
         __
+        + DatabaseCommInterfaceStub()
+        + DatabaseCommInterfaceStub(int rfid)
+        + DatabaseCommInterfaceStub(String mode)
+        + DatabaseCommInterfaceStub(LocationDataPoint locationDataPoint)
         .. Use Case 1 ..
         {abstract} + int receiveGetRfidRequest()
         {abstract} + LocationDataPoint receiveGetLocationDataPointRequest(int offset)

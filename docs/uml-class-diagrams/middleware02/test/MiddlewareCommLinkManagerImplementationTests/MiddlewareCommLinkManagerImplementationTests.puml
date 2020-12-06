@@ -3,13 +3,17 @@
 package edu.oakland.test.middleware02 {
     class MiddlewareCommLinkManagerImplementationTests {
         + void rfidDoesNotMatchStopsTestCase()
-        + void storeRequestSent()
+        + void storeRequestSentWhenRfidsMatch()
+        + void doesNotStoreRequestSentWhenRfidsDoNotMatch()
+        + void doesNotStoreRequestSentWhenNotInNormalMode()
         + void emptyDatabaseReturnsEmptyTrackData()
         + void notEnoughDataReturnsPartialTrackData()
         + void enoughTrackDataReturnsFullData()
-        + void commDatabaseInterfaceIsNotNull()
-        + void gisManagerIsNotNull()
         + void storedTrackDataCheck()
+        + void nullMiddwareCommDatabaseInterfaceIsNotAllowed()
+        + void nullMiddwareGisManagerIsNotAllowed()
+        - LocationDataPoint generateRandomLocationDataPoint()
+        - LocationDataPoint[] generateRandomLocationDataPointsArray(int length)
     }
 }
 

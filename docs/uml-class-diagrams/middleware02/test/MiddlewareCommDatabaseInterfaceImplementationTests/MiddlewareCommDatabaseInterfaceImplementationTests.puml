@@ -3,7 +3,12 @@
 package edu.oakland.test.middleware02 {
     class MiddlewareCommDatabaseInterfaceImplementationTests {
         + void rfidInIsRfidOut()
-        + void databaseCommInterfaceIsNotNull()
+        + void modeInIsModeOut()
+        + void locationDataPointInIsLocationDataPointOut()
+        + void trackDataInIsTrackDataOut()
+        + void nullCheck()
+        - LocationDataPoint[] generateRandomLocationDataPointsArray(int length)
+        - LocationDataPoint generateRandomLocationDataPoint()
     }
 }
 

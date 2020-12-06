@@ -3,7 +3,7 @@
 package edu.oakland.test.middleware02 {
     class MiddlewareCommInterfaceImplementationTests {
         + void rfidInIsRfidOut()
-        + void MiddlewareCommLinkManagerIsNotNull()
+        + void nullCheck()
     }
 }
 
