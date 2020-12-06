@@ -10,11 +10,13 @@ import edu.oakland.production.display01.DisplayGpsReceiverImplementation;
 import edu.oakland.test.display01.DisplayGpsManagerStub;
 import java.lang.IllegalArgumentException;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 
 
 @DisplayName ("DisplayGpsReceiverImplementation Unit Tests")
+@Tag("UnitTests")
 public class DisplayGpsReceiverImplementationTests {
   @Test
   @DisplayName ("Display GPS Manager Is Not Null")

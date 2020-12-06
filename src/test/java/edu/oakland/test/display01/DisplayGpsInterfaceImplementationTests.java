@@ -10,9 +10,11 @@ import edu.oakland.production.display01.DisplayGpsReceiver;
 import edu.oakland.test.display01.DisplayGpsReceiverStub;
 import java.util.Random;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("DisplayGpsInterfaceImplementation Unit Tests")
+@Tag("UnitTests")
 public class DisplayGpsInterfaceImplementationTests {
   @Test
   @DisplayName("Verifying That Receiver Cannot Be Null")

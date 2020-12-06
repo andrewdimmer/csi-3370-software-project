@@ -11,9 +11,11 @@ import edu.oakland.production.middleware02.MiddlewareCommDatabaseInterfaceImplem
 import edu.oakland.test.middleware02.DatabaseCommInterfaceStub;
 import java.time.LocalDateTime;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("MiddlewareCommDatabaseInterfaceImplementation Unit Tests")
+@Tag("UnitTests")
 public class MiddlewareCommDatabaseInterfaceImplementationTests {
   
   @Test

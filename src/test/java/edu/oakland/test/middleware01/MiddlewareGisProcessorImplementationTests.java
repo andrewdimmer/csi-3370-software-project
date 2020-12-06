@@ -11,9 +11,11 @@ import edu.oakland.production.middleware01.MiddlewareGisProcessorImplementation;
 import edu.oakland.test.middleware01.MiddlewareGisManagerStub;
 import java.lang.IllegalArgumentException;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("MiddlewareGisProcessorImplementation Unit Tests")
+@Tag("UnitTests")
 public class MiddlewareGisProcessorImplementationTests {
 
   @Test

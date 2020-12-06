@@ -9,9 +9,11 @@ import edu.oakland.production.display01.DisplayGpsManager;
 import edu.oakland.production.display01.DisplayGpsManagerImplementation;
 import edu.oakland.production.middleware01.MiddlewareGisInterface;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("Display GPS Manager Unit Tests")
+@Tag("UnitTests")
 public class DisplayGpsManagerImplementationTests {
   
   @Test    

@@ -9,9 +9,11 @@ import edu.oakland.production.middleware02.MiddlewareCommInterfaceImplementation
 import edu.oakland.production.middleware02.MiddlewareCommLinkManager;
 import edu.oakland.test.middleware02.MiddlewareCommLinkManagerStub;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("MiddlewareCommInterfaceImplementation Unit Tests")
+@Tag("UnitTests")
 public class MiddlewareCommInterfaceImplementationTests {
 
   @Test

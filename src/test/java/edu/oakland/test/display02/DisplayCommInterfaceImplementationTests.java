@@ -12,10 +12,11 @@ import edu.oakland.test.display02.DisplayComm2WayInterfaceStub;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("DisplayCommInterfaceImplementation Tests")
-
+@Tag("UnitTests")
 public class DisplayCommInterfaceImplementationTests {
 
   @Test

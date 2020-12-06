@@ -4,10 +4,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import edu.oakland.production.display02.DisplayComm2WayInterfaceImplementation;
 import edu.oakland.test.display02.DisplayCommManagerStub;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("DisplayComm2WayInterfaceImplementation Unit Tests")
-
+@Tag("UnitTests")
 public class DisplayComm2WayInterfaceImplementationTests {
   @Test
   @DisplayName("RFID In Is the same as Rfid Out")

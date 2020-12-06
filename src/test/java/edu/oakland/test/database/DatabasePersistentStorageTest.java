@@ -16,9 +16,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("DatabasePersistentStorage Unit Tests")
+@Tag("UnitTests")
 public class DatabasePersistentStorageTest {
 
   String[] randomArray = {"A", "B"};

@@ -8,9 +8,11 @@ import edu.oakland.helper.admin.LocationDataPoint;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("LocationDataPoint Unit Tests")
+@Tag("UnitTests")
 public class LocationDataPointTests {
 
   @Test
