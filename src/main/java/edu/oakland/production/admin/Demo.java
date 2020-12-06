@@ -237,4 +237,11 @@ public class Demo {
     return wasRun;
   }
 
+  /**
+   * This is to test code coverage reports.
+   */
+  public void testReports() {
+    
+  }
+
 }
