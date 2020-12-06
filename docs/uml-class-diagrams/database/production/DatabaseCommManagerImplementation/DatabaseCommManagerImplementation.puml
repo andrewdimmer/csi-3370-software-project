@@ -2,14 +2,15 @@
 
 package edu.oakland.production.database {
     class DatabaseCommManagerImplementation {
-        - DatabasePersistentStorage databasePersistentStorage
+        - DatabasePersistentStorage dps
         __
-        + DatabaseCommManagerImplementation(DatabasePersistentStorage databasePersistentStorage)
+        + DatabaseCommManagerImplementation(DatabasePersistentStorage dps)
         .. Use Case 1 ..
         + int passGetRfidRequest()
         + LocationDataPoint passGetLocationDataPointRequest(int offset)
         + TrackData passGetTrackDataRequest(int offset)
         + void passStoreTrackDataRequest(TrackData trackData)
+        + String passGetModeRequest()
     }
 }
 

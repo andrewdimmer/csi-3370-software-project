@@ -4,7 +4,7 @@ package edu.oakland.production.database {
     class DatabaseGisInterfaceImplementation {
         - DatabaseGisManager manager
         __
-        + DatabaseGisInterface(DatabaseGisManager manager)
+        + DatabaseGisInterface(DatabaseGisManager m)
         .. Use Case 1 ..
         + void recieveStoreRequest(LocationDataPoint locationDataPoint)
         .. Use Case 2 ..
