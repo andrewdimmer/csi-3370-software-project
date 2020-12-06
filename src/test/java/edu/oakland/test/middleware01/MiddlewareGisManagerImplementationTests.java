@@ -156,6 +156,22 @@ public class MiddlewareGisManagerImplementationTests {
   }
 
   @Test
+  @DisplayName("Enter normal from degraded False")
+  void enterNormalFromDegradedFalse() {
+    Satellite satSignal = new Satellite("GPS0", 1);
+    DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
+    MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+    String stubName = man.evaluateGpsSignalStrength(satSignal);
+    Satellite stubSignal = new Satellite(stubName, 1);
+    String newName = man.evaluateGpsSignalStrength(stubSignal);
+    newName = "";
+    Satellite newSignal = new Satellite(newName, 5);
+    assertEquals("N/A. Reconnected.", man.evaluateGpsSignalStrength(newSignal));
+    stub.receiveModeRequest("degraded");
+    assertEquals("degraded", stub.getMode());
+  }
+
+  @Test
   @DisplayName("Check if DatabaseGISInterface is not null")
   void databaseInterfaceIsNotNull() {
     assertThrows(IllegalArgumentException.class, () -> {
