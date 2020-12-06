@@ -68,32 +68,76 @@ public class MiddlewareGisManagerImplementationTests {
   }
 
   @Test
-  @DisplayName("Enter normal mode")
-  void isNormalModeEntered() {
-    Satellite satSignal = new Satellite("GPS0", 5);
+  @DisplayName("Enter degraded from normal")
+  void enterDegradedFromNormal() {
+    Satellite satSignal = new Satellite("GPS0", 1);
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
-    assertEquals("", man.evaluateGpsSignalStrength(satSignal));
+    String stubName = man.evaluateGpsSignalStrength(satSignal);
+    Satellite stubSignal = new Satellite(stubName, 1);
+    assertEquals(satSignal.getSatelliteName(), man.evaluateGpsSignalStrength(stubSignal));
+    stub.receiveModeRequest("degraded");
+    assertEquals("degraded", stub.getMode());
+  }
+
+  @Test
+  @DisplayName("Enter normal from degraded")
+  void enterNormalFromDegraded() {
+    Satellite satSignal = new Satellite("GPS0", 1);
+    DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
+    MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+    String stubName = man.evaluateGpsSignalStrength(satSignal);
+    Satellite stubSignal = new Satellite(stubName, 1);
+    String newName = man.evaluateGpsSignalStrength(stubSignal);
+    Satellite newSignal = new Satellite(newName, 5);
+    assertEquals("N/A. Reconnected.", man.evaluateGpsSignalStrength(newSignal));
+    stub.receiveModeRequest("normal");
     assertEquals("normal", stub.getMode());
   }
 
   @Test
-  @DisplayName("Enter stand by mode")
-  void isStandbyModeEntered() {
-    Satellite satSignal = new Satellite("", 1);
-    DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
-    MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
-    assertEquals("", man.evaluateGpsSignalStrength(satSignal));
-    assertEquals("stand by", stub.getMode());
-  }
-  
-  @Test
-  @DisplayName("Enter degraded mode")
-  void isDegradedModeEntered() {
+  @DisplayName("Enter standby from normal")
+  void enterStandbyFromNormal() {
     Satellite satSignal = new Satellite("GPS1", 1);
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
-    assertEquals(satSignal.getSatelliteName(), man.evaluateGpsSignalStrength(satSignal));
+    String stubName = man.evaluateGpsSignalStrength(satSignal);
+    stubName = "";
+    Satellite stubSignal = new Satellite(stubName, 1);
+    assertEquals("", man.evaluateGpsSignalStrength(stubSignal));
+    stub.receiveModeRequest("standby");
+    assertEquals("standby", stub.getMode());
+  }
+
+  @Test
+  @DisplayName("Enter degraded from standby")
+  void enterDegradedFromStandby() {
+    Satellite satSignal = new Satellite("GPS1", 1);
+    DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
+    MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+    String stubName = man.evaluateGpsSignalStrength(satSignal);
+    stubName = "";
+    Satellite stubSignal = new Satellite(stubName, 1);
+    String newName = man.evaluateGpsSignalStrength(stubSignal);
+    Satellite newSignal = new Satellite(newName, 5);
+    assertEquals("N/A. Reconnected.", man.evaluateGpsSignalStrength(newSignal));
+    stub.receiveModeRequest("degraded");
+    assertEquals("degraded", stub.getMode());
+  }
+
+  @Test
+  @DisplayName("Enter normal from degraded False")
+  void enterNormalFromDegradedFalse() {
+    Satellite satSignal = new Satellite("GPS0", 1);
+    DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
+    MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+    String stubName = man.evaluateGpsSignalStrength(satSignal);
+    Satellite stubSignal = new Satellite(stubName, 1);
+    String newName = man.evaluateGpsSignalStrength(stubSignal);
+    newName = "";
+    Satellite newSignal = new Satellite(newName, 5);
+    assertEquals("N/A. Reconnected.", man.evaluateGpsSignalStrength(newSignal));
+    stub.receiveModeRequest("degraded");
     assertEquals("degraded", stub.getMode());
   }
 
