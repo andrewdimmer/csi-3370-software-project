@@ -16,7 +16,9 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
     
   private DatabaseGisInterface databaseGisInterface;
   private LocationDataPoint locationDataPoint;
-  private Satellite satelliteSignal;
+  private String savedSat = "";
+  private String mode = "normal";
+
 
   /**
    * Creates a MiddlewareGisManagerImplementation to receive the Satellite signal.
@@ -62,19 +64,46 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
    */
   public String evaluateGpsSignalStrength(Satellite satellite) {
     boolean signalValid = isStrongEnough(satellite.getStrength());
+    String name = satellite.getSatelliteName();
 
     if (signalValid == true) {
-      databaseGisInterface.receiveModeRequest("normal");
-      return "";
+      if (
+          mode.equals("degraded") &&
+          databaseGisInterface.receiveNextSatRequest(name).length() > 0
+      ) {
+        // Upgrade from degraded to normal
+        // Note: there is a special use case for the next satellite is empty, because that means
+        // that there is still only one connected.
+        databaseGisInterface.receiveModeRequest("normal");
+        mode = "normal";
+        System.out.println("Normal Mode");
+      } else if (mode.equals("standby")) {
+        // Upgrade from standby to degraded mode
+        databaseGisInterface.receiveModeRequest("degraded");
+        mode = "degraded";
+        System.out.println("Degraded Mode");
+      }
+      return "N/A. Reconnected.";
     } else {
-      String name = satellite.getSatelliteName();
+      // Retry the same satellite
+      if (savedSat == "") {
+        savedSat = name;
+        return name;
+      }
+      savedSat = "";
+
+      // Get the next satellite
       String datapoint = databaseGisInterface.receiveNextSatRequest(name);
       if (datapoint.equals("")) {
-        databaseGisInterface.receiveModeRequest("stand by");
+        databaseGisInterface.receiveModeRequest("standby");
+        mode = "standby";
+        System.out.println("Standby Mode");
         return "";
       } else {
         databaseGisInterface.receiveModeRequest("degraded");
-        return databaseGisInterface.receiveNextSatRequest(satellite.getSatelliteName());
+        mode = "degraded";
+        System.out.println("Degraded Mode");
+        return databaseGisInterface.receiveNextSatRequest(name);
       }
     }     
   }  
