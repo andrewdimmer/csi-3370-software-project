@@ -33,13 +33,13 @@ jobs:
         with:
           file: build/reports/jacoco/jacocoUnitTestReport/jacocoUnitTestReport.xml
           name: codecov-umbrella # optional
-          flags: unitTest
+          flags: unittest
           fail_ci_if_error: true # optional (default = false)
           verbose: true # optional (default = false)
       - uses: codecov/codecov-action@v1
         with:
           file: build/reports/jacoco/jacocoIntegrationTestReport/jacocoIntegrationTestReport.xml
           name: codecov-umbrella # optional
-          flags: integrationTest
+          flags: integrationtest
           fail_ci_if_error: true # optional (default = false)
           verbose: true # optional (default = false)
