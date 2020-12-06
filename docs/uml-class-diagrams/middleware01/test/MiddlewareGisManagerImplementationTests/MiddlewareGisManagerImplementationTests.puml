@@ -6,9 +6,10 @@ package edu.oakland.test.middleware01 {
     + void isGpsSignalStrengthEvaluateTrue()
     + void isGpsSignalStrengthEvaluateFalse()
     + void ldpInIsLdpOut()
-    + void isNormalModeEntered()
-    + void isStandbyModeEntered()
-    + void isDegradedModeEntered()
+    + void enterDegradedFromNormal()
+    + void enterNormalFromDegraded()
+    + void enterStandbyFromNormal()
+    + void enterDegradedFromStandby()
     + void databaseInterfaceIsNotNull()
   }
 }
