@@ -5,6 +5,10 @@ package edu.oakland.production.middleware02 {
         __
         .. Use Case 1 ..
         {abstract} + int checkCurrentRfid()
+        {abstract} + String requestMode()
+        {abstract} + TrackData getTrackData()
+        {abstract} + void storeTrackData(TrackData trackData)
+        {abstract} + LocationDataPoint getLocationDataPoint(int offset)
     }
 }
 
