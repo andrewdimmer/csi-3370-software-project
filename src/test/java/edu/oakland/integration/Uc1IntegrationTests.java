@@ -11,9 +11,11 @@ import java.lang.IllegalArgumentException;
 import java.util.Random;
 import java.util.Scanner;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("Use Case 1 Integration Tests")
+@Tag("IntegrationTests")
 public class Uc1IntegrationTests { 
 
   @Test

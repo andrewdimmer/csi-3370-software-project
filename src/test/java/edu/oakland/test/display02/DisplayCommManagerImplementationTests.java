@@ -11,10 +11,11 @@ import edu.oakland.production.middleware02.MiddlewareCommInterface;
 import edu.oakland.test.display02.MiddlewareCommInterfaceStub;
 import java.lang.IllegalArgumentException;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("DisplayCommManagerImplementation Unit Tests")
-
+@Tag("UnitTests")
 public class DisplayCommManagerImplementationTests {
 
   @Test

@@ -69,3 +69,53 @@ jacocoTestReport {
         }))
     }
 }
+
+task unitTest(type: Test) {
+    // Use junit platform for unit tests
+    useJUnitPlatform {
+        excludeTags 'IntegrationTests'
+    }
+    testLogging.showStandardStreams = true    
+    testLogging {
+       events "PASSED", "FAILED", "SKIPPED"
+    }
+}
+
+task jacocoUnitTestReport(type: JacocoReport) {
+    // tests are required to run before generating the report
+    dependsOn unitTest
+    executionData(file("${project.buildDir}/jacoco/unitTest.exec"))
+    reports {
+        xml.enabled true
+    }
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: ['edu/oakland/production/admin/Main.class'])
+        }))
+    }
+}
+
+task integrationTest(type: Test) {
+    // Use junit platform for unit tests
+    useJUnitPlatform {
+        includeTags 'IntegrationTests'
+    }
+    testLogging.showStandardStreams = true    
+    testLogging {
+       events "PASSED", "FAILED", "SKIPPED"
+    }
+}
+
+task jacocoIntegrationTestReport(type: JacocoReport) {
+    // tests are required to run before generating the report
+    dependsOn integrationTest
+    executionData(file("${project.buildDir}/jacoco/integrationTest.exec"))
+    reports {
+        xml.enabled true
+    }
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: ['edu/oakland/production/admin/Main.class'])
+        }))
+    }
+}

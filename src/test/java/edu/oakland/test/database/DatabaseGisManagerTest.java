@@ -10,9 +10,11 @@ import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 import java.util.Random;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("DatabaseGisManagerImplementation Unit Tests")
+@Tag("UnitTests")
 public class DatabaseGisManagerTest {
 
   @Test

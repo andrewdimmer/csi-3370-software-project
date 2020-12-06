@@ -12,10 +12,12 @@ import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 
 @DisplayName("TrackDataPlotter Unit Tests")
+@Tag("UnitTests")
 public class TrackDataPlotterTests {
   @Test
   @DisplayName("5 Point Plot is Displayed")

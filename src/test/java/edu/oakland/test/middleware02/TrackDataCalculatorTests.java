@@ -9,6 +9,7 @@ import edu.oakland.helper.middleware02.TrackDataCalculator;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("TrackDataCalculator Unit Tests")
@@ -54,6 +55,7 @@ public class TrackDataCalculatorTests {
   
   @Test
   @DisplayName("Calculate Direction")
+  @Tag("UnitTests")
   void calculateDirectionTest() {
     Satellite.satelliteInit(
         (float) (Math.random() - .5),

@@ -6,9 +6,11 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
 import java.lang.IllegalArgumentException;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("SatelliteSignalCheckRequest Unit Tests")
+@Tag("UnitTests")
 public class SatelliteSignalCheckRequestTests {
 
   @Test
