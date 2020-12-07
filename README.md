@@ -142,7 +142,7 @@ The distributions themselves will be in the `build/distributions` directory.
 
 ### Test Driven Development and Code Coverage
 
-This project is built using mostly Test Driven Development. To become acclimated with Test Driven Development, it is recommended that you watch ([@andrewdimmer](https://github.com/andrewdimmer/))'s [Test Driven Development Crash Course](https://youtu.be/eSc0aY4GhPs).
+This project is built using mostly Test Driven Development. To become acclimated with Test Driven Development, it is recommended that you watch [@andrewdimmer](https://github.com/andrewdimmer/)'s [Test Driven Development Crash Course](https://youtu.be/eSc0aY4GhPs).
 
 Note: there were some parts of this project (ex. The `TrackDataPlotter`) where Test Driven Development was difficult based on the requirements. Therefore, this project was integrated with Codecov, a code coverage validation tool to help ensure proper test coverage of all code committed to this repository.
 
