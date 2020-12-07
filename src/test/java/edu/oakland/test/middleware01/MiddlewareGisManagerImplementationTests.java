@@ -150,9 +150,10 @@ public class MiddlewareGisManagerImplementationTests {
     assertEquals("GPS1", man.evaluateGpsSignalStrength(satSignal));
     assertEquals("standby", stub.getMode());
   }
+
   @Test
-  @DisplayName("Enter standby from standby")
-  void enterStandbyFromStandby() {
+  @DisplayName("Enter standby from standby via Empty Next")
+  void enterStandbyFromStandbyViaEmptyNext() {
     Satellite satSignal = new Satellite("GPS1", 1);
     DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
     MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
