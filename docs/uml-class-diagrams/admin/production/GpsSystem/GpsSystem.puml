@@ -16,6 +16,10 @@ package edu.oakland.production.admin {
         \tLocationDataPoint initLocationDataPoint)
         - void configureSatellites(String[] satelliteNames)
         - boolean isEmptyStringInArray(String[] in)
+        - String printOptions()
+        - int findSatelliteIndexFromName(String name)
+        - int findMaxToModify()
+        - void modifySatelliteStrength(int index, Scanner input)
     }
 }
 

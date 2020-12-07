@@ -108,46 +108,6 @@ public class GpsSystem {
 
     System.out.println();
   }
-
-  private String printOptions() {
-    String options = "";
-    for (int i = 0; i <= findMaxToModify(); i++) {
-      String marker = (satellites[i].getStrength() >= 4 ? ": > " : ":   ");
-      options += i + marker + satellites[i].getSatelliteName() + "\n";
-    }
-    return options;
-  }
-
-  private int findSatelliteIndexFromName(String name) {
-    for (int i = 0; i < satellites.length; i++) {
-      if (satellites[i].getSatelliteName() == name) {
-        return i;
-      }
-    }
-    return -1;
-  }
-
-  private int findMaxToModify() {
-    int firstConnected = -1;
-    for (int i = 0; i < satellites.length; i++) {
-      if (satellites[i].getStrength() >= 4) {
-        if (firstConnected == -1) {
-          firstConnected = i;
-        } else {
-          return firstConnected;
-        }
-      }
-    }
-    return satellites.length - 1;
-  }
-
-  private void modifySatelliteStrength(int index, Scanner input) {
-    System.out.println("Enter a signal strength between 1 and 10:");
-    satelliteInUse = index;
-    int strength = input.nextInt();
-    input.nextLine(); // Eat new line character
-    satellites[index].setStrength(strength);
-  }
   
   /**
    * Method to set the instance variable satellites based on the paramaters that are passed in. 
@@ -218,5 +178,71 @@ public class GpsSystem {
       }
     }
     return false;
+  }
+
+  /**
+   * Prints the options of satellites the user can modify. Based on how the satellites are
+   * modified, this should print exactly 1 satellite that is connected (unless there are none),
+   * and all satellites that are disconnected before the connected satellite (unless there is only
+   * one connected satellite, in which case print all satellites).
+   *
+   * @return The modification options to display to the user.
+   */
+  private String printOptions() {
+    String options = "";
+    for (int i = 0; i <= findMaxToModify(); i++) {
+      String marker = (satellites[i].getStrength() >= 4 ? ": > " : ":   ");
+      options += i + marker + satellites[i].getSatelliteName() + "\n";
+    }
+    return options;
+  }
+
+  /**
+   * Converts a satellite name to the index of that satellite in the satellites array.
+   *
+   * @param name The name of the satellite to get the index of.
+   * @return The index of the satellite with in the satellites array with the given name.
+   */
+  private int findSatelliteIndexFromName(String name) {
+    for (int i = 0; i < satellites.length; i++) {
+      if (satellites[i].getSatelliteName() == name) {
+        return i;
+      }
+    }
+    return -1;
+  }
+
+  /**
+   * A helper method to find the max index in the satellites array to be modified in use case 2.
+   * See printOptions() for more info.
+   *
+   * @return The index of the last satellite to modify.
+   */
+  private int findMaxToModify() {
+    int firstConnected = -1;
+    for (int i = 0; i < satellites.length; i++) {
+      if (satellites[i].getStrength() >= 4) {
+        if (firstConnected == -1) {
+          firstConnected = i;
+        } else {
+          return firstConnected;
+        }
+      }
+    }
+    return satellites.length - 1;
+  }
+
+  /**
+   * Modify the given satellite signal strength based on user input.
+   *
+   * @param index The index in the satellites array of the satellite to modify.
+   * @param input A scanner to get the user input.
+   */
+  private void modifySatelliteStrength(int index, Scanner input) {
+    System.out.println("Enter a signal strength between 1 and 10:");
+    satelliteInUse = index;
+    int strength = input.nextInt();
+    input.nextLine(); // Eat new line character
+    satellites[index].setStrength(strength);
   }
 }
