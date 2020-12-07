@@ -146,22 +146,8 @@ public class MiddlewareGisManagerImplementationTests {
     stubName = "";
     Satellite stubSignal = new Satellite(stubName, 1);
     man.evaluateGpsSignalStrength(stubSignal);
-    satSignal = new Satellite("GPS1", 1);
-    assertEquals("GPS1", man.evaluateGpsSignalStrength(satSignal));
-    assertEquals("standby", stub.getMode());
-  }
-
-  @Test
-  @DisplayName("Enter standby from standby via Empty Next")
-  void enterStandbyFromStandbyViaEmptyNext() {
-    Satellite satSignal = new Satellite("GPS1", 1);
-    DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
-    MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
-    String stubName = man.evaluateGpsSignalStrength(satSignal);
-    stubName = "";
-    Satellite stubSignal = new Satellite(stubName, 1);
-    man.evaluateGpsSignalStrength(stubSignal);
-    satSignal = new Satellite("", 1);
+    satSignal = new Satellite("GPS0", 1);
+    man.evaluateGpsSignalStrength(satSignal); // Get past retry
     assertEquals("", man.evaluateGpsSignalStrength(satSignal));
     assertEquals("standby", stub.getMode());
   }
