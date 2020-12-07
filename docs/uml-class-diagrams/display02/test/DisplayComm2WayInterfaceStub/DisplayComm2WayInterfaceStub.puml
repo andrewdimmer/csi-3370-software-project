@@ -2,9 +2,11 @@
 
 package edu.oakland.test.display02 {
     class DisplayComm2WayInterfaceStub {
+        - TrackData trackData
         __
+        {abstract} + DisplayComm2WayInterfaceStub(TrackData trackData)
         .. Use Case 1 ..
-        {abstract} + TrackData passRfidRequest(int rfidNum)
+        {abstract} + TrackData passRfidRequest(int rfid)
     }
 }
 

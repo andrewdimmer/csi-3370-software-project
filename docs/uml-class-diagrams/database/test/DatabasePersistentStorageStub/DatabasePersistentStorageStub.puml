@@ -2,6 +2,10 @@
 
 package edu.oakland.test.database {
     class DatabasePersistentStorageStub {
+        - String mode
+        - LocationDataPoint ldp
+        - int rfid
+        - TrackData trackData
         __
         .. Use Case 1 ..
         + int locateRfidData()

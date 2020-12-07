@@ -2,12 +2,11 @@
 
 package edu.oakland.test.display01 {
     class DisplayGpsInterfaceImplementationTests {
-      + void sendMessageIfSingalLost()
-      + void dontSendMessageIfSignalFound()
-      + void recievedGpsSignal()
-      + void didNotRevieveGpsSignal()
-      + void foundNoSignal()
-      + void foundStrongSignal()
+      + void verifyReceiverCannotBeNull()
+      + void signalInIsSignalOut()
+      + void satelliteInIsSatelliteOutReportLoss()
+      + void satelliteInIsSatelliteOutCheck()
+      + void satelliteInIsSatelliteOutRecheck()
     }
 }
 

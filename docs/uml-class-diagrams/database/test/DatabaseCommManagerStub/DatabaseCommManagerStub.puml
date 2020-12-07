@@ -2,6 +2,11 @@
 
 package edu.oakland.test.database {
     class DatabaseCommManagerStub {
+        - int rfid
+        - LocationDataPoint ldp
+        - int index
+        - TrackData td
+        - String mode
         __
         .. Use Case 1 ..
         + int passGetRfidRequest()
@@ -9,6 +14,9 @@ package edu.oakland.test.database {
         + TrackData passGetTrackDataRequest(int offset)
         + void passStoreTrackDataRequest(TrackData trackData)
         + String passGetModeRequest()
+        + void storeMode(String s)
+        + int getIndex()
+        + void storeLocationDataPoint(LocationDataPoint locationDataPoint)
     }
 }
 

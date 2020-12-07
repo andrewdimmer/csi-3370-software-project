@@ -2,9 +2,20 @@
 
 package edu.oakland.test.display02 {
     class TrackDataPlotterTests {
-        + void plotIsDisplayed()
+        + void plotIsDisplayedWith5DataPoints()
+        + void plotIsDisplayedWith1DataPoint()
+        + void plotIsDisplayedWith2PlusDataPoints()
         + void nullTrackDataNotAllowed()
-        + void invalidTrackDataNotAllowed()
+        + void zeroPointTrackDataNotAllowed() 
+        - TrackData generateValidTrackData()
+        - TrackData generateSinglePointTrackData()
+        - TrackData generate2To4PointTrackData()
+        - float generateRandomCourse()
+        - float generateRandomSpeed()
+        - int generateRandomTooSmallArrayLength()
+        - LocationDataPoint[] generateRandomLocationDataPointsArray(int length)
+        - LocationDataPoint generateRandomLocationDataPoint()
+
     }
 }
 

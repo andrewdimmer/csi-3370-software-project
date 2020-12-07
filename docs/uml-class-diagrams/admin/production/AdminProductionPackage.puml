@@ -7,5 +7,6 @@ package edu.oakland.production.admin {
 !include Demo/Demo.puml
 !include User/User.puml
 !include GpsSystem/GpsSystem.puml
+!include Main/Main.puml
 
 @enduml

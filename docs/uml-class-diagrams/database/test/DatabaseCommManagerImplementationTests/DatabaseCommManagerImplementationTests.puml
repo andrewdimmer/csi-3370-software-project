@@ -4,9 +4,10 @@ package edu.oakland.test.database {
     class DatabaseCommManagerImplementationTests {
         + void rfidInIsRfidOut()
         + void offsetMatchDataPoint()
-        + void offsetMatchTrackData()
+        + void modeInIsModeOut()
         + void trackDataInIsTrackDataOut()
         + void databasePersistentStorageIsNotNull() 
+        - LocationDataPoint generateRandomLocationDataPoint()
     }
 }
 
