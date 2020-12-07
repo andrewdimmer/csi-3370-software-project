@@ -41,10 +41,19 @@ public class GpsSystemTests {
       new GpsSystem(stub, null);
     });
   }
-  
+
   @Test
   @DisplayName("Init Satelllite Names Not Empty")
   void initSatelliteNamesNotEmpty() {
+    DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
+    assertThrows(IllegalArgumentException.class, () -> {
+      new GpsSystem(stub, new String[0]);
+    });
+  }
+  
+  @Test
+  @DisplayName("Init Satelllite Names Not Empty")
+  void initEachSatelliteNameNotEmpty() {
     DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
     Random rnd = new Random();                                    
     //make a moderately long array of random strings

@@ -212,6 +212,22 @@ public class Uc2IntegrationTests {
     assertTrue(userOutput.getStatusMessage().contains("degraded"));
   }
 
+  @Test
+  @DisplayName("Use Case 2 Runner Handles Modifing Invalid Satellite")
+  void handleModifyingInvalidSatellite() {
+    int rfid = generateRandomNumber();
+    Demo demo = new Demo();
+    demo.initSecureLockTrackSystem(
+        rfid,
+        generateRandomStringArray(2)
+    );
+    assertThrows(IllegalArgumentException.class, () -> {
+      demo.getGpsSystem().runUseCase2(new Scanner(
+          "1\n" + generateRandomFailingStrength() + "\n" + generateRandomFailingStrength() + "\n"
+      ));
+    });
+  }
+
   private int generateRandomNumber() {
     return (int) (Math.random() * 100) + 1; 
   }

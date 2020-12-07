@@ -84,6 +84,7 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
         mode = "degraded";
         System.out.println("Degraded Mode");
       }
+      savedSat = "";
       return "N/A. Reconnected.";
     } else {
       // Retry the same satellite

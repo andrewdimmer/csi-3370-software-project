@@ -17,8 +17,8 @@ import org.junit.jupiter.api.Test;
 public class DemoFullRunTests { 
 
   @Test
-  @DisplayName("Run Method Terminates on Quit Command")
-  void canRunJustUc1() {
+  @DisplayName("Can Run Use Case 1")
+  void canRunUc1() {
     int rfid = generateRandomNumber();
     int count = generateRandomStringLength();
     String inputString = String.valueOf(rfid) + "\n";
@@ -30,6 +30,38 @@ public class DemoFullRunTests {
       inputString += "1\n" + String.valueOf(rfid) + "\n";
     }
     inputString += "q\n";
+    Demo demo = new Demo();
+    demo.run(new Scanner(inputString));
+    assertTrue(demo.getWasRun());
+  }
+
+  @Test
+  @DisplayName("Can Run Use Case 2")
+  void canRunUc2() {
+    int rfid = generateRandomNumber();
+    int count = generateRandomStringLength();
+    String inputString = String.valueOf(rfid) + "\n";
+    inputString += String.valueOf(count) + "\n";
+    for (int index = 0; index < count; index++) {
+      inputString += generateRandomString(generateRandomStringLength()) + "\n";
+    }
+    inputString += "2\n0\n5\nq\n";
+    Demo demo = new Demo();
+    demo.run(new Scanner(inputString));
+    assertTrue(demo.getWasRun());
+  }
+
+  @Test
+  @DisplayName("Can Handle Errors In Use Cases")
+  void canHandleErrosInUseCase() {
+    int rfid = generateRandomNumber();
+    int count = generateRandomStringLength();
+    String inputString = String.valueOf(rfid) + "\n";
+    inputString += String.valueOf(count) + "\n";
+    for (int index = 0; index < count; index++) {
+      inputString += generateRandomString(generateRandomStringLength()) + "\n";
+    }
+    inputString += "2\n1\nq\n";
     Demo demo = new Demo();
     demo.run(new Scanner(inputString));
     assertTrue(demo.getWasRun());

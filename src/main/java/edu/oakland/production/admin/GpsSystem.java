@@ -14,6 +14,7 @@ import java.util.Scanner;
  * as well as iniate UC2 when the SLTS loses lock on GPS.
  *
  * @author Brendan Fraser
+ * @author Andrew Dimmer
  * @version %I%, %G%
  */
 public class GpsSystem {
@@ -21,7 +22,6 @@ public class GpsSystem {
   private final DisplayGpsInterface displayGpsInterface;
   private final Satellite[] satellites;
   private int satelliteInUse = 0;
-  private int maxToModify = 0;
 
   /**
    * Creates a GpsSystem object to store the GpsInterface and satellites.
@@ -57,7 +57,7 @@ public class GpsSystem {
     if (input == null) { //check for null unput
       throw new IllegalArgumentException("Scanner input must not be null");
     }
-    String output = displayGpsInterface.receiveGpsSignal(satellites[satelliteInUse]);
+    String output = displayGpsInterface.receiveGpsSignal(satellites[findMaxToModify()]);
     return output;
   }
       
@@ -75,7 +75,7 @@ public class GpsSystem {
     System.out.println(printOptions());
     int modify = input.nextInt();
     input.nextLine(); // Eat new line character
-    if (modify > maxToModify) {
+    if (modify > findMaxToModify()) {
       throw new IllegalArgumentException("You cannot modify that satellite!");
     }
     modifySatelliteStrength(modify, input);
@@ -87,23 +87,22 @@ public class GpsSystem {
         !nextSat.getSatelliteName().contains("Reconnected")
         && nextSat.getSatelliteName().length() > 0
     ) {
-      if (nextSat.getCheckType().contains("recheck")) {
-        modifySatelliteStrength(
-            findSatelliteIndexFromName(nextSat.getSatelliteName()),
-            input
-        );
-        nextSat = displayGpsInterface.recheckSignalStrength(satellites[satelliteInUse]);
-      } else {
-        satelliteInUse = findSatelliteIndexFromName(nextSat.getSatelliteName());
-        if (satelliteInUse != -1) {
-          nextSat = displayGpsInterface.checkSignalStrength(satellites[satelliteInUse]);
-        }
+      // Always start with a recheck
+      modifySatelliteStrength(
+          findSatelliteIndexFromName(nextSat.getSatelliteName()),
+          input
+      );
+      nextSat = displayGpsInterface.recheckSignalStrength(satellites[satelliteInUse]);
+
+      satelliteInUse = findSatelliteIndexFromName(nextSat.getSatelliteName());
+      if (satelliteInUse != -1) {
+        nextSat = displayGpsInterface.checkSignalStrength(satellites[satelliteInUse]);
       }
     }
 
+    // If the next satellite to check is not required or does not exist, exit; otherwise check.
     if (nextSat.getSatelliteName().length() == 0) {
       System.out.println("No more satellites to connect to!");
-      maxToModify = satellites.length - 1;
       satelliteInUse = 0;
     }
 
@@ -112,8 +111,8 @@ public class GpsSystem {
 
   private String printOptions() {
     String options = "";
-    for (int i = 0; i <= maxToModify; i++) {
-      String marker = (i == satelliteInUse ? ": > " : ":   ");
+    for (int i = 0; i <= findMaxToModify(); i++) {
+      String marker = (satellites[i].getStrength() >= 4 ? ": > " : ":   ");
       options += i + marker + satellites[i].getSatelliteName() + "\n";
     }
     return options;
@@ -128,12 +127,25 @@ public class GpsSystem {
     return -1;
   }
 
+  private int findMaxToModify() {
+    int firstConnected = -1;
+    for (int i = 0; i < satellites.length; i++) {
+      if (satellites[i].getStrength() >= 4) {
+        if (firstConnected == -1) {
+          firstConnected = i;
+        } else {
+          return firstConnected;
+        }
+      }
+    }
+    return satellites.length - 1;
+  }
+
   private void modifySatelliteStrength(int index, Scanner input) {
     System.out.println("Enter a signal strength between 1 and 10:");
+    satelliteInUse = index;
     int strength = input.nextInt();
     input.nextLine(); // Eat new line character
-    satelliteInUse = index;
-    maxToModify = index + 1;
     satellites[index].setStrength(strength);
   }
   
