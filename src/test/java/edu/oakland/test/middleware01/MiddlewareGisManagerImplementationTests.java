@@ -150,6 +150,20 @@ public class MiddlewareGisManagerImplementationTests {
     assertEquals("GPS1", man.evaluateGpsSignalStrength(satSignal));
     assertEquals("standby", stub.getMode());
   }
+  @Test
+  @DisplayName("Enter standby from standby")
+  void enterStandbyFromStandby() {
+    Satellite satSignal = new Satellite("GPS1", 1);
+    DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
+    MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+    String stubName = man.evaluateGpsSignalStrength(satSignal);
+    stubName = "";
+    Satellite stubSignal = new Satellite(stubName, 1);
+    man.evaluateGpsSignalStrength(stubSignal);
+    satSignal = new Satellite("", 1);
+    assertEquals("", man.evaluateGpsSignalStrength(satSignal));
+    assertEquals("standby", stub.getMode());
+  }
 
   @Test
   @DisplayName("Check if DatabaseGISInterface is not null")
