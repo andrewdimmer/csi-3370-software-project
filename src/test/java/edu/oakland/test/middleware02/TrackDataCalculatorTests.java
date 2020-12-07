@@ -40,8 +40,8 @@ public class TrackDataCalculatorTests {
     Duration duration = Duration.between(time2, time1);
     double newDuration = duration.getSeconds() / 3600.0;
 
-    float deltaY = longitude1 - longitude2;
-    float deltaX = lattitude1 - lattitude2;
+    float deltaX = longitude1 - longitude2;
+    float deltaY = lattitude1 - lattitude2;
     double trackLength = Math.sqrt((deltaY * deltaY) + (deltaX * deltaX));    
 
     double speed =  (trackLength / newDuration);
@@ -75,12 +75,12 @@ public class TrackDataCalculatorTests {
 
     double alpha;
     int expectedDirection = 45;
-    float deltaY = longitude1 - longitude2;
-    float deltaX = lattitude1 - lattitude2;
+    float deltaX = longitude1 - longitude2;
+    float deltaY = lattitude1 - lattitude2;
     double trackLength = Math.sqrt((deltaY * deltaY) + (deltaX * deltaX));
     alpha = (deltaY / trackLength);
-    alpha = (Math.asin(alpha));
-    double alpha2 = (Math.toDegrees(alpha) + 360) % 360;
+    alpha = Math.asin(alpha);
+    double alpha2 = ((-Math.toDegrees(alpha) + 90) + 360) % 360;
 
     assertEquals(alpha2, TrackDataCalculator.calculateDirection(locations), .01);
   }

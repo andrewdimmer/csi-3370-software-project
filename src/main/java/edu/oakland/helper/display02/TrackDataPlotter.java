@@ -48,9 +48,9 @@ public class TrackDataPlotter extends JFrame {
 
     this.lat = extractLatFromTrackData(data);
     this.lng = extractLngFromTrackData(data);
-    this.dataPoints = getTrackData(this.lat, this.lng);
+    this.dataPoints = getTrackData(this.lng, this.lat);
     if (data.getLocationDataPoints().length >= 2) {
-      this.fitLine = calculateLine(this.lat, this.lng);
+      this.fitLine = calculateLine(this.lng, this.lat);
     }
     this.chart = createChart();
   }
@@ -97,6 +97,10 @@ public class TrackDataPlotter extends JFrame {
     XYPlot plot = plotChart.getXYPlot();
     plot.setDomainGridlinesVisible(true);
     plot.setDomainGridlinePaint(Color.BLACK);
+
+    // Lock the XY axis around the sample data lat and lng
+    plot.getDomainAxis().setRange(-46, -44);
+    plot.getRangeAxis().setRange(45, 46);
 
     plot.setRenderer(renderer);
     setLocationRelativeTo(null);
