@@ -28,8 +28,8 @@ public class TrackDataCalculator {
     Duration duration = Duration.between(time2, time1);
     double newDuration = duration.getSeconds() / 3600.0;
 
-    float deltaY = longitude1 - longitude2;
-    float deltaX = lattitude1 - lattitude2;
+    float deltaX = longitude1 - longitude2;
+    float deltaY = lattitude1 - lattitude2;
     double trackLength = Math.sqrt((deltaY * deltaY) + (deltaX * deltaX));
     float speed = (float) (trackLength / newDuration);
 
@@ -51,8 +51,8 @@ public class TrackDataCalculator {
     float longitude2 = point2.getLng();
 
     double alpha;
-    float deltaY = longitude1 - longitude2;
-    float deltaX = lattitude1 - lattitude2;
+    float deltaX = longitude1 - longitude2;
+    float deltaY = lattitude1 - lattitude2;
     double trackLength = Math.sqrt((deltaY * deltaY) + (deltaX * deltaX));
     alpha = (deltaY / trackLength);
     alpha = Math.asin(alpha);

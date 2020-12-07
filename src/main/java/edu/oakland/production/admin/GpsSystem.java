@@ -159,7 +159,7 @@ public class GpsSystem {
     
     LocalDateTime time = LocalDateTime.now().minusMinutes(50);
     
-    LocationDataPoint initLocationDataPoint = new LocationDataPoint(lat, lng, time);
+    LocationDataPoint initLocationDataPoint = new LocationDataPoint(lat, -lng, time);
     
     configureSatellites(satelliteNames, incrementLatAmount, incrementLngAmount, 
         initLocationDataPoint);
