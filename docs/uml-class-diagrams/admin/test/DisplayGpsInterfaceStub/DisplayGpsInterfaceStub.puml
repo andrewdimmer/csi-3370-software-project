@@ -4,11 +4,11 @@ package edu.oakland.test.admin {
     class DisplayGpsInterfaceStub {
         __
         .. Use Case 1 ..
-        + void receiveGpsSignal(Satellite satelliteSignal)
+        + String receiveGpsSignal(Satellite satelliteSignal)
         .. Use Case 2 ..
-        + void reportGpsSignalLoss(String satelliteName)
-        + void recheckSignalStength(String satelliteName)
-        + void checkSignalStength(String satelliteName)
+        + SatelliteSignalCheckRequest reportGpsSignalLoss(String satelliteSignal)
+        + SatelliteSignalCheckRequest recheckSignalStength(String satelliteSignal)
+        + SatelliteSignalCheckRequest checkSignalStength(String satelliteSignal)
     }
 }
 

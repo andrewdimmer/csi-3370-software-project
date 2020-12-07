@@ -1,0 +1,9 @@
+@startuml Main
+
+package edu.oakland.production.admin {
+    class Demo {
+        {static} + void main(String[] args)
+    }
+}
+
+@enduml

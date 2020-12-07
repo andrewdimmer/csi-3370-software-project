@@ -8,6 +8,8 @@ package edu.oakland.test.database {
         + void trackDataInIsTrackDataOut()
         + void modeInIsModeOut()
         + void databaseCommManagerNotNull()
+        - LocationDataPoint[] generateRandomLocationDataPointsArray(int length)
+        - LocationDataPoint generateRandomLocationDataPoint()
     }
 }
 

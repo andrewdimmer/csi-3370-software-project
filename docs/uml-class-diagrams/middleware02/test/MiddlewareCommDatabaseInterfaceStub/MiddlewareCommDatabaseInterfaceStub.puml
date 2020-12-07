@@ -2,9 +2,19 @@
 
 package edu.oakland.test.middleware02 {
     class MiddlewareCommDatabaseInterfaceStub {
+        - int rfid
+        - String mod
+        - LocationDataPoint[] points
+        - TrackData trackData
         __
+        + MiddlewareCommDatabaseInterfaceStub(int rfid)
+        + MiddlewareCommDatabaseInterfaceStubq(int rfid, String mode, LocationDataPoint[] points, TrackData trackData)
         .. Use Case 1 ..
         + int checkCurrentRfid()
+        + String requestMode()
+        + TrackData getTrackData()
+        + void storeTrackData(TrackData trackData)
+        + LocationDataPoint getLocationDataPoint(int offset)
     }
 }
 

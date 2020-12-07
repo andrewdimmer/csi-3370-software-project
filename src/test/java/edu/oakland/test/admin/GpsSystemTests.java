@@ -150,10 +150,9 @@ public class GpsSystemTests {
   
   
   private String generateRandomNames() { 
-    //Make a random string for Satellite Name, borrowed from Tessa, thanks!
     int length = 10;
     Random random = new Random();
-    String alphabet = "abcdefghijklmnopqrstuvwxyz";
+    String alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     char [] rndString = new char[length];
 
     for (int i = 0; i < length; i++) { 
@@ -164,9 +163,11 @@ public class GpsSystemTests {
     String createdString = new String(rndString);
     return createdString;
   }
+  //Random String Generator Learned From:
+  //https://stackoverflow.com/questions/2863852/how-to-generate-a-random-string-in-java
   
   private LocationDataPoint generateRandomLocationDataPoint() {  
-    //borrowed from Tessa again, thanks!
+    //borrowed from Andrew, thanks!
     return new LocationDataPoint(
       (float) (Math.random() * 180 - 90),
       (float) (Math.random() * 360 - 180),

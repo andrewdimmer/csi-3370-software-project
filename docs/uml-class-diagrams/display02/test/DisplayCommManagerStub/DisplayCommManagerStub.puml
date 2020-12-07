@@ -4,7 +4,7 @@ package edu.oakland.test.display02 {
     class DisplayCommManagerStub {
         __
         .. Use Case 1 ..
-        + TrackData evaluateRfidRequest(int rfidNum)
+        + TrackData evaluateRfidRequest(int rfid)
     }
 }
 

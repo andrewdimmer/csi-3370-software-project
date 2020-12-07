@@ -2,14 +2,19 @@
 
 package edu.oakland.test.admin {
     class DemoTests {
-        + void storageInputLocIsNotNull()
-        + void storageOutputLocIsNotNull()
-        + void storageInputLocIsNotEmpty()
-        + void storageOutputLocIsNotEmpty()
-        + void scannerInputIsUserInput()
-        + void commClassesInitialized()
-        + void gisClassesInitialized()
-        + void persistentStorageManagerInitialized()
+        + void configureRfidScannerInputIsUserInput()
+        + void configureRfidRfidInIsRfidOut()
+        + void configureSatelliteNamesScannerInputIsUserInput()
+        + void configureSatelliteNamesSatelliteNamesInAreSatelliteNamesOut()
+        + void runUseCasesScannerInputIsUserInput()
+        + void runScannerInputIsUserInput()
+        + void initSuccessful()
+        + void runHandleInvalidMode()
+        + void runCanQuit()
+        - int generateRandomNumber()
+        - int generateRandomStringLength()
+        - String[] generateRandomStringArray(int length)
+        - String generateRandomString(int length)
     }
 }
 

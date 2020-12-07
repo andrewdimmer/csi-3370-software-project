@@ -4,7 +4,7 @@ package edu.oakland.production.admin {
     class User {
         - DisplayCommInterface displayCommInterface
         + User(DisplayCommInterface displayCommInterface)
-        + void runUseCase1(Scanner input)
+        + TrackData runUseCase1(Scanner input)
     }
 }
 

@@ -2,12 +2,10 @@
 
 package edu.oakland.production.database {
     class DatabaseGisManagerImplementation {
-        - LocationDataPoint locDataPoint
-        - String mode
-        - String currentSat
+        - DatabasePersistentStorage storage
         __
         + DatabaseGisManagerImplementation(
-        \tDatabasePersistentStorage databasePersistentStorage)
+        \tDatabasePersistentStorage dbs)
         .. Use Case 1 ..
         + void passStoreRequest(LocationDataPoint locationDataPoint)
         .. Use Case 2 ..
