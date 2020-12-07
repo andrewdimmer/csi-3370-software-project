@@ -26,20 +26,16 @@ public class Uc1AndUc2IntegrationTests {
         generateRandomStringArray(2)
     );
     for (int i = 0; i < 4; i++) {
-      demo.getGpsSystem().runUseCase1(new Scanner(""));
-      demo.getUser().runUseCase1(new Scanner(String.valueOf(rfid) + "\n"));
+      runUseCase1(demo, rfid);
     }
     for (int i = 0; i < (int) (Math.random() * 15) + 1; i++) {
-      demo.getGpsSystem().runUseCase1(new Scanner(""));
-      demo.getUser().runUseCase1(new Scanner(String.valueOf(rfid) + "\n"));
+      runUseCase1(demo, rfid);
     }
-    demo.getGpsSystem().runUseCase1(new Scanner(""));
-    TrackData userOutput1 = demo.getUser().runUseCase1(new Scanner(String.valueOf(rfid) + "\n"));
+    TrackData userOutput1 = runUseCase1(demo, rfid);
     demo.getGpsSystem().runUseCase2(new Scanner("0\n1\n1\n"));
-    demo.getGpsSystem().runUseCase1(new Scanner(""));
-    TrackData userOutput2 = demo.getUser().runUseCase1(new Scanner(String.valueOf(rfid) + "\n"));
-    assertTrue(userOutput2.getStatusMessage().contains("degraded"));
+    TrackData userOutput2 = runUseCase1(demo, rfid);
     assertEquals(userOutput1, userOutput2);
+    assertTrue(userOutput2.getStatusMessage().contains("degraded"));
   }
 
   @Test
@@ -52,21 +48,22 @@ public class Uc1AndUc2IntegrationTests {
         generateRandomStringArray(2)
     );
     for (int i = 0; i < 4; i++) {
-      demo.getGpsSystem().runUseCase1(new Scanner(""));
-      demo.getUser().runUseCase1(new Scanner(String.valueOf(rfid) + "\n"));
+      runUseCase1(demo, rfid);
     }
     for (int i = 0; i < (int) (Math.random() * 15) + 1; i++) {
-      demo.getGpsSystem().runUseCase1(new Scanner(""));
-      demo.getUser().runUseCase1(new Scanner(String.valueOf(rfid) + "\n"));
+      runUseCase1(demo, rfid);
     }
-    demo.getGpsSystem().runUseCase1(new Scanner(""));
-    TrackData userOutput1 = demo.getUser().runUseCase1(new Scanner(String.valueOf(rfid) + "\n"));
+    TrackData userOutput1 = runUseCase1(demo, rfid);
     demo.getGpsSystem().runUseCase2(new Scanner("0\n1\n1\n"));
     demo.getGpsSystem().runUseCase2(new Scanner("1\n1\n1\n"));
-    demo.getGpsSystem().runUseCase1(new Scanner(""));
-    TrackData userOutput2 = demo.getUser().runUseCase1(new Scanner(String.valueOf(rfid) + "\n"));
-    assertTrue(userOutput2.getStatusMessage().contains("standby"));
+    TrackData userOutput2 = runUseCase1(demo, rfid);
     assertEquals(userOutput1, userOutput2);
+    assertTrue(userOutput2.getStatusMessage().contains("standby"));
+  }
+
+  private TrackData runUseCase1(Demo demo, int rfid) {
+    demo.getGpsSystem().runUseCase1(new Scanner(""));
+    return demo.getUser().runUseCase1(new Scanner(String.valueOf(rfid) + "\n"));
   }
 
   private int generateRandomNumber() {

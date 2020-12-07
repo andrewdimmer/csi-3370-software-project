@@ -23,7 +23,7 @@ public class GpsSystemTests {
   void initDisplayGpsInterfaceNotNull() {
     Random rnd = new Random();                          
     //make a moderately long array of random strings
-    int rndLength = rnd.nextInt(100);
+    int rndLength = rnd.nextInt(100) + 1;
     String[] str = new String[rndLength];
     for (int i = 0; i < rndLength; i++) {
       str[i] = generateRandomNames();
@@ -76,7 +76,7 @@ public class GpsSystemTests {
       DisplayGpsInterfaceStub stub = new DisplayGpsInterfaceStub();
       Random rnd = new Random();                          
       //make a moderately long array of random strings
-      int rndLength = rnd.nextInt(100);
+      int rndLength = rnd.nextInt(100) + 1;
       String[] str = new String[rndLength];
       for (int i = 0; i < rndLength; i++) {
         str[i] = generateRandomNames();
