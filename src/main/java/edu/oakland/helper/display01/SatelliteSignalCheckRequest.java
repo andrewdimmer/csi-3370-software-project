@@ -33,9 +33,6 @@ public class SatelliteSignalCheckRequest {
       throw new IllegalArgumentException("type cannot be null");
     }
 
-    if (satelliteName.length() == 0) {
-      throw new IllegalArgumentException("sattellite name cannot be empty");
-    }
     if (checkType.length() == 0) {
       throw new IllegalArgumentException("check type cannot be empty");
     }

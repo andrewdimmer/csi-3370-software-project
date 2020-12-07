@@ -180,7 +180,6 @@ public class Demo {
             break;
           case 'q':
             System.out.println("Exiting the Secure Lock Tracking System...");
-            System.out.println("Please make sure you close the plotter to terminate the program.");
             break;
           default:
             System.out.println("Sorry... didn't quite catch that...");

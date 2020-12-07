@@ -30,14 +30,6 @@ public class SatelliteSignalCheckRequestTests {
   }
 
   @Test
-  @DisplayName("Empty Name Is Not Allowed")
-  void emptyNamesNotAllowed() {
-    assertThrows(IllegalArgumentException.class, () -> {
-      new SatelliteSignalCheckRequest("", "ok");
-    });
-  }
-
-  @Test
   @DisplayName("Empty Type Is Not Allowed")
   void emptyTypesNotAllowed() {
     assertThrows(IllegalArgumentException.class, () -> {

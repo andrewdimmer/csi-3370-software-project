@@ -41,7 +41,7 @@ public class DisplayGpsInterfaceImplementation implements DisplayGpsInterface {
    * @return Which GPS has Loss of Signal 
    */
   public SatelliteSignalCheckRequest reportGpsSignalLoss(Satellite satelliteSignal) {
-    System.out.println("Reporting loss for " + satelliteSignal.getSatelliteName());
+    System.out.println("Reporting signal change for " + satelliteSignal.getSatelliteName());
     SatelliteSignalCheckRequest satellite = reciever.measureSignal(satelliteSignal);
     System.out.println("Attempting to " + satellite.getCheckType() 
         + " " + satellite.getSatelliteName());
