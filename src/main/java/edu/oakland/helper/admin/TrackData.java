@@ -134,7 +134,7 @@ public class TrackData {
     str.append("Track Data Status: " + getStatusMessage() + "\n");
     if (isValid()) {
       str.append("Speed: " + getSpeed() + " knots \n");
-      str.append("Course Direction: " + getCourseDirection() + " degrees North of East\n");
+      str.append("Course Direction: " + getCourseDirection() + " degrees Clockwise from North\n");
     }
     str.append("Raw Location Data Points:\n");
     if (points.length > 0) {

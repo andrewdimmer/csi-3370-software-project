@@ -79,8 +79,8 @@ public class TrackDataCalculatorTests {
     float deltaX = lattitude1 - lattitude2;
     double trackLength = Math.sqrt((deltaY * deltaY) + (deltaX * deltaX));
     alpha = (deltaY / trackLength);
-    alpha = (Math.asin(alpha));
-    double alpha2 = (Math.toDegrees(alpha) + 360) % 360;
+    alpha = Math.asin(alpha);
+    double alpha2 = ((-Math.toDegrees(alpha) + 90) + 360) % 360;
 
     assertEquals(alpha2, TrackDataCalculator.calculateDirection(locations), .01);
   }
