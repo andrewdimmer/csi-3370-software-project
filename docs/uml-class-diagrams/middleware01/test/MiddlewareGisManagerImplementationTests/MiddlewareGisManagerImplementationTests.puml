@@ -10,6 +10,7 @@ package edu.oakland.test.middleware01 {
     + void enterNormalFromDegraded()
     + void enterStandbyFromNormal()
     + void enterDegradedFromStandby()
+    + void enterStandbyFromStandby()
     + void databaseInterfaceIsNotNull()
   }
 }

@@ -18,6 +18,7 @@ public class Main {
    */
   public static void main(String[] args) {
     (new Demo()).run(new Scanner(System.in));
+    System.exit(0);
   }
 
 }

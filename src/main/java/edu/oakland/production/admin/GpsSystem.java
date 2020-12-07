@@ -2,6 +2,7 @@ package edu.oakland.production.admin;
 
 import edu.oakland.helper.admin.LocationDataPoint;
 import edu.oakland.helper.admin.Satellite;
+import edu.oakland.helper.display01.SatelliteSignalCheckRequest;
 import edu.oakland.production.display01.DisplayGpsInterface;
 import java.lang.IllegalArgumentException;
 import java.time.LocalDateTime;
@@ -13,6 +14,7 @@ import java.util.Scanner;
  * as well as iniate UC2 when the SLTS loses lock on GPS.
  *
  * @author Brendan Fraser
+ * @author Andrew Dimmer
  * @version %I%, %G%
  */
 public class GpsSystem {
@@ -24,21 +26,23 @@ public class GpsSystem {
   /**
    * Creates a GpsSystem object to store the GpsInterface and satellites.
    *
-   * @param displayGpsInterfaceIn  The inputted GpsInterface to store.
+   * @param displayGpsInterface  The inputted GpsInterface to store.
    * @param satelliteNames  An array of Strings that will become satellites!
    *
    */
-  public GpsSystem(DisplayGpsInterface displayGpsInterfaceIn, String[] satelliteNames) {
-    if (displayGpsInterfaceIn == null) {  
+  public GpsSystem(DisplayGpsInterface displayGpsInterface, String[] satelliteNames) {
+    if (displayGpsInterface == null) {  
       //3 checks to make sure the data that was passed in is valid
       throw new IllegalArgumentException("displayGpsInterface must not be null");
     } else if (satelliteNames == null) {
       throw new IllegalArgumentException("satelliteNames must not be null");
+    } else if (satelliteNames.length == 0) {
+      throw new IllegalArgumentException("satelliteNames must not empty");
     } else if (isEmptyStringInArray(satelliteNames)) {
-      throw new IllegalArgumentException("satelliteNames must not be null");
+      throw new IllegalArgumentException("satelliteNames must contain empty names");
     }
     this.satellites = new Satellite[satelliteNames.length];
-    this.displayGpsInterface = displayGpsInterfaceIn;
+    this.displayGpsInterface = displayGpsInterface;
     
     configureSatellites(satelliteNames);
   }
@@ -53,7 +57,7 @@ public class GpsSystem {
     if (input == null) { //check for null unput
       throw new IllegalArgumentException("Scanner input must not be null");
     }
-    String output = displayGpsInterface.receiveGpsSignal(satellites[satelliteInUse]);
+    String output = displayGpsInterface.receiveGpsSignal(satellites[findMaxToModify()]);
     return output;
   }
       
@@ -67,17 +71,42 @@ public class GpsSystem {
     if (input == null) { //check for null unput
       throw new IllegalArgumentException("Scanner input must not be null");
     }
-  }
+    System.out.println("Select a satellite to adjust the signal strength of:");
+    System.out.println(printOptions());
+    int modify = input.nextInt();
+    input.nextLine(); // Eat new line character
+    if (modify > findMaxToModify()) {
+      throw new IllegalArgumentException("You cannot modify that satellite!");
+    }
+    modifySatelliteStrength(modify, input);
 
-  /**
-   * Method to run UseCase 2, using supplied Scanner and assuming the current satellite has lost
-   * the signal already.
-   *
-   * @param input   The scanner object we are passing in.
-   *
-   */
-  private void runUseCase2NoPrompt(Scanner input) {
-    
+    SatelliteSignalCheckRequest nextSat = displayGpsInterface.reportGpsSignalLoss(
+        satellites[satelliteInUse]
+    );
+    while (
+        !nextSat.getSatelliteName().contains("Reconnected")
+        && nextSat.getSatelliteName().length() > 0
+    ) {
+      // Always start with a recheck
+      modifySatelliteStrength(
+          findSatelliteIndexFromName(nextSat.getSatelliteName()),
+          input
+      );
+      nextSat = displayGpsInterface.recheckSignalStrength(satellites[satelliteInUse]);
+
+      satelliteInUse = findSatelliteIndexFromName(nextSat.getSatelliteName());
+      if (satelliteInUse != -1) {
+        nextSat = displayGpsInterface.checkSignalStrength(satellites[satelliteInUse]);
+      }
+    }
+
+    // If the next satellite to check is not required or does not exist, exit; otherwise check.
+    if (nextSat.getSatelliteName().length() == 0) {
+      System.out.println("No more satellites to connect to!");
+      satelliteInUse = 0;
+    }
+
+    System.out.println();
   }
   
   /**
@@ -149,5 +178,71 @@ public class GpsSystem {
       }
     }
     return false;
+  }
+
+  /**
+   * Prints the options of satellites the user can modify. Based on how the satellites are
+   * modified, this should print exactly 1 satellite that is connected (unless there are none),
+   * and all satellites that are disconnected before the connected satellite (unless there is only
+   * one connected satellite, in which case print all satellites).
+   *
+   * @return The modification options to display to the user.
+   */
+  private String printOptions() {
+    String options = "";
+    for (int i = 0; i <= findMaxToModify(); i++) {
+      String marker = (satellites[i].getStrength() >= 4 ? ": > " : ":   ");
+      options += i + marker + satellites[i].getSatelliteName() + "\n";
+    }
+    return options;
+  }
+
+  /**
+   * Converts a satellite name to the index of that satellite in the satellites array.
+   *
+   * @param name The name of the satellite to get the index of.
+   * @return The index of the satellite with in the satellites array with the given name.
+   */
+  private int findSatelliteIndexFromName(String name) {
+    for (int i = 0; i < satellites.length; i++) {
+      if (satellites[i].getSatelliteName() == name) {
+        return i;
+      }
+    }
+    return -1;
+  }
+
+  /**
+   * A helper method to find the max index in the satellites array to be modified in use case 2.
+   * See printOptions() for more info.
+   *
+   * @return The index of the last satellite to modify.
+   */
+  private int findMaxToModify() {
+    int firstConnected = -1;
+    for (int i = 0; i < satellites.length; i++) {
+      if (satellites[i].getStrength() >= 4) {
+        if (firstConnected == -1) {
+          firstConnected = i;
+        } else {
+          return firstConnected;
+        }
+      }
+    }
+    return satellites.length - 1;
+  }
+
+  /**
+   * Modify the given satellite signal strength based on user input.
+   *
+   * @param index The index in the satellites array of the satellite to modify.
+   * @param input A scanner to get the user input.
+   */
+  private void modifySatelliteStrength(int index, Scanner input) {
+    System.out.println("Enter a signal strength between 1 and 10:");
+    satelliteInUse = index;
+    int strength = input.nextInt();
+    input.nextLine(); // Eat new line character
+    satellites[index].setStrength(strength);
   }
 }

@@ -76,7 +76,6 @@ public class MiddlewareGisManagerImplementationTests {
     String stubName = man.evaluateGpsSignalStrength(satSignal);
     Satellite stubSignal = new Satellite(stubName, 1);
     assertEquals(satSignal.getSatelliteName(), man.evaluateGpsSignalStrength(stubSignal));
-    stub.receiveModeRequest("degraded");
     assertEquals("degraded", stub.getMode());
   }
 
@@ -91,7 +90,6 @@ public class MiddlewareGisManagerImplementationTests {
     String newName = man.evaluateGpsSignalStrength(stubSignal);
     Satellite newSignal = new Satellite(newName, 5);
     assertEquals("N/A. Reconnected.", man.evaluateGpsSignalStrength(newSignal));
-    stub.receiveModeRequest("normal");
     assertEquals("normal", stub.getMode());
   }
 
@@ -105,7 +103,6 @@ public class MiddlewareGisManagerImplementationTests {
     stubName = "";
     Satellite stubSignal = new Satellite(stubName, 1);
     assertEquals("", man.evaluateGpsSignalStrength(stubSignal));
-    stub.receiveModeRequest("standby");
     assertEquals("standby", stub.getMode());
   }
 
@@ -121,7 +118,6 @@ public class MiddlewareGisManagerImplementationTests {
     String newName = man.evaluateGpsSignalStrength(stubSignal);
     Satellite newSignal = new Satellite(newName, 5);
     assertEquals("N/A. Reconnected.", man.evaluateGpsSignalStrength(newSignal));
-    stub.receiveModeRequest("degraded");
     assertEquals("degraded", stub.getMode());
   }
 
@@ -137,8 +133,23 @@ public class MiddlewareGisManagerImplementationTests {
     newName = "";
     Satellite newSignal = new Satellite(newName, 5);
     assertEquals("N/A. Reconnected.", man.evaluateGpsSignalStrength(newSignal));
-    stub.receiveModeRequest("degraded");
     assertEquals("degraded", stub.getMode());
+  }
+
+  @Test
+  @DisplayName("Enter standby from standby")
+  void enterStandbyFromStandby() {
+    Satellite satSignal = new Satellite("GPS1", 1);
+    DatabaseGisInterfaceStub stub = new DatabaseGisInterfaceStub();
+    MiddlewareGisManager man = new MiddlewareGisManagerImplementation(stub);
+    String stubName = man.evaluateGpsSignalStrength(satSignal);
+    stubName = "";
+    Satellite stubSignal = new Satellite(stubName, 1);
+    man.evaluateGpsSignalStrength(stubSignal);
+    satSignal = new Satellite("GPS0", 1);
+    man.evaluateGpsSignalStrength(satSignal); // Get past retry
+    assertEquals("", man.evaluateGpsSignalStrength(satSignal));
+    assertEquals("standby", stub.getMode());
   }
 
   @Test

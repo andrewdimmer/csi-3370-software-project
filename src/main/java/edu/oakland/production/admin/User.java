@@ -41,8 +41,9 @@ public class User {
     System.out.println("Enter the RFID number of the shipping container you want to track:");
     int rfid = input.nextInt();
     input.nextLine(); // Eat new line character
+    TrackData output = displayCommInterface.receiveRfidRequest(rfid);
     System.out.println();
-    return displayCommInterface.receiveRfidRequest(rfid);
+    return output;
   }
 
 

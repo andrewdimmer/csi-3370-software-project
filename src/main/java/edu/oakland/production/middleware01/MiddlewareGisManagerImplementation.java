@@ -84,6 +84,7 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
         mode = "degraded";
         System.out.println("Degraded Mode");
       }
+      savedSat = "";
       return "N/A. Reconnected.";
     } else {
       // Retry the same satellite
@@ -95,7 +96,7 @@ public class MiddlewareGisManagerImplementation implements MiddlewareGisManager 
 
       // Get the next satellite
       String datapoint = databaseGisInterface.receiveNextSatRequest(name);
-      if (datapoint.equals("")) {
+      if (mode.equals("standby") || datapoint.equals("")) {
         databaseGisInterface.receiveModeRequest("standby");
         mode = "standby";
         System.out.println("Standby Mode");
