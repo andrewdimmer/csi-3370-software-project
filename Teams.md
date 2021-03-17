@@ -16,9 +16,9 @@ The professor is the product owner. All requirements come from the professor.
 
 \- 2020_Fall_CSI3370 Class Project SCRUM Team Assignments, Roles & Responsibilities_v1.0_201018
 
-**Project SCRUM Master:** Brendan Fraser ([@brendanfraser597](https://github.com/brendanfraser597/))
+**Project SCRUM Master:** Tessa Peruzzi ([@TessaPeruzzi](https://github.com/TessaPeruzzi/))
 
-**Project SCRUM Assistant Master:** Tessa Peruzzi ([@TessaPeruzzi](https://github.com/TessaPeruzzi/))
+**Project SCRUM Assistant Master:** Brendan Fraser ([@brendanfraser597](https://github.com/brendanfraser597/))
 
 **Project SCRUM Integration Master:** Andrew Dimmer ([@andrewdimmer](https://github.com/andrewdimmer/))
 
